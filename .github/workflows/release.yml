@@ -93,6 +93,54 @@ jobs:
           name: postman-chinese-injector-binaries
           path: dist/*
 
+      # 本次更新简介：取 tag 注解正文（git tag -a vX.Y.Z -m "..."）拼在固定说明前面，
+      # 让每个 Release 的描述都写清这一版改了什么；没有注解时只留固定说明。
+      - name: Compose release notes
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          set -e
+          # checkout 只取了单个 ref，补一次以确保能读到注解对象
+          git fetch --force origin "refs/tags/${GITHUB_REF_NAME}:refs/tags/${GITHUB_REF_NAME}" || true
+          notes="$(git tag -l --format='%(contents)' "${GITHUB_REF_NAME}")"
+          : > release-notes.md
+          if [ -n "$(printf '%s' "$notes" | tr -d '[:space:]')" ]; then
+            {
+              printf '## 本次更新\n\n'
+              printf '%s\n' "$notes"
+              printf '\n---\n\n'
+            } >> release-notes.md
+          fi
+          cat >> release-notes.md <<'RELEASE_BODY'
+          把中文翻译注入 Postman 的非官方第三方工具。
+
+          - **桌面端**：下载对应平台的压缩包（Windows 为 `.zip`，Linux/macOS 为 `.tar.xz`），
+            解压得到单文件后，完全退出 Postman 再运行即可注入；`--restore` 还原。
+            （macOS/Linux 解压后如丢失执行权限：`chmod +x <文件名>`）
+          - **老 Windows**（Win8.1 / Server 2012 R2+，默认版报 `ClosePseudoConsole` 错时）：
+            下载 `postman-chinese-injector-win-x64-legacy.zip`（Node 运行时打包）。
+          - **网页版**：下载 `postman-chinese-injector-extension.zip`，解压后在 Chrome/Edge 用
+            「加载已解压的扩展程序」加载。
+
+          详见 README。交流反馈 QQ 群：494969115。
+
+          **完整性校验**：`SHA256SUMS.txt` 为本次构建的校验和；所有发行包均由 GitHub Actions
+          从公开源码构建并附带来源证明，可用
+          `gh attestation verify <文件> --repo ${{ github.repository }}` 验证。
+
+          > 🛡️ **杀毒软件报毒？** 单文件二进制（bun / pkg 打包）被启发式误判是行业通病，非真实威胁。
+          > 原因、核实办法与「直接跑源码」的替代方案见 README 的
+          > [杀毒软件报毒（误报）说明](https://github.com/${{ github.repository }}#杀毒软件报毒误报说明)。
+
+          ---
+          ⚠️ **法律声明**：本项目为社区维护的非官方工具，**与 Postman, Inc. 无任何关联**，
+          未获其授权、赞助或背书；"Postman" 是 Postman, Inc. 的商标。本仓库与发行包**不含、
+          也不分发** Postman 的任何源代码 / 二进制 / 原始语言包——仅有本项目自己的脚本与社区编写的
+          中文译文。本工具在你**自己的机器**上修改你**自己安装**的 Postman，是否使用由你自行决定
+          并承担风险，请遵守 Postman 的服务条款与 EULA。代码以 MIT 许可发布（不覆盖派生自 Postman
+          文案的译文数据）。本说明不构成法律意见。
+          RELEASE_BODY
+          cat release-notes.md
+
       - name: Publish release assets
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
@@ -101,31 +149,4 @@ jobs:
           files: |
             dist/postman-chinese-injector-*
             dist/SHA256SUMS.txt
-          body: |
-            把中文翻译注入 Postman 的非官方第三方工具。
-
-            - **桌面端**：下载对应平台的压缩包（Windows 为 `.zip`，Linux/macOS 为 `.tar.xz`），
-              解压得到单文件后，完全退出 Postman 再运行即可注入；`--restore` 还原。
-              （macOS/Linux 解压后如丢失执行权限：`chmod +x <文件名>`）
-            - **老 Windows**（Win8.1 / Server 2012 R2+，默认版报 `ClosePseudoConsole` 错时）：
-              下载 `postman-chinese-injector-win-x64-legacy.zip`（Node 运行时打包）。
-            - **网页版**：下载 `postman-chinese-injector-extension.zip`，解压后在 Chrome/Edge 用
-              「加载已解压的扩展程序」加载。
-
-            详见 README。交流反馈 QQ 群：494969115。
-
-            **完整性校验**：`SHA256SUMS.txt` 为本次构建的校验和；所有发行包均由 GitHub Actions
-            从公开源码构建并附带来源证明，可用
-            `gh attestation verify <文件> --repo ${{ github.repository }}` 验证。
-
-            > 🛡️ **杀毒软件报毒？** 单文件二进制（bun / pkg 打包）被启发式误判是行业通病，非真实威胁。
-            > 原因、核实办法与「直接跑源码」的替代方案见 README 的
-            > [杀毒软件报毒（误报）说明](https://github.com/${{ github.repository }}#杀毒软件报毒误报说明)。
-
-            ---
-            ⚠️ **法律声明**：本项目为社区维护的非官方工具，**与 Postman, Inc. 无任何关联**，
-            未获其授权、赞助或背书；"Postman" 是 Postman, Inc. 的商标。本仓库与发行包**不含、
-            也不分发** Postman 的任何源代码 / 二进制 / 原始语言包——仅有本项目自己的脚本与社区编写的
-            中文译文。本工具在你**自己的机器**上修改你**自己安装**的 Postman，是否使用由你自行决定
-            并承担风险，请遵守 Postman 的服务条款与 EULA。代码以 MIT 许可发布（不覆盖派生自 Postman
-            文案的译文数据）。本说明不构成法律意见。
+          body_path: release-notes.md
