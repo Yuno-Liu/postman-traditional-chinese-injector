@@ -10,6 +10,11 @@
       "via_cli": "Postman CLI",
       "via_cli_helper": "配置 CLI 命令以在构建管道上运行。"
     },
+    "postman_cli": {
+      "install_in_terminal": "在终端中安装",
+      "run_in_terminal": "在终端中运行",
+      "add_api_key_tooltip": "添加 API Key 后才能运行此命令"
+    },
     "errors": {
       "start_run": {
         "title": "超出运行限制"
@@ -336,7 +341,18 @@
       "app": "应用程序"
     },
     "button": {
-      "run_on_cloud": "在云端运行"
+      "run_on_cloud": "在云端运行",
+      "run_on_cloud_static_ip": "在云端运行（静态 IP）"
+    },
+    "static_ip": {
+      "label": "出口路由策略",
+      "info_aria_label": "设置压测负载机发送请求所使用的源 IP。",
+      "shared_description": "请求来自共享的 IP 地址池。",
+      "static_description": "请求来自可在防火墙中加入白名单的静态 IP。<Link><Text>了解更多</Text></Link>",
+      "option_shared": "动态 IP",
+      "option_static": "静态 IP",
+      "upgrade_heading": "升级后可使用静态 IP 在云端运行性能测试",
+      "upgrade_description": "将云端性能测试的流量通过可加入白名单的静态 IP 转发，即可访问防火墙后的 API。升级套餐即可开始使用。"
     },
     "group_by": {
       "label": "分组依据",

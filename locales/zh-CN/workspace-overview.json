@@ -436,7 +436,13 @@
       "placeholder": "选择资产类型",
       "readonly_hint": "你没有更改资产类型的权限。",
       "toast_success": "资产类型已更新",
-      "toast_error": "资产类型更新失败，请重试。"
+      "toast_error": "资产类型更新失败，请重试。",
+      "next_steps": {
+        "heading": "后续步骤",
+        "subtitle": "在关联了 Git 的 Workspace 目录下运行此命令，即可开始采集 API 调用和测试结果。",
+        "dismiss": "忽略",
+        "checking_registration": "正在检查 Application Inventory 注册状态…"
+      }
     },
     "visibility": {
       "workspace_type_container_heading": "Workspace 类型",

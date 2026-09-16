@@ -183,8 +183,8 @@
     "start_new_task": "开始新任务"
   },
   "header": {
-    "options_button_aria_label": "对话选项",
     "copy_conversation_id_label": "复制对话 ID",
+    "copy_conversation_id_copied_tooltip": "已复制！",
     "copy_conversation_id_toast": "对话 ID 已复制到剪贴板"
   },
   "mobile": {

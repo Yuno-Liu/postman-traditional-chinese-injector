@@ -5,6 +5,8 @@
     "unix_description_link": "安装 Postman CLI",
     "unix_description_end": "在 macOS、Linux (x64) 或适用于 Linux 的 Windows 子系统 (WSL) 上",
     "copy_tooltip": "复制到剪贴板",
+    "install_in_terminal": "在终端中安装",
+    "unexpected_command_tooltip": "无法识别此安装命令。请复制后自行检查并手动运行。",
     "installation_guide_link": "安装指南",
     "learn_how_to": "了解如何",
     "install_postman_cli_on_windows": "在 Windows 上安装 Postman CLI"
@@ -75,6 +77,13 @@
     "dataset_no_create_permission": "你没有在此 Workspace 中创建数据集的权限。",
     "reading_datafile": "正在读取数据文件"
   },
+  "data_view": {
+    "run_query": "运行查询",
+    "save": "保存",
+    "save_as_new_view": "另存为新视图",
+    "reset": "重置",
+    "no_edit_view_permission": "你没有编辑此数据集视图的权限。"
+  },
   "iteration_strategy": {
     "iterations_label": "迭代次数",
     "iterations_tooltip": "本次运行中循环执行该 Collection 的次数。",
@@ -94,5 +103,18 @@
   "run_type": {
     "functional_description": "验证请求正确性和测试结果",
     "performance_description": "测量响应时间和负载表现"
+  },
+  "results_header": {
+    "run_actions": "运行操作",
+    "view_more_actions": "查看更多操作",
+    "schedule": "计划任务",
+    "postman_cli": "Postman CLI",
+    "configure_ci_cd": "配置 CI/CD",
+    "new_run": "新建运行",
+    "run_again": "再次运行",
+    "rerun": "重新运行",
+    "preparing_run": "正在准备运行",
+    "debug_with_ai": "用 AI 调试",
+    "analyze_with_ai": "用 AI 分析"
   }
 }

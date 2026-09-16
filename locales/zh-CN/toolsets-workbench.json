@@ -85,6 +85,13 @@
     "invalid_draft_tooltip": "请先修复输入 Schema 中的错误再保存。",
     "more_actions_tooltip": "更多操作"
   },
+  "share": {
+    "button": "分享",
+    "tool_button_tooltip": "复制此工具的链接",
+    "toolset_button_tooltip": "复制此工具集的链接",
+    "link_copied": "链接已复制到剪贴板",
+    "copy_failed": "复制链接失败"
+  },
   "tabs": {
     "aria_label": "Toolsets 工作台各部分",
     "definition": "定义",
@@ -93,16 +100,18 @@
   },
   "server": {
     "heading": "本地 MCP 服务器",
-    "start_button": "启动",
-    "stop_button": "停止",
+    "start_server_button": "启动服务器",
+    "stop_server_button": "停止服务器",
     "restart_button": "重启",
+    "restart_for_changes_button": "重启以应用更改",
     "apply_button": "应用更改",
-    "copy_url_button": "复制 URL",
+    "copy_server_url_button": "复制服务器 URL",
     "copy_config_button": "复制客户端配置",
     "server_log_button": "服务器日志",
     "more_actions_tooltip": "更多服务器操作",
     "status_error": "错误",
     "changes_not_applied_short": "更改未应用",
+    "changes_need_restart_short": "重启以应用工具变更",
     "no_calls": "已连接客户端的工具调用将显示在这里。",
     "call_status_running": "运行中",
     "call_status_success": "成功",

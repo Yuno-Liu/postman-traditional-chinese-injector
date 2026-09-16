@@ -159,6 +159,12 @@
     "description": "我们正在尝试与我们的服务器建立连接。在您连接之前，您的数据可能不是最新的。",
     "reload": "重新加载"
   },
+  "lazy_editor": {
+    "chunk_load_error": {
+      "message": "无法加载此编辑器。",
+      "reload": "重新加载"
+    }
+  },
   "offline_constants": {
     "title": "无法加载此选项卡",
     "description": "您需要在线才能访问此 工作区 中的所有资源。",

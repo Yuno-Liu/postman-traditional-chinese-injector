@@ -40,7 +40,7 @@
         "organization": "组织",
         "organization_placeholder": "选择组织…",
         "repositories": "仓库",
-        "repositories_hint": "仅显示未归档、未禁用且你拥有推送权限的仓库。",
+        "repositories_availability_hint": "仅显示未归档的仓库。",
         "repository_meta": "仓库",
         "search_placeholder": "搜索仓库…",
         "select_all_shown": "全选当前显示项",
@@ -149,9 +149,11 @@
       "deployments": "部署",
       "endpoints": "端点",
       "external_services": "外部服务",
+      "message_schemas": "消息 Schema",
       "resources": "资源",
       "teams": "团队",
-      "telemetry_configs": "遥测配置"
+      "telemetry_configs": "遥测配置",
+      "topics": "Topic"
     }
   },
   "highlights": {

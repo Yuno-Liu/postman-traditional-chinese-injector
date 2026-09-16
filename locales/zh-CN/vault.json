@@ -184,6 +184,42 @@
         }
       }
     },
+    "azure": {
+      "label": "Azure Key Vault",
+      "fields": {
+        "tenantId": {
+          "label": "目录（租户）ID",
+          "help": "拥有你的 Key Vault 的 Microsoft Entra 目录（租户）。通过此连接关联的所有密钥都会在该目录中进行身份验证。"
+        },
+        "cloud": {
+          "label": "Azure 云环境"
+        }
+      },
+      "auth": {
+        "service_principal": {
+          "label": "服务主体（客户端密钥）",
+          "clientId": {
+            "label": "应用程序（客户端）ID"
+          },
+          "clientSecret": {
+            "label": "客户端密钥"
+          }
+        },
+        "entra_user": {
+          "label": "Microsoft Entra 用户（在此设备上登录）",
+          "clientId": {
+            "label": "自定义应用（客户端）ID",
+            "help": "使用你自己的 Entra 应用。需要配置桌面端重定向 URI 并获得管理员授权。该应用必须注册在此连接所属的目录（租户）中。"
+          }
+        }
+      },
+      "reference": {
+        "secretIdentifier": {
+          "label": "密钥标识符",
+          "help": "从 Azure 门户中该密钥处复制 \"Secret Identifier\"。省略末尾的版本号即可始终读取最新值。"
+        }
+      }
+    },
     "oidc": {
       "launch": {
         "redirecting": "正在跳转到你的身份提供商…",
@@ -321,6 +357,13 @@
       "vault_link_external_text": "已经在使用 密钥 管理器？使用 Postman 进行设置：",
       "primary_button": {
         "text": "打开保险库"
+      },
+      "keychain": {
+        "button": {
+          "text": "使用系统密码管理器解锁"
+        },
+        "absent": "系统密码管理器中未保存 Vault 密钥。请手动输入密钥以解锁 Vault。",
+        "error": "无法从系统密码管理器获取 Vault 密钥。请重试，或手动输入密钥。"
       },
       "reset_vault": {
         "help_text": "找不到钥匙？",
@@ -582,10 +625,12 @@
   },
   "container_main": {
     "error": {
-      "message": "出了点问题。"
+      "message": "出了点问题。",
+      "key_mismatch": "此设备上存储的密钥是用另一个 Vault 密钥加密的，Postman 无法打开。数据并未被删除。可刷新后重试，或清空后用当前密钥重新开始。"
     },
     "button": {
       "refresh": "刷新",
+      "clear_vault": "清空 Vault",
       "settings": "设置",
       "set_up_hashicorp": "设置 HashiCorp 集成"
     },

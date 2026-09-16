@@ -251,7 +251,9 @@
       },
       "code_based_mock": {
         "card_label": "Mock 服务",
-        "info_text": "创建 Mock"
+        "info_text": "创建 Mock",
+        "offline_text": "离线状态下无法创建 Mock。",
+        "no_permission_text": "你没有在此 Workspace 中创建 Mock 的权限。"
       },
       "local_mock": {
         "info_text": "编写 Mock 的行为逻辑，可在本地运行或部署为 Mock Server。"
@@ -794,7 +796,12 @@
       "single_collection_selected": "此 Collection 可以从回收站中恢复。",
       "multiple_collection_selected": "已删除的 Collection 可以从回收站中恢复。"
     },
-    "bulk_delete_label": "{count, plural, one {# 个 Collection} other {# 个 Collection}}"
+    "bulk_delete_kind": {
+      "collection": "{count, plural, one {# 个 Collection} other {# 个 Collection}}",
+      "folder": "{count, plural, one {# 个文件夹} other {# 个文件夹}}",
+      "request": "{count, plural, one {# 个请求} other {# 个请求}}",
+      "example": "{count, plural, one {# 个示例} other {# 个示例}}"
+    }
   },
   "dependency": {
     "label": "依赖项"

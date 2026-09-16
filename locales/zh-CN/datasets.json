@@ -315,6 +315,12 @@
         "title": "不支持的文件类型",
         "description": "仅 .csv 和 .json 文件可添加为数据源。"
       },
+      "sample": {
+        "prompt": "刚开始使用？先从示例数据源试试。",
+        "name": "Customers",
+        "description": "包含联系方式、所在地区和账户状态字段的客户资料。",
+        "add_error": "无法添加该示例数据源，请重试。"
+      },
       "enterprise_upgrade": {
         "feature": "{sourceLabel}",
         "heading": "升级到 Enterprise 以连接 {sourceLabel}",
@@ -329,7 +335,8 @@
         "sqlserver": "SQL Server",
         "jdbc": "JDBC 数据源",
         "remote": "公共 URL"
-      }
+      },
+      "add_busy": "另一个数据源仍在添加中，请等待完成后重试。"
     },
     "views": {
       "title": "数据视图",
@@ -538,9 +545,9 @@
       }
     },
     "tabs": {
-      "query": "Query",
-      "authorization": "Authorization",
-      "settings": "Settings"
+      "query": "查询",
+      "authorization": "身份验证",
+      "settings": "设置"
     },
     "query_editor": {
       "beautify": "格式化"

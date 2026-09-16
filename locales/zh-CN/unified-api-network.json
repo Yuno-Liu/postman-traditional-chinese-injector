@@ -31,12 +31,12 @@
     }
   },
   "sidebar": {
-    "heading": "Passport Access",
+    "heading": "Passport 访问",
     "go_home_aria_label": "前往首页"
   },
   "breadcrumb": {
     "aria_label": "面包屑",
-    "api_network": "Passport Access"
+    "api_network": "Passport 访问"
   },
   "modal": {
     "close_aria_label": "关闭弹窗"
@@ -147,7 +147,7 @@
   },
   "access_requests": {
     "breadcrumb": {
-      "api_network": "Passport Access",
+      "api_network": "Passport 访问",
       "access_management": "访问管理",
       "requests": "请求"
     },
@@ -340,7 +340,7 @@
     }
   },
   "home": {
-    "title": "Passport Access",
+    "title": "Passport 访问",
     "subtitle": "浏览并使用组织中各命名空间和工作区里公开的内容。需要调用实时 API 时可请求凭据。",
     "all_namespaces": "所有命名空间",
     "show_all": "显示所有命名空间",

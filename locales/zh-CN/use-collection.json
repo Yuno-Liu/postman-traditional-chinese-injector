@@ -12,6 +12,18 @@
     "title": "Fork 现已并入 Use",
     "description": "可以把 Collection 作为依赖来使用，也可以将其 Fork 到你的 Workspace 中。"
   },
+  "count": {
+    "tooltip": "{count, plural, =1 {# 次使用} other {# 次使用}}",
+    "offline_tooltip": "需要联网才能查看使用情况",
+    "dependency_heading": "作为依赖使用",
+    "fork_heading": "作为 Fork 使用（{count}）",
+    "show_more": "显示更多",
+    "empty": "暂无 Fork 或依赖",
+    "error": "无法加载使用情况",
+    "dependency_error": "无法加载依赖",
+    "fork_error": "无法加载 Fork",
+    "retry": "重试"
+  },
   "use_as": {
     "label": "使用方式",
     "fork": {

@@ -98,6 +98,7 @@
       "autosave_explanation": "自动保存对您的请求和 Collection 的更改。",
       "autosave_explanation_only_requests": "自动保存对您的请求的更改。",
       "send_anonymous_data": "将匿名使用数据发送至 Postman",
+      "send_anonymous_data_managed": "已被你所在组织的 Postman 安装设置关闭。",
       "connection_mode": "连接方式",
       "connection_mode_explanation": "配置应用程序连接到 Postman 服务器的方式。",
       "connection_mode_auto": "自动",

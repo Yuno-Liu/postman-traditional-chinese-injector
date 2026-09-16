@@ -10,6 +10,7 @@
     "local_mode": "本地模式",
     "switch_to": "切换到",
     "postman_cloud": "Postman 云",
+    "switch_to_cloud_failed": "切换到云端视图失败",
     "push_to_postman_cloud": "推送到 Postman 云",
     "pull_from_postman_cloud": "从 Postman 云中拉取",
     "type_branch_name": "输入 分支 名称..."
@@ -387,19 +388,17 @@
     "cloud_validation_banner": {
       "local": {
         "title": "此 mock 无法推送到云端",
-        "body_pm_state": "云模拟不支持 pm.state。更新您的处理程序，然后再次推送。",
         "body_disallowed_packages": "请使用 pm.require() 而不是 require() 来加载第三方库（{packages}）。更新您的处理程序，然后再次推送。",
         "body_blocked_builtins": "Mock 处理程序中禁止使用以下 Node 内置模块，必须将其移除：{packages}。请更新处理程序后重新推送。",
         "body_invalid_pm_require": "pm.require() 需要传入字符串字面量形式的包名（例如 pm.require('lodash')）。请更新处理程序后重新推送。",
-        "body_combined": "云模拟不支持 pm.state，且以下模块无法在云端加载：{packages}。请对第三方库使用 pm.require()，移除被禁用的内置模块（如 fs），并保持处理程序无状态，然后再次推送。"
+        "body_combined": "以下模块无法在云端加载：{packages}。第三方库请改用 pm.require()，并移除被禁用的内置模块（如 fs），然后重新推送。"
       },
       "cloud": {
         "title": "这个 mock 不会在云端运行",
-        "body_pm_state": "云模拟不支持 pm.state。更新您的处理程序，然后再次保存。",
         "body_disallowed_packages": "请使用 pm.require() 而不是 require() 来加载第三方库（{packages}）。更新您的处理程序，然后再次保存。",
         "body_blocked_builtins": "Mock 处理程序中禁止使用以下 Node 内置模块，必须将其移除：{packages}。请更新处理程序后重新保存。",
         "body_invalid_pm_require": "pm.require() 需要传入字符串字面量形式的包名（例如 pm.require('lodash')）。请更新处理程序后重新保存。",
-        "body_combined": "云模拟不支持 pm.state，且以下模块无法在云端加载：{packages}。请对第三方库使用 pm.require()，移除被禁用的内置模块（如 fs），并保持处理程序无状态，然后再次保存。",
+        "body_combined": "以下模块无法在云端加载：{packages}。第三方库请改用 pm.require()，并移除被禁用的内置模块（如 fs），然后重新保存。",
         "redeploy_note": "在处理程序修复之前，保存和重新部署将被阻止。"
       }
     },
@@ -661,5 +660,63 @@
     "desktop_only_note": "<0>注意</0><1>：原生 Git 支持仅在桌面应用中可用。</1>",
     "download_desktop_app": "下载桌面应用",
     "open_desktop_app": "打开桌面应用"
+  },
+  "get_started": {
+    "heading": "开始使用",
+    "description": "充分利用 Postman 的原生 Git 支持。",
+    "action_failed": "无法完成该操作",
+    "sections": {
+      "setup_git": {
+        "title": "配置 Git",
+        "description": "让 API 变更与代码库保持同步"
+      },
+      "connect_workspace": {
+        "title": "将文件夹连接到 Workspace",
+        "description": "将此文件夹关联到 Workspace，即可与 Postman 云端同步。"
+      },
+      "generate_artifacts": {
+        "title": "生成 API 制品",
+        "description": "使用 Postman AI 生成 Collection、Environment 等内容。"
+      },
+      "pull_from_cloud": {
+        "title": "从云端拉取",
+        "description": "从云端 Workspace 拉取你的 Collection、规范等内容。",
+        "blocked_by_git": "配置 Git 后才能从云端拉取",
+        "blocked_by_connection": "将此文件夹连接到 Workspace 后才能从云端拉取"
+      },
+      "push_to_cloud": {
+        "title": "推送到云端",
+        "description": "将本地变更发布到云端 Workspace。",
+        "blocked_by_git": "配置 Git 后才能推送到云端",
+        "blocked_by_connection": "将此文件夹连接到 Workspace 后才能推送到云端"
+      }
+    },
+    "git_setup": {
+      "steps": {
+        "initialize": "初始化",
+        "configure_remote": "配置远程仓库"
+      },
+      "command_label": "在终端中运行的命令",
+      "remote_url_label": "远程仓库 URL",
+      "remote_url_placeholder": "输入远程仓库 URL",
+      "run_in_terminal": "在终端中运行",
+      "run_disabled_tooltip": "输入远程仓库 URL 后才能运行此命令",
+      "initialize_required_tooltip": "请先完成「初始化」步骤",
+      "run_failed": "无法在终端中运行该命令",
+      "unexpected_error": "发生意外错误",
+      "install_git": "安装 Git",
+      "refresh_status": "重新检查"
+    },
+    "connect": {
+      "cta": "连接",
+      "no_permission_tooltip": "你没有连接到 Workspace 的权限"
+    },
+    "generate_errors": {
+      "no_folder_title": "未选择文件夹",
+      "no_folder_description": "请先打开本地文件夹，再生成 API 制品"
+    }
+  },
+  "diagnostics": {
+    "agent_mode_open_failed": "打开 Agent 模式失败"
   }
 }

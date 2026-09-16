@@ -2,7 +2,6 @@
   "init_failed": "终端初始化失败。请重新加载应用程序。",
   "create_failed": "创建终端失败。",
   "create_failed_retry": "重试",
-  "install_cli_nudge_tip": "安装 Postman CLI？[Tab]",
   "agent_required_title": "Desktop Agent 不可用",
   "agent_required_description": "终端通过 Postman Desktop Agent 在您的计算机上运行。请确保已安装并启动 Desktop Agent，然后连接以在 Postman Web 中使用终端。",
   "agent_required_cta": "使用 Postman Desktop Agent",
