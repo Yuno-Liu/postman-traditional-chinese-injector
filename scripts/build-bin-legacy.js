@@ -40,7 +40,7 @@ const { buildData } = require('./build-data');
 
 const ROOT = path.join(__dirname, '..');
 const target = process.argv[2] || 'node16-win-x64';
-const outfile = path.resolve(ROOT, process.argv[3] || 'dist/postman-chinese-injector-win-x64-legacy.exe');
+const outfile = path.resolve(ROOT, process.argv[3] || 'dist/postman-traditional-chinese-injector-win-x64-legacy.exe');
 const ASAR_LEGACY = '@electron/asar@3'; // v4 要 Node>=22；老基座必须用兼容 Node 12+ 的 v3
 
 function run(cmd, args, opts) {
@@ -65,7 +65,7 @@ function main() {
   console.log(`[legacy] 暂存目录: ${stage}`);
   try {
     for (const f of [
-      'postman-chinese-injector.js', 'pm-chinese.js', 'pm-chinese-data.json', 'pm-chinese-src.json',
+      'postman-traditional-chinese-injector.js', 'postman-chinese-injector.js', 'pm-chinese.js', 'pm-chinese-data.json', 'pm-chinese-src.json',
       // Scratch Pad 快照：buildData 已在 ROOT 生成，必须一并带进 staging，否则 pkg 打出的
       // 二进制缺内嵌快照，运行时报「缺少 Scratch Pad 钩子源码 pm-scratchpad-cn.js（且无内嵌快照）」。
       'pm-scratchpad-data.json', 'pm-scratchpad-src.json',
@@ -75,10 +75,10 @@ function main() {
     }
     const rootPkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
     fs.writeFileSync(path.join(stage, 'package.json'), JSON.stringify({
-      name: 'postman-chinese-injector',
+      name: 'postman-traditional-chinese-injector',
       version: rootPkg.version,
-      bin: 'postman-chinese-injector.js',
-      main: 'postman-chinese-injector.js',
+      bin: 'postman-traditional-chinese-injector.js',
+      main: 'postman-traditional-chinese-injector.js',
       // require() 到的 JSON 快照 pkg 会自动纳入；这里再列进 assets 双保险
       pkg: { targets: [target], assets: [
         'pm-chinese-data.json', 'pm-chinese-src.json',

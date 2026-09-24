@@ -31,16 +31,16 @@ jobs:
         run: |
           set -e
           mkdir -p dist
-          build() { bun build ./postman-chinese-injector.js --compile --minify --target="bun-$1" --outfile "dist/$2"; }
-          build windows-x64  postman-chinese-injector-win-x64.exe
-          build linux-x64     postman-chinese-injector-linux-x64
-          build linux-arm64   postman-chinese-injector-linux-arm64
-          build darwin-x64    postman-chinese-injector-macos-x64
-          build darwin-arm64  postman-chinese-injector-macos-arm64
+          build() { bun build ./postman-traditional-chinese-injector.js --compile --minify --target="bun-$1" --outfile "dist/$2"; }
+          build windows-x64  postman-traditional-chinese-injector-win-x64.exe
+          build linux-x64     postman-traditional-chinese-injector-linux-x64
+          build linux-arm64   postman-traditional-chinese-injector-linux-arm64
+          build darwin-x64    postman-traditional-chinese-injector-macos-x64
+          build darwin-arm64  postman-traditional-chinese-injector-macos-arm64
           ls -la dist
 
-      # 老 Windows（Win8.1 / Server 2012 R2+）专用：bun 产物静态链接 ConPTY，在 Win10 1809 以下
-      # 无法加载（Issue #4）。改用 pkg（Node 运行时，动态探测 ConPTY）跨平台打 node16-win-x64。
+      # 老 Windows（Win8.1 / Server 2012 R2+）專用：bun 產物靜態連結 ConPTY，在 Win10 1809 以下
+      # 無法載入（Issue #4）。改用 pkg（Node 執行環境，動態探測 ConPTY）跨平台打 node16-win-x64。
       - name: Build legacy Windows binary (pkg / Node runtime)
         run: |
           set -e
@@ -51,19 +51,19 @@ jobs:
         run: |
           set -e
           # tar.xz 里保留可执行位（bun 产物一般已是 0755，这里兜底）
-          chmod +x dist/postman-chinese-injector-linux-x64 \
-                   dist/postman-chinese-injector-linux-arm64 \
-                   dist/postman-chinese-injector-macos-x64 \
-                   dist/postman-chinese-injector-macos-arm64
+          chmod +x dist/postman-traditional-chinese-injector-linux-x64 \
+                   dist/postman-traditional-chinese-injector-linux-arm64 \
+                   dist/postman-traditional-chinese-injector-macos-x64 \
+                   dist/postman-traditional-chinese-injector-macos-arm64
           # 与本地同一脚本：各文件并行压缩（Windows→zip，其余→tar.xz）
           node scripts/compress-dist.js
           # 脚本默认保留原始二进制（便于本地测试）；CI 只发布压缩包，删掉生二进制
-          rm -f dist/postman-chinese-injector-win-x64.exe \
-                dist/postman-chinese-injector-win-x64-legacy.exe \
-                dist/postman-chinese-injector-linux-x64 \
-                dist/postman-chinese-injector-linux-arm64 \
-                dist/postman-chinese-injector-macos-x64 \
-                dist/postman-chinese-injector-macos-arm64
+          rm -f dist/postman-traditional-chinese-injector-win-x64.exe \
+                dist/postman-traditional-chinese-injector-win-x64-legacy.exe \
+                dist/postman-traditional-chinese-injector-linux-x64 \
+                dist/postman-traditional-chinese-injector-linux-arm64 \
+                dist/postman-traditional-chinese-injector-macos-x64 \
+                dist/postman-traditional-chinese-injector-macos-arm64
           ls -la dist
 
       - name: Build browser extension (zip)
@@ -74,7 +74,7 @@ jobs:
         run: |
           set -e
           cd dist
-          sha256sum postman-chinese-injector-* > SHA256SUMS.txt
+          sha256sum postman-traditional-chinese-injector-* > SHA256SUMS.txt
           cat SHA256SUMS.txt
 
       # 证明这些发行包确实由本仓库的公开工作流从公开源码构建：
@@ -85,12 +85,12 @@ jobs:
         continue-on-error: true
         uses: actions/attest-build-provenance@v2
         with:
-          subject-path: dist/postman-chinese-injector-*
+          subject-path: dist/postman-traditional-chinese-injector-*
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: postman-chinese-injector-binaries
+          name: postman-traditional-chinese-injector-binaries
           path: dist/*
 
       # 本次更新简介：取 tag 注解正文（git tag -a vX.Y.Z -m "..."）拼在固定说明前面，
@@ -117,8 +117,8 @@ jobs:
             解壓得到單檔案後，完全結束 Postman 再執行即可注入；`--restore` 還原。
             （macOS/Linux 解壓後如丟失執行權限：`chmod +x <檔案名>`）
           - **老 Windows**（Win8.1 / Server 2012 R2+，預設版報 `ClosePseudoConsole` 錯誤時）：
-            下載 `postman-chinese-injector-win-x64-legacy.zip`（Node 執行環境打包）。
-          - **網頁版**：下載 `postman-chinese-injector-extension.zip`，解壓後在 Chrome/Edge 用
+            下載 `postman-traditional-chinese-injector-win-x64-legacy.zip`（Node 執行環境打包）。
+          - **網頁版**：下載 `postman-traditional-chinese-injector-extension.zip`，解壓後在 Chrome/Edge 用
             「載入已解壓的擴充功能」載入。
 
           詳見 README。
@@ -145,8 +145,9 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
+          name: postman-traditional-chinese-injector ${{ github.ref_name }}
           # 仅上传二进制与扩展 zip（+ 校验和），不上传 dist/extension 解包目录
           files: |
-            dist/postman-chinese-injector-*
+            dist/postman-traditional-chinese-injector-*
             dist/SHA256SUMS.txt
           body_path: release-notes.md

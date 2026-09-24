@@ -8,16 +8,16 @@ macOS 二進位程式在 Linux CI 上交叉編譯，**未進行 Apple 商業程�
 
 ```bash
 # 1) 移除「下載隔離」屬性
-xattr -dr com.apple.quarantine ./postman-chinese-injector-macos-arm64
+xattr -dr com.apple.quarantine ./postman-traditional-chinese-injector-macos-arm64
 # 2) 進行 ad-hoc 簽署（-s 後面獨立的 - 代表 ad-hoc 身分，前後均有空格，請勿遺漏）
-codesign -s - -f ./postman-chinese-injector-macos-arm64
+codesign -s - -f ./postman-traditional-chinese-injector-macos-arm64
 # 3) 從終端機以 ./ 啟動（視安裝路徑決定是否加 sudo）
-./postman-chinese-injector-macos-arm64
+./postman-traditional-chinese-injector-macos-arm64
 ```
 
-- 驗證簽署成功：`codesign -dv ./postman-chinese-injector-macos-arm64`，輸出包含 `Signature=adhoc` 即可。
+- 驗證簽署成功：`codesign -dv ./postman-traditional-chinese-injector-macos-arm64`，輸出包含 `Signature=adhoc` 即可。
 - `codesign` 提示 **`no identity found`**：通常是因為複製貼上時漏掉了獨立的 `-`（或變成了全形符號），請手動輸入 `-s - -f`。
-- x64（Intel）機型同理，將檔名替換為 `postman-chinese-injector-macos-x64` 即可。
+- x64（Intel）機型同理，將檔名替換為 `postman-traditional-chinese-injector-macos-x64` 即可。
 
 ## 注入時提示 `EPERM: operation not permitted`
 
@@ -27,7 +27,7 @@ codesign -s - -f ./postman-chinese-injector-macos-arm64
 - **移出受保護目錄後再修改**：
   ```bash
   cp -R /Applications/Postman.app ~/Postman.app
-  ./postman-chinese-injector-macos-arm64 --postman-dir ~/Postman.app
+  ./postman-traditional-chinese-injector-macos-arm64 --postman-dir ~/Postman.app
   # 驗證介面變為繁體中文後，再移回 Applications：
   rm -rf /Applications/Postman.app && mv ~/Postman.app /Applications/
   ```

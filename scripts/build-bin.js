@@ -19,7 +19,7 @@
  * 缓存可用 `node scripts/fetch-runtimes.js` 预拉取（在能稳定下载时跑一次即可）。
  *
  * 用法: node scripts/build-bin.js <target> <outfile>
- *   例: node scripts/build-bin.js bun-darwin-x64 dist/postman-chinese-injector-macos-x64
+ *   例: node scripts/build-bin.js bun-darwin-x64 dist/postman-traditional-chinese-injector-macos-x64
  */
 'use strict';
 
@@ -30,7 +30,7 @@ const path = require('path');
 const { buildData } = require('./build-data');
 
 const ROOT = path.join(__dirname, '..');
-const ENTRY = path.join(ROOT, 'postman-chinese-injector.js');
+const ENTRY = path.join(ROOT, 'postman-traditional-chinese-injector.js');
 
 const target = process.argv[2];
 const outfile = process.argv[3];

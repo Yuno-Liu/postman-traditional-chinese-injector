@@ -12,7 +12,7 @@
  *   本身，只在「分发」环节压缩，下载体积约降到 1/4（解压后仍按原大小运行）。
  *
  * 产物（与原二进制并存，不删除原文件，方便本地直接测试）：
- *   - Windows : postman-chinese-injector-win-x64.zip      （双击即可解压）
+ *   - Windows : postman-traditional-chinese-injector-win-x64.zip      （双击即可解压）
  *   - 其它平台: *.tar.xz                                   （体积最小，保留可执行位）
  *
  * 依赖：
@@ -39,16 +39,16 @@ const TAR = IS_WIN
   ? path.join(process.env.SystemRoot || 'C:\\Windows', 'System32', 'tar.exe')
   : 'tar';
 
-// Windows 目标压成 zip；其余压成 tar.xz
+// Windows 目標壓成 zip；其餘壓成 tar.xz
 const WIN_EXES = [
-  'postman-chinese-injector-win-x64.exe',
-  'postman-chinese-injector-win-x64-legacy.exe', // 老系统版（pkg/Node 打包，见 build-bin-legacy.js）
+  'postman-traditional-chinese-injector-win-x64.exe',
+  'postman-traditional-chinese-injector-win-x64-legacy.exe', // 老系統版（pkg/Node 打包，見 build-bin-legacy.js）
 ];
 const UNIX_BINS = [
-  'postman-chinese-injector-linux-x64',
-  'postman-chinese-injector-linux-arm64',
-  'postman-chinese-injector-macos-x64',
-  'postman-chinese-injector-macos-arm64',
+  'postman-traditional-chinese-injector-linux-x64',
+  'postman-traditional-chinese-injector-linux-arm64',
+  'postman-traditional-chinese-injector-macos-x64',
+  'postman-traditional-chinese-injector-macos-arm64',
 ];
 
 function sizeMB(p) {

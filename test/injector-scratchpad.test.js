@@ -1,7 +1,7 @@
 'use strict';
 const { test } = require('node:test');
 const assert = require('node:assert');
-const inj = require('../postman-chinese-injector.js');
+const inj = require('../postman-traditional-chinese-injector.js');
 
 test('scratchpadHookSource 能取到钩子源码', () => {
   const r = inj.scratchpadHookSource();

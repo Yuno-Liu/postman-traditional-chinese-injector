@@ -36,7 +36,7 @@
 
 **網頁版**
 
-1. 前往 [Release](../../releases) 下載 `postman-chinese-injector-extension.zip` 並解壓縮；
+1. 前往 [Release](../../releases) 下載 `postman-traditional-chinese-injector-extension.zip` 並解壓縮；
 2. Chrome / Edge 開啟 `chrome://extensions` → 開啟「開發者模式」；
 3. 點選「載入已解壓的擴充功能」→ 選擇該目錄；
 4. 重新整理 Postman 網頁版，介面即變為繁體中文。
@@ -151,32 +151,33 @@ Postman **登入態**主介面是遠端網頁，走上述的語言包攔截即�
 
 ```
 postman-traditional-chinese-injector/
-├── postman-chinese-injector.js   # 桌面端注入 CLI：建置 / 備份 / 解包 / 注入 / 打包 app.asar，含 --restore
-├── pm-chinese.js                 # 執行階段掛鉤（桌面端與瀏覽器擴充功能共用的唯一核心）
-├── pm-scratchpad-cn.js           # 第二個掛鉤：登出態 Scratch Pad 的 DOM 詞典替換（僅桌面端）
-├── pm-main-cn.js                 # 第三個掛鉤：主行程原生選單 / 對話框中文化（僅桌面端）
+├── postman-traditional-chinese-injector.js # 桌面端注入 CLI：建置 / 備份 / 解包 / 注入 / 打包 app.asar，含 --restore
+├── postman-chinese-injector.js             # 向下相容入口
+├── pm-chinese.js                           # 執行階段掛鉤（桌面端與瀏覽器擴充功能共用的唯一核心）
+├── pm-scratchpad-cn.js                     # 第二個掛鉤：登出態 Scratch Pad 的 DOM 詞典替換（僅桌面端）
+├── pm-main-cn.js                           # 第三個掛鉤：主行程原生選單 / 對話框中文化（僅桌面端）
 ├── locales/
-│   ├── zh-CN/                    # 語言包翻譯源（已全量轉為繁體中文）：每個模組一個 json，可單獨編輯
+│   ├── zh-CN/                              # 語言包翻譯源（已全量轉為繁體中文）：每個模組一個 json，可單獨編輯
 │   │   ├── api-client-core.json
 │   │   └── ...
 │   ├── scratchpad/
-│   │   └── zh-CN.json            # Scratch Pad DOM 詞典（英文整串 → 繁體中文）
+│   │   └── zh-CN.json                      # Scratch Pad DOM 詞典（英文整串 → 繁體中文）
 │   └── main/
-│       └── zh-CN.json            # 主行程原生選單 / 對話框詞典（英文整串 → 繁體中文）
+│       └── zh-CN.json                      # 主行程原生選單 / 對話框詞典（英文整串 → 繁體中文）
 ├── scripts/
-│   ├── convert-to-traditional.js # 一鍵將語言包與詞典轉換為繁體中文工具
-│   ├── build-data.js             # 合併 locales/ 並產生可嵌入二進位程式的快照（見下）
-│   ├── build-scratchpad-dict.js  # 建置 / 維護 Scratch Pad 詞典 locales/scratchpad/zh-CN.json
-│   ├── build-extension.js        # 打包 Chrome/Edge (MV3) 瀏覽器擴充功能，供 Postman 網頁版使用
-│   ├── build-bin.js              # 使用 bun --compile 編譯單檔案二進位執行檔（復用本地快取的執行環境）
-│   ├── build-bin-legacy.js       # 使用 pkg（Node 執行環境）打包舊版 Windows 二進位執行檔
-│   ├── fetch-runtimes.js         # 預先拉取各平台 bun 執行環境至本地快取，避免交叉編譯時線上重複下載
-│   └── compress-dist.js          # 將 dist/ 的二進位程式平行壓縮為發行包（zip / tar.xz）
-├── .github/workflows/            # CI：建立 tag 自動交叉編譯、平行壓縮並發布 Release
-└── package.json                  # bin 命令 postman-chinese-injector、建置腳本、依賴 @electron/asar
+│   ├── convert-to-traditional.js           # 一鍵將語言包與詞典轉換為繁體中文工具
+│   ├── build-data.js                       # 合併 locales/ 並產生可嵌入二進位程式的快照（見下）
+│   ├── build-scratchpad-dict.js            # 建置 / 維護 Scratch Pad 詞典 locales/scratchpad/zh-CN.json
+│   ├── build-extension.js                  # 打包 Chrome/Edge (MV3) 瀏覽器擴充功能，供 Postman 網頁版使用
+│   ├── build-bin.js                        # 使用 bun --compile 編譯單檔案二進位執行檔（復用本地快取的執行環境）
+│   ├── build-bin-legacy.js                 # 使用 pkg（Node 執行環境）打包舊版 Windows 二進位執行檔
+│   ├── fetch-runtimes.js                   # 預先拉取各平台 bun 執行環境至本地快取，避免交叉編譯時線上重複下載
+│   └── compress-dist.js                    # 將 dist/ 的二進位程式平行壓縮為發行包（zip / tar.xz）
+├── .github/workflows/                      # CI：建立 tag 自動交叉編譯、平行壓縮並發布 Release
+└── package.json                            # bin 命令 postman-traditional-chinese-injector、建置腳本、依賴 @electron/asar
 ```
 
-> `build-data.js` 會產生 6 份供 `bun --compile` 靜態內嵌的快照：`pm-chinese-data.json`（語言包合併數據）、`pm-chinese-src.json`（`pm-chinese.js` 原始碼）、`pm-scratchpad-data.json`（Scratch Pad 詞典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 原始碼）、`pm-main-data.json`（主行程菜單詞典）、`pm-main-src.json`（`pm-main-cn.js` 原始碼）。它們皆為建置產物，平時使用 `node postman-chinese-injector.js` 直接注入時不需要，該路徑直接讀取 `locales/` 與本地掛鉤。
+> `build-data.js` 會產生 6 份供 `bun --compile` 靜態內嵌的快照：`pm-chinese-data.json`（語言包合併數據）、`pm-chinese-src.json`（`pm-chinese.js` 原始碼）、`pm-scratchpad-data.json`（Scratch Pad 詞典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 原始碼）、`pm-main-data.json`（主行程菜單詞典）、`pm-main-src.json`（`pm-main-cn.js` 原始碼）。它們皆為建置產物，平時使用 `node postman-traditional-chinese-injector.js` 直接注入時不需要，該路徑直接讀取 `locales/` 與本地掛鉤。
 
 ---
 
@@ -188,13 +189,13 @@ postman-traditional-chinese-injector/
 
 | 平台 | 下載檔案 | 解壓縮後 |
 |------|----------|--------|
-| Windows x64 | `postman-chinese-injector-win-x64.zip` | `postman-chinese-injector-win-x64.exe` |
-| Windows x64（舊版系統） | `postman-chinese-injector-win-x64-legacy.zip` | `postman-chinese-injector-win-x64-legacy.exe` |
-| Linux x64 / arm64 | `postman-chinese-injector-linux-x64.tar.xz` / `-arm64.tar.xz` | `postman-chinese-injector-linux-x64` / `-arm64` |
-| macOS x64 / arm64（Apple Silicon） | `postman-chinese-injector-macos-x64.tar.xz` / `-arm64.tar.xz` | `postman-chinese-injector-macos-x64` / `-arm64` |
+| Windows x64 | `postman-traditional-chinese-injector-win-x64.zip` | `postman-traditional-chinese-injector-win-x64.exe` |
+| Windows x64（舊版系統） | `postman-traditional-chinese-injector-win-x64-legacy.zip` | `postman-traditional-chinese-injector-win-x64-legacy.exe` |
+| Linux x64 / arm64 | `postman-traditional-chinese-injector-linux-x64.tar.xz` / `-arm64.tar.xz` | `postman-traditional-chinese-injector-linux-x64` / `-arm64` |
+| macOS x64 / arm64（Apple Silicon） | `postman-traditional-chinese-injector-macos-x64.tar.xz` / `-arm64.tar.xz` | `postman-traditional-chinese-injector-macos-x64` / `-arm64` |
 
 > 壓縮僅為減少下載體積（約降為原來的 1/4），解壓縮後仍以原大小執行。
-> Windows 雙擊 `.zip` 即可解壓縮；Linux / macOS：`tar -xf postman-chinese-injector-*.tar.xz`。
+> Windows 雙擊 `.zip` 即可解壓縮；Linux / macOS：`tar -xf postman-traditional-chinese-injector-*.tar.xz`。
 
 > [!NOTE]
 > **防毒軟體將 exe 誤報為木馬？** 這是單檔案打包工具（bun / pkg）的常見現象，屬於啟發式誤判。核實方法（SHA256 校驗、建置來源證明、VirusTotal）與替代方案請見 [防毒軟體報毒（誤報）說明](#防毒軟體報毒誤報說明)。
@@ -210,8 +211,8 @@ postman-traditional-chinese-injector/
 ```bash
 # 1. 完全結束 Postman
 # 2. 執行注入（自動偵測當前平台的 Postman 安裝目錄）
-./postman-chinese-injector-win-x64.exe          # Windows
-./postman-chinese-injector-linux-x64            # Linux/macOS 先 chmod +x（tar.xz 解壓後通常已保留執行權限）
+./postman-traditional-chinese-injector-win-x64.exe          # Windows
+./postman-traditional-chinese-injector-linux-x64            # Linux/macOS 先 chmod +x（tar.xz 解壓後通常已保留執行權限）
 
 # 3. 重啟 Postman，介面顯示繁體中文即成功
 ```
@@ -225,16 +226,16 @@ postman-traditional-chinese-injector/
 
 ### 方式二：Node 原始碼執行（開發 / 修改譯文）
 
-需要 Node 22.12+（打包 asar 使用 `@electron/asar` v4；更舊的 Node 請將依賴與 `postman-chinese-injector.js` 中的 `ASAR_PKG` 改回 `@electron/asar@3`，可相容 Node 12+）。無需 Python。
+需要 Node 22.12+（打包 asar 使用 `@electron/asar` v4；更舊的 Node 請將依賴與 `postman-traditional-chinese-injector.js` 中的 `ASAR_PKG` 改回 `@electron/asar@3`，可相容 Node 12+）。無需 Python。
 
 ```bash
-npm install                       # 安裝依賴（未安裝時會自動回退 npx，速度較慢）
-node postman-chinese-injector.js  # 注入；或 npm install -g . 後使用 postman-chinese-injector 指令
+npm install                                 # 安裝依賴（未安裝時會自動回退 npx，速度較慢）
+node postman-traditional-chinese-injector.js  # 注入；或 npm install -g . 後使用 postman-traditional-chinese-injector 指令
 ```
 
 ### CLI 選項
 
-以下以 `node postman-chinese-injector.js` 為例；使用二進位程式時替換為該執行檔檔名即可（如 `./postman-chinese-injector-win-x64.exe`）。
+以下以 `node postman-traditional-chinese-injector.js` 為例；使用二進位程式時替換為該執行檔檔名即可（如 `./postman-traditional-chinese-injector-win-x64.exe`）。
 
 | 選項 | 作用 |
 |------|------|
@@ -257,12 +258,12 @@ node postman-chinese-injector.js  # 注入；或 npm install -g . 後使用 post
 > 若無法自動偵測，請使用 `--resources <含 app.asar 或 app/ 的目錄>` 或 `--postman-dir <安裝根目錄>` 手動指定。
 > macOS / Linux 系統層級的安裝目錄可能需要 `sudo` 權限方可寫入。
 
-#### 驗證注入是否成功
+##### 驗證注入是否成功
 
 **① 靜態檢查（無需啟動 Postman）** —— `--status` 唯讀檢查目標 asar 並輸出結論：
 
 ```bash
-node postman-chinese-injector.js --status      # 或 ./postman-chinese-injector-win-x64.exe --status
+node postman-traditional-chinese-injector.js --status      # 或 ./postman-traditional-chinese-injector-win-x64.exe --status
 ```
 
 ```
@@ -302,7 +303,7 @@ npm run build:compress # 選用：將 dist/ 的二進位程式平行壓縮為發
 Bun 產物需要 Win10 1809+；更舊的 Windows 需改用 **Node 執行環境**打包（`pkg`），產物**不靜態連結 ConPTY**，可在舊系統上執行：
 
 ```bash
-npm run build:win-legacy        # → dist/postman-chinese-injector-win-x64-legacy.exe（預設 node16 基底）
+npm run build:win-legacy        # → dist/postman-traditional-chinese-injector-win-x64-legacy.exe（預設 node16 基底）
 # 目標更舊（Server 2012 非 R2 / Win7）可嘗試更舊基底：
 node scripts/build-bin-legacy.js node12-win-x64
 ```
@@ -323,18 +324,18 @@ node scripts/build-bin-legacy.js node12-win-x64
 
   ```powershell
   # Windows PowerShell
-  Get-FileHash .\postman-chinese-injector-win-x64.zip -Algorithm SHA256
+  Get-FileHash .\postman-traditional-chinese-injector-win-x64.zip -Algorithm SHA256
   ```
 
   ```bash
   # macOS / Linux
-  shasum -a 256 postman-chinese-injector-*.tar.xz
+  shasum -a 256 postman-traditional-chinese-injector-*.tar.xz
   ```
 
 - **驗證建置來源證明**：所有二進位發行包**均由 GitHub Actions 從公開原始碼建置**（見 [`.github/workflows/release.yml`](.github/workflows/release.yml)），並具備 [建置來源證明（build provenance）](https://docs.github.com/actions/security-guides/using-artifact-attestations)：
 
   ```bash
-  gh attestation verify postman-chinese-injector-win-x64.zip --repo Yuno-Liu/postman-traditional-chinese-injector
+  gh attestation verify postman-traditional-chinese-injector-win-x64.zip --repo Yuno-Liu/postman-traditional-chinese-injector
   ```
 
 - **上傳至 [VirusTotal](https://www.virustotal.com/) 複查**：少數引擎標紅、主流引擎全綠，為典型的啟發式誤報特徵。
@@ -347,7 +348,7 @@ node scripts/build-bin-legacy.js node12-win-x64
 git clone https://github.com/Yuno-Liu/postman-traditional-chinese-injector.git
 cd postman-traditional-chinese-injector
 npm install
-node postman-chinese-injector.js
+node postman-traditional-chinese-injector.js
 ```
 
 ---
@@ -360,7 +361,7 @@ node postman-chinese-injector.js
 npm run build:ext      # 或 node scripts/build-extension.js
 ```
 
-產物位於 `dist/extension/`（同時產生 `dist/postman-chinese-injector-extension.zip`）：
+產物位於 `dist/extension/`（同時產生 `dist/postman-traditional-chinese-injector-extension.zip`）：
 
 ```
 dist/extension/
@@ -369,7 +370,7 @@ dist/extension/
 └── pm-chinese.js      # 與桌面端共用的同一份執行階段掛鉤
 ```
 
-**安裝方式**
+安裝方式
 
 1. Chrome / Edge 開啟 `chrome://extensions` → 開啟「開發者模式」；
 2. 點選「載入已解壓的擴充功能」→ 選擇 `dist/extension/` 目錄；
@@ -415,10 +416,10 @@ locales/zh-CN/
 此為 `@electron/asar` v4 的限制。將 Node 升級至 22.12+ 即可；若無法升級，請將依賴改回 `@electron/asar@3`。
 
 **Postman 自動更新後又變回英文**
-更新會產生新的版本目錄（不含中文化補丁），重新執行一次 `node postman-chinese-injector.js` 即可。
+更新會產生新的版本目錄（不含中文化補丁），重新執行一次 `node postman-traditional-chinese-injector.js` 即可。
 
 **如何卸載中文化**
-桌面端執行 `node postman-chinese-injector.js --restore`；網頁版在 `chrome://extensions` 移除該擴充功能。
+桌面端執行 `node postman-traditional-chinese-injector.js --restore`；網頁版在 `chrome://extensions` 移除該擴充功能。
 
 ---
 

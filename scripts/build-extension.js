@@ -12,7 +12,7 @@
  *   ├── manifest.json      # MV3；内容脚本 world:MAIN + run_at:document_start
  *   ├── pm-i18n-data.js    # window.__PM_I18N__ = { <module>: {...中文...} }（由 locales/ 合并）
  *   └── pm-chinese.js      # 与桌面端共用的同一份运行时钩子（唯一真源）
- * 并额外打一个 dist/postman-chinese-injector-extension.zip 方便分发 / 上传商店。
+ * 并额外打一个 dist/postman-traditional-chinese-injector-extension.zip 方便分发 / 上传商店。
  *
  * 原理与桌面端一致：内容脚本在页面脚本之前（document_start）于 MAIN world 包装 window.fetch /
  * XMLHttpRequest，拦截 .../_ar-assets/locales/<lang>/<module>.json 语言包响应并 deep-merge 中文。
@@ -32,7 +32,7 @@ const lang = process.argv[2] || 'zh-CN';
 const localesDir = path.join(ROOT, 'locales', lang);
 const hookSrc = path.join(ROOT, 'pm-chinese.js');
 const outDir = path.join(ROOT, 'dist', 'extension');
-const zipPath = path.join(ROOT, 'dist', 'postman-chinese-injector-extension.zip');
+const zipPath = path.join(ROOT, 'dist', 'postman-traditional-chinese-injector-extension.zip');
 
 if (!fs.existsSync(localesDir) || !fs.statSync(localesDir).isDirectory()) {
   console.error(`[错误] 找不到语言目录: ${localesDir}`);
@@ -107,9 +107,9 @@ if (fs.existsSync(spDictPath) && fs.existsSync(spHookPath)) {
 const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
 const manifest = {
   manifest_version: 3,
-  name: 'Postman 中文注入',
+  name: 'Postman 繁體中文注入',
   version: pkg.version || '1.0.0',
-  description: '把中文翻译注入 Postman 网页版（go.postman.co 等），界面变中文。',
+  description: '把繁體中文翻譯注入 Postman 網頁版（go.postman.co 等），介面變繁體中文。',
   content_scripts: [
     {
       matches: ['https://*.postman.co/*', 'https://*.getpostman.com/*', 'https://*.postman.com/*'],
@@ -129,11 +129,16 @@ console.log(`[完成] 扩展已生成: ${path.relative(ROOT, outDir)}（${count}
 try {
   let r;
   if (process.platform === 'win32') {
-    // 用 PowerShell 的 Compress-Archive，把 extension 目录内容放到 zip 根
-    r = spawnSync('powershell', [
-      '-NoProfile', '-Command',
-      `Compress-Archive -Path '${path.join(outDir, '*')}' -DestinationPath '${zipPath}' -Force`
-    ], { stdio: 'inherit' });
+    const tarExe = path.join(process.env.SystemRoot || 'C:\\Windows', 'System32', 'tar.exe');
+    fs.rmSync(zipPath, { force: true });
+    if (fs.existsSync(tarExe)) {
+      r = spawnSync(tarExe, ['-a', '-c', '-f', zipPath, '.'], { cwd: outDir, stdio: 'inherit' });
+    } else {
+      r = spawnSync('powershell', [
+        '-NoProfile', '-Command',
+        `Compress-Archive -Path '${path.join(outDir, '*')}' -DestinationPath '${zipPath}' -Force`
+      ], { stdio: 'inherit' });
+    }
   } else {
     // 用 zip -r，从目录内部打包，使文件位于 zip 根
     fs.rmSync(zipPath, { force: true });

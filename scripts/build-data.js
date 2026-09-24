@@ -11,7 +11,7 @@
  *   ② pm-chinese-src.json  —— 钩子源码 pm-chinese.js 的文本快照（二进制运行时身边没有源文件，
  *      靠它取出钩子源码写进 asar；否则会因 __dirname 指向编译机路径而报「缺少 pm-chinese.js」）。
  *
- * 平时用 `node postman-chinese-injector.js` 注入时不需要它们——那条路直接从 locales/ 与本地 pm-chinese.js 读。
+ * 平时用 `node postman-traditional-chinese-injector.js` 注入时不需要它们——那条路直接从 locales/ 与本地 pm-chinese.js 读。
  *
  * 编译脚本 build-bin.js 会在 `bun build` 前调用本模块的 buildData()，确保两份快照都已生成，
  * 避免单独跑 `npm run build:mac` 等漏掉数据步骤、结果编译出「无内嵌快照」的坏二进制。

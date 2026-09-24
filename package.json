@@ -3,26 +3,26 @@
   "version": "1.7.0",
   "description": "把繁體中文翻譯注入 Postman 桌面端 / 網頁版的非官方第三方中文化工具（跨平台 CLI + 瀏覽器擴充功能）。與 Postman, Inc. 無關。",
   "bin": {
-    "postman-traditional-chinese-injector": "postman-chinese-injector.js",
+    "postman-traditional-chinese-injector": "postman-traditional-chinese-injector.js",
     "postman-chinese-injector": "postman-chinese-injector.js"
   },
-  "main": "postman-chinese-injector.js",
+  "main": "postman-traditional-chinese-injector.js",
   "type": "commonjs",
   "scripts": {
     "test": "node --test",
-    "patch": "node postman-chinese-injector.js",
-    "restore": "node postman-chinese-injector.js --restore",
+    "patch": "node postman-traditional-chinese-injector.js",
+    "restore": "node postman-traditional-chinese-injector.js --restore",
     "convert:tw": "node scripts/convert-to-traditional.js",
     "build:data": "node scripts/build-data.js",
     "build:ext": "node scripts/build-extension.js",
     "build:compress": "node scripts/compress-dist.js",
     "build:runtimes": "node scripts/fetch-runtimes.js",
-    "build:win": "node scripts/build-bin.js bun-windows-x64 dist/postman-chinese-injector-win-x64.exe",
+    "build:win": "node scripts/build-bin.js bun-windows-x64 dist/postman-traditional-chinese-injector-win-x64.exe",
     "build:win-legacy": "node scripts/build-bin-legacy.js",
-    "build:linux": "node scripts/build-bin.js bun-linux-x64 dist/postman-chinese-injector-linux-x64",
-    "build:linux-arm64": "node scripts/build-bin.js bun-linux-arm64 dist/postman-chinese-injector-linux-arm64",
-    "build:mac": "node scripts/build-bin.js bun-darwin-x64 dist/postman-chinese-injector-macos-x64",
-    "build:mac-arm64": "node scripts/build-bin.js bun-darwin-arm64 dist/postman-chinese-injector-macos-arm64",
+    "build:linux": "node scripts/build-bin.js bun-linux-x64 dist/postman-traditional-chinese-injector-linux-x64",
+    "build:linux-arm64": "node scripts/build-bin.js bun-linux-arm64 dist/postman-traditional-chinese-injector-linux-arm64",
+    "build:mac": "node scripts/build-bin.js bun-darwin-x64 dist/postman-traditional-chinese-injector-macos-x64",
+    "build:mac-arm64": "node scripts/build-bin.js bun-darwin-arm64 dist/postman-traditional-chinese-injector-macos-arm64",
     "build": "npm run build:data && npm run build:win && npm run build:linux && npm run build:linux-arm64 && npm run build:mac && npm run build:mac-arm64"
   },
   "engines": {
@@ -32,6 +32,7 @@
     "@electron/asar": "^4.0.0"
   },
   "files": [
+    "postman-traditional-chinese-injector.js",
     "postman-chinese-injector.js",
     "pm-chinese.js",
     "pm-scratchpad-cn.js",
