@@ -5,7 +5,7 @@
   "header": {
     "heading": "回收站",
     "back_to_workspace": "返回",
-    "description": "您有权限访问的 Workspace 中已删除的 {model} 将显示在此处。如果您拥有编辑权限，可以恢复或永久删除这些项目。"
+    "description": "您有权限访问的工作区中已删除的 {model} 将显示在此处。如果您拥有编辑权限，可以恢复或永久删除这些项目。"
   },
   "table": {
     "header": {
@@ -25,7 +25,7 @@
     },
     "empty": {
       "heading": "回收站是空的",
-      "description": "您删除的 Collection 将显示在此处。"
+      "description": "您删除的集合将显示在此处。"
     },
     "blankState": {
       "title": "未找到 {model}",
@@ -35,19 +35,19 @@
   "actions": {
     "delete": {
       "toasts": {
-        "success_body": "Collection {name} 已成功删除。",
-        "success_title": "Collection 已永久删除",
-        "error_body": "无法删除 Collection。",
+        "success_body": "集合 {name} 已成功删除。",
+        "success_title": "集合已永久删除",
+        "error_body": "无法删除集合。",
         "permission_error": "您没有权限删除此 {model}"
       }
     },
     "restore": {
       "toasts": {
         "error_body": "网络似乎出现了问题，请重试。",
-        "error_title": "无法恢复 Collection",
+        "error_title": "无法恢复集合",
         "success_body": "{collection} 现已在 {workspace} 中。",
-        "success_title": "Collection 恢复成功",
-        "success_link": "查看 Collection",
+        "success_title": "集合恢复成功",
+        "success_link": "查看集合",
         "permission_error": "您没有权限恢复此 {model}"
       }
     },
@@ -64,25 +64,25 @@
   },
   "error": {
     "title_primary": "无法加载回收站",
-    "title_secondary": "返回 Workspace",
+    "title_secondary": "返回工作区",
     "message": "网络似乎出现了问题，请刷新或稍后重试。",
     "action": "刷新"
   },
   "delete_permanent": {
-    "title": "永久删除 Collection",
+    "title": "永久删除集合",
     "action": "删除",
     "message": "此操作无法撤销。"
   },
   "collection_recovery_modal": {
     "title": "无法在此处恢复",
     "already_exists": {
-      "description": "{entityTypeText} 已存在于此 Workspace 中。"
+      "description": "{entityTypeText} 已存在于此工作区中。"
     },
     "permission": {
-      "description": "您没有权限将 {entityTypeText} 移动到此 Workspace。"
+      "description": "您没有权限将 {entityTypeText} 移动到此工作区。"
     },
     "workspace_error": {
-      "title": "无法加载更多 Workspace",
+      "title": "无法加载更多工作区",
       "sub_title": "网络似乎出现了问题，请重新加载。",
       "action": "重新加载"
     },
@@ -90,24 +90,24 @@
       "title": "恢复 {collectionName}"
     },
     "body": {
-      "info_text": "为该 Collection 选择一个 Workspace",
+      "info_text": "为该集合选择一个工作区",
       "initial_error": {
-        "title": "无法加载 Workspace",
+        "title": "无法加载工作区",
         "description": "网络似乎出现了问题，请重新加载。",
         "action": "重新加载"
       },
       "workspace_list": {
-        "error_title": "无法加载 Workspace",
+        "error_title": "无法加载工作区",
         "error_subtitle": "网络似乎出现了问题，请重新加载。",
         "action": "重新加载",
-        "search_placeholder": "搜索 Workspace",
-        "no_workspace_title": "未找到 Workspace",
+        "search_placeholder": "搜索工作区",
+        "no_workspace_title": "未找到工作区",
         "no_workspace_description": "请检查拼写或尝试其他搜索词。"
       }
     },
     "footer": {
       "cancel_action": "取消",
-      "restore_action": "恢复 Collection",
+      "restore_action": "恢复集合",
       "restore_action_tooltip": "恢复网络连接后即可执行此操作"
     }
   },
@@ -122,8 +122,8 @@
       "placeholder": "搜索 {model}"
     },
     "workspaces": {
-      "placeholder": "Workspace",
-      "empty_state_message": "未找到 Workspace"
+      "placeholder": "工作区",
+      "empty_state_message": "未找到工作区"
     },
     "deleted_by": {
       "empty_state_message": "未找到用户",

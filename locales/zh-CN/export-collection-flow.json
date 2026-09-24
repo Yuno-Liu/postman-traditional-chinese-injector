@@ -1,10 +1,10 @@
 {
   "export": {
-    "heading": "导出 Collection",
+    "heading": "导出集合",
     "button": {
-      "export": "导出 Collection",
+      "export": "导出集合",
       "fix": "移至 Vault",
-      "export_disabled_tooltip": "正在准备导出 Collection",
+      "export_disabled_tooltip": "正在准备导出集合",
       "export_anyway": "仍然导出"
     },
     "heading_named": "导出“{name}”"
@@ -14,46 +14,46 @@
       "heading": "直接共享，无需发送文件",
       "benefit_1": "通过邀请或链接安全共享，无需传递文件",
       "benefit_2": "使用者始终看到最新版本",
-      "benefit_3": "可在 Collection 上评论和 @提及",
+      "benefit_3": "可在集合上评论和 @提及",
       "button": {
-        "share": "共享 Collection"
+        "share": "共享集合"
       }
     },
     "git": {
       "heading": "无需每次更改都重新导出",
-      "description": "使用 Native Git，Collection 直接存放在你的仓库中：",
-      "benefit_1": "在本地仓库的功能分支上处理 Collection",
-      "benefit_2": "Collection 的更改与其测试的代码在同一个 PR 中发布",
+      "description": "使用 Native Git，集合直接存放在你的仓库中：",
+      "benefit_1": "在本地仓库的功能分支上处理集合",
+      "benefit_2": "集合的更改与其测试的代码在同一个 PR 中发布",
       "benefit_3": "在 Postman 中查看流水线运行结果",
       "button": {
         "connect": "试用 Native Git"
       }
     },
     "other": {
-      "heading": "无论在哪里使用，都让此 Collection 保持最新",
+      "heading": "无论在哪里使用，都让此集合保持最新",
       "benefit_1": "所有人自动基于最新版本工作",
       "benefit_2": "每项更改都可追溯到人",
       "benefit_3": "通过角色和权限控制访问",
       "button": {
-        "share": "共享 Collection",
+        "share": "共享集合",
         "connect": "试用 Native Git"
       }
     }
   },
   "progress": {
-    "aria_label": "正在准备你的 Collection",
+    "aria_label": "正在准备你的集合",
     "steps": {
       "permissions": {
         "active": "正在检查导出权限",
         "done": "已检查导出权限"
       },
       "fetch": {
-        "active": "正在从 Workspace 获取最新版本",
-        "done": "已从 Workspace 获取最新版本"
+        "active": "正在从工作区获取最新版本",
+        "done": "已从工作区获取最新版本"
       },
       "format": {
-        "active": "正在格式化为 Collection Format v2.1",
-        "done": "已格式化为 Collection Format v2.1"
+        "active": "正在格式化为集合格式 v2.1",
+        "done": "已格式化为集合格式 v2.1"
       },
       "scan": {
         "active": "正在扫描凭据",
@@ -62,18 +62,18 @@
     },
     "contents": "{requests, plural, one {# 个请求} other {# 个请求}} · {variables, plural, one {# 个变量} other {# 个变量}} · {folders, plural, one {# 个文件夹} other {# 个文件夹}}",
     "clean": "未发现已知格式的密钥",
-    "detected": "{count, plural, one {在 Collection 中检测到 # 个密钥} other {在 Collection 中检测到 # 个密钥}}",
+    "detected": "{count, plural, one {在集合中检测到 # 个密钥} other {在集合中检测到 # 个密钥}}",
     "detected_description": "不修复直接导出会使其以明文形式保留在 JSON 中。",
     "secured_local": "密钥已安全存入本地 Vault",
     "secured_shared": "密钥已安全存入共享 Vault",
     "secured_description": "我们已将其替换为变量，确保文件中不含敏感信息。",
     "patterns_note": "我们会检查常见提供商的令牌。",
     "learn_more": "了解更多",
-    "ready": "Collection 已准备好导出"
+    "ready": "集合已准备好导出"
   },
   "toast": {
-    "export_success": "Collection 导出成功。",
-    "export_failed": "无法导出此 Collection，请检查 DevTools。",
+    "export_success": "集合导出成功。",
+    "export_failed": "无法导出此集合，请检查 DevTools。",
     "secure_failed": "无法保护检测到的密钥。"
   }
 }

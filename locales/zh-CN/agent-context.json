@@ -10,7 +10,7 @@
     },
     "postman": {
       "connect_aria_label": "将 Postman 连接到 Agent Context Graph",
-      "description": "Postman Workspace、Collection 和 Environment",
+      "description": "Postman 工作区、集合和环境",
       "title": "Postman"
     },
     "github": {
@@ -75,9 +75,9 @@
     "heading": "连接"
   },
   "data_sources": {
-    "base_source_count": "{count, plural, one {默认索引 # 个 Workspace} other {默认索引 # 个 Workspace}}",
+    "base_source_count": "{count, plural, one {默认索引 # 个工作区} other {默认索引 # 个工作区}}",
     "base_source_default_status": "基础数据源默认启用",
-    "base_source_description": "Postman 默认已索引。在连接外部数据源之前，你的 Workspace 会作为 Context Graph 的初始数据。",
+    "base_source_description": "Postman 默认已索引。在连接外部数据源之前，你的工作区会作为 Context Graph 的初始数据。",
     "base_source_title": "基础数据源 - 图谱的基石",
     "description": "这些数据源为 Context Graph 提供数据。Postman 默认已索引，连接更多数据源可丰富图谱，并可设置各数据源的重新索引频率。连接和断开在「Integrations -> Connections」中管理。",
     "heading": "数据源",
@@ -85,10 +85,10 @@
   },
   "landing": {
     "cta": "开始 - 索引 Postman 数据",
-    "description": "索引你的 Postman 数据，将 Workspace 映射为服务、端点和依赖关系。",
+    "description": "索引你的 Postman 数据，将工作区映射为服务、端点和依赖关系。",
     "ingestion_error_description": "无法启动 Postman 索引，请重试。",
     "ingestion_error_title": "Postman 索引失败",
-    "ingestion_success_description": "Postman Workspace 索引已开始。",
+    "ingestion_success_description": "Postman 工作区索引已开始。",
     "ingestion_success_title": "Postman 索引已启动",
     "secondary_description": "接下来，连接 GitHub 和 New Relic 以丰富图谱。",
     "title": "开始构建 Context Graph"
@@ -105,8 +105,8 @@
       "title": "Kubernetes"
     },
     "section_title": "开始构建你的图谱",
-    "workspace_count": "847 个 Postman Workspace",
-    "workspace_description": "目前图谱中只有 Workspace。连接你的工具，让知识图谱真正活起来。"
+    "workspace_count": "847 个 Postman 工作区",
+    "workspace_description": "目前图谱中只有工作区。连接你的工具，让知识图谱真正活起来。"
   },
   "actions": {
     "add": "添加",
@@ -164,7 +164,7 @@
       },
       "ownership_gaps": {
         "title": "归属缺失",
-        "description": "12 个 API 在所有 Workspace 中都没有指定负责人或贡献者。"
+        "description": "12 个 API 在所有工作区中都没有指定负责人或贡献者。"
       },
       "single_points_of_failure": {
         "title": "单点故障",
@@ -197,6 +197,6 @@
     "endpoints": "个端点",
     "external_deps": "个外部依赖",
     "no_sources_connected": "未连接数据源",
-    "workspaces": "个 Workspace"
+    "workspaces": "个工作区"
   }
 }

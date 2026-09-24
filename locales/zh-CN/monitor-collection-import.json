@@ -1,16 +1,16 @@
 {
   "modal": {
     "title": "导入",
-    "paste_label": "粘贴 Collection、API 规范、cURL 命令或 URL",
+    "paste_label": "粘贴集合、API 规范、cURL 命令或 URL",
     "hint_intro": "支持以下格式：",
-    "hint_collection": "Postman Collection JSON 或 API 规范：粘贴原始内容或拖放文件。",
+    "hint_collection": "Postman 集合 JSON 或 API 规范：粘贴原始内容或拖放文件。",
     "hint_curl": "cURL 命令：在此粘贴单条 cURL 命令。",
     "hint_urls": "URL：填写一个或多个 URL，以英文逗号分隔。每个 URL 都会导入为一个 GET 请求。"
   },
   "actions": {
     "cancel": "取消",
     "import": "确认",
-    "upload": "上传 Postman Collection 或 API 规范"
+    "upload": "上传 Postman 集合或 API 规范"
   },
   "shortcuts": {
     "commit": "<0>Shift + Enter</0><1> 导入</1>",
@@ -22,8 +22,8 @@
     "checking_stage": "正在识别格式"
   },
   "errors": {
-    "unrecognised": "格式无效。请粘贴 Collection、API 规范、cURL 命令或 URL。",
-    "unsupported_grpcurl": "暂不支持在此导入 gRPC 请求。请先在侧边栏创建 Collection，再在上方选择它。",
+    "unrecognised": "格式无效。请粘贴集合、API 规范、cURL 命令或 URL。",
+    "unsupported_grpcurl": "暂不支持在此导入 gRPC 请求。请先在侧边栏创建集合，再在上方选择它。",
     "unsupported_file": "所选文件类型无法导入。支持的类型：{extensions}。",
     "unreadable_file": "无法读取所选文件。请尝试直接粘贴其内容。"
   }

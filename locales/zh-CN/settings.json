@@ -50,14 +50,14 @@
         "selected_dir_not_exist": "所选工作目录不存在",
         "dir_cannot_be_configured": "使用浏览器时无法配置工作目录。",
         "allow_reading_files": "读取工作目录之外的文件",
-        "allow_reading_files_explanation": "启用此功能将允许任何第三方 Collection 读取您系统上的任何文件。",
+        "allow_reading_files_explanation": "启用此功能将允许任何第三方集合读取您系统上的任何文件。",
         "dialog_button_label": "选择"
       }
     },
     "headers": {
-      "label": "请求头",
+      "label": "Headers",
       "send_no-cache_header": "发送无缓存标头",
-      "send_postman_header": "发送 Postman 令牌 标头",
+      "send_postman_header": "发送 Postman 令牌标头",
       "retain_headers": "单击链接时保留标题",
       "auto_follow_redirects": "自动遵循重定向"
     },
@@ -95,7 +95,7 @@
     "application": {
       "label": "应用",
       "autosave": "自动保存",
-      "autosave_explanation": "自动保存对您的请求和 Collection 的更改。",
+      "autosave_explanation": "自动保存对您的请求和集合的更改。",
       "autosave_explanation_only_requests": "自动保存对您的请求的更改。",
       "send_anonymous_data": "将匿名使用数据发送至 Postman",
       "send_anonymous_data_managed": "已被你所在组织的 Postman 安装设置关闭。",
@@ -117,7 +117,7 @@
         },
         "web": {
           "open_links_desktop": "始终在桌面应用程序中打开",
-          "open_links_desktop_desc": "自动在桌面应用程序中打开 Workspace 相关链接。如果不可用，链接将在浏览器中打开。"
+          "open_links_desktop_desc": "自动在桌面应用程序中打开工作区相关链接。如果不可用，链接将在浏览器中打开。"
         }
       }
     },
@@ -134,9 +134,9 @@
   "themes": {
     "label": "主题",
     "original_description": "使用适合您心情和风格的颜色来个性化您的体验。",
-    "description": "使用符合您风格的主题来个性化您的体验。手动选择 主题 或与系统设置同步，让机器设置您的白天和夜间主题。",
+    "description": "使用符合您风格的主题来个性化您的体验。手动选择主题或与系统设置同步，让机器设置您的白天和夜间主题。",
     "banners": {
-      "workspace_theme_applied_note": "此 Workspace 有其自己的主题，因此您无法在此处应用或预览所选主题。不用担心，您的偏好将被保存。<1><0>了解更多</0></1>"
+      "workspace_theme_applied_note": "此工作区有其自己的主题，因此您无法在此处应用或预览所选主题。不用担心，您的偏好将被保存。<1><0>了解更多</0></1>"
     },
     "theme_option": {
       "system": "系统默认值",
@@ -146,14 +146,14 @@
       "monokai": "Monokai",
       "ayu_light": "Ayu Light",
       "ayu_dark": "Ayu Dark",
-      "high_contrast_light": "高对比度 浅色",
-      "high_contrast_dark": "高对比度 深色",
+      "high_contrast_light": "高对比度浅色",
+      "high_contrast_dark": "高对比度深色",
       "night_owl_light": "夜猫子浅色",
       "night_owl_dark": "夜猫子深色",
       "solarized_light": "Solarized Light",
       "solarized_dark": "Solarized Dark"
     },
-    "reload_banner_text": "我们在应用 主题 时遇到错误。重新加载页面以重试。 <1>重新加载</1>",
+    "reload_banner_text": "我们在应用主题时遇到错误。重新加载页面以重试。 <1>重新加载</1>",
     "banner_text": "我们在加载主题时遇到问题。 <1>再试一次</1>",
     "mode": "主题选择",
     "mode_options": {
@@ -241,10 +241,10 @@
     "space": "空格",
     "focus_next": "聚焦下一个项目",
     "universal_search_focus": "搜索",
-    "universal_search_in_current_workspace": "在当前 Workspace 中搜索",
-    "environment_selector_focus": "Environment 选择器",
+    "universal_search_in_current_workspace": "在当前工作区中搜索",
+    "environment_selector_focus": "环境选择器",
     "clear_console": "清除控制台",
-    "show_hide_console": "显示/隐藏 控制台",
+    "show_hide_console": "显示/隐藏控制台",
     "trigger_postbot": "打开 Postbot",
     "open_agent_mode": "开启代理模式",
     "open_vault": "打开 Vault",
@@ -275,10 +275,10 @@
   "data": {
     "label": "数据",
     "export_data": {
-      "label": "导出 Collection 和 Environment",
-      "description": "将所有 Collection 和 Environment 导出到单个转储文件。",
+      "label": "导出集合和环境",
+      "description": "将所有集合和环境导出到单个转储文件。",
       "exporting_label": "正在导出",
-      "request_data_export_label": "请求 数据导出",
+      "request_data_export_label": "请求数据导出",
       "export_data_success_message": "您的数据已成功导出。",
       "export_data_error_message": "无法导出数据。请检查开发工具。"
     },
@@ -288,8 +288,8 @@
       "upload_files_label": "导入数据文件",
       "format_not_recognised_error": "导入时出错：格式无法识别",
       "import_conflict_modal": {
-        "environment_already_exists": "Environment <0>{name}</0> 已存在。",
-        "collection_already_exists": "Collection <0>{name}</0> 已存在。",
+        "environment_already_exists": "环境 <0>{name}</0> 已存在。",
+        "collection_already_exists": "集合 <0>{name}</0> 已存在。",
         "what_you_like_to_do": "你想做什么？",
         "apply_to_all": "适用于所有",
         "replace": "代替",
@@ -299,7 +299,7 @@
     "scratchpad_data_heading": "便签本数据",
     "migrate_data": {
       "label": "迁移暂存器数据",
-      "description": "将所有便笺本数据迁移并同步到 Workspace。",
+      "description": "将所有便笺本数据迁移并同步到工作区。",
       "migrate_data_button_label": "迁移数据"
     },
     "export_scratchpad_data": {
@@ -312,14 +312,14 @@
     "label": "附加组件",
     "postman_cli": {
       "heading": "Postman CLI",
-      "section_summary": "将 Postman 的强大功能带入您的命令行。运行 Collection、自动化测试并与 CI/CD 工作流程集成。",
+      "section_summary": "将 Postman 的强大功能带入您的命令行。运行集合、自动化测试并与 CI/CD 工作流程集成。",
       "url": "https://www.npmjs.com/package/postman-cli",
       "urlText": "从npm下载",
       "installInTerminalText": "在终端中安装"
     },
     "postman_vscode": {
       "heading": "Postman VS Code 扩展",
-      "section_summary": "发送请求、测试 API 和管理 Collection——所有这些都在您的代码编辑器中进行。也可用于 Cursor、Windsurf 和其他兼容的编辑器。",
+      "section_summary": "发送请求、测试 API 和管理集合——所有这些都在您的代码编辑器中进行。也可用于 Cursor、Windsurf 和其他兼容的编辑器。",
       "url": "https://learning.postman.com/docs/developer/vs-code-extension/install/",
       "urlText": "安装在 VS Code 上"
     },

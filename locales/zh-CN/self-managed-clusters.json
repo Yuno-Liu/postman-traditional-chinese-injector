@@ -31,9 +31,9 @@
     "status": "状态",
     "cluster_id": "运行器 ID",
     "allWorkspaces": "所有工作区",
-    "noWorkspace": "没有 Workspace",
+    "noWorkspace": "没有工作区",
     "unavailableWorkspace": "不可用",
-    "unavailableWorkspaceTooltip": "该 Workspace 可能是私有或已被删除。您无权访问其详细信息。",
+    "unavailableWorkspaceTooltip": "该工作区可能是私有或已被删除。您无权访问其详细信息。",
     "created_by": "创建者：",
     "created_on": "创建于",
     "modified_on": "修改于"

@@ -87,7 +87,7 @@
       "event_driven_automation": {
         "trigger_label": "Postman 事件",
         "title": "事件驱动的自动化",
-        "description": "响应 Postman Events（如 Collection 更新），并自动将分析结果发送给团队。"
+        "description": "响应 Postman Events（如集合更新），并自动将分析结果发送给团队。"
       }
     }
   },
@@ -104,9 +104,9 @@
     "fields": {
       "name_label": "名称",
       "name_placeholder": "例如：审查 PR 中的 API 设计",
-      "workspace_select_workspace": "选择 Workspace",
-      "workspace_no_workspace": "无 Workspace",
-      "workspace_no_results": "未找到 Workspace",
+      "workspace_select_workspace": "选择工作区",
+      "workspace_no_workspace": "无工作区",
+      "workspace_no_results": "未找到工作区",
       "trigger_label": "触发器",
       "github_owner": "所有者",
       "github_owner_placeholder": "选择所有者",
@@ -138,8 +138,8 @@
       "slack_workspace_placeholder": "工作区",
       "slack_channel_label": "频道",
       "slack_channel_placeholder": "输入以搜索频道",
-      "slack_wrong_workspace_toast_title": "Slack Workspace 错误",
-      "slack_wrong_workspace_toast_description": "您选择的频道属于其他 Workspace。请移除现有频道，或重新连接到匹配的 Workspace。",
+      "slack_wrong_workspace_toast_title": "Slack 工作区错误",
+      "slack_wrong_workspace_toast_description": "您选择的频道属于其他工作区。请移除现有频道，或重新连接到匹配的工作区。",
       "delivery_targets_label": "投递目标",
       "add_delivery_target": "添加投递目标",
       "delivery_target_github_pr_comment": "在 Pull Request 中评论",
@@ -166,10 +166,10 @@
       "day_friday": "星期五",
       "day_saturday": "星期六",
       "day_sunday": "星期日",
-      "workspace_label": "Workspace",
-      "workspace_placeholder": "选择 Workspace",
-      "collection_label": "Collection",
-      "collection_placeholder": "选择 Collection",
+      "workspace_label": "工作区",
+      "workspace_placeholder": "选择工作区",
+      "collection_label": "集合",
+      "collection_placeholder": "选择集合",
       "monitor_label": "Monitor",
       "monitor_placeholder": "选择 Monitor",
       "monitor_partial_warning": "部分 Monitor 无法加载，列表可能不完整。",
@@ -213,8 +213,8 @@
     "github_owner_required": "所有者为必填项",
     "github_repo_required": "仓库为必填项",
     "github_branch_required": "分支为必填项",
-    "workspace_required": "请选择 Workspace",
-    "collection_required": "请选择 Collection",
+    "workspace_required": "请选择工作区",
+    "collection_required": "请选择集合",
     "monitor_required": "Monitor 为必填项"
   },
   "run_history": {

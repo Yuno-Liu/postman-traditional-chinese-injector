@@ -35,10 +35,10 @@
     "branch_label": "分支",
     "repository_placeholder": "搜索存储库",
     "branch_placeholder": "搜索分支",
-    "unable_to_load_workspace": "无法加载 Workspace",
+    "unable_to_load_workspace": "无法加载工作区",
     "unable_to_load_repository": "无法加载存储库",
     "unable_to_load_branch": "无法加载分支列表",
-    "tooltip_repository": "请选择 Workspace",
+    "tooltip_repository": "请选择工作区",
     "tooltip_branch": "请选择一个存储库",
     "warning_message": "找不到任何要导入的文件。仔细检查您的存储库和分支。"
   },
@@ -82,14 +82,14 @@
       "button_label": "下一个"
     },
     "service_selection": {
-      "heading": "选择要作为 Collection 导入的服务或应用程序",
+      "heading": "选择要作为集合导入的服务或应用程序",
       "invalid_error_message": "输入的 API 密钥无效",
       "fetching_service_error_message": "获取服务时遇到错误",
       "import_button_label": "导入",
       "back_button_label": "后退"
     },
     "generate_collection": {
-      "toast_error_title": "无法生成 Collection"
+      "toast_error_title": "无法生成集合"
     }
   },
   "generate_collection_options": {
@@ -98,8 +98,8 @@
       "hide": "隐藏导入设置"
     },
     "import_options_content": {
-      "files": "从 {formatName} 文件生成的 Collection 的设置",
-      "data": "从数据生成的 Collection 的设置"
+      "files": "从 {formatName} 文件生成的集合的设置",
+      "data": "从数据生成的集合的设置"
     }
   },
   "api_repo_integration": {
@@ -194,13 +194,13 @@
         "label": "Postman 集合"
       },
       "collection_with_api": {
-        "label_with_format": "{format} 与 Postman Collection",
-        "label": "API 与 Postman Collection",
-        "helper_text": "使用定义文件以及专属的 Collection"
+        "label_with_format": "{format} 与 Postman 集合",
+        "label": "API 与 Postman 集合",
+        "helper_text": "使用定义文件以及专属的集合"
       },
       "specification": {
         "label_with_format": "{format} 规格",
-        "label_with_format_and_collection": "{format} 规范，带有 Postman Collection",
+        "label_with_format_and_collection": "{format} 规范，带有 Postman 集合",
         "label": "API 规格",
         "helper_text": "使用规范文件"
       }
@@ -210,13 +210,13 @@
     "search_placeholder": "搜索文件",
     "header_name": "姓名",
     "header_import_as": "导入为",
-    "header_import_as_tooltip": "默认情况下为 API 导入创建 Collection。您可以通过选择定义文件来导入它。",
+    "header_import_as_tooltip": "默认情况下为 API 导入创建集合。您可以通过选择定义文件来导入它。",
     "file_count": "{count, plural, one {# 个文件} other {# 个文件}}",
     "format": {
       "api": "API",
       "specification": "规格",
       "collection": "集合",
-      "collection_run": "Collection 运行",
+      "collection_run": "集合运行",
       "data_dump": "数据转储",
       "environment": "环境",
       "globals": "全局变量",

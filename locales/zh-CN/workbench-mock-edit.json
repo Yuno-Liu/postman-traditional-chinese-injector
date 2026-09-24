@@ -29,8 +29,8 @@
     "cannot_access_server": "无法访问 Postman 服务器",
     "subtitle": "您的团队已禁用与 Postman 服务的同步。请联系支持团队以恢复使用这些功能。",
     "internet_error": "请检查您的网络连接后重试。",
-    "collection_fetch_error": "获取 Collection 信息时发生错误。",
+    "collection_fetch_error": "获取集合信息时发生错误。",
     "unexpected_error": "发生意外错误，请重试。",
-    "environment_store_error": "获取 Workspace Environment 时发生错误"
+    "environment_store_error": "获取工作区环境时发生错误"
   }
 }

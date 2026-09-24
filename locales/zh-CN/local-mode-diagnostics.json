@@ -24,11 +24,11 @@
     "syntax_error_missing_spec": "workflows.yaml 无效：{workflow}[{index}] 处的条目缺少非空“spec”字段。",
     "syntax_error_missing_collection": "workflows.yaml 无效：{workflow}[{index}] 处的条目缺少非空“collection”字段。",
     "syntax_error_invalid_options": "workflows.yaml 无效：{workflow}[{index}] 处的条目具有无效的“options”（必须是字符串/布尔值的映射）。",
-    "duplicate_entry": "“{workflow}”中存在重复条目：规范“{spec}”和 Collection“{collection}”出现多次。",
+    "duplicate_entry": "“{workflow}”中存在重复条目：规范“{spec}”和集合“{collection}”出现多次。",
     "missing_spec_path": "“{workflow}”引用的规范文件不存在：{path}",
-    "missing_collection_path": "“{workflow}”引用的 Collection 文件不存在：{path}",
-    "missing_counterpart": "规范“{spec}”和 Collection“{collection}”存在于“{fromWorkflow}”中，但在“{toWorkflow}”中缺失。",
-    "options_mismatch": "两个工作流程之间规范“{spec}”和 Collection“{collection}”的选项有所不同。"
+    "missing_collection_path": "“{workflow}”引用的集合文件不存在：{path}",
+    "missing_counterpart": "规范“{spec}”和集合“{collection}”存在于“{fromWorkflow}”中，但在“{toWorkflow}”中缺失。",
+    "options_mismatch": "两个工作流程之间规范“{spec}”和集合“{collection}”的选项有所不同。"
   },
   "header_actions": {
     "fix_issues_button": "修复问题",
@@ -36,8 +36,8 @@
     "fix_issues_disabled_tooltip": "没有可修复的问题"
   },
   "fix_toasts": {
-    "workspace_config_success": "更新了 resources.yaml 中的 Workspace ID",
-    "workspace_config_error": "无法更新 resources.yaml 中的 Workspace ID",
+    "workspace_config_success": "更新了 resources.yaml 中的工作区 ID",
+    "workspace_config_error": "无法更新 resources.yaml 中的工作区 ID",
     "workflows_config_success": "已清理 workflows.yaml",
     "workflows_config_error": "无法清理 workflows.yaml"
   }

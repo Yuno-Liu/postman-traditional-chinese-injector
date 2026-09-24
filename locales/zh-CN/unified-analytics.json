@@ -13,7 +13,7 @@
       "tooltip": {
         "title": "用户分布随时间变化",
         "subtitle": "跟踪团队构成和许可证利用率随时间的变化",
-        "description_1": "此视图展示您团队的用户构成和许可证使用情况随时间的变化，帮助您了解谁有权访问您的 Workspace、Postman 的活跃使用程度，以及可用许可证是否被充分利用。",
+        "description_1": "此视图展示您团队的用户构成和许可证使用情况随时间的变化，帮助您了解谁有权访问您的工作区、Postman 的活跃使用程度，以及可用许可证是否被充分利用。",
         "description_2": "跟踪这些趋势可以揭示增长情况、闲置容量或协作模式的变化。",
         "action_header": "要有效管理用户和许可证，可以考虑：",
         "action_1": "审查不活跃用户，确认其访问权限是否仍然需要",
@@ -31,11 +31,11 @@
           },
           "partner": {
             "label": "合作伙伴",
-            "description": "在团队内任一合作伙伴 Workspace 中拥有查看者/编辑者/管理者席位的用户"
+            "description": "在团队内任一合作伙伴工作区中拥有查看者/编辑者/管理者席位的用户"
           },
           "guests": {
             "label": "访客",
-            "description": "查看 Workspace 及其元素访问角色的用户"
+            "description": "查看工作区及其元素访问角色的用户"
           },
           "unused_licenses": {
             "label": "未使用的许可证",
@@ -48,8 +48,8 @@
       "title": "团队成员参与度随时间变化",
       "tooltip": {
         "title": "团队成员参与度随时间变化",
-        "subtitle": "了解用户如何参与您的 Workspace，有助于您评估用户发现、上手并使用您的 API 的成功程度。",
-        "description_1": "这些指标展示了用户如何与您的 Workspace 交互，以及他们是否能够成功调用 API。",
+        "subtitle": "了解用户如何参与您的工作区，有助于您评估用户发现、上手并使用您的 API 的成功程度。",
+        "description_1": "这些指标展示了用户如何与您的工作区交互，以及他们是否能够成功调用 API。",
         "description_2": "长期跟踪参与度可以揭示上手环节的不足、可用性问题，或改进文档和配置的机会。",
         "action_header": "要提升用户参与度，可以考虑：",
         "action_1": "审查那些调用了 API 却未收到成功响应的用户的上手内容",
@@ -63,19 +63,19 @@
           },
           "api_users": {
             "label": "API 用户",
-            "description": "从团队 Workspace 发起 API 调用的用户，无论响应是否成功。"
+            "description": "从团队工作区发起 API 调用的用户，无论响应是否成功。"
           },
           "new_api_users": {
             "label": "新增 API 用户",
-            "description": "过去 6 个月内首次从团队 Workspace 发起 API 调用的用户。"
+            "description": "过去 6 个月内首次从团队工作区发起 API 调用的用户。"
           },
           "successful_api_users": {
             "label": "成功的 API 用户",
-            "description": "从团队 Workspace 发起 API 调用并收到至少一次成功（2xx）响应的用户。"
+            "description": "从团队工作区发起 API 调用并收到至少一次成功（2xx）响应的用户。"
           },
           "error_only_api_users": {
             "label": "仅出错的 API 用户",
-            "description": "从团队 Workspace 发起 API 调用但只收到非 2xx 响应的用户。"
+            "description": "从团队工作区发起 API 调用但只收到非 2xx 响应的用户。"
           }
         }
       }
@@ -87,7 +87,7 @@
         "subtitle": "API 调用越多越好，但错误则不然。4XX 错误在 Postman 中尤其值得关注，因为它们往往意味着开发者在上手和测试您的 API 时遇到了阻碍。降低 4XX 错误率意味着更多开发者能够顺利上手，产生更多 API 调用，并提升用户满意度。",
         "description_1": "此处也会记录其他错误，但这些错误通常反映的是您 API 本身的技术问题，而非可用性问题。",
         "action_header": "要降低 4XX 错误率，可以考虑：",
-        "action_1": "创建包含身份验证设置分步说明的概览 Collection",
+        "action_1": "创建包含身份验证设置分步说明的概览集合",
         "action_2": "为您的 API 域名设置引导式身份验证",
         "action_3": "使用环境变量，在统一位置为所有请求配置身份验证",
         "legend": {
@@ -111,57 +111,57 @@
       }
     },
     "active_workspaces": {
-      "title": "活跃 Workspace 随时间变化",
+      "title": "活跃工作区随时间变化",
       "tooltip": {
-        "title": "活跃 Workspace 随时间变化",
-        "subtitle": "此图表展示您团队中活跃 Workspace 总数随时间的变化。活跃 Workspace 指所有仍然存在且未被删除的 Workspace。",
-        "description_1": "跟踪活跃 Workspace 有助于您了解团队如何组织工作、如何进行内外部协作，以及 Workspace 使用量随时间增长或趋于稳定的情况。",
-        "description_2": "活跃 Workspace 数量增加通常反映了新项目或协作需求的产生，而稳定或下降的趋势则可能表明整合或清理正在进行。",
-        "action_header": "要有效管理 Workspace，可以考虑：",
-        "action_1": "审查不活跃或未使用的 Workspace，以减少冗余",
-        "action_2": "根据协作需求选择合适的 Workspace 类型",
+        "title": "活跃工作区随时间变化",
+        "subtitle": "此图表展示您团队中活跃工作区总数随时间的变化。活跃工作区指所有仍然存在且未被删除的工作区。",
+        "description_1": "跟踪活跃工作区有助于您了解团队如何组织工作、如何进行内外部协作，以及工作区使用量随时间增长或趋于稳定的情况。",
+        "description_2": "活跃工作区数量增加通常反映了新项目或协作需求的产生，而稳定或下降的趋势则可能表明整合或清理正在进行。",
+        "action_header": "要有效管理工作区，可以考虑：",
+        "action_1": "审查不活跃或未使用的工作区，以减少冗余",
+        "action_2": "根据协作需求选择合适的工作区类型",
         "action_3": "监控增长趋势，以规划治理和访问权限",
-        "action_4": "确保 Workspace 命名清晰、用途明确",
+        "action_4": "确保工作区命名清晰、用途明确",
         "legend": {
           "internal": {
-            "label": "内部 Workspace",
-            "description": "指仅对您和您团队可见的内部 Workspace。它可让您在 Postman 中整理工作，并与团队进行私密协作。"
+            "label": "内部工作区",
+            "description": "指仅对您和您团队可见的内部工作区。它可让您在 Postman 中整理工作，并与团队进行私密协作。"
           },
           "partner": {
-            "label": "合作伙伴 Workspace",
-            "description": "一种仅限受邀加入的 Workspace，用于与外部合作伙伴在共享 API 项目上协作。"
+            "label": "合作伙伴工作区",
+            "description": "一种仅限受邀加入的工作区，用于与外部合作伙伴在共享 API 项目上协作。"
           },
           "private": {
-            "label": "私有 Workspace",
-            "description": "私有 Workspace 是一种受限的 Workspace，其中的 API、Collection 及其他资源仅对 Workspace 所有者和受邀协作者可见。"
+            "label": "私有工作区",
+            "description": "私有工作区是一种受限的工作区，其中的 API、集合及其他资源仅对工作区所有者和受邀协作者可见。"
           },
           "public": {
-            "label": "公共 Workspace",
-            "description": "从团队内 Workspace 发起 API 调用并收到至少一次 2xx 响应的用户"
+            "label": "公共工作区",
+            "description": "从团队内工作区发起 API 调用并收到至少一次 2xx 响应的用户"
           }
         }
       }
     },
     "elements_in_workspaces": {
-      "title": "Workspace 中的元素随时间变化",
+      "title": "工作区中的元素随时间变化",
       "tooltip": {
-        "title": "Workspace 中的元素随时间变化",
+        "title": "工作区中的元素随时间变化",
         "subtitle": "截至报告日期，团队中存在的未删除元素的累计数量。",
-        "description_1": "Workspace 由不同的元素组成，每个元素支撑着您 API 工作流的一部分。查看这些元素的指标有助于您了解 Workspace 的使用情况、团队精力的投入方向，以及需要关注的领域。",
-        "description_2": "活动量高通常意味着该元素正在积极支持开发或协作。活动量低或下降则可能表明配置过时、资源闲置，或存在简化 Workspace 的机会。",
-        "description_3": "请注意，不同元素的使用方式本身就有差异。例如，Monitor 按计划运行，而 Collection 则依赖手动使用。结合具体情境解读指标，有助于您做出更好的决策。",
-        "action_header": "要提升 Workspace 的效能，可以考虑：",
+        "description_1": "工作区由不同的元素组成，每个元素支撑着您 API 工作流的一部分。查看这些元素的指标有助于您了解工作区的使用情况、团队精力的投入方向，以及需要关注的领域。",
+        "description_2": "活动量高通常意味着该元素正在积极支持开发或协作。活动量低或下降则可能表明配置过时、资源闲置，或存在简化工作区的机会。",
+        "description_3": "请注意，不同元素的使用方式本身就有差异。例如，Monitor 按计划运行，而集合则依赖手动使用。结合具体情境解读指标，有助于您做出更好的决策。",
+        "action_header": "要提升工作区的效能，可以考虑：",
         "action_1": "审查活动很少或没有活动的元素，并归档不再使用的内容",
         "action_2": "检查使用频率高的元素，确保它们有文档说明且易于复用",
-        "action_3": "使 Environment 和 Mock 与当前开发阶段保持一致",
+        "action_3": "使环境和 Mock 与当前开发阶段保持一致",
         "action_4": "确保 Monitor 和 Flow 能够反映您最重要的工作流程",
         "legend": {
           "collections": {
-            "label": "Collection",
+            "label": "集合",
             "description": "已保存的一组 API 请求，可供运行和复用。"
           },
           "environments": {
-            "label": "Environment",
+            "label": "环境",
             "description": "一组变量，可让您在测试和生产等不同配置之间切换。"
           },
           "mocks": {
@@ -182,34 +182,34 @@
   },
   "internal": {
     "header": {
-      "title": "内部 Workspace",
-      "subtitle": "查看内部 Workspace 指标和团队协作洞察"
+      "title": "内部工作区",
+      "subtitle": "查看内部工作区指标和团队协作洞察"
     },
     "workspaces_created": {
-      "title": "创建的 Workspace 随时间变化",
+      "title": "创建的工作区随时间变化",
       "tooltip": {
-        "title": "创建的 Workspace 随时间变化",
-        "subtitle": "此图表展示您团队中活跃的共享和私有 Workspace 数量随时间的变化，不包含已删除的 Workspace。",
-        "description_1": "Workspace 数量增加可能表明采用率提高或有新项目产生，而增速放缓则可能表明正在向现有 Workspace 整合。分别查看私有和共享 Workspace，有助于洞察团队内部的协作方式。",
-        "action_header": "要更好地了解 Workspace 增长情况，可以考虑：",
-        "action_1": "审查新建 Workspace 是否有明确的用途",
-        "action_2": "在需要协作时鼓励使用共享 Workspace",
-        "action_3": "清理未使用或不活跃的 Workspace，以减少冗余",
+        "title": "创建的工作区随时间变化",
+        "subtitle": "此图表展示您团队中活跃的共享和私有工作区数量随时间的变化，不包含已删除的工作区。",
+        "description_1": "工作区数量增加可能表明采用率提高或有新项目产生，而增速放缓则可能表明正在向现有工作区整合。分别查看私有和共享工作区，有助于洞察团队内部的协作方式。",
+        "action_header": "要更好地了解工作区增长情况，可以考虑：",
+        "action_1": "审查新建工作区是否有明确的用途",
+        "action_2": "在需要协作时鼓励使用共享工作区",
+        "action_3": "清理未使用或不活跃的工作区，以减少冗余",
         "action_4": "关注长期趋势，以规划团队和项目的增长",
         "legend": {
           "private": {
-            "label": "私有 Workspace",
-            "description": "仅创建者可见的 Workspace，通常用于个人探索、草稿或早期实验。"
+            "label": "私有工作区",
+            "description": "仅创建者可见的工作区，通常用于个人探索、草稿或早期实验。"
           },
           "shared": {
-            "label": "共享 Workspace",
-            "description": "多名团队成员均可访问的 Workspace，通常用于支持协作、共同开发和团队工作流程。"
+            "label": "共享工作区",
+            "description": "多名团队成员均可访问的工作区，通常用于支持协作、共同开发和团队工作流程。"
           }
         }
       }
     },
     "collection_error_rates": {
-      "title": "错误率最高的 Collection",
+      "title": "错误率最高的集合",
       "chart": {
         "legend": {
           "error_4xx": "4XX 错误",
@@ -223,23 +223,23 @@
         }
       },
       "tooltip": {
-        "title": "错误率最高的 Collection",
-        "subtitle": "此视图展示 API 请求失败最频繁的 Collection。",
+        "title": "错误率最高的集合",
+        "subtitle": "此视图展示 API 请求失败最频繁的集合。",
         "description_1": "高错误率可能表明请求配置、身份验证或 API 可靠性存在问题，通常也意味着用户在成功使用您的 API 时遇到了阻碍。",
-        "description_2": "查看这些 Collection 有助于您找出用户可能卡住的环节，并优先改进能够降低错误率、提升上手体验、测试效果和整体 API 可用性的部分。",
-        "action_header": "要降低 Collection 的错误率，可以考虑：",
+        "description_2": "查看这些集合有助于您找出用户可能卡住的环节，并优先改进能够降低错误率、提升上手体验、测试效果和整体 API 可用性的部分。",
+        "action_header": "要降低集合的错误率，可以考虑：",
         "action_1": "检查请求配置、参数和请求头",
         "action_2": "改进身份验证配置和示例",
-        "action_3": "在 Collection 中添加更清晰的文档或使用说明",
-        "action_4": "跨 Environment 测试请求，及早发现配置问题",
+        "action_3": "在集合中添加更清晰的文档或使用说明",
+        "action_4": "跨环境测试请求，及早发现配置问题",
         "legend": {
           "4xx": {
             "label": "4XX 错误占比",
-            "description": "该 Collection 中因 4XX 错误而失败的 API 调用占比。"
+            "description": "该集合中因 4XX 错误而失败的 API 调用占比。"
           },
           "5xx": {
             "label": "5XX 错误占比",
-            "description": "该 Collection 中因 5XX 错误而失败的 API 调用占比。"
+            "description": "该集合中因 5XX 错误而失败的 API 调用占比。"
           }
         }
       }
@@ -247,7 +247,7 @@
   },
   "partner": {
     "header": {
-      "title": "合作伙伴 Workspace",
+      "title": "合作伙伴工作区",
       "subtitle": "查看外部合作伙伴如何上手并使用您的 API 进行协作"
     },
     "filters": {
@@ -265,8 +265,8 @@
       },
       "drilldowns": {
         "total_partners": "已接受邀请的合作伙伴",
-        "workspace_visited": "已访问该合作伙伴 Workspace 的合作伙伴",
-        "viewed_collection": "已查看某个 Collection 或其文档的合作伙伴",
+        "workspace_visited": "已访问该合作伙伴工作区的合作伙伴",
+        "viewed_collection": "已查看某个集合或其文档的合作伙伴",
         "request_sent": "已发送 API 请求的合作伙伴",
         "success_200_ok": "已获得成功 API 响应的合作伙伴"
       },
@@ -277,14 +277,14 @@
         "action_header": "要改善合作伙伴上手体验，可以考虑：",
         "action_1": "审查流失率最高的环节，找出缺失的指引或配置问题",
         "action_2": "改进身份验证和请求相关的文档及示例",
-        "action_3": "在合作伙伴访问 Workspace 或查看 Collection 后提供更明确的后续步骤指引",
+        "action_3": "在合作伙伴访问工作区或查看集合后提供更明确的后续步骤指引",
         "action_4": "长期跟踪进展，以衡量上手体验改进的效果"
       },
       "steps": {
         "label": {
           "total_partners": "合作伙伴总数",
-          "workspace_visited": "已访问 Workspace",
-          "viewed_collection": "已查看 Collection",
+          "workspace_visited": "已访问工作区",
+          "viewed_collection": "已查看集合",
           "request_sent": "已发送请求",
           "success_200_ok": "成功 200 OK"
         }
@@ -304,7 +304,7 @@
         "more_tag": "+ 更多"
       },
       "tooltip": {
-        "description": "合作伙伴从合作伙伴 Workspace 发送的 API 请求"
+        "description": "合作伙伴从合作伙伴工作区发送的 API 请求"
       }
     },
     "monthly_snapshot": {
@@ -530,22 +530,22 @@
       "development": {
         "title": "开发",
         "unit": "工作空间",
-        "tooltip": "选定期间内正在开发的工作空间数量。如果 工作区 具有 Collections、Specs、Mocks 或 流程 创建/更新/删除活动或 SDK 生成，则将其计数。"
+        "tooltip": "选定期间内正在开发的工作空间数量。如果工作区具有集合、Specs、Mocks 或流程创建/更新/删除活动或 SDK 生成，则将其计数。"
       },
       "testing": {
         "title": "测试",
         "unit": "运行",
-        "tooltip": "所选时间段内的总功能测试运行（手动、CLI、CI/CD、计划）和 性能 测试运行（手动、自动）。"
+        "tooltip": "所选时间段内的总功能测试运行（手动、CLI、CI/CD、计划）和性能测试运行（手动、自动）。"
       },
       "production": {
         "title": "生产",
         "unit": "运行",
-        "tooltip": "所选期间内 监控 运行和生产 流程 执行总数。"
+        "tooltip": "所选期间内监控运行和生产流程执行总数。"
       },
       "distribution": {
         "title": "分发",
         "unit": "工作空间",
-        "tooltip": "在选定时间段内通过 私有 API 网络、合作伙伴 工作区和 公开 工作区共享的工作区数量。"
+        "tooltip": "在选定时间段内通过私有 API 网络、合作伙伴工作区和公开工作区共享的工作区数量。"
       },
       "api_management": {
         "title": "API 管理",
@@ -557,7 +557,7 @@
       "title": "开发工作区趋势",
       "testing_title": "测试量趋势",
       "production_title": "API 目录中的工作空间数量",
-      "distribution_title": "已发布的 Workspace 随时间变化",
+      "distribution_title": "已发布的工作区随时间变化",
       "dataset_label": "工作空间",
       "toggle": {
         "by_source": "按来源",
@@ -565,7 +565,7 @@
       },
       "testing_datasets": {
         "collection_runner": "功能测试",
-        "performance_testing": "性能 测试",
+        "performance_testing": "性能测试",
         "manual": "手动",
         "automated": "自动化"
       },
@@ -589,25 +589,25 @@
       },
       "distribution_datasets": {
         "private_api_network": "私有 API 网络",
-        "partner_workspaces": "合作伙伴 工作区",
-        "public_workspaces": "公开 工作区"
+        "partner_workspaces": "合作伙伴工作区",
+        "public_workspaces": "公开工作区"
       },
       "tooltip_total_label": "总计："
     },
     "insight_panels": {
       "collections": {
         "title": "活跃集合",
-        "tooltip": "在选定时间段内进行创建、更新或删除操作的任何 集合。",
+        "tooltip": "在选定时间段内进行创建、更新或删除操作的任何集合。",
         "over_time_title": "活跃集合趋势",
         "list_title": "最受欢迎的集合",
         "value_column": "集合已更新"
       },
       "flows": {
         "title": "活跃流程",
-        "tooltip": "流程 在选定的时间段内进行编辑或执行活动。",
+        "tooltip": "流程在选定的时间段内进行编辑或执行活动。",
         "over_time_title": "活跃流程趋势",
         "list_title": "最流行的流程",
-        "value_column": "流程 已更新"
+        "value_column": "流程已更新"
       },
       "sdks": {
         "title": "生成的 SDK",
@@ -626,7 +626,7 @@
       },
       "mocks": {
         "title": "活跃模拟",
-        "tooltip": "在选定的时间段内具有配置或 请求 活动的 Mock 服务器，包括本地和云模拟。",
+        "tooltip": "在选定的时间段内具有配置或请求活动的 Mock 服务器，包括本地和云模拟。",
         "over_time_title": "活跃模拟趋势",
         "list_title": "最受欢迎的模拟",
         "value_column": "Mock 请求"
@@ -639,7 +639,7 @@
       },
       "functional_tests": {
         "title": "功能测试",
-        "tooltip": "在选定的时间段内运行功能测试 (集合 运行器)，按执行类型细分。",
+        "tooltip": "在选定的时间段内运行功能测试 (集合运行器)，按执行类型细分。",
         "over_time_title": "功能测试趋势",
         "list_title": "最受测试的集合",
         "value_column": "试运行",
@@ -651,13 +651,13 @@
         }
       },
       "performance_tests": {
-        "title": "性能 测试",
-        "tooltip": "性能 测试在选定的时间段内运行，按执行类型细分。",
-        "over_time_title": "性能 测试趋势",
+        "title": "性能测试",
+        "tooltip": "性能测试在选定的时间段内运行，按执行类型细分。",
+        "over_time_title": "性能测试趋势",
         "list_title": "最受测试的集合",
         "value_column": "试运行",
         "datasets": {
-          "performance": "性能 测试"
+          "performance": "性能测试"
         }
       },
       "api_catalog": {
@@ -668,34 +668,34 @@
       },
       "active_monitors": {
         "title": "活跃监控",
-        "over_time_title": "监控 运行趋势",
+        "over_time_title": "监控运行趋势",
         "list_title": "最受欢迎的监控",
-        "value_column": "监控 运行",
+        "value_column": "监控运行",
         "tooltip_unit": "操作"
       },
       "production_flows": {
         "title": "生产流程",
-        "over_time_title": "流程 执行趋势",
+        "over_time_title": "流程执行趋势",
         "list_title": "最流行的流程",
-        "value_column": "流程 执行",
+        "value_column": "流程执行",
         "development_chart_label": "开发",
         "production_chart_label": "生产"
       },
       "private_api_network": {
         "title": "私有 API 网络",
-        "tooltip": "在选定的时间段内通过 私有 API 网络分配的工作空间。",
+        "tooltip": "在选定的时间段内通过私有 API 网络分配的工作空间。",
         "list_title": "顶级工作空间",
         "value_column": "浏览量"
       },
       "partner_workspaces": {
-        "title": "合作伙伴 工作区",
+        "title": "合作伙伴工作区",
         "tooltip": "在选定时间段内与合作伙伴共享的工作空间。",
         "list_title": "顶级工作空间",
         "value_column": "浏览量"
       },
       "public_workspaces": {
-        "title": "公开 工作区",
-        "tooltip": "在选定时间段内发布到 公开 API 网络的工作空间。",
+        "title": "公开工作区",
+        "tooltip": "在选定时间段内发布到公开 API 网络的工作空间。",
         "list_title": "顶级工作空间",
         "value_column": "浏览量"
       }
@@ -707,7 +707,7 @@
       "description": "使用 Postman API 访问此报告的数据。",
       "button": "打开 Postman Analytics API",
       "link_cta": "打开 Postman Analytics API",
-      "button_refresh": "打开 Postman 公共 Workspace",
+      "button_refresh": "打开 Postman 公共工作区",
       "link_cta_refresh": "打开 Postman 公共 API"
     },
     "chart": {
@@ -752,7 +752,7 @@
       "hours_ago": "{count, plural, one {# 小时前} other {# 小时前}}"
     },
     "labels": {
-      "private_user": "私有 用户",
+      "private_user": "私有用户",
       "yes": "是",
       "no": "否"
     },
@@ -775,8 +775,8 @@
       "partner": "合作伙伴",
       "internal": "内部",
       "overview": "概述",
-      "team_members": "团队 成员",
-      "team_overview": "团队 概述",
+      "team_members": "团队成员",
+      "team_overview": "团队概述",
       "billing": "计费"
     },
     "accessibility": {
@@ -785,12 +785,12 @@
       "monthly_snapshot": "每月快照"
     },
     "hidden_labels": {
-      "workspace_name": "工作区 名称被隐藏",
-      "collection_name": "集合 名称被隐藏"
+      "workspace_name": "工作区名称被隐藏",
+      "collection_name": "集合名称被隐藏"
     },
     "hidden_tooltips": {
-      "workspace_name": "在您当前的访问权限下，此 工作区 名称不可见",
-      "collection_name": "在您当前的访问权限下，此 集合 名称不可见"
+      "workspace_name": "在您当前的访问权限下，此工作区名称不可见",
+      "collection_name": "在您当前的访问权限下，此集合名称不可见"
     },
     "view_modes": {
       "total_number": "总数",
@@ -818,7 +818,7 @@
         "created_by": "创建者",
         "invited_by": "邀请者",
         "invite_type": "邀请类型",
-        "invite_date": "邀请 日期",
+        "invite_date": "邀请日期",
         "accepted_on": "接受日期",
         "accepted_by": "接受者",
         "last_active": "最后活跃",
@@ -849,16 +849,16 @@
         "method": "方法",
         "timestamp": "时间戳",
         "type": "类型",
-        "public_profile_enabled": "公开 配置文件已启用"
+        "public_profile_enabled": "公开配置文件已启用"
       }
     },
     "banner": {
       "workspace_data_notice": {
-        "overview": "此仪表板显示来自所有内部、合作伙伴和 公开 工作区的数据。不包括 个人 工作区。数据在每个月月底后刷新。",
-        "internal": "不包括 个人 工作区。数据在每个月月底后刷新。",
-        "partner": "不包括内部和 个人 工作区。数据在每天结束时刷新。"
+        "overview": "此仪表板显示来自所有内部、合作伙伴和公开工作区的数据。不包括个人工作区。数据在每个月月底后刷新。",
+        "internal": "不包括个人工作区。数据在每个月月底后刷新。",
+        "partner": "不包括内部和个人工作区。数据在每天结束时刷新。"
       },
-      "byok_notice": "某些 API 请求 数据不可用，因为为此 团队 启用了自带密钥 (BYOK)。",
+      "byok_notice": "某些 API 请求数据不可用，因为为此团队启用了自带密钥 (BYOK)。",
       "byok_notice_link": "详细了解 BYOK 如何影响分析。"
     },
     "byok": {
@@ -904,7 +904,7 @@
       "metrics": {
         "internal_active_users": {
           "title": "活跃用户",
-          "description": "在内部工作区中查看、创建、编辑、分叉或发送 请求 的用户"
+          "description": "在内部工作区中查看、创建、编辑、分叉或发送请求的用户"
         },
         "active_workspaces": {
           "description": "具有查看、创建、编辑记录或发出过 API 请求的工作区"
@@ -922,18 +922,18 @@
     }
   },
   "sidebar": {
-    "go_to_homepage": "转到主页 — {pageTitle}",
+    "go_to_homepage": "转到主页— {pageTitle}",
     "reports": "报告",
     "ai_report_and_usage": "AI报告及使用",
     "workspaces": "工作空间",
-    "team_and_org": "团队 和组织",
+    "team_and_org": "团队和组织",
     "feature_usage": "API 生命周期",
     "overview": "概述",
     "internal_metrics": "内部工作空间",
-    "partnership_metrics": "合作伙伴 工作区",
-    "public_network_metrics": "公开 工作区",
+    "partnership_metrics": "合作伙伴工作区",
+    "public_network_metrics": "公开工作区",
     "team_overview": "概述",
-    "team_members": "团队 成员",
+    "team_members": "团队成员",
     "billing": "计费",
     "ai_usage": "代理模式",
     "usage_reports": "使用报告"
@@ -962,7 +962,7 @@
       "agent_mode_users": "代理模式用户",
       "agent_mode_users_tooltip": "在选定时间段内使用代理模式的唯一用户总数。",
       "agent_mode_sessions": "代理模式会话",
-      "agent_mode_sessions_tooltip": "在选定时间段内启动的代理模式会话总数。当用户打开代理模式并发送第一个提示时，会话 启动。",
+      "agent_mode_sessions_tooltip": "在选定时间段内启动的代理模式会话总数。当用户打开代理模式并发送第一个提示时，会话启动。",
       "messages_sent": "已发送消息",
       "messages_sent_tooltip": "所选时间段内以代理模式发送的消息总数。",
       "ai_credits_used": "使用的人工智能积分",
@@ -1037,10 +1037,10 @@
   },
   "layout": {
     "toggle": {
-      "hide_left": "隐藏左侧 侧边栏",
-      "show_left": "显示左侧 侧边栏",
-      "hide_right": "隐藏右侧 侧边栏",
-      "show_right": "显示右侧 侧边栏"
+      "hide_left": "隐藏左侧侧边栏",
+      "show_left": "显示左侧侧边栏",
+      "hide_right": "隐藏右侧侧边栏",
+      "show_right": "显示右侧侧边栏"
     }
   }
 }

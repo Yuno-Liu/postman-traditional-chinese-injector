@@ -13,17 +13,17 @@
     "switch_to_cloud_failed": "切换到云端视图失败",
     "push_to_postman_cloud": "推送到 Postman 云",
     "pull_from_postman_cloud": "从 Postman 云中拉取",
-    "type_branch_name": "输入 分支 名称..."
+    "type_branch_name": "输入分支名称..."
   },
   "git_error_modal": {
     "git_not_installed": {
       "heading": "未安装 Git",
-      "content": "<0>您的系统未安装 Git，或 Git 在您的 Shell 中不可用。</0><1>请在 Shell 中安装 Git，以便将项目连接到 Workspace。您可以从 <2>git-scm.com</2> 下载 Git。</1>",
+      "content": "<0>您的系统未安装 Git，或 Git 在您的 Shell 中不可用。</0><1>请在 Shell 中安装 Git，以便将项目连接到工作区。您可以从 <2>git-scm.com</2> 下载 Git。</1>",
       "confirm_button_text": "好的"
     },
     "not_a_git_repo": {
       "heading": "不是 Git 仓库",
-      "content": "<0>此文件夹还不是 Git 仓库。</0><1>请在下方初始化 Git，以将其连接到您的 Workspace。当您准备好从 Postman Cloud 拉取或发布到 Postman Cloud 时，再添加远程源。</1>",
+      "content": "<0>此文件夹还不是 Git 仓库。</0><1>请在下方初始化 Git，以将其连接到您的工作区。当您准备好从 Postman Cloud 拉取或发布到 Postman Cloud 时，再添加远程源。</1>",
       "confirm_button_text": "好的",
       "init_command_hint": "在此文件夹中初始化 Git：",
       "init_command": "git init",
@@ -33,22 +33,22 @@
       "run_in_terminal": "在终端中运行"
     },
     "permission_error": {
-      "heading": "权限 被拒绝",
+      "heading": "权限被拒绝",
       "content": "<0>执行 git 命令的权限被拒绝。</0><1>请检查您的 shell 访问权限并确保您拥有在终端中运行 git 命令所需的权限。</1>",
       "confirm_button_text": "好的"
     },
     "workspace_repo_mismatch": {
-      "heading": "仓库与 Workspace 不匹配",
-      "content": "<0>您文件夹的 Git 远程源与此 Workspace 关联的仓库不匹配。</0><1>请更新远程源，使其与该 Workspace 的仓库保持一致，以便拉取或推送。</1>",
+      "heading": "仓库与工作区不匹配",
+      "content": "<0>您文件夹的 Git 远程源与此工作区关联的仓库不匹配。</0><1>请更新远程源，使其与该工作区的仓库保持一致，以便拉取或推送。</1>",
       "confirm_button_text": "确定",
-      "expected_repo": "此 Workspace 已关联到：{expectedRepo}"
+      "expected_repo": "此工作区已关联到：{expectedRepo}"
     },
-    "workspace_expected_repo": "此 Workspace 已关联到：{expectedRepo}。请使用该远程源设置 Git 以进行同步。"
+    "workspace_expected_repo": "此工作区已关联到：{expectedRepo}。请使用该远程源设置 Git 以进行同步。"
   },
   "git_remote_origin_modal": {
     "heading": "添加远程仓库",
     "description": "此 Git 仓库尚未配置远程源。",
-    "workspace_linked_description": "此 Workspace 已关联到 {expectedRepo}。请将该远程源添加到您的文件夹，以便拉取或推送。",
+    "workspace_linked_description": "此工作区已关联到 {expectedRepo}。请将该远程源添加到您的文件夹，以便拉取或推送。",
     "helper_text": "将仓库连接到远程源可实现协作和云同步。",
     "input_label": "输入远程仓库 URL：",
     "input_placeholder": "https://github.com/username/repo.git",
@@ -65,20 +65,20 @@
     "push_successful": "推送成功",
     "push_completed_with_errors": "推送已完成，但有错误",
     "push_failed": "推送失败",
-    "load_failed": "无法加载 Workspace 数据",
+    "load_failed": "无法加载工作区数据",
     "retry": "重试",
-    "validating_workspace": "正在验证 Workspace...",
+    "validating_workspace": "正在验证工作区...",
     "fixing_validation_issues": "修复验证问题...",
     "generating_push_plan": "正在生成推送计划...",
-    "loading_workspace_data": "正在加载 Workspace 数据...",
+    "loading_workspace_data": "正在加载工作区数据...",
     "pushing_resources": "将资源推送到云端...",
-    "no_workspace_connected": "未连接 Workspace",
+    "no_workspace_connected": "未连接工作区",
     "no_changes_to_push": "{mode} 没有变化",
     "all_entities_in_sync": "所有实体都是最新的",
     "select_all": "选择全部",
     "deselect_all": "取消全选",
     "no_changes_selected": "未选择任何更改",
-    "push_no_permission": "您没有权限将更改推送到此 Workspace。",
+    "push_no_permission": "您没有权限将更改推送到此工作区。",
     "dataset_tooltip": "数据集",
     "dataset_source_tooltip": "源文件",
     "run_using_postman_cli": "使用 Postman CLI 运行",
@@ -94,16 +94,16 @@
     "status_created": "已创建",
     "status_modified": "更新",
     "learn_more": "了解更多",
-    "status_new_tooltip": "该实体存在于本地，但尚未存在于云端 Workspace 中",
+    "status_new_tooltip": "该实体存在于本地，但尚未存在于云端工作区中",
     "status_update_tooltip": "该实体的本地更改可能与云端版本不同",
-    "unsafe_name_tooltip": "文件夹 名称包含不支持的字符。修复它以推送到云端。",
+    "unsafe_name_tooltip": "文件夹名称包含不支持的字符。修复它以推送到云端。",
     "lint_blocked_entity_tooltip": "推送前请先修复校验错误。点击可查看问题详情。",
-    "push_blocked_workspace_lint": "Workspace 配置存在 lint 错误。请先在 Issues 面板中修复后再推送。",
-    "push_blocked_verify_lint": "无法校验 Workspace 的 lint 状态。",
+    "push_blocked_workspace_lint": "工作区配置存在 lint 错误。请先在 Issues 面板中修复后再推送。",
+    "push_blocked_verify_lint": "无法校验工作区的 lint 状态。",
     "push_blocked_all_selected_lint": "所选变更全部存在 lint 错误。请先在 Issues 面板中修复后再推送。",
-    "validation_validating": "正在验证 Workspace 实体...",
+    "validation_validating": "正在验证工作区实体...",
     "validation_fixing": "自动修复验证问题...",
-    "validation_error_fallback": "无法验证 Workspace 实体",
+    "validation_error_fallback": "无法验证工作区实体",
     "validation_issues_count": "{count} 个实体存在验证错误",
     "validation_issues_found": "发现 {count} 个验证问题",
     "push_failed_generic_row": "推送失败。",
@@ -136,7 +136,7 @@
     "simulation_push_failed_toast": "无法推送模拟",
     "simulation_published_label": "已发布",
     "simulation_push_missing_name_toast": "在推送之前给你的模拟命名",
-    "simulation_push_no_workspace_toast": "活动 Workspace 不可用",
+    "simulation_push_no_workspace_toast": "活动工作区不可用",
     "simulation_start_button_label": "开始",
     "simulation_stop_button_label": "停止",
     "simulation_start_button_tooltip": "在 localhost 上运行",
@@ -203,7 +203,7 @@
     "simulation_state_start_title": "暂无状态",
     "simulation_state_start_description": "启动模拟后即可查看各成员 Mock 的 pm.state。",
     "simulation_state_mock_placeholder": "Mock",
-    "simulation_start_no_local_mocks_toast": "此模拟的 Mock 在本地不可用。请添加此 Workspace 中已有的 Mock 后重新启动。",
+    "simulation_start_no_local_mocks_toast": "此模拟的 Mock 在本地不可用。请添加此工作区中已有的 Mock 后重新启动。",
     "simulation_start_cloud_only_members_skipped_toast": "{count} 个成员无法在本地运行（没有本地来源）：{names}",
     "simulation_mock_not_deployed_chip": "Mock 服务未部署",
     "simulation_mock_mode_mock_option": "Mock",
@@ -230,11 +230,11 @@
     "simulation_draft_empty_state_helper": "通过添加 Mock 或使用已有的模拟来创建一个模拟环境",
     "simulation_empty_mocks_read_only_title": "未配置 Mock",
     "simulation_empty_mocks_read_only_description": "此模拟没有任何 Mock 配置。",
-    "simulation_no_workspace_mocks_title": "此 Workspace 中没有 Mock",
+    "simulation_no_workspace_mocks_title": "此工作区中没有 Mock",
     "simulation_no_workspace_mocks_description": "请先创建一个 Code Mock，然后将其添加到此模拟中。",
     "simulation_create_mock_button_label": "创建 Mock",
     "simulation_create_mock_from_template_label": "从模板创建",
-    "simulation_empty_mocks_helper": "尚未添加 Mock。请从此 Workspace 中选择一个 Mock 开始。",
+    "simulation_empty_mocks_helper": "尚未添加 Mock。请从此工作区中选择一个 Mock 开始。",
     "simulation_start_no_mocks_toast": "启动前请至少添加一个 Mock。",
     "simulation_list_beta_badge": "测试版",
     "simulation_list_create_button_label": "创建模拟",
@@ -272,9 +272,9 @@
     "simulation_push_modal_description": "将此模拟推送到实时 URL，以便 API 消费者可以访问其中的任何 mock。",
     "simulation_push_modal_slug_aria_label": "模拟 slug",
     "simulation_push_modal_routing_label": "访问 Mock",
-    "simulation_push_modal_routing_description": "使用 mock 的 slug 来路由你的 请求",
+    "simulation_push_modal_routing_description": "使用 mock 的 slug 来路由你的请求",
     "simulation_push_modal_routing_select_aria_label": "Mock 路由模式",
-    "simulation_push_modal_routing_header_option": "标头",
+    "simulation_push_modal_routing_header_option": "Header",
     "simulation_push_modal_routing_path_option": "URL 路径",
     "simulation_push_modal_routing_example_label": "例子",
     "simulation_push_modal_routing_tooltip": "使用 path 或 header 将请求路由到 Mock。",
@@ -376,12 +376,12 @@
     "cloud_save_in_progress_toast": "请稍候，我们正在保存您的更改",
     "cloud_save_no_changes_toast": "没有要保存的更改",
     "cloud_save_failed_toast": "无法更新 mock",
-    "invalid_syntax_save_blocked_toast": "无法保存：修复 mock 脚本 中的语法错误。 {error}",
+    "invalid_syntax_save_blocked_toast": "无法保存：修复 mock 脚本中的语法错误。 {error}",
     "preview_url_unavailable_toast": "预览 URL 不可用",
-    "cloud_only_tooltip": "在本地 Workspace 模式下打开此 mock 以推送",
+    "cloud_only_tooltip": "在本地工作区模式下打开此 mock 以推送",
     "publish_in_progress_tooltip": "将 mock 推送到云端",
     "mock_not_ready_tooltip": "Mock 仍在加载中",
-    "workspace_unavailable_tooltip": "活动 Workspace 不可用",
+    "workspace_unavailable_tooltip": "活动工作区不可用",
     "url_unavailable_tooltip": "无法生成实时 URL",
     "publish_feature_disabled_tooltip": "您的账户未开启云推送",
     "publish_blocked_by_validation_tooltip": "在推送到云之前修复不受支持的处理程序代码",
@@ -415,9 +415,9 @@
       "copy_url_aria_label": "复制 mock URL",
       "copied_tooltip": "已复制",
       "copy_failed_toast": "复制 URL 失败",
-      "open_in_request_tooltip": "在新的 请求 中打开",
-      "open_in_request_aria_label": "在新的 请求 选项卡中打开 mock URL",
-      "open_request_failed_toast": "无法打开 请求 选项卡"
+      "open_in_request_tooltip": "在新的请求中打开",
+      "open_in_request_aria_label": "在新的请求选项卡中打开 mock URL",
+      "open_request_failed_toast": "无法打开请求选项卡"
     },
     "cloud_mock_info_header": {
       "url_label": "实时 mock URL",
@@ -425,7 +425,7 @@
       "copy_url_aria_label": "复制 mock URL",
       "copied_tooltip": "已复制",
       "copy_failed_toast": "复制 URL 失败",
-      "open_request_failed_toast": "无法打开 请求 选项卡",
+      "open_request_failed_toast": "无法打开请求选项卡",
       "created_by": "创建者：",
       "created": "已创建",
       "updated": "已更新",
@@ -433,8 +433,8 @@
     },
     "cloud_only_mode": {
       "load_failed_toast": "无法加载云 mock",
-      "load_script_failed_toast": "无法加载云 mock 脚本 源",
-      "edit_disabled_toast": "如果没有本地 Workspace 则无法编辑云模拟"
+      "load_script_failed_toast": "无法加载云 mock 脚本源",
+      "edit_disabled_toast": "如果没有本地工作区则无法编辑云模拟"
     },
     "source_update": {
       "refresh_failed_toast": "无法从源刷新此 mock。再试一次。",
@@ -454,12 +454,12 @@
     "auto_gen": {
       "edit_banner_body": "保存更改将关闭此 mock 的自动生成。",
       "edit_banner_dismiss": "关闭",
-      "read_only_save_blocked_toast": "您没有 权限 来编辑此自动生成的 mock。"
+      "read_only_save_blocked_toast": "您没有权限来编辑此自动生成的 mock。"
     },
     "source_link": {
-      "picker_placeholder": "选择 Collection 或 API 规格",
-      "picker_empty": "未找到 Collection 或 API 规格",
-      "no_source_hint": "链接 Collection 或 API 规范以自动生成此 mock。",
+      "picker_placeholder": "选择集合或 API 规格",
+      "picker_empty": "未找到集合或 API 规格",
+      "no_source_hint": "链接集合或 API 规范以自动生成此 mock。",
       "auto_gen_label": "保持这个 mock 从源代码自动生成",
       "auto_gen_helper": "来源发生变化时自动重新生成。"
     }
@@ -468,12 +468,12 @@
     "title": "升级文件",
     "description": "Postman 不再支持本地模式下集合和环境的 JSON。将这些文件升级到 v3 YAML 格式以继续使用它们。",
     "upgrade_button": "升级到 v3",
-    "upgrade_failed_toast": "升级无法完成。请重试。如果这种情况持续存在，请检查 控制台 了解详细信息。",
+    "upgrade_failed_toast": "升级无法完成。请重试。如果这种情况持续存在，请检查控制台了解详细信息。",
     "upgrade_failed_conversion_toast": "{count} 个文件无法升级。确保它是有效的 Postman JSON 导出，然后重试。",
     "upgrade_failed_conversion_toast_plural": "{count} 个文件无法升级。确保它们是有效的 Postman JSON 导出，然后重试。",
     "upgrade_failed_deletion_toast": "升级后无法删除 {count} 个源 JSON 文件。您可以手动将其删除。",
     "upgrade_failed_deletion_toast_plural": "升级后无法删除 {count} 个源 JSON 文件。您可以手动删除它们。",
-    "upgrade_failed_config_toast": "升级期间无法更新 Workspace 配置。请重试升级。",
+    "upgrade_failed_config_toast": "升级期间无法更新工作区配置。请重试升级。",
     "dismiss_button": "关闭"
   },
   "dependencies": {
@@ -481,16 +481,16 @@
       "update_success_title": "依赖项已更新",
       "update_success_message": "{name} 现已更新。",
       "update_error_title": "无法更新依赖项",
-      "update_error_message": "{name} 无法更新。检查 控制台 了解详细信息。",
+      "update_error_message": "{name} 无法更新。检查控制台了解详细信息。",
       "delete_success_title": "依赖项已删除",
-      "delete_success_message": "{name} 已从此 Workspace 中删除。",
+      "delete_success_message": "{name} 已从此工作区中删除。",
       "delete_error_title": "无法删除依赖项",
-      "delete_error_message": "{name} 无法删除。检查 控制台 了解详细信息。"
+      "delete_error_message": "{name} 无法删除。检查控制台了解详细信息。"
     }
   },
   "setup_guide": {
-    "heading": "Workspace 已连接到本地文件夹",
-    "description": "在本地使用此文件夹中的 Collection、规范、Environment 和 Flow 进行工作。当您准备好从 Postman Cloud 拉取或发布到 Postman Cloud 时，再设置 Git。",
+    "heading": "工作区已连接到本地文件夹",
+    "description": "在本地使用此文件夹中的集合、规范、环境和 Flow 进行工作。当您准备好从 Postman Cloud 拉取或发布到 Postman Cloud 时，再设置 Git。",
     "section_title": "设置指南",
     "steps": {
       "local_files": {
@@ -498,12 +498,12 @@
         "button": "选择目录"
       },
       "connect_workspace": {
-        "text": "将文件夹连接到 Workspace",
+        "text": "将文件夹连接到工作区",
         "button": "连接"
       },
       "invite_collaborators": {
-        "text": "邀请协作者加入 Workspace",
-        "description": "邀请团队成员加入此 Workspace 进行协作。如果已配置 Git，我们可以根据您仓库中的贡献者提供建议。",
+        "text": "邀请协作者加入工作区",
+        "description": "邀请团队成员加入此工作区进行协作。如果已配置 Git，我们可以根据您仓库中的贡献者提供建议。",
         "tooltip": "当此文件夹具有 Git 历史记录时，可提供贡献者建议。",
         "button": "邀请团队"
       },
@@ -534,11 +534,11 @@
         "button": "运行"
       },
       "ask_ai": {
-        "text": "要求 AI 基于此项目中的 API 端点创建 集合",
+        "text": "要求 AI 基于此项目中的 API 端点创建集合",
         "button": "询问 AI"
       },
       "pull_from_cloud": {
-        "text": "将云端 Collection 引入本地",
+        "text": "将云端集合引入本地",
         "button": "从云端拉取",
         "disabled_tooltip": "设置 Git 以便从云端拉取"
       },
@@ -549,7 +549,7 @@
       }
     },
     "agent_mode_errors": {
-      "no_folder_title": "未选择 文件夹",
+      "no_folder_title": "未选择文件夹",
       "no_folder_description": "使用代理模式前请先选择文件夹",
       "open_failed_title": "代理模式打开失败",
       "generic_error_description": "发生意外错误"
@@ -583,9 +583,9 @@
     "button_label": "复制链接",
     "button_label_copied": "已复制",
     "tooltip_ready": "通过链接分享您的本地更改",
-    "tooltip_no_directory": "打开 文件夹 来共享本地更改",
-    "tooltip_no_git": "在此 文件夹 中初始化 git 以共享本地更改",
-    "tooltip_no_branch": "分支 信息不可用",
+    "tooltip_no_directory": "打开文件夹来共享本地更改",
+    "tooltip_no_git": "在此文件夹中初始化 git 以共享本地更改",
+    "tooltip_no_branch": "分支信息不可用",
     "tooltip_no_origin": "配置 git 远程（源）以共享本地更改",
     "tooltip_push_in_flight": "推送正在进行中",
     "toast_success_title": "链接已复制到剪贴板",
@@ -593,26 +593,26 @@
     "toast_error_generic_title": "无法共享本地更改",
     "toast_error_generic_description": "出了点问题。请再试一次。",
     "toast_error_create_failed_title": "无法分享您的更改",
-    "toast_error_create_failed_description": "我们无法分享您对此 分支 的本地更改。检查您的连接并重试。",
+    "toast_error_create_failed_description": "我们无法分享您对此分支的本地更改。检查您的连接并重试。",
     "toast_error_push_failed_title": "无法上传您的更改",
     "toast_error_push_failed_description": "推送您的更改时出错。稍后再试一次。",
     "toast_error_preview_title": "无法检查现有共享",
     "toast_error_preview_description": "检查您的连接并重试。",
     "toast_error_clipboard_title": "无法将链接复制到剪贴板",
     "toast_error_clipboard_description": "从共享对话框中手动复制链接。",
-    "toast_conflict_title": "已为此 分支 共享本地更改",
-    "toast_conflict_description_with_creator": "由 {creator} 共享。每个 分支 只允许一份。",
-    "toast_conflict_description_unknown": "每个 分支 只允许一份。",
+    "toast_conflict_title": "已为此分支共享本地更改",
+    "toast_conflict_description_with_creator": "由 {creator} 共享。每个分支只允许一份。",
+    "toast_conflict_description_unknown": "每个分支只允许一份。",
     "button_copy_link": "复制",
     "tooltip_copy_link": "将分享链接复制到剪贴板",
     "create_title": "共享本地更改",
-    "create_description": "通过链接分享您对此 分支 的本地更改。知道链接的任何人都可以在 Postman 中查看它们 - 无需存储库访问权限。",
+    "create_description": "通过链接分享您对此分支的本地更改。知道链接的任何人都可以在 Postman 中查看它们 - 无需存储库访问权限。",
     "sync_title": "同步“{branch}”的更改",
-    "sync_description": "您已经共享了对此 分支 的更改。单击同步以推送最新的本地更改 - 下面的共享链接保持不变。",
+    "sync_description": "您已经共享了对此分支的更改。单击同步以推送最新的本地更改 - 下面的共享链接保持不变。",
     "sync_tooltip": "使用最新更改更新共享链接",
-    "conflict_title": "已为此 分支 共享本地更改",
-    "conflict_description_with_creator": "{creator} 已经共享了对此 分支 的更改。每个 分支 只允许一份。",
-    "conflict_description_unknown": "已为此 分支 共享本地更改。每个 分支 只允许一份。",
+    "conflict_title": "已为此分支共享本地更改",
+    "conflict_description_with_creator": "{creator} 已经共享了对此分支的更改。每个分支只允许一份。",
+    "conflict_description_unknown": "已为此分支共享本地更改。每个分支只允许一份。",
     "dont_show_again": "不要再显示这个",
     "cancel_cta": "取消",
     "share_cta": "分享并复制链接",
@@ -626,15 +626,15 @@
     "toast_synced_title": "更改已同步，链接已复制",
     "toast_synced_description": "将此链接分享给团队成员，以查看你的最新本地更改。",
     "toast_open_draft_failed_title": "无法打开共享更改",
-    "toast_open_draft_failed_description": "尝试从 Workspace 列表中打开它。",
-    "toast_branch_shifted_title": "分支 更改为“{branch}”",
-    "toast_branch_shifted_description": "重新打开复制链接以共享新 分支 的更改。",
+    "toast_open_draft_failed_description": "尝试从工作区列表中打开它。",
+    "toast_branch_shifted_title": "分支更改为“{branch}”",
+    "toast_branch_shifted_description": "重新打开复制链接以共享新分支的更改。",
     "unshare_confirm_title": "取消共享“{branch}”的更改？",
-    "unshare_confirm_message": "这将停止共享您对此 分支 的本地更改。知道该链接的任何人都将失去访问权限。",
+    "unshare_confirm_message": "这将停止共享您对此分支的本地更改。知道该链接的任何人都将失去访问权限。",
     "unshare_confirm_cancel": "取消",
     "unshare_confirm_confirm": "取消分享",
     "toast_unshare_success_title": "更改已取消共享",
-    "toast_unshare_success_description": "您对此 分支 的本地更改不再共享。",
+    "toast_unshare_success_description": "您对此分支的本地更改不再共享。",
     "toast_unshare_error_title": "无法取消共享更改",
     "toast_unshare_error_description": "出了点问题。请再试一次。"
   },
@@ -644,7 +644,7 @@
     "features": {
       "local_first_development": {
         "title": "本地优先开发",
-        "description": "像开发代码库一样在本地开发 API，准备就绪后再发布到你的 Workspace。"
+        "description": "像开发代码库一样在本地开发 API，准备就绪后再发布到你的工作区。"
       },
       "native_git_support": {
         "title": "原生 Git 支持",
@@ -656,7 +656,7 @@
       },
       "enrich_ai_context": {
         "title": "丰富 AI 上下文",
-        "description": "为 Postman AI 提供更丰富的项目上下文，帮助更新 API、测试、Collection 及相关项目文件。"
+        "description": "为 Postman AI 提供更丰富的项目上下文，帮助更新 API、测试、集合及相关项目文件。"
       }
     },
     "learn_more": "详细了解 Postman 的原生 Git 支持",
@@ -675,8 +675,8 @@
         "description": "让 API 变更与代码库保持同步"
       },
       "connect_workspace": {
-        "title": "将文件夹连接到 Workspace",
-        "description": "将此文件夹关联到 Workspace，即可与 Postman 云端同步。"
+        "title": "将文件夹连接到工作区",
+        "description": "将此文件夹关联到工作区，即可与 Postman 云端同步。"
       },
       "run_app_test": {
         "title": "使用 Postman 运行应用测试",
@@ -684,19 +684,19 @@
       },
       "generate_artifacts": {
         "title": "生成 API 制品",
-        "description": "使用 Postman AI 生成 Collection、Environment 等内容。"
+        "description": "使用 Postman AI 生成集合、环境等内容。"
       },
       "pull_from_cloud": {
         "title": "从云端拉取",
-        "description": "从云端 Workspace 拉取你的 Collection、规范等内容。",
+        "description": "从云端工作区拉取你的集合、规范等内容。",
         "blocked_by_git": "配置 Git 后才能从云端拉取",
-        "blocked_by_connection": "将此文件夹连接到 Workspace 后才能从云端拉取"
+        "blocked_by_connection": "将此文件夹连接到工作区后才能从云端拉取"
       },
       "push_to_cloud": {
         "title": "推送到云端",
-        "description": "将本地变更发布到云端 Workspace。",
+        "description": "将本地变更发布到云端工作区。",
         "blocked_by_git": "配置 Git 后才能推送到云端",
-        "blocked_by_connection": "将此文件夹连接到 Workspace 后才能推送到云端"
+        "blocked_by_connection": "将此文件夹连接到工作区后才能推送到云端"
       }
     },
     "git_setup": {
@@ -717,7 +717,7 @@
     },
     "connect": {
       "cta": "连接",
-      "no_permission_tooltip": "你没有连接到 Workspace 的权限"
+      "no_permission_tooltip": "你没有连接到工作区的权限"
     },
     "generate_errors": {
       "no_folder_title": "未选择文件夹",

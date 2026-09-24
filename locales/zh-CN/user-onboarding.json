@@ -8,19 +8,19 @@
   },
   "complete_onboarding": {
     "button": {
-      "text": "进入我的 Workspace"
+      "text": "进入我的工作区"
     }
   },
   "git_repo_connected": {
     "title": "连接本地项目文件夹？",
-    "description": "通过 <bold>Local View</bold> 将 Collection、规范和 Environment 关联到您计算机上的文件夹，并支持离线使用。Git 为可选项，您可以稍后再添加。",
+    "description": "通过 <bold>Local View</bold> 将集合、规范和环境关联到您计算机上的文件夹，并支持离线使用。Git 为可选项，您可以稍后再添加。",
     "yes": "是的",
     "no": "否"
   },
   "select_git_repo_folder": {
     "title": "连接本地文件夹",
     "checking": {
-      "message": "正在检查 Workspace 连接..."
+      "message": "正在检查工作区连接..."
     },
     "connected": {
       "title": "本地文件夹已连接",
@@ -32,20 +32,20 @@
       "button": "选择文件夹"
     },
     "existing": {
-      "title": "文件夹已关联到某个 Workspace",
-      "description": "此文件夹已连接到另一个 Workspace。请选择其他文件夹，或不关联此文件夹继续注册。",
+      "title": "文件夹已关联到某个工作区",
+      "description": "此文件夹已连接到另一个工作区。请选择其他文件夹，或不关联此文件夹继续注册。",
       "selected_folder": "已选择的文件夹：",
       "choose_different_folder": "选择其他文件夹",
       "continue_sign_up": "继续注册"
     },
     "git_not_installed": {
       "title": "未安装 Git",
-      "description": "Git 未安装或在您的 shell 中不可用。请安装 Git，以便将此项目连接到 Workspace。",
+      "description": "Git 未安装或在您的 shell 中不可用。请安装 Git，以便将此项目连接到工作区。",
       "button": "选择文件夹"
     },
     "no_remote_origin": {
       "title": "需要远程源",
-      "description": "此 git 存储库没有配置远程源 URL。请在连接到 Workspace 之前添加远程源。",
+      "description": "此 git 存储库没有配置远程源 URL。请在连接到工作区之前添加远程源。",
       "button": "选择文件夹"
     },
     "non_git_folder": {
@@ -58,12 +58,12 @@
     "duration": "1分钟",
     "steps": "{count} 步骤",
     "title": "欢迎使用 Postman 🚀",
-    "title_team_joiner": "欢迎使用您团队的 Workspace！",
+    "title_team_joiner": "欢迎使用您团队的工作区！",
     "description": "让我们做好准备，以便您可以立即开始工作。",
-    "description_team_joiner": "分享一些关于您自己的详细信息，让 Postman AI 帮助您导航 Workspace。"
+    "description_team_joiner": "分享一些关于您自己的详细信息，让 Postman AI 帮助您导航工作区。"
   },
   "name_and_role": {
-    "title": "让我们个性化您的 Workspace。",
+    "title": "让我们个性化您的工作区。",
     "inline_prefix": "我想",
     "inline_middle": "作为",
     "input": {
@@ -149,7 +149,7 @@
   },
   "prompt": {
     "title": "最后一步，使用 Postman AI 更进一步。",
-    "description": "Postman AI 已经理解您连接的存储库和 Workspace。告诉它你想要构建、探索或生成什么。",
+    "description": "Postman AI 已经理解您连接的存储库和工作区。告诉它你想要构建、探索或生成什么。",
     "input": {
       "placeholder": "从此存储库生成请求、测试或集合..."
     },
@@ -221,13 +221,13 @@
     }
   },
   "redirect_to_workspace_loading_page": {
-    "title": "设置您的 Workspace"
+    "title": "设置您的工作区"
   },
   "toasts": {
     "success": {
       "send_invites": {
         "title": "已发送邀请",
-        "description": "新成员接受您的 邀请 后就会加入。"
+        "description": "新成员接受您的邀请后就会加入。"
       },
       "save_profile": {
         "title": "个人资料已保存",
@@ -235,7 +235,7 @@
       },
       "create_team": {
         "title": "团队创建成功",
-        "description": "当您的 请求 获得批准时，我们会通知您。"
+        "description": "当您的请求获得批准时，我们会通知您。"
       },
       "verified_team_full": {
         "title": "您加入团队的请求正在审核中",
@@ -267,7 +267,7 @@
       },
       "create_team": {
         "title": "团队创建失败",
-        "description": "我们在创建您的团队时遇到了问题。现在，您可以继续使用个人 Workspace。"
+        "description": "我们在创建您的团队时遇到了问题。现在，您可以继续使用个人工作区。"
       },
       "save_name_and_role": {
         "title": "无法保存个人资料",
@@ -295,7 +295,7 @@
       },
       "connect_folder_to_workspace": {
         "title": "出了点问题",
-        "description": "我们无法将您的文件夹连接到您的 Workspace。请再试一次。"
+        "description": "我们无法将您的文件夹连接到您的工作区。请再试一次。"
       },
       "checking_repo_connection_status": {
         "title": "Git 检查失败",

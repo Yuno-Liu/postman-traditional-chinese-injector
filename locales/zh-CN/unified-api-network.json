@@ -53,9 +53,9 @@
   "add_workspaces": {
     "trigger": "添加 API",
     "title": "向 {namespaceName} 添加 API",
-    "subtitle": "搜索并添加你希望在此命名空间中提供的 API。API 通过 Workspace 共享，因此你需要选择一个 Workspace。",
+    "subtitle": "搜索并添加你希望在此命名空间中提供的 API。API 通过工作区共享，因此你需要选择一个工作区。",
     "search_placeholder": "搜索工作区...",
-    "show_accessible_only": "仅显示我可添加的 Workspace",
+    "show_accessible_only": "仅显示我可添加的工作区",
     "empty_state": "未找到工作区",
     "empty_state_no_query": "搜索并添加您的工作区",
     "table": {
@@ -63,13 +63,13 @@
       "team": "团队",
       "tags": "标签",
       "dash": "—",
-      "no_edit_access": "添加此 Workspace 需要编辑者权限"
+      "no_edit_access": "添加此工作区需要编辑者权限"
     },
     "review": {
       "title_add": "审核并添加工作区",
       "title_request": "确认并申请 API",
       "subtitle_add": "这些工作区将被添加到该命名空间。",
-      "subtitle_request": "将添加这些 Workspace 所共享的 API。你的申请将提交审批。",
+      "subtitle_request": "将添加这些工作区所共享的 API。你的申请将提交审批。",
       "comment_label": "备注",
       "comment_placeholder": "为命名空间管理员添加备注"
     },
@@ -134,7 +134,7 @@
     "updated": "更新于 {time}"
   },
   "add_to_namespace_modal": {
-    "heading": "将 Workspace 添加到命名空间",
+    "heading": "将工作区添加到命名空间",
     "loading": "正在加载命名空间...",
     "load_error": "现在无法加载命名空间。",
     "empty": "没有可用的命名空间。",
@@ -179,16 +179,16 @@
       "pending": "请求中"
     },
     "modal": {
-      "title": "请求 访问",
+      "title": "请求访问",
       "close_aria_label": "关闭模式",
       "reason_label": "原因",
       "reason_placeholder": "为什么需要访问权限？",
-      "send": "发送 请求",
+      "send": "发送请求",
       "sending": "正在发送...",
       "toast": {
-        "success_title": "请求 已发送",
-        "success_body": "您用于访问 {workspaceName} 的 请求 已发送。",
-        "error_body": "访问 请求 时出错。"
+        "success_title": "请求已发送",
+        "success_body": "您用于访问 {workspaceName} 的请求已发送。",
+        "error_body": "访问请求时出错。"
       }
     }
   },
@@ -196,8 +196,8 @@
     "actions": {
       "access_requested": "请求访问",
       "access_requested_workspace": "请求访问 {workspaceName}",
-      "request_access": "请求 访问",
-      "request_access_workspace": "请求 访问 {workspaceName}",
+      "request_access": "请求访问",
+      "request_access_workspace": "请求访问 {workspaceName}",
       "options": "{workspaceName} 的选项",
       "remove": "从命名空间中移除",
       "view": "打开",
@@ -207,8 +207,8 @@
     "publisher_verified": "已验证发布者",
     "restricted_access": "访问受限",
     "workspace_type": {
-      "private": "私有 Workspace",
-      "public": "公共 Workspace"
+      "private": "私有工作区",
+      "public": "公共工作区"
     }
   },
   "workspace_card_v2": {
@@ -226,16 +226,16 @@
     "open_overview_aria": "打开 {name} 的概览"
   },
   "remove_workspace": {
-    "title": "移除 Workspace",
-    "heading": "将 Workspace 从命名空间中移除？",
-    "body": "移除后，你的团队将无法在 {namespaceName} 命名空间中发现 {workspaceName}。该 Workspace 不会从你的账号中删除。",
+    "title": "移除工作区",
+    "heading": "将工作区从命名空间中移除？",
+    "body": "移除后，你的团队将无法在 {namespaceName} 命名空间中发现 {workspaceName}。该工作区不会从你的账号中删除。",
     "cancel": "取消",
     "confirm": "移除",
     "removing": "正在移除…",
     "toast": {
-      "success_title": "Workspace 已移除",
+      "success_title": "工作区已移除",
       "success_body": "{workspaceName} 已从 {namespaceName} 中移除。",
-      "error_body": "从命名空间中移除 Workspace 时出错。"
+      "error_body": "从命名空间中移除工作区时出错。"
     }
   },
   "delete_namespace": {
@@ -267,10 +267,10 @@
       "no_description": "无描述",
       "access_level": {
         "open": "团队",
-        "access_by_request": "通过 请求 访问",
+        "access_by_request": "通过请求访问",
         "invite_only": "仅限邀请"
       },
-      "empty_workspaces": "没有 Workspace",
+      "empty_workspaces": "没有工作区",
       "view_workspace": "查看{workspaceName}",
       "actions": {
         "options": "{namespaceName} 的选项",
@@ -280,7 +280,7 @@
         "trigger_label": "查看 {namespaceName} 成员",
         "title_one": "{count} 位成员",
         "title_other": "{count} 成员",
-        "overflow_one": "{count} 更多 成员",
+        "overflow_one": "{count} 更多成员",
         "overflow_other": "{count} 更多成员",
         "managers_section": "管理员",
         "members_section": "成员"
@@ -300,7 +300,7 @@
   "namespace_detail": {
     "empty_state": {
       "title": "此命名空间中还没有 API",
-      "description": "命名空间是一份已批准的 API 清单，通过 Workspace 共享。成员可以申请凭据来使用它们，管理员负责审批、限定范围和撤销访问权限。",
+      "description": "命名空间是一份已批准的 API 清单，通过工作区共享。成员可以申请凭据来使用它们，管理员负责审批、限定范围和撤销访问权限。",
       "cta": "添加 API",
       "show_me_how": "查看操作方法"
     },
@@ -309,9 +309,9 @@
       "description": "添加你希望在此命名空间中提供的 API。经管理员批准后，成员即可申请凭据来使用它们。",
       "steps_title": "如何添加 API",
       "step_1": "选择 <strong>添加 API</strong>。",
-      "step_2": "搜索并选择你希望提供的 <strong>API</strong>。<muted>API 通过 Workspace 共享，因此你需要添加一个 Workspace。</muted>",
+      "step_2": "搜索并选择你希望提供的 <strong>API</strong>。<muted>API 通过工作区共享，因此你需要添加一个工作区。</muted>",
       "step_3": "填写备注并<strong>发送申请</strong>给命名空间管理员。",
-      "step_4": "管理员<strong>批准</strong>申请，并将这些 API 使用的每个<strong>密钥</strong>（其 Environment 中的密码、Token）关联到一个 <strong>Vault 引用</strong>（指向真实密钥的指针）。",
+      "step_4": "管理员<strong>批准</strong>申请，并将这些 API 使用的每个<strong>密钥</strong>（其环境中的密码、Token）关联到一个 <strong>Vault 引用</strong>（指向真实密钥的指针）。",
       "step_5": "这些 API 会显示在此处，成员即可<strong>申请凭据</strong>来使用它们。"
     }
   },
@@ -443,19 +443,19 @@
     },
     "access": {
       "heading": "谁可以访问这个命名空间？",
-      "helper": "选择组织中的用户如何访问其中的命名空间和 Workspace。此后无法更改。",
+      "helper": "选择组织中的用户如何访问其中的命名空间和工作区。此后无法更改。",
       "options": {
         "open": {
           "title": "我的组织中的任何人",
-          "description": "您组织中的任何 成员 将能够看到此命名空间及其内容"
+          "description": "您组织中的任何成员将能够看到此命名空间及其内容"
         },
         "request": {
-          "title": "通过 请求 访问",
-          "description": "您组织中的用户将看到命名空间名称，但需要发送 请求 才能访问其内容"
+          "title": "通过请求访问",
+          "description": "您组织中的用户将看到命名空间名称，但需要发送请求才能访问其内容"
         },
         "invite_only": {
           "title": "仅限邀请",
-          "description": "您组织中的用户将看不到此命名空间。命名空间管理器可以通过 邀请 提供访问权限"
+          "description": "您组织中的用户将看不到此命名空间。命名空间管理器可以通过邀请提供访问权限"
         }
       }
     }

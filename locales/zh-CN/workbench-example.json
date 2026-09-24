@@ -2,7 +2,7 @@
   "editor": {
     "fork_recommendation_tooltip": {
       "title": "创建 Fork 以保存更改",
-      "msg": "您没有权限修改此 Collection。请将该 Collection Fork 到您的 Workspace 后再保存更改。",
+      "msg": "您没有权限修改此集合。请将该集合 Fork 到您的工作区后再保存更改。",
       "action": "创建 Fork 并保存"
     },
     "save": {
@@ -25,7 +25,7 @@
     "send_button_text": "试用",
     "tabs": {
       "params": "参数",
-      "headers": "请求头",
+      "headers": "Headers",
       "body": "请求体"
     },
     "content_pane": {
@@ -123,7 +123,7 @@
           "detail": "此情况需要多个状态码，单一状态码不足以说明问题。"
         },
         "208": {
-          "detail": "用于 <code>dav:propstat</code> 响应元素中，以避免重复枚举多个绑定到同一 Collection 的内部成员。"
+          "detail": "用于 <code>dav:propstat</code> 响应元素中，以避免重复枚举多个绑定到同一集合的内部成员。"
         },
         "226": {
           "detail": "服务器已完成针对该资源的 <code>GET</code> 请求，响应内容是对当前实例应用一次或多次实例操作后的结果表示。"
@@ -402,7 +402,7 @@
         "title": "响应大小",
         "rows": {
           "body": "请求体",
-          "headers": "请求头",
+          "headers": "Headers",
           "uncompressed": "未压缩"
         },
         "xhr_agent_used": "如需精确的大小明细，请通过 Postman Desktop Agent 发送请求。",
@@ -423,7 +423,7 @@
       },
       "disable_save_response_reason": {
         "activeSSEStream": "请先关闭流以保存响应。",
-        "no_permission": "您需要拥有该 Collection 的编辑者权限才能保存示例。",
+        "no_permission": "您需要拥有该集合的编辑者权限才能保存示例。",
         "media_message": "无法为媒体类型的响应保存示例。",
         "size_exceeded": "超过 5 MB 的响应无法保存为示例。",
         "request_not_saved": "请先保存此请求以创建示例。",
@@ -433,28 +433,28 @@
       "disable_download_response_reason": {
         "activeSSEStream": "请先关闭流以下载响应。",
         "empty_body": "将响应体保存到文件时，请求体不能为空。",
-        "no_permission": "您需要拥有该 Collection 的编辑者权限才能保存示例。"
+        "no_permission": "您需要拥有该集合的编辑者权限才能保存示例。"
       },
       "disable_clear_response_reason": {
         "activeSSEStream": "请先关闭流以清除响应。"
       }
     },
     "loading_message": "正在发送请求…",
-    "loading_active_env_message": "正在获取当前 Environment 并发送请求",
+    "loading_active_env_message": "正在获取当前环境并发送请求",
     "heading": "响应",
     "empty_view_message": {
       "without_url": "发送请求以获取响应",
       "with_url": "发送请求以获取响应",
       "sending_request": "正在发送请求…",
       "ai_banner": {
-        "header_text": "使用 Postman AI 整理您不断增长的 Collection",
-        "button_text": "整理 Collection"
+        "header_text": "使用 Postman AI 整理您不断增长的集合",
+        "button_text": "整理集合"
       }
     },
     "error_view_message": {
       "request": "无法发送请求",
       "response": "无法获取响应",
-      "script": "评估 {scriptPhase} 脚本 时出错",
+      "script": "评估 {scriptPhase} 脚本时出错",
       "troubleshoot": "了解如何排查请求问题",
       "fallback": "出现了一些问题"
     },
@@ -624,7 +624,7 @@
                 "desc": "<0>您也可以在测试或请求前脚本选项卡中使用 pm.visualizer.set() 方法自行设置可视化工具。了解更多关于</0><1>响应可视化</1><2>的信息。</2>"
               },
               "toggle_options_aria_label": "切换可视化选项",
-              "disabled_while_executing_tooltip": "响应 加载中"
+              "disabled_while_executing_tooltip": "响应加载中"
             }
           },
           "tabs": {
@@ -687,7 +687,7 @@
         }
       },
       "headers": {
-        "label": "请求头",
+        "label": "Headers",
         "types": {
           "accept_ranges": "指示客户端是否可以请求文件的一部分，而不必下载整个文件。",
           "access_control_allow_credentials": "指示是否将响应暴露给前端 JavaScript 代码。在响应预检请求时，用于指示实际请求是否可以携带凭据发起。",
@@ -727,17 +727,17 @@
           "strict_transport_security": "使网站能够告知浏览器只能通过 HTTPS 进行访问。",
           "trailer": "指示给定的标头字段集出现在使用分块传输编码编码的消息的尾部中。",
           "transfer_encoding": "指定用于将实体传输给用户的编码形式。",
-          "vary": "确定如何匹配未来的 请求 标头，以决定是否可以使用缓存的 响应 而不是请求新的标头。",
-          "via": "由代理添加并用于跟踪消息转发、避免 请求 循环并识别发送者的协议功能。",
+          "vary": "确定如何匹配未来的请求标头，以决定是否可以使用缓存的响应而不是请求新的标头。",
+          "via": "由代理添加并用于跟踪消息转发、避免请求循环并识别发送者的协议功能。",
           "warning": "包含有关消息状态可能出现的问题的信息。",
           "www_authenticate": "指定访问资源时应使用的身份验证方法。",
           "x_requested_with": "识别 Ajax 请求。大多数 JavaScript 框架都会发送带有 XMLHttpRequest 值的标头。",
           "x_do_not_track": "可用于要求 Web 应用程序不要跟踪用户。注意：此标头在很大程度上被 Web 应用程序忽略。",
-          "dnt": "可用于要求 Web 应用程序不要跟踪用户。这是 Mozilla 的 X-Do-Not-Track 标头的 版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支持此标头。注意：此标头在很大程度上被 Web 应用程序忽略。",
+          "dnt": "可用于要求 Web 应用程序不要跟踪用户。这是 Mozilla 的 X-Do-Not-Track 标头的版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支持此标头。注意：此标头在很大程度上被 Web 应用程序忽略。",
           "x_forwarded_for": "标识通过 HTTP 代理或负载均衡器连接到 Web 服务器的客户端的原始 IP 地址。",
           "x_frame_options": "用于通过确保其内容未嵌入其他网站来避免点击劫持攻击。",
           "x_xss_protection": "当页面检测到反射的跨站点脚本 (XSS) 攻击时，停止加载页面。",
-          "x_content_type_options": "可用于选择退出 MIME 类型，从声明的内容类型中嗅探 响应 。",
+          "x_content_type_options": "可用于选择退出 MIME 类型，从声明的内容类型中嗅探响应。",
           "x_forwarded_proto": "标识客户端用于连接到代理或负载均衡器的协议（HTTP 或 HTTPS）。",
           "x_powered_by": "指定支持 Web 应用程序的技术（例如 ASP.NET、PHP、JBoss）。"
         }
@@ -745,12 +745,12 @@
       "tests": {
         "label": "测试结果",
         "empty_test_results": {
-          "title": "没有针对此 请求 的测试",
-          "desc": "编写测试 脚本 来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
+          "title": "没有针对此请求的测试",
+          "desc": "编写测试脚本来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
           "with_postbot": {
-            "trigger_prompt": "没有针对此 请求 的测试",
-            "title": "没有针对此 请求 的测试",
-            "desc": "编写测试 脚本 来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
+            "trigger_prompt": "没有针对此请求的测试",
+            "title": "没有针对此请求的测试",
+            "desc": "编写测试脚本来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
             "error_after_loaded": {
               "text": "无法生成测试。",
               "button_label": "再试一次",
@@ -788,10 +788,10 @@
           },
           "error": {
             "with_postbot": {
-              "prefix_message": "无法评估测试 脚本",
+              "prefix_message": "无法评估测试脚本",
               "suffix_message": "无法修复测试。",
               "try_again_button": "再试一次",
-              "fix_script_button": "用 AI 修复 脚本",
+              "fix_script_button": "用 AI 修复脚本",
               "refresh_text": "刷新结果",
               "loading_text": "正在努力..."
             }
@@ -802,8 +802,8 @@
     },
     "schema_editor": {
       "error_boundary": {
-        "title": "架构 编辑者 加载失败",
-        "description": "加载架构 编辑者 时发生意外错误。"
+        "title": "架构编辑者加载失败",
+        "description": "加载架构编辑者时发生意外错误。"
       }
     },
     "example": {
@@ -811,10 +811,10 @@
         "short": "状态",
         "long": "状态码"
       },
-      "status_input_placeholder": "输入 响应 代码",
+      "status_input_placeholder": "输入响应代码",
       "tabs": {
         "body": "请求体",
-        "headers": "请求头"
+        "headers": "Headers"
       }
     }
   }

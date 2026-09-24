@@ -4,14 +4,14 @@
     "description": "你访问的页面不存在。"
   },
   "settings_page": {
-    "heading": "共享 保险库",
-    "description": "安全地与团队共享敏感数据。除公开 Workspace 外，Shared Vault 在每个 Workspace 中默认可用。可按 Workspace 单独覆盖设置，以贯彻最小权限原则。",
-    "update_error": "无法更新共享 保险库 设置。请稍后重试。",
-    "toast_enabled": "为您的 团队 启用共享 保险库",
-    "toast_disabled": "已为您的 团队 关闭共享 保险库",
+    "heading": "共享保险库",
+    "description": "安全地与团队共享敏感数据。除公开工作区外，Shared Vault 在每个工作区中默认可用。可按工作区单独覆盖设置，以贯彻最小权限原则。",
+    "update_error": "无法更新共享保险库设置。请稍后重试。",
+    "toast_enabled": "为您的团队启用共享保险库",
+    "toast_disabled": "已为您的团队关闭共享保险库",
     "button_switch_on": "打开",
     "button_switch_off": "关",
-    "global_switch_off_tooltip": "对于某些工作区，移动到共享 保险库 策略处于活动状态。请更改策略以关闭共享 保险库。"
+    "global_switch_off_tooltip": "对于某些工作区，移动到共享保险库策略处于活动状态。请更改策略以关闭共享保险库。"
   },
   "vault_settings_panel": {
     "open_settings": "设置",
@@ -30,8 +30,8 @@
       "description": "允许脚本在请求执行期间访问 Vault 密钥。"
     },
     "share_across_workspaces": {
-      "label": "在所有 Workspace 间共享密钥",
-      "description": "让 Shared Vault 在团队有权访问的所有 Workspace 中可用，而不仅限于当前 Workspace。"
+      "label": "在所有工作区间共享密钥",
+      "description": "让 Shared Vault 在团队有权访问的所有工作区中可用，而不仅限于当前工作区。"
     },
     "save": "保存设置",
     "cancel": "取消",
@@ -47,17 +47,17 @@
     }
   },
   "workspace_selector": {
-    "column_enabled": "共享 保险库",
+    "column_enabled": "共享保险库",
     "bulk_enable": "打开",
     "bulk_disable": "关",
-    "toast_update_success": "已成功更新共享 保险库 设置",
-    "toast_update_error": "无法更新 工作区 设置。请再试一次。",
+    "toast_update_success": "已成功更新共享保险库设置",
+    "toast_update_error": "无法更新工作区设置。请再试一次。",
     "empty_title": "未找到工作区",
     "empty_description": "尝试调整过滤器或搜索以查找工作区。",
     "error_title": "无法加载工作区",
-    "error_description": "我们无法加载您工作区的共享 保险库 设置。请再试一次。",
+    "error_description": "我们无法加载您工作区的共享保险库设置。请再试一次。",
     "error_retry": "重试",
-    "public_workspace_disabled_tooltip": "出于安全原因，公开 工作区不支持共享 保险库。",
-    "workspace_switch_off_tooltip": "移至共享 保险库 策略对此 工作区 有效。请更改策略以关闭共享 保险库。"
+    "public_workspace_disabled_tooltip": "出于安全原因，公开工作区不支持共享保险库。",
+    "workspace_switch_off_tooltip": "移至共享保险库策略对此工作区有效。请更改策略以关闭共享保险库。"
   }
 }

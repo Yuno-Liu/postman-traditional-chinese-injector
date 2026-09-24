@@ -47,13 +47,13 @@
       "label": "规范",
       "helper": "响应根据所选的 API 规范生成。",
       "picker_placeholder": "选择一个规范",
-      "picker_empty": "此 工作区 尚无规格。"
+      "picker_empty": "此工作区尚无规格。"
     },
     "collection": {
-      "label": "Collection",
-      "helper": "响应根据 Collection 中保存的示例生成。",
-      "picker_placeholder": "选择或创建 Collection",
-      "picker_empty": "此 工作区 中还没有收藏。"
+      "label": "集合",
+      "helper": "响应根据集合中保存的示例生成。",
+      "picker_placeholder": "选择或创建集合",
+      "picker_empty": "此工作区中还没有收藏。"
     }
   },
   "mock_server_create": {
@@ -62,32 +62,32 @@
   "mock_source_picker": {
     "tab_all": "全部",
     "tab_mocks": "Mock",
-    "tab_collections": "Collection",
+    "tab_collections": "集合",
     "tab_specs": "Spec",
     "search_placeholder": "搜索…",
-    "empty": "这里还是空的。请创建一个 Mock，或通过 Collection、Spec 生成后部署。",
-    "empty_collection": "这里还是空的。创建一个 Collection 即可开始。",
+    "empty": "这里还是空的。请创建一个 Mock，或通过集合、Spec 生成后部署。",
+    "empty_collection": "这里还是空的。创建一个集合即可开始。",
     "empty_spec": "这里还是空的。创建一个 Spec 即可开始。",
     "empty_mock": "这里还是空的。创建一个 Mock 即可开始。",
     "empty_short": "这里还是空的。",
     "change_source": "更改",
-    "create_collection": "创建 Collection",
+    "create_collection": "创建集合",
     "create_spec": "创建 Spec",
     "create_mock": "创建 Mock",
     "empty_import": "导入"
   },
   "sync": {
-    "keep_in_sync_collection_label": "Collection 变更时自动更新此 Mock",
+    "keep_in_sync_collection_label": "集合变更时自动更新此 Mock",
     "keep_in_sync_spec_label": "API 规范变更时自动更新此 Mock",
-    "keep_in_sync_collection_label_local": "Collection 变更时自动更新此 Mock（推送到云端后生效）",
+    "keep_in_sync_collection_label_local": "集合变更时自动更新此 Mock（推送到云端后生效）",
     "keep_in_sync_spec_label_local": "API 规范变更时自动更新此 Mock（推送到云端后生效）",
-    "keep_in_sync_collection_helper": "当 Collection/API 规范发生变化时自动重新生成。",
-    "keep_in_sync_spec_helper": "当 Collection/API 规范发生变化时自动重新生成。",
-    "keep_in_sync_collection_helper_local": "推送到云端后，当 Collection/API 规范发生变化时自动重新生成。",
-    "keep_in_sync_spec_helper_local": "推送到云端后，当 Collection/API 规范发生变化时自动重新生成。"
+    "keep_in_sync_collection_helper": "当集合/API 规范发生变化时自动重新生成。",
+    "keep_in_sync_spec_helper": "当集合/API 规范发生变化时自动重新生成。",
+    "keep_in_sync_collection_helper_local": "推送到云端后，当集合/API 规范发生变化时自动重新生成。",
+    "keep_in_sync_spec_helper_local": "推送到云端后，当集合/API 规范发生变化时自动重新生成。"
   },
   "import_area": {
-    "idle_inline": "拖入 Collection 或 Spec，或<browse>浏览文件</browse>",
+    "idle_inline": "拖入集合或 Spec，或<browse>浏览文件</browse>",
     "file_replace": "替换",
     "file_remove": "移除"
   },
@@ -136,15 +136,15 @@
     "cancel_button": "取消"
   },
   "errors": {
-    "unsupported_input": "无法将此文件识别为 Collection 或规范。",
+    "unsupported_input": "无法将此文件识别为集合或规范。",
     "unsupported_spec_version": "暂不支持此 API Spec 版本。",
     "name_required": "Mock 名称为必填项。",
     "local_port_invalid": "输入 1 到 65535 之间的端口。",
     "slug_invalid": "使用小写字母、数字或连字符。必须以字母或数字开头。",
     "source_picker_required_spec": "选择 OpenAPI 规范或拖放文件以继续。",
-    "source_picker_required_collection": "选择 集合 或拖放文件以继续。",
+    "source_picker_required_collection": "选择集合或拖放文件以继续。",
     "source_picker_required_existing": "请选择一个代码 Mock 以继续。",
-    "cloud_spec_fetch_failed": "无法从此 工作区 加载该规范。稍后再试一次。",
-    "cloud_collection_fetch_failed": "无法从此 工作区 加载 集合。稍后再试一次。"
+    "cloud_spec_fetch_failed": "无法从此工作区加载该规范。稍后再试一次。",
+    "cloud_collection_fetch_failed": "无法从此工作区加载集合。稍后再试一次。"
   }
 }

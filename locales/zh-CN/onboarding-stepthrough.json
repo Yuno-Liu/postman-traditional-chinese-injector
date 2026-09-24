@@ -8,13 +8,13 @@
       "cta_text": "开始使用"
     },
     "send_request": {
-      "header": "首先发送 请求",
+      "header": "首先发送请求",
       "description": "通过创建并发送请求来测试 API 的行为。",
       "minimized_content": "从这里开始🚀"
     },
     "save_collection": {
       "header": "保存您的请求以便再次轻松访问它",
-      "description": "将您的请求保存到 Collection，让您的请求井井有条并触手可及。\n\n提示：使用 ⌘S 可以快速保存。",
+      "description": "将您的请求保存到集合，让您的请求井井有条并触手可及。\n\n提示：使用 ⌘S 可以快速保存。",
       "minimized_content": "你做得很好💪"
     },
     "use_postbot": {
@@ -24,7 +24,7 @@
     },
     "finished": {
       "header": "太棒了🎉",
-      "description": "创建您的第一个 Collection，干得好！现在探索更多方法来改进您的 API 工作流程。",
+      "description": "创建您的第一个集合，干得好！现在探索更多方法来改进您的 API 工作流程。",
       "minimized_content": "✅ 接下来是什么？",
       "add_variables": "添加变量",
       "document": "记录您的 API",

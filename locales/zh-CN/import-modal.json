@@ -8,8 +8,8 @@
       "public": "公开网络"
     },
     "entity_labels": {
-      "collections": "Collection",
-      "environments": "Environment",
+      "collections": "集合",
+      "environments": "环境",
       "specs": "规格",
       "sdks": "SDK",
       "flows": "流程",
@@ -31,11 +31,11 @@
       },
       "in": {
         "label": "工作区",
-        "inline_label_count": "Workspace（{count}）",
-        "placeholder": "按 Workspace 过滤",
-        "search_aria_label": "按 Workspace 过滤",
+        "inline_label_count": "工作区（{count}）",
+        "placeholder": "按工作区过滤",
+        "search_aria_label": "按工作区过滤",
         "search_input_placeholder": "搜索工作空间",
-        "empty_state": "未找到 Workspace",
+        "empty_state": "未找到工作区",
         "loading": "正在寻找..."
       }
     }
@@ -59,7 +59,7 @@
       "modal_fork_button": "复刻",
       "modal_add_dependency_button_with_count": "{count, plural, =0 {添加依赖项} other {添加依赖项 (#)}}",
       "dependency_added_toast_title": "{count, plural, =1 {依赖项已添加} other {依赖项已添加}}",
-      "dependency_added_toast_description": "{count, plural, =1 {{name} 已添加到此 Workspace} other {已向此 Workspace 添加 # 个依赖项}}",
+      "dependency_added_toast_description": "{count, plural, =1 {{name} 已添加到此工作区} other {已向此工作区添加 # 个依赖项}}",
       "error_banner": {
         "dependency": {
           "all_failed_title": "无法添加依赖项。",
@@ -74,7 +74,7 @@
       }
     },
     "manage": {
-      "title_label": "在此 Workspace 中",
+      "title_label": "在此工作区中",
       "delete_button_aria_label": "删除",
       "dependency": {
         "update": {
@@ -111,7 +111,7 @@
     }
   },
   "permissions": {
-    "no_permission_tooltip": "您没有权限管理此 Workspace 中的资源。",
+    "no_permission_tooltip": "您没有权限管理此工作区中的资源。",
     "local_only_tooltip": "您只能在本地模式下管理资源。"
   }
 }

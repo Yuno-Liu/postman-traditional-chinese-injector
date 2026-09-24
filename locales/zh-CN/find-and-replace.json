@@ -76,8 +76,8 @@
     }
   },
   "replace": {
-    "replace_content_save_changes_collection": "替换 Collection 中的内容将保存该 Collection 中所有未保存的更改。",
-    "replace_content_save_changes_environment": "替换 Environment 中的内容将保存该 Environment 中所有未保存的更改。",
+    "replace_content_save_changes_collection": "替换集合中的内容将保存该集合中所有未保存的更改。",
+    "replace_content_save_changes_environment": "替换环境中的内容将保存该环境中所有未保存的更改。",
     "replace_content_save_changes_globals": "替换全局中的内容将保存该全局中任何未保存的更改。"
   },
   "find_and_replace_target": {

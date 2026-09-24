@@ -1,6 +1,6 @@
 {
   "mock_details": {
-    "extensible_collection_http_only_banner": "此 Collection 的 Mock Server 目前仅支持 HTTP 请求",
+    "extensible_collection_http_only_banner": "此集合的 Mock Server 目前仅支持 HTTP 请求",
     "mock_server": "Mock Server",
     "delay_duration_error": "请输入介于 0 到 180000 毫秒之间的延迟值。",
     "changes_saved": "更改已保存",
@@ -8,11 +8,11 @@
     "unable_to_edit": "无法编辑 Mock"
   },
   "call_logs_list_item_body": {
-    "unable_to_load_resource": "无法加载 {resourceType} 正文。",
+    "unable_to_load_resource": "无法加载 {resourceType} Body。",
     "try_again": "重试",
-    "request_body": "此 {resourceType} 没有正文。",
-    "size_limit_msg": "调用日志仅显示小于 1 MB 的 {resourceType} 正文。如需查看完整内容，您可以<3>下载</3>该调用日志。",
-    "copy_tooltip": "复制 {resourceType} 正文",
+    "request_body": "此 {resourceType} 没有 Body。",
+    "size_limit_msg": "调用日志仅显示小于 1 MB 的 {resourceType} Body。如需查看完整内容，您可以<3>下载</3>该调用日志。",
+    "copy_tooltip": "复制 {resourceType} Body",
     "expand_collapse_aria_label": "{action} {section} 部分",
     "expand": "展开",
     "collapse": "收起"
@@ -60,8 +60,8 @@
     }
   },
   "call_logs_list_old": {
-    "collection_deleted_banner": "此 Mock Server 已停用，因为关联的 Collection 已被删除。",
-    "environment_deleted_banner": "此 Mock Server 已停用，因为关联的 Environment 已被删除。",
+    "collection_deleted_banner": "此 Mock Server 已停用，因为关联的集合已被删除。",
+    "environment_deleted_banner": "此 Mock Server 已停用，因为关联的环境已被删除。",
     "search_placeholder": "搜索调用记录…",
     "offline_error": "恢复联网后即可执行此操作。",
     "refresh_logs": "刷新日志",
@@ -93,9 +93,9 @@
     "mock_server_name": "Mock Server 名称",
     "copy_url": "复制 URL",
     "copy_url_tooltip": "复制 Mock Server URL",
-    "view_collection_docs": "查看 Collection 文档",
-    "inactive_mock_collection_deleted": "由于关联的 Collection 已被删除，无法访问此文档。",
-    "inactive_mock_collection_not_accessible": "由于关联的 Collection 不可访问，此文档无法访问。",
+    "view_collection_docs": "查看集合文档",
+    "inactive_mock_collection_deleted": "由于关联的集合已被删除，无法访问此文档。",
+    "inactive_mock_collection_not_accessible": "由于关联的集合不可访问，此文档无法访问。",
     "offline_error": "恢复联网后即可执行此操作。",
     "edit_configuration": "编辑配置",
     "manage_roles": "管理角色",
@@ -117,7 +117,7 @@
     },
     "moved": {
       "title": "找不到{userFriendlyEntityName}",
-      "body": "此 Mock Server 已被移动到其他 Workspace。"
+      "body": "此 Mock Server 已被移动到其他工作区。"
     },
     "error": {
       "title": "无法加载您的{userFriendlyEntityName}",
@@ -125,15 +125,15 @@
     },
     "not_found": {
       "title": "找不到该{userFriendlyEntityName}",
-      "body": "该内容可能已被删除或移动到其他 Workspace。"
+      "body": "该内容可能已被删除或移动到其他工作区。"
     },
     "edit_mock_access_denied": {
       "title": "无法编辑{userFriendlyEntityName}",
-      "body": "由于您是 Workspace 查看者，无权执行此操作"
+      "body": "由于您是工作区查看者，无权执行此操作"
     },
     "create_mock_access_denied": {
       "title": "无法创建{userFriendlyEntityName}",
-      "body": "由于您是 Workspace 查看者，无权执行此操作"
+      "body": "由于您是工作区查看者，无权执行此操作"
     },
     "unable_to_edit_inactive_mock": {
       "title": "无法编辑{userFriendlyEntityName}",
@@ -146,18 +146,18 @@
     "created_on": "创建时间",
     "mock_server_url": "Mock Server URL",
     "collection": "集合",
-    "collection_deleted": "关联的 Collection 已被删除",
-    "label_text": "关联的 Collection 不可访问",
-    "info_text": "该 Collection 位于您无权访问的 Workspace 中。",
+    "collection_deleted": "关联的集合已被删除",
+    "label_text": "关联的集合不可访问",
+    "info_text": "该集合位于您无权访问的工作区中。",
     "environment": "环境",
-    "no_environment": "无 Environment",
+    "no_environment": "无环境",
     "mock_usage": "Mock 用量",
     "copied": "已复制",
     "copy_mock_id": "复制 Mock ID",
     "copy_mock_url": "复制 Mock URL",
-    "environment_deleted": "关联的 Environment 已被删除",
-    "environment_inaccessible": "关联的 Environment 不可访问",
-    "environment_info_text": "该 Environment 位于您无权访问的 Workspace 中。",
+    "environment_deleted": "关联的环境已被删除",
+    "environment_inaccessible": "关联的环境不可访问",
+    "environment_info_text": "该环境位于您无权访问的工作区中。",
     "something_went_wrong": "出错了",
     "please_try_again": "发生意外错误，请重试。",
     "try_again": "重试",

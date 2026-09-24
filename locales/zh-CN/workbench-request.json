@@ -19,10 +19,10 @@
     },
     "tooltips": {
       "no_unsaved_changes": "没有需要保存的新更改。",
-      "save_to_collection": "将请求保存到 Collection",
+      "save_to_collection": "将请求保存到集合",
       "save_request": "保存请求",
       "save_request_git": "将更改保存到 Postman 和 Github",
-      "no_edit_perimission": "您没有权限在此 Workspace 中保存更改。",
+      "no_edit_perimission": "您没有权限在此工作区中保存更改。",
       "upgrade_enterprise_for_overrides": "升级到 Enterprise 版才能保存关联请求的覆盖项。"
     },
     "footer": {
@@ -33,7 +33,7 @@
     "label": "分享",
     "tooltips": {
       "unsaved_request": "您需要先保存请求才能分享",
-      "no_edit_permission": "只有保存在 Collection 中的请求才能分享。您需要编辑权限才能保存请求。",
+      "no_edit_permission": "只有保存在集合中的请求才能分享。您需要编辑权限才能保存请求。",
       "share_request": "分享请求"
     }
   },
@@ -63,7 +63,7 @@
       "explore_api": "探索 API 功能"
     },
     "tooltips": {
-      "no_send_permission": "您没有权限在此 Workspace 中发送请求。",
+      "no_send_permission": "您没有权限在此工作区中发送请求。",
       "lna_permission_unavailable": {
         "title": "无法访问本地网络",
         "body": "Postman 需要在浏览器中启用本地网络访问权限才能连接 Desktop Agent。",
@@ -100,8 +100,8 @@
         }
       },
       "fork_recommendation": {
-        "primary_msg": "目前无法在公开 Workspace 中发送请求，我们正在为未来版本开发此功能！",
-        "secondary_msg": "将此 Collection 复刻到您自己的 Workspace 即可发送请求。",
+        "primary_msg": "目前无法在公开工作区中发送请求，我们正在为未来版本开发此功能！",
+        "secondary_msg": "将此集合复刻到您自己的工作区即可发送请求。",
         "primary_action": "创建复刻"
       },
       "live_session": {
@@ -129,7 +129,7 @@
         "short_label": "验证"
       },
       "overview": "概览",
-      "headers": "请求头",
+      "headers": "Headers",
       "body": {
         "label": "请求体",
         "editor": {
@@ -187,7 +187,7 @@
               },
               "no_socket_connection_alert": "您需要联网才能使用 Spec Hub Schema 提供自动补全建议。",
               "introspection_warning": {
-                "fetch_failure": "自动获取失败。请确保身份验证、URL 和所选 Environment 有效。查看控制台了解详情。",
+                "fetch_failure": "自动获取失败。请确保身份验证、URL 和所选环境有效。查看控制台了解详情。",
                 "incorrect_schema": "Schema 不正确。与该 Schema 相关的自动补全选项将无法使用。"
               },
               "tag_name": {
@@ -370,7 +370,7 @@
   "version_control": {
     "fork_recommendation_popup": {
       "title": "创建 fork 来保存更改",
-      "message": "您没有权限更改此 Collection。请将该 Collection Fork 到您的 Workspace 以保存更改。",
+      "message": "您没有权限更改此集合。请将该集合 Fork 到您的工作区以保存更改。",
       "button_label": "创建 Fork 并保存"
     }
   },
@@ -448,7 +448,7 @@
   },
   "save_popover": {
     "title": "保存您的请求以避免丢失工作",
-    "subtitle": "通过将请求保存到 Collection 来轻松访问和重用请求。提示：使用 ⌘S 可以快速保存。",
+    "subtitle": "通过将请求保存到集合来轻松访问和重用请求。提示：使用 ⌘S 可以快速保存。",
     "short_subtitle": "提示：使用 ⌘S 可以快速保存。",
     "button_primary": "保存请求",
     "button_secondary": "我稍后再做"

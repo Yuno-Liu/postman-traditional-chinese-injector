@@ -48,7 +48,7 @@
   },
   "send_button": {
     "tooltips": {
-      "no_send_permission": "您没有权限在此 Workspace 中发送请求。"
+      "no_send_permission": "您没有权限在此工作区中发送请求。"
     }
   },
   "tools": {

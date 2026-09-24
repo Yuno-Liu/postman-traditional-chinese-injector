@@ -90,7 +90,7 @@
     "placeholder": "选择 Schema",
     "select_aria_label": "Topic {topic} 的 Schema",
     "column_tooltip": "根据 Schema 校验事件负载",
-    "empty": "此 Workspace 中没有包含 Kafka 服务器的 AsyncAPI 规范",
+    "empty": "此工作区中没有包含 Kafka 服务器的 AsyncAPI 规范",
     "load_error": "无法加载规范",
     "open_specification": "打开规范",
     "unresolved": {

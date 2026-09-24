@@ -18,21 +18,21 @@
   },
   "data_file_upgrade": {
     "heading": "升级以使用数据文件",
-    "description": "数据文件可让您使用测试数据驱动 Monitor 运行以及功能性和性能 Collection 运行。升级您的计划以开始使用。"
+    "description": "数据文件可让您使用测试数据驱动 Monitor 运行以及功能性和性能集合运行。升级您的计划以开始使用。"
   },
   "test_data_upgrade": {
     "heading": "升级以使用数据集和数据文件",
-    "description": "数据集和数据文件可以为你的 Collection 运行提供测试数据，二者均需付费套餐。升级套餐即可开始使用。"
+    "description": "数据集和数据文件可以为你的集合运行提供测试数据，二者均需付费套餐。升级套餐即可开始使用。"
   },
   "errors": {
     "forbidden": {
       "start": {
         "title": "由于安全策略而拒绝访问",
-        "description": "在恢复访问之前，您无法运行此 Collection。请联系您的团队管理员寻求帮助。"
+        "description": "在恢复访问之前，您无法运行此集合。请联系您的团队管理员寻求帮助。"
       },
       "save": {
         "title": "由于安全策略而拒绝访问",
-        "description": "在恢复访问之前，您的 Collection 运行无法同步到云端。请联系您的团队管理员寻求帮助。"
+        "description": "在恢复访问之前，您的集合运行无法同步到云端。请联系您的团队管理员寻求帮助。"
       }
     },
     "cloud_performance_run": {
@@ -48,16 +48,16 @@
   },
   "run_completion": {
     "titles": {
-      "success": "Collection 运行成功",
-      "with_issues": "Collection 运行时遇到问题",
-      "did_not_finish": "Collection 运行未完成"
+      "success": "集合运行成功",
+      "with_issues": "集合运行时遇到问题",
+      "did_not_finish": "集合运行未完成"
     },
     "subtitles": {
       "stopped_at": "停在 {percentage}%",
       "stopped_after_error": "在 {percentage}% 遇到意外错误",
       "completed_with_errors": "{count, plural, =0 {运行完成，但存在错误} one {运行完成，有 {count, number} 个错误} other {运行完成，有 {count, number} 个错误}}"
     },
-    "untitled_collection": "无标题 Collection",
+    "untitled_collection": "无标题集合",
     "chips": {
       "tests_failed": "{total, plural, one {{total, number} 个测试中有 {failed, number} 个失败} other {{total, number} 个测试中有 {failed, number} 个失败}}",
       "errors": "{count, plural, one {{count, number} 个错误} other {{count, number} 个错误}}"
@@ -65,19 +65,19 @@
   },
   "data_file": {
     "toasts": {
-      "saved_to_workspace": "数据文件已保存到 Workspace",
-      "save_to_workspace_failed": "数据文件保存到 Workspace 失败，请重试。",
-      "storage_limit_reached": "你的 Workspace 存储空间已达上限。",
+      "saved_to_workspace": "数据文件已保存到工作区",
+      "save_to_workspace_failed": "数据文件保存到工作区失败，请重试。",
+      "storage_limit_reached": "你的工作区存储空间已达上限。",
       "content_read_failed": "无法识别文件内容，请重新选择文件上传",
       "settings_saved": "数据文件设置已保存",
       "settings_save_failed": "设置保存失败，请重试。",
       "dataset_created": "数据集已创建",
       "dataset_create_failed": "数据集创建失败，请重试。"
     },
-    "dataset_no_create_permission": "你没有在此 Workspace 中创建数据集的权限。",
+    "dataset_no_create_permission": "你没有在此工作区中创建数据集的权限。",
     "dataset_upgrade_required": "升级套餐即可将数据文件保存为数据集。",
     "dataset_upgrade_aria_label": "保存为数据集。升级套餐即可将数据文件保存为数据集。",
-    "dataset_file_too_large": "此文件过大，无法保存为数据集。请选择小于 {limitMb} MB 的文件，或改为保存到 Workspace。",
+    "dataset_file_too_large": "此文件过大，无法保存为数据集。请选择小于 {limitMb} MB 的文件，或改为保存到工作区。",
     "query_label": "查询",
     "saved_file_hint": "将此文件保存为数据集，即可使用 SQL 筛选、排序和清理行。",
     "local_file_hint": "此文件仅存储在你的计算机上。将其保存为数据集，即可随处复用，并使用 SQL 筛选、排序和清理行。",
@@ -94,7 +94,7 @@
   },
   "iteration_strategy": {
     "iterations_label": "迭代次数",
-    "iterations_tooltip": "本次运行中循环执行该 Collection 的次数。",
+    "iterations_tooltip": "本次运行中循环执行该集合的次数。",
     "iterations_aria": "迭代次数",
     "label": "迭代策略",
     "tooltip": "当视图中的数据行用完后，多余的迭代如何取数据。",
@@ -126,7 +126,7 @@
     "analyze_with_ai": "用 AI 分析",
     "ci_cd_callout": {
       "heading": "每次推送时运行",
-      "content": "生成 CI/CD 配置，在流水线中运行此 Collection，及时发现破坏性的 API 变更。",
+      "content": "生成 CI/CD 配置，在流水线中运行此集合，及时发现破坏性的 API 变更。",
       "configure_button": "配置 CI/CD"
     }
   },
@@ -136,12 +136,12 @@
   },
   "mock_bindings": {
     "title": "分配 Mock",
-    "title_info": "此 Collection 中的以下变量和主机 URL 可以被 Mock",
+    "title_info": "此集合中的以下变量和主机 URL 可以被 Mock",
     "urls_column": "URL",
     "mock_column": "MOCK",
     "scenario_column": "场景",
     "empty_heading": "未分配 Mock",
-    "empty_description": "将此 Collection 中的 URL 指向 Mock，即可在运行期间拦截其请求。",
+    "empty_description": "将此集合中的 URL 指向 Mock，即可在运行期间拦截其请求。",
     "add_url": "添加 URL",
     "url_placeholder": "输入 URL",
     "url_aria_label": "要 Mock 的 URL",
@@ -157,16 +157,16 @@
     "select_scenario_placeholder": "选择场景",
     "scenarios_loading": "加载中...",
     "use_mock_aria_label": "在本次运行中使用此 Mock",
-    "mock_enabled_tooltip": "Mock 已启用 — 请求由 Mock 响应",
-    "mock_disabled_tooltip": "Mock 已禁用 — 请求将直接发送到真实主机"
+    "mock_enabled_tooltip": "Mock 已启用—请求由 Mock 响应",
+    "mock_disabled_tooltip": "Mock 已禁用—请求将直接发送到真实主机"
   },
   "empty_state": {
     "functional": {
-      "heading": "运行 Collection 以验证你的请求",
-      "description": "将 Collection 拖到此处，或从下方开始。",
-      "new_collection_name": "功能测试 Collection",
+      "heading": "运行集合以验证你的请求",
+      "description": "将集合拖到此处，或从下方开始。",
+      "new_collection_name": "功能测试集合",
       "empty_collection": {
-        "heading": "此 Collection 中没有请求",
+        "heading": "此集合中没有请求",
         "description": "向其中添加请求，或让 AI 为你构建。"
       },
       "empty_folder": {
@@ -175,11 +175,11 @@
       }
     },
     "performance": {
-      "heading": "使用 Collection 设置性能测试",
-      "description": "将 Collection 拖到此处，或从下方开始。",
-      "new_collection_name": "性能测试 Collection",
+      "heading": "使用集合设置性能测试",
+      "description": "将集合拖到此处，或从下方开始。",
+      "new_collection_name": "性能测试集合",
       "empty_collection": {
-        "heading": "此 Collection 中没有请求",
+        "heading": "此集合中没有请求",
         "description": "添加要施加负载的请求，或让 AI 为你构建。"
       },
       "empty_folder": {
@@ -191,22 +191,22 @@
     "sample_collection_name": "Postman Echo 示例",
     "learn_more": "了解更多",
     "ask_ai": "询问 AI",
-    "create_collection": "新建 Collection",
+    "create_collection": "新建集合",
     "add_requests": "添加请求",
     "import": "导入",
-    "try_sample": "试用示例 Collection",
+    "try_sample": "试用示例集合",
     "open_request": "打开请求",
     "errors": {
-      "create_collection": "无法创建 Collection，请稍后重试。",
+      "create_collection": "无法创建集合，请稍后重试。",
       "add_request": "无法添加请求，请稍后重试。",
-      "sample_collection": "无法创建示例 Collection，请稍后重试。"
+      "sample_collection": "无法创建示例集合，请稍后重试。"
     },
     "request_added": {
       "title": "请求已添加到 {collectionName}",
       "go_back": "返回",
       "functional": {
-        "description": "请先更新并保存请求，再运行 Collection。",
-        "run": "运行 Collection"
+        "description": "请先更新并保存请求，再运行集合。",
+        "run": "运行集合"
       },
       "performance": {
         "description": "请先更新并保存请求，再运行性能测试。",

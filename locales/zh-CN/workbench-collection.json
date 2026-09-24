@@ -1,5 +1,5 @@
 {
-  "child_error": "Collection 工作台子项错误",
+  "child_error": "集合工作台子项错误",
   "editor": {
     "content_pane": {
       "permission_infobar": {
@@ -51,13 +51,13 @@
             "more_template": "更多模板",
             "confirmation": {
               "heading": "应用这个模板？",
-              "message": "应用 <1>{templateName}</1> 将替换此 Collection 的内容。您想继续吗？",
+              "message": "应用 <1>{templateName}</1> 将替换此集合的内容。您想继续吗？",
               "cancel": "取消",
               "confirm": "应用模板"
             }
           },
           "add_request_section": {
-            "heading": "此 Collection 为空。添加一个请求以开始使用。",
+            "heading": "此集合为空。添加一个请求以开始使用。",
             "cta": "添加请求"
           },
           "footer": {
@@ -123,8 +123,8 @@
               "aborted": "已中止",
               "placeholder": "运行状态"
             },
-            "transient_description": "<0>为此 collection 在</0> <1><0></0><1>{branchName}</1></1> <2>分支下通过 Collection Runner{newman}{postmanCLI} 触发的运行。</2>",
-            "description": "通过 Collection Runner{newman}{postmanCLI} 为此 collection 触发的运行。",
+            "transient_description": "<0>为此 collection 在</0> <1><0></0><1>{branchName}</1></1> <2>分支下通过集合运行器{newman}{postmanCLI} 触发的运行。</2>",
+            "description": "通过集合运行器{newman}{postmanCLI} 为此 collection 触发的运行。",
             "bulk_action": {
               "label": "已选择 {itemCount, plural, =1 {# 项} other {# 项}}",
               "button": {
@@ -159,7 +159,7 @@
               },
               "blank_state": {
                 "title": "您的 collection 尚未运行过",
-                "run": "运行 Collection"
+                "run": "运行集合"
               },
               "sub_component": {
                 "pipeline_details": {
@@ -169,20 +169,20 @@
                     "newman": "Newman",
                     "postman_cli": "Postman CLI"
                   },
-                  "runner_description": "使用 Collection Runner 在本地运行",
+                  "runner_description": "使用集合运行器在本地运行",
                   "cli_description": "使用 Postman CLI 运行",
                   "newman_description": "使用 Newman 在 CLI 中运行"
                 },
                 "environment": {
-                  "none": "未使用 Environment",
+                  "none": "未使用环境",
                   "deleted": {
-                    "tooltip": "所使用的 Environment 已被删除或移出此 Workspace",
-                    "description": "未找到 Environment。Environment ID：{envID}",
+                    "tooltip": "所使用的环境已被删除或移出此工作区",
+                    "description": "未找到环境。环境 ID：{envID}",
                     "button": {
                       "text": "复制 ID",
                       "tooltip": {
                         "copied": "已复制",
-                        "copy": "复制 Environment ID"
+                        "copy": "复制环境 ID"
                       }
                     }
                   }
@@ -245,12 +245,12 @@
                     "popover": {
                       "private": {
                         "heading": "与团队分享",
-                        "content": "此 collection 运行位于您的个人 Workspace 中。",
+                        "content": "此 collection 运行位于您的个人工作区中。",
                         "content2": "除非您邀请，否则任何人都无法访问。",
                         "button": "邀请成员"
                       },
                       "shared": {
-                        "private_team_content": "只有 Workspace 成员可以访问此链接。",
+                        "private_team_content": "只有工作区成员可以访问此链接。",
                         "team_content": "只有团队成员可以访问此链接。",
                         "heading": "分享链接",
                         "button": {
@@ -260,7 +260,7 @@
                       },
                       "partner": {
                         "heading": "分享链接",
-                        "content": "只有拥有此 Workspace 访问权限的人才能访问此链接。",
+                        "content": "只有拥有此工作区访问权限的人才能访问此链接。",
                         "button": {
                           "copy": "复制链接",
                           "invite": "邀请成员"
@@ -292,7 +292,7 @@
                 "actions": ""
               },
               "placeholders": {
-                "environment": "无 Environment",
+                "environment": "无环境",
                 "nextRun": {
                   "text": "已暂停",
                   "tooltip": "由于该计划已暂停，暂无下次运行。"
@@ -370,13 +370,13 @@
           "fork": {
             "offline_tooltip": "请联网后创建 Fork 或查看现有 Fork。",
             "no_permission_tooltip": "您没有权限执行此操作。",
-            "filesystem_mode_tooltip": "使用本地文件系统 Workspace 时，无法使用 Fork 功能。"
+            "filesystem_mode_tooltip": "使用本地文件系统工作区时，无法使用 Fork 功能。"
           },
           "run": {
             "text": "运行",
             "tooltip": {
-              "primary_message": "目前无法在公共 Workspace 中运行 collection，不过我们正在为未来版本开发此功能！",
-              "secondary_message": "将此 collection Fork 到您自己的 Workspace 中即可运行。",
+              "primary_message": "目前无法在公共工作区中运行 collection，不过我们正在为未来版本开发此功能！",
+              "secondary_message": "将此 collection Fork 到您自己的工作区中即可运行。",
               "primary_action": "创建 Fork",
               "run_collection": "运行 collection"
             }
@@ -388,14 +388,14 @@
             },
             "tooltip": {
               "title": "创建 Fork 以保存更改",
-              "primary_message": "您没有权限修改此 collection。请将该 collection Fork 到您的 Workspace 中以保存更改。",
+              "primary_message": "您没有权限修改此 collection。请将该 collection Fork 到您的工作区中以保存更改。",
               "primary_action": "创建 Fork 并保存",
               "no_changes": "没有需要保存的新更改。",
               "save_collection": "保存 collection",
               "save_collection_git": "将更改保存到 Postman 和 GitHub",
               "disabled": {
                 "title": "创建 Fork 以进行修改并保存更改",
-                "primary_message": "将此 collection Fork 到您的 Workspace 后，即可进行修改并保存。",
+                "primary_message": "将此 collection Fork 到您的工作区后，即可进行修改并保存。",
                 "primary_action": "创建 Fork 并保存"
               },
               "readonly_user_message": "您没有权限执行此操作。"
@@ -455,7 +455,7 @@
           "view_documentation": "查看文档"
         },
         "breadcrumb": {
-          "placeholder": "Collection 名称",
+          "placeholder": "集合名称",
           "metaIcon": {
             "lock": {
               "tooltip": "只读"
@@ -502,7 +502,7 @@
     },
     "context_bar": {
       "info": {
-        "title": "Collection 详情"
+        "title": "集合详情"
       },
       "live_collection": {
         "title": "实时集合",
@@ -548,8 +548,8 @@
       }
     }
   },
-  "new_collection": "新建 Collection",
-  "tab_conflict_message": "自您上次打开选项卡以来，此 Collection 已被修改。",
+  "new_collection": "新建集合",
+  "tab_conflict_message": "自您上次打开选项卡以来，此集合已被修改。",
   "ui_controls": {
     "add": "添加",
     "expand": "展开",

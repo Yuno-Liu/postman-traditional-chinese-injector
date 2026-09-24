@@ -14,8 +14,8 @@
         "button": "再试一次"
       },
       "no_mock_state": {
-        "collection_text": "没有为此 集合 创建 mock 服务器。",
-        "environment_text": "没有 mock 服务器使用此 环境。"
+        "collection_text": "没有为此集合创建 mock 服务器。",
+        "environment_text": "没有 mock 服务器使用此环境。"
       },
       "default_state": {
         "show_more": "显示 {mocksLength} 更多",

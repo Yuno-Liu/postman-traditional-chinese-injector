@@ -36,7 +36,7 @@
       "label": "按可见性筛选",
       "options": {
         "all": {
-          "value": "所有 Workspace"
+          "value": "所有工作区"
         },
         "personal": {
           "value": "个人",
@@ -87,11 +87,11 @@
     }
   },
   "table": {
-    "caption": "Workspace 表格",
-    "row_aria_label": "打开 Workspace",
+    "caption": "工作区表格",
+    "row_aria_label": "打开工作区",
     "favorite_button_aria_label": "{action} {workspaceName}",
     "column_headers": {
-      "first_column_header": "Workspace 名称",
+      "first_column_header": "工作区名称",
       "second_column_header": "创建者",
       "third_column_header": "谁可以访问？",
       "fourth_column_header": "最后更新时间",
@@ -101,7 +101,7 @@
       "actions": "操作"
     },
     "sharedpw_column_headers": {
-      "first_column_header": "Workspace 名称",
+      "first_column_header": "工作区名称",
       "second_column_header": "创建者",
       "third_column_header": "所有者",
       "fourth_column_header": "最后更新时间",
@@ -111,15 +111,15 @@
     }
   },
   "banner": {
-    "personal_workspaces_banner": "你只能查看自己创建的个人 Workspace。",
-    "super_admin_banner": "作为超级管理员，你可以查看团队中创建的所有个人 Workspace。",
-    "simplified_super_admin_banner": "作为超级管理员，你可以查看团队中创建的所有 Workspace。"
+    "personal_workspaces_banner": "你只能查看自己创建的个人工作区。",
+    "super_admin_banner": "作为超级管理员，你可以查看团队中创建的所有个人工作区。",
+    "simplified_super_admin_banner": "作为超级管理员，你可以查看团队中创建的所有工作区。"
   },
   "pending_request_item": {
-    "request_message_former_users": "一位前团队成员请求将此 Workspace 设为{transitionVisibility}",
-    "request_message_current_users": "请求将此 Workspace 设为{transitionVisibility}",
-    "request_message_org_former_users": "一位前团队成员请求将此 Workspace 共享给组织中的所有人",
-    "request_message_org_current_users": "请求将此 Workspace 共享给组织中的所有人",
+    "request_message_former_users": "一位前团队成员请求将此工作区设为{transitionVisibility}",
+    "request_message_current_users": "请求将此工作区设为{transitionVisibility}",
+    "request_message_org_former_users": "一位前团队成员请求将此工作区共享给组织中的所有人",
+    "request_message_org_current_users": "请求将此工作区共享给组织中的所有人",
     "no_resources_added": "尚未添加任何资源",
     "last_updated": "最后更新：",
     "approve": "批准",
@@ -135,17 +135,17 @@
   "toast_deny_success": "请求已拒绝",
   "archived_tab": {
     "bulk_selection": {
-      "text": "已选择 {count} 个 Workspace",
+      "text": "已选择 {count} 个工作区",
       "restore_button_text": "恢复",
       "delete_button_text": "删除"
     },
     "empty_state": {
-      "title": "你没有已归档的 Workspace",
-      "description": "归档 Workspace 以减少混乱，你可以随时恢复它们。"
+      "title": "你没有已归档的工作区",
+      "description": "归档工作区以减少混乱，你可以随时恢复它们。"
     },
     "table": {
       "column_headers": {
-        "workspace_name": "Workspace 名称",
+        "workspace_name": "工作区名称",
         "archived_on": "归档时间",
         "archived_by": "归档者",
         "actions": "操作"
@@ -153,38 +153,38 @@
       "menu_button": {
         "restore": {
           "text": "恢复",
-          "tooltip": "恢复 Workspace"
+          "tooltip": "恢复工作区"
         },
         "delete": {
           "text": "删除",
-          "tooltip": "删除 Workspace"
+          "tooltip": "删除工作区"
         }
       }
     },
     "toasts": {
       "bulk_restore": {
         "failure_description": "只是网络出了点问题，请重试。",
-        "failure_title": "无法恢复 {count} 个 Workspace",
-        "success_description": "已恢复 {count} 个 Workspace"
+        "failure_title": "无法恢复 {count} 个工作区",
+        "success_description": "已恢复 {count} 个工作区"
       },
       "bulk_delete": {
         "failure_description": "只是网络出了点问题，请重试。",
-        "failure_title": "无法删除 {count} 个 Workspace",
-        "success_description": "已删除 {count} 个 Workspace"
+        "failure_title": "无法删除 {count} 个工作区",
+        "success_description": "已删除 {count} 个工作区"
       },
       "restore": {
         "failure_description": "只是网络出了点问题，请重试。",
-        "failure_title": "无法恢复 Workspace",
-        "success_description": "Workspace 已恢复"
+        "failure_title": "无法恢复工作区",
+        "success_description": "工作区已恢复"
       },
       "delete": {
         "failure_description": "只是网络出了点问题，请重试。",
-        "failure_title": "无法删除 Workspace",
-        "success_description": "Workspace 已删除"
+        "failure_title": "无法删除工作区",
+        "success_description": "工作区已删除"
       }
     }
   },
-  "tidy_inactive_workspaces_nudge": "<0>整理一下？</0> <1>归档</1> <2>不活跃的 Workspace。</2>",
+  "tidy_inactive_workspaces_nudge": "<0>整理一下？</0> <1>归档</1> <2>不活跃的工作区。</2>",
   "pending_requests_empty": {
     "title": "没有待审核的请求",
     "description": "当队友想要与更广泛的受众分享他们的工作区时，可以在此处查看他们的请求。"

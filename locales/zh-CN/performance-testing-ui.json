@@ -46,7 +46,7 @@
         "max": "加速时间不能超过测试持续时间"
       },
       "collection": {
-        "empty": "从侧边栏拖动 Collection 或文件夹即可开始"
+        "empty": "从侧边栏拖动集合或文件夹即可开始"
       },
       "request_selection": {
         "no_requests": "您必须选择请求才能开始运行"
@@ -60,7 +60,7 @@
       "file_data": {
         "file_missing": {
           "suffix": "在本地存储中找不到文件。添加文件或不添加文件继续。",
-          "msg": "由于本地存储中找不到上次运行使用的文件，因此将在没有数据文件的情况下进行 Collection 运行"
+          "msg": "由于本地存储中找不到上次运行使用的文件，因此将在没有数据文件的情况下进行集合运行"
         },
         "help_content": "<0>{bannerContent} 了解有关 </0><1><0> 格式化数据文件的更多信息。</0></1>",
         "error_msgs_map": {
@@ -97,7 +97,7 @@
     },
     "users": {
       "label": "虚拟用户",
-      "helper_text": "每个用户在测试期间并行且重复地运行 Collection。"
+      "helper_text": "每个用户在测试期间并行且重复地运行集合。"
     },
     "duration": {
       "label": "测试时间",
@@ -142,7 +142,7 @@
               },
               "random": {
                 "label": "随机化",
-                "helper_text": "每次运行 Collection 时，每个 VU 都使用随机行中的数据。"
+                "helper_text": "每次运行集合时，每个 VU 都使用随机行中的数据。"
               }
             }
           }
@@ -167,7 +167,7 @@
           },
           "random": {
             "value": "随机化",
-            "suffix": "其中每个 VU 每次运行 Collection 时都会从随机行接收数据。"
+            "suffix": "其中每个 VU 每次运行集合时都会从随机行接收数据。"
           }
         }
       }
@@ -178,19 +178,19 @@
     },
     "no_create_access": {
       "public_ws": {
-        "title": "Fork Collection 以运行它",
-        "description": "您没有权限在此公开 Workspace 中运行 Collection。请将该 Collection Fork 到您自己的 Workspace 后再运行。",
-        "primary_action_text": "复刻 Collection"
+        "title": "Fork 集合以运行它",
+        "description": "您没有权限在此公开工作区中运行集合。请将该集合 Fork 到您自己的工作区后再运行。",
+        "primary_action_text": "复刻集合"
       },
       "rfa": {
         "title": "没有权限运行性能测试",
-        "description": "您可以请求获取编辑权限，或将此 Collection Fork 到您自己的 Workspace。",
+        "description": "您可以请求获取编辑权限，或将此集合 Fork 到您自己的工作区。",
         "primary_action_text": "请求访问",
-        "secondary_action_text": "复刻 Collection"
+        "secondary_action_text": "复刻集合"
       },
       "api_collection": {
         "title": "即将推出！",
-        "description": "性能测试目前不适用于 API 内的 Collection。我们正在努力尽快推出此功能！"
+        "description": "性能测试目前不适用于 API 内的集合。我们正在努力尽快推出此功能！"
       }
     },
     "pass_criteria": {
@@ -224,43 +224,43 @@
   },
   "cloud_run": {
     "lifecycle_collections": {
-      "heading": "生命周期 Collection",
+      "heading": "生命周期集合",
       "setup": {
-        "label": "Setup Collection（可选）",
+        "label": "Setup 集合（可选）",
         "short_label": "Setup（可选）",
-        "info_aria_label": "关于 Setup Collection",
-        "environment_mutation_helper_text": "在测试前运行。对 Environment 的修改会延续到测试和 Teardown 阶段。",
-        "placeholder": "选择 Setup Collection",
+        "info_aria_label": "关于 Setup 集合",
+        "environment_mutation_helper_text": "在测试前运行。对环境的修改会延续到测试和 Teardown 阶段。",
+        "placeholder": "选择 Setup 集合",
         "trigger_add": "+ Setup",
         "trigger_selected": "Setup：{name}",
-        "trigger_remove": "移除 Setup Collection",
-        "failed_primary_cause": "Setup 生命周期 Collection 运行失败。",
-        "unknown_primary_cause": "Setup 生命周期 Collection 的运行结果未知。"
+        "trigger_remove": "移除 Setup 集合",
+        "failed_primary_cause": "Setup 生命周期集合运行失败。",
+        "unknown_primary_cause": "Setup 生命周期集合的运行结果未知。"
       },
       "teardown": {
-        "label": "Teardown Collection（可选）",
+        "label": "Teardown 集合（可选）",
         "short_label": "Teardown（可选）",
-        "info_aria_label": "关于 Teardown Collection",
-        "environment_mutation_helper_text": "在测试后运行，并沿用此前对 Environment 的修改。",
-        "placeholder": "选择 Teardown Collection",
+        "info_aria_label": "关于 Teardown 集合",
+        "environment_mutation_helper_text": "在测试后运行，并沿用此前对环境的修改。",
+        "placeholder": "选择 Teardown 集合",
         "trigger_add": "+ Teardown",
         "trigger_selected": "Teardown：{name}",
-        "trigger_remove": "移除 Teardown Collection"
+        "trigger_remove": "移除 Teardown 集合"
       },
-      "create_collection": "新建 Collection",
-      "import_collection": "导入 Collection",
-      "open_collection": "在新标签页中打开 Collection",
-      "create_collection_no_permission": "你没有在此 Workspace 中创建 Collection 的权限。",
-      "import_collection_no_permission": "你没有向此 Workspace 导入 Collection 的权限。",
-      "environment_restore_failed": "此次生命周期运行所保存的 Environment 已不可用。请先恢复该 Environment 或清除 Setup Collection，然后重新运行。",
-      "gate_off_prefill": "本次运行不支持生命周期 Collection。请在启用生命周期 Collection 的情况下，作为云端测试重新运行。",
-      "load_error": "Collection 加载失败。请重试后再选择生命周期 Collection。",
+      "create_collection": "新建集合",
+      "import_collection": "导入集合",
+      "open_collection": "在新标签页中打开集合",
+      "create_collection_no_permission": "你没有在此工作区中创建集合的权限。",
+      "import_collection_no_permission": "你没有向此工作区导入集合的权限。",
+      "environment_restore_failed": "此次生命周期运行所保存的环境已不可用。请先恢复该环境或清除 Setup 集合，然后重新运行。",
+      "gate_off_prefill": "本次运行不支持生命周期集合。请在启用生命周期集合的情况下，作为云端测试重新运行。",
+      "load_error": "集合加载失败。请重试后再选择生命周期集合。",
       "unavailable_option": "{id}（不可用）",
       "rejections": {
-        "feature_disabled": "新建性能测试不支持生命周期 Collection。",
-        "environment_required": "运行 Setup Collection 需要先选择一个 Environment。",
-        "validation_failed": "生命周期 Collection 配置无效。",
-        "cloud_only": "生命周期 Collection 仅适用于云端性能测试。"
+        "feature_disabled": "新建性能测试不支持生命周期集合。",
+        "environment_required": "运行 Setup 集合需要先选择一个环境。",
+        "validation_failed": "生命周期集合配置无效。",
+        "cloud_only": "生命周期集合仅适用于云端性能测试。"
       }
     },
     "rejections": {
@@ -382,12 +382,12 @@
         "running": "跑步",
         "running_empty": "等待测试开始执行。",
         "setup_collection": "初始化",
-        "setup_collection_empty": "等待 Setup Collection 运行完成。",
+        "setup_collection_empty": "等待 Setup 集合运行完成。",
         "teardown_collection": "清理",
-        "teardown_collection_empty": "等待 Teardown Collection 运行完成。",
+        "teardown_collection_empty": "等待 Teardown 集合运行完成。",
         "finishing": "总结",
         "finishing_empty": "结束运行并提供结果。",
-        "finishing_failed": "无法汇总所有实例的结果。 “摘要”选项卡中可能提供部分结果。",
+        "finishing_failed": "无法汇总所有实例的结果。“摘要”选项卡中可能提供部分结果。",
         "status": {
           "pending": "待处理",
           "active": "进行中",
@@ -405,7 +405,7 @@
       },
       "banners": {
         "pre_instrumentation": "此运行早于执行跟踪，因此详细的活动不可用。",
-        "incomplete": "部分活动日志 — 您的结果不受影响。",
+        "incomplete": "部分活动日志—您的结果不受影响。",
         "user_aborted_untraced": "此运行已手动停止。未记录停止信号后的活动。"
       },
       "stage_strip": {
@@ -447,16 +447,16 @@
           "assertion_truncated": "（已截断）",
           "reason": {
             "assertion_failed": "一个或多个断言未通过。",
-            "script_failed": "Collection 执行过程中脚本运行失败。",
+            "script_failed": "集合执行过程中脚本运行失败。",
             "request_failed": "一个或多个请求失败。",
-            "timeout": "Collection 未在时限内完成。",
-            "cancelled": "Collection 已被取消。",
-            "environment_required": "运行此生命周期 Collection 需要一个 Environment。",
-            "resource_resolution_failed": "生命周期 Collection 的资源加载失败。",
-            "runtime_initialization_failed": "生命周期 Collection 的运行时未能启动。",
-            "resource_limit": "生命周期 Collection 超出了执行资源上限。",
+            "timeout": "集合未在时限内完成。",
+            "cancelled": "集合已被取消。",
+            "environment_required": "运行此生命周期集合需要一个环境。",
+            "resource_resolution_failed": "生命周期集合的资源加载失败。",
+            "runtime_initialization_failed": "生命周期集合的运行时未能启动。",
+            "resource_limit": "生命周期集合超出了执行资源上限。",
             "limit_exceeded": "生命周期运行结果超出了允许的大小。",
-            "system": "因系统错误，Collection 未能完成。"
+            "system": "因系统错误，集合未能完成。"
           }
         }
       }
@@ -482,7 +482,7 @@
   },
   "compare_runs": {
     "footer": {
-      "default": "默认显示此 Collection 最近的 20 次运行。可按运行名称或编号搜索，与更早的运行进行比较。",
+      "default": "默认显示此集合最近的 20 次运行。可按运行名称或编号搜索，与更早的运行进行比较。",
       "search_results": "显示与搜索词匹配的最近 20 次运行。"
     }
   }

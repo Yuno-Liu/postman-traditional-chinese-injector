@@ -18,12 +18,12 @@
     "popover": {
       "private": {
         "heading": "与团队分享",
-        "content": "此 Monitor 位于您的个人 Workspace 中。",
+        "content": "此 Monitor 位于您的个人工作区中。",
         "content2": "除非您邀请他们，否则没有人可以访问此内容。",
         "button": "邀请人员"
       },
       "shared": {
-        "private_team_content": "只有 Workspace 成员可以访问此链接。",
+        "private_team_content": "只有工作区成员可以访问此链接。",
         "team_content": "只有团队成员可以访问此链接。",
         "heading": "分享链接",
         "button": {
@@ -33,7 +33,7 @@
       },
       "partner": {
         "heading": "分享链接",
-        "content": "只有有权访问此 Workspace 的人才能访问此链接。",
+        "content": "只有有权访问此工作区的人才能访问此链接。",
         "button": {
           "copy": "复制链接",
           "invite": "邀请人员"
@@ -74,9 +74,9 @@
       "console_disabled_msg": "您没有权限查看此信息。",
       "activity_info_msg": "该用户的个人资料为私密。",
       "request_access_msg": "要执行此操作，请申请此 Monitor 的额外访问权限。",
-      "collection_moved_msg": "无法执行已禁用的操作，因为关联的 Collection 已移动到其他 Workspace",
+      "collection_moved_msg": "无法执行已禁用的操作，因为关联的集合已移动到其他工作区",
       "publish_editor_required_msg": "您需要编辑者访问权限才能发布或取消发布 Monitor 报告",
-      "publish_restricted_workspace_msg": "您无法从此 Workspace 发布 Monitor 报告。要发布，请在内部团队 Workspace 中创建 Monitor。",
+      "publish_restricted_workspace_msg": "您无法从此工作区发布 Monitor 报告。要发布，请在内部团队工作区中创建 Monitor。",
       "unpublish_requires_manage_publish": "只有团队管理员可以取消发布此报告。"
     },
     "forbidden_error": {
@@ -104,10 +104,10 @@
       "delete": "Monitor 已删除",
       "pause_inactivity": "Monitor 已暂停（用户不活动）",
       "pause_unhealthy": "Monitor 已暂停（频繁运行失败）",
-      "pause_collection_environment_deleted": "Monitor 已暂停（Collection 或 Environment 已取消共享或删除）",
-      "pause_collection_moved": "Monitor 已暂停（关联的 Collection 已从 Workspace 中移除）",
-      "pause_environment_moved": "Monitor 已暂停（关联的 Environment 已从 Workspace 中移除）",
-      "pause_no_workspace": "Monitor 已暂停（不存在于任何 Workspace 中）",
+      "pause_collection_environment_deleted": "Monitor 已暂停（集合或环境已取消共享或删除）",
+      "pause_collection_moved": "Monitor 已暂停（关联的集合已从工作区中移除）",
+      "pause_environment_moved": "Monitor 已暂停（关联的环境已从工作区中移除）",
+      "pause_no_workspace": "Monitor 已暂停（不存在于任何工作区中）",
       "pause_support": "Monitor 已由 Postman 支持代表暂停",
       "pause": "Monitor 已暂停",
       "resume_system_action": "Monitor 已作为系统操作的一部分恢复。",
@@ -123,9 +123,9 @@
       "finished_failure": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 运行完成 - 检查失败的测试。",
       "finished_error": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 运行失败。",
       "finished_abort": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 运行超时。",
-      "finished_abort_invalid_resource": "关联的 Collection 或 Environment 不可访问或已被删除。",
-      "finished_abort_deleted_collection": "关联的 Collection 已被删除。",
-      "finished_abort_deleted_environment": "关联的 Environment 已被删除。",
+      "finished_abort_invalid_resource": "关联的集合或环境不可访问或已被删除。",
+      "finished_abort_deleted_collection": "关联的集合已被删除。",
+      "finished_abort_deleted_environment": "关联的环境已被删除。",
       "finished_success": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 运行完成。",
       "retrying": "重试运行。这可能需要几分钟。",
       "discontinued_error": "{entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 运行失败，正在重试。",
@@ -150,7 +150,7 @@
       "created_at_label": "创建于",
       "collection_label": "集合",
       "environment_label": "环境",
-      "no_collection": "没有 Collection"
+      "no_collection": "没有集合"
     },
     "activity_logs_empty_state": {
       "text": "看起来这个 Monitor 没有任何活动",
@@ -190,8 +190,8 @@
       "no_fail": "没有测试失败：D",
       "no_errors": "没有错误",
       "no_test_runs": "本次运行没有测试",
-      "check_console": "选择 Collection > 三点图标（…）> 添加请求，即可添加请求。",
-      "no_results": "在关联的 Collection 中找不到请求",
+      "check_console": "选择集合 > 三点图标（…）> 添加请求，即可添加请求。",
+      "no_results": "在关联的集合中找不到请求",
       "abort": "本次运行已中止",
       "all_tests": "全部",
       "passed_tests": "通过",
@@ -204,7 +204,7 @@
       "no_requests_description": "<0>{collectionName}</0> 中没有可供 Monitor 运行的请求。请至少添加一个请求以查看结果。",
       "add_request": "添加请求",
       "import_request": "导入请求",
-      "updated_title": "Collection 已更新",
+      "updated_title": "集合已更新",
       "updated_description": "<0>{collectionName}</0> 已更新。运行 Monitor 以查看其结果。",
       "run_now": "立即运行",
       "import_failed": "无法打开导入对话框。请检查网络连接后重试。",
@@ -254,7 +254,7 @@
       "ceiling_error": "已达到 Monitor 创建上限。",
       "check_internet": "请检查您的互联网连接，然后重试。",
       "something_went_wrong": "创建此 Monitor 时出现问题，您可以稍后再试。",
-      "unsupported_collection_for_runner": "此 Collection 使用了多种协议。请将自托管 Runner 升级到 1.47.0 或更高版本，或改用 Postman 云端区域运行此 Monitor。",
+      "unsupported_collection_for_runner": "此集合使用了多种协议。请将自托管 Runner 升级到 1.47.0 或更高版本，或改用 Postman 云端区域运行此 Monitor。",
       "load_retry": "无法加载 Monitor，请稍后重试。",
       "invalid_aggregate": "Monitor 性能视图中的聚合函数无效",
       "request_aggregate": "getChartData：请求聚合值无效。",
@@ -268,11 +268,11 @@
     "empty_state": {
       "create_error": "无法创建 Monitor",
       "edit_error": "无法编辑 Monitor",
-      "no_environment": "没有 Monitor 使用此 Environment",
-      "no_collection": "尚未为此 Collection 创建任何 Monitor",
+      "no_environment": "没有 Monitor 使用此环境",
+      "no_collection": "尚未为此集合创建任何 Monitor",
       "no_results": "没有找到结果",
       "no_monitors_setup": "您尚未设置任何 Monitor",
-      "monitor_collection_run": "Monitor 允许您定期运行 Collection，以检查其性能和响应。",
+      "monitor_collection_run": "Monitor 允许您定期运行集合，以检查其性能和响应。",
       "no_run_results": "还没有结果",
       "no_tests_run": "没有运行测试",
       "deleted_items_in_selection": "在自定义运行顺序中发现已删除的请求或文件夹，导致在运行任何请求之前出现错误。",
@@ -287,7 +287,7 @@
       "at": "在"
     },
     "loading_error": {
-      "collections_and_environments": "获取 Collection 和 Environment 时发生错误"
+      "collections_and_environments": "获取集合和环境时发生错误"
     },
     "sign_in_message": {
       "title": "创建一个帐户",
@@ -305,7 +305,7 @@
       "error": "获取区域时发生错误"
     },
     "collection_fetch_error": {
-      "error": "获取 Collection 时发生错误"
+      "error": "获取集合时发生错误"
     },
     "monitor_action_success": {
       "create": "Monitor 已创建",
@@ -317,7 +317,7 @@
       "invalid": "电子邮件地址无效",
       "duplicate": "该电子邮件已存在"
     },
-    "no_environment": "没有 Environment",
+    "no_environment": "没有环境",
     "uptime_app_message": "正常运行时间 Monitor 目前仅在 Postman Web 应用程序上可用。",
     "uptime_documentation": "了解有关正常运行时间 Monitor 的更多信息",
     "uptime_browser_transition": "打开 Web App",
@@ -336,7 +336,7 @@
     "header": "创建 Monitor",
     "default_monitor_name": "新建 Monitor",
     "what_to_monitor": "监控什么？",
-    "what_to_monitor_info": "选择包含要监控请求的 Collection。API 规范或导入会先生成一个 Collection。",
+    "what_to_monitor_info": "选择包含要监控请求的集合。API 规范或导入会先生成一个集合。",
     "how_to_run_monitor": "如何运行 Monitor？",
     "runner_section": "运行器",
     "runner_section_info": "此 Monitor 的运行位置。可使用 Postman 云端区域，或使用私有运行器访问你网络内部的 API。",
@@ -348,39 +348,39 @@
     "cli_tab": "通过 Postman CLI",
     "name": "Monitor 名称",
     "collection": "集合",
-    "no_collections_or_specs": "没有可用的 Collection 或 API 规范",
-    "collection_select": "选择 Collection",
-    "collection_or_spec_select": "选择 Collection 或 API 规范",
-    "open_collection_in_new_tab": "在新标签页中打开 Collection",
+    "no_collections_or_specs": "没有可用的集合或 API 规范",
+    "collection_select": "选择集合",
+    "collection_or_spec_select": "选择集合或 API 规范",
+    "open_collection_in_new_tab": "在新标签页中打开集合",
     "open_spec_in_new_tab": "在新标签页中打开 API 规范",
     "source_filter_all": "全部",
-    "source_filter_collections": "Collection",
+    "source_filter_collections": "集合",
     "source_filter_specs": "API 规范",
-    "no_collections": "没有可用的 Collection",
+    "no_collections": "没有可用的集合",
     "no_specs": "没有可用的 API 规范",
-    "create_collection": "新建 Collection",
-    "create_collection_no_permission": "你没有在此 Workspace 中创建 Collection 的权限",
-    "import_collection": "导入 Collection",
-    "import_collection_no_permission": "你没有在此 Workspace 中导入 Collection 的权限",
-    "import_collection_in_progress": "Collection 正在导入中",
-    "spec_collection_generating": "正在根据 {specName} 生成 Collection",
-    "spec_collection_unsupported": "无法根据此规范生成 Collection",
-    "spec_collection_no_permission": "你没有根据此规范生成 Collection 的权限",
-    "spec_collection_failed": "无法根据该规范生成 Collection",
-    "collection_monitor_select": "请选择要 Monitor 的 Collection。",
+    "create_collection": "新建集合",
+    "create_collection_no_permission": "你没有在此工作区中创建集合的权限",
+    "import_collection": "导入集合",
+    "import_collection_no_permission": "你没有在此工作区中导入集合的权限",
+    "import_collection_in_progress": "集合正在导入中",
+    "spec_collection_generating": "正在根据 {specName} 生成集合",
+    "spec_collection_unsupported": "无法根据此规范生成集合",
+    "spec_collection_no_permission": "你没有根据此规范生成集合的权限",
+    "spec_collection_failed": "无法根据该规范生成集合",
+    "collection_monitor_select": "请选择要 Monitor 的集合。",
     "multi_protocol_beta_banner": {
       "beta_badge": "Beta",
-      "description": "<0></0> 对包含 <1>GraphQL</1> 和 <2>gRPC</2> 请求的 Collection 的支持目前处于 Beta 阶段。"
+      "description": "<0></0> 对包含 <1>GraphQL</1> 和 <2>gRPC</2> 请求的集合的支持目前处于 Beta 阶段。"
     },
-    "collection_version_tag": "Collection 标签",
-    "version_tag_select": "为此 Monitor 选择一个 Collection 标签。",
-    "version_tag_current_version": "为此 Monitor 选择一个 Collection 标签。如果该 Collection 未链接到 API，则只能基于当前标签创建 Monitor。",
+    "collection_version_tag": "集合标签",
+    "version_tag_select": "为此 Monitor 选择一个集合标签。",
+    "version_tag_current_version": "为此 Monitor 选择一个集合标签。如果该集合未链接到 API，则只能基于当前标签创建 Monitor。",
     "environment": "环境",
-    "create_environment": "新建 Environment",
-    "create_environment_no_permission": "你没有在此 Workspace 中创建 Environment 的权限",
+    "create_environment": "新建环境",
+    "create_environment_no_permission": "你没有在此工作区中创建环境的权限",
     "no_environment": "无",
     "learn_more": "了解更多",
-    "environment_placeholder": "此 Environment 中的变量值将用于您的所有 Monitor 调用。",
+    "environment_placeholder": "此环境中的变量值将用于您的所有 Monitor 调用。",
     "run": "运行",
     "regions": "地区",
     "runners": "运行器",
@@ -443,7 +443,7 @@
     "edit_monitor": "编辑 Monitor",
     "editing_badge": "编辑中",
     "no_empty_name": "请输入 Monitor 名称",
-    "select_version_tag": "为此 Collection 选择一个标签",
+    "select_version_tag": "为此集合选择一个标签",
     "at_this_time": "此时",
     "labels": {
       "button": {
@@ -453,7 +453,7 @@
       }
     },
     "warnings": {
-      "no_environment_found": "此 Workspace 中没有 Environment。"
+      "no_environment_found": "此工作区中没有环境。"
     },
     "data_file": {
       "select_label": "数据文件",
@@ -470,7 +470,7 @@
       "save_as_dataset_hint": "将此文件保存为 Dataset，即可用 SQL 筛选、排序和清洗数据行。",
       "save_as_dataset_success": "Dataset 已创建",
       "save_as_dataset_error": "Dataset 创建失败",
-      "save_as_dataset_no_permission": "你没有在此 Workspace 中创建数据集的权限。"
+      "save_as_dataset_no_permission": "你没有在此工作区中创建数据集的权限。"
     },
     "dataset_compat": {
       "partial": "此 <view>视图</view> 使用了与 Monitor 不兼容的 <sources>本地数据源</sources>。请将其上传到 Postman Cloud，或改用可访问这些数据源的私有 Runner 运行此 Monitor。",
@@ -495,14 +495,14 @@
       "accepted_formats": "CSV、JSON",
       "selected_pill": "已选数据文件",
       "new_dataset": "新建 Dataset",
-      "new_dataset_no_permission": "你没有在此 Workspace 中创建数据集的权限。",
-      "no_datasets": "此 Workspace 中还没有 Dataset。",
+      "new_dataset_no_permission": "你没有在此工作区中创建数据集的权限。",
+      "no_datasets": "此工作区中还没有 Dataset。",
       "no_views": "还没有视图。",
       "create_view": "新建一个",
       "open_in_tab": "在新标签页中打开",
       "dataset_create_failed": "数据集创建失败，请重试。",
       "strategy_label": "迭代策略",
-      "strategy_tooltip": "Collection 运行多少次，以及视图的数据行用尽后，剩余迭代如何取数。",
+      "strategy_tooltip": "集合运行多少次，以及视图的数据行用尽后，剩余迭代如何取数。",
       "run_label": "运行",
       "iterations_suffix": "次迭代",
       "iterations_disabled_tooltip": "使用默认策略时，迭代次数始终与视图的行数一致。如需修改，请选择其他策略。",
@@ -520,7 +520,7 @@
       }
     },
     "warning_message": {
-      "unuploaded_files": "{files, plural, one {此 Collection 中有 # 个请求缺少关联文件} other {此 Collection 中有 # 个请求缺少关联文件}}"
+      "unuploaded_files": "{files, plural, one {此集合中有 # 个请求缺少关联文件} other {此集合中有 # 个请求缺少关联文件}}"
     },
     "file_uplaod_status": {
       "single_request": "请求缺少文件",
@@ -560,7 +560,7 @@
     "monitor_report": "Monitor 报告",
     "published": "已发布",
     "published_monitor": "已发布的 Monitor",
-    "published_monitor_pending_tooltip": "已发布 — 变更请求正在审核中",
+    "published_monitor_pending_tooltip": "已发布—变更请求正在审核中",
     "copy_link": "复制链接",
     "unpublish": "取消发布",
     "unpublish_success": "Monitor 报告已取消发布",
@@ -590,7 +590,7 @@
     "report_name_placeholder": "例如订单 API 健康报告",
     "description_label": "描述",
     "description_helper": "添加简短摘要以在共享链接和预览中提供上下文。",
-    "description_placeholder": "例如生产端点的每日 监控 结果",
+    "description_placeholder": "例如生产端点的每日监控结果",
     "show_requests_label": "显示请求端点",
     "show_requests_helper": "在公开报告中包含请求 URL。",
     "cancel": "取消",
@@ -727,7 +727,7 @@
   "uptime-monitor": {
     "banner": {
       "text": "了解您的服务何时中断",
-      "sub_text": "监控跨区域 URL 的正常运行时间，并设置及时警报，无需创建 Collection。",
+      "sub_text": "监控跨区域 URL 的正常运行时间，并设置及时警报，无需创建集合。",
       "badge_text": "测试版",
       "button_text": "创建正常运行时间 Monitor",
       "link_text": "了解有关正常运行时间 Monitor 的更多信息"

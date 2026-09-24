@@ -1,6 +1,6 @@
 {
   "page": {
-    "empty_state_title": "与 Postman 云代理 开始对话",
+    "empty_state_title": "与 Postman 云代理开始对话",
     "empty_state_message": "从侧边栏选择或开始对话。",
     "empty_state_learn_more": "了解更多"
   },
@@ -152,12 +152,12 @@
     "workspace_dropdown_aria_label": "选择工作区",
     "workspace_dropdown_tooltip": "选择此任务运行的工作区",
     "workspace_dropdown_placeholder": "选择工作区",
-    "workspace_dropdown_loading_label": "正在加载 Workspace…",
-    "workspace_dropdown_empty_label": "没有可用的 Workspace",
+    "workspace_dropdown_loading_label": "正在加载工作区…",
+    "workspace_dropdown_empty_label": "没有可用的工作区",
     "workspace_dropdown_no_results_label": "没有与您的搜索匹配的工作区",
     "workspace_dropdown_search_placeholder": "搜索工作区...",
     "workspace_dropdown_search_aria_label": "搜索工作空间",
-    "workspace_dropdown_no_workspace_option": "无 Workspace",
+    "workspace_dropdown_no_workspace_option": "无工作区",
     "repo_dropdown_aria_label": "选择存储库",
     "repo_dropdown_placeholder": "选择存储库",
     "repo_dropdown_not_connected_placeholder": "连接 GitHub 以选择存储库",

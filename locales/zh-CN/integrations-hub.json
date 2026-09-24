@@ -31,7 +31,7 @@
     "connectButton": "连接服务",
     "connectPermissionTooltip": "只有具备 API Catalog Manager 角色的成员才能访问服务发现页面",
     "columns": {
-      "workspace": "Workspace",
+      "workspace": "工作区",
       "repository": "仓库"
     },
     "emptyState": "未找到集成服务",
@@ -87,7 +87,7 @@
     },
     "jira": {
       "title": "创建和查看 Jira Issue",
-      "description": "从 Collection、响应或 Monitor 创建 Jira Issue 或关联已有 Issue，无需离开 Postman 即可跟踪状态。"
+      "description": "从集合、响应或 Monitor 创建 Jira Issue 或关联已有 Issue，无需离开 Postman 即可跟踪状态。"
     },
     "github_app": {
       "title": "已连接的 GitHub 账户",
@@ -123,13 +123,13 @@
         "workspace": "工作区",
         "lastUsed": "最近使用",
         "remove": "从工作区移除",
-        "removeNoPermission": "你没有从此 Workspace 移除该应用的权限。"
+        "removeNoPermission": "你没有从此工作区移除该应用的权限。"
       }
     },
     "gateway": {
       "connectedBadge": "已连接",
       "authTitle": "{appName} - ({authLabel})",
-      "tableDescription": "云连接器让团队可以把 API 引入 API Catalog。API 规范随后会带着元数据（包括关联的 Environment 和集群）出现在 API Catalog 中，并自动生成 Collection，便于在 Postman 中继续开发 API。",
+      "tableDescription": "云连接器让团队可以把 API 引入 API Catalog。API 规范随后会带着元数据（包括关联的环境和集群）出现在 API Catalog 中，并自动生成集合，便于在 Postman 中继续开发 API。",
       "authLabel": {
         "accessKey": "Access Key 身份验证",
         "assumeRole": "IAM Role 身份验证"
@@ -213,8 +213,8 @@
   },
   "workspaceNotifications": {
     "title": "工作区通知",
-    "description": "当队友添加或更改请求、Collection 或 Environment，或有人发布工作区更新时，随时接收更新通知。",
-    "addButton": "连接 Workspace",
+    "description": "当队友添加或更改请求、集合或环境，或有人发布工作区更新时，随时接收更新通知。",
+    "addButton": "连接工作区",
     "table": {
       "workspace": "工作区",
       "privateWorkspace": "私有工作区",
@@ -227,24 +227,24 @@
     "modal": {
       "createHeading": "连接频道",
       "editHeading": "编辑频道集成",
-      "postmanWorkspaceLabel": "Postman Workspace",
-      "postmanWorkspacePlaceholder": "选择 Workspace",
+      "postmanWorkspaceLabel": "Postman 工作区",
+      "postmanWorkspacePlaceholder": "选择工作区",
       "slackWorkspaceLabel": "{appName} 工作区",
       "slackWorkspacePlaceholder": "选择工作区",
       "channelLabel": "{appName} 频道",
       "channelPlaceholder": "选择频道",
-      "channelConnected": "— 已连接",
+      "channelConnected": "—已连接",
       "channelLoadError": "频道加载失败，请重试。",
       "frequencyLabel": "发送通知的方式…",
       "frequencyRealtime": "实时发送",
       "frequencyPeriodic": "定期以摘要形式发送",
       "frequencyPeriodicBadge": "新",
       "eventsHeading": "触发条件…",
-      "eventWorkspaceUpdate": "发布 Workspace 动态",
-      "eventPullRequest": "创建或合并 Workspace Pull Request",
-      "eventCreate": "添加请求、Collection 或 Environment",
-      "eventDelete": "删除请求、Collection 或 Environment",
-      "eventUpdate": "编辑请求或 Collection",
+      "eventWorkspaceUpdate": "发布工作区动态",
+      "eventPullRequest": "创建或合并工作区 Pull Request",
+      "eventCreate": "添加请求、集合或环境",
+      "eventDelete": "删除请求、集合或环境",
+      "eventUpdate": "编辑请求或集合",
       "digest": {
         "dayLabel": "星期",
         "dayPlaceholder": "选择日期",
@@ -317,7 +317,7 @@
     "columns": {
       "name": "名称",
       "monitor": "Monitor",
-      "collection": "Collection",
+      "collection": "集合",
       "entity": "实体",
       "status": "状态",
       "workspace": "工作区",
@@ -337,7 +337,7 @@
     }
   },
   "slackWorkspaceSelect": {
-    "addWorkspace": "添加另一个 Workspace",
+    "addWorkspace": "添加另一个工作区",
     "connected": "已连接"
   },
   "agentTasks": {
@@ -354,12 +354,12 @@
     },
     "connectModal": {
       "heading": "连接 Agent Tasks",
-      "body": "请选择你要连接的 {appName} Workspace。",
+      "body": "请选择你要连接的 {appName} 工作区。",
       "cancel": "取消",
       "confirm": "连接",
-      "noWorkspaces": "尚未连接任何 Slack Workspace。请先添加一个。"
+      "noWorkspaces": "尚未连接任何 Slack 工作区。请先添加一个。"
     },
-    "removeError": "无法为该 Workspace 关闭 Agent Tasks，请重试。",
-    "enableError": "无法为该 Workspace 启用 Agent Tasks，请重试。"
+    "removeError": "无法为该工作区关闭 Agent Tasks，请重试。",
+    "enableError": "无法为该工作区启用 Agent Tasks，请重试。"
   }
 }

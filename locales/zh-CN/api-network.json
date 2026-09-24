@@ -5,17 +5,17 @@
     "page_title": "Fork 集合 | Postman",
     "fork_collection_error": {
       "title": "您离线",
-      "description": "上线后，您将能够 fork 该 Collection。"
+      "description": "上线后，您将能够 fork 该集合。"
     },
     "update_profile_modal": {
-      "description": "要从公开 Workspace 中的 Collection 创建 fork，您必须将您的个人资料设为公开。您的个人资料将发生以下更改。",
-      "error": "要从公开 Workspace fork Collection，您需要设置公开个人资料。"
+      "description": "要从公开工作区中的集合创建 fork，您必须将您的个人资料设为公开。您的个人资料将发生以下更改。",
+      "error": "要从公开工作区 fork 集合，您需要设置公开个人资料。"
     },
-    "create_fork_error": "尝试 fork 该 Collection 时发生了一些错误！",
+    "create_fork_error": "尝试 fork 该集合时发生了一些错误！",
     "request_access": {
       "sent_to_team_admin": "您的加入请求已发送到团队管理员。",
-      "sent_to_workspace_admin": "您的访问权限请求已发送至 Workspace 管理员。",
-      "access_not_enabled": "请求 未启用对此资源的访问。",
+      "sent_to_workspace_admin": "您的访问权限请求已发送至工作区管理员。",
+      "access_not_enabled": "请求未启用对此资源的访问。",
       "failed_to_send": "发送请求失败。"
     },
     "error_state": {
@@ -24,14 +24,14 @@
         "description": "可能存在连接问题。确保您在线并重试。"
       },
       "not_found": {
-        "title": "Collection 不存在",
-        "description": "此 Collection 似乎已被删除或不再是公开状态。"
+        "title": "集合不存在",
+        "description": "此集合似乎已被删除或不再是公开状态。"
       },
       "unauthorized": {
         "title": "您无权访问",
         "description": "请求访问权限，或切换到有权限的帐户。您以 {email} 身份登录",
         "primary_actions": {
-          "request_access": "请求 访问",
+          "request_access": "请求访问",
           "requested": "已请求"
         },
         "secondary_actions": {
@@ -39,14 +39,14 @@
         }
       },
       "workspace": {
-        "title": "无法获取用户 Workspace",
-        "description": "我们无法获取有关用户 Workspace 的信息。请再试一次。"
+        "title": "无法获取用户工作区",
+        "description": "我们无法获取有关用户工作区的信息。请再试一次。"
       },
       "not_allowed_to_fork": {
-        "description": "您没有权限 fork 到此团队的 Workspace。",
-        "no_workspaces_description": "您没有任何可以 fork 进入的 Workspace。创建一个 Workspace 以开始。",
-        "no_workspaces_no_permission_description": "您没有任何可以 fork 进入的 Workspace。请联系您的团队管理员以获取 Workspace 访问权限。",
-        "create_workspace_button": "创建 Workspace",
+        "description": "您没有权限 fork 到此团队的工作区。",
+        "no_workspaces_description": "您没有任何可以 fork 进入的工作区。创建一个工作区以开始。",
+        "no_workspaces_no_permission_description": "您没有任何可以 fork 进入的工作区。请联系您的团队管理员以获取工作区访问权限。",
+        "create_workspace_button": "创建工作区",
         "button_text": "返回探索"
       }
     },
@@ -55,20 +55,20 @@
     "fork_creation_form": {
       "description": "分叉会创建 {modelType} 的副本，并使您能够在不影响原始文件的情况下执行更改。了解有关 <3>forks</3> 的更多信息。",
       "link_label": "分叉",
-      "helper_text": "从原始 Collection 中识别此 fork。",
+      "helper_text": "从原始集合中识别此 fork。",
       "fork_label": "Fork 标签",
       "workspace_label": "工作区",
-      "workspace_helper_text": "fork 将在选定的 Workspace 中创建。",
+      "workspace_helper_text": "fork 将在选定的工作区中创建。",
       "workspace_selector_restrict_fork_message": "这里不能 fork",
       "auto_sync_changes_label": "自动拉取更改",
       "auto_sync_changes_checkbox_label": "从源 {modelDisplayName} 自动拉取更改",
       "notifications_label": "通知",
-      "notifications_checkbox_label": "关注来源 Collection 以获取更新通知",
-      "notifications_checkbox_label_forked": "关注分叉 Collection 以获取更新通知",
-      "notifications_checkbox_info_text": "您将收到有关对原始 Collection 所做更改的通知。",
+      "notifications_checkbox_label": "关注来源集合以获取更新通知",
+      "notifications_checkbox_label_forked": "关注分叉集合以获取更新通知",
+      "notifications_checkbox_info_text": "您将收到有关对原始集合所做更改的通知。",
       "fork_confirm_button_label": "复刻 {modelDisplayName}",
       "fork_confirm_button_disabled_tooltip": "重新上线后即可执行此操作",
-      "select_workspace": "选择 Workspace",
+      "select_workspace": "选择工作区",
       "enter_fork_label": "输入 fork 标签"
     }
   }

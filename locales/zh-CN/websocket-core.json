@@ -224,7 +224,7 @@
     "disconnect": "断开连接",
     "cancel": "取消",
     "connect_button": {
-      "no_permission": "您没有权限在此 Workspace 中执行此操作。"
+      "no_permission": "您没有权限在此工作区中执行此操作。"
     }
   },
   "websocket_editor_header": {
@@ -232,14 +232,14 @@
     "no_permission": "您没有权限执行此操作。",
     "no_new_changes": "没有新的更改需要保存。",
     "save_request": "保存请求",
-    "save_request_to_a_collection": "将请求保存到 Collection",
+    "save_request_to_a_collection": "将请求保存到集合",
     "save": "保存",
     "save_as": "另存为..",
     "saving": "正在保存...",
     "share_button": {
       "label": "分享",
       "tooltips": {
-        "no_edit_permission": "只能分享已保存到 Collection 中的请求。您需要拥有编辑权限才能保存请求。",
+        "no_edit_permission": "只能分享已保存到集合中的请求。您需要拥有编辑权限才能保存请求。",
         "share_request": "分享请求"
       }
     }
@@ -282,8 +282,8 @@
     }
   },
   "disabled_tooltip": {
-    "noPermission": "您没有权限在此 Workspace 中连接 WebSocket 服务器。",
-    "notMember": "只有 Workspace 成员才能连接 WebSocket 服务器。请加入此 Workspace 以完成该操作。",
+    "noPermission": "您没有权限在此工作区中连接 WebSocket 服务器。",
+    "notMember": "只有工作区成员才能连接 WebSocket 服务器。请加入此工作区以完成该操作。",
     "emptyURL": "URL 不能为空",
     "nonWsAgent": "请切换到 Postman Desktop Agent 以连接 WebSocket 服务器。",
     "agentNotConnected": "请确保 Desktop Agent 已安装并正在运行。",
@@ -367,7 +367,7 @@
   "websocket_workbench_view": {
     "user_friendly_entity_name": "WebSocket 请求",
     "permission_error_title": "您没有查看权限",
-    "permission_error_message": "只有团队成员才能查看此 Workspace 历史记录中的 WebSocket 请求。",
+    "permission_error_message": "只有团队成员才能查看此工作区历史记录中的 WebSocket 请求。",
     "unsupported_protocol_title": "不支持的 WebSocket 请求类型",
     "unsupported_protocol_message": "请更新应用以查看此 WebSocket 请求历史记录。"
   }

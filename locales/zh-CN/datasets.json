@@ -14,9 +14,9 @@
     "more_actions": "查看更多操作"
   },
   "source_type_tooltip": {
-    "file": "从你的计算机上传 CSV、JSON 或 Excel 文件，或复用已保存到此 Workspace 的文件。",
+    "file": "从你的计算机上传 CSV、JSON 或 Excel 文件，或复用已保存到此工作区的文件。",
     "local": "使用你计算机上的文件。文件保留在本机，并在本地进行查询。",
-    "cloud": "使用存储在 Postman Cloud 中的文件，与所有可访问此 Workspace 的人共享。",
+    "cloud": "使用存储在 Postman Cloud 中的文件，与所有可访问此工作区的人共享。",
     "remote": "从公开 URL 获取数据文件。",
     "mysql": "连接 MySQL 数据库，并将某张表作为此数据集的一部分进行查询。",
     "postgres": "连接 PostgreSQL 数据库，并将某张表作为此数据集的一部分进行查询。",
@@ -143,15 +143,15 @@
     }
   },
   "secret_field": {
-    "link_to_vault": "链接到 保险库 密钥",
-    "unlink_vault": "取消链接 保险库 密钥",
+    "link_to_vault": "链接到保险库密钥",
+    "unlink_vault": "取消链接保险库密钥",
     "view_in_vault": "在 Vault 中查看",
     "new_secret": "新建密钥",
-    "link_aria_label": "将 {label} 链接到 保险库 密钥",
-    "unlink_aria_label": "取消 {label} 与 保险库 密钥 的链接",
+    "link_aria_label": "将 {label} 链接到保险库密钥",
+    "unlink_aria_label": "取消 {label} 与保险库密钥的链接",
     "search_placeholder": "搜索秘密...",
     "no_matching": "没有匹配的秘密",
-    "no_available": "没有可用的 保险库 秘密",
+    "no_available": "没有可用的保险库秘密",
     "choose_file": "选择文件",
     "file_prompt_suffix": "（您也可以在下方粘贴{label}）",
     "selected_file": "已选文件：",
@@ -169,7 +169,7 @@
     "file_too_large": "请选择小于 {maxSize} 的文件。",
     "file_read_failed": "无法读取此文件。",
     "file_save_failed": "无法将此值保存到 Vault。",
-    "shared_vault_save_failed": "无法将此值保存到 Shared Vault。请确认此 Workspace 已启用 Shared Vault 且你拥有编辑权限，然后重试。你也可以改为保存到 Local Vault。"
+    "shared_vault_save_failed": "无法将此值保存到 Shared Vault。请确认此工作区已启用 Shared Vault 且你拥有编辑权限，然后重试。你也可以改为保存到 Local Vault。"
   },
   "errors": {
     "ssh": {
@@ -184,7 +184,7 @@
     },
     "secret_resolution_timeout": "Postman 未能及时访问此数据源的 Vault 密钥。请确认 Vault 已解锁后重试。",
     "secret_resolution_failed": "Postman 无法解析此数据源使用的一个或多个 Vault 密钥。请解锁 Vault 并确认关联的密钥仍然存在。",
-    "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 数据源仅在云端 Workspace 中可用。"
+    "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File 数据源仅在云端工作区中可用。"
   },
   "workbench_header": {
     "button": {
@@ -280,7 +280,7 @@
     "save_output_as_source": "将输出保存为数据源",
     "use_view": "使用视图",
     "more_output_actions": "此输出的更多操作",
-    "use_view_in_collection_run": "Collection 运行",
+    "use_view_in_collection_run": "集合运行",
     "use_view_in_monitor": "Monitor"
   },
   "save_view_output_modal": {
@@ -302,15 +302,15 @@
     "no_dataset_file": "此数据集在磁盘上尚无文件，因此无法将输出保存为数据源。"
   },
   "use_view_in_runner_modal": {
-    "title": "在 Collection 运行中使用",
-    "description": "打开 Collection Runner，并将此视图设为运行的迭代数据。",
+    "title": "在集合运行中使用",
+    "description": "打开集合运行器，并将此视图设为运行的迭代数据。",
     "view_label": "数据集视图",
-    "collection_label": "Collection",
-    "collection_placeholder": "选择 Collection",
-    "no_collections": "此 Workspace 中没有可运行的 Collection。",
-    "load_error": "无法加载此 Workspace 中的 Collection。",
+    "collection_label": "集合",
+    "collection_placeholder": "选择集合",
+    "no_collections": "此工作区中没有可运行的集合。",
+    "load_error": "无法加载此工作区中的集合。",
     "retry": "重试",
-    "open_error": "无法打开 Collection Runner，请重试。",
+    "open_error": "无法打开集合运行器，请重试。",
     "cancel": "取消",
     "submit": "在 Runner 中打开"
   },
@@ -324,7 +324,7 @@
     "description_label": "描述",
     "empty_state_banner": {
       "title": "什么是数据集？",
-      "description": "数据集用于组织来自文件和数据库的可复用数据，让你能用 SQL 查询它，并在 Collection 运行、脚本、Mock Server 和 Monitor 中使用。",
+      "description": "数据集用于组织来自文件和数据库的可复用数据，让你能用 SQL 查询它，并在集合运行、脚本、Mock Server 和 Monitor 中使用。",
       "learn_more": "了解详情"
     },
     "toasts": {
@@ -499,9 +499,9 @@
     "editor_placeholder": "添加描述..."
   },
   "permissions": {
-    "no_create_permission": "你没有在此 Workspace 中创建数据集的权限。",
-    "no_edit_permission": "你没有在此 Workspace 中编辑数据集的权限。",
-    "no_delete_permission": "你没有在此 Workspace 中删除数据集的权限。",
+    "no_create_permission": "你没有在此工作区中创建数据集的权限。",
+    "no_edit_permission": "你没有在此工作区中编辑数据集的权限。",
+    "no_delete_permission": "你没有在此工作区中删除数据集的权限。",
     "no_add_source_permission": "你没有在此数据集中添加数据源的权限。",
     "no_delete_source_permission": "你没有在此数据集中删除数据源的权限。",
     "no_create_view_permission": "你没有在此数据集中创建视图的权限。",
@@ -550,7 +550,7 @@
       "pick_source": "运行前请在地址栏中选择数据源。",
       "mutation_off": "变更模式已关闭。请在 Query 选项卡中启用后再执行写入语句。",
       "read_only_on": "此请求已开启只读模式。请在 Settings 选项卡中关闭后再执行写入语句。",
-      "local_file_workspace": "本地文件数据源仅在桌面端的本地 Workspace 中可用。请改用数据库或远程文件数据源，或切换到本地 Workspace。"
+      "local_file_workspace": "本地文件数据源仅在桌面端的本地工作区中可用。请改用数据库或远程文件数据源，或切换到本地工作区。"
     },
     "choose_file": "选择文件",
     "unsupported_source": "数据守护进程尚不支持该数据源类型。",

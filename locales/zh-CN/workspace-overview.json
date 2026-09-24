@@ -1,11 +1,11 @@
 {
   "header": {
-    "settings_button": "Workspace 设置",
-    "back_button_aria_label": "返回 Workspace 概览",
-    "menu_button_aria_label": "更多 Workspace 操作",
+    "settings_button": "工作区设置",
+    "back_button_aria_label": "返回工作区概览",
+    "menu_button_aria_label": "更多工作区操作",
     "info_menu": {
       "activity_feed_cta": "活动日志",
-      "info_cta": "Workspace 信息"
+      "info_cta": "工作区信息"
     },
     "options_menu": {
       "ask_ai": "询问 AI",
@@ -15,15 +15,15 @@
       "move": "移动",
       "archive": "归档",
       "delete": "删除",
-      "copy_workspace_id": "复制 Workspace ID",
+      "copy_workspace_id": "复制工作区 ID",
       "copied": "已复制！",
-      "find_in_workspace": "在 Workspace 中查找",
-      "customize_workspace_theme": "自定义 Workspace 主题"
+      "find_in_workspace": "在工作区中查找",
+      "customize_workspace_theme": "自定义工作区主题"
     }
   },
   "name": {
-    "placeholder": "Workspace 名称",
-    "renaming_warning": "重命名 Workspace 将会更改其 URL。请确保分享更新后的 Workspace URL。",
+    "placeholder": "工作区名称",
+    "renaming_warning": "重命名工作区将会更改其 URL。请确保分享更新后的工作区 URL。",
     "toast": {
       "label": "无法保存更改",
       "description": "请重试。"
@@ -44,9 +44,9 @@
       "contributors": "贡献者",
       "tags": "标签"
     },
-    "explore_templates": "浏览 Workspace 模板",
-    "view_activity": "查看 Workspace 活动",
-    "applying_template": "正在应用 Workspace 模板…"
+    "explore_templates": "浏览工作区模板",
+    "view_activity": "查看工作区活动",
+    "applying_template": "正在应用工作区模板…"
   },
   "context_bar": {
     "activity": {
@@ -58,7 +58,7 @@
     "heading_recent": "近期贡献者",
     "load_error": "无法加载贡献者，请尝试重新加载。",
     "reload": "重新加载",
-    "empty_state": "为此 Workspace 做出贡献的人员将显示在此处。",
+    "empty_state": "为此工作区做出贡献的人员将显示在此处。",
     "more": "+ 还有 {count} 位",
     "view_all": "查看全部 {count, plural, =1 {# 位贡献者} other {# 位贡献者}}"
   },
@@ -66,17 +66,17 @@
     "by": "由",
     "unknown_user": "未知用户",
     "views": "{count} 次浏览",
-    "workspace_owned_by_tooltip": "此 Workspace 归 {creatorName} 所有"
+    "workspace_owned_by_tooltip": "此工作区归 {creatorName} 所有"
   },
   "contributors_modal": {
     "heading": "贡献者",
-    "team": "{count, plural, =1 {# 位团队成员} other {# 位团队成员}}为此 Workspace 做出了贡献。",
+    "team": "{count, plural, =1 {# 位团队成员} other {# 位团队成员}}为此工作区做出了贡献。",
     "private": "{count, plural, =1 {# 位私密用户} other {# 位私密用户}}",
     "self": "您",
     "close_button": "关闭"
   },
   "templates": {
-    "heading": "使用模板快速设置您的 Workspace",
+    "heading": "使用模板快速设置您的工作区",
     "more": "更多模板",
     "toast": {
       "title": "无法应用模板",
@@ -84,7 +84,7 @@
     }
   },
   "templates_modal": {
-    "heading": "Workspace 模板",
+    "heading": "工作区模板",
     "feedback_msg": "提供反馈或建议新模板",
     "empty_state": {
       "title": "糟糕，无法加载模板",
@@ -96,7 +96,7 @@
       "close_button": "关闭"
     },
     "use_template_button": "使用模板",
-    "collections_heading": "已生成的 Collection："
+    "collections_heading": "已生成的集合："
   },
   "requested_access_section": {
     "heading": "请求的访问权限 ({count})",
@@ -153,11 +153,11 @@
     "view_in_settings": "在设置中查看"
   },
   "description_new": {
-    "heading": "Workspace 描述",
+    "heading": "工作区描述",
     "empty_state": "Help people understand your workspace by adding a description...",
     "empty_state_uneditable": "No description added yet.",
     "personal_ws_empty_state": "Help people understand your workspace by adding a description...",
-    "add": "添加 Workspace 描述",
+    "add": "添加工作区描述",
     "show_less": "收起",
     "show_more": "展开",
     "toast": {
@@ -166,33 +166,33 @@
     }
   },
   "pin_component": {
-    "heading": "已置顶的 Collection",
-    "featured_heading": "精选 Collection",
-    "featured_hint_message": "将 Collection 置顶，便于在此 Workspace 中发现它们。如果没有置顶任何 Collection，将显示最受欢迎的 Collection。",
-    "edit_featured_collection": "编辑精选 Collection",
-    "hint_msg": "将重要的 Collection 置顶，便于在此 Workspace 中发现它们。",
-    "no_collections_msg": "此 Workspace 中尚未置顶任何 Collection。",
+    "heading": "已置顶的集合",
+    "featured_heading": "精选集合",
+    "featured_hint_message": "将集合置顶，便于在此工作区中发现它们。如果没有置顶任何集合，将显示最受欢迎的集合。",
+    "edit_featured_collection": "编辑精选集合",
+    "hint_msg": "将重要的集合置顶，便于在此工作区中发现它们。",
+    "no_collections_msg": "此工作区中尚未置顶任何集合。",
     "tooltip": {
-      "all_pins_full": "最多只能置顶 {limit} 个 Collection",
-      "no_collections": "将 Collection 添加到此 Workspace 后即可置顶。",
-      "all_collections_pinned": "此 Workspace 中的所有 Collection 均已置顶。"
+      "all_pins_full": "最多只能置顶 {limit} 个集合",
+      "no_collections": "将集合添加到此工作区后即可置顶。",
+      "all_collections_pinned": "此工作区中的所有集合均已置顶。"
     },
     "pinned_collection": {
-      "select_placeholder": "选择 Collection",
-      "empty_msg": "未找到 Collection",
-      "pin_button": "置顶 Collection",
-      "add_msg": "将 Collection 添加到此 Workspace 后即可置顶。",
+      "select_placeholder": "选择集合",
+      "empty_msg": "未找到集合",
+      "pin_button": "置顶集合",
+      "add_msg": "将集合添加到此工作区后即可置顶。",
       "toast": {
         "create_error": {
-          "title": "无法置顶 Collection",
+          "title": "无法置顶集合",
           "description": "只是网络故障，请重试。"
         },
         "remove_error": {
-          "title": "无法取消置顶 Collection",
+          "title": "无法取消置顶集合",
           "description": "只是网络故障，请重试。"
         },
         "environment_error": {
-          "title": "无法选择 Environment",
+          "title": "无法选择环境",
           "description": "只是网络故障，请重试。"
         }
       }
@@ -214,24 +214,24 @@
       }
     },
     "environment": {
-      "no_environment": "无 Environment",
-      "no_environment_msg": "您的 Workspace 中还没有任何 Environment。",
-      "selection_msg": "选择您为此 Collection 推荐的 Environment。"
+      "no_environment": "无环境",
+      "no_environment_msg": "您的工作区中还没有任何环境。",
+      "selection_msg": "选择您为此集合推荐的环境。"
     },
     "remove_modal": {
       "heading": "取消置顶？",
-      "content": "取消置顶后，<1>{name}</1> Collection 将不再显示在 Workspace 概览的置顶位置。",
+      "content": "取消置顶后，<1>{name}</1> 集合将不再显示在工作区概览的置顶位置。",
       "cancel_button": "取消",
       "remove_button": "移除"
     }
   },
   "info_modal": {
-    "heading": "Workspace 信息",
+    "heading": "工作区信息",
     "creator_label": "创建者",
     "private_user": "私密用户",
     "workspace_id_label": "工作区 ID",
     "workspace_id_copied": "已复制",
-    "copy_workspace_id": "复制 Workspace ID",
+    "copy_workspace_id": "复制工作区 ID",
     "update_time_label": "更新时间"
   },
   "summary": {
@@ -270,7 +270,7 @@
         "points": {
           "partner_access": {
             "header": "为团队提供无缝的合作伙伴访问",
-            "text": "现在，成员可以以团队身份加入合作伙伴 Workspace。"
+            "text": "现在，成员可以以团队身份加入合作伙伴工作区。"
           },
           "partnership_settings": {
             "header": "统一管理合作关系的中心枢纽",
@@ -282,22 +282,22 @@
       "cta": "了解详情"
     },
     "shared_partner_workspace_banner": {
-      "heading": "欢迎来到您的合作伙伴 Workspace！",
+      "heading": "欢迎来到您的合作伙伴工作区！",
       "description": "现在，您无需切换团队即可与多个组织无缝协作。前往<1><0>合作关系页面</0></1>管理您的所有合作关系。",
       "cta_text": "了解更多"
     },
-    "heading": "欢迎加入，{name}。很高兴您能来到我们的合作伙伴 Workspace",
-    "content": "作为此 Workspace 中的合作伙伴，您可以：",
-    "item1": "查看所有 Workspace 资源",
-    "item2": "浏览 Postman Collection 并阅读 API 文档",
-    "item3": "使用 Collection 和 Environment 发送 API 请求",
+    "heading": "欢迎加入，{name}。很高兴您能来到我们的合作伙伴工作区",
+    "content": "作为此工作区中的合作伙伴，您可以：",
+    "item1": "查看所有工作区资源",
+    "item2": "浏览 Postman 集合并阅读 API 文档",
+    "item3": "使用集合和环境发送 API 请求",
     "learn_more": "了解更多",
     "got_it": "知道了"
   },
   "partner_workspace_meta": {
     "heading": "合作伙伴",
     "member_count": "（{count} 位成员）",
-    "tooltip": "合作伙伴无法看到其他合作伙伴，也无法对此 Workspace 进行更改",
+    "tooltip": "合作伙伴无法看到其他合作伙伴，也无法对此工作区进行更改",
     "view_all": "查看所有合作伙伴"
   },
   "team_creator_banner": {
@@ -305,15 +305,15 @@
       "heading": "新手上路的热门推荐",
       "content": "很高兴您能来到这里，以下是帮助您的团队起步的几种方式。"
     },
-    "add_projects": "将项目添加到您的 Workspace",
+    "add_projects": "将项目添加到您的工作区",
     "manage_team": "壮大并管理您的团队",
     "explore_advanced_features": "探索高级功能",
-    "automate_collections": "自动化并优化您的 Collection",
+    "automate_collections": "自动化并优化您的集合",
     "learn_more": "了解更多",
     "cards": {
       "template": {
         "title": "从模板开始",
-        "description": "浏览并从 50 多个 Collection 模板中选择。"
+        "description": "浏览并从 50 多个集合模板中选择。"
       },
       "import": {
         "title": "导入您的项目",
@@ -321,8 +321,8 @@
         "modal_subtitle": "要导入，您需要拥有一个 Postman 账户。"
       },
       "move": {
-        "title": "移动您的 Collection",
-        "description": "将您的 Collection 转移到此 Workspace。"
+        "title": "移动您的集合",
+        "description": "将您的集合转移到此工作区。"
       },
       "invite": {
         "title": "邀请团队成员",
@@ -334,8 +334,8 @@
         "description": "了解并为团队成员分配合适的权限。"
       },
       "environments": {
-        "title": "创建 Environment",
-        "description": "通过创建 Environment 为 Collection 应用变量。"
+        "title": "创建环境",
+        "description": "通过创建环境为集合应用变量。"
       },
       "authorization": {
         "title": "设置身份验证",
@@ -346,15 +346,15 @@
         "description": "帮助他人了解如何调用您的接口。"
       },
       "tests": {
-        "title": "为 Collection 添加测试",
+        "title": "为集合添加测试",
         "description": "编写测试脚本或使用我们的代码片段来验证数据。"
       },
       "monitors": {
-        "title": "监控 Collection",
+        "title": "监控集合",
         "description": "设置 Monitor，以便在出现错误时收到通知。"
       },
       "runner": {
-        "title": "试用 Collection Runner",
+        "title": "试用集合运行器",
         "description": "同时运行多个请求。"
       },
       "scripts": {
@@ -362,18 +362,18 @@
         "description": "了解如何编写脚本来自动执行您的工作流程。"
       },
       "collection_monitor": {
-        "title": "Collection Monitor",
+        "title": "集合监控",
         "description": "了解如何设置 Monitor，以便在出现错误时收到通知。"
       },
       "collection_runner": {
-        "title": "Collection Runner",
+        "title": "集合运行器",
         "description": "了解如何创建并自动执行测试序列。"
       }
     }
   },
   "team_joiner_banner": {
     "welcome_banner": {
-      "heading": "👋 欢迎来到您的新团队 Workspace，{name}",
+      "heading": "👋 欢迎来到您的新团队工作区，{name}",
       "content": "很高兴您能来到这里，以下是帮助您的团队起步的几种方式。"
     },
     "cards": {
@@ -399,7 +399,7 @@
     }
   },
   "configure_multi_partner_workspace_banner": {
-    "heading": "欢迎来到您的合作伙伴 Workspace！",
+    "heading": "欢迎来到您的合作伙伴工作区！",
     "content": {
       "link_preceding_text": "You can invite and collaborate with external partners in this workspace. To prevent partners from seeing each other, you can enable",
       "link_text": "多合作伙伴模式。"
@@ -410,14 +410,14 @@
     "beta": "测试版"
   },
   "workspace_sandbox": {
-    "page_title": "正在预配沙盒 Workspace",
+    "page_title": "正在预配沙盒工作区",
     "loading_label": "加载中",
-    "error_title": "无法加载您的沙盒 Workspace",
-    "error_description": "设置沙盒 Workspace 时出错，请稍后重试。"
+    "error_title": "无法加载您的沙盒工作区",
+    "error_description": "设置沙盒工作区时出错，请稍后重试。"
   },
   "workspace_settings": {
-    "heading": "Workspace 设置",
-    "readonly_tooltip": "您没有权限更改 Workspace 类型。",
+    "heading": "工作区设置",
+    "readonly_tooltip": "您没有权限更改工作区类型。",
     "network_error": {
       "heading": "无法加载设置",
       "description": "只是网络故障，请重新加载。",
@@ -425,53 +425,53 @@
     },
     "banner": {
       "description": "协作者角色已被编辑者和查看者角色取代，不能再分配给任何人。了解更多关于新",
-      "primary_action_text": "Workspace 角色"
+      "primary_action_text": "工作区角色"
     },
     "pending_requests": {
       "label": "待处理请求（{count}）"
     },
     "asset_type": {
       "heading": "资产类型",
-      "description": "为此 Workspace 指定资产类型以进行分类。每个 Workspace 同时只能有一种资产类型。",
+      "description": "为此工作区指定资产类型以进行分类。每个工作区同时只能有一种资产类型。",
       "placeholder": "选择资产类型",
       "readonly_hint": "你没有更改资产类型的权限。",
       "toast_success": "资产类型已更新",
       "toast_error": "资产类型更新失败，请重试。",
       "next_steps": {
         "heading": "后续步骤",
-        "subtitle": "在关联了 Git 的 Workspace 目录下运行此命令，即可开始采集 API 调用和测试结果。",
+        "subtitle": "在关联了 Git 的工作区目录下运行此命令，即可开始采集 API 调用和测试结果。",
         "dismiss": "忽略",
         "checking_registration": "正在检查 Application Inventory 注册状态…"
       }
     },
     "visibility": {
-      "workspace_type_container_heading": "Workspace 类型",
+      "workspace_type_container_heading": "工作区类型",
       "change_workspace_type_cta": "更改",
-      "workspace_type_modal_header": "更改 Workspace 类型",
+      "workspace_type_modal_header": "更改工作区类型",
       "professional_plan_name": "专业版",
       "enterprise_plan_name": "企业版",
       "team_plan_name": "团队版",
       "upgrade_plan_button": "升级方案",
       "upgrade_plan_button_for": "为 {label} 升级方案",
-      "upgrade_plan_text": "升级您的方案以创建合作伙伴 Workspace。",
-      "plan_downgrade_banner_text": "由于您的新方案不再支持合作伙伴 Workspace，所有合作伙伴已从此 Workspace 中移除。要继续使用此 Workspace，请更改 Workspace 可见性",
-      "contact_your_team_admin": "有关启用合作伙伴 Workspace 的详情，请联系您的团队管理员。",
-      "heading": "谁可以访问此 Workspace？",
-      "team_visibility_disabled_text": "您需要加入某个团队才能创建团队 Workspace。",
+      "upgrade_plan_text": "升级您的方案以创建合作伙伴工作区。",
+      "plan_downgrade_banner_text": "由于您的新方案不再支持合作伙伴工作区，所有合作伙伴已从此工作区中移除。要继续使用此工作区，请更改工作区可见性",
+      "contact_your_team_admin": "有关启用合作伙伴工作区的详情，请联系您的团队管理员。",
+      "heading": "谁可以访问此工作区？",
+      "team_visibility_disabled_text": "您需要加入某个团队才能创建团队工作区。",
       "developer_role_required_text": "您需要在团队中拥有开发者角色才能选择此选项。",
       "private_visibility_disabled_text": "升级到 {enterprisePlanName} 方案，以与成员进行私密协作。",
       "partner_visibility_disabled_text": "升级您的方案以与外部合作伙伴协作。",
       "visibility_unavailable_text": "此选项目前在您所在的地区不可用。",
-      "do_not_have_access": "您没有权限将此 Workspace 转换为私密类型。",
-      "only_admin_access": "只有此 Workspace 的管理员才能更改可见性。",
-      "only_admin_change_type": "只有 Workspace 管理员才能更改类型。",
-      "description": "决定谁可以访问您的 Workspace。",
-      "git_connected_restriction": "目前仅内部 Workspace 支持 Git 连接。请断开此 Workspace 与 Git 的连接后再更改为公开或合作伙伴 Workspace。",
+      "do_not_have_access": "您没有权限将此工作区转换为私密类型。",
+      "only_admin_access": "只有此工作区的管理员才能更改可见性。",
+      "only_admin_change_type": "只有工作区管理员才能更改类型。",
+      "description": "决定谁可以访问您的工作区。",
+      "git_connected_restriction": "目前仅内部工作区支持 Git 连接。请断开此工作区与 Git 的连接后再更改为公开或合作伙伴工作区。",
       "disconnect_to_change": "断开连接以进行更改",
       "pending_visibility_request_tooltip": "存在待处理的可见性更改请求时，您无法执行此操作。",
       "remove_partners_checkbox_label": "移除所有合作伙伴",
-      "select_workspace_access_level_aria_label": "选择 Workspace 访问级别",
-      "workspace_access_options_aria_label": "Workspace 访问选项",
+      "select_workspace_access_level_aria_label": "选择工作区访问级别",
+      "workspace_access_options_aria_label": "工作区访问选项",
       "back_button_aria_label": "返回",
       "update_team_profile_modal": {
         "description": "在将您团队的资料公开之前，请更新您的团队域名，并确保其符合公开可见性的条件。团队域名有助于在 Postman 上识别您的团队。",
@@ -485,41 +485,41 @@
       },
       "toasts": {
         "request_sent": "请求已发送",
-        "invalid_workspace_name": "Workspace 名称无效",
+        "invalid_workspace_name": "工作区名称无效",
         "visibility_change_failed": "无法更改可见性",
-        "workspace_type_change_failed": "无法更改 Workspace 类型",
+        "workspace_type_change_failed": "无法更改工作区类型",
         "update_visibility_error": "只是网络故障，请重试。",
         "update_visibility_orgs_error": "无法授予您的组织访问权限",
         "visibility_status_changed": {
-          "title": "此 Workspace 现在为{status}",
-          "title_internal_workspace": "此 Workspace 现在为内部 Workspace",
-          "access_updated_title": "Workspace 访问权限已更新",
+          "title": "此工作区现在为{status}",
+          "title_internal_workspace": "此工作区现在为内部工作区",
+          "access_updated_title": "工作区访问权限已更新",
           "public": {
             "description": "现在所有人都可以查看它。"
           },
           "private": {
-            "description": "现在只有受邀加入此 Workspace 的成员才能访问它。",
-            "access_updated_description": "现在只有您和受邀加入此 Workspace 的成员才能访问它。"
+            "description": "现在只有受邀加入此工作区的成员才能访问它。",
+            "access_updated_description": "现在只有您和受邀加入此工作区的成员才能访问它。"
           },
           "team": {
             "description": "现在所有团队成员都可以访问它。",
             "access_updated_description": "现在所有团队成员都可以访问它。"
           },
           "partner": {
-            "description": "现在可以邀请合作伙伴加入此 Workspace。"
+            "description": "现在可以邀请合作伙伴加入此工作区。"
           },
           "personal": {
             "description": "现在只有您可以查看它。",
-            "access_updated_description": "现在只有您和受邀加入此 Workspace 的成员才能访问它。"
+            "access_updated_description": "现在只有您和受邀加入此工作区的成员才能访问它。"
           }
         }
       },
       "public_visibility_warnings": {
-        "generic_warning": "此 Workspace 中的所有数据都将被公开。",
-        "public_team_profile_warning": "此 Workspace 中的所有数据以及您<1>团队的资料</1>都将被公开。",
-        "public_user_profile_warning": "此 Workspace 中的所有数据以及您的<1>用户资料</1>都将被公开。",
+        "generic_warning": "此工作区中的所有数据都将被公开。",
+        "public_team_profile_warning": "此工作区中的所有数据以及您<1>团队的资料</1>都将被公开。",
+        "public_user_profile_warning": "此工作区中的所有数据以及您的<1>用户资料</1>都将被公开。",
         "banner": {
-          "heading": "您将此 Workspace 更改为<1>{transitionVisibilityStatus}</1>的请求正在审核中。",
+          "heading": "您将此工作区更改为<1>{transitionVisibilityStatus}</1>的请求正在审核中。",
           "show_more_link": "展开",
           "primary_action_text": "取消请求"
         }
@@ -605,17 +605,17 @@
         "title": "确定要将可见性更改为{visibilityStatus}吗？",
         "team": {
           "personal": {
-            "description": "更改后，所有团队成员都将被移除，只有您可以访问此 Workspace。"
+            "description": "更改后，所有团队成员都将被移除，只有您可以访问此工作区。"
           }
         },
         "private": {
           "personal": {
-            "description": "更改后，所有受邀的团队成员都将被移除，只有您可以访问此 Workspace。"
+            "description": "更改后，所有受邀的团队成员都将被移除，只有您可以访问此工作区。"
           }
         },
         "public": {
           "private": {
-            "description": "更改后，此 Workspace 将不再出现在 Public API Network 中，只有受邀成员仍可访问。"
+            "description": "更改后，此工作区将不再出现在 Public API Network 中，只有受邀成员仍可访问。"
           }
         }
       },
@@ -628,7 +628,7 @@
       }
     },
     "role_settings_container": {
-      "heading": "此 Workspace 中的成员",
+      "heading": "此工作区中的成员",
       "search_input_placeholder": "按姓名或电子邮件搜索",
       "invite_button_text": "邀请",
       "invite_people": "管理成员",
@@ -641,8 +641,8 @@
       "permission_not_available": "您没有权限执行此操作",
       "toasts": {
         "success": {
-          "access_removed": "Workspace 访问权限已移除",
-          "access_updated": "Workspace 访问权限已更新",
+          "access_removed": "工作区访问权限已移除",
+          "access_updated": "工作区访问权限已更新",
           "guest_role_updated": {
             "title": "角色已更新"
           }
@@ -665,11 +665,11 @@
     },
     "discussions": {
       "heading": "讨论",
-      "toggle_discussions_label": "任何拥有 Workspace 访问权限的人都可以查看和参与讨论",
+      "toggle_discussions_label": "任何拥有工作区访问权限的人都可以查看和参与讨论",
       "toggle_discussion_visibility": {
         "toasts": {
           "success": {
-            "description": "现在，只有 Workspace 管理员可以查看和参与讨论。"
+            "description": "现在，只有工作区管理员可以查看和参与讨论。"
           },
           "error": {
             "title": "无法隐藏讨论",
@@ -682,8 +682,8 @@
             "show_discussions": "显示讨论？"
           },
           "description": {
-            "hide_discussions": "从现在起，在此设置重新开启之前，只有 Workspace 管理员才能查看和参与讨论。",
-            "show_discussions": "从现在起，所有有权访问此 Workspace 的人都可以查看和参与讨论。"
+            "hide_discussions": "从现在起，在此设置重新开启之前，只有工作区管理员才能查看和参与讨论。",
+            "show_discussions": "从现在起，所有有权访问此工作区的人都可以查看和参与讨论。"
           },
           "primary_action_text": "确认",
           "secondary_action_text": "取消"
@@ -691,12 +691,12 @@
       }
     },
     "move_workspace": {
-      "heading": "移动此 Workspace",
-      "description": "将 Workspace 从 {teamName} 团队移动到您组织中的其他团队。",
-      "description_personal_workspace": "将 Workspace 移动到某个团队以进行协作。您只能与团队中的成员邀请和协作",
-      "primary_action_text": "移动 Workspace",
-      "disabled_tooltip_single_squad": "无法移动此 Workspace，因为您的组织中没有其他团队可供移动。",
-      "disabled_tooltip": "无法移动此 Workspace，因为您没有权限访问组织中的其他团队。"
+      "heading": "移动此工作区",
+      "description": "将工作区从 {teamName} 团队移动到您组织中的其他团队。",
+      "description_personal_workspace": "将工作区移动到某个团队以进行协作。您只能与团队中的成员邀请和协作",
+      "primary_action_text": "移动工作区",
+      "disabled_tooltip_single_squad": "无法移动此工作区，因为您的组织中没有其他团队可供移动。",
+      "disabled_tooltip": "无法移动此工作区，因为您没有权限访问组织中的其他团队。"
     },
     "add_to_namespace": {
       "label": {
@@ -724,7 +724,7 @@
     },
     "configure_sidebar": {
       "heading": "侧边栏面板",
-      "description": "自定义此 Workspace 中所有人侧边栏显示的面板。",
+      "description": "自定义此工作区中所有人侧边栏显示的面板。",
       "tooltip_content": "侧边栏中至少需要保留一个元素",
       "network_error": {
         "heading": "配置设置不可用",
@@ -743,22 +743,22 @@
         "invoke_modal_cta": "启用多合作伙伴模式",
         "configured": {
           "heading": "多合作伙伴模式",
-          "description": "合作伙伴无法看到其他合作伙伴，也无法对此 Workspace 进行更改。",
+          "description": "合作伙伴无法看到其他合作伙伴，也无法对此工作区进行更改。",
           "tooltip": "合作伙伴之间无法互相看到，且所有合作伙伴仅限查看者角色",
           "badge": "已开启"
         }
       },
       "modal": {
         "heading": "与多个合作伙伴进行私密协作",
-        "description": "启用多合作伙伴模式，可在同一 Workspace 中与多个合作伙伴组织进行私密协作。",
+        "description": "启用多合作伙伴模式，可在同一工作区中与多个合作伙伴组织进行私密协作。",
         "pointers": [
           {
             "headline": "合作伙伴之间互不可见",
             "info": "合作伙伴只能看到你的团队成员。"
           },
           {
-            "headline": "合作伙伴无法编辑此 Workspace",
-            "info": "他们可以查看 Workspace 中的所有资源并发送请求"
+            "headline": "合作伙伴无法编辑此工作区",
+            "info": "他们可以查看工作区中的所有资源并发送请求"
           }
         ],
         "note": "为防止意外数据泄露，此操作无法撤销。",
@@ -776,57 +776,57 @@
       "not_found": "未找到合作伙伴",
       "members": "位成员"
     },
-    "partner_workspace_info_text": "更改 Workspace 类型后，您将成为<1><0>合作伙伴管理者</0></1>。",
+    "partner_workspace_info_text": "更改工作区类型后，您将成为<1><0>合作伙伴管理者</0></1>。",
     "cleanup_workspace": {
       "heading": "归档或删除",
-      "description": "归档会将此 Workspace 从视图中移除，并关闭 Monitor。您可以随时恢复，或永久删除。",
-      "primary_action_text": "删除 Workspace",
-      "secondary_action_text": "归档 Workspace"
+      "description": "归档会将此工作区从视图中移除，并关闭 Monitor。您可以随时恢复，或永久删除。",
+      "primary_action_text": "删除工作区",
+      "secondary_action_text": "归档工作区"
     },
     "restore_workspace": {
-      "heading": "此 Workspace 已归档",
+      "heading": "此工作区已归档",
       "description": "已从视图中移除，Monitor 已关闭。",
-      "primary_action_text": "删除 Workspace",
-      "secondary_action_text": "恢复 Workspace"
+      "primary_action_text": "删除工作区",
+      "secondary_action_text": "恢复工作区"
     },
     "delete_workspace": {
-      "heading": "删除 Workspace",
-      "description": "一旦删除，Workspace 及其数据将永久消失。",
-      "primary_action_text": "删除 Workspace",
+      "heading": "删除工作区",
+      "description": "一旦删除，工作区及其数据将永久消失。",
+      "primary_action_text": "删除工作区",
       "modal": {
-        "heading": "删除 Workspace？",
+        "heading": "删除工作区？",
         "description": "<0>{workspaceName}</0> 中的所有内容都将被永久删除。",
-        "confirm_workspace_input_label": "输入 Workspace 名称以确认",
-        "primary_action_text": "删除 Workspace",
+        "confirm_workspace_input_label": "输入工作区名称以确认",
+        "primary_action_text": "删除工作区",
         "secondary_action_text": "取消"
       },
       "toast": {
         "success": {
-          "detailed_description": "{workspaceName} {workspaceType} Workspace 已被删除。",
-          "generic_description": "Workspace 已被删除。"
+          "detailed_description": "{workspaceName} {workspaceType} 工作区已被删除。",
+          "generic_description": "工作区已被删除。"
         },
         "error": {
-          "title": "无法删除 Workspace",
+          "title": "无法删除工作区",
           "description": "只是网络故障，请重试。"
         }
       }
     },
     "modal": {
       "delete": {
-        "heading": "删除 Workspace？",
+        "heading": "删除工作区？",
         "description": "<1>{workspaceName}</1> 中的所有内容都将被永久删除。",
         "delete_associated_drafts_checkbox_label": "同时删除具有挂起更改的关联工作区",
         "confirm_workspace_input_label": "输入“删除”以确认",
         "confirmation_text": "删除",
-        "primary_action_text": "删除 Workspace",
+        "primary_action_text": "删除工作区",
         "secondary_action_text": "取消",
         "toast": {
           "success": {
-            "detailed_description": "Workspace 已删除",
-            "generic_description": "Workspace 已删除"
+            "detailed_description": "工作区已删除",
+            "generic_description": "工作区已删除"
           },
           "error": {
-            "title": "无法删除 Workspace",
+            "title": "无法删除工作区",
             "description": "只是网络故障，请重试。"
           }
         }
@@ -835,17 +835,17 @@
     "access_requests": {
       "approve_cta": "批准",
       "deny_cta": "拒绝",
-      "info_text": "<boldText>{name}</boldText> 请求成为此 Workspace 的<boldText>{requested_role}</boldText>。",
-      "info_text_partner": "<boldText>{name}</boldText> 请求以合作伙伴身份加入此 Workspace。",
-      "info_text_partner_with_email": "<boldText>{name}</boldText> <emailText>({email})</emailText> 正在请求加入此 Workspace 作为合作伙伴。",
+      "info_text": "<boldText>{name}</boldText> 请求成为此工作区的<boldText>{requested_role}</boldText>。",
+      "info_text_partner": "<boldText>{name}</boldText> 请求以合作伙伴身份加入此工作区。",
+      "info_text_partner_with_email": "<boldText>{name}</boldText> <emailText>({email})</emailText> 正在请求加入此工作区作为合作伙伴。",
       "deny_modal": {
         "title": "拒绝请求？",
         "label_text": "添加备注",
         "info_text": {
-          "editor_request_text": "成为此 Workspace 编辑者的请求将被拒绝。",
-          "viewer_request_text": "访问此 Workspace 的请求将被拒绝。",
-          "partner_editor_request_text": "成为此 Workspace 合作伙伴编辑者的请求将被拒绝。",
-          "default": "访问此 Workspace 的请求将被拒绝。"
+          "editor_request_text": "成为此工作区编辑者的请求将被拒绝。",
+          "viewer_request_text": "访问此工作区的请求将被拒绝。",
+          "partner_editor_request_text": "成为此工作区合作伙伴编辑者的请求将被拒绝。",
+          "default": "访问此工作区的请求将被拒绝。"
         },
         "placeholder_text": "简要说明您拒绝此请求的原因",
         "validation_message": "备注最多只能包含 500 个字符。",
@@ -860,7 +860,7 @@
         }
       },
       "info_text": "is requesting to make this a <1>{visibility}</1> workspace.",
-      "ex_team_member_info_text": "<0>一位前团队成员曾请求将此 Workspace 的可见性更改为<1>{visibility}</1></0>",
+      "ex_team_member_info_text": "<0>一位前团队成员曾请求将此工作区的可见性更改为<1>{visibility}</1></0>",
       "ex_team_member_name": "前团队成员",
       "team_visibility_change_text": "您团队的资料也将被公开。",
       "approve_cta": "批准",
@@ -878,7 +878,7 @@
         "validation_message": "备注最多只能包含 500 个字符。",
         "cancel_cta": "取消",
         "submit_cta": "拒绝请求",
-        "info_text": "<0>{username}</0> 请求将 <2>{entity_name}</2> 设为<4>{visibility}</4> Workspace 的请求将被拒绝。",
+        "info_text": "<0>{username}</0> 请求将 <2>{entity_name}</2> 设为<4>{visibility}</4> 工作区的请求将被拒绝。",
         "description": {
           "team": "request to give your team access to this workspace will be denied.",
           "org": "request to give your organization access to this workspace will be denied.",
@@ -894,7 +894,7 @@
       }
     },
     "pinned_document": {
-      "heading": "Workspace 概览",
+      "heading": "工作区概览",
       "description": "选择要固定到概览的文档。",
       "select_placeholder": "选择文档",
       "empty_state": "此 workspace 中暂无文档。",
@@ -906,19 +906,19 @@
       }
     },
     "workspace_theme": {
-      "heading": "Workspace 主题",
-      "description": "让主题体现内容和团队特色，打造独一无二的 Workspace。此更改将应用于所有成员。",
+      "heading": "工作区主题",
+      "description": "让主题体现内容和团队特色，打造独一无二的工作区。此更改将应用于所有成员。",
       "settings_fetch_error": {
-        "heading": "无法加载 Workspace 主题",
+        "heading": "无法加载工作区主题",
         "description": "加载主题时发生错误，请刷新或稍后重试。"
       },
       "settings_update_error": {
         "heading": "更新主题失败",
-        "description": "无法更新 Workspace 主题，更新主题时发生错误。"
+        "description": "无法更新工作区主题，更新主题时发生错误。"
       },
       "workspace_theme_onboarding_toast": {
-        "heading": "此 Workspace 使用了不同的主题",
-        "description": "Workspace 管理员已设置不同的主题以实现自定义外观。您的主题偏好设置在其他位置仍将保持不变。"
+        "heading": "此工作区使用了不同的主题",
+        "description": "工作区管理员已设置不同的主题以实现自定义外观。您的主题偏好设置在其他位置仍将保持不变。"
       },
       "accent_color_picker": {
         "heading": "强调色",
@@ -938,8 +938,8 @@
     "modal": {
       "workspace_rfa_title": "申请编辑？",
       "entity_rfa_title": "申请编辑？",
-      "info_text": "Workspace 管理员将审核您编辑此 Workspace 中资源的请求，一旦获批，您将成为编辑者。",
-      "partner_workspace_info_text": "Workspace 管理员将审核此请求，一旦获批，您即可在此 Workspace 中创建、编辑、复刻和导出资源",
+      "info_text": "工作区管理员将审核您编辑此工作区中资源的请求，一旦获批，您将成为编辑者。",
+      "partner_workspace_info_text": "工作区管理员将审核此请求，一旦获批，您即可在此工作区中创建、编辑、复刻和导出资源",
       "entity_info_text": "您编辑此 {entityType} 的请求将被审核，一旦获批，您将成为编辑者。",
       "placeholder_text": "简短的备注有助于审核者批准您的请求",
       "cancel_cta": "取消",
@@ -947,7 +947,7 @@
       "validation_message": "备注最多只能包含 140 个字符。",
       "blank_state": {
         "title": "无法申请访问权限",
-        "description": "该 {entityType} 位于您无权访问的 Workspace 中。",
+        "description": "该 {entityType} 位于您无权访问的工作区中。",
         "button_text": "好的"
       },
       "optional": "可选",
@@ -962,7 +962,7 @@
     },
     "pending_request": {
       "title_text": "请求审核中",
-      "info_text": "Workspace 管理员正在审核您的编辑权限申请。"
+      "info_text": "工作区管理员正在审核您的编辑权限申请。"
     },
     "toast_error_messages": {
       "update_roles_permission_denied": {
@@ -1063,7 +1063,7 @@
       },
       "request_exists": {
         "title": "您已有一个正在审核的请求",
-        "message": "一旦 Workspace 管理员回复，我们将通知您。"
+        "message": "一旦工作区管理员回复，我们将通知您。"
       }
     },
     "toast_info_map": {
@@ -1080,7 +1080,7 @@
     "upgrade_admin_to_partner_manager": {
       "success": {
         "title": "您现在是合作伙伴管理者",
-        "description": "此新角色允许您批准或拒绝合作伙伴 Workspace 请求。"
+        "description": "此新角色允许您批准或拒绝合作伙伴工作区请求。"
       },
       "error": {
         "title": "访问被拒绝",
@@ -1101,27 +1101,27 @@
   },
   "workspace_tools": {
     "invite_to_workspace": {
-      "invite_prompt_with_name": "您即将邀请用户加入 Workspace “{workspaceName}”。",
-      "invite_prompt_without_name": "您即将邀请用户加入当前活动的 Workspace。",
+      "invite_prompt_with_name": "您即将邀请用户加入工作区“{workspaceName}”。",
+      "invite_prompt_without_name": "您即将邀请用户加入当前活动的工作区。",
       "email_label": "电子邮件：",
       "role_label": "角色：",
       "not_specified": "（未指定）",
       "confirm_prompt": "您想批准此邀请吗？",
-      "error_email_required": "邀请用户加入 Workspace 需要提供电子邮件",
-      "error_role_required": "邀请用户加入 Workspace 需要指定角色"
+      "error_email_required": "邀请用户加入工作区需要提供电子邮件",
+      "error_role_required": "邀请用户加入工作区需要指定角色"
     },
     "manage_document_pin": {
       "prompt_pin": "你即将置顶一篇文档。",
-      "prompt_pin_with_workspace": "你即将在 Workspace“{workspaceName}”中置顶一篇文档。",
+      "prompt_pin_with_workspace": "你即将在工作区“{workspaceName}”中置顶一篇文档。",
       "prompt_unpin": "你即将取消置顶一篇文档。",
-      "prompt_unpin_with_workspace": "你即将在 Workspace“{workspaceName}”中取消置顶一篇文档。",
+      "prompt_unpin_with_workspace": "你即将在工作区“{workspaceName}”中取消置顶一篇文档。",
       "document_label": "文档：",
       "document_id_fallback": "（ID：{documentId}）",
       "action_label": "操作：",
-      "action_pin": "置顶到 Workspace 概览",
-      "action_unpin": "从 Workspace 概览取消置顶",
-      "description_pin": "此操作会将该文档展示在 Workspace 概览中。同一时间只能置顶一篇文档，此前置顶的文档将被替换。",
-      "description_unpin": "此操作会将该文档从 Workspace 概览中移除。",
+      "action_pin": "置顶到工作区概览",
+      "action_unpin": "从工作区概览取消置顶",
+      "description_pin": "此操作会将该文档展示在工作区概览中。同一时间只能置顶一篇文档，此前置顶的文档将被替换。",
+      "description_unpin": "此操作会将该文档从工作区概览中移除。",
       "confirm_prompt": "要批准此次文档置顶变更吗？",
       "error_document_id_required": "管理文档置顶需要提供 documentId",
       "error_should_pin_required": "shouldPin 必须是明确的布尔值（true 为置顶，false 为取消置顶）",
