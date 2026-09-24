@@ -1,80 +1,80 @@
-# Postman 中文注入 · Postman Chinese Injector
+# Postman 繁體中文注入工具 · Postman Traditional Chinese Injector
 
-[![Release](https://img.shields.io/github/v/release/hlmd/postman-chinese-injector?sort=semver)](../../releases)
+[![Release](https://img.shields.io/github/v/release/Yuno-Liu/postman-chinese-injector?sort=semver)](../../releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-blue)
-[![Postman](https://img.shields.io/badge/Postman-10.x%20~%2012.x-orange)](#支持的-postman-版本)
+[![Postman](https://img.shields.io/badge/Postman-10.x%20~%2012.x-orange)](#支援的-postman-版本)
 
-把简体中文界面注入 **Postman 桌面端**与**网页版**，让界面变中文。译文已全部预置、开箱即用。
+把繁體中文介面注入 **Postman 桌面端**與**網頁版**，讓介面變為繁體中文（台灣標準詞彙）。譯文已全部預置、開箱即用。
 
-- **桌面端** — Windows / macOS / Linux 的**单文件可执行程序**（目标机无需装 Node），也可用 Node 源码运行。
-- **网页版** — Chrome / Edge 的 **Manifest V3 浏览器扩展**（`go.postman.co` 等）。
+- **桌面端** — Windows / macOS / Linux 的**單檔案可執行程式**（目標電腦無需安裝 Node），亦可用 Node 原始碼直接執行。
+- **網頁版** — Chrome / Edge 的 **Manifest V3 瀏覽器擴充功能**（`go.postman.co` 等）。
 
-> **支持版本**：桌面端 Postman **10.x ～ 12.x**（以最新正式版为主要测试目标），网页版随官方界面滚动更新。详见 [支持的 Postman 版本](#支持的-postman-版本)。
+> **支援版本**：桌面端 Postman **10.x ～ 12.x**（以最新正式版為主要測試目標），網頁版隨官方介面滾動更新。詳見 [支援的 Postman 版本](#支援的-postman-版本)。
 
 > [!WARNING]
-> **非官方项目**：与 Postman, Inc. 无任何关联，未获授权或背书；"Postman" 是其商标。
-> 本仓库不含也不分发 Postman 的任何源码 / 二进制 / 原始语言包。仅供个人本地使用，自负风险。
-> 详见文末 [法律声明](#法律声明--disclaimer)。
+> **非官方專案**：與 Postman, Inc. 無任何關聯，未獲授權或背書；"Postman" 是其商標。
+> 本倉庫不含亦不分發 Postman 的任何原始碼 / 二進位程式 / 原始語言包。僅供個人本地使用，自負風險。
+> 詳見文末 [法律聲明](#法律聲明--disclaimer)。
 
-**目录**
+**目錄**
 
-[快速开始](#快速开始) · [支持的 Postman 版本](#支持的-postman-版本) · [下载 Postman（各版本）](#下载-postman各版本) · [关闭自动更新](#关闭自动更新保持汉化不被冲掉) · [工作原理](#工作原理) · [桌面端](#桌面端) · [报毒说明](#杀毒软件报毒误报说明) · [网页版](#网页版浏览器扩展) · [翻译数据](#翻译数据) · [常见问题](#常见问题) · [交流反馈](#交流--反馈) · [法律声明](#法律声明--disclaimer)
+[快速開始](#快速開始) · [支援的 Postman 版本](#支援的-postman-版本) · [下載 Postman（各版本）](#下載-postman各版本) · [關閉自動更新](#關閉自動更新保持中文化不被覆蓋) · [運作原理](#運作原理) · [桌面端](#桌面端) · [報毒說明](#防毒軟體報毒誤報說明) · [網頁版](#網頁版瀏覽器擴充功能) · [翻譯數據](#翻譯數據) · [常見問題](#常見問題) · [交流反饋](#交流--反饋) · [法律聲明](#法律聲明--disclaimer)
 
 ---
 
-## 快速开始
+## 快速開始
 
 **桌面端**
 
-1. 到 [Release](../../releases) 下载对应平台压缩包并解压；
-2. **完全退出 Postman**；
-3. 运行可执行文件（自动探测安装位置）；
-4. 重启 Postman，界面变中文。
+1. 前往 [Release](../../releases) 下載對應平台壓縮包並解壓縮；
+2. **完全結束 Postman**；
+3. 執行可執行程式（自動偵測安裝路徑）；
+4. 重啟 Postman，介面即變為繁體中文。
 
-> 卸载汉化：运行时加 `--restore`。
+> 移除中文化：執行時加上 `--restore`。
 
-**网页版**
+**網頁版**
 
-1. 到 [Release](../../releases) 下载 `postman-chinese-injector-extension.zip` 并解压；
-2. Chrome / Edge 打开 `chrome://extensions` → 开启「开发者模式」；
-3. 点「加载已解压的扩展程序」→ 选该目录；
-4. 刷新 Postman 网页版，界面变中文。
+1. 前往 [Release](../../releases) 下載 `postman-chinese-injector-extension.zip` 並解壓縮；
+2. Chrome / Edge 開啟 `chrome://extensions` → 開啟「開發者模式」；
+3. 點選「載入已解壓的擴充功能」→ 選擇該目錄；
+4. 重新整理 Postman 網頁版，介面即變為繁體中文。
 
-下面是完整说明。
+以下為完整說明。
 
 ---
 
-## 支持的 Postman 版本
+## 支援的 Postman 版本
 
-汉化对桌面端的适配依赖两点，满足即可注入：
+中文化對桌面端的適配依賴兩點，滿足即可注入：
 
-- 主窗口 preload 脚本可注入 —— 新版为根目录 `preload_desktop.js`，老版（10.24）为 `preload/desktop/index.js`，脚本自动判别；
-- 界面语言包走 `.../_ar-assets/locales/<lang>/<module>-<hash>.json` 远程加载 —— 运行时钩子拦截这些响应做替换。
+- 主視窗 preload 腳本可注入 —— 新版為根目錄 `preload_desktop.js`，舊版（10.24）為 `preload/desktop/index.js`，腳本自動判別；
+- 介面語言包走 `.../_ar-assets/locales/<lang>/<module>-<hash>.json` 遠端載入 —— 執行階段掛鉤攔截這些回應進行合併替換。
 
-| 项 | 说明 |
+| 項目 | 說明 |
 |------|------|
-| **已适配范围** | Postman 桌面端 **10.x ～ 12.x**（当前最新），以最新正式版为主要测试目标 |
-| **网页版** | `go.postman.co` 等，随官方界面滚动更新，无版本号约束 |
-| **覆盖度** | 译文键值对齐「当前 Postman 界面文案」，越接近最新版覆盖越全；过旧版本界面文案不同，可能出现部分未翻译 |
-| **不支持** | 更早、不走 `_ar-assets` 语言包机制的老架构 |
+| **已適配範圍** | Postman 桌面端 **10.x ～ 12.x**（目前最新），以最新正式版為主要測試目標 |
+| **網頁版** | `go.postman.co` 等，隨官方介面滾動更新，無版本號限制 |
+| **覆蓋度** | 譯文鍵值對齊「當前 Postman 介面文案」，越接近最新版覆蓋越完整；過舊版本介面文案不同，可能出現部分未翻譯 |
+| **不支援** | 更早、不走 `_ar-assets` 語言包機制的舊架構 |
 
-> Postman 会**自动更新**，更新后生成新的版本目录（不含补丁）→ 界面变回英文，重新跑一次注入即可。想固定版本，见下方[关闭自动更新](#关闭自动更新保持汉化不被冲掉)。
+> Postman 會**自動更新**，更新後會產生新的版本目錄（不含中文化補丁）→ 介面變回英文，重新執行一次注入即可。若想固定版本，請見下方[關閉自動更新](#關閉自動更新保持中文化不被覆蓋)。
 
 ---
 
-## 下载 Postman（各版本）
+## 下載 Postman（各版本）
 
-本工具**只注入**已安装的 Postman，不包含 Postman 本体。以下为官方直链，按需自取。
+本工具**僅注入**已安裝的 Postman，不包含 Postman 本體。以下為官方官方連結，請按需自行下載。
 
 **官方入口**
 
-- 官方下载页：<https://www.postman.com/downloads/>
-- **发布说明 / 更新日志**：<https://www.postman.com/release-notes/postman-app/>
+- 官方下載頁：<https://www.postman.com/downloads/>
+- **發布說明 / 更新日誌**：<https://www.postman.com/release-notes/postman-app/>
 
-**最新版直链**（`https://dl.pstmn.io/download/latest/<平台标识>`）
+**最新版載點**（`https://dl.pstmn.io/download/latest/<平台標識>`）
 
-| 平台 | 直链 |
+| 平台 | 載點 |
 |------|------|
 | Windows x64 | <https://dl.pstmn.io/download/latest/win64> |
 | Windows arm64 | <https://dl.pstmn.io/download/latest/windows_arm64> |
@@ -83,252 +83,243 @@
 | Linux x64 | <https://dl.pstmn.io/download/latest/linux64> |
 | Linux arm64 | <https://dl.pstmn.io/download/latest/linux_arm64> |
 
-**指定版本直链**
+**指定版本載點**
 
-把版本号与平台标识填进模板即可下载历史版本：
+將版本號與平台標識填入模板即可下載歷史版本：
 
 ```
-https://dl.pstmn.io/download/version/<版本号>/<平台标识>
+https://dl.pstmn.io/download/version/<版本號>/<平台標識>
 ```
 
-例（下载 11.21.0 的 Windows x64）：
+範例（下載 11.21.0 的 Windows x64）：
 
 ```
 https://dl.pstmn.io/download/version/11.21.0/win64
 ```
 
-平台标识：`win64` · `windows_arm64` · `osx_64` · `osx_arm64` · `linux64` · `linux_arm64`
-（`win64` 亦可写 `windows_64`，`windows_arm64` 亦可写 `win_arm64`，互为别名。）版本号见上面的发布说明页。
+平台標識：`win64` · `windows_arm64` · `osx_64` · `osx_arm64` · `linux64` · `linux_arm64`
+（`win64` 亦可寫為 `windows_64`，`windows_arm64` 亦可寫為 `win_arm64`，互為別名。）版本號請見上方發布說明頁。
 
-> 注：**Windows arm64** 原生包较新才提供，用**指定版本**回溯旧版时该架构可能 404（`latest` 正常）。这类情况改用 `win64`（x64，可在 arm64 上兼容运行），或选更新的版本。
-
----
-
-## 关闭自动更新（保持汉化不被冲掉）
-
-Postman 会**自动更新**，升级后生成新的版本目录（不含补丁）→ 界面变回英文。想固定在某个版本、避免汉化被冲掉，见独立文档：
-
-**👉 [关闭 Postman 自动更新](docs/disable-auto-update.md)**
-
-内含两种方法：**A（Windows 推荐）停用 Squirrel 更新器 `Update.exe`**（改名即可，不影响启动与下载，可一键还原）与 **B（全平台通用）hosts 屏蔽更新服务器**（彻底但会连手动下载一起挡住）。
+> 註：**Windows arm64** 原生套件較新才提供，使用**指定版本**回溯舊版時該架構可能回傳 404（`latest` 正常）。遇到此情況請改用 `win64`（x64，可在 arm64 上相容執行），或選擇更新的版本。
 
 ---
 
-## 工作原理
+## 關閉自動更新（保持中文化不被覆蓋）
 
-Postman 主窗口 `webPreferences` 为 `contextIsolation=false` + `nodeIntegration=true`，Electron 的 preload 脚本与页面共享同一 main world 且先于页面脚本执行。运行时钩子 `pm-chinese.js` 包装 `window.fetch` / `XMLHttpRequest`，拦截 Postman 请求的英文（`en-US` / `ja`）语言包响应，把对应模块的中文 deep-merge 进去再返回页面。
+Postman 會**自動更新**，升級後會產生新的版本目錄（不含補丁）→ 介面變回英文。若想固定在某個版本、避免中文化被覆蓋，請參閱獨立文件：
 
-因为改的是 fetch 返回前的响应体，无论数据来自网络还是 Service Worker 缓存都生效。两种载入方式：
+**👉 [關閉 Postman 自動更新](docs/disable-auto-update.md)**
 
-- **桌面端** — Electron 资源解析时 `app.asar` 存在则优先、否则退而加载未打包的 `resources/app/` 目录。CLI 两种形态都自动判别并支持：
-  - **`app.asar` 型** — 备份原始 asar、从备份打补丁、再打包回去；
-  - **未打包 `app/` 型**（没有 `app.asar`，只有 `resources/app/`）— 直接备份并改 `app/preload_desktop.js`，把钩子与数据写到同目录，无需解包 / 打包。
-
-  两种形态都幂等、可 `--restore` 还原。
-- **网页版** — 浏览器扩展以 `world:MAIN` + `run_at:document_start` 注入同一段钩子，在页面脚本之前生效。
-
-钩子 `pm-chinese.js` 是**唯一真源**，两端共用：网页版从全局 `window.__PM_I18N__` 取数据，桌面端从 asar 内同目录的 `pm-chinese-data.json` 用 `fs` 读。
-
-### 登出态 Scratch Pad（本地界面）汉化
-
-Postman **登入态**主界面是远程网页，走上面的语言包拦截即可汉化；但**登出态的 Scratch Pad** 是本地打包的界面，文案为**硬编码英文**、不请求语言包，拦截 fetch 对它无效。
-
-为此工具在**同一次注入**里额外放入第二个运行时钩子 `pm-scratchpad-cn.js`：
-
-- 只在 Scratch Pad 窗口（`file://…scratchpad`）激活；
-- 用 `MutationObserver` 遍历 DOM，把**与内置词典精确整串匹配**的可见英文文本 / 属性替换成中文；
-- **跳过输入框与代码编辑器**（`input` / `textarea` / `contenteditable` / CodeMirror / Monaco）子树，绝不改动你输入的请求体、URL 等内容。
-
-词典源自社区归档项目 [Postman-cn](https://github.com/hlmd/Postman-cn)，仅覆盖常见 Scratch Pad 界面文案；动态 / 参数化文案（如「This *collection* is empty」）暂不翻译。
-
-### 原生菜单汉化
-
-左上角菜单（文件 / 编辑 / 视图 / 帮助）、macOS 应用菜单、Dock 菜单和部分确认框是**主进程**用 Electron 原生 API 画的，既不走 DOM 也不请求语言包。为此注入时还会在主进程入口 `main.js` 最前面插入第三个钩子 `pm-main-cn.js`：包装 `Menu.buildFromTemplate` 与 `dialog.showMessageBox`，按词典 `locales/main/zh-CN.json` 把菜单 / 对话框文案整串替换成中文（支持 `About {{appName}}` 这类占位）。
-
-一条命令即注入全部钩子、自动适配版本与登入状态，无需你关心自己是哪种情形。
+內含兩種方法：**A（Windows 推薦）停用 Squirrel 更新器 `Update.exe`**（重新命名即可，不影響啟動與下載，可一鍵還原）與 **B（全平台通用）hosts 屏蔽更新伺服器**（徹底但會連手動下載一併阻擋）。
 
 ---
 
-## 目录结构
+## 運作原理
+
+Postman 主視窗 `webPreferences` 為 `contextIsolation=false` + `nodeIntegration=true`，Electron 的 preload 腳本與頁面共享同一個 main world 且先於頁面腳本執行。執行階段掛鉤 `pm-chinese.js` 包裝了 `window.fetch` / `XMLHttpRequest`，攔截 Postman 請求的英文（`en-US` / `ja`）語言包回應，將對應模組的繁體中文 deep-merge 合併進去再回傳給頁面。
+
+因為修改的是 fetch 回傳前的回應本體，無論數據來自網路還是 Service Worker 快取皆能生效。兩種載入方式：
+
+- **桌面端** — Electron 資源解析時 `app.asar` 存在則優先讀取、否則退而載入未打包的 `resources/app/` 目錄。CLI 自動判別並支援兩種型態：
+  - **`app.asar` 型** — 備份原始 asar、從備份打補丁、再打包回去；
+  - **未打包 `app/` 型**（沒有 `app.asar`，只有 `resources/app/`）— 直接備份並修改 `app/preload_desktop.js`，將掛鉤與數據寫入同目錄，無需解包 / 打包。
+
+  兩種型態皆為冪等，且可透過 `--restore` 還原。
+- **網頁版** — 瀏覽器擴充功能以 `world:MAIN` + `run_at:document_start` 注入同一段掛鉤，在頁面腳本之前生效。
+
+掛鉤 `pm-chinese.js` 是**唯一核心來源**，兩端共用：網頁版從全域 `window.__PM_I18N__` 取得數據，桌面端則從 asar 內同目錄的 `pm-chinese-data.json` 以 `fs` 讀取。
+
+### 登出態 Scratch Pad（本地介面）繁體化
+
+Postman **登入態**主介面是遠端網頁，走上述的語言包攔截即可完成繁體化；但**登出態的 Scratch Pad** 是本地打包的介面，文案為**硬編碼英文**、不發送語言包請求，攔截 fetch 對其無效。
+
+為此，工具在**同一次注入**中額外置入第二個執行階段掛鉤 `pm-scratchpad-cn.js`：
+
+- 僅在 Scratch Pad 視窗（`file://…scratchpad`）啟用；
+- 使用 `MutationObserver` 遍歷 DOM，將**與內建詞典完全精準相符**的純文字 / 屬性替換為繁體中文；
+- **主動跳過輸入框與程式碼編輯器**（`input` / `textarea` / `contenteditable` / CodeMirror / Monaco）子樹，絕不竄改您輸入的請求內容、URL 等資料。
+
+### 原生選單繁體化
+
+左上角原生選單（檔案 / 編輯 / 檢視 / 幫助）、macOS 應用程式選單、Dock 選單與部分確認對話框是**主行程**以 Electron 原生 API 繪製的，既不經 DOM 亦不請求語言包。為此，注入時會在主行程入口 `main.js` 最前方插入第三個掛鉤 `pm-main-cn.js`：包裝 `Menu.buildFromTemplate` 與 `dialog.showMessageBox`，依照詞典 `locales/main/zh-CN.json` 將選單 / 對話框文案整串替換為繁體中文（支援 `About {{appName}}` 這類佔位符）。
+
+單一指令即可自動完成全部掛鉤注入，自動適配版本與登入狀態，無需手動介入。
+
+---
+
+## 目錄結構
 
 ```
 postman-chinese-injector/
-├── postman-chinese-injector.js   # 桌面端注入 CLI：构建 / 备份 / 解包 / 注入 / 打包 app.asar，含 --restore
-├── pm-chinese.js                 # 运行时钩子（桌面端与浏览器扩展共用的唯一真源）
-├── pm-scratchpad-cn.js           # 第二个钩子：登出态 Scratch Pad 的 DOM 词典替换（仅桌面端）
-├── pm-main-cn.js                 # 第三个钩子：主进程原生菜单 / 对话框汉化（仅桌面端）
+├── postman-chinese-injector.js   # 桌面端注入 CLI：建置 / 備份 / 解包 / 注入 / 打包 app.asar，含 --restore
+├── pm-chinese.js                 # 執行階段掛鉤（桌面端與瀏覽器擴充功能共用的唯一核心）
+├── pm-scratchpad-cn.js           # 第二個掛鉤：登出態 Scratch Pad 的 DOM 詞典替換（僅桌面端）
+├── pm-main-cn.js                 # 第三個掛鉤：主行程原生選單 / 對話框中文化（僅桌面端）
 ├── locales/
-│   ├── zh-CN/                    # 语言包翻译源：每个模块一个 json，可单独编辑
+│   ├── zh-CN/                    # 語言包翻譯源（已全量轉為繁體中文）：每個模組一個 json，可單獨編輯
 │   │   ├── api-client-core.json
 │   │   └── ...
 │   ├── scratchpad/
-│   │   └── zh-CN.json            # Scratch Pad DOM 词典（英文整串 → 中文）
+│   │   └── zh-CN.json            # Scratch Pad DOM 詞典（英文整串 → 繁體中文）
 │   └── main/
-│       └── zh-CN.json            # 主进程原生菜单 / 对话框词典（英文整串 → 中文）
+│       └── zh-CN.json            # 主行程原生選單 / 對話框詞典（英文整串 → 繁體中文）
 ├── scripts/
-│   ├── build-data.js             # 合并 locales/ 并生成可嵌入二进制的快照（见下）
-│   ├── build-scratchpad-dict.js  # 构建 / 维护 Scratch Pad 词典 locales/scratchpad/zh-CN.json
-│   ├── build-extension.js        # 打包 Chrome/Edge (MV3) 浏览器扩展，给 Postman 网页版用
-│   ├── build-bin.js              # 用 bun --compile 编译单文件二进制（复用本地缓存的运行时）
-│   ├── build-bin-legacy.js       # 用 pkg（Node 运行时）打老系统版 Windows 二进制
-│   ├── fetch-runtimes.js         # 预拉取各平台 bun 运行时到本地缓存，规避交叉编译时的在线下载
-│   └── compress-dist.js          # 把 dist/ 的二进制并行压成发行包（zip / tar.xz）
-├── .github/workflows/            # CI：打 tag 自动交叉编译、并行压缩并发 Release
-└── package.json                  # bin 命令 postman-chinese-injector、构建脚本、依赖 @electron/asar
+│   ├── convert-to-traditional.js # 一鍵將語言包與詞典轉換為繁體中文工具
+│   ├── build-data.js             # 合併 locales/ 並產生可嵌入二進位程式的快照（見下）
+│   ├── build-scratchpad-dict.js  # 建置 / 維護 Scratch Pad 詞典 locales/scratchpad/zh-CN.json
+│   ├── build-extension.js        # 打包 Chrome/Edge (MV3) 瀏覽器擴充功能，供 Postman 網頁版使用
+│   ├── build-bin.js              # 使用 bun --compile 編譯單檔案二進位執行檔（復用本地快取的執行環境）
+│   ├── build-bin-legacy.js       # 使用 pkg（Node 執行環境）打包舊版 Windows 二進位執行檔
+│   ├── fetch-runtimes.js         # 預先拉取各平台 bun 執行環境至本地快取，避免交叉編譯時線上重複下載
+│   └── compress-dist.js          # 將 dist/ 的二進位程式平行壓縮為發行包（zip / tar.xz）
+├── .github/workflows/            # CI：建立 tag 自動交叉編譯、平行壓縮並發布 Release
+└── package.json                  # bin 命令 postman-chinese-injector、建置腳本、依賴 @electron/asar
 ```
 
-> `build-data.js` 生成 6 份供 `bun --compile` 静态内嵌的快照：`pm-chinese-data.json`（语言包合并数据）、`pm-chinese-src.json`（`pm-chinese.js` 源码）、`pm-scratchpad-data.json`（Scratch Pad 词典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 源码）、`pm-main-data.json`（主进程菜单词典）、`pm-main-src.json`（`pm-main-cn.js` 源码）。它们都是构建产物，不在源码里单独存放；用 `node postman-chinese-injector.js` 直接注入时不需要，那条路直接从 `locales/` 与本地钩子读。
+> `build-data.js` 會產生 6 份供 `bun --compile` 靜態內嵌的快照：`pm-chinese-data.json`（語言包合併數據）、`pm-chinese-src.json`（`pm-chinese.js` 原始碼）、`pm-scratchpad-data.json`（Scratch Pad 詞典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 原始碼）、`pm-main-data.json`（主行程菜單詞典）、`pm-main-src.json`（`pm-main-cn.js` 原始碼）。它們皆為建置產物，平時使用 `node postman-chinese-injector.js` 直接注入時不需要，該路徑直接讀取 `locales/` 與本地掛鉤。
 
 ---
 
 ## 桌面端
 
-### 方式一：下载二进制（推荐，目标机无需 Node）
+### 方式一：下載二進位執行檔（推薦，目標電腦無需 Node）
 
-从 Release 下载对应平台的压缩包，解压得到单文件（重命名随意）：
+從 Release 下載對應平台的壓縮包，解壓縮後獲得單檔案（可自由重新命名）：
 
-| 平台 | 下载文件 | 解压后 |
+| 平台 | 下載檔案 | 解壓縮後 |
 |------|----------|--------|
 | Windows x64 | `postman-chinese-injector-win-x64.zip` | `postman-chinese-injector-win-x64.exe` |
-| Windows x64（老系统） | `postman-chinese-injector-win-x64-legacy.zip` | `postman-chinese-injector-win-x64-legacy.exe` |
+| Windows x64（舊版系統） | `postman-chinese-injector-win-x64-legacy.zip` | `postman-chinese-injector-win-x64-legacy.exe` |
 | Linux x64 / arm64 | `postman-chinese-injector-linux-x64.tar.xz` / `-arm64.tar.xz` | `postman-chinese-injector-linux-x64` / `-arm64` |
 | macOS x64 / arm64（Apple Silicon） | `postman-chinese-injector-macos-x64.tar.xz` / `-arm64.tar.xz` | `postman-chinese-injector-macos-x64` / `-arm64` |
 
-> 压缩仅为减小下载体积（约为原来的 1/4），解压后仍按原大小运行。
-> Windows 双击 `.zip` 即可解压；Linux / macOS：`tar -xf postman-chinese-injector-*.tar.xz`。
+> 壓縮僅為減少下載體積（約降為原來的 1/4），解壓縮後仍以原大小執行。
+> Windows 雙擊 `.zip` 即可解壓縮；Linux / macOS：`tar -xf postman-chinese-injector-*.tar.xz`。
 
 > [!NOTE]
-> **杀毒软件把 exe 报成木马？** 是单文件打包器（bun / pkg）的通病，属启发式误报。核实办法（SHA256 校验、构建来源证明、VirusTotal）与替代方案见 [杀毒软件报毒（误报）说明](#杀毒软件报毒误报说明)。
+> **防毒軟體將 exe 誤報為木馬？** 這是單檔案打包工具（bun / pkg）的常見現象，屬於啟發式誤判。核實方法（SHA256 校驗、建置來源證明、VirusTotal）與替代方案請見 [防毒軟體報毒（誤報）說明](#防毒軟體報毒誤報說明)。
 
-**运行环境要求**
+**作業系統要求**
 
-- 默认二进制由 Bun 编译：**Windows 需 10 1809+ / Server 2019+**，macOS 需 11+，Linux 需较新的 glibc。
-- 在更老的 Windows（如 Server 2012 / Win7）上会报 `无法定位程序输入点 ClosePseudoConsole …`（缺 ConPTY API）—— 这是 Bun 运行时的系统底线。
-- 老 Windows 请改用**老系统版**二进制（`*-win-x64-legacy.exe`，改用 Node 运行时打包，见下方[老系统](#老系统windows-81--server-2012-r2)），或走[方式二：Node 源码运行](#方式二node-源码运行开发--改译文)。
+- 預設二進位程式由 Bun 編譯：**Windows 需 10 1809+ / Server 2019+**，macOS 需 11+，Linux 需較新的 glibc。
+- 在更舊的 Windows（如 Server 2012 / Win7）上會提示 `無法定位程序輸入點 ClosePseudoConsole …`（缺少 ConPTY API）—— 此為 Bun 執行環境的系統底線。
+- 舊版 Windows 請改用**舊系統版**二進位程式（`*-win-x64-legacy.exe`，使用 Node 執行環境打包，詳見下方[舊版系統](#舊版系統windows-81--server-2012-r2)），或採用[方式二：Node 原始碼執行](#方式二node-原始碼執行開發--修改譯文)。
 
-**注入步骤**
+**注入步驟**
 
 ```bash
-# 1. 完全退出 Postman
-# 2. 注入（自动探测当前平台的 Postman 安装）
+# 1. 完全結束 Postman
+# 2. 執行注入（自動偵測當前平台的 Postman 安裝目錄）
 ./postman-chinese-injector-win-x64.exe          # Windows
-./postman-chinese-injector-linux-x64            # Linux/macOS 先 chmod +x（tar.xz 解压一般已保留执行位）
+./postman-chinese-injector-linux-x64            # Linux/macOS 先 chmod +x（tar.xz 解壓後通常已保留執行權限）
 
-# 3. 重启 Postman，界面出现中文即成功
+# 3. 重啟 Postman，介面顯示繁體中文即成功
 ```
 
-二进制已内嵌全部中文译文与 `@electron/asar`，无需联网、无需 Node。
+二進位程式已內嵌全部繁體中文譯文與 `@electron/asar`，無需聯網、無需安裝 Node。
 
-> 译文有更新但不想换二进制？把一个 `locales/<lang>/` 文件夹放在**可执行文件旁边**即可覆盖内嵌数据。
+> 譯文有更新但不想更換二進位程式？將 `locales/<lang>/` 資料夾放置於**執行檔同目錄**即可覆蓋內嵌數據。
 
 > [!NOTE]
-> **macOS 用户**：Apple Silicon 首次运行可能报 `zsh: killed` /「已损坏」，注入可能报 `EPERM`——均非文件损坏，处理见 **👉 [macOS 首次运行 / 注入排障](docs/macos-troubleshooting.md)**。
+> **macOS 使用者**：Apple Silicon 首次執行可能提示 `zsh: killed` /「已損毀」，注入時可能提示 `EPERM`——均非檔案損毀，處理方式請見 **👉 [macOS 首次執行 / 注入排障](docs/macos-troubleshooting.md)**。
 
-### 方式二：Node 源码运行（开发 / 改译文）
+### 方式二：Node 原始碼執行（開發 / 修改譯文）
 
-需要 Node 22.12+（打包 asar 走 `@electron/asar` v4；更老的 Node 把依赖与 `postman-chinese-injector.js` 里的 `ASAR_PKG` 改回 `@electron/asar@3`，兼容 Node 12+）。不需要 Python。
+需要 Node 22.12+（打包 asar 使用 `@electron/asar` v4；更舊的 Node 請將依賴與 `postman-chinese-injector.js` 中的 `ASAR_PKG` 改回 `@electron/asar@3`，可相容 Node 12+）。無需 Python。
 
 ```bash
-npm install                       # 安装 @electron/asar（未装则自动回退 npx，较慢）
-node postman-chinese-injector.js  # 注入；或 npm install -g . 后用 postman-chinese-injector
+npm install                       # 安裝依賴（未安裝時會自動回退 npx，速度較慢）
+node postman-chinese-injector.js  # 注入；或 npm install -g . 後使用 postman-chinese-injector 指令
 ```
 
-### CLI 选项
+### CLI 選項
 
-下面用 `node postman-chinese-injector.js` 举例；二进制把它换成可执行文件名即可（如 `./postman-chinese-injector-win-x64.exe`）。
+以下以 `node postman-chinese-injector.js` 為例；使用二進位程式時替換為該執行檔檔名即可（如 `./postman-chinese-injector-win-x64.exe`）。
 
-| 选项 | 作用 |
+| 選項 | 作用 |
 |------|------|
-| `--status` | 只读检查是否已注入，打印结论（不改动） |
-| `--restore` | 还原（用备份覆盖回 `app.asar` / preload） |
-| `--resources <dir>` | 直接指定含 `app.asar` 或未打包 `app/` 的目录（跳过自动探测） |
-| `--postman-dir <dir>` | 指定 Postman 安装根目录 |
-| `--app-version 12.16.1` | Windows 多版本共存时指定 `app-<version>`（默认最新） |
-| `-v`, `--version` | 显示本工具版本 |
-| `-h`, `--help` | 帮助 |
+| `--status` | 唯讀檢查是否已注入並印出結論（不修改任何檔案） |
+| `--restore` | 還原（使用備份覆蓋回 `app.asar` / preload） |
+| `--resources <dir>` | 直接指定含有 `app.asar` 或未打包 `app/` 的目錄（跳過自動偵測） |
+| `--postman-dir <dir>` | 指定 Postman 安裝根目錄 |
+| `--app-version 12.16.1` | Windows 多版本共存時指定 `app-<version>`（預設選擇最新版） |
+| `-v`, `--version` | 顯示本工具版本 |
+| `-h`, `--help` | 顯示說明訊息 |
 
-#### 平台默认探测位置
+#### 各平台預設偵測路徑
 
-| 平台 | 位置 |
+| 平台 | 路徑 |
 |------|------|
-| Windows | `%LOCALAPPDATA%\Postman\app-<version>\resources`（自动取最新版本） |
+| Windows | `%LOCALAPPDATA%\Postman\app-<version>\resources`（自動選取最新版本） |
 | macOS | `/Applications/Postman.app/Contents/Resources`（含 `~/Applications`） |
-| Linux | `/opt/Postman/app/resources`、`/usr/share/postman/resources`、`~/.local/share/Postman/app/resources` 等常见位置 |
+| Linux | `/opt/Postman/app/resources`、`/usr/share/postman/resources`、`~/.local/share/Postman/app/resources` 等常見路徑 |
 
-> 探测不到时用 `--resources <含 app.asar 或 app/ 的目录>` 或 `--postman-dir <安装根目录>` 指定。
-> macOS / Linux 的系统级安装目录可能需要 `sudo` 才能写入。
+> 若無法自動偵測，請使用 `--resources <含 app.asar 或 app/ 的目錄>` 或 `--postman-dir <安裝根目錄>` 手動指定。
+> macOS / Linux 系統層級的安裝目錄可能需要 `sudo` 權限方可寫入。
 
-#### 验证注入是否成功
+#### 驗證注入是否成功
 
-**① 静态检查（不用启动 Postman）** —— `--status` 只读检查目标 asar 并打印结论：
+**① 靜態檢查（無需啟動 Postman）** —— `--status` 唯讀檢查目標 asar 並輸出結論：
 
 ```bash
 node postman-chinese-injector.js --status      # 或 ./postman-chinese-injector-win-x64.exe --status
 ```
 
 ```
-  类型: app.asar（已打包）
-  备份 app.asar.bak: 有（注入过至少一次）
-  pm-chinese.js 在 asar 内: 是
-  pm-chinese-data.json 在 asar 内: 是（<N> 模块）
-  Scratch Pad 钩子在 asar 内: 是
+  類型: app.asar（已打包）
+  備份 app.asar.bak: 有（已注入過至少一次）
+  pm-chinese.js 在 asar 內: 是
+  pm-chinese-data.json 在 asar 內: 是（<N> 模組）
+  Scratch Pad 掛鉤在 asar 內: 是
   preload 注入行 require('./pm-chinese.js'): 有
 
-[结论] 已注入 ✓　重启 Postman，界面应变中文；Console 会打印 [pm-chinese] 已注入
+[結論] 已注入 ✓　重啟 Postman，介面應變為中文；Console 會輸出 [pm-chinese] 已注入
 ```
 
-**② 看界面** —— 退出并重启 Postman，菜单 / 按钮变中文即成功。
+**② 觀察介面** —— 結束並重啟 Postman，選單與按鈕呈現繁體中文即代表成功。
 
-**③ 看运行时日志（最确凿）** —— Postman 菜单 `View → Developer → Show DevTools (Current View)`（快捷键 `Ctrl+Alt+I`）→ Console，应有：
+**③ 檢查執行階段日誌（最確切）** —— 於 Postman 選單點選 `View → Developer → Show DevTools (Current View)`（快速鍵 `Ctrl+Alt+I`）→ 切換至 Console，應有：
 
 ```
-[pm-chinese] 已注入，语言: zh-CN | 拦截: en-US,ja | 模块数: <N>
+[pm-chinese] 已注入，語言: zh-CN | 攔截: en-US,ja | 模組數: <N>
 ```
 
-### 自行编译二进制
+### 自行編譯二進位執行檔
 
-需要 [Bun](https://bun.sh)（用于 `--compile` 交叉编译）：
+需要安裝 [Bun](https://bun.sh)（用於 `--compile` 交叉編譯）：
 
 ```bash
-npm install            # 或 bun install，准备 @electron/asar
-npm run build          # 生成嵌入数据 + 交叉编译全部 5 个平台到 dist/
-# 或单平台：
+npm install            # 或 bun install，準備 @electron/asar
+npm run build          # 產生嵌入數據 + 交叉編譯全部 5 個平台至 dist/
+# 或單一平台：
 npm run build:win      # build:linux / build:linux-arm64 / build:mac / build:mac-arm64
 
-npm run build:compress # 可选：把 dist/ 的二进制并行压成发行包（Windows→zip，其余→tar.xz，体积约降到 1/4）
+npm run build:compress # 選用：將 dist/ 的二進位程式平行壓縮為發行包（Windows→zip，其餘→tar.xz）
 ```
 
-> - 二进制内嵌整个 Bun 运行时，单文件 57~110MB 无法再缩小；`build:compress` 只在分发环节压缩，解压后仍按原大小运行（原二进制会保留，便于本地直接测试）。
-> - 交叉编译会让 Bun 下载各目标的运行时（每个目标首次较慢、需联网）；首次能稳定下载时可先跑 `npm run build:runtimes` 把各平台运行时缓存到本地，之后编译不再触网。
-> - 也可直接打 tag（如 `git tag v1.2.3 && git push origin v1.2.3`），由 `.github/workflows/release.yml` 在 CI 上一次性交叉编译、并行压缩并发 Release。
+#### 舊版系統（Windows 8.1 / Server 2012 R2+）
 
-#### 老系统（Windows 8.1 / Server 2012 R2+）
-
-Bun 产物要 Win10 1809+；更老的 Windows 需改用 **Node 运行时**打包（`pkg`），产物**不静态链接 ConPTY**，可在老系统运行：
+Bun 產物需要 Win10 1809+；更舊的 Windows 需改用 **Node 執行環境**打包（`pkg`），產物**不靜態連結 ConPTY**，可在舊系統上執行：
 
 ```bash
-npm run build:win-legacy        # → dist/postman-chinese-injector-win-x64-legacy.exe（默认 node16 基座）
-# 目标更旧（Server 2012 非 R2 / Win7）可尝试更老基座（Node 官方也不保，尽力而为）：
+npm run build:win-legacy        # → dist/postman-chinese-injector-win-x64-legacy.exe（預設 node16 基底）
+# 目標更舊（Server 2012 非 R2 / Win7）可嘗試更舊基底：
 node scripts/build-bin-legacy.js node12-win-x64
 ```
 
-> - **系统下限**：node16 基座覆盖 **Windows 8.1 / Server 2012 R2 及以上**；node12 基座尽力覆盖 Server 2012（非 R2）/ Win7（未经官方支持，可能仍失败——那说明系统已低于 Node 底线，只能升级系统）。
-> - 首次会联网下载对应 Node 基座（~30MB）；产物约 35MB，功能与默认二进制一致。
-> - 底层用已归档但仍可用的 `pkg@5.8.1`，并在独立暂存目录里配 `@electron/asar@3`（v4 要 Node≥22），不影响仓库根的 asar@4。
-
 ---
 
-## 杀毒软件报毒（误报）说明
+## 防毒軟體報毒（誤報）說明
 
-部分杀毒软件（Windows Defender、火绒、360，以及 VirusTotal 上的少数引擎）可能把本工具的 `.exe` 标记为 `Trojan:Win32/Wacatac.B!ml`、`Program:Win32/Wacapew.C!ml` 之类的**启发式威胁**。这是**误报**，原因有三个，都出在打包方式和工具用途上：
+部分防毒軟體（Windows Defender 等）或 VirusTotal 上的少數引擎可能會將本工具的 `.exe` 標記為啟發式威脅。這是**誤報**，原因在於打包方式與本工具的運作性質：
 
-1. **单文件二进制的结构像加壳程序**——默认二进制由 `bun --compile` 生成（老系统版由 `pkg` 生成），产物 = 运行时 + 追加的脚本载荷。pkg / nexe / bun / deno / PyInstaller 这类打包器的产物被机器学习模型误判是行业级老问题，与本项目代码无关。
-2. **行为特征天然像「打补丁器」**——本工具会读写你已安装的 Postman 的 `resources/app.asar`（备份 → 解包 → 改 preload → 重新打包）。这种「修改另一个已安装应用的文件」的行为，在行为规则里跟恶意程序劫持合法软件难以区分。
-3. **未做代码签名 + 下载量少**——Windows SmartScreen 走的是文件信誉，新发布的未签名 exe 一律显示「未知发布者」。代码签名证书的费用目前超出本项目（免费开源）的承受范围。
+1. **單檔案執行檔的結構類似加殼程式**——預設二進位程式由 `bun --compile` 產生（舊版由 `pkg` 產生），結構為執行環境加上打包的腳本酬載。此類打包工具的產物容易被機器學習模型誤判，為業界常見問題。
+2. **行為特徵天然類似「打補丁程式」**——本工具需讀寫已安裝的 Postman 之 `resources/app.asar`（備份 → 解包 → 修改 preload → 重新打包）。「修改另一個已安裝應用程式之檔案」的行為特徵容易觸發防毒機制。
+3. **未進行商業程式碼簽署**——Windows SmartScreen 採用檔案信譽機制，未簽署的新 exe 會顯示為「未知的發行者」。
 
-### 怎么自己核实
+### 如何自行核實
 
-- **核对校验和**：每个 Release 都附带 `SHA256SUMS.txt`，可确认下载到的文件与 CI 产物一致。
+- **核對雜湊校驗碼**：每個 Release 均附帶 `SHA256SUMS.txt`，可確認下載之檔案與 CI 建置產物一致。
 
   ```powershell
   # Windows PowerShell
@@ -340,136 +331,121 @@ node scripts/build-bin-legacy.js node12-win-x64
   shasum -a 256 postman-chinese-injector-*.tar.xz
   ```
 
-- **验证构建来源**：所有二进制**均由 GitHub Actions 从公开源码构建**（见 [`.github/workflows/release.yml`](.github/workflows/release.yml)），并附带 [构建来源证明（build provenance）](https://docs.github.com/actions/security-guides/using-artifact-attestations)：
+- **驗證建置來源證明**：所有二進位發行包**均由 GitHub Actions 從公開原始碼建置**（見 [`.github/workflows/release.yml`](.github/workflows/release.yml)），並具備 [建置來源證明（build provenance）](https://docs.github.com/actions/security-guides/using-artifact-attestations)：
 
   ```bash
-  gh attestation verify postman-chinese-injector-win-x64.zip --repo hlmd/postman-chinese-injector
+  gh attestation verify postman-chinese-injector-win-x64.zip --repo Yuno-Liu/postman-chinese-injector
   ```
 
-- **上传 [VirusTotal](https://www.virustotal.com/) 复核**：少数引擎标红、主流引擎全绿，是典型的启发式误报特征。
+- **上傳至 [VirusTotal](https://www.virustotal.com/) 複查**：少數引擎標紅、主流引擎全綠，為典型的啟發式誤報特徵。
 
-### 不想跟杀软纠缠：直接跑源码
+### 不想處理誤報：直接以原始碼執行
 
-源码是纯 JavaScript，不经过任何打包器，因此不会触发这类误报：
+原始碼為純 JavaScript，不經過任何二進位打包器，因此不會觸發此類誤報：
 
 ```bash
-git clone https://github.com/hlmd/postman-chinese-injector.git
+git clone https://github.com/Yuno-Liu/postman-chinese-injector.git
 cd postman-chinese-injector
 npm install
 node postman-chinese-injector.js
 ```
 
-### 仍想用二进制
-
-把解压后的可执行文件加入杀软白名单（Defender：**设置 → 隐私和安全性 → Windows 安全中心 → 病毒和威胁防护 → 管理设置 → 排除项 → 添加文件**）。也欢迎向厂商提交误报申诉（[微软 WDSI](https://www.microsoft.com/en-us/wdsi/filesubmission)、火绒 / 360 各自的误报反馈入口），申诉通过后该版本通常 1～3 天内不再被拦截。
-
-> 本工具自身**不上传任何数据、不修改 Postman 以外的文件、不常驻后台**；全部行为都可以在 [`postman-chinese-injector.js`](postman-chinese-injector.js)（643 行，带中文注释）里逐行核对。唯一的联网动作是：Node 源码模式下若未安装 `@electron/asar`，会调用 `npx` 从 npm 拉取它——编译好的二进制已内嵌该依赖，全程离线。
-
 ---
 
-## 网页版：浏览器扩展
+## 網頁版：瀏覽器擴充功能
 
-给 **Postman 网页版**（`go.postman.co` 等）汉化，无需碰 app.asar。生成的是 Chrome / Edge 的 Manifest V3 扩展：
+為 **Postman 網頁版**（`go.postman.co` 等）注入繁體中文，無需更動 app.asar。產出的是 Chrome / Edge 的 Manifest V3 擴充功能：
 
 ```bash
 npm run build:ext      # 或 node scripts/build-extension.js
 ```
 
-产物在 `dist/extension/`（同时打一个 `dist/postman-chinese-injector-extension.zip`）：
+產物位於 `dist/extension/`（同時產生 `dist/postman-chinese-injector-extension.zip`）：
 
 ```
 dist/extension/
-├── manifest.json      # MV3，内容脚本 world:MAIN + run_at:document_start
-├── pm-i18n-data.js    # window.__PM_I18N__ = { <模块>: {…中文…} }（由 locales/ 合并）
-└── pm-chinese.js      # 与桌面端共用的同一份运行时钩子
+├── manifest.json      # MV3，內容腳本 world:MAIN + run_at:document_start
+├── pm-i18n-data.js    # window.__PM_I18N__ = { <模組>: {…繁體中文…} }
+└── pm-chinese.js      # 與桌面端共用的同一份執行階段掛鉤
 ```
 
-**安装**
+**安裝方式**
 
-1. Chrome / Edge 打开 `chrome://extensions` → 开启「开发者模式」；
-2. 点「加载已解压的扩展程序」→ 选择 `dist/extension/` 目录；
-3. 刷新 Postman 网页版，界面变中文即成功。
+1. Chrome / Edge 開啟 `chrome://extensions` → 開啟「開發者模式」；
+2. 點選「載入已解壓的擴充功能」→ 選擇 `dist/extension/` 目錄；
+3. 重新整理 Postman 網頁版，介面即變為繁體中文。
 
-打开 DevTools Console 应看到 `[pm-chinese] 已注入…模块数: <N>`。
-
-> - 改译文后重跑 `npm run build:ext` 并在 `chrome://extensions` 点该扩展的「刷新」即可。
-> - 仅支持 Chromium 系（Chrome / Edge）；Firefox 的 MV3 对 `world:MAIN` 支持不同，暂未适配。
+開啟 DevTools Console 應可看到 `[pm-chinese] 已注入…模組數: <N>`。
 
 ---
 
-## 翻译数据
+## 翻譯數據
 
-翻译源是 `locales/<lang>/` 下**每个模块一个 JSON**，文件名即模块名，内容是与 Postman 界面语言包同形的中文键树（供运行时 deep-merge）：
+翻譯來源為 `locales/<lang>/` 下**每個模組一個 JSON**，檔名即為模組名，內容為與 Postman 介面語言包同構的繁體中文鍵值樹：
 
 ```
 locales/zh-CN/
-├── api-client-core.json     # { "request_access": { "title": "您似乎无权访问" }, ... }
+├── api-client-core.json
 ├── app-header.json
-└── ...（每个模块一个）
+└── ...（共 165 個模組）
 ```
 
-注入 / 打包时把这些文件合并成一个扁平 bundle（`{ "<module>": {…} }`），运行时由 `pm-chinese.js` 读取。
+注入 / 打包時將這些檔案合併為一個扁平 bundle（`{ "<module>": {…} }`），執行階段由 `pm-chinese.js` 讀取並合併。
 
-**改某个模块的译文** = 直接编辑对应 json，重跑注入（桌面端）或 `npm run build:ext`（网页版）即可。
+**修改譯文**：直接編輯對應的 json 檔案，重新執行注入（桌面端）或執行 `npm run build:ext`（網頁版）即可。
 
-- 拦截的源语言固定为 `en-US` / `ja`、展示语言 `zh-CN`，写死在 `pm-chinese.js` 里。
-- 目前只注入简体中文（`locales/zh-CN/`）。
-- 登出态 Scratch Pad 的 DOM 词典单独放在 `locales/scratchpad/zh-CN.json`（英文整串 → 中文），由 `scripts/build-scratchpad-dict.js` 维护。
-- 主进程原生菜单 / 对话框词典放在 `locales/main/zh-CN.json`（英文整串 → 中文），手工维护。
-
----
-
-## 常见问题
-
-**macOS（M 芯片）运行报 `zsh: killed` / 「已损坏，无法打开」/ 注入时 `EPERM`**
-分别对应未签名、下载隔离、macOS 13+ 的「App 管理」保护，都不是文件损坏。处理步骤见 [docs/macos-troubleshooting.md](docs/macos-troubleshooting.md)。
-
-**杀毒软件报毒 / SmartScreen 拦截**
-单文件二进制（bun / pkg 打包）的启发式误报，非真实威胁。原因、核实办法与替代方案见 [杀毒软件报毒（误报）说明](#杀毒软件报毒误报说明)。
-
-**界面还是英文 / Console 没有 `[pm-chinese] 已注入`**
-① 注入前是否完全退出 Postman；② 是否打到了正在运行的那个版本（Windows 多版本共存时用 `--app-version` 指定）。
-
-**`asar requires Node >=22` 之类报错**
-那是 `@electron/asar` v4 的限制。把 Node 升到 22.12+ 即可；若无法升级，按上文把 `ASAR_PKG` / 依赖改回 `@electron/asar@3`（兼容 Node 12+）。
-
-**Postman 自动更新后又变回英文**
-更新会生成新的版本目录（不含补丁），重新跑一次 `node postman-chinese-injector.js` 即可。
-
-**想卸载汉化**
-桌面端 `node postman-chinese-injector.js --restore`；网页版在 `chrome://extensions` 移除扩展。
+- 登出態 Scratch Pad 的 DOM 詞典放置於 `locales/scratchpad/zh-CN.json`（英文整串 → 繁體中文）。
+- 主行程原生選單 / 對話框詞典放置於 `locales/main/zh-CN.json`（英文整串 → 繁體中文）。
+- 亦可執行 `npm run convert:tw` 重新執行整套繁體中文在地化轉換腳本。
 
 ---
 
-## 交流 / 反馈
+## 常見問題
 
-- 问题与建议欢迎提 [Issue](../../issues)。
-- QQ 群：**494969115**
+**macOS（M 晶片）執行提示 `zsh: killed` / 「已損毀，無法開啟」/ 注入時 `EPERM`**
+分別對應未簽章、下載隔離與 macOS 13+ 的「應用程式管理」保護。處理步驟請見 [docs/macos-troubleshooting.md](docs/macos-troubleshooting.md)。
 
-### 提 Issue 前请附上这些信息
+**防毒軟體報毒 / SmartScreen 攔截**
+此為單檔案打包工具（bun / pkg）之啟發式誤判，非真實威脅。核實方法與替代方案請見 [防毒軟體報毒（誤報）說明](#防毒軟體報毒誤報說明)。
 
-点 **New issue** 会有现成模板（Bug / 漏译误译 / 功能建议）引导你填写；下面是报 Bug 时建议提供的资料（越全越快）：
+**介面仍顯示英文 / Console 未印出 `[pm-chinese] 已注入`**
+① 注入前是否已完全結束 Postman；② 是否注入至正在執行的版本目錄（Windows 多版本共存時可使用 `--app-version` 指定）。
 
-| 信息 | 怎么拿 |
+**`asar requires Node >=22` 錯誤**
+此為 `@electron/asar` v4 的限制。將 Node 升級至 22.12+ 即可；若無法升級，請將依賴改回 `@electron/asar@3`。
+
+**Postman 自動更新後又變回英文**
+更新會產生新的版本目錄（不含中文化補丁），重新執行一次 `node postman-chinese-injector.js` 即可。
+
+**如何卸載中文化**
+桌面端執行 `node postman-chinese-injector.js --restore`；網頁版在 `chrome://extensions` 移除該擴充功能。
+
+---
+
+## 交流 / 反饋
+
+- 歡迎透過 [GitHub Issues](../../issues) 回報問題與提供建議。
+
+### 回報 Issue 前建議附帶之資訊
+
+| 資訊 | 取得方式 |
 |------|--------|
-| **操作系统与版本** | Windows 10/11（含内部版本号）、macOS 版本 + 芯片（Intel / Apple Silicon）、Linux 发行版 |
-| **Postman 版本** | Postman 内 `Settings → About`，或 Windows 的 `app-<version>` 目录名 |
-| **使用方式** | 桌面端二进制 / Node 源码运行 / 网页版浏览器扩展（三选一） |
-| **本工具版本** | 运行 `... --version`，或所下载 Release 的版本号 |
-| **`--status` 输出** | 桌面端跑 `... --status`，把整段结论贴上 |
-| **Console 日志** | Postman `View → Developer → Show DevTools`（或扩展页 F12）→ Console，贴出含 `[pm-chinese]` / `[pm-scratchpad]` 的行 |
-| **完整报错** | 终端的完整错误文本（含 `EPERM` / `ClosePseudoConsole` 等关键字），别只截一半 |
-| **复现步骤与现象** | 做了什么、期望什么、实际什么；界面未翻译的可附**截图**并标出位置 |
-
-> 报「某处没翻译 / 翻译不当」时，附上**截图**并说明所在界面（如登入态主界面 / 登出态 Scratch Pad / 网页版），能帮我们快速定位是哪个模块的词条。
+| **作業系統與版本** | Windows 10/11、macOS 版本 + 晶片（Intel / Apple Silicon）、Linux 發行版 |
+| **Postman 版本** | Postman 內 `Settings → About`，或 Windows 的 `app-<version>` 資料夾名 |
+| **使用方式** | 桌面端二進位程式 / Node 原始碼執行 / 網頁版瀏覽器擴充功能（三選一） |
+| **本工具版本** | 執行 `... --version`，或所下載 Release 的版本號 |
+| **`--status` 輸出** | 桌面端執行 `... --status`，將整段輸出附上 |
+| **Console 日誌** | Postman `View → Developer → Show DevTools`（或擴充功能頁 F12）→ Console，附上含 `[pm-chinese]` / `[pm-scratchpad]` 之日誌 |
+| **完整錯誤訊息** | 終端機之完整錯誤文字 |
+| **重現步驟與截圖** | 具體操作過程與未翻譯處之截圖 |
 
 ---
 
-## 法律声明 / Disclaimer
+## 法律聲明 / Disclaimer
 
-- **非官方、无关联**：本项目是社区维护的第三方汉化工具，**与 Postman, Inc. 没有任何关联**，未获其授权、赞助或背书。"Postman" 及相关标识是 Postman, Inc. 的商标，此处仅作描述性指代。
-- **不分发 Postman 资产**：本仓库**不包含、也不分发** Postman 的任何源代码、二进制程序或原始语言包。仓库内容只有本项目自己的脚本，以及社区编写的中文译文。
-- **译文数据**：`locales/` 下的中文译文是为方便中文用户而创作的，其键结构与文案派生自 Postman 的界面字符串。本项目对这部分**不主张版权**，也不保证其可在所有场景下自由再分发；如 Postman, Inc. 提出异议，将配合处理（如移除相关数据）。
-- **本地使用、自负风险**：本工具在**你自己的机器**上修改**你自己安装**的 Postman（重打包 `app.asar` 或加载浏览器扩展）。是否使用由你自行决定并承担风险，并请遵守 Postman 的**服务条款与 EULA**（其中可能包含对反向工程 / 修改 / 衍生作品的限制）。
-- **许可**：本项目**自身代码**以 MIT 许可发布；该许可**不覆盖**上述派生自 Postman 文案的译文数据。
-- 本说明不构成法律意见。若用于商业用途或有疑虑，请咨询专业律师并查阅 Postman 的最新条款。
+- **非官方、無關聯**：本專案為社群維護的第三方繁體中文化工具，**與 Postman, Inc. 無任何關聯**，未獲其授權、贊助或背書。"Postman" 及相關標識為 Postman, Inc. 的商標，此處僅作描述性指代。
+- **不分發 Postman 資產**：本倉庫**不包含、亦不分發** Postman 的任何原始碼、二進位程式或原始語言包。倉庫內容僅有本專案之腳本與社群撰寫之繁體中文譯文。
+- **譯文數據**：`locales/` 下之繁體中文譯文為便利中文使用者而創作，其鍵值結構與文案衍生自 Postman 之介面字串。本專案對此部分**不主張版權**；如 Postman, Inc. 提出異議，將積極配合處理。
+- **本地使用、自負風險**：本工具在**您自己的電腦**上修改**您自行安裝**的 Postman（重新打包 `app.asar` 或載入瀏覽器擴充功能）。是否使用由您自行決定並承擔風險，請遵守 Postman 的**服務條款與 EULA**。
+- **授權**：本專案**自身程式碼**以 MIT 許可證發布；該許可證**不涵蓋**上述衍生自 Postman 文案的譯文數據。
+- 本說明不構成法律意見。
