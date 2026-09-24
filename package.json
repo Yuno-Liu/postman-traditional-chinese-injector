@@ -1,8 +1,9 @@
 {
-  "name": "postman-chinese-injector",
+  "name": "postman-traditional-chinese-injector",
   "version": "1.7.0",
   "description": "把繁體中文翻譯注入 Postman 桌面端 / 網頁版的非官方第三方中文化工具（跨平台 CLI + 瀏覽器擴充功能）。與 Postman, Inc. 無關。",
   "bin": {
+    "postman-traditional-chinese-injector": "postman-chinese-injector.js",
     "postman-chinese-injector": "postman-chinese-injector.js"
   },
   "main": "postman-chinese-injector.js",

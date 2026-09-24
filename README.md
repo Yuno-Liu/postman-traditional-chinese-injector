@@ -1,6 +1,6 @@
 # Postman 繁體中文注入工具 · Postman Traditional Chinese Injector
 
-[![Release](https://img.shields.io/github/v/release/Yuno-Liu/postman-chinese-injector?sort=semver)](../../releases)
+[![Release](https://img.shields.io/github/v/release/Yuno-Liu/postman-traditional-chinese-injector?sort=semver)](../../releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Web-blue)
 [![Postman](https://img.shields.io/badge/Postman-10.x%20~%2012.x-orange)](#支援的-postman-版本)
@@ -150,7 +150,7 @@ Postman **登入態**主介面是遠端網頁，走上述的語言包攔截即�
 ## 目錄結構
 
 ```
-postman-chinese-injector/
+postman-traditional-chinese-injector/
 ├── postman-chinese-injector.js   # 桌面端注入 CLI：建置 / 備份 / 解包 / 注入 / 打包 app.asar，含 --restore
 ├── pm-chinese.js                 # 執行階段掛鉤（桌面端與瀏覽器擴充功能共用的唯一核心）
 ├── pm-scratchpad-cn.js           # 第二個掛鉤：登出態 Scratch Pad 的 DOM 詞典替換（僅桌面端）
@@ -334,7 +334,7 @@ node scripts/build-bin-legacy.js node12-win-x64
 - **驗證建置來源證明**：所有二進位發行包**均由 GitHub Actions 從公開原始碼建置**（見 [`.github/workflows/release.yml`](.github/workflows/release.yml)），並具備 [建置來源證明（build provenance）](https://docs.github.com/actions/security-guides/using-artifact-attestations)：
 
   ```bash
-  gh attestation verify postman-chinese-injector-win-x64.zip --repo Yuno-Liu/postman-chinese-injector
+  gh attestation verify postman-chinese-injector-win-x64.zip --repo Yuno-Liu/postman-traditional-chinese-injector
   ```
 
 - **上傳至 [VirusTotal](https://www.virustotal.com/) 複查**：少數引擎標紅、主流引擎全綠，為典型的啟發式誤報特徵。
@@ -344,8 +344,8 @@ node scripts/build-bin-legacy.js node12-win-x64
 原始碼為純 JavaScript，不經過任何二進位打包器，因此不會觸發此類誤報：
 
 ```bash
-git clone https://github.com/Yuno-Liu/postman-chinese-injector.git
-cd postman-chinese-injector
+git clone https://github.com/Yuno-Liu/postman-traditional-chinese-injector.git
+cd postman-traditional-chinese-injector
 npm install
 node postman-chinese-injector.js
 ```
