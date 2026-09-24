@@ -1,54 +1,54 @@
 {
-  "panel_title": "请求历史",
+  "panel_title": "請求歷史",
   "history_sidebar_list_empty_item": {
-    "no_requests": "您还没有发送任何请求。",
-    "message": "您在此工作区中发送的任何请求都会出现在此处。",
-    "action_btn": "告诉我怎么做"
+    "no_requests": "您還沒有傳送任何請求。",
+    "message": "您在此工作區中傳送的任何請求都會出現在此處。",
+    "action_btn": "告訴我怎麼做"
   },
   "history_sidebar_menu": {
     "clear_all": {
       "text": "全部清除",
       "disabled_text": {
-        "need_online": "您需要在线才能清除历史记录。",
-        "no_permission": "您没有权限来执行此操作。"
+        "need_online": "您需要線上才能清除歷史記錄。",
+        "no_permission": "您沒有許可權來執行此操作。"
       }
     },
     "save_responses": {
-      "text": "保存响应",
+      "text": "儲存響應",
       "is_updating": {
-        "disabling": "禁用...",
-        "enabling": "启用..."
+        "disabling": "停用...",
+        "enabling": "啟用..."
       },
-      "help_text": "保留响应详细信息，例如有效负载和元数据，以供稍后参考。",
-      "tool_tip": "关闭时，不会保存响应头和 Body，但出于报告目的将保存响应代码、时间、大小和语言。"
+      "help_text": "保留響應詳細資訊，例如有效負載和後設資料，以供稍後參考。",
+      "tool_tip": "關閉時，不會儲存響應頭和 Body，但出於報告目的將儲存響應程式碼、時間、大小和語言。"
     }
   },
   "delete_history_message": {
-    "delete_all_history": "您确定要清除此工作区的所有历史记录请求吗？",
-    "delete_selected_history": "您确定要清除此工作区中所有选定的历史记录请求吗？",
-    "delete_selected_run": "您确定要永久删除选定的运行吗？",
-    "default": "您确定要清除此工作区中所有选定的历史记录请求吗？"
+    "delete_all_history": "您確定要清除此工作區的所有歷史記錄請求嗎？",
+    "delete_selected_history": "您確定要清除此工作區中所有選定的歷史記錄請求嗎？",
+    "delete_selected_run": "您確定要永久刪除選定的執行嗎？",
+    "default": "您確定要清除此工作區中所有選定的歷史記錄請求嗎？"
   },
   "history_item_actions": {
-    "request": "{count, plural, =1 {# 个请求} other {# 个请求}}",
+    "request": "{count, plural, =1 {# 個請求} other {# 個請求}}",
     "menu_items": {
-      "save_request": "保存{请求}",
-      "monitor_request": "监控 {request}",
-      "document_request": "记录{请求}",
+      "save_request": "儲存{請求}",
+      "monitor_request": "監控 {request}",
+      "document_request": "記錄{請求}",
       "mock_request": "Mock {request}",
-      "delete_request": "删除{请求}",
-      "delete": "删除",
-      "export": "导出",
-      "rename": "重命名"
+      "delete_request": "刪除{請求}",
+      "delete": "刪除",
+      "export": "匯出",
+      "rename": "重新命名"
     },
-    "save_requests_tool_tip": "将请求添加到集合",
-    "delete_requests_tool_tip": "删除项目",
-    "disabled_tool_tip_is_offline": "当您重新上线时，您可以执行此操作。",
-    "disabled_tool_tip_no_permission": "您没有权限来执行此操作。",
-    "disabled_tool_tip_session_in_progress": "会话正在进行中",
-    "not_available_to_mixed_items": "无法对所选项目执行操作",
-    "expand_section": "展开部分",
-    "collapse_section": "折叠部分"
+    "save_requests_tool_tip": "將請求新增到集合",
+    "delete_requests_tool_tip": "刪除項目",
+    "disabled_tool_tip_is_offline": "當您重新上線時，您可以執行此操作。",
+    "disabled_tool_tip_no_permission": "您沒有許可權來執行此操作。",
+    "disabled_tool_tip_session_in_progress": "會話正在進行中",
+    "not_available_to_mixed_items": "無法對所選項目執行操作",
+    "expand_section": "展開部分",
+    "collapse_section": "摺疊部分"
   },
   "history_items": {
     "header": {
@@ -58,204 +58,204 @@
   },
   "history_list_item": {
     "menu_items": {
-      "open_in_new_tab": "在新选项卡中打开",
-      "save_request": "保存请求",
-      "monitor_request": "Monitor 请求",
-      "document_request": "记录请求",
+      "open_in_new_tab": "在新選項卡中開啟",
+      "save_request": "儲存請求",
+      "monitor_request": "Monitor 請求",
+      "document_request": "記錄請求",
       "mock_request": "Mock Request",
-      "delete": "删除"
+      "delete": "刪除"
     },
-    "save_request_tool_tip": "将请求添加到集合",
-    "delete_request_tool_tip": "删除请求",
-    "disabled_tool_tip_is_offline": "当您重新上线时，您可以执行此操作。",
-    "disabled_tool_tip_no_permission": "您没有权限来执行此操作。"
+    "save_request_tool_tip": "將請求新增到集合",
+    "delete_request_tool_tip": "刪除請求",
+    "disabled_tool_tip_is_offline": "當您重新上線時，您可以執行此操作。",
+    "disabled_tool_tip_no_permission": "您沒有許可權來執行此操作。"
   },
   "save_requests": {
-    "single_request_heading": "保存请求",
-    "plural_request_heading": "保存请求",
+    "single_request_heading": "儲存請求",
+    "plural_request_heading": "儲存請求",
     "new_collection": {
       "button_text": "新建集合",
       "placeholder": "命名您的集合"
     },
     "new_folder": {
-      "button_text": "新建文件夹",
-      "placeholder": "命名您的文件夹"
+      "button_text": "新建資料夾",
+      "placeholder": "命名您的資料夾"
     },
     "cancel_button_text": "取消",
-    "save_button_text": "保存",
-    "saving_text": "保存...",
+    "save_button_text": "儲存",
+    "saving_text": "儲存...",
     "update_button_text": "更新",
     "updating_text": "更新中...",
     "request_name": {
-      "text": "请求名称",
-      "validate_message": "请输入有效的请求名称"
+      "text": "請求名稱",
+      "validate_message": "請輸入有效的請求名稱"
     },
     "description": {
       "text": "描述",
-      "placeholder": "使用 Markdown 添加描述",
-      "button_label": "添加描述"
+      "placeholder": "使用 Markdown 新增描述",
+      "button_label": "新增描述"
     },
     "save_to": {
-      "label": "保存到",
-      "explorer_path": "选择集合/文件夹"
+      "label": "儲存到",
+      "explorer_path": "選擇集合/資料夾"
     },
     "explorer_search": {
-      "placeholder": "搜索集合或文件夹"
+      "placeholder": "搜尋集合或資料夾"
     }
   },
   "monitor_request": {
     "modal_header": {
-      "select_collection": "选择要监控的集合",
-      "configure_monitor": "配置监控"
+      "select_collection": "選擇要監控的集合",
+      "configure_monitor": "配置監控"
     },
     "create_new_collection_modal": {
       "monitor_new": {
-        "tab_label": "监控新集合",
-        "intro_text": "输入您想要监控的请求。或者，通过单击 (•••) 图标添加请求体。"
+        "tab_label": "監控新集合",
+        "intro_text": "輸入您想要監控的請求。或者，通過單擊 (•••) 圖示新增請求體。"
       },
       "monitor_existing": {
-        "tab_label": "监控现有集合",
-        "intro_text": "选择您想要监控的集合"
+        "tab_label": "監控現有集合",
+        "intro_text": "選擇您想要監控的集合"
       },
       "footer_help_text": {
-        "question": "什么是监控？",
-        "answer": "<0>监控可以让您定期运行请求，通过 </0><1><0>测试</0></1>来检查其性能和响应。<3>了解更多关于 </3><4><0>监控</0></4>的信息。"
+        "question": "什麼是監控？",
+        "answer": "<0>監控可以讓您定期執行請求，通過 </0><1><0>測試</0></1>來檢查其效能和響應。<3>瞭解更多關於 </3><4><0>監控</0></4>的資訊。"
       },
       "column_label": {
-        "request_method": "请求方法",
-        "request_url": "请求 URL",
-        "request_body": "请求体",
+        "request_method": "請求方法",
+        "request_url": "請求 URL",
+        "request_body": "請求體",
         "description": "描述",
-        "check_status_code": "检查状态代码",
-        "check_response_time": "检查响应时间"
+        "check_status_code": "檢查狀態程式碼",
+        "check_response_time": "檢查響應時間"
       },
       "column_group_label": {
-        "show_columns": "显示栏目",
-        "add_tests": "添加测试"
+        "show_columns": "顯示欄目",
+        "add_tests": "新增測試"
       },
-      "no_collections": "此工作区没有任何集合。"
+      "no_collections": "此工作區沒有任何集合。"
     },
-    "offline_message": "重新上线后即可执行此操作",
-    "back_button_text": "后退",
-    "next_button_text": "下一个"
+    "offline_message": "重新上線後即可執行此操作",
+    "back_button_text": "後退",
+    "next_button_text": "下一個"
   },
   "documentation_modal": {
     "tabs": {
-      "select_collection": "选择要记录的集合",
-      "write_documentation": "编写文档",
-      "next_steps": "后续步骤"
+      "select_collection": "選擇要記錄的集合",
+      "write_documentation": "編寫文件",
+      "next_steps": "後續步驟"
     },
     "environment_selector": {
-      "no_environment": "没有环境"
+      "no_environment": "沒有環境"
     },
-    "close_button": "关闭",
-    "save_button": "保存",
-    "back_button": "后退",
-    "next_button": "下一个",
+    "close_button": "關閉",
+    "save_button": "儲存",
+    "back_button": "後退",
+    "next_button": "下一個",
     "step1": {
       "collection": {
         "new": {
-          "title": "创建一个新的集合",
-          "subtitle": "通过添加单独的请求来创建新的集合。使用“描述”列记录每个端点 URL 的作用。要添加请求体或示例响应体，请单击 (•••) 图标。"
+          "title": "建立一個新的集合",
+          "subtitle": "通過新增單獨的請求來建立新的集合。使用“描述”列記錄每個端點 URL 的作用。要新增請求體或示例響應體，請單擊 (•••) 圖示。"
         },
         "select": {
-          "title": "选择现有的集合",
-          "subtitle": "通过添加文档使您的集合更易于使用。选择要记录的集合。",
+          "title": "選擇現有的集合",
+          "subtitle": "通過新增檔案使您的集合更易於使用。選擇要記錄的集合。",
           "tooltips": {
-            "empty_collection": "此工作区要么为空，要么您不是此处任何集合的编辑者。",
-            "no_collections": "此工作区没有任何集合。"
+            "empty_collection": "此工作區要麼為空，要麼您不是此處任何集合的編輯者。",
+            "no_collections": "此工作區沒有任何集合。"
           }
         },
         "create_button": {
-          "disabled_tooltip": "您没有权限来执行此操作。"
+          "disabled_tooltip": "您沒有許可權來執行此操作。"
         }
       },
       "data_editor": {
         "columns": {
           "method": "方法",
-          "request_url": "请求 URL",
-          "request_body": "请求体",
+          "request_url": "請求 URL",
+          "request_body": "請求體",
           "description": "描述",
-          "response_code": "响应代码",
-          "response_body": "响应体"
+          "response_code": "響應程式碼",
+          "response_body": "響應體"
         },
-        "request_body_placeholder": "请求体",
-        "response_code_placeholder": "代码",
+        "request_body_placeholder": "請求體",
+        "response_code_placeholder": "程式碼",
         "request_url_placeholder": "URL"
       }
     },
     "step2": {
       "collection_name_label": {
         "new": "命名您的集合",
-        "select": "集合名称"
+        "select": "集合名稱"
       },
       "description": {
         "label": "描述您的集合",
         "helper_text": {
-          "new": "简要描述您的集合可以做什么以及一些关键细节，例如集合提供什么以及它的用途。",
-          "select": "简要描述您的集合可以做什么以及一些关键细节，例如集合提供什么以及它的用途。使用 Markdown 添加标题、列表、代码片段等。"
+          "new": "簡要描述您的集合可以做什麼以及一些關鍵細節，例如集合提供什麼以及它的用途。",
+          "select": "簡要描述您的集合可以做什麼以及一些關鍵細節，例如集合提供什麼以及它的用途。使用 Markdown 新增標題、列表、程式碼片段等。"
         },
-        "extra_helper_text": "<br/><br/><2>您可以使用 </2><3>markdown</3><4> 在描述中添加标题、列表、代码片段等。</4>"
+        "extra_helper_text": "<br/><br/><2>您可以使用 </2><3>markdown</3><4> 在描述中新增標題、列表、程式碼片段等。</4>"
       }
     },
     "step3": {
       "title": {
-        "new": "<0>{name}</0> 创建并记录",
-        "select": "<0>{name}</0> 已记录"
+        "new": "<0>{name}</0> 建立並記錄",
+        "select": "<0>{name}</0> 已記錄"
       },
-      "creation_error_subtitle": "创建此文档时出现问题。您可以稍后再试。",
+      "creation_error_subtitle": "建立此檔案時出現問題。您可以稍後再試。",
       "next_steps": {
         "title": "下一步",
         "add_details": {
-          "title": "在您的文档中添加更多详细信息",
-          "subtitle": "为了方便入门，您还可以描述请求 params、body，甚至集合文件夹。"
+          "title": "在您的檔案中新增更多詳細資訊",
+          "subtitle": "為了方便入門，您還可以描述請求 params、body，甚至集合資料夾。"
         },
-        "learn_how_button": "了解如何",
+        "learn_how_button": "瞭解如何",
         "share_with_team": {
-          "title": "与您的团队分享",
-          "subtitle": "将文档共享到团队工作区，以便您的团队成员可以查看并协作。"
+          "title": "與您的團隊分享",
+          "subtitle": "將檔案共享到團隊工作區，以便您的團隊成員可以檢視並協作。"
         },
         "share_with_world": {
-          "title": "与世界分享",
-          "subtitle": "在具有您自己品牌的自定义域上为团队之外的人员发布文档。"
+          "title": "與世界分享",
+          "subtitle": "在具有您自己品牌的自定義域上為團隊之外的人員釋出文件。"
         },
         "add_sample_response": {
-          "title": "添加示例响应",
-          "subtitle": "通过记录一些示例响应，使您的集合更易于使用。",
-          "learn_more_button": "了解如何创建示例"
+          "title": "新增示例響應",
+          "subtitle": "通過記錄一些示例響應，使您的集合更易於使用。",
+          "learn_more_button": "瞭解如何建立示例"
         }
       },
-      "subtitle": "看看你漂亮的新文档：",
-      "view_documentation": "查看文档",
-      "helper_text": "该文档是私有，因此只有您与之共享集合的人才能查看它。"
+      "subtitle": "看看你漂亮的新檔案：",
+      "view_documentation": "檢視文件",
+      "helper_text": "該檔案是私有，因此只有您與之共享集合的人才能檢視它。"
     }
   },
   "collection_empty": {
-    "title": "您似乎还没有任何集合",
-    "subtitle": "Postman 中的 <0>API 请求保存在 </0><1>集合</1><2> 中。集合使组织、测试、记录和监控请求变得更加容易。将一些请求保存在集合中以开始使用。</2>",
-    "action_text": "创建一个集合"
+    "title": "您似乎還沒有任何集合",
+    "subtitle": "Postman 中的 <0>API 請求儲存在 </0><1>集合</1><2> 中。集合使組織、測試、記錄和監控請求變得更加容易。將一些請求儲存在集合中以開始使用。</2>",
+    "action_text": "建立一個集合"
   },
   "history_sidebar_list": {
     "history_only_visible_to_user": {
-      "title": "您没有权限查看历史记录",
-      "message": "只有团队成员可以查看此工作区的历史记录"
+      "title": "您沒有許可權檢視歷史記錄",
+      "message": "只有團隊成員可以檢視此工作區的歷史記錄"
     },
     "notification": {
-      "refresh": "刷新",
-      "new_items": "{count, plural, =1 {# 个新项目} other {# 个新项目}}"
+      "refresh": "重新整理",
+      "new_items": "{count, plural, =1 {# 個新項目} other {# 個新項目}}"
     },
-    "privacy_message": "下面的历史记录只有您自己可见。"
+    "privacy_message": "下面的歷史記錄只有您自己可見。"
   },
   "forbidden_access": {
-    "title": "管理员撤销了对历史记录的访问",
-    "message": "这可能是由于安全策略所致。请联系您的管理员以获取更多详细信息或帮助。"
+    "title": "管理員撤銷了對歷史記錄的訪問",
+    "message": "這可能是由於安全策略所致。請聯絡您的管理員以獲取更多詳細資訊或幫助。"
   },
   "error_state": {
-    "title": "无法加载历史记录",
-    "retry": "重试"
+    "title": "無法載入歷史記錄",
+    "retry": "重試"
   },
   "no_results_state": {
-    "title": "没有找到“{searchQuery}”的结果",
-    "description": "请使用不同的关键字重试，并且不要忘记检查拼写错误。"
+    "title": "沒有找到“{searchQuery}”的結果",
+    "description": "請使用不同的關鍵字重試，並且不要忘記檢查拼寫錯誤。"
   }
 }

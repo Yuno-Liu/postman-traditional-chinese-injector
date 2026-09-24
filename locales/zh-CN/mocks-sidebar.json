@@ -7,20 +7,20 @@
       "label": "更新"
     },
     "delete": {
-      "label": "删除"
+      "label": "刪除"
     }
   },
   "status_indicator": {
-    "running": "状态：运行中",
-    "idle": "状态：空闲"
+    "running": "狀態：執行中",
+    "idle": "狀態：空閒"
   },
   "code_mock": {
-    "running_status": "状态：运行中"
+    "running_status": "狀態：執行中"
   },
   "simulation_context_menu": {
-    "open": "打开",
-    "copy_link": "复制链接",
+    "open": "開啟",
+    "copy_link": "複製連結",
     "redeploy": "重新部署",
-    "delete": "删除"
+    "delete": "刪除"
   }
 }

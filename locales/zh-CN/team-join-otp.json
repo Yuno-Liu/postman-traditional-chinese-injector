@@ -1,31 +1,31 @@
 {
   "team_join_otp": {
     "page": {
-      "setup_loading": "加载中...",
-      "continue_to_postman": "继续Postman"
+      "setup_loading": "載入中...",
+      "continue_to_postman": "繼續Postman"
     },
     "otp": {
-      "heading": "确认您的请求加入",
-      "description": "我们向 <bold>{email}</bold> 发送了代码以确认您的请求",
-      "submit_button": "确认并加入"
+      "heading": "確認您的請求加入",
+      "description": "我們向 <bold>{email}</bold> 傳送了程式碼以確認您的請求",
+      "submit_button": "確認並加入"
     },
     "loading": {
-      "heading": "正在加入团队",
-      "subheading": "请耐心等待，我们会为您进行设置。"
+      "heading": "正在加入團隊",
+      "subheading": "請耐心等待，我們會為您進行設定。"
     },
     "rfa": {
-      "heading": "您加入此团队的请求正在审核中",
-      "subheading": "一旦团队管理员回复，我们将通知您。",
-      "signed_in_message": "您已以 {email} 身份登录。 <switch>切换帐户</switch>"
+      "heading": "您加入此團隊的請求正在稽核中",
+      "subheading": "一旦團隊管理員回覆，我們將通知您。",
+      "signed_in_message": "您已以 {email} 身份登入。 <switch>切換帳戶</switch>"
     },
     "request_access": {
-      "heading": "您无权访问该资源",
-      "subheading": "请求楼主分享给大家。",
-      "button": "请求访问"
+      "heading": "您無權訪問該資源",
+      "subheading": "請求樓主分享給大家。",
+      "button": "請求訪問"
     },
     "error": {
-      "heading": "出了点问题",
-      "subheading": "我们现在无法完成您的请求。请稍后重试。"
+      "heading": "出了點問題",
+      "subheading": "我們現在無法完成您的請求。請稍後重試。"
     }
   }
 }

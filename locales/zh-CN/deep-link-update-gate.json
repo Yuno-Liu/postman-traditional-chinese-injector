@@ -1,40 +1,40 @@
 {
   "downloading": {
     "heading": "需要更新",
-    "description": "此链接要打开的内容在你当前的 Postman 版本中尚不支持。",
-    "progress": "正在下载最新版本…",
-    "checking": "正在检查更新…"
+    "description": "此連結要開啟的內容在你當前的 Postman 版本中尚不支援。",
+    "progress": "正在下載最新版本…",
+    "checking": "正在檢查更新…"
   },
   "ready": {
-    "heading": "更新已就绪",
-    "description": "重启 Postman 以完成更新。更新后会回到此链接原本要打开的位置。",
-    "reload_description": "重新加载 Postman 以完成更新。更新后会回到此链接原本要打开的位置。"
+    "heading": "更新已就緒",
+    "description": "重啟 Postman 以完成更新。更新後會回到此連結原本要開啟的位置。",
+    "reload_description": "重新載入 Postman 以完成更新。更新後會回到此連結原本要開啟的位置。"
   },
   "applying": {
     "heading": "正在更新 Postman",
     "description": "正在完成更新…"
   },
   "failed": {
-    "heading": "更新下载失败",
-    "description": "更新过程中出错。你可以重试，或直接用当前版本打开，但部分功能可能无法正常使用。",
-    "description_blocked": "更新过程中出错。请重试，或等 Postman 更新完成后再打开此链接。"
+    "heading": "更新下載失敗",
+    "description": "更新過程中出錯。你可以重試，或直接用當前版本開啟，但部分功能可能無法正常使用。",
+    "description_blocked": "更新過程中出錯。請重試，或等 Postman 更新完成後再開啟此連結。"
   },
   "unavailable": {
-    "heading": "暂无可用更新",
-    "description": "此链接需要比当前可用版本更新的 Postman。你可以现在打开，但部分功能可能无法正常使用。",
-    "description_blocked": "此链接需要比当前可用版本更新的 Postman。请在有新版本发布后再打开。"
+    "heading": "暫無可用更新",
+    "description": "此連結需要比當前可用版本更新的 Postman。你可以現在開啟，但部分功能可能無法正常使用。",
+    "description_blocked": "此連結需要比當前可用版本更新的 Postman。請在有新版本釋出後再開啟。"
   },
   "managed": {
     "heading": "需要更新",
-    "description": "此链接需要更新版本的 Postman，而本机的更新由管理员统一管理。请联系管理员升级 Postman 后再打开。",
-    "description_with_version": "此链接需要 Postman {minCompatVersion} 或更高版本，而本机的更新由管理员统一管理。请联系管理员升级 Postman 后再打开。"
+    "description": "此連結需要更新版本的 Postman，而本機的更新由管理員統一管理。請聯絡管理員升級 Postman 後再開啟。",
+    "description_with_version": "此連結需要 Postman {minCompatVersion} 或更高版本，而本機的更新由管理員統一管理。請聯絡管理員升級 Postman 後再開啟。"
   },
   "actions": {
-    "restart": "重启应用",
-    "reload": "重新加载应用",
-    "later": "稍后",
-    "try_again": "重试",
-    "open_anyway": "仍然打开",
-    "dismiss": "关闭"
+    "restart": "重啟應用",
+    "reload": "重新載入應用",
+    "later": "稍後",
+    "try_again": "重試",
+    "open_anyway": "仍然開啟",
+    "dismiss": "關閉"
   }
 }

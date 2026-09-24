@@ -1,81 +1,81 @@
 {
   "metadata": {
-    "title": "搜索"
+    "title": "搜尋"
   },
-  "title": "搜索结果",
+  "title": "搜尋結果",
   "sidebar_sections": {
     "tags": {
-      "title": "标签"
+      "title": "標籤"
     },
-    "title": "过滤依据",
+    "title": "過濾依據",
     "workspace_type": {
-      "title": "可见性"
+      "title": "可見性"
     },
     "private_network": {
-      "title": "仅限私有 API 网络",
-      "label": "私有 API 网络"
+      "title": "僅限私有 API 網路",
+      "label": "私有 API 網路"
     },
     "type": {
-      "title": "类型",
+      "title": "型別",
       "all": "全部"
     }
   },
   "error_sections": {
     "no_results": {
-      "title": "没有找到结果",
-      "text": "尝试检查拼写、调整过滤器或尝试不同的搜索词。",
-      "sub_text": "注意：如果您要在架构文件中查找匹配项，请切换到<1><0>在 API 中搜索</0></1>"
+      "title": "沒有找到結果",
+      "text": "嘗試檢查拼寫、調整過濾器或嘗試不同的搜尋詞。",
+      "sub_text": "注意：如果您要在架構檔案中查詢匹配項，請切換到<1><0>在 API 中搜索</0></1>"
     },
     "server_error": {
-      "heading": "无法搜索",
-      "text": "我们现在搜索时遇到困难。"
+      "heading": "無法搜尋",
+      "text": "我們現在搜尋時遇到困難。"
     },
     "user_offline": {
-      "heading": "由于您处于离线状态，无法搜索",
-      "text": "您需要在线才能进行搜索"
+      "heading": "由於您處於離線狀態，無法搜尋",
+      "text": "您需要線上才能進行搜尋"
     },
     "query_too_long": {
-      "heading": "搜索查询太长",
-      "text": "尝试使用较短的查询进行搜索"
+      "heading": "搜尋查詢太長",
+      "text": "嘗試使用較短的查詢進行搜尋"
     },
     "empty_state": {
-      "heading": "发现元素",
-      "text": "添加搜索查询或按标签过滤以查看结果。"
+      "heading": "發現元素",
+      "text": "新增搜尋查詢或按標籤過濾以檢視結果。"
     }
   },
   "scope": {
-    "default_title": "个人空间",
-    "team_title": "{teamName} 团队"
+    "default_title": "個人空間",
+    "team_title": "{teamName} 團隊"
   },
   "sort_label": "排序方式",
   "spell_corrections": {
-    "no_results_text": "没有找到“{query}”的结果",
+    "no_results_text": "沒有找到“{query}”的結果",
     "sub_texts": {
-      "did_you_mean": "您是要搜索 <1><0>{suggestion}</0></1> 吗？",
-      "base_subtext": "显示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} 结果",
-      "subtext_with_type": "显示 {count, select, lessThanTen {< 10} other {{count}}} {type} 代替“{correctedQueryText}”",
-      "subtext_for_team_scope": "在您的 {teamName} 中显示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} 结果",
-      "subtext_for_public_scope": "在 {scope} 中显示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} 结果",
-      "subtext_for_team_scope_with_type": "在您的 {teamName} 中显示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} {type}",
-      "subtext_for_public_scope_with_type": "在 {scope} 中显示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} {type}"
+      "did_you_mean": "您是要搜尋 <1><0>{suggestion}</0></1> 嗎？",
+      "base_subtext": "顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} 結果",
+      "subtext_with_type": "顯示 {count, select, lessThanTen {< 10} other {{count}}} {type} 代替“{correctedQueryText}”",
+      "subtext_for_team_scope": "在您的 {teamName} 中顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} 結果",
+      "subtext_for_public_scope": "在 {scope} 中顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} 結果",
+      "subtext_for_team_scope_with_type": "在您的 {teamName} 中顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} {type}",
+      "subtext_for_public_scope_with_type": "在 {scope} 中顯示“{correctedQueryText}”的 {count, select, lessThanTen {< 10} other {{count}}} {type}"
     }
   },
   "sort_options": {
-    "relevance": "最相关的",
-    "views": "观看次数最多",
+    "relevance": "最相關的",
+    "views": "觀看次數最多",
     "updated_at": "最近的"
   },
   "sub_text": {
-    "results_found": "{result}：共找到 {count, select, lessThanTen {< 10} other {{count}}} 条结果",
+    "results_found": "{result}：共找到 {count, select, lessThanTen {< 10} other {{count}}} 條結果",
     "results_found_with_type": "{result}：{count, select, lessThanTen {< 10} other {{count}}} {type}",
-    "results_found_with_tag": "{result}：{count, select, lessThanTen {< 10} other {{count}}} 找到“{tag}”的结果",
+    "results_found_with_tag": "{result}：{count, select, lessThanTen {< 10} other {{count}}} 找到“{tag}”的結果",
     "results_found_with_tag_and_type": "{result}：{count, select, lessThanTen {< 10} other {{count}}} 找到“{tag}”的 {type}"
   },
-  "filter_button_text": "筛选",
+  "filter_button_text": "篩選",
   "sidebar": {
     "need_help": {
-      "title": "需要有关产品功能的帮助吗？",
-      "subtitle": "在Postman学习中心搜索"
+      "title": "需要有關產品功能的幫助嗎？",
+      "subtitle": "在Postman學習中心搜尋"
     }
   },
   "tag_sub_heading": {
@@ -84,56 +84,56 @@
   "results": {
     "item": {
       "entity_type": {
-        "folder": "文件夹",
+        "folder": "資料夾",
         "api": "API",
-        "workspace": "工作区",
-        "team": "团队",
+        "workspace": "工作區",
+        "team": "團隊",
         "flow": "流程",
         "collection": "集合",
-        "request": "请求",
-        "environment": "环境",
-        "document": "文档",
+        "request": "請求",
+        "environment": "環境",
+        "document": "檔案",
         "mock": "Code Mock"
       },
-      "featured_label": "精选",
-      "trending_label": "流行趋势",
-      "showcased_in_label": "展示于：",
+      "featured_label": "精選",
+      "trending_label": "流行趨勢",
+      "showcased_in_label": "展示於：",
       "meta_info": {
-        "last_updated": "最后更新：",
+        "last_updated": "最後更新：",
         "collections": "收藏：",
         "apis": "API：",
-        "views": "浏览次数：",
-        "workspaces": "工作空间：",
-        "forks": "复刻：",
-        "watchers": "关注者：",
-        "grpc_request": "gRPC 请求",
-        "graphql_request": "GraphQL 请求",
-        "mqtt_request": "MQTT 请求",
-        "llm_request": "AI 请求",
-        "ws_raw_request": "WebSocket 请求",
-        "ws_socket_io_request": "Socket.IO 请求",
-        "mcp_request": "MCP 请求",
-        "http_request": "HTTP 请求",
+        "views": "瀏覽次數：",
+        "workspaces": "工作空間：",
+        "forks": "復刻：",
+        "watchers": "關注者：",
+        "grpc_request": "gRPC 請求",
+        "graphql_request": "GraphQL 請求",
+        "mqtt_request": "MQTT 請求",
+        "llm_request": "AI 請求",
+        "ws_raw_request": "WebSocket 請求",
+        "ws_socket_io_request": "Socket.IO 請求",
+        "mcp_request": "MCP 請求",
+        "http_request": "HTTP 請求",
         "publisher_name": "作者：<1><0>{publisherName}</0></1>",
-        "verified_tooltip": "已验证",
+        "verified_tooltip": "已驗證",
         "workspace_name": "在 <1><0><0>{workspaceName}</0></0></1> 中"
       },
       "visibility_icon_tooltip": {
-        "public": "公开 {content}",
+        "public": "公開 {content}",
         "private": "私有 {content}",
-        "team": "团队 {content}",
-        "personal": "个人 {content}",
+        "team": "團隊 {content}",
+        "personal": "個人 {content}",
         "partner": "合作伙伴 {content}",
         "entity_type": {
-          "folder": "文件夹",
+          "folder": "資料夾",
           "api": "API",
-          "workspace": "工作区",
-          "team": "团队",
+          "workspace": "工作區",
+          "team": "團隊",
           "flow": "Flow",
           "collection": "集合",
-          "request": "请求",
-          "environment": "环境",
-          "document": "文档",
+          "request": "請求",
+          "environment": "環境",
+          "document": "檔案",
           "mock": "Code Mock"
         }
       }

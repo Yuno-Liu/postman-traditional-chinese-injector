@@ -1,183 +1,183 @@
 {
   "side_navigation_bar": {
-    "heading": "介绍",
-    "title": "跳转至"
+    "heading": "介紹",
+    "title": "跳轉至"
   },
   "config_bar": {
-    "view_collection": "查看集合",
-    "language_settings": "语言设置",
-    "fork_no_permission_tooltip": "您无权执行此操作。",
+    "view_collection": "檢視集合",
+    "language_settings": "語言設定",
+    "fork_no_permission_tooltip": "您無權執行此操作。",
     "publish_documentation_status": {
-      "retract_text": "撤回请求",
+      "retract_text": "撤回請求",
       "drop_down_items": {
-        "copy_publish_link": "复制已发布的链接",
-        "respond_to_publish_request": "回复发布请求",
-        "edit_requested_publish_settings": "编辑请求的发布设置",
-        "edit_published_documentation": "编辑已发布的文档",
-        "approve_deny_publish_request": "批准/拒绝发布请求"
+        "copy_publish_link": "複製已釋出的連結",
+        "respond_to_publish_request": "回覆釋出請求",
+        "edit_requested_publish_settings": "編輯請求的釋出設定",
+        "edit_published_documentation": "編輯已釋出的檔案",
+        "approve_deny_publish_request": "批准/拒絕釋出請求"
       },
       "documentation_config_bar": {
-        "pending_publish": "待发布",
-        "published": "已发布文档",
-        "publish": "发布文档"
+        "pending_publish": "待發布",
+        "published": "已釋出文件",
+        "publish": "釋出文件"
       },
-      "published_url_label": "此集合发布于：",
-      "publish_limit_reached_tooltip": "您已达到发布文档的限制。您可以取消发布团队中的现有文档或联系支持人员以增加限制。",
-      "publish_feature_disabled_tooltip": "此功能目前在您所在的地区不可用。",
-      "spam_tooltip": "由于您的内容不符合我们的社区标准，我们已暂时阻止您发布文档。请稍后重试或联系支持人员。",
+      "published_url_label": "此集合釋出於：",
+      "publish_limit_reached_tooltip": "您已達到釋出文件的限制。您可以取消釋出團隊中的現有檔案或聯絡支援人員以增加限制。",
+      "publish_feature_disabled_tooltip": "此功能目前在您所在的地區不可用。",
+      "spam_tooltip": "由於您的內容不符合我們的社群標準，我們已暫時阻止您釋出文件。請稍後重試或聯絡支援人員。",
       "withdraw_publish_confirmation": {
-        "heading": "撤回请求？",
-        "description": "您确定要撤回请求来发布此集合的文档吗？",
-        "confirm_button_text": "确认",
+        "heading": "撤回請求？",
+        "description": "您確定要撤回請求來發布此集合的檔案嗎？",
+        "confirm_button_text": "確認",
         "cancel_button_text": "取消"
       }
     }
   },
   "run_time_entity": {
     "request_info": {
-      "headers": "请求头",
-      "query_params": "查询参数",
-      "path_variables": "路径变量",
+      "headers": "請求頭",
+      "query_params": "查詢引數",
+      "path_variables": "路徑變數",
       "request_body": {
-        "body_label": "请求体",
-        "query_label": "查询",
-        "graphql_variables_label": "GraphQL 变量",
+        "body_label": "請求體",
+        "query_label": "查詢",
+        "graphql_variables_label": "GraphQL 變數",
         "error_view": {
-          "title": "无法加载请求体",
-          "message": "只是一根电线有问题。尝试重新加载。"
+          "title": "無法載入請求體",
+          "message": "只是一根電線有問題。嘗試重新載入。"
         },
         "documentation_body_types": {
           "raw": "原始",
           "graphql_label": "GraphQL",
-          "graphql_query": "查询",
-          "graphql_variables": "变量",
+          "graphql_query": "查詢",
+          "graphql_variables": "變數",
           "url_encoded": "urlencoded",
-          "form_data_label": "表单数据",
-          "binary_body_label": "文件"
+          "form_data_label": "表單資料",
+          "binary_body_label": "檔案"
         }
       },
       "examples": {
         "error": {
-          "title": "无法加载示例",
-          "message": "只是一根电线有问题。尝试重新加载。"
+          "title": "無法載入示例",
+          "message": "只是一根電線有問題。嘗試重新載入。"
         },
         "title": "示例",
-        "request_label": "请求",
-        "response_label": "响应",
+        "request_label": "請求",
+        "response_label": "響應",
         "tab_labels": {
-          "body": "请求体",
-          "header": "请求头 ({length})"
+          "body": "請求體",
+          "header": "請求頭 ({length})"
         },
         "open_example_button": {
-          "try_example_label": "尝试示例"
+          "try_example_label": "嘗試示例"
         },
         "response_body": {
-          "no_response_body": "无响应体",
-          "request_does_not_return_response_body": "此请求不返回任何响应体。"
+          "no_response_body": "無響應體",
+          "request_does_not_return_response_body": "此請求不返回任何響應體。"
         },
         "response_header": {
-          "no_response_header": "没有响应标头",
-          "request_does_not_return_response_header": "此请求不返回任何响应标头。"
+          "no_response_header": "沒有響應標頭",
+          "request_does_not_return_response_header": "此請求不返回任何響應標頭。"
         }
       }
     },
     "next_entities": {
-      "next_entity_title": "接下来是这个 {type}"
+      "next_entity_title": "接下來是這個 {type}"
     },
-    "update_api_error_message": "无法更新说明。请再试一次。",
-    "unsaved_changes": "未保存的更改",
+    "update_api_error_message": "無法更新說明。請再試一次。",
+    "unsaved_changes": "未儲存的更改",
     "copy_link_button": {
-      "link_copied": "链接已复制",
-      "copy_link_message": "复制链接到此 {entityName}"
+      "link_copied": "連結已複製",
+      "copy_link_message": "複製連結到此 {entityName}"
     },
     "description_editor": {
       "description_preview": {
-        "edit_description_tooltip": "编辑描述",
-        "no_description_label": "这个 {entityType} 没有描述。"
+        "edit_description_tooltip": "編輯描述",
+        "no_description_label": "這個 {entityType} 沒有描述。"
       },
       "editor_switch_warning_modal": {
-        "heading": "切换到新的 Postman 编辑器？",
-        "content": "新的 Postman 编辑器可能尚不支持您描述中的某些 HTML 元素。",
-        "checkbox_label": "不再显示此警告",
+        "heading": "切換到新的 Postman 編輯器？",
+        "content": "新的 Postman 編輯器可能尚不支援您描述中的某些 HTML 元素。",
+        "checkbox_label": "不再顯示此警告",
         "action_buttons": {
           "cancel": "取消",
-          "switch_to_postman_editor": "切换到 Postman 编辑者"
+          "switch_to_postman_editor": "切換到 Postman 編輯者"
         }
       },
       "mode": {
-        "edit": "编辑",
-        "preview": "预览"
+        "edit": "編輯",
+        "preview": "預覽"
       },
       "popover": {
-        "about_editor": "关于经典 Markdown 编辑器",
-        "description": "这是经典的 Markdown 编辑器，支持 Git 风格的 Markdown 格式。",
-        "suggest_improvement_label": "提出改进建议"
+        "about_editor": "關於經典 Markdown 編輯器",
+        "description": "這是經典的 Markdown 編輯器，支援 Git 風格的 Markdown 格式。",
+        "suggest_improvement_label": "提出改進建議"
       },
       "editor_menu_option": {
-        "markdown": "Markdown 编辑器",
-        "postman": "Postman 编辑器"
+        "markdown": "Markdown 編輯器",
+        "postman": "Postman 編輯器"
       },
       "action_buttons": {
-        "save": "保存",
+        "save": "儲存",
         "cancel": "取消"
       }
     },
     "editor_options": {
-      "postman_editor": "Postman 编辑器",
-      "markdown_editor": "Markdown 编辑器"
+      "postman_editor": "Postman 編輯器",
+      "markdown_editor": "Markdown 編輯器"
     },
     "entity_auth": {
       "error": {
-        "title": "无法加载授权",
-        "message": "只是一根电线有问题。尝试重新加载。"
+        "title": "無法載入授權",
+        "message": "只是一根電線有問題。嘗試重新載入。"
       },
-      "authorization_label": "身份验证",
-      "content": "这个 {entityType} 使用 {authEntityType} <5>{authEntityName}</5> 的授权助手"
+      "authorization_label": "身份驗證",
+      "content": "這個 {entityType} 使用 {authEntityType} <5>{authEntityName}</5> 的授權助手"
     }
   },
   "network_error": {
-    "update_version_message": "更新版本时出现问题"
+    "update_version_message": "更新版本時出現問題"
   },
   "retract_request": {
     "success": {
       "toast": {
-        "title": "请求发布撤回成功。",
-        "description": "此请求已从社区管理员队列中删除。"
+        "title": "請求釋出撤回成功。",
+        "description": "此請求已從社群管理員佇列中刪除。"
       }
     },
     "failure": {
       "toast": {
-        "description": "撤回发布请求失败。请再试一次。"
+        "description": "撤回釋出請求失敗。請再試一次。"
       }
     }
   },
   "document_error": {
     "is_git_linked_mode": {
       "title": "集合未找到",
-      "message": "我们找不到您要找的集合"
+      "message": "我們找不到您要找的集合"
     },
     "invalid_version": {
-      "title": "无法加载",
-      "message": "提供的版本无效"
+      "title": "無法載入",
+      "message": "提供的版本無效"
     }
   },
-  "documentation_workbench_title": "文档",
+  "documentation_workbench_title": "檔案",
   "request_overview": {
-    "documentation_title": "文档",
-    "view_collection_documentation": "查看完整文档",
-    "request_snippet": "代码片段"
+    "documentation_title": "檔案",
+    "view_collection_documentation": "檢視完整檔案",
+    "request_snippet": "程式碼片段"
   },
   "version_dropdown_label": "版本",
   "language_dropdown": {
-    "label": "语言",
-    "search_placeholder_label": "按语言名称搜索",
-    "no_search_result_placeholder_text": "没有匹配的语言"
+    "label": "語言",
+    "search_placeholder_label": "按語言名稱搜尋",
+    "no_search_result_placeholder_text": "沒有匹配的語言"
   },
-  "no_matching_languages": "没有匹配的语言。",
-  "language_selection_dropdown": "语言选择下拉菜单",
-  "new_workspace": "新工作区（待修改）",
+  "no_matching_languages": "沒有匹配的語言。",
+  "language_selection_dropdown": "語言選擇下拉選單",
+  "new_workspace": "新工作區（待修改）",
   "open_request_button": {
-    "try_request_button_label": "尝试请求",
-    "open_request_button_label": "打开请求"
+    "try_request_button_label": "嘗試請求",
+    "open_request_button_label": "開啟請求"
   }
 }

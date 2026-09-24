@@ -1,305 +1,305 @@
 {
   "name_errors": {
-    "empty": "请告诉我们您的名字",
-    "max_length": "名称必须少于 38 个字符"
+    "empty": "請告訴我們您的名字",
+    "max_length": "名稱必須少於 38 個字元"
   },
   "name_warnings": {
-    "approaching_max_length": "剩余 {count} 个字符"
+    "approaching_max_length": "剩餘 {count} 個字元"
   },
   "complete_onboarding": {
     "button": {
-      "text": "进入我的工作区"
+      "text": "進入我的工作區"
     }
   },
   "git_repo_connected": {
-    "title": "连接本地项目文件夹？",
-    "description": "通过 <bold>Local View</bold> 将集合、规范和环境关联到您计算机上的文件夹，并支持离线使用。Git 为可选项，您可以稍后再添加。",
+    "title": "連線本地專案資料夾？",
+    "description": "通過 <bold>Local View</bold> 將集合、規範和環境關聯到您計算機上的資料夾，並支援離線使用。Git 為可選項，您可以稍後再新增。",
     "yes": "是的",
     "no": "否"
   },
   "select_git_repo_folder": {
-    "title": "连接本地文件夹",
+    "title": "連線本地資料夾",
     "checking": {
-      "message": "正在检查工作区连接..."
+      "message": "正在檢查工作區連線..."
     },
     "connected": {
-      "title": "本地文件夹已连接",
-      "choose_new_folder": "选择其他文件夹"
+      "title": "本地資料夾已連線",
+      "choose_new_folder": "選擇其他資料夾"
     },
     "empty": {
-      "title": "连接本地文件夹",
-      "description": "选择计算机上的一个文件夹，无需 Git。",
-      "button": "选择文件夹"
+      "title": "連線本地資料夾",
+      "description": "選擇計算機上的一個資料夾，無需 Git。",
+      "button": "選擇資料夾"
     },
     "existing": {
-      "title": "文件夹已关联到某个工作区",
-      "description": "此文件夹已连接到另一个工作区。请选择其他文件夹，或不关联此文件夹继续注册。",
-      "selected_folder": "已选择的文件夹：",
-      "choose_different_folder": "选择其他文件夹",
-      "continue_sign_up": "继续注册"
+      "title": "資料夾已關聯到某個工作區",
+      "description": "此資料夾已連線到另一個工作區。請選擇其他資料夾，或不關聯此資料夾繼續註冊。",
+      "selected_folder": "已選擇的資料夾：",
+      "choose_different_folder": "選擇其他資料夾",
+      "continue_sign_up": "繼續註冊"
     },
     "git_not_installed": {
-      "title": "未安装 Git",
-      "description": "Git 未安装或在您的 shell 中不可用。请安装 Git，以便将此项目连接到工作区。",
-      "button": "选择文件夹"
+      "title": "未安裝 Git",
+      "description": "Git 未安裝或在您的 shell 中不可用。請安裝 Git，以便將此專案連線到工作區。",
+      "button": "選擇資料夾"
     },
     "no_remote_origin": {
-      "title": "需要远程源",
-      "description": "此 git 存储库没有配置远程源 URL。请在连接到工作区之前添加远程源。",
-      "button": "选择文件夹"
+      "title": "需要遠端源",
+      "description": "此 git 儲存庫沒有配置遠端源 URL。請在連線到工作區之前新增遠端源。",
+      "button": "選擇資料夾"
     },
     "non_git_folder": {
-      "title": "找不到 Git 存储库",
-      "description": "所选文件夹不包含 Git 仓库。您仍可以将其用作本地文件夹，或选择其他文件夹。",
-      "button": "选择文件夹"
+      "title": "找不到 Git 儲存庫",
+      "description": "所選資料夾不包含 Git 倉庫。您仍可以將其用作本地資料夾，或選擇其他資料夾。",
+      "button": "選擇資料夾"
     }
   },
   "welcome_intro": {
-    "duration": "1分钟",
-    "steps": "{count} 步骤",
-    "title": "欢迎使用 Postman 🚀",
-    "title_team_joiner": "欢迎使用您团队的工作区！",
-    "description": "让我们做好准备，以便您可以立即开始工作。",
-    "description_team_joiner": "分享一些关于您自己的详细信息，让 Postman AI 帮助您导航工作区。"
+    "duration": "1分鐘",
+    "steps": "{count} 步驟",
+    "title": "歡迎使用 Postman 🚀",
+    "title_team_joiner": "歡迎使用您團隊的工作區！",
+    "description": "讓我們做好準備，以便您可以立即開始工作。",
+    "description_team_joiner": "分享一些關於您自己的詳細資訊，讓 Postman AI 幫助您導航工作區。"
   },
   "name_and_role": {
-    "title": "让我们个性化您的工作区。",
+    "title": "讓我們個性化您的工作區。",
     "inline_prefix": "我想",
-    "inline_middle": "作为",
+    "inline_middle": "作為",
     "input": {
       "name": {
-        "label": "你叫什么名字？",
-        "placeholder": "例如：约翰·多伊"
+        "label": "你叫什麼名字？",
+        "placeholder": "例如：約翰·多伊"
       },
       "role": {
-        "label": "你的角色是什么？",
-        "placeholder": "选择角色"
+        "label": "你的角色是什麼？",
+        "placeholder": "選擇角色"
       },
       "role_use_case": {
-        "label": "什么最能描述您希望在 Postman 中做的事情以及您的角色？",
-        "placeholder": "选择选项"
+        "label": "什麼最能描述您希望在 Postman 中做的事情以及您的角色？",
+        "placeholder": "選擇選項"
       },
       "team_size": {
-        "title": "你的团队有多大？"
+        "title": "你的團隊有多大？"
       }
     },
     "roles": {
-      "backend_developer": "后端开发人员",
-      "frontend_developer": "前端开发人员",
-      "fullstack_developer": "全栈开发人员",
-      "mobile_developer": "移动开发者",
-      "data_engineer": "数据工程师",
-      "devops_engineer": "DevOps/平台工程师",
-      "qa_test_engineer": "质量保证/测试工程师",
-      "engineering_lead_manager": "工程主管/经理",
+      "backend_developer": "後端開發人員",
+      "frontend_developer": "前端開發人員",
+      "fullstack_developer": "全棧開發人員",
+      "mobile_developer": "移動開發者",
+      "data_engineer": "資料工程師",
+      "devops_engineer": "DevOps/平臺工程師",
+      "qa_test_engineer": "質量保證/測試工程師",
+      "engineering_lead_manager": "工程主管/經理",
       "engineering_executive": "工程高管",
-      "api_program_product_manager": "API 程序/产品经理",
-      "student_educator": "学生/教育者",
+      "api_program_product_manager": "API 程式/產品經理",
+      "student_educator": "學生/教育者",
       "other": "其他"
     },
     "role_use_cases": {
-      "build_apis": "构建 API",
-      "testing_apis": "测试API",
-      "integrate_apis": "集成API",
-      "lead_a_team_that_works_with_apis": "领导一个使用 API 的团队",
-      "manage_api_strategy_for_my_org": "管理我的组织的 API 策略",
-      "evaluate_postman_for_my_company": "为我的公司评估 Postman"
+      "build_apis": "構建 API",
+      "testing_apis": "測試API",
+      "integrate_apis": "整合API",
+      "lead_a_team_that_works_with_apis": "領導一個使用 API 的團隊",
+      "manage_api_strategy_for_my_org": "管理我的組織的 API 策略",
+      "evaluate_postman_for_my_company": "為我的公司評估 Postman"
     },
     "team_sizes": {
-      "1_member": "1 名成员",
-      "2_10_members": "2-10 名成员",
-      "11_50_members": "11-50 名成员",
-      "50_plus_members": "50+ 名成员"
+      "1_member": "1 名成員",
+      "2_10_members": "2-10 名成員",
+      "11_50_members": "11-50 名成員",
+      "50_plus_members": "50+ 名成員"
     },
-    "get_started_button": "开始使用"
+    "get_started_button": "開始使用"
   },
   "verify_email": {
-    "title": "验证您的电子邮件以确保您的帐户安全",
-    "description": "我们已发送验证电子邮件至",
-    "resend_text": "还没有收到电子邮件吗？",
-    "resend": "重新发送",
-    "verifyCTA": "我已验证我的电子邮件",
+    "title": "驗證您的電子郵件以確保您的帳戶安全",
+    "description": "我們已傳送驗證電子郵件至",
+    "resend_text": "還沒有收到電子郵件嗎？",
+    "resend": "重新傳送",
+    "verifyCTA": "我已驗證我的電子郵件",
     "toast_content": {
       "email_not_verified": {
-        "title": "您的电子邮件未经过验证",
-        "description": "请检查您的收件箱以完成验证。"
+        "title": "您的電子郵件未經過驗證",
+        "description": "請檢查您的收件箱以完成驗證。"
       },
       "default_error": {
-        "title": "无法发送请求",
-        "description": "只是一根电线有问题。再试一次。"
+        "title": "無法傳送請求",
+        "description": "只是一根電線有問題。再試一次。"
       },
       "verification_email_sent": {
-        "title": "电子邮件已发送",
-        "description": "请检查您的收件箱以获取最新的验证电子邮件。"
+        "title": "電子郵件已傳送",
+        "description": "請檢查您的收件箱以獲取最新的驗證電子郵件。"
       }
     }
   },
   "join_team": {
-    "title_experimental": "加入您的第一个团队从",
-    "description_new": "访问 API 资源并立即开始与您的队友协作。",
-    "members_count": "{count, plural, one {成员} other {成员}}",
+    "title_experimental": "加入您的第一個團隊從",
+    "description_new": "訪問 API 資源並立即開始與您的隊友協作。",
+    "members_count": "{count, plural, one {成員} other {成員}}",
     "growth": {
       "join_button": {
         "join_text": "加入"
       },
       "show_more_button": {
-        "text_experimental": "查看更多团队"
+        "text_experimental": "檢視更多團隊"
       }
     }
   },
   "prompt": {
-    "title": "最后一步，使用 Postman AI 更进一步。",
-    "description": "Postman AI 已经理解您连接的存储库和工作区。告诉它你想要构建、探索或生成什么。",
+    "title": "最後一步，使用 Postman AI 更進一步。",
+    "description": "Postman AI 已經理解您連線的儲存庫和工作區。告訴它你想要構建、探索或生成什麼。",
     "input": {
-      "placeholder": "从此存储库生成请求、测试或集合..."
+      "placeholder": "從此儲存庫生成請求、測試或集合..."
     },
     "examples": {
-      "label": "或者尝试一个例子：",
+      "label": "或者嘗試一個例子：",
       "repo_connected": {
         "test-apis": {
-          "label": "测试API",
-          "prompt": "帮助我测试此存储库中的 API 并建议关键测试用例。"
+          "label": "測試API",
+          "prompt": "幫助我測試此儲存庫中的 API 並建議關鍵測試用例。"
         },
         "send-requests": {
-          "label": "发送请求",
-          "prompt": "生成此存储库中的 API 的示例请求。"
+          "label": "傳送請求",
+          "prompt": "生成此儲存庫中的 API 的示例請求。"
         },
         "api-docs": {
-          "label": "API 文档",
-          "prompt": "从此代码库创建 API 文档。"
+          "label": "API 文件",
+          "prompt": "從此程式碼庫建立 API 文件。"
         },
         "learn-postman": {
-          "label": "学习Postman",
-          "prompt": "演示如何将 Postman 与此存储库一起使用。"
+          "label": "學習Postman",
+          "prompt": "演示如何將 Postman 與此儲存庫一起使用。"
         },
         "create-api": {
-          "label": "创建API",
-          "prompt": "帮助我向该项目扩展或添加新的 API 。"
+          "label": "建立API",
+          "prompt": "幫助我向該專案擴充套件或新增新的 API 。"
         },
         "monitor-apis": {
-          "label": "监控 API",
-          "prompt": "为这些 API 设置监控和运行状况检查。"
+          "label": "監控 API",
+          "prompt": "為這些 API 設定監控和執行狀況檢查。"
         },
         "integrate-apis": {
-          "label": "集成API",
-          "prompt": "帮助我将这些 API 与其他服务集成。"
+          "label": "整合API",
+          "prompt": "幫助我將這些 API 與其他服務整合。"
         }
       },
       "generic": {
         "test-apis": {
-          "label": "测试API",
-          "prompt": "帮助我测试我正在使用的 API。"
+          "label": "測試API",
+          "prompt": "幫助我測試我正在使用的 API。"
         },
         "send-requests": {
-          "label": "发送请求",
-          "prompt": "帮助我在 Postman 中发送 API 请求。"
+          "label": "傳送請求",
+          "prompt": "幫助我在 Postman 中傳送 API 請求。"
         },
         "api-docs": {
-          "label": "API 文档",
-          "prompt": "帮助我创建 API 文档。"
+          "label": "API 文件",
+          "prompt": "幫助我建立 API 文件。"
         },
         "learn-postman": {
-          "label": "学习Postman",
-          "prompt": "教我使用 Postman 的基础知识。"
+          "label": "學習Postman",
+          "prompt": "教我使用 Postman 的基礎知識。"
         },
         "create-api": {
-          "label": "创建API",
-          "prompt": "帮我设计一个新的 API。"
+          "label": "建立API",
+          "prompt": "幫我設計一個新的 API。"
         },
         "monitor-apis": {
-          "label": "监控 API",
-          "prompt": "我该如何监控 API 的健康状况和性能？"
+          "label": "監控 API",
+          "prompt": "我該如何監控 API 的健康狀況和效能？"
         },
         "integrate-apis": {
-          "label": "集成API",
-          "prompt": "如何将 API 集成到我的应用程序中？"
+          "label": "整合API",
+          "prompt": "如何將 API 整合到我的應用程式中？"
         }
       }
     },
     "submit_button": {
-      "text": "开始使用人工智能"
+      "text": "開始使用人工智慧"
     }
   },
   "redirect_to_workspace_loading_page": {
-    "title": "设置您的工作区"
+    "title": "設定您的工作區"
   },
   "toasts": {
     "success": {
       "send_invites": {
-        "title": "已发送邀请",
-        "description": "新成员接受您的邀请后就会加入。"
+        "title": "已傳送邀請",
+        "description": "新成員接受您的邀請後就會加入。"
       },
       "save_profile": {
-        "title": "个人资料已保存",
-        "description": "您的个人资料已成功更新。"
+        "title": "個人資料已儲存",
+        "description": "您的個人資料已成功更新。"
       },
       "create_team": {
-        "title": "团队创建成功",
-        "description": "当您的请求获得批准时，我们会通知您。"
+        "title": "團隊建立成功",
+        "description": "當您的請求獲得批准時，我們會通知您。"
       },
       "verified_team_full": {
-        "title": "您加入团队的请求正在审核中",
-        "description": "该团队已满，您可以稍后申请加入。"
+        "title": "您加入團隊的請求正在稽核中",
+        "description": "該團隊已滿，您可以稍後申請加入。"
       },
       "unverified_team_full": {
-        "title": "验证您的电子邮件",
-        "description": "验证电子邮件已发送给您。验证后，加入请求将发送给管理员。当您的请求获得批准时，我们会通知您。"
+        "title": "驗證您的電子郵件",
+        "description": "驗證電子郵件已傳送給您。驗證後，加入請求將傳送給管理員。當您的請求獲得批准時，我們會通知您。"
       }
     },
     "info": {
       "unverified_join_team_request": {
-        "title": "验证您的电子邮件",
-        "description": "验证电子邮件已发送给您。验证后，加入请求将发送给管理员。当您的请求获得批准时，我们会通知您。"
+        "title": "驗證您的電子郵件",
+        "description": "驗證電子郵件已傳送給您。驗證後，加入請求將傳送給管理員。當您的請求獲得批准時，我們會通知您。"
       }
     },
     "error": {
       "send_invites": {
-        "title": "无法发送邀请",
-        "description": "我们目前无法发送邀请。您可以稍后在团队设置中邀请队友。"
+        "title": "無法傳送邀請",
+        "description": "我們目前無法傳送邀請。您可以稍後在團隊設定中邀請隊友。"
       },
       "save_profile": {
-        "title": "无法保存个人资料",
-        "description": "我们无法保存您的个人资料信息。不用担心，您可以稍后在帐户设置中进行更新。"
+        "title": "無法儲存個人資料",
+        "description": "我們無法儲存您的個人資料資訊。不用擔心，您可以稍後在帳戶設定中進行更新。"
       },
       "setup_team": {
-        "title": "团队设置不完整",
-        "description": "我们无法完成部分团队设置，但您可以继续操作，稍后可在团队仪表板中更新这些设置。"
+        "title": "團隊設定不完整",
+        "description": "我們無法完成部分團隊設定，但您可以繼續操作，稍後可在團隊儀錶板中更新這些設定。"
       },
       "create_team": {
-        "title": "团队创建失败",
-        "description": "我们在创建您的团队时遇到了问题。现在，您可以继续使用个人工作区。"
+        "title": "團隊建立失敗",
+        "description": "我們在建立您的團隊時遇到了問題。現在，您可以繼續使用個人工作區。"
       },
       "save_name_and_role": {
-        "title": "无法保存个人资料",
-        "description": "我们无法保存您的姓名和角色。您可以稍后在账户设置中更新您的个人资料。"
+        "title": "無法儲存個人資料",
+        "description": "我們無法儲存您的姓名和角色。您可以稍後在賬戶設定中更新您的個人資料。"
       },
       "check_team_access": {
-        "title": "无法验证团队访问权限",
-        "description": "我们无法检查您对此团队的访问权限。请重试或联系您的团队管理员。"
+        "title": "無法驗證團隊訪問許可權",
+        "description": "我們無法檢查您對此團隊的訪問許可權。請重試或聯絡您的團隊管理員。"
       },
       "request_team_access": {
-        "title": "请求发送失败",
-        "description": "我们无法发送您加入此团队的请求。请重试或直接联系团队管理员。"
+        "title": "請求傳送失敗",
+        "description": "我們無法傳送您加入此團隊的請求。請重試或直接聯絡團隊管理員。"
       },
       "auto_join_team": {
-        "title": "出了点问题",
-        "description": "无法将您的请求发送给管理员"
+        "title": "出了點問題",
+        "description": "無法將您的請求傳送給管理員"
       },
       "join_team_request": {
-        "title": "出了点问题",
-        "description": "无法将您的请求发送给管理员"
+        "title": "出了點問題",
+        "description": "無法將您的請求傳送給管理員"
       },
       "resend_verification": {
-        "title": "电子邮件无法发送",
-        "description": "我们无法发送验证电子邮件。请重试或联系支持人员。"
+        "title": "電子郵件無法傳送",
+        "description": "我們無法傳送驗證電子郵件。請重試或聯絡支援人員。"
       },
       "connect_folder_to_workspace": {
-        "title": "出了点问题",
-        "description": "我们无法将您的文件夹连接到您的工作区。请再试一次。"
+        "title": "出了點問題",
+        "description": "我們無法將您的資料夾連線到您的工作區。請再試一次。"
       },
       "checking_repo_connection_status": {
-        "title": "Git 检查失败",
-        "description": "我们无法检测该文件夹是否为 Git 存储库。请选择其他文件夹或重试。"
+        "title": "Git 檢查失敗",
+        "description": "我們無法檢測該資料夾是否為 Git 儲存庫。請選擇其他資料夾或重試。"
       }
     }
   }

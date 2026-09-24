@@ -4,22 +4,22 @@
   },
   "row": {
     "context_menu_trigger": {
-      "tooltip": "查看更多动作"
+      "tooltip": "檢視更多動作"
     }
   },
   "context_menu": {
     "open_sdk_panel": {
-      "label": "打开SDK面板"
+      "label": "開啟SDK面板"
     },
     "regenerate_sdks": {
       "label": "重新生成 SDK"
     },
     "delete_sdks": {
-      "label": "删除 SDK"
+      "label": "刪除 SDK"
     }
   },
   "delete": {
-    "success": "已删除“{entityName}”的 SDK。",
-    "error": "删除SDK失败。请再试一次。"
+    "success": "已刪除“{entityName}”的 SDK。",
+    "error": "刪除SDK失敗。請再試一次。"
   }
 }

@@ -1,131 +1,131 @@
 {
   "invite_to_team_modal": {
-    "send_button_text": "邀请",
-    "invite_to_team_title": "邀请人到“{teamName}”团队",
-    "invite_to_org_title": "邀请人员转至“{teamName}”组织",
-    "invite_to_team_title_no_team_name": "邀请人到团队",
-    "invite_to_org_title_no_org_name": "邀请人员到组织",
-    "emails_are_invalid": "{invalidEmailsCount, plural, =1 {# 个电子邮件无效。} other {# 个电子邮件无效。}}",
-    "enter_emails_tooltip": "输入电子邮件以发送邀请",
-    "enter_emails_error": "请输入要邀请的电子邮件",
-    "invited_to_team": "已邀请加入团队",
-    "ensure_valid_emails": "确保您输入的电子邮件有效。",
-    "invite_by_email": "邀请通过电子邮件",
-    "not_listed_above_invite_by_email": "上面没有列出吗？邀请用户通过电子邮件",
-    "enter_email": "输入电子邮件",
+    "send_button_text": "邀請",
+    "invite_to_team_title": "邀請人到“{teamName}”團隊",
+    "invite_to_org_title": "邀請人員轉至“{teamName}”組織",
+    "invite_to_team_title_no_team_name": "邀請人到團隊",
+    "invite_to_org_title_no_org_name": "邀請人員到組織",
+    "emails_are_invalid": "{invalidEmailsCount, plural, =1 {# 個電子郵件無效。} other {# 個電子郵件無效。}}",
+    "enter_emails_tooltip": "輸入電子郵件以傳送邀請",
+    "enter_emails_error": "請輸入要邀請的電子郵件",
+    "invited_to_team": "已邀請加入團隊",
+    "ensure_valid_emails": "確保您輸入的電子郵件有效。",
+    "invite_by_email": "邀請通過電子郵件",
+    "not_listed_above_invite_by_email": "上面沒有列出嗎？邀請使用者通過電子郵件",
+    "enter_email": "輸入電子郵件",
     "error_messages": {
-      "no_permission": "您没有权限来发送邀请",
-      "generic": "生成链接时出现问题。",
-      "flow_editor": "流程编辑者角色只能与开发者角色一起分配。"
+      "no_permission": "您沒有許可權來傳送邀請",
+      "generic": "生成連結時出現問題。",
+      "flow_editor": "流程編輯者角色只能與開發者角色一起分配。"
     },
     "success_messages": {
-      "approved_and_unapproved": "已邀请 {approved_invite_count, plural, =1 {1 位成员} other {# 位成员}}，并将 {unapproved_invite_count, plural, =1 {1 个邀请} other {# 个邀请}} 发送给管理员审批",
-      "only_approved": "新成员接受您的邀请后将加入您的团队。",
-      "only_unapproved": "一旦审核者批准您的请求，我们就会通知您。",
-      "default": "新成员接受您的邀请后将加入您的团队。"
+      "approved_and_unapproved": "已邀請 {approved_invite_count, plural, =1 {1 位成員} other {# 位成員}}，並將 {unapproved_invite_count, plural, =1 {1 個邀請} other {# 個邀請}} 傳送給管理員審批",
+      "only_approved": "新成員接受您的邀請後將加入您的團隊。",
+      "only_unapproved": "一旦稽核者批准您的請求，我們就會通知您。",
+      "default": "新成員接受您的邀請後將加入您的團隊。"
     },
     "dropdown_label": "角色",
-    "dropdown_placeholder": "选择角色",
-    "add_from_file": "从文件添加",
-    "copy_invite_link": "复制邀请链接",
-    "could_not_get_invite_link": "生成链接时出现问题。",
-    "invite_link_copied": "已复制"
+    "dropdown_placeholder": "選擇角色",
+    "add_from_file": "從檔案新增",
+    "copy_invite_link": "複製邀請連結",
+    "could_not_get_invite_link": "生成連結時出現問題。",
+    "invite_link_copied": "已複製"
   },
   "upgrade_plan_modal": {
-    "team_title_text": "您的团队并不适合所有人",
+    "team_title_text": "您的團隊並不適合所有人",
     "modal_content": {
       "free_team": {
-        "sub_title": "共 {additional_invites} {additional_invites, plural, =1 {人} other {人}}的邀请{additional_invites, plural, =1 {已} other {已}}超出团队席位上限。升级您的方案，即可让他们加入您的团队并参与协作。",
-        "primary_action_text": "升级计划"
+        "sub_title": "共 {additional_invites} {additional_invites, plural, =1 {人} other {人}}的邀請{additional_invites, plural, =1 {已} other {已}}超出團隊席位上限。升級您的方案，即可讓他們加入您的團隊並參與協作。",
+        "primary_action_text": "升級計劃"
       },
       "paid_team": {
-        "sub_title": "共 {additional_invites} {additional_invites, plural, =1 {人} other {人}}的邀请{additional_invites, plural, =1 {已} other {已}}超出团队席位上限。使用 Auto-Flex 即可与任意人数协作，无需购买插槽。",
+        "sub_title": "共 {additional_invites} {additional_invites, plural, =1 {人} other {人}}的邀請{additional_invites, plural, =1 {已} other {已}}超出團隊席位上限。使用 Auto-Flex 即可與任意人數協作，無需購買插槽。",
         "primary_action_text": {
-          "auto_flex": "获取自动伸缩功能",
-          "paid_slots": "添加付费插槽"
+          "auto_flex": "獲取自動伸縮功能",
+          "paid_slots": "新增付費插槽"
         }
       }
     },
     "button_text": {
-      "free_team": "也许稍后",
-      "not_free_team": "购买槽位"
+      "free_team": "也許稍後",
+      "not_free_team": "購買槽位"
     }
   },
   "request_to_join_modal": {
-    "word_limit_error": "请将您的回复限制在 {word_limit} 个字符以内",
+    "word_limit_error": "請將您的回覆限制在 {word_limit} 個字元以內",
     "buttons_text": {
       "continue": "提交",
       "cancel": "取消"
     },
     "request_info": {
       "email_verified": {
-        "primary": "一旦团队管理员批准您的请求，您将自动添加到团队。",
-        "guidelines": "在我们发送您的请求之前，请回答团队管理员中的这个问题",
-        "no_guidelines": "添加注释以帮助团队的管理员查看您的请求（可选）"
+        "primary": "一旦團隊管理員批准您的請求，您將自動新增到團隊。",
+        "guidelines": "在我們傳送您的請求之前，請回答團隊管理員中的這個問題",
+        "no_guidelines": "新增註釋以幫助團隊的管理員檢視您的請求（可選）"
       },
       "email_not_verified": {
-        "primary": "快到了，在我们发送您的请求之前，只需做两件事即可",
-        "step_1": "1. 验证您的帐户。您的收件箱中应该有一封验证电子邮件正在等待您。",
-        "step_2_guidelines": "2. 从team 管理员开始回答这个问题。",
-        "step_2_no_guidelines": "2. 添加注释以帮助团队的管理员审核您的请求（可选）"
+        "primary": "快到了，在我們傳送您的請求之前，只需做兩件事即可",
+        "step_1": "1. 驗證您的帳戶。您的收件箱中應該有一封驗證電子郵件正在等待您。",
+        "step_2_guidelines": "2. 從team 管理員開始回答這個問題。",
+        "step_2_no_guidelines": "2. 新增註釋以幫助團隊的管理員稽核您的請求（可選）"
       }
     },
     "placeholder": {
-      "guidelines": "在此输入您的答案",
-      "no_guidelines": "添加注释"
+      "guidelines": "在此輸入您的答案",
+      "no_guidelines": "新增註釋"
     },
-    "modal_header": "提交您的请求以加入团队 {team_name}"
+    "modal_header": "提交您的請求以加入團隊 {team_name}"
   },
   "verify_email_modal": {
-    "modal_header": "验证您的电子邮件以加入 {team_name}",
-    "modal_body": "出于安全原因，我们需要先验证您的电子邮件地址，然后才能提交您的加入请求。",
-    "resend_button": "重新发送",
-    "resend_email": "我们已将验证电子邮件发送至：",
-    "close": "我已验证我的电子邮件"
+    "modal_header": "驗證您的電子郵件以加入 {team_name}",
+    "modal_body": "出於安全原因，我們需要先驗證您的電子郵件地址，然後才能提交您的加入請求。",
+    "resend_button": "重新傳送",
+    "resend_email": "我們已將驗證電子郵件傳送至：",
+    "close": "我已驗證我的電子郵件"
   },
   "auto_join_email": {
-    "title": "检查您的电子邮件中是否有邀请",
-    "description": "接受邀请后，您将被添加到 {teamName} 团队中。",
-    "invite": "您的邀请已发送至：",
-    "toast_description": "请检查您的收件箱中是否有加入团队的电子邮件。"
+    "title": "檢查您的電子郵件中是否有邀請",
+    "description": "接受邀請後，您將被新增到 {teamName} 團隊中。",
+    "invite": "您的邀請已傳送至：",
+    "toast_description": "請檢查您的收件箱中是否有加入團隊的電子郵件。"
   },
   "team_creation_modal": {
-    "team_update_text": "自定义您的团队个人资料，以便您未来的团队成员轻松找到。",
-    "multi_team_collab_text": "您现有的个人工作区将移动到此团队。一旦您准备好协作，您就可以邀请团队成员。",
-    "multi_team_collab_button_text": "设置团队",
-    "subtext": "请不要关闭或刷新此选项卡。",
+    "team_update_text": "自定義您的團隊個人資料，以便您未來的團隊成員輕鬆找到。",
+    "multi_team_collab_text": "您現有的個人工作區將移動到此團隊。一旦您準備好協作，您就可以邀請團隊成員。",
+    "multi_team_collab_button_text": "設定團隊",
+    "subtext": "請不要關閉或重新整理此選項卡。",
     "team_content": {
       "team_creation": {
-        "title": "太棒了！您已经创建了一个团队",
-        "primary_action_text": "编辑团队个人资料"
+        "title": "太棒了！您已經建立了一個團隊",
+        "primary_action_text": "編輯團隊個人資料"
       },
       "add_new_team": {
-        "title": "太棒了！您已经创建了您的团队"
+        "title": "太棒了！您已經建立了您的團隊"
       }
     },
     "loader_content": {
-      "team_creation_title": "创建你的团队",
-      "add_new_team_title": "创建你的团队"
+      "team_creation_title": "建立你的團隊",
+      "add_new_team_title": "建立你的團隊"
     }
   },
   "enable_auto_flex_modal": {
     "true_up_toast": {
-      "title": "您可以抢先体验 Auto-Flex",
-      "desc": "您可以在 <1><0>管理团队</0></1> 中跟踪其他团队成员",
-      "error": "出了点问题"
+      "title": "您可以搶先體驗 Auto-Flex",
+      "desc": "您可以在 <1><0>管理團隊</0></1> 中跟蹤其他團隊成員",
+      "error": "出了點問題"
     },
     "modal": {
-      "header": "尽早访问 Auto-Flex",
-      "content_text": "您的团队管理员将能够邀请其他团队成员。您只需在每个周期结束时为团队上的额外会员付费。",
-      "t_and_c_label": "同意 Auto-Flex 的 <1><0> 条款和条件</0></1>"
+      "header": "儘早訪問 Auto-Flex",
+      "content_text": "您的團隊管理員將能夠邀請其他團隊成員。您只需在每個週期結束時為團隊上的額外會員付費。",
+      "t_and_c_label": "同意 Auto-Flex 的 <1><0> 條款和條件</0></1>"
     },
     "button": {
       "cancel": "取消",
-      "confirm": "确认",
-      "tooltip": "请同意 Auto-Flex 的条款和条件"
+      "confirm": "確認",
+      "tooltip": "請同意 Auto-Flex 的條款和條件"
     }
   },
   "email_domain_autocomplete": {
-    "placeholder": "输入姓名或电子邮件..."
+    "placeholder": "輸入姓名或電子郵件..."
   }
 }

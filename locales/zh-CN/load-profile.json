@@ -2,99 +2,99 @@
   "constant": {
     "name": "固定",
     "shorthand": "固定",
-    "description": "{virtualUserCount} 个虚拟{virtualUserCount, plural, =1{用户}other{用户}}运行 {totalDurationMins, plural, =1 {# 分钟}other{# 分钟}}，每个都按顺序执行所有请求。"
+    "description": "{virtualUserCount} 個虛擬{virtualUserCount, plural, =1{使用者}other{使用者}}執行 {totalDurationMins, plural, =1 {# 分鐘}other{# 分鐘}}，每個都按順序執行所有請求。"
   },
   "ramp": {
     "name": "斜坡上升",
     "shorthand": "加速 ({humanizedRampDuration})",
-    "description": "{initialDurationMs, plural, =0 {持续} other {{initialLoad, plural, =1 {# 个虚拟用户} other {# 个虚拟用户}} 为 {humanizedInitialDuration} 运行，}} 为 {humanizedRampDuration} 上升到 {maxLoad}，然后为 {humanizedMaxLoadDuration} 维持 {maxLoad}，每个顺序执行所有请求。",
+    "description": "{initialDurationMs, plural, =0 {持續} other {{initialLoad, plural, =1 {# 個虛擬使用者} other {# 個虛擬使用者}} 為 {humanizedInitialDuration} 執行，}} 為 {humanizedRampDuration} 上升到 {maxLoad}，然後為 {humanizedMaxLoadDuration} 維持 {maxLoad}，每個順序執行所有請求。",
     "initial": {
       "load": {
-        "name": "初始负载",
-        "description": "在开始增加到最大 VU 数量之前要模拟的 VU 数量。"
+        "name": "初始負載",
+        "description": "在開始增加到最大 VU 數量之前要模擬的 VU 數量。"
       }
     },
     "lead_start": {
       "time": {
-        "name": "初始加载时间戳"
+        "name": "初始載入時間戳"
       }
     },
     "lead_end": {
       "time": {
-        "name": "增加时间戳",
-        "description": "负载从初始负载线性增加到最大负载的时间。"
+        "name": "增加時間戳",
+        "description": "負載從初始負載線性增加到最大負載的時間。"
       }
     }
   },
   "peak": {
-    "name": "顶峰",
-    "shorthand": "顶峰",
-    "description": "{initialDurationMs, plural, =0 {持续} other {{initialLoad, plural, =1 {# 个虚拟用户} other {# 个虚拟用户}} 运行 {humanizedInitialDuration}，}} 在 {humanizedRampUpDuration} 上上升到 {maxLoad}，在 {humanizedPlateauDuration} 上保持 {maxLoad}，在 {humanizedRampDownDuration} 上下降到 {initialLoad}，在 {humanizedTrailingLoadDuration} 上保持 {initialLoad}，每个顺序执行所有请求。",
+    "name": "頂峰",
+    "shorthand": "頂峰",
+    "description": "{initialDurationMs, plural, =0 {持續} other {{initialLoad, plural, =1 {# 個虛擬使用者} other {# 個虛擬使用者}} 執行 {humanizedInitialDuration}，}} 在 {humanizedRampUpDuration} 上上升到 {maxLoad}，在 {humanizedPlateauDuration} 上保持 {maxLoad}，在 {humanizedRampDownDuration} 上下降到 {initialLoad}，在 {humanizedTrailingLoadDuration} 上保持 {initialLoad}，每個順序執行所有請求。",
     "initial": {
       "load": {
-        "name": "基本负载",
-        "description": "在开始增加到最大 VU 计数之前以及按比例缩小之后要维持的 VU 数量。"
+        "name": "基本負載",
+        "description": "在開始增加到最大 VU 計數之前以及按比例縮小之後要維持的 VU 數量。"
       }
     },
     "lead_start": {
       "time": {
-        "name": "初始基本负载结束时间戳"
+        "name": "初始基本負載結束時間戳"
       }
     },
     "lead_end": {
       "time": {
-        "name": "增加时间戳",
-        "description": "负载从基本负载线性增加到最大负载的时间。"
+        "name": "增加時間戳",
+        "description": "負載從基本負載線性增加到最大負載的時間。"
       }
     },
     "down_start": {
       "time": {
-        "name": "斜坡结束时间戳",
-        "description": "保持最大负载的时间。"
+        "name": "斜坡結束時間戳",
+        "description": "保持最大負載的時間。"
       }
     },
     "down_end": {
       "time": {
-        "name": "斜坡下降时间戳",
-        "description": "负载从最大负载线性减少到基本负载的时间。"
+        "name": "斜坡下降時間戳",
+        "description": "負載從最大負載線性減少到基本負載的時間。"
       }
     }
   },
   "spike": {
     "name": "尖峰",
     "shorthand": "尖峰",
-    "description": "{initialDurationMs, plural, =0 {尖峰} other {{baseLoad, plural, =1 {# 个虚拟用户} other {# 个虚拟用户}} 运行 {humanizedInitialDuration}，在 {humanizedSpikeUpDuration} 上峰值}} 到 {maxLoad}，在 {humanizedSpikeDownDuration} 上下降到 {baseLoad}，在 {humanizedFinalDuration} 上保持 {baseLoad}，每个顺序执行所有请求。",
+    "description": "{initialDurationMs, plural, =0 {尖峰} other {{baseLoad, plural, =1 {# 個虛擬使用者} other {# 個虛擬使用者}} 執行 {humanizedInitialDuration}，在 {humanizedSpikeUpDuration} 上峰值}} 到 {maxLoad}，在 {humanizedSpikeDownDuration} 上下降到 {baseLoad}，在 {humanizedFinalDuration} 上保持 {baseLoad}，每個順序執行所有請求。",
     "initial": {
       "time": {
-        "name": "基本负载时间戳"
+        "name": "基本負載時間戳"
       },
       "load": {
-        "name": "基本负载",
-        "description": "在开始增加到最大 VU 计数之前以及按比例缩小之后要维持的 VU 数量。"
+        "name": "基本負載",
+        "description": "在開始增加到最大 VU 計數之前以及按比例縮小之後要維持的 VU 數量。"
       }
     },
     "start": {
       "time": {
-        "name": "峰值开始时间戳"
+        "name": "峰值開始時間戳"
       }
     },
     "end": {
       "time": {
-        "name": "峰值结束时间戳",
-        "description": "峰值结束时间戳"
+        "name": "峰值結束時間戳",
+        "description": "峰值結束時間戳"
       }
     },
     "peak": {
       "time": {
-        "name": "峰值时间戳",
-        "description": "峰值在最大负载下达到峰值的时间。"
+        "name": "峰值時間戳",
+        "description": "峰值在最大負載下達到峰值的時間。"
       }
     }
   },
   "humanize_duration": {
-    "expanded": "{minutes, plural, =0 {} =1 {# 分钟 } other{# 分钟 }}{seconds, plural, =0 {} =1 {# 秒} other{# 秒}}",
-    "only_minutes": "{minutes, plural, =1 {# 分钟} other{# 分钟}}",
+    "expanded": "{minutes, plural, =0 {} =1 {# 分鐘 } other{# 分鐘 }}{seconds, plural, =0 {} =1 {# 秒} other{# 秒}}",
+    "only_minutes": "{minutes, plural, =1 {# 分鐘} other{# 分鐘}}",
     "only_seconds": "{seconds, plural, =1 {# 秒} other{# 秒}}",
-    "minutes_and_seconds": "{minutes}:{seconds} 分钟"
+    "minutes_and_seconds": "{minutes}:{seconds} 分鐘"
   }
 }

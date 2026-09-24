@@ -1,176 +1,176 @@
 {
   "mock_details": {
-    "extensible_collection_http_only_banner": "此集合的 Mock Server 目前仅支持 HTTP 请求",
+    "extensible_collection_http_only_banner": "此集合的 Mock Server 目前僅支援 HTTP 請求",
     "mock_server": "Mock Server",
-    "delay_duration_error": "请输入介于 0 到 180000 毫秒之间的延迟值。",
-    "changes_saved": "更改已保存",
+    "delay_duration_error": "請輸入介於 0 到 180000 毫秒之間的延遲值。",
+    "changes_saved": "更改已儲存",
     "update_msg": "您已更新 {name} Mock Server。",
-    "unable_to_edit": "无法编辑 Mock"
+    "unable_to_edit": "無法編輯 Mock"
   },
   "call_logs_list_item_body": {
-    "unable_to_load_resource": "无法加载 {resourceType} Body。",
-    "try_again": "重试",
-    "request_body": "此 {resourceType} 没有 Body。",
-    "size_limit_msg": "调用日志仅显示小于 1 MB 的 {resourceType} Body。如需查看完整内容，您可以<3>下载</3>该调用日志。",
-    "copy_tooltip": "复制 {resourceType} Body",
+    "unable_to_load_resource": "無法載入 {resourceType} Body。",
+    "try_again": "重試",
+    "request_body": "此 {resourceType} 沒有 Body。",
+    "size_limit_msg": "呼叫日誌僅顯示小於 1 MB 的 {resourceType} Body。如需檢視完整內容，您可以<3>下載</3>該呼叫日誌。",
+    "copy_tooltip": "複製 {resourceType} Body",
     "expand_collapse_aria_label": "{action} {section} 部分",
-    "expand": "展开",
+    "expand": "展開",
     "collapse": "收起"
   },
   "collapsible_call_logs_list_item_header": {
-    "request_headers": "此 {resourceType} 没有请求头。",
-    "try_again": "重试",
+    "request_headers": "此 {resourceType} 沒有請求頭。",
+    "try_again": "重試",
     "unable_to_load": "Couldn’t load {resourceType} headers."
   },
   "empty_call_logs": {
-    "header": "暂无 Mock Server 调用记录",
+    "header": "暫無 Mock Server 呼叫記錄",
     "logs_description": {
-      "copied": "已复制！",
-      "copy_url": "复制 Mock URL",
-      "header": "要调用 Mock Server，请按照以下步骤操作：",
-      "step1": "<0>1. 向以下 Mock Server URL 发送请求，并在其后附加请求路径 <1></1> </0>",
-      "step2": "<0>2. 为 Mock Server 将返回的每个请求添加示例响应。 <1></1> <2>了解什么是示例以及如何使用它们</2> </0>"
+      "copied": "已複製！",
+      "copy_url": "複製 Mock URL",
+      "header": "要呼叫 Mock Server，請按照以下步驟操作：",
+      "step1": "<0>1. 向以下 Mock Server URL 傳送請求，並在其後附加請求路徑 <1></1> </0>",
+      "step2": "<0>2. 為 Mock Server 將返回的每個請求新增示例響應。 <1></1> <2>瞭解什麼是示例以及如何使用它們</2> </0>"
     }
   },
   "mock_no_result_found": {
-    "nothing_here": "这里什么都没有，休斯顿！",
-    "subtext": "未找到匹配的内容，请检查拼写或尝试使用其他搜索词。"
+    "nothing_here": "這裡什麼都沒有，休斯頓！",
+    "subtext": "未找到匹配的內容，請檢查拼寫或嘗試使用其他搜尋詞。"
   },
   "call_logs_list_item_header": {
     "expand_collapse_aria_label": "{action} {section} 部分",
-    "expand": "展开",
+    "expand": "展開",
     "collapse": "收起"
   },
   "call_logs_list_item": {
     "call_logs_list_item_title": {
-      "tooltip": "只有团队成员可以查看 Mock 调用日志详情。",
-      "not_signed_in_error": "您需要一个账户才能继续探索 Postman。",
-      "something_went_wrong": "出错了",
-      "delete_call_log_button_aria_label": "删除调用日志",
-      "permission_error_tooltip": "您没有权限查看调用日志详情。",
-      "expand": "展开",
+      "tooltip": "只有團隊成員可以檢視 Mock 呼叫日誌詳情。",
+      "not_signed_in_error": "您需要一個賬戶才能繼續探索 Postman。",
+      "something_went_wrong": "出錯了",
+      "delete_call_log_button_aria_label": "刪除呼叫日誌",
+      "permission_error_tooltip": "您沒有許可權檢視呼叫日誌詳情。",
+      "expand": "展開",
       "collapse": "收起",
-      "expand_collapse_aria_label": "{action} {time} 的 {method} {url} 调用日志详情"
+      "expand_collapse_aria_label": "{action} {time} 的 {method} {url} 呼叫日誌詳情"
     },
     "collapsible_call_logs_list_item": {
-      "request_headers": "请求头",
-      "request_body": "请求体",
-      "response_headers": "响应头",
-      "response_body": "响应体"
+      "request_headers": "請求頭",
+      "request_body": "請求體",
+      "response_headers": "響應頭",
+      "response_body": "響應體"
     }
   },
   "call_logs_list_old": {
-    "collection_deleted_banner": "此 Mock Server 已停用，因为关联的集合已被删除。",
-    "environment_deleted_banner": "此 Mock Server 已停用，因为关联的环境已被删除。",
-    "search_placeholder": "搜索调用记录…",
-    "offline_error": "恢复联网后即可执行此操作。",
-    "refresh_logs": "刷新日志",
-    "header_time": "时间",
-    "header_request": "请求",
-    "header_response": "响应",
-    "load_more": "加载更多",
-    "footer_msg": "Mock Server 允许您通过为每个请求返回关联的示例响应来模拟 API 端点。",
-    "mock_docs": "了解如何设置和使用带示例响应的 Mock"
+    "collection_deleted_banner": "此 Mock Server 已停用，因為關聯的集合已被刪除。",
+    "environment_deleted_banner": "此 Mock Server 已停用，因為關聯的環境已被刪除。",
+    "search_placeholder": "搜尋呼叫記錄…",
+    "offline_error": "恢復聯網後即可執行此操作。",
+    "refresh_logs": "重新整理日誌",
+    "header_time": "時間",
+    "header_request": "請求",
+    "header_response": "響應",
+    "load_more": "載入更多",
+    "footer_msg": "Mock Server 允許您通過為每個請求返回關聯的示例響應來模擬 API 端點。",
+    "mock_docs": "瞭解如何設定和使用帶示例響應的 Mock"
   },
   "usage_limit_banner": {
-    "text": "提高限额",
-    "reached_limit": "您的 Mock Server 每月调用次数已达上限。",
-    "contact_team_member": "请联系拥有账单角色的团队成员以提高限额。"
+    "text": "提高限額",
+    "reached_limit": "您的 Mock Server 每月呼叫次數已達上限。",
+    "contact_team_member": "請聯絡擁有賬單角色的團隊成員以提高限額。"
   },
   "mock_call_logs_old": {
     "error_fetching_call_logs": {
-      "try_again": "重试",
-      "something_went_wrong": "出错了",
-      "unexpected_error": "加载 Mock Server 调用日志时发生意外错误。",
-      "try_refreshing": "请尝试刷新页面。"
+      "try_again": "重試",
+      "something_went_wrong": "出錯了",
+      "unexpected_error": "載入 Mock Server 呼叫日誌時發生意外錯誤。",
+      "try_refreshing": "請嘗試重新整理頁面。"
     }
   },
   "mock_offline": {
     "header": "Unable to load data as you're offline",
-    "sub_header": "在恢复联网之前，您的数据可能不是最新的。"
+    "sub_header": "在恢復聯網之前，您的資料可能不是最新的。"
   },
   "mock_details_header_old": {
-    "mock_server_name": "Mock Server 名称",
-    "copy_url": "复制 URL",
-    "copy_url_tooltip": "复制 Mock Server URL",
-    "view_collection_docs": "查看集合文档",
-    "inactive_mock_collection_deleted": "由于关联的集合已被删除，无法访问此文档。",
-    "inactive_mock_collection_not_accessible": "由于关联的集合不可访问，此文档无法访问。",
-    "offline_error": "恢复联网后即可执行此操作。",
-    "edit_configuration": "编辑配置",
+    "mock_server_name": "Mock Server 名稱",
+    "copy_url": "複製 URL",
+    "copy_url_tooltip": "複製 Mock Server URL",
+    "view_collection_docs": "檢視集合檔案",
+    "inactive_mock_collection_deleted": "由於關聯的集合已被刪除，無法訪問此檔案。",
+    "inactive_mock_collection_not_accessible": "由於關聯的集合不可訪問，此檔案無法訪問。",
+    "offline_error": "恢復聯網後即可執行此操作。",
+    "edit_configuration": "編輯配置",
     "manage_roles": "管理角色",
-    "view_more_actions": "查看更多操作",
-    "move": "移动",
-    "mock_server_details": "Mock Server 详情",
-    "delete": "删除",
-    "not_signed_in_error": "您需要一个账户才能继续探索 Postman。",
-    "permission_error": "您没有权限执行此操作。",
-    "inactive_mock": "无法对已停用的 Mock Server 执行此操作。",
-    "no_team": "您需要登录团队才能执行此操作",
-    "mock_url_copied": "Mock URL 已复制"
+    "view_more_actions": "檢視更多操作",
+    "move": "移動",
+    "mock_server_details": "Mock Server 詳情",
+    "delete": "刪除",
+    "not_signed_in_error": "您需要一個賬戶才能繼續探索 Postman。",
+    "permission_error": "您沒有許可權執行此操作。",
+    "inactive_mock": "無法對已停用的 Mock Server 執行此操作。",
+    "no_team": "您需要登入團隊才能執行此操作",
+    "mock_url_copied": "Mock URL 已複製"
   },
   "mock_tab_loading_error": {
-    "refresh": "刷新",
+    "refresh": "重新整理",
     "deleted": {
       "title": "找不到{userFriendlyEntityName}",
-      "body": "此 Mock Server 已被删除。"
+      "body": "此 Mock Server 已被刪除。"
     },
     "moved": {
       "title": "找不到{userFriendlyEntityName}",
-      "body": "此 Mock Server 已被移动到其他工作区。"
+      "body": "此 Mock Server 已被移動到其他工作區。"
     },
     "error": {
-      "title": "无法加载您的{userFriendlyEntityName}",
-      "body": "线路出了点小问题，请刷新或稍后重试。"
+      "title": "無法載入您的{userFriendlyEntityName}",
+      "body": "線路出了點小問題，請重新整理或稍後重試。"
     },
     "not_found": {
-      "title": "找不到该{userFriendlyEntityName}",
-      "body": "该内容可能已被删除或移动到其他工作区。"
+      "title": "找不到該{userFriendlyEntityName}",
+      "body": "該內容可能已被刪除或移動到其他工作區。"
     },
     "edit_mock_access_denied": {
-      "title": "无法编辑{userFriendlyEntityName}",
-      "body": "由于您是工作区查看者，无权执行此操作"
+      "title": "無法編輯{userFriendlyEntityName}",
+      "body": "由於您是工作區檢視者，無權執行此操作"
     },
     "create_mock_access_denied": {
-      "title": "无法创建{userFriendlyEntityName}",
-      "body": "由于您是工作区查看者，无权执行此操作"
+      "title": "無法建立{userFriendlyEntityName}",
+      "body": "由於您是工作區檢視者，無權執行此操作"
     },
     "unable_to_edit_inactive_mock": {
-      "title": "无法编辑{userFriendlyEntityName}",
-      "body": "该 Mock Server 已停用，无法编辑。"
+      "title": "無法編輯{userFriendlyEntityName}",
+      "body": "該 Mock Server 已停用，無法編輯。"
     }
   },
   "mock_info_context_view": {
     "id": "ID",
-    "created_by": "创建者",
-    "created_on": "创建时间",
+    "created_by": "建立者",
+    "created_on": "建立時間",
     "mock_server_url": "Mock Server URL",
     "collection": "集合",
-    "collection_deleted": "关联的集合已被删除",
-    "label_text": "关联的集合不可访问",
-    "info_text": "该集合位于您无权访问的工作区中。",
-    "environment": "环境",
-    "no_environment": "无环境",
+    "collection_deleted": "關聯的集合已被刪除",
+    "label_text": "關聯的集合不可訪問",
+    "info_text": "該集合位於您無權訪問的工作區中。",
+    "environment": "環境",
+    "no_environment": "無環境",
     "mock_usage": "Mock 用量",
-    "copied": "已复制",
-    "copy_mock_id": "复制 Mock ID",
-    "copy_mock_url": "复制 Mock URL",
-    "environment_deleted": "关联的环境已被删除",
-    "environment_inaccessible": "关联的环境不可访问",
-    "environment_info_text": "该环境位于您无权访问的工作区中。",
-    "something_went_wrong": "出错了",
-    "please_try_again": "发生意外错误，请重试。",
-    "try_again": "重试",
-    "private_profile": "该用户资料为私密状态。",
-    "last_updated_at": "最后更新时间",
+    "copied": "已複製",
+    "copy_mock_id": "複製 Mock ID",
+    "copy_mock_url": "複製 Mock URL",
+    "environment_deleted": "關聯的環境已被刪除",
+    "environment_inaccessible": "關聯的環境不可訪問",
+    "environment_info_text": "該環境位於您無權訪問的工作區中。",
+    "something_went_wrong": "出錯了",
+    "please_try_again": "發生意外錯誤，請重試。",
+    "try_again": "重試",
+    "private_profile": "該使用者資料為私密狀態。",
+    "last_updated_at": "最後更新時間",
     "code_mock": "Mock",
-    "linked_simulation": "模拟",
-    "no_linked_simulation": "没有 Simulation 使用此 Mock",
+    "linked_simulation": "模擬",
+    "no_linked_simulation": "沒有 Simulation 使用此 Mock",
     "new": "新建",
-    "new_simulation_tooltip": "创建 Simulation",
-    "simulation_url": "模拟 URL",
-    "copy_simulation_id": "复制 Simulation ID",
-    "copy_simulation_url": "复制 Simulation URL"
+    "new_simulation_tooltip": "建立 Simulation",
+    "simulation_url": "模擬 URL",
+    "copy_simulation_id": "複製 Simulation ID",
+    "copy_simulation_url": "複製 Simulation URL"
   },
   "mock_embedded_report": {
     "mock_usage": "Mock 用量",
@@ -178,10 +178,10 @@
     "hits": "次"
   },
   "mock_details_meta_info": {
-    "mock_server_type": "Mock Server 类型",
+    "mock_server_type": "Mock Server 型別",
     "private": "私有",
-    "public": "公开",
+    "public": "公開",
     "collection": "集合",
-    "environment": "环境"
+    "environment": "環境"
   }
 }

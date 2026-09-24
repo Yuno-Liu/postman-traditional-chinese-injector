@@ -1,26 +1,26 @@
 {
-  "text_area_info_text": "简要说明，帮助工作区管理员批准您的请求……",
-  "add_note_text": "添加备注",
-  "switch_accounts_cta": "切换账户",
-  "go_to_workspace_cta": "前往工作区",
-  "creating_request_heading": "您似乎没有访问权限",
-  "creating_request_subheading": "向工作区管理员发送请求以获取此工作区的访问权限。",
-  "submit_cta": "请求访问权限",
-  "pending_request_heading": "您似乎仍然没有访问权限",
-  "pending_request_subheading": "您访问此工作区的请求正在等待处理。",
-  "current_sign_in_account_text": "您当前登录的账户是",
+  "text_area_info_text": "簡要說明，幫助工作區管理員批准您的請求……",
+  "add_note_text": "新增備註",
+  "switch_accounts_cta": "切換賬戶",
+  "go_to_workspace_cta": "前往工作區",
+  "creating_request_heading": "您似乎沒有訪問許可權",
+  "creating_request_subheading": "向工作區管理員傳送請求以獲取此工作區的訪問許可權。",
+  "submit_cta": "請求訪問許可權",
+  "pending_request_heading": "您似乎仍然沒有訪問許可權",
+  "pending_request_subheading": "您訪問此工作區的請求正在等待處理。",
+  "current_sign_in_account_text": "您當前登入的賬戶是",
   "toast_content": {
     "workspace_rfa_sent": {
-      "title": "请求已发送",
-      "description": "工作区管理员回复后，您将收到通知。"
+      "title": "請求已傳送",
+      "description": "工作區管理員回覆後，您將收到通知。"
     },
     "email_not_verified": {
-      "title": "请先验证您的账户",
-      "description": "验证完成后，您即可申请加入团队。请查收收件箱中的最新验证邮件。"
+      "title": "請先驗證您的賬戶",
+      "description": "驗證完成後，您即可申請加入團隊。請查收收件箱中的最新驗證郵件。"
     },
     "default_error": {
-      "title": "请求发送失败",
-      "description": "只是出了点小故障，请重试。"
+      "title": "請求傳送失敗",
+      "description": "只是出了點小故障，請重試。"
     }
   }
 }

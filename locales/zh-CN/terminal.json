@@ -1,55 +1,55 @@
 {
-  "init_failed": "终端初始化失败。请重新加载应用程序。",
-  "create_failed": "创建终端失败。",
-  "create_failed_retry": "重试",
+  "init_failed": "終端初始化失敗。請重新載入應用程式。",
+  "create_failed": "建立終端失敗。",
+  "create_failed_retry": "重試",
   "agent_required_title": "Desktop Agent 不可用",
-  "agent_required_description": "终端通过 Postman Desktop Agent 在您的计算机上运行。请确保已安装并启动 Desktop Agent，然后连接以在 Postman Web 中使用终端。",
+  "agent_required_description": "終端通過 Postman Desktop Agent 在您的計算機上執行。請確保已安裝並啟動 Desktop Agent，然後連線以在 Postman Web 中使用終端。",
   "agent_required_cta": "使用 Postman Desktop Agent",
-  "agent_required_download": "下载 Desktop Agent",
-  "agent_disconnected_title": "Desktop Agent 已断开连接",
-  "agent_disconnected_description": "由于 Postman Desktop Agent 已断开连接，终端已暂停。请确保 Desktop Agent 正在运行，然后重新连接。",
-  "agent_disconnected_cta": "重新连接 Desktop Agent",
-  "reconnected_session_message": "Desktop Agent 已重新连接。此前的会话已结束，因此将在此处启动新的终端会话。",
-  "reconnect_failed_message": "Desktop Agent 已重新连接，但无法恢复此终端会话。",
+  "agent_required_download": "下載 Desktop Agent",
+  "agent_disconnected_title": "Desktop Agent 已斷開連線",
+  "agent_disconnected_description": "由於 Postman Desktop Agent 已斷開連線，終端已暫停。請確保 Desktop Agent 正在執行，然後重新連線。",
+  "agent_disconnected_cta": "重新連線 Desktop Agent",
+  "reconnected_session_message": "Desktop Agent 已重新連線。此前的會話已結束，因此將在此處啟動新的終端會話。",
+  "reconnect_failed_message": "Desktop Agent 已重新連線，但無法恢復此終端會話。",
   "search": {
-    "placeholder": "查找",
-    "aria_label": "在终端中查找",
-    "match_case": "区分大小写",
-    "match_whole_word": "匹配整个单词",
-    "use_regex": "使用正则表达式",
-    "previous_match": "上一个匹配项",
-    "next_match": "下一个匹配项",
-    "close": "关闭搜索",
+    "placeholder": "查詢",
+    "aria_label": "在終端中查詢",
+    "match_case": "區分大小寫",
+    "match_whole_word": "匹配整個單詞",
+    "use_regex": "使用正規表示式",
+    "previous_match": "上一個匹配項",
+    "next_match": "下一個匹配項",
+    "close": "關閉搜尋",
     "match_count": "{current}/{total}",
-    "no_results": "没有结果"
+    "no_results": "沒有結果"
   },
   "context_menu": {
-    "copy": "复制",
-    "paste": "粘贴",
-    "select_all": "选择全部",
-    "find": "查找",
-    "clear": "清除终端",
-    "new_terminal": "新建终端",
-    "rename_terminal": "重命名终端"
+    "copy": "複製",
+    "paste": "貼上",
+    "select_all": "選擇全部",
+    "find": "查詢",
+    "clear": "清除終端",
+    "new_terminal": "新建終端",
+    "rename_terminal": "重新命名終端"
   },
   "actions": {
     "clear": "清除",
-    "clear_terminal": "清除终端"
+    "clear_terminal": "清除終端"
   },
   "paste_guard": {
-    "title": "终端粘贴",
-    "message": "您确定要将 {lineCount} 行粘贴到终端中吗？",
-    "paste": "粘贴",
+    "title": "終端貼上",
+    "message": "您確定要將 {lineCount} 行貼上到終端中嗎？",
+    "paste": "貼上",
     "cancel": "取消"
   },
   "tabs": {
-    "close_terminal": "关闭终端",
-    "close_terminal_aria": "关闭终端{name}",
-    "terminal_aria": "终端：{name}",
-    "rename_input_aria": "重命名终端 {name}"
+    "close_terminal": "關閉終端",
+    "close_terminal_aria": "關閉終端{name}",
+    "terminal_aria": "終端：{name}",
+    "rename_input_aria": "重新命名終端 {name}"
   },
   "run_in_terminal": {
-    "start_desktop_agent_tooltip": "启动 Postman Desktop Agent 以在终端中运行命令",
-    "update_desktop_agent_tooltip": "更新 Postman Desktop Agent 以在终端中运行命令"
+    "start_desktop_agent_tooltip": "啟動 Postman Desktop Agent 以在終端中執行命令",
+    "update_desktop_agent_tooltip": "更新 Postman Desktop Agent 以在終端中執行命令"
   }
 }

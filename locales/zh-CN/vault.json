@@ -2,123 +2,123 @@
   "title": "Postman Vault",
   "passport_secrets": {
     "title": "Passport Secrets",
-    "description": "您在网络中被授予访问权限的 API 凭据。每一项都是<0>密钥引用</0>——一个在运行时通过 Passport 代理解析的指针，因此真实值永远不会被存储或显示。您可以在请求、环境中使用它，或将其复制到 Postman 之外使用。",
+    "description": "您在網路中被授予訪問許可權的 API 憑據。每一項都是<0>金鑰引用</0>——一個在執行時通過 Passport 代理解析的指標，因此真實值永遠不會被儲存或顯示。您可以在請求、環境中使用它，或將其複製到 Postman 之外使用。",
     "columns": {
-      "name": "名称",
+      "name": "名稱",
       "reference": "引用",
-      "namespace": "命名空间",
-      "environment": "环境",
-      "workspace": "工作区",
-      "scope": "范围"
+      "namespace": "名稱空間",
+      "environment": "環境",
+      "workspace": "工作區",
+      "scope": "範圍"
     },
     "copy": {
-      "copy": "复制",
-      "copied": "已复制"
+      "copy": "複製",
+      "copied": "已複製"
     },
-    "search_placeholder": "搜索 Passport Secrets",
+    "search_placeholder": "搜尋 Passport Secrets",
     "empty": {
       "error": {
-        "title": "无法加载密钥",
-        "description": "加载密钥时出错，请重试。",
-        "retry": "重试"
+        "title": "無法載入金鑰",
+        "description": "載入金鑰時出錯，請重試。",
+        "retry": "重試"
       },
       "no_records": {
-        "title": "暂无密钥",
-        "description": "您在 Passport 上被授予访问权限的密钥将显示在此处。",
-        "refresh": "刷新"
+        "title": "暫無金鑰",
+        "description": "您在 Passport 上被授予訪問許可權的金鑰將顯示在此處。",
+        "refresh": "重新整理"
       },
       "no_matches": {
-        "title": "未找到匹配的密钥",
-        "description": "请尝试调整搜索条件或筛选器。",
-        "clear": "清除搜索和筛选器"
+        "title": "未找到匹配的金鑰",
+        "description": "請嘗試調整搜尋條件或篩選器。",
+        "clear": "清除搜尋和篩選器"
       }
     }
   },
   "personal_vault": {
-    "breadcrumb_root": "个人 Vault",
-    "save_button": "保存",
-    "save_button_saving": "保存中"
+    "breadcrumb_root": "個人 Vault",
+    "save_button": "儲存",
+    "save_button_saving": "儲存中"
   },
   "shared_vault": {
-    "breadcrumb_root": "共享保险库",
+    "breadcrumb_root": "共享保險庫",
     "workbench": {
-      "description": "在您的工作区中存储和共享机密。共享保险库中的机密特定于工作区，工作区成员可以访问，并可跨设备使用。",
-      "team_description": "在团队中存储和共享密钥。每个密钥的访问权限由其作用域控制。",
-      "learn_more": "了解更多",
+      "description": "在您的工作區中儲存和共享機密。共享保險庫中的機密特定於工作區，工作區成員可以訪問，並可跨裝置使用。",
+      "team_description": "在團隊中儲存和共享金鑰。每個金鑰的訪問許可權由其作用域控制。",
+      "learn_more": "瞭解更多",
       "save": {
-        "button": "保存",
-        "button_saving": "保存中",
-        "error": "无法保存共享保险库",
-        "tooltip_unsaved": "将更改保存到共享保险库",
-        "tooltip_saved": "没有未保存的更改"
+        "button": "儲存",
+        "button_saving": "儲存中",
+        "error": "無法儲存共享保險庫",
+        "tooltip_unsaved": "將更改儲存到共享保險庫",
+        "tooltip_saved": "沒有未儲存的更改"
       },
       "load_error": {
-        "title": "无法加载共享保险库",
-        "message": "不是你，是我们。我们遇到了障碍。请再试一次。"
+        "title": "無法載入共享保險庫",
+        "message": "不是你，是我們。我們遇到了障礙。請再試一次。"
       },
       "disabled_by_admin": {
-        "title": "共享保险库当前已禁用",
-        "description": "共享保险库已被团队管理员禁用。<br/>在启用它之前，您将无法访问其内容。",
-        "learn_more": "了解更多"
+        "title": "共享保險庫當前已停用",
+        "description": "共享保險庫已被團隊管理員停用。<br/>在啟用它之前，您將無法訪問其內容。",
+        "learn_more": "瞭解更多"
       },
       "forbidden": {
-        "title": "拒绝访问",
-        "description": "您没有查看此共享保险库所需的权限。<br/>如果您认为这是一个错误，请联系您的工作区所有者以请求访问权限。"
+        "title": "拒絕訪問",
+        "description": "您沒有檢視此共享保險庫所需的許可權。<br/>如果您認為這是一個錯誤，請聯絡您的工作區所有者以請求訪問許可權。"
       }
     },
     "sidebar": {
-      "tab_label": "共享保险库",
-      "search_placeholder": "搜索共享保险库",
+      "tab_label": "共享保險庫",
+      "search_placeholder": "搜尋共享保險庫",
       "create": {
-        "option_label": "共享保险库",
-        "heading": "创建共享保险库",
-        "tooltip": "创建共享保险库"
+        "option_label": "共享保險庫",
+        "heading": "建立共享保險庫",
+        "tooltip": "建立共享保險庫"
       },
       "empty_state": {
-        "title": "这里有点安静...",
-        "description": "与您的团队安全地共享秘密"
+        "title": "這裡有點安靜...",
+        "description": "與您的團隊安全地共享秘密"
       },
       "error_state": {
-        "heading": "无法加载共享保险库",
-        "description": "不是你，是我们。我们遇到了困难",
-        "retry": "再试一次"
+        "heading": "無法載入共享保險庫",
+        "description": "不是你，是我們。我們遇到了困難",
+        "retry": "再試一次"
       }
     },
     "secrets": {
-      "key_column": "键",
+      "key_column": "鍵",
       "value_column": "值",
       "scope_column": "作用域",
-      "domains_column": "允许的域名",
+      "domains_column": "允許的域名",
       "share": "共享",
       "manage_sharing": "管理共享",
-      "view_only": "仅查看"
+      "view_only": "僅檢視"
     },
     "sharing_modal": {
       "share_title": "共享",
       "manage_sharing_title": "管理共享",
-      "access_heading": "谁可以访问此密钥",
-      "only_this_workspace_title": "仅当前工作区",
-      "only_this_workspace_description": "仅 {workspaceName} 的成员可见。新建密钥默认使用此选项。",
-      "specific_workspaces_title": "指定工作区",
-      "specific_workspaces_description": "选择本团队中还有哪些工作区可以使用此密钥。",
-      "team_wide_title": "全部工作区（团队范围）",
-      "team_wide_description": "本团队现有及今后新建的所有工作区都可以使用此密钥。",
-      "search_workspaces_placeholder": "选择工作区",
-      "workspaces_label": "工作区",
-      "workspaces_helper_text": "选择本团队中哪些工作区可以使用此密钥。",
-      "workspaces_inline_label_plural": "{count} 个工作区",
-      "no_workspaces_found": "未找到工作区",
-      "loading_workspaces": "正在加载工作区...",
-      "access_info": "已共享工作区的成员可以查看和使用此密钥的值，但由于该密钥属于当前工作区，只有 {workspaceName} 能更改或撤销其共享设置。",
+      "access_heading": "誰可以訪問此金鑰",
+      "only_this_workspace_title": "僅當前工作區",
+      "only_this_workspace_description": "僅 {workspaceName} 的成員可見。新建金鑰預設使用此選項。",
+      "specific_workspaces_title": "指定工作區",
+      "specific_workspaces_description": "選擇本團隊中還有哪些工作區可以使用此金鑰。",
+      "team_wide_title": "全部工作區（團隊範圍）",
+      "team_wide_description": "本團隊現有及今後新建的所有工作區都可以使用此金鑰。",
+      "search_workspaces_placeholder": "選擇工作區",
+      "workspaces_label": "工作區",
+      "workspaces_helper_text": "選擇本團隊中哪些工作區可以使用此金鑰。",
+      "workspaces_inline_label_plural": "{count} 個工作區",
+      "no_workspaces_found": "未找到工作區",
+      "loading_workspaces": "正在載入工作區...",
+      "access_info": "已共享工作區的成員可以檢視和使用此金鑰的值，但由於該金鑰屬於當前工作區，只有 {workspaceName} 能更改或撤銷其共享設定。",
       "cancel": "取消",
-      "save_changes": "保存更改",
-      "access_info_team_scoped": "团队中每个工作区的成员都可以在请求中查看和使用共享密钥引用。",
-      "access_info_workspace_owned": "仅此工作区的成员可以在请求中查看和使用共享密钥引用。",
-      "access_info_workspace_shared": "所选工作区的成员可以在请求中查看和使用共享密钥引用。"
+      "save_changes": "儲存更改",
+      "access_info_team_scoped": "團隊中每個工作區的成員都可以在請求中檢視和使用共享金鑰引用。",
+      "access_info_workspace_owned": "僅此工作區的成員可以在請求中檢視和使用共享金鑰引用。",
+      "access_info_workspace_shared": "所選工作區的成員可以在請求中檢視和使用共享金鑰引用。"
     },
     "external": {
-      "edit": "编辑外部密钥",
-      "relink": "重新关联外部密钥"
+      "edit": "編輯外部金鑰",
+      "relink": "重新關聯外部金鑰"
     }
   },
   "external_providers": {
@@ -126,41 +126,41 @@
       "label": "HashiCorp Vault",
       "fields": {
         "url": {
-          "label": "服务器 URL",
-          "help": "Vault 服务器的基础 URL，非标准端口需一并填写（例如 https://vault.example.com:8200），且必须支持 HTTPS 访问。"
+          "label": "伺服器 URL",
+          "help": "Vault 伺服器的基礎 URL，非標準埠需一併填寫（例如 https://vault.example.com:8200），且必須支援 HTTPS 訪問。"
         },
         "namespace": {
-          "label": "命名空间",
-          "help": "Vault Enterprise / HCP 的 Namespace。使用开源版 Vault 时留空。"
+          "label": "名稱空間",
+          "help": "Vault Enterprise / HCP 的 Namespace。使用開源版 Vault 時留空。"
         }
       },
       "auth": {
         "oidc": {
-          "label": "OIDC（按用户 SSO）",
+          "label": "OIDC（按使用者 SSO）",
           "issuer": {
             "label": "OIDC Issuer URL",
-            "help": "你的身份提供商的 Issuer URL。Postman 会通过 /.well-known/openid-configuration 自动发现其端点。"
+            "help": "你的身份提供商的 Issuer URL。Postman 會通過 /.well-known/openid-configuration 自動發現其端點。"
           },
           "clientId": {
-            "label": "OIDC 客户端 ID",
-            "help": "在身份提供商处为 Postman 注册的公开客户端 ID。"
+            "label": "OIDC 客戶端 ID",
+            "help": "在身份提供商處為 Postman 註冊的公開客戶端 ID。"
           },
           "mount": {
-            "label": "Vault 认证挂载路径",
-            "help": "Vault 启用 JWT/OIDC 认证方式的路径（默认：jwt）。"
+            "label": "Vault 認證掛載路徑",
+            "help": "Vault 啟用 JWT/OIDC 認證方式的路徑（預設：jwt）。"
           },
           "role": {
             "label": "Vault 角色"
           },
           "scopes": {
             "label": "附加 Scope",
-            "help": "可选的额外 OIDC Scope，以空格分隔。'openid' 始终会被请求。"
+            "help": "可選的額外 OIDC Scope，以空格分隔。'openid' 始終會被請求。"
           }
         },
         "approle": {
-          "label": "AppRole（机器）",
+          "label": "AppRole（機器）",
           "mount": {
-            "label": "Vault 认证挂载路径"
+            "label": "Vault 認證掛載路徑"
           },
           "roleId": {
             "label": "Role ID"
@@ -172,7 +172,7 @@
       },
       "reference": {
         "mountPath": {
-          "label": "Secrets Engine 挂载路径"
+          "label": "Secrets Engine 掛載路徑"
         },
         "kvVersion": {
           "label": "KV Engine 版本",
@@ -180,15 +180,15 @@
           "v1": "KV 版本 1"
         },
         "path": {
-          "label": "密钥路径"
+          "label": "金鑰路徑"
         },
         "selector": {
-          "label": "字段选择器",
-          "help": "指向密钥中某个字段的 JSON Pointer（例如 /password）。当密钥包含多个字段时必填。"
+          "label": "欄位選擇器",
+          "help": "指向金鑰中某個欄位的 JSON Pointer（例如 /password）。當金鑰包含多個欄位時必填。"
         },
         "secretVersion": {
-          "label": "密钥版本",
-          "help": "可选，指定要读取的版本（仅 KV v2 支持）。默认读取最新版本。"
+          "label": "金鑰版本",
+          "help": "可選，指定要讀取的版本（僅 KV v2 支援）。預設讀取最新版本。"
         }
       }
     },
@@ -196,110 +196,110 @@
       "label": "Azure Key Vault",
       "fields": {
         "tenantId": {
-          "label": "目录（租户）ID",
-          "help": "拥有你的 Key Vault 的 Microsoft Entra 目录（租户）。通过此连接关联的所有密钥都会在该目录中进行身份验证。"
+          "label": "目錄（租戶）ID",
+          "help": "擁有你的 Key Vault 的 Microsoft Entra 目錄（租戶）。通過此連線關聯的所有金鑰都會在該目錄中進行身份驗證。"
         },
         "cloud": {
-          "label": "Azure 云环境"
+          "label": "Azure 雲環境"
         }
       },
       "auth": {
         "service_principal": {
-          "label": "服务主体（客户端密钥）",
+          "label": "服務主體（客戶端金鑰）",
           "clientId": {
-            "label": "应用程序（客户端）ID"
+            "label": "應用程式（客戶端）ID"
           },
           "clientSecret": {
-            "label": "客户端密钥"
+            "label": "客戶端金鑰"
           }
         },
         "entra_user": {
-          "label": "Microsoft Entra 用户（在此设备上登录）",
+          "label": "Microsoft Entra 使用者（在此裝置上登入）",
           "clientId": {
-            "label": "自定义应用（客户端）ID",
-            "help": "使用你自己的 Entra 应用。需要配置桌面端重定向 URI 并获得管理员授权。该应用必须注册在此连接所属的目录（租户）中。"
+            "label": "自定義應用（客戶端）ID",
+            "help": "使用你自己的 Entra 應用。需要配置桌面端重定向 URI 並獲得管理員授權。該應用必須註冊在此連線所屬的目錄（租戶）中。"
           }
         }
       },
       "reference": {
         "secretIdentifier": {
-          "label": "密钥标识符",
-          "help": "从 Azure 门户中该密钥处复制 \"Secret Identifier\"。省略末尾的版本号即可始终读取最新值。"
+          "label": "金鑰識別符號",
+          "help": "從 Azure 門戶中該金鑰處複製 \"Secret Identifier\"。省略末尾的版本號即可始終讀取最新值。"
         }
       }
     },
     "oidc": {
       "launch": {
-        "redirecting": "正在跳转到你的身份提供商…",
-        "error_title": "无法启动登录",
-        "error_missing_connection": "此登录链接缺少连接标识。请关闭此窗口，回到 Postman 重新连接。",
-        "error_generic": "无法启动登录。请确认你已登录 Postman 后重试。"
+        "redirecting": "正在跳轉到你的身份提供商…",
+        "error_title": "無法啟動登入",
+        "error_missing_connection": "此登入連結缺少連線標識。請關閉此視窗，回到 Postman 重新連線。",
+        "error_generic": "無法啟動登入。請確認你已登入 Postman 後重試。"
       },
       "callback": {
-        "completing": "正在完成登录…",
-        "success_title": "连接成功",
-        "success_body": "你可以关闭此窗口并返回 Postman。",
-        "error_title": "登录失败",
-        "error_missing_params": "此回调缺少必需的参数。请关闭此窗口，回到 Postman 重新连接。",
-        "error_generic": "登录未能完成。请关闭此窗口，回到 Postman 重试。"
+        "completing": "正在完成登入…",
+        "success_title": "連線成功",
+        "success_body": "你可以關閉此視窗並返回 Postman。",
+        "error_title": "登入失敗",
+        "error_missing_params": "此回撥缺少必需的引數。請關閉此視窗，回到 Postman 重新連線。",
+        "error_generic": "登入未能完成。請關閉此視窗，回到 Postman 重試。"
       }
     }
   },
   "providers": {
-    "onePassword": "1Password 账户",
+    "onePassword": "1Password 賬戶",
     "secretsManager": "AWS Secrets Manager",
     "azure": "Azure Key Vault",
     "hashicorp": "HashiCorp Vault"
   },
   "consent_modal": {
-    "title": "是否为此次执行授予保险库访问权限？",
-    "description": "此请求中的脚本可以直接访问保险库机密，也可以通过运行来自工作区的其他请求来访问保险库机密。仅当您信任此请求的来源及其触发的任何请求时才继续。",
-    "trust_level": "授予保险库访问权限：",
-    "trust_collection": "仅此集合",
-    "trust_workspace": "整个工作区",
-    "deny_cta": "拒绝访问",
-    "allow_cta": "授予访问权限"
+    "title": "是否為此次執行授予保險庫訪問許可權？",
+    "description": "此請求中的腳本可以直接訪問保險庫機密，也可以通過執行來自工作區的其他請求來訪問保險庫機密。僅當您信任此請求的來源及其觸發的任何請求時才繼續。",
+    "trust_level": "授予保險庫訪問許可權：",
+    "trust_collection": "僅此集合",
+    "trust_workspace": "整個工作區",
+    "deny_cta": "拒絕訪問",
+    "allow_cta": "授予訪問許可權"
   },
-  "learn_more": "了解更多",
+  "learn_more": "瞭解更多",
   "kv_container": {
-    "help_text": "将您的敏感数据存储在本地。本地保险库机密跨工作区工作，仅供您使用，保留在本地，并且不同步。<4></4>",
-    "learn_more": "了解更多"
+    "help_text": "將您的敏感資料儲存在本地。本地保險庫機密跨工作區工作，僅供您使用，保留在本地，並且不同步。<4></4>",
+    "learn_more": "瞭解更多"
   },
   "kv_container_cloud": {
-    "help_text": "使用端到端加密将您的敏感数据安全地同步到云上的个人保险库，并可跨设备和工作区访问。",
-    "learn_more": "了解更多"
+    "help_text": "使用端到端加密將您的敏感資料安全地同步到雲上的個人保險庫，並可跨裝置和工作區訪問。",
+    "learn_more": "瞭解更多"
   },
   "kv_editor": {
-    "guided_auth_heading": "使用引导式身份验证创建",
-    "add_new_secret": "添加新的密钥",
+    "guided_auth_heading": "使用引導式身份驗證建立",
+    "add_new_secret": "新增新的金鑰",
     "session_secrets": {
-      "heading": "会话变量",
-      "help_text": "来自环境、集合或全局变量的非共享密钥变量存储在本地保险库中并在此处显示。",
-      "open_environment": "打开环境",
-      "open_collection": "打开集合",
-      "open_globals": "打开全局变量",
-      "globals_label": "全局变量"
+      "heading": "會話變數",
+      "help_text": "來自環境、集合或全域性變數的非共享金鑰變數儲存在本地保險庫中並在此處顯示。",
+      "open_environment": "開啟環境",
+      "open_collection": "開啟集合",
+      "open_globals": "開啟全域性變數",
+      "globals_label": "全域性變數"
     },
-    "delete_secret": "删除密钥",
-    "hide_secret": "隐藏密钥",
-    "show_secret": "显示密钥",
+    "delete_secret": "刪除金鑰",
+    "hide_secret": "隱藏金鑰",
+    "show_secret": "顯示金鑰",
     "value_placeholder": "值"
   },
   "azure": {
     "label": {
-      "text": "密钥标识符",
-      "info": "显示在 Vault 的密钥详情页面中"
+      "text": "金鑰識別符號",
+      "info": "顯示在 Vault 的金鑰詳情頁面中"
     },
-    "invalid_identifier": "密钥标识符无效",
-    "note": "注意：如果不包含版本 ID，则在解析此密钥时将获取最新版本。{0}",
+    "invalid_identifier": "金鑰識別符號無效",
+    "note": "注意：如果不包含版本 ID，則在解析此金鑰時將獲取最新版本。{0}",
     "use_button": "使用"
   },
   "hashicorp": {
     "secret": {
-      "engine": "密钥引擎",
-      "path": "密钥路径",
-      "key": "密钥键",
-      "engine_version": "密钥引擎版本",
+      "engine": "金鑰引擎",
+      "path": "金鑰路徑",
+      "key": "金鑰鍵",
+      "engine_version": "金鑰引擎版本",
       "radio_button": {
         "engine_version": {
           "version1": "版本 1",
@@ -307,41 +307,41 @@
         }
       }
     },
-    "path_error": "路径不能以 / 结尾",
+    "path_error": "路徑不能以 / 結尾",
     "use_button": "使用"
   },
   "onepassword": {
     "auth_modal": {
       "get_help": {
-        "title": "寻求 Postman 支持",
-        "documentation": "查看文档"
+        "title": "尋求 Postman 支援",
+        "documentation": "文件"
       },
-      "heading": "验证 {provider_name}",
+      "heading": "驗證 {provider_name}",
       "service_token": {
-        "title": "无效的服务帐户令牌",
-        "invalid_error": "请输入有效的服务帐户令牌",
-        "ops_start": "服务帐户令牌应以 ops_ 开头",
-        "invalid_response": "尝试验证令牌时收到无效响应"
+        "title": "無效的服務帳戶令牌",
+        "invalid_error": "請輸入有效的服務帳戶令牌",
+        "ops_start": "服務帳戶令牌應以 ops_ 開頭",
+        "invalid_response": "嘗試驗證令牌時收到無效響應"
       },
-      "auth_failed": "认证失败",
-      "auth_retry": "请检查您的凭据并重试。",
+      "auth_failed": "認證失敗",
+      "auth_retry": "請檢查您的憑據並重試。",
       "text_input": {
-        "label": "服务帐户令牌",
-        "helper_text": "此令牌允许服务帐户使用 1Password CLI 进行身份验证。"
+        "label": "服務帳戶令牌",
+        "helper_text": "此令牌允許服務帳戶使用 1Password CLI 進行身份驗證。"
       },
       "button": {
-        "text": "创建服务帐户令牌",
+        "text": "建立服務帳戶令牌",
         "cancel": "取消",
-        "authenticate": "认证"
+        "authenticate": "認證"
       }
     },
     "secret_editor": {
       "label": {
-        "text": "密钥引用 URI",
-        "info_text": "密钥引用 URI 格式为：{op_format}",
-        "helper_text": "这是保险库名称、项目、部分和字段的组合，其中密钥存储在您的 1Password 帐户中。"
+        "text": "金鑰引用 URI",
+        "info_text": "金鑰引用 URI 格式為：{op_format}",
+        "helper_text": "這是保險庫名稱、專案、部分和欄位的組合，其中金鑰儲存在您的 1Password 帳戶中。"
       },
-      "validation_message": "密钥引用 URI 无效",
+      "validation_message": "金鑰引用 URI 無效",
       "button": {
         "use": "使用"
       }
@@ -349,43 +349,43 @@
   },
   "onboarding": {
     "unlock_vault": {
-      "open_vault_button": "打开保险库",
-      "heading": "输入您的保险库密钥",
-      "seconday_text": "通过输入该设备的保险库密钥来解锁保险库并访问其秘密。",
+      "open_vault_button": "開啟保險庫",
+      "heading": "輸入您的保險庫金鑰",
+      "seconday_text": "通過輸入該裝置的保險庫金鑰來解鎖保險庫並訪問其秘密。",
       "banner": {
-        "text": "切换到桌面代理，我们每次都会自动从您的本机密码管理器获取保险库密钥。"
+        "text": "切換到桌面代理，我們每次都會自動從您的本機密碼管理器獲取保險庫金鑰。"
       },
       "text_input": {
-        "placeholder": "输入保险库键"
+        "placeholder": "輸入保險庫鍵"
       },
       "get_help": {
         "support": {
-          "title": "寻求 Postman 支持"
+          "title": "尋求 Postman 支援"
         },
         "documentation": {
-          "title": "查看文档"
+          "title": "檢視文件"
         }
       },
-      "vault_link_external_text": "已经在使用密钥管理器？使用 Postman 进行设置：",
+      "vault_link_external_text": "已經在使用金鑰管理器？使用 Postman 進行設定：",
       "primary_button": {
-        "text": "打开保险库"
+        "text": "開啟保險庫"
       },
       "keychain": {
         "button": {
-          "text": "使用系统密码管理器解锁"
+          "text": "使用系統密碼管理器解鎖"
         },
-        "absent": "系统密码管理器中未保存 Vault 密钥。请手动输入密钥以解锁 Vault。",
-        "error": "无法从系统密码管理器获取 Vault 密钥。请重试，或手动输入密钥。"
+        "absent": "系統密碼管理器中未儲存 Vault 金鑰。請手動輸入金鑰以解鎖 Vault。",
+        "error": "無法從系統密碼管理器獲取 Vault 金鑰。請重試，或手動輸入金鑰。"
       },
       "error": {
-        "invalid_key": "该 Vault 密钥无效。请检查密钥后重试。",
-        "keychain_key_invalid": "系统密码管理器中保存的 Vault 密钥无效。请手动输入密钥以解锁 Vault。",
-        "unknown": "无法解锁 Vault，请重试。"
+        "invalid_key": "該 Vault 金鑰無效。請檢查金鑰後重試。",
+        "keychain_key_invalid": "系統密碼管理器中儲存的 Vault 金鑰無效。請手動輸入金鑰以解鎖 Vault。",
+        "unknown": "無法解鎖 Vault，請重試。"
       },
       "reset_vault": {
-        "help_text": "找不到钥匙？",
-        "text": "重置保险库",
-        "warning_text": "这将从您的所有设备中永久删除所有现有的保管库机密。将使用新的保险库密钥创建一个全新的保险库。",
+        "help_text": "找不到鑰匙？",
+        "text": "重置保險庫",
+        "warning_text": "這將從您的所有裝置中永久刪除所有現有的保管庫機密。將使用新的保險庫金鑰建立一個全新的保險庫。",
         "button": {
           "cancel": "取消"
         }
@@ -393,740 +393,740 @@
     },
     "encryption_details": {
       "ftux_flow": {
-        "heading": "将机密本地存储在保险库中",
-        "description": "在请求、测试脚本、授权、环境等中跨工作区使用保险库机密，使用"
+        "heading": "將機密本地儲存在保險庫中",
+        "description": "在請求、測試腳本、授權、環境等中跨工作區使用保險庫機密，使用"
       },
-      "cta_text": "打开保险库",
-      "heading": "保存您的保险库密钥",
-      "text": "当您注销和登录时，您的帐户将需要这个唯一的密钥。丢失密钥将导致您丢失所有机密。注销后无法访问保险库机密。",
+      "cta_text": "開啟保險庫",
+      "heading": "儲存您的保險庫金鑰",
+      "text": "當您登出和登入時，您的帳戶將需要這個唯一的金鑰。丟失金鑰將導致您丟失所有機密。登出後無法訪問保險庫機密。",
       "checkbox": {
-        "label": "将此密钥保存到本机密码管理器",
-        "helperText": "这将使您每次登录时都能无缝访问保险库。"
+        "label": "將此金鑰儲存到本機密碼管理器",
+        "helperText": "這將使您每次登入時都能無縫訪問保險庫。"
       },
-      "agent_not_ready": "确保桌面代理正在运行以保存您的保险库密钥。",
-      "unsupported_agent": "切换到桌面代理以保存您的保险库密钥。"
+      "agent_not_ready": "確保桌面代理正在執行以儲存您的保險庫金鑰。",
+      "unsupported_agent": "切換到桌面代理以儲存您的保險庫金鑰。"
     },
     "onboarding": {
-      "text": "通过使用 <1></1><2>{secretLabel}</2> 调用它们，在请求、授权、环境等中使用这些保险库机密。保险库机密跨工作区工作，保留在本地且不同步。",
+      "text": "通過使用 <1></1><2>{secretLabel}</2> 呼叫它們，在請求、授權、環境等中使用這些保險庫機密。保險庫機密跨工作區工作，保留在本地且不同步。",
       "title": {
-        "created": "保险库创建",
-        "reset": "保险库重置",
-        "encrypted": "保险库加密"
+        "created": "保險庫建立",
+        "reset": "保險庫重置",
+        "encrypted": "保險庫加密"
       },
       "error": {
-        "message": "出了点问题。请再试一次。"
+        "message": "出了點問題。請再試一次。"
       },
       "loader": {
-        "text": "正在分配 Vault 密钥并创建本地加密 Vault…"
+        "text": "正在分配 Vault 金鑰並建立本地加密 Vault…"
       },
       "details": {
-        "title": "保险库已创建，并保存了您的第一个密钥"
+        "title": "保險庫已建立，並儲存了您的第一個金鑰"
       },
-      "heading": "将敏感数据本地存储在保险库中作为机密",
+      "heading": "將敏感資料本地儲存在保險庫中作為機密",
       "setup": {
-        "button": "设置保险库"
+        "button": "設定保險庫"
       }
     },
     "get_help": {
       "support": {
-        "title": "寻求 Postman 支持"
+        "title": "尋求 Postman 支援"
       },
       "documentation": {
-        "title": "查看文档"
+        "title": "檢視文件"
       }
     }
   },
   "migration": {
-    "heading": "新的保险库改进：加密你的秘密",
-    "text": "通过对本地存储上的机密进行加密来添加额外的安全层。放心，您的机密会很安全。",
+    "heading": "新的保險庫改進：加密你的秘密",
+    "text": "通過對本地儲存上的機密進行加密來新增額外的安全層。放心，您的機密會很安全。",
     "button": {
-      "text": "加密保险库"
+      "text": "加密保險庫"
     }
   },
   "reusable": {
     "link_vault": {
-      "text": "链接保险库"
+      "text": "連結保險庫"
     },
     "loader": {
-      "text": "快到了！我们正在加载您的保险库。"
+      "text": "快到了！我們正在載入您的保險庫。"
     },
     "user_key_container": {
       "tooltip": {
-        "copied": "已复制",
-        "copy_key": "复制保险库键",
-        "show_key": "显示保险库键",
-        "hide_key": "隐藏保险库键"
+        "copied": "已複製",
+        "copy_key": "複製保險庫鍵",
+        "show_key": "顯示保險庫鍵",
+        "hide_key": "隱藏保險庫鍵"
       },
       "button": {
-        "tooltip": "下载保险库密钥"
+        "tooltip": "下載保險庫金鑰"
       }
     },
     "vault_integration_title_button": {
-      "text": "设置外部保险库"
+      "text": "設定外部保險庫"
     },
     "vault_integration_use_existing_vault": {
-      "text": "从现有的保险库使用"
+      "text": "從現有的保險庫使用"
     },
     "auth_modal": {
       "get_help": {
-        "title": "寻求 Postman 支持"
+        "title": "尋求 Postman 支援"
       },
       "connecting": {
-        "content": "{provider} 设置应该在您的浏览器中打开。",
-        "paste_in": "并将其粘贴进去。",
+        "content": "{provider} 設定應該在您的瀏覽器中開啟。",
+        "paste_in": "並將其貼上進去。",
         "if_not": "如果不，"
       },
       "documentation": {
-        "title": "查看文档"
+        "title": "檢視文件"
       },
       "modal": {
-        "heading": "连接到 {provider}",
-        "text": "这可能需要长达 60 秒的时间。",
+        "heading": "連線到 {provider}",
+        "text": "這可能需要長達 60 秒的時間。",
         "cancel_button": "取消"
       },
       "error": {
-        "title": "认证失败",
-        "text": "保险库不支持",
-        "unexpected_error": "尝试进行身份验证时出现问题。请重试，或者如果问题仍然存在，请联系支持人员。"
+        "title": "認證失敗",
+        "text": "保險庫不支援",
+        "unexpected_error": "嘗試進行身份驗證時出現問題。請重試，或者如果問題仍然存在，請聯絡支援人員。"
       }
     },
     "desktop_agent_banner": {
-      "text": "此请求正在使用存储于 Vault 中的密钥。若要使用 Vault 密钥，您需要切换至 Postman Desktop Agent。",
+      "text": "此請求正在使用儲存於 Vault 中的金鑰。若要使用 Vault 金鑰，您需要切換至 Postman Desktop Agent。",
       "link": "使用 Postman 桌面代理",
-      "provider_not_resolved": "必须连接 {provider} 才能解析链接的机密。",
-      "reauthenticate": "重新验证",
-      "generic_provider_label": "已关联的 Vault"
+      "provider_not_resolved": "必須連線 {provider} 才能解析連結的機密。",
+      "reauthenticate": "重新驗證",
+      "generic_provider_label": "已關聯的 Vault"
     },
     "integration_editor": {
-      "heading": "链接密钥",
+      "heading": "連結金鑰",
       "disconnect": {
-        "tooltip": "断开保险库"
+        "tooltip": "斷開保險庫"
       },
       "already_added_secret": {
-        "tooltip": "该密钥已从外部 Vault 关联"
+        "tooltip": "該金鑰已從外部 Vault 關聯"
       },
       "add_new": {
-        "tooltip": "添加新的保险库"
+        "tooltip": "新增新的保險庫"
       }
     },
     "integration_viewer": {
-      "heading": "Vault 密钥",
+      "heading": "Vault 金鑰",
       "banner": {
-        "text": "您的 <1>{provider}</1> 不再连接。重新验证以解决此密钥。"
+        "text": "您的 <1>{provider}</1> 不再連線。重新驗證以解決此金鑰。"
       },
-      "reauthenticate": "重新进行身份验证"
+      "reauthenticate": "重新進行身份驗證"
     },
     "limit_reached_banner": {
-      "contact_support": "联系支持人员",
+      "contact_support": "聯絡支援人員",
       "limit_exceeded": {
-        "without_link": "您已达到计划允许的保险库秘密的最大数量。联系支持人员以获得进一步的帮助。",
-        "with_link": "您已达到计划允许的保险库秘密的最大数量。<1> </1><2>联系支持</2>以获取进一步帮助。"
+        "without_link": "您已達到計劃允許的保險庫秘密的最大數量。聯絡支援人員以獲得進一步的幫助。",
+        "with_link": "您已達到計劃允許的保險庫秘密的最大數量。<1> </1><2>聯絡支援</2>以獲取進一步幫助。"
       }
     },
     "unsupported_agent_banner": {
-      "text": "切换到桌面代理或桌面应用程序以访问您的保险库秘密。",
-      "learn_more": "了解更多"
+      "text": "切換到桌面代理或桌面應用程式以訪問您的保險庫秘密。",
+      "learn_more": "瞭解更多"
     },
     "provider_icon": {
       "azure_vault": "Azure Key Vault",
       "hashicorp_vault": "HashiCorp Vault",
       "secrets_manager": "AWS Secrets Manager",
-      "1password_vault": "1Password 账户"
+      "1password_vault": "1Password 賬戶"
     },
     "provider_menu": {
       "not_admin": {
-        "tooltip": "您的团队管理员尚未授权任何 Vault。"
+        "tooltip": "您的團隊管理員尚未授權任何 Vault。"
       },
       "is_admin": {
-        "tooltip": "从保险库设置授权您的保险库"
+        "tooltip": "從保險庫設定授權您的保險庫"
       },
-      "text": "链接密钥以从现有保险库获取值"
+      "text": "連結金鑰以從現有保險庫獲取值"
     }
   },
   "settings": {
-    "title": "保险库设置",
+    "title": "保險庫設定",
     "tabs": {
-      "settings": "设置",
-      "manageAccess": "管理访问权限"
+      "settings": "設定",
+      "manageAccess": "管理訪問許可權"
     },
     "manageAccess": {
       "scripts_enabled": {
-        "heading": "开始在脚本中使用保险库秘密",
-        "text": "运行一个请求，它使用脚本和您的保险库秘密。请求会提示您允许访问。<br/>您允许后，您可以在此处管理保险库权限。"
+        "heading": "開始在腳本中使用保險庫秘密",
+        "text": "執行一個請求，它使用腳本和您的保險庫秘密。請求會提示您允許訪問。<br/>您允許後，您可以在此處管理保險庫許可權。"
       },
       "scripts_disabled": {
-        "heading": "首先配置您的保险库",
-        "text": "首先在“设置”中配置您的保险库以允许脚本访问您的机密。"
+        "heading": "首先配置您的保險庫",
+        "text": "首先在“設定”中配置您的保險庫以允許腳本訪問您的機密。"
       },
-      "helperText": "管理哪些工作区和集合可以在脚本中使用您的保险库机密。重置访问权限以撤销它以供将来运行。",
-      "reset_access": "重置访问权限",
-      "grant_access": "授予访问权限",
-      "no_preferences": "没有可用的偏好数据。"
+      "helperText": "管理哪些工作區和集合可以在腳本中使用您的保險庫機密。重置訪問許可權以撤銷它以供將來執行。",
+      "reset_access": "重置訪問許可權",
+      "grant_access": "授予訪問許可權",
+      "no_preferences": "沒有可用的偏好資料。"
     },
     "hashicorp_integration_settings": {
       "error": {
-        "title": "出了点问题",
-        "message": "发生未知错误，请稍后重试。"
+        "title": "出了點問題",
+        "message": "發生未知錯誤，請稍後重試。"
       },
       "validation_error": {
-        "title": "验证失败",
-        "message": "我们无法连接到指定的 OIDC 提供商 URL。请确保 URL 正确且可通过您的网络访问。"
+        "title": "驗證失敗",
+        "message": "我們無法連線到指定的 OIDC 提供商 URL。請確保 URL 正確且可通過您的網路訪問。"
       },
       "form": {
-        "heading": "设置 HashiCorp 集成",
-        "text": "设置 HashiCorp 保险库将允许所有团队成员进行身份验证并将机密链接到其 Postman 保险库。",
-        "learn_more": "了解更多",
+        "heading": "設定 HashiCorp 整合",
+        "text": "設定 HashiCorp 保險庫將允許所有團隊成員進行身份驗證並將機密連結到其 Postman 保險庫。",
+        "learn_more": "瞭解更多",
         "oidc_label": "OIDC 提供商 URL",
-        "validation_message": "需要一个有效的 URL",
-        "jwt_auth_label": "JWT 认证路径",
-        "client_id_label": "客户端 ID",
+        "validation_message": "需要一個有效的 URL",
+        "jwt_auth_label": "JWT 認證路徑",
+        "client_id_label": "客戶端 ID",
         "role_label": "角色",
-        "scopes_label": "范围",
-        "scopes_placeholder": "输入以空格分隔的范围",
-        "namespace_label": "命名空间",
+        "scopes_label": "範圍",
+        "scopes_placeholder": "輸入以空格分隔的範圍",
+        "namespace_label": "名稱空間",
         "button": {
-          "set_up_hashicorp": "设置 HashiCorp",
+          "set_up_hashicorp": "設定 HashiCorp",
           "cancel": "取消"
         }
       }
     },
     "sign_in_error": {
-      "title": "Postman 无法完成登录 {provider_name}",
-      "instruction": "请重试。如果问题持续出现，请将以下信息提供给您的 {provider_name} 管理员。",
-      "from_provider": "来自 {provider_name} · HTTP {status_code}",
-      "from_provider_no_status": "来自 {provider_name}",
-      "copy_details": "复制详情",
-      "copied": "已复制",
-      "retry": "重试"
+      "title": "Postman 無法完成登入 {provider_name}",
+      "instruction": "請重試。如果問題持續出現，請將以下資訊提供給您的 {provider_name} 管理員。",
+      "from_provider": "來自 {provider_name} · HTTP {status_code}",
+      "from_provider_no_status": "來自 {provider_name}",
+      "copy_details": "複製詳情",
+      "copied": "已複製",
+      "retry": "重試"
     },
     "main": {
       "button": {
-        "connect": "连接",
-        "set_up": "设置集成",
-        "edit_details": "编辑详细信息",
-        "disconnect": "断开",
-        "reset_cache": "重置缓存",
-        "configure_vault": "配置保险库",
-        "open_settings": "打开设置"
+        "connect": "連線",
+        "set_up": "設定整合",
+        "edit_details": "編輯詳細資訊",
+        "disconnect": "斷開",
+        "reset_cache": "重置快取",
+        "configure_vault": "配置保險庫",
+        "open_settings": "開啟設定"
       },
       "tooltip": {
-        "not_authorised": "您的团队管理员尚未授权保险库。"
+        "not_authorised": "您的團隊管理員尚未授權保險庫。"
       },
       "container": {
         "title": "Postman Vault"
       },
       "key": {
-        "heading": "保险库键",
-        "text": "当您注销并登录时，将需要您帐户的唯一密钥。"
+        "heading": "保險庫鍵",
+        "text": "當您登出並登入時，將需要您帳戶的唯一金鑰。"
       },
       "encryption": {
         "heading": "加密"
       },
       "mask_secrets": {
-        "heading": "掩码保险库秘密",
-        "text": "默认情况下自动屏蔽控制台中的秘密。"
+        "heading": "掩碼保險庫秘密",
+        "text": "預設情況下自動遮蔽控制台中的秘密。"
       },
       "support_in_scripts": {
-        "heading": "允许脚本中存在保险库秘密",
-        "text": "允许脚本在请求执行期间安全地访问保险库机密。",
+        "heading": "允許腳本中存在保險庫秘密",
+        "text": "允許腳本在請求執行期間安全地訪問保險庫機密。",
         "modal": {
-          "title": "允许保险库密钥访问脚本",
-          "content": "允许此操作将使脚本能够访问您的保险库机密，以便它们可以运行需要它们的请求。<br/>查看任何第三方脚本以确认它们可以安全使用。"
+          "title": "允許保險庫金鑰訪問腳本",
+          "content": "允許此操作將使腳本能夠訪問您的保險庫機密，以便它們可以執行需要它們的請求。<br/>檢視任何第三方腳本以確認它們可以安全使用。"
         }
       },
       "integrations": {
-        "heading": "集成",
-        "text": "已为所有团队成员配置此保险库集成"
+        "heading": "整合",
+        "text": "已為所有團隊成員配置此保險庫整合"
       },
       "secret_expiration": {
-        "heading": "密钥过期时间",
-        "text": "设置来自已集成应用的缓存密钥的有效期。超过该时长后，我们将自动重新获取密钥数据。"
+        "heading": "金鑰過期時間",
+        "text": "設定來自已整合應用的快取金鑰的有效期。超過該時長後，我們將自動重新獲取金鑰資料。"
       },
-      "cache_validation_message": "应在 5-60 分钟之间",
+      "cache_validation_message": "應在 5-60 分鐘之間",
       "no_user_key": {
-        "heading": "首先配置您的保险库",
-        "text": "首先配置您的保险库以安全地存储您的敏感数据。配置完成后，您可以在此处管理保险库设置。"
+        "heading": "首先配置您的保險庫",
+        "text": "首先配置您的保險庫以安全地儲存您的敏感資料。配置完成後，您可以在此處管理保險庫設定。"
       }
     }
   },
   "container_main": {
     "error": {
-      "message": "出了点问题。",
-      "key_mismatch": "此设备上存储的密钥是用另一个 Vault 密钥加密的，Postman 无法打开。数据并未被删除。可刷新后重试，或清空后用当前密钥重新开始。"
+      "message": "出了點問題。",
+      "key_mismatch": "此裝置上儲存的金鑰是用另一個 Vault 金鑰加密的，Postman 無法開啟。資料並未被刪除。可重新整理後重試，或清空後用當前金鑰重新開始。"
     },
     "button": {
-      "refresh": "刷新",
+      "refresh": "重新整理",
       "clear_vault": "清空 Vault",
-      "settings": "设置",
-      "set_up_hashicorp": "设置 HashiCorp 集成"
+      "settings": "設定",
+      "set_up_hashicorp": "設定 HashiCorp 整合"
     },
     "empty_vault": {
-      "heading": "嘘…这本应该是个秘密…",
-      "text": "我们正在开发一项名为保险库的新功能，该功能很快将使您能够在本地安全地存储和管理您的敏感信息。"
+      "heading": "噓…這本應該是個秘密…",
+      "text": "我們正在開發一項名為保險庫的新功能，該功能很快將使您能夠在本地安全地儲存和管理您的敏感資訊。"
     },
     "settings_tab": {
-      "title": "保险库设置"
+      "title": "保險庫設定"
     },
-    "hashicorp_help_message": "想要为您的团队配置 HashiCorp 保险库吗？",
+    "hashicorp_help_message": "想要為您的團隊配置 HashiCorp 保險庫嗎？",
     "share_feedback": {
-      "text": "分享反馈",
-      "tooltip": "分享您对新保险库体验的反馈，帮助我们做得更好。"
+      "text": "分享反饋",
+      "tooltip": "分享您對新保險庫體驗的反饋，幫助我們做得更好。"
     }
   },
   "aws": {
     "auth_modal": {
       "get_help": {
-        "title": "寻求 Postman 支持",
-        "documentation": "查看文档"
+        "title": "尋求 Postman 支援",
+        "documentation": "文件"
       },
       "autofill_fail": {
-        "title": "自动填充失败",
-        "content": "无法自动填充 AWS 凭据"
+        "title": "自動填充失敗",
+        "content": "無法自動填充 AWS 憑據"
       },
       "auth_fail": {
-        "title": "认证失败",
-        "invalid_response": "尝试获取令牌时收到无效响应",
-        "invalid_creds": "请检查您的凭据并重试。",
-        "invalid_mfa_data": "MFA 数据无效",
-        "failed_fetch_mfa": "无法获取 MFA 数据"
+        "title": "認證失敗",
+        "invalid_response": "嘗試獲取令牌時收到無效響應",
+        "invalid_creds": "請檢查您的憑據並重試。",
+        "invalid_mfa_data": "MFA 資料無效",
+        "failed_fetch_mfa": "無法獲取 MFA 資料"
       },
-      "invalid_mfa_format": "MFA 数据格式意外",
+      "invalid_mfa_format": "MFA 資料格式意外",
       "modal": {
-        "heading": "验证 {provider}",
+        "heading": "驗證 {provider}",
         "labels": {
-          "credentials_type": "凭证类型",
-          "long_lived": "长期有效",
-          "temporary": "临时",
-          "access_key": "访问密钥",
-          "secret_key": "密钥键",
-          "region": "地区",
-          "serial_no": "序列号",
+          "credentials_type": "憑證型別",
+          "long_lived": "長期有效",
+          "temporary": "臨時",
+          "access_key": "訪問金鑰",
+          "secret_key": "金鑰鍵",
+          "region": "地區",
+          "serial_no": "序列號",
           "mfa_token": "MFA 令牌",
-          "session_token": "会话令牌"
+          "session_token": "會話令牌"
         },
         "button": {
-          "authenticate": "认证",
+          "authenticate": "認證",
           "cancel": "取消"
         },
-        "mfa_required": "您的 AWS 账户需要多重身份验证"
+        "mfa_required": "您的 AWS 賬戶需要多重身份驗證"
       }
     },
     "secret_editor": {
       "labels": {
-        "secret_arn": "密钥 ARN",
-        "secret_arn_info": "出现在保险库的密钥详细信息页面上",
-        "role_arn": "角色 ARN （可选）",
-        "role_arn_info": "获取此密钥时要代入的角色的 ARN",
-        "version": "版本（可选）",
-        "version_info": "密钥版本",
-        "secret_key": "密钥键"
+        "secret_arn": "金鑰 ARN",
+        "secret_arn_info": "出現在保險庫的金鑰詳細資訊頁面上",
+        "role_arn": "角色 ARN （可選）",
+        "role_arn_info": "獲取此金鑰時要代入的角色的 ARN",
+        "version": "版本（可選）",
+        "version_info": "金鑰版本",
+        "secret_key": "金鑰鍵"
       },
       "validation_message": {
-        "invalid_arn": "无效 ARN",
-        "invalid_role": "无效角色",
-        "key_empty": "键不能为空"
+        "invalid_arn": "無效 ARN",
+        "invalid_role": "無效角色",
+        "key_empty": "鍵不能為空"
       },
       "advanced_settings": {
-        "hide": "隐藏高级设置",
-        "show": "显示高级设置"
+        "hide": "隱藏進階設定",
+        "show": "顯示進階設定"
       },
       "radio_button": {
-        "label": "密钥类型",
+        "label": "金鑰型別",
         "plaintext": "明文",
-        "key_value": "键/值"
+        "key_value": "鍵/值"
       },
       "button": {
         "use": "使用"
       }
     },
     "text_input": {
-      "label": "从配置文件自动填充"
+      "label": "從配置檔案自動填充"
     }
   },
   "hover_tooltip": {
     "secret_disabled": {
-      "message": "此保险库密钥已禁用。使其能够访问其价值。",
-      "button": "启用密钥"
+      "message": "此保險庫金鑰已停用。使其能夠訪問其價值。",
+      "button": "啟用金鑰"
     },
     "secret_not_resolved": {
-      "message": "使用桌面应用程序或桌面代理来解决此密钥。",
+      "message": "使用桌面應用程式或桌面代理來解決此金鑰。",
       "button": "使用桌面代理"
     },
     "invalid_domain": {
-      "heading": "此请求的域不支持此密钥",
-      "message": "此保险库密钥已被锁定到特定域。您可以从保险库检查和编辑这些内容。",
+      "heading": "此請求的域不支援此金鑰",
+      "message": "此保險庫金鑰已被鎖定到特定域。您可以從保險庫檢查和編輯這些內容。",
       "button": "更新域"
     },
-    "placeholder": "输入密钥值",
+    "placeholder": "輸入金鑰值",
     "vault_disconnected": {
-      "heading": "无法解析链接的密钥",
-      "message": "链接的 {providerName} 已断开。重新验证或确保连接的帐户有权访问此密钥。",
-      "button": "重新验证"
+      "heading": "無法解析連結的金鑰",
+      "message": "連結的 {providerName} 已斷開。重新驗證或確保連線的帳戶有權訪問此金鑰。",
+      "button": "重新驗證"
     },
     "missing_value": {
-      "heading": "保险库密钥缺失值",
-      "message": "输入密钥的值，我们将在您的保险库中更新它。",
-      "button": "更新密钥"
+      "heading": "保險庫金鑰缺失值",
+      "message": "輸入金鑰的值，我們將在您的保險庫中更新它。",
+      "button": "更新金鑰"
     },
     "user_key_missing": {
-      "heading": "输入保险库键即可访问此密钥",
-      "message": "出于安全原因，您需要在注销并再次登录后输入保险库密钥。",
-      "button": "访问保险库",
-      "placeholder": "输入保险库键"
+      "heading": "輸入保險庫鍵即可訪問此金鑰",
+      "message": "出於安全原因，您需要在登出並再次登入後輸入保險庫金鑰。",
+      "button": "訪問保險庫",
+      "placeholder": "輸入保險庫鍵"
     },
     "secret_missing": {
-      "heading": "添加保险库密钥",
-      "message": "看来这个保险库密钥丢失了。不用担心，只需输入其值，我们会将其添加到您的保险库中。",
-      "button": "添加密钥"
+      "heading": "新增保險庫金鑰",
+      "message": "看來這個保險庫金鑰丟失了。不用擔心，只需輸入其值，我們會將其新增到您的保險庫中。",
+      "button": "新增金鑰"
     },
     "vault_not_present": {
-      "heading": "开始使用保险库在本地系统上安全地保存机密",
-      "message": "只需添加一个值即可。我们将创建您的本地加密保险库并在其中添加此密钥。",
-      "button": "添加密钥"
+      "heading": "開始使用保險庫在本地系統上安全地儲存機密",
+      "message": "只需新增一個值即可。我們將建立您的本地加密保險庫並在其中新增此金鑰。",
+      "button": "新增金鑰"
     },
     "password": {
-      "hover_text": "密钥"
+      "hover_text": "金鑰"
     },
     "button": {
       "cancel": "取消"
     },
     "error_message": {
-      "empty_secret_value": "输入密钥的值。",
-      "empty_vault_key": "输入保险库键。",
-      "invalid_vault_key": "保险库键无效。再试一次。"
+      "empty_secret_value": "輸入金鑰的值。",
+      "empty_vault_key": "輸入保險庫鍵。",
+      "invalid_vault_key": "保險庫鍵無效。再試一次。"
     }
   },
   "variable_kv_pairs": {
     "azure": {
-      "vault": "保险库",
-      "secret": "密钥",
+      "vault": "保險庫",
+      "secret": "金鑰",
       "version": "版本",
-      "identifier": "标识符"
+      "identifier": "識別符號"
     },
     "hashicorp": {
       "engine": "引擎",
-      "path": "路径",
-      "key": "键",
+      "path": "路徑",
+      "key": "鍵",
       "engine_version": "引擎版本"
     },
     "secretsManager": {
       "arn": "ARN",
       "role": "角色",
       "version": "版本",
-      "secret_type": "密钥类型",
-      "secret_key": "密钥键",
-      "key_value": "键/值",
+      "secret_type": "金鑰型別",
+      "secret_key": "金鑰鍵",
+      "key_value": "鍵/值",
       "plaintext": "明文"
     },
     "onePassword": {
-      "secret_reference": "密钥引用"
+      "secret_reference": "金鑰引用"
     }
   },
   "sidebar": {
     "title": "Postman Vault",
-    "nav_label": "保险库",
-    "cloud_vault_title": "个人保险库",
+    "nav_label": "保險庫",
+    "cloud_vault_title": "個人保險庫",
     "vault_actions": {
-      "rename": "重命名",
-      "delete": "删除"
+      "rename": "重新命名",
+      "delete": "刪除"
     },
     "local_vault_actions": {
-      "move_to_cloud": "复制到个人保险库",
+      "move_to_cloud": "複製到個人保險庫",
       "export": "出口"
     },
-    "move_to_cloud": "移至个人保险库",
+    "move_to_cloud": "移至個人保險庫",
     "create_vault": {
-      "heading": "创建个人保险库",
-      "tooltip": "创建新的个人保险库",
-      "tooltip_limit_reached": "您已用尽计划中允许的个人保险库的最大数量。",
-      "personal": "个人 Vault",
-      "tooltip_creating": "创造...",
-      "tooltip_dropdown": "创建保险库",
-      "aria_label": "创建保险库"
+      "heading": "建立個人保險庫",
+      "tooltip": "建立新的個人保險庫",
+      "tooltip_limit_reached": "您已用盡計劃中允許的個人保險庫的最大數量。",
+      "personal": "個人 Vault",
+      "tooltip_creating": "創造...",
+      "tooltip_dropdown": "建立保險庫",
+      "aria_label": "建立保險庫"
     },
     "create_personal_vault": {
-      "tooltip": "创建个人保险库"
+      "tooltip": "建立個人保險庫"
     },
     "locked_state": {
-      "title": "保险库已锁定",
-      "description": "解锁您的保险库以访问您的个人秘密",
-      "unlock_button": "解锁保险库"
+      "title": "保險庫已鎖定",
+      "description": "解鎖您的保險庫以訪問您的個人秘密",
+      "unlock_button": "解鎖保險庫"
     },
-    "search_placeholder": "搜索保险库",
-    "search_placeholder_personal": "搜索个人保险库",
+    "search_placeholder": "搜尋保險庫",
+    "search_placeholder_personal": "搜尋個人保險庫",
     "tabs": {
-      "personal": "个人保险库"
+      "personal": "個人保險庫"
     },
-    "loading": "加载中...",
+    "loading": "載入中...",
     "disabled": {
-      "title": "保险库不可用",
-      "description": "目前，该工作区的保险库功能已禁用。请联系您的工作区管理员以获取更多信息。"
+      "title": "保險庫不可用",
+      "description": "目前，該工作區的保險庫功能已停用。請聯絡您的工作區管理員以獲取更多資訊。"
     },
     "error": {
-      "heading": "无法加载保险库",
-      "description": "请重试",
-      "refresh": "重试"
+      "heading": "無法載入保險庫",
+      "description": "請重試",
+      "refresh": "重試"
     },
     "empty_state": {
-      "personal_title": "这里有点安静...",
-      "personal_description": "将敏感数据安全地存储在云中。"
+      "personal_title": "這裡有點安靜...",
+      "personal_description": "將敏感資料安全地儲存在雲中。"
     },
     "search_empty_state": {
-      "title": "保险库未找到",
-      "description": "请使用不同的关键字重试"
+      "title": "保險庫未找到",
+      "description": "請使用不同的關鍵字重試"
     }
   },
   "menu": {
     "clear": "清除",
     "export": "出口",
-    "import": "进口",
-    "export_footer": "请联系您的团队管理员为您的团队启用保险库导出。"
+    "import": "進口",
+    "export_footer": "請聯絡您的團隊管理員為您的團隊啟用保險庫匯出。"
   },
   "clear_vault_confirmation_modal": {
-    "heading": "清除保险库？",
-    "description": "清除保险库将永久删除本地保险库中的数据。在继续之前，请确保您已备份所有重要信息。"
+    "heading": "清除保險庫？",
+    "description": "清除保險庫將永久刪除本地保險庫中的資料。在繼續之前，請確保您已備份所有重要資訊。"
   },
   "export_modal": {
-    "heading": "导出保险库",
-    "description": "将保险库下载为 JSON 文件",
+    "heading": "匯出保險庫",
+    "description": "將保險庫下載為 JSON 檔案",
     "export_type": {
-      "encrypted": "加密（推荐）",
-      "encrypted_description": "该文件将使用密码加密。您需要此密码才能将其导入回 Postman。",
+      "encrypted": "加密（推薦）",
+      "encrypted_description": "該檔案將使用密碼加密。您需要此密碼才能將其匯入回 Postman。",
       "unencrypted": "未加密",
-      "unencrypted_description": "该文件不会被加密。拥有该文件的任何人都可以查看其内容。"
+      "unencrypted_description": "該檔案不會被加密。擁有該檔案的任何人都可以檢視其內容。"
     },
     "password": {
-      "label": "密码",
-      "input_label": "设置密码",
-      "placeholder": "最少 12 个字符"
+      "label": "密碼",
+      "input_label": "設定密碼",
+      "placeholder": "最少 12 個字元"
     },
     "validation": {
-      "password_required": "需要密码。",
-      "password_format": "密码必须至少为 12 个字符，且为字符和数字的组合。"
+      "password_required": "需要密碼。",
+      "password_format": "密碼必須至少為 12 個字元，且為字元和數字的組合。"
     },
     "warning": {
-      "title": "秘密将以纯文本形式可见"
+      "title": "秘密將以純文本形式可見"
     },
     "success": {
-      "title": "保险库导出成功",
-      "description": "您的保险库已下载到您的计算机上。"
+      "title": "保險庫匯出成功",
+      "description": "您的保險庫已下載到您的計算機上。"
     },
     "error": {
-      "title": "导出失败",
-      "description": "导出保险库时出现问题。请再试一次。"
+      "title": "匯出失敗",
+      "description": "匯出保險庫時出現問題。請再試一次。"
     },
     "not_allowed": {
-      "title": "保险库导出已禁用",
-      "description": "您的团队禁用了保险库导出。请联系您的团队管理员。"
+      "title": "保險庫匯出已停用",
+      "description": "您的團隊停用了保險庫匯出。請聯絡您的團隊管理員。"
     },
     "cancel": "取消",
     "export": "出口",
     "exporting": "出口...",
-    "export_link_content": "导出保险库"
+    "export_link_content": "匯出保險庫"
   },
   "move_to_cloud_modal": {
-    "title": "将本地保险库机密移至个人保险库",
-    "description": "通过端到端加密跨设备安全地同步您的保险库机密。使用保险库密钥从任何会话访问您的同步机密。",
-    "choose_vault_placeholder": "选择个人保险库",
-    "choose_vault_empty_state_message": "未找到个人保险库。提供保险库名称以创建新的个人保险库。例如“备份”",
-    "move_confirm_cta": "移动秘密",
+    "title": "將本地保險庫機密移至個人保險庫",
+    "description": "通過端到端加密跨裝置安全地同步您的保險庫機密。使用保險庫金鑰從任何會話訪問您的同步機密。",
+    "choose_vault_placeholder": "選擇個人保險庫",
+    "choose_vault_empty_state_message": "未找到個人保險庫。提供保險庫名稱以建立新的個人保險庫。例如“備份”",
+    "move_confirm_cta": "移動秘密",
     "cancel_cta": "保守秘密",
     "user_signout": {
-      "message": "{count, plural, =1 {您有 {count} 个不会被保留的保险库变量。} other {您有 {count} 个不会被保留的保险库变量。}}",
-      "link_content": "复制到个人保险库"
+      "message": "{count, plural, =1 {您有 {count} 個不會被保留的保險庫變數。} other {您有 {count} 個不會被保留的保險庫變數。}}",
+      "link_content": "複製到個人保險庫"
     }
   },
   "password_import_modal": {
-    "heading": "输入密码",
-    "description": "此保险库文件“{vaultName}”受密码保护。请输入密码进行导入。",
+    "heading": "輸入密碼",
+    "description": "此保險庫檔案“{vaultName}”受密碼保護。請輸入密碼進行匯入。",
     "password": {
-      "label": "密码",
-      "required": "需要密码",
-      "invalid": "密码不正确。请检查您的密码。"
+      "label": "密碼",
+      "required": "需要密碼",
+      "invalid": "密碼不正確。請檢查您的密碼。"
     },
     "cancel": "取消",
-    "import": "进口",
+    "import": "進口",
     "decrypting": "正在解密..."
   },
   "conflict_modal": {
-    "heading": "密钥已经存在",
-    "description": "带有键“{variableName}”的保险库密钥已存在。",
-    "choose_action": "你想做什么？",
+    "heading": "金鑰已經存在",
+    "description": "帶有鍵“{variableName}”的保險庫金鑰已存在。",
+    "choose_action": "你想做什麼？",
     "replace": "代替",
     "keep": "保持",
-    "apply_to_all": "适用于所有 {count} 冲突"
+    "apply_to_all": "適用於所有 {count} 衝突"
   },
   "toast": {
     "feature_not_available": "{feature} 不可用",
-    "no_active_workspace": "无法创建保险库：无活动工作区",
+    "no_active_workspace": "無法建立保險庫：無活動工作區",
     "personal": {
       "create_vault": {
-        "success": "个人 Vault 创建成功",
-        "error": "创建保险库时出现问题。请再试一次。"
+        "success": "個人 Vault 建立成功",
+        "error": "建立保險庫時出現問題。請再試一次。"
       },
       "delete_vault": {
-        "success": "个人保险库删除成功",
-        "error": "删除保险库时出现问题。请再试一次。"
+        "success": "個人保險庫刪除成功",
+        "error": "刪除保險庫時出現問題。請再試一次。"
       },
       "rename_vault": {
-        "success": "个人保险库重命名成功",
-        "error": "重命名保险库时出现问题。请再试一次。"
+        "success": "個人保險庫重新命名成功",
+        "error": "重新命名保險庫時出現問題。請再試一次。"
       },
       "save_vault": {
-        "success": "个人 Vault 保存成功",
-        "error": "保存保险库时出现问题。请再试一次。"
+        "success": "個人 Vault 儲存成功",
+        "error": "儲存保險庫時出現問題。請再試一次。"
       }
     },
     "shared": {
       "create_vault": {
-        "success": "共享保险库创建成功",
-        "error": "创建保险库时出现问题。请再试一次。",
-        "forbidden": "您无权对此共享保险库执行此操作。"
+        "success": "共享保險庫建立成功",
+        "error": "建立保險庫時出現問題。請再試一次。",
+        "forbidden": "您無權對此共享保險庫執行此操作。"
       },
       "delete_vault": {
-        "success": "共享保险库删除成功",
-        "error": "删除保险库时出现问题。请再试一次。",
-        "forbidden": "您无权对此共享保险库执行此操作。"
+        "success": "共享保險庫刪除成功",
+        "error": "刪除保險庫時出現問題。請再試一次。",
+        "forbidden": "您無權對此共享保險庫執行此操作。"
       },
       "rename_vault": {
-        "success": "共享保险库重命名成功",
-        "error": "重命名保险库时出现问题。请再试一次。",
-        "forbidden": "您无权对此共享保险库执行此操作。"
+        "success": "共享保險庫重新命名成功",
+        "error": "重新命名保險庫時出現問題。請再試一次。",
+        "forbidden": "您無權對此共享保險庫執行此操作。"
       },
       "save_vault": {
-        "success": "共享保险库保存成功",
-        "error": "保存保险库时出现问题。请再试一次。",
-        "forbidden": "您无权对此共享保险库执行此操作。"
+        "success": "共享保險庫儲存成功",
+        "error": "儲存保險庫時出現問題。請再試一次。",
+        "forbidden": "您無權對此共享保險庫執行此操作。"
       }
     },
     "local": {
       "export_secrets": {
-        "success": "机密导出成功",
-        "error": "导出机密时出现问题。请再试一次。"
+        "success": "機密匯出成功",
+        "error": "匯出機密時出現問題。請再試一次。"
       },
       "clear_vault": {
-        "success": "保险库清除成功",
-        "error": "清除保险库时出现问题。请再试一次。"
+        "success": "保險庫清除成功",
+        "error": "清除保險庫時出現問題。請再試一次。"
       }
     }
   },
   "workspace_visibility": {
     "clear_shared_vault_secrets": {
-      "description": "如果此工作区被设为公开，共享保险库中存储的所有机密将被自动清除，以防止公开泄露。"
+      "description": "如果此工作區被設為公開，共享保險庫中儲存的所有機密將被自動清除，以防止公開洩露。"
     }
   },
   "team_shared_vault": {
     "add_modal": {
       "cancel": "取消",
-      "domains_label": "允许的域名（可选）",
+      "domains_label": "允許的域名（可選）",
       "domains_placeholder": "api.example.com, *.internal.example.com",
-      "edit_subtitle": "更新此密钥。更改将应用于所有使用它的地方。",
-      "edit_title": "编辑密钥",
-      "key_label": "键",
+      "edit_subtitle": "更新此金鑰。更改將應用於所有使用它的地方。",
+      "edit_title": "編輯金鑰",
+      "key_label": "鍵",
       "key_placeholder": "例如 stripe_secret_key",
-      "key_value_required": "键和密钥值均为必填项。",
-      "no_workspace": "没有活动的工作区，无法创建密钥。",
-      "pick_at_least_one_user": "请至少选择一位要共享的团队成员。",
-      "save": "保存",
-      "save_changes": "保存更改",
-      "save_failed": "密钥创建失败。",
-      "scope_label": "谁可以访问此密钥",
-      "scope_team": "整个团队",
-      "scope_team_desc": "本团队的每位成员都可以使用此密钥。",
-      "scope_user": "指定用户",
-      "scope_user_desc": "选择可以使用此密钥的团队成员。",
-      "scope_workspace": "工作区",
-      "scope_workspace_desc": "仅此工作区的成员可以使用。",
-      "subtitle": "此密钥将由您创建，默认仅在此工作区内私有。",
-      "title": "添加密钥",
-      "value_label": "密钥值",
-      "value_note": "除查看弹窗外，该值在所有位置均会被遮盖，且只有您可以显示或编辑它。",
+      "key_value_required": "鍵和金鑰值均為必填項。",
+      "no_workspace": "沒有活動的工作區，無法建立金鑰。",
+      "pick_at_least_one_user": "請至少選擇一位要共享的團隊成員。",
+      "save": "儲存",
+      "save_changes": "儲存更改",
+      "save_failed": "金鑰建立失敗。",
+      "scope_label": "誰可以訪問此金鑰",
+      "scope_team": "整個團隊",
+      "scope_team_desc": "本團隊的每位成員都可以使用此金鑰。",
+      "scope_user": "指定使用者",
+      "scope_user_desc": "選擇可以使用此金鑰的團隊成員。",
+      "scope_workspace": "工作區",
+      "scope_workspace_desc": "僅此工作區的成員可以使用。",
+      "subtitle": "此金鑰將由您建立，預設僅在此工作區內私有。",
+      "title": "新增金鑰",
+      "value_label": "金鑰值",
+      "value_note": "除檢視彈窗外，該值在所有位置均會被遮蓋，且只有您可以顯示或編輯它。",
       "value_placeholder": "例如 sk_live_..."
     },
     "catalog": {
-      "delete": "删除",
-      "edit_link": "编辑外部密钥关联",
-      "edit_secret": "编辑密钥",
-      "empty": "暂无共享 Vault 密钥。",
-      "empty_filtered": "没有符合筛选条件的密钥。",
-      "header_allowed_domains": "允许的域名",
-      "header_created": "创建时间",
-      "header_creator": "创建者",
-      "header_key": "键",
-      "header_shared_with": "共享对象",
+      "delete": "刪除",
+      "edit_link": "編輯外部金鑰關聯",
+      "edit_secret": "編輯金鑰",
+      "empty": "暫無共享 Vault 金鑰。",
+      "empty_filtered": "沒有符合篩選條件的金鑰。",
+      "header_allowed_domains": "允許的域名",
+      "header_created": "建立時間",
+      "header_creator": "建立者",
+      "header_key": "鍵",
+      "header_shared_with": "共享物件",
       "share_button": "共享",
-      "view_value": "查看值",
-      "scope_team_wide": "全团队",
+      "view_value": "檢視值",
+      "scope_team_wide": "全團隊",
       "scope_restricted": "受限",
       "scope_people": "{count, plural, one {# 人} other {# 人}}"
     },
     "container": {
-      "add_secret": "+ 添加密钥"
+      "add_secret": "+ 新增金鑰"
     },
     "delete_modal": {
       "cancel": "取消",
-      "confirm": "删除",
-      "delete_failed": "密钥删除失败。",
-      "title": "删除密钥"
+      "confirm": "刪除",
+      "delete_failed": "金鑰刪除失敗。",
+      "title": "刪除金鑰"
     },
     "external": {
-      "link_secret": "关联外部密钥"
+      "link_secret": "關聯外部金鑰"
     },
     "filters": {
-      "all_creators": "所有创建者",
-      "clear_creator": "所有创建者",
-      "creator": "创建者",
-      "creator_panel_label": "按创建者筛选",
-      "creator_placeholder": "搜索团队成员",
-      "no_teammates": "没有匹配的团队成员",
-      "search_placeholder": "按键名搜索"
+      "all_creators": "所有建立者",
+      "clear_creator": "所有建立者",
+      "creator": "建立者",
+      "creator_panel_label": "按建立者篩選",
+      "creator_placeholder": "搜尋團隊成員",
+      "no_teammates": "沒有匹配的團隊成員",
+      "search_placeholder": "按鍵名搜尋"
     },
     "share_modal": {
       "cancel": "取消",
-      "info_team": "本团队的每位成员都可以在请求中查看和使用此密钥的引用。",
-      "info_user": "只有所选团队成员（以及您）可以查看和使用此密钥的引用。",
-      "info_workspace": "此密钥的作用域为其所属工作区。与团队成员或整个团队共享后将无法撤销。",
-      "loading_grants": "正在加载当前共享设置…",
-      "pick_at_least_one_user": "请至少选择一位要共享的团队成员。",
-      "save": "保存更改",
-      "save_failed": "共享设置保存失败。",
-      "team_desc": "本团队的所有人都可以使用此密钥",
-      "team_title": "所有团队成员",
+      "info_team": "本團隊的每位成員都可以在請求中檢視和使用此金鑰的引用。",
+      "info_user": "只有所選團隊成員（以及您）可以檢視和使用此金鑰的引用。",
+      "info_workspace": "此金鑰的作用域為其所屬工作區。與團隊成員或整個團隊共享後將無法撤銷。",
+      "loading_grants": "正在載入當前共享設定…",
+      "pick_at_least_one_user": "請至少選擇一位要共享的團隊成員。",
+      "save": "儲存更改",
+      "save_failed": "共享設定儲存失敗。",
+      "team_desc": "本團隊的所有人都可以使用此金鑰",
+      "team_title": "所有團隊成員",
       "title": "管理共享",
-      "user_desc": "选择可以使用此密钥的团队成员",
-      "user_title": "与用户共享",
-      "who_heading": "谁可以访问此密钥",
-      "workspace_desc": "此密钥只能在此工作区内使用，不会共享到其他地方",
-      "workspace_required": "没有活动的工作区，无法保存工作区共享设置。",
-      "workspace_title": "仅限此工作区"
+      "user_desc": "選擇可以使用此金鑰的團隊成員",
+      "user_title": "與使用者共享",
+      "who_heading": "誰可以訪問此金鑰",
+      "workspace_desc": "此金鑰只能在此工作區內使用，不會共享到其他地方",
+      "workspace_required": "沒有活動的工作區，無法儲存工作區共享設定。",
+      "workspace_title": "僅限此工作區"
     },
     "shared_with": {
-      "team_heading": "已与此团队的所有人共享",
-      "workspace_only": "仅限工作区",
-      "user_heading": "{count, plural, one {已与 # 人共享} other {已与 # 人共享}}",
-      "workspace_heading": "{count, plural, one {已在 # 个工作区中共享} other {已在 # 个工作区中共享}}"
+      "team_heading": "已與此團隊的所有人共享",
+      "workspace_only": "僅限工作區",
+      "user_heading": "{count, plural, one {已與 # 人共享} other {已與 # 人共享}}",
+      "workspace_heading": "{count, plural, one {已在 # 個工作區中共享} other {已在 # 個工作區中共享}}"
     },
     "tabs": {
       "external": "外部 Vault",
       "managed": "Postman Vault"
     },
     "user_picker": {
-      "label": "团队成员",
-      "no_matches": "没有与搜索匹配的团队成员",
-      "placeholder": "输入电子邮件地址",
+      "label": "團隊成員",
+      "no_matches": "沒有與搜尋匹配的團隊成員",
+      "placeholder": "輸入電子郵件地址",
       "remove_user": "移除 {name}"
     },
     "value_modal": {
       "cancel": "取消",
-      "external_note": "此密钥在运行时从其提供方解析，不会存储在 Postman 中。",
-      "load_failed": "无法加载此密钥的值。",
-      "loading": "正在加载值…",
-      "read_only": "您没有编辑此密钥的权限。",
+      "external_note": "此金鑰在執行時從其提供方解析，不會儲存在 Postman 中。",
+      "load_failed": "無法載入此金鑰的值。",
+      "loading": "正在載入值…",
+      "read_only": "您沒有編輯此金鑰的許可權。",
       "reference_label": "引用",
-      "reference_title": "密钥引用",
-      "save": "保存",
-      "save_failed": "值保存失败。",
-      "title": "密钥值",
+      "reference_title": "金鑰引用",
+      "save": "儲存",
+      "save_failed": "值儲存失敗。",
+      "title": "金鑰值",
       "value_label": "值"
     }
   }

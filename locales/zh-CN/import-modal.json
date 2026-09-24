@@ -1,86 +1,86 @@
 {
-  "modal_title": "使用资源",
+  "modal_title": "使用資源",
   "search": {
-    "search_placeholder": "搜索资源",
+    "search_placeholder": "搜尋資源",
     "scope_labels": {
-      "privateAPINetwork": "私有网络",
-      "team": "团队",
-      "public": "公开网络"
+      "privateAPINetwork": "私有網路",
+      "team": "團隊",
+      "public": "公開網路"
     },
     "entity_labels": {
       "collections": "集合",
-      "environments": "环境",
-      "specs": "规格",
+      "environments": "環境",
+      "specs": "規格",
       "sdks": "SDK",
       "flows": "流程",
       "mocks": "Mock"
     },
     "dependencies": {
-      "label": "依赖关系",
-      "search_filter_aria_label": "过滤依赖性"
+      "label": "依賴關係",
+      "search_filter_aria_label": "過濾依賴性"
     },
     "filters": {
-      "scope_group_aria_label": "按范围过滤",
-      "scope_button_aria_label": "按 {scope} 过滤",
+      "scope_group_aria_label": "按範圍過濾",
+      "scope_button_aria_label": "按 {scope} 過濾",
       "type": {
-        "label": "类型",
-        "inline_label_single": "类型：{name}",
-        "inline_label_count": "类型：已选择 {count} 个",
-        "placeholder": "按类型过滤",
-        "search_aria_label": "按类型过滤"
+        "label": "型別",
+        "inline_label_single": "型別：{name}",
+        "inline_label_count": "型別：已選擇 {count} 個",
+        "placeholder": "按型別過濾",
+        "search_aria_label": "按型別過濾"
       },
       "in": {
-        "label": "工作区",
-        "inline_label_count": "工作区（{count}）",
-        "placeholder": "按工作区过滤",
-        "search_aria_label": "按工作区过滤",
-        "search_input_placeholder": "搜索工作空间",
-        "empty_state": "未找到工作区",
-        "loading": "正在寻找..."
+        "label": "工作區",
+        "inline_label_count": "工作區（{count}）",
+        "placeholder": "按工作區過濾",
+        "search_aria_label": "按工作區過濾",
+        "search_input_placeholder": "搜尋工作空間",
+        "empty_state": "未找到工作區",
+        "loading": "正在尋找..."
       }
     }
   },
   "resources": {
     "shared": {
-      "resizer_label": "调整部分大小"
+      "resizer_label": "調整部分大小"
     },
     "tab_labels": {
-      "resources": "资源",
-      "import": "导入"
+      "resources": "資源",
+      "import": "匯入"
     },
     "add": {
-      "error_message": "搜索时发生错误。",
-      "load_more_error_message": "无法加载更多结果。",
-      "load_more_retry": "重试",
-      "no_results": "没有找到结果。",
-      "verified_publisher": "已验证发布者",
+      "error_message": "搜尋時發生錯誤。",
+      "load_more_error_message": "無法載入更多結果。",
+      "load_more_retry": "重試",
+      "no_results": "沒有找到結果。",
+      "verified_publisher": "已驗證釋出者",
       "fork_label_with_username": "{userName} 的 fork",
       "fork_label_without_username": "我的 Fork",
-      "modal_fork_button": "复刻",
-      "modal_add_dependency_button_with_count": "{count, plural, =0 {添加依赖项} other {添加依赖项 (#)}}",
-      "dependency_added_toast_title": "{count, plural, =1 {依赖项已添加} other {依赖项已添加}}",
-      "dependency_added_toast_description": "{count, plural, =1 {{name} 已添加到此工作区} other {已向此工作区添加 # 个依赖项}}",
+      "modal_fork_button": "復刻",
+      "modal_add_dependency_button_with_count": "{count, plural, =0 {新增依賴項} other {新增依賴項 (#)}}",
+      "dependency_added_toast_title": "{count, plural, =1 {依賴項已新增} other {依賴項已新增}}",
+      "dependency_added_toast_description": "{count, plural, =1 {{name} 已新增到此工作區} other {已向此工作區新增 # 個依賴項}}",
       "error_banner": {
         "dependency": {
-          "all_failed_title": "无法添加依赖项。",
-          "partial_failed_title": "无法添加以下依赖项。"
+          "all_failed_title": "無法新增依賴項。",
+          "partial_failed_title": "無法新增以下依賴項。"
         },
         "fork": {
-          "all_failed_title": "无法创建 Fork。",
-          "partial_failed_title": "无法创建以下 Fork。"
+          "all_failed_title": "無法建立 Fork。",
+          "partial_failed_title": "無法建立以下 Fork。"
         },
-        "try_again": "重试",
-        "more_count": "+{count} 项"
+        "try_again": "重試",
+        "more_count": "+{count} 項"
       }
     },
     "manage": {
-      "title_label": "在此工作区中",
-      "delete_button_aria_label": "删除",
+      "title_label": "在此工作區中",
+      "delete_button_aria_label": "刪除",
       "dependency": {
         "update": {
           "button_label": "更新",
           "bulk_button_label": "全部更新",
-          "disabled_bulk_update_tooltip": "没有可更新的依赖项。",
+          "disabled_bulk_update_tooltip": "沒有可更新的依賴項。",
           "badge": {
             "actionable_label": "可用更新",
             "inprogress_label": "更新中...",
@@ -88,12 +88,12 @@
           }
         },
         "install": {
-          "button_label": "安装",
-          "disabled_bulk_install_tooltip": "没有可安装的依赖项。",
+          "button_label": "安裝",
+          "disabled_bulk_install_tooltip": "沒有可安裝的依賴項。",
           "badge": {
-            "actionable_label": "未安装",
-            "inprogress_label": "正在安装...",
-            "completed_label": "已安装"
+            "actionable_label": "未安裝",
+            "inprogress_label": "正在安裝...",
+            "completed_label": "已安裝"
           }
         }
       },
@@ -111,7 +111,7 @@
     }
   },
   "permissions": {
-    "no_permission_tooltip": "您没有权限管理此工作区中的资源。",
-    "local_only_tooltip": "您只能在本地模式下管理资源。"
+    "no_permission_tooltip": "您沒有許可權管理此工作區中的資源。",
+    "local_only_tooltip": "您只能在本地模式下管理資源。"
   }
 }

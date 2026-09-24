@@ -1,37 +1,37 @@
 {
   "overview": {
     "heading": "BYOK 加密",
-    "description": "管理组织的环境和全局变量以及请求历史记录的加密。",
-    "cta": "联系 Postman 支持",
-    "last_updated": "最后更新"
+    "description": "管理組織的環境和全域性變數以及請求歷史記錄的加密。",
+    "cta": "聯絡 Postman 支援",
+    "last_updated": "最後更新"
   },
   "status": {
-    "heading": "加密状态",
+    "heading": "加密狀態",
     "completed": "已加密",
     "progress": "正在加密...",
-    "failed": "失败",
-    "pending": "待处理"
+    "failed": "失敗",
+    "pending": "待處理"
   },
   "key": {
-    "heading": "密钥",
-    "arn": "密钥已配置",
-    "status": "状态",
-    "active": "活跃",
-    "inactive": "不活跃"
+    "heading": "金鑰",
+    "arn": "金鑰已配置",
+    "status": "狀態",
+    "active": "活躍",
+    "inactive": "不活躍"
   },
   "elements": {
-    "environments": "环境",
-    "globals": "全局变量",
-    "history": "历史记录",
-    "collectionRuns": "集合运行",
-    "monitorRuns": "监控运行"
+    "environments": "環境",
+    "globals": "全域性變數",
+    "history": "歷史記錄",
+    "collectionRuns": "集合執行",
+    "monitorRuns": "監控執行"
   },
   "disabled": {
-    "heading": "使用 BYOK 加密保护您的数据",
-    "description": "使用您自己的密钥 (BYOK) 来保护您组织的全局变量、环境和请求历史记录。"
+    "heading": "使用 BYOK 加密保護您的資料",
+    "description": "使用您自己的金鑰 (BYOK) 來保護您組織的全域性變數、環境和請求歷史記錄。"
   },
   "error": {
-    "heading": "出了点问题",
-    "description": "我们无法加载您的 BYOK 设置。请稍后重试。"
+    "heading": "出了點問題",
+    "description": "我們無法載入您的 BYOK 設定。請稍後重試。"
   }
 }

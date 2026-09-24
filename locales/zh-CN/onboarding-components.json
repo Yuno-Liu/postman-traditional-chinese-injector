@@ -1,23 +1,23 @@
 {
   "copy_link": {
-    "copy_invite_text": "复制邀请链接",
-    "copied_text": "已复制",
-    "unable_to_generate_text": "生成链接时出现问题。",
-    "no_permission_to_copy_text": "您没有管理员权限来执行此操作"
+    "copy_invite_text": "複製邀請連結",
+    "copied_text": "已複製",
+    "unable_to_generate_text": "生成連結時出現問題。",
+    "no_permission_to_copy_text": "您沒有管理員許可權來執行此操作"
   },
   "curl_import_modal": {
-    "heading": "将 cURL 导入到集合中",
+    "heading": "將 cURL 匯入到集合中",
     "request_input": {
-      "placeholder": "例如获取所有用户",
-      "label_text": "请求名称"
+      "placeholder": "例如獲取所有使用者",
+      "label_text": "請求名稱"
     },
     "collection_input": {
-      "list_placeholder": "选择或创建一个新的集合",
+      "list_placeholder": "選擇或建立一個新的集合",
       "text_input_placeholder": "新建集合",
-      "label_text": "集合名称",
-      "label_info_text": "集合可让您对相关请求进行分组，从而更轻松地访问和运行它们。"
+      "label_text": "集合名稱",
+      "label_info_text": "集合可讓您對相關請求進行分組，從而更輕鬆地訪問和執行它們。"
     },
-    "secondary_button_text": "导入而不保存",
-    "primary_button_text": "导入到集合"
+    "secondary_button_text": "匯入而不儲存",
+    "primary_button_text": "匯入到集合"
   }
 }

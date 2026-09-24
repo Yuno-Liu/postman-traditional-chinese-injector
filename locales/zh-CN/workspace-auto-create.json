@@ -1,19 +1,19 @@
 {
   "working": {
-    "resolving": "正在准备…",
-    "creating": "正在创建你的工作区…",
-    "redirecting": "正在打开你的工作区…",
-    "do_not_close": "只需稍等片刻，请不要关闭此标签页。"
+    "resolving": "正在準備…",
+    "creating": "正在建立你的工作區…",
+    "redirecting": "正在開啟你的工作區…",
+    "do_not_close": "只需稍等片刻，請不要關閉此標籤頁。"
   },
   "error": {
-    "title": "无法创建工作区",
-    "generic": "出错了，请重试。",
-    "retry": "重试",
-    "go_to_workspaces": "前往你的工作区"
+    "title": "無法建立工作區",
+    "generic": "出錯了，請重試。",
+    "retry": "重試",
+    "go_to_workspaces": "前往你的工作區"
   },
   "signed_out": {
-    "title": "请登录后继续",
-    "description": "需要先登录 Postman，我们才能为你创建工作区。",
-    "sign_in": "登录"
+    "title": "請登入後繼續",
+    "description": "需要先登入 Postman，我們才能為你建立工作區。",
+    "sign_in": "登入"
   }
 }

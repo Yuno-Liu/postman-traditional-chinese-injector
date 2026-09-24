@@ -1,705 +1,705 @@
 {
   "new_tag": "新",
-  "beta_tag": "测试版",
+  "beta_tag": "測試版",
   "general": {
-    "label": "常规",
-    "tooltip_not_available": "使用浏览器代理时此设置不可用。切换到桌面代理以更改此设置。",
-    "cloud_agent_tooltip_not_available": "使用云代理时此设置不可用。切换到桌面代理以更改此设置。",
+    "label": "常規",
+    "tooltip_not_available": "使用瀏覽器代理時此設定不可用。切換到桌面代理以更改此設定。",
+    "cloud_agent_tooltip_not_available": "使用雲代理時此設定不可用。切換到桌面代理以更改此設定。",
     "request": {
-      "label": "请求",
-      "ssl_certificate_verification": "SSL 证书验证",
+      "label": "請求",
+      "ssl_certificate_verification": "SSL 證書驗證",
       "ssl_keylogging": {
-        "label": "SSL/TLS 密钥日志",
-        "description": "启用 SSL/TLS 会话密钥记录以调试加密连接",
-        "file_placeholder": "选择用于 SSL/TLS 密钥记录的文件",
-        "file_tooltip_no_file": "未选择文件",
-        "file_tooltip_enable_first": "首先启用 SSL/TLS 密钥记录",
-        "browse_button": "选择",
-        "dialog_title": "选择 SSL/TLS 密钥记录文件",
-        "dialog_button_label": "选择",
-        "web_warning": "当云代理处于活动状态时，无法选择 SSL 密钥日志文件"
+        "label": "SSL/TLS 金鑰日誌",
+        "description": "啟用 SSL/TLS 會話金鑰記錄以除錯加密連線",
+        "file_placeholder": "選擇用於 SSL/TLS 金鑰記錄的檔案",
+        "file_tooltip_no_file": "未選擇檔案",
+        "file_tooltip_enable_first": "首先啟用 SSL/TLS 金鑰記錄",
+        "browse_button": "選擇",
+        "dialog_title": "選擇 SSL/TLS 金鑰記錄檔案",
+        "dialog_button_label": "選擇",
+        "web_warning": "當雲代理處於活動狀態時，無法選擇 SSL 金鑰日誌檔案"
       },
-      "lang_detection": "响应格式检测",
-      "lang_detect_auto": "自动",
+      "lang_detection": "響應格式檢測",
+      "lang_detect_auto": "自動",
       "lang_detect_json": "JSON",
       "request_timeout": {
-        "label": "请求超时时间",
-        "desc": "设置请求在超时之前应等待响应的时间。要永不超时，请设置为 0。",
+        "label": "請求超時時間",
+        "desc": "設定請求在超時之前應等待響應的時間。要永不超時，請設定為 0。",
         "unit": "ms"
       },
       "max_response_size": {
-        "label": "最大响应大小",
-        "desc": "设置要下载的响应的最大大小。要下载任意大小的响应，请设置为 0。",
+        "label": "最大響應大小",
+        "desc": "設定要下載的響應的最大大小。要下載任意大小的響應，請設定為 0。",
         "unit": "MB"
       },
       "protocol_version": {
         "label": "HTTP 版本",
-        "desc": "选择用于发送请求的 HTTP 版本。"
+        "desc": "選擇用於傳送請求的 HTTP 版本。"
       },
       "disable_cookies": {
-        "label": "禁用 Cookie",
-        "desc": "对所有请求禁用 Cookie jar。"
+        "label": "停用 Cookie",
+        "desc": "對所有請求停用 Cookie jar。"
       }
     },
     "working_directory": {
-      "label": "工作目录",
-      "collaborate": "通过共享您的工作目录来协作处理请求中使用的文件。了解如何<1><0>设置您的工作目录</0></1>",
+      "label": "工作目錄",
+      "collaborate": "通過共享您的工作目錄來協作處理請求中使用的檔案。瞭解如何<1><0>設定您的工作目錄</0></1>",
       "location": {
-        "label": "地点",
-        "button_label": "选择",
-        "selected_dir_not_exist": "所选工作目录不存在",
-        "dir_cannot_be_configured": "使用浏览器时无法配置工作目录。",
-        "allow_reading_files": "读取工作目录之外的文件",
-        "allow_reading_files_explanation": "启用此功能将允许任何第三方集合读取您系统上的任何文件。",
-        "dialog_button_label": "选择"
+        "label": "地點",
+        "button_label": "選擇",
+        "selected_dir_not_exist": "所選工作目錄不存在",
+        "dir_cannot_be_configured": "使用瀏覽器時無法配置工作目錄。",
+        "allow_reading_files": "讀取工作目錄之外的檔案",
+        "allow_reading_files_explanation": "啟用此功能將允許任何第三方集合讀取您系統上的任何檔案。",
+        "dialog_button_label": "選擇"
       }
     },
     "headers": {
       "label": "Headers",
-      "send_no-cache_header": "发送无缓存标头",
-      "send_postman_header": "发送 Postman 令牌标头",
-      "retain_headers": "单击链接时保留标题",
-      "auto_follow_redirects": "自动遵循重定向"
+      "send_no-cache_header": "傳送無快取標頭",
+      "send_postman_header": "傳送 Postman 令牌標頭",
+      "retain_headers": "單擊連結時保留標題",
+      "auto_follow_redirects": "自動遵循重定向"
     },
     "user_interface": {
-      "label": "用户界面",
-      "remove_tabs": "删除标签",
-      "remove_tabs_explanation": "使用浏览器选项卡导航 Postman。",
-      "open_sidebar_new_tab": "始终在新选项卡中打开侧边栏项目",
-      "ask_closing_tabs": "关闭未保存的选项卡时始终询问",
-      "show_icons_tab_names": "显示带有选项卡名称的图标",
-      "two-pane_view": "两窗格视图",
-      "show_middle_workbench": "显示中间工作台",
-      "swap_left_right_sidebar": "交换左右侧边栏",
-      "var_autocomplete": "变量自动完成",
-      "default_doc_editor": "默认文档编辑器",
-      "postman_editor": "Postman 编辑器",
-      "markdown_editor": "Markdown 编辑器"
+      "label": "使用者介面",
+      "remove_tabs": "刪除標籤",
+      "remove_tabs_explanation": "使用瀏覽器選項卡導航 Postman。",
+      "open_sidebar_new_tab": "始終在新選項卡中開啟側邊欄項目",
+      "ask_closing_tabs": "關閉未儲存的選項卡時始終詢問",
+      "show_icons_tab_names": "顯示帶有選項卡名稱的圖示",
+      "two-pane_view": "兩窗格檢視",
+      "show_middle_workbench": "顯示中間工作臺",
+      "swap_left_right_sidebar": "交換左右側邊欄",
+      "var_autocomplete": "變數自動完成",
+      "default_doc_editor": "預設檔案編輯器",
+      "postman_editor": "Postman 編輯器",
+      "markdown_editor": "Markdown 編輯器"
     },
     "editor_settings": {
-      "label": "编辑器设置",
+      "label": "編輯器設定",
       "reset_button_label": "重置",
-      "reset_button_tooltip": "将编辑器设置重置为其默认值",
-      "font_family": "字体系列",
-      "font_size": "字体大小（像素）",
-      "font_size_unit": "像素",
-      "indentation_count": "缩进数",
-      "indentation_count_explanation": "设置每个代码级别添加的缩进数量。",
-      "indentation_type": "缩进类型",
-      "indentation_type_explanation": "使用空格或制表符缩进代码行。",
+      "reset_button_tooltip": "將編輯器設定重置為其預設值",
+      "font_family": "字型系列",
+      "font_size": "字型大小（畫素）",
+      "font_size_unit": "畫素",
+      "indentation_count": "縮排數",
+      "indentation_count_explanation": "設定每個程式碼級別新增的縮排數量。",
+      "indentation_type": "縮排型別",
+      "indentation_type_explanation": "使用空格或製表符縮排程式碼行。",
       "indentation_type_space": "空格",
-      "indentation_type_tab": "制表符",
-      "auto_close_brackets": "自动关闭括号",
-      "auto_close_quotes": "自动关闭引号"
+      "indentation_type_tab": "製表符",
+      "auto_close_brackets": "自動關閉括號",
+      "auto_close_quotes": "自動關閉引號"
     },
     "application": {
-      "label": "应用",
-      "autosave": "自动保存",
-      "autosave_explanation": "自动保存对您的请求和集合的更改。",
-      "autosave_explanation_only_requests": "自动保存对您的请求的更改。",
-      "send_anonymous_data": "将匿名使用数据发送至 Postman",
-      "send_anonymous_data_managed": "已被你所在组织的 Postman 安装设置关闭。",
-      "connection_mode": "连接方式",
-      "connection_mode_explanation": "配置应用程序连接到 Postman 服务器的方式。",
-      "connection_mode_auto": "自动",
+      "label": "應用",
+      "autosave": "自動儲存",
+      "autosave_explanation": "自動儲存對您的請求和集合的更改。",
+      "autosave_explanation_only_requests": "自動儲存對您的請求的更改。",
+      "send_anonymous_data": "將匿名使用資料傳送至 Postman",
+      "send_anonymous_data_managed": "已被你所在組織的 Postman 安裝設定關閉。",
+      "connection_mode": "連線方式",
+      "connection_mode_explanation": "配置應用程式連線到 Postman 伺服器的方式。",
+      "connection_mode_auto": "自動",
       "connection_mode_http": "HTTP",
-      "os_notifications": "在应用图标上显示通知徽章",
-      "os_notifications_explanation": "在 Postman 应用图标上显示未读通知数量。",
-      "language": "语言",
-      "language_description": "选择 Postman 应用程序和电子邮件通知的语言。",
-      "language_loading": "翻译 1 和 0...这可能需要几分钟...",
-      "language_error": "更改应用程序语言时出现问题。再试一次。",
+      "os_notifications": "在應用圖示上顯示通知徽章",
+      "os_notifications_explanation": "在 Postman 應用圖示上顯示未讀通知數量。",
+      "language": "語言",
+      "language_description": "選擇 Postman 應用程式和電子郵件通知的語言。",
+      "language_loading": "翻譯 1 和 0...這可能需要幾分鐘...",
+      "language_error": "更改應用程式語言時出現問題。再試一次。",
       "deep_linking": {
         "desktop": {
-          "manage": "在桌面应用程序中打开",
-          "manage_desc": "尽可能自动打开桌面应用程序中的链接。您可以在浏览器的 Postman 设置中更新您的偏好设置。",
-          "manage_button": "在网络上打开 Postman"
+          "manage": "在桌面應用程式中開啟",
+          "manage_desc": "儘可能自動開啟桌面應用程式中的連結。您可以在瀏覽器的 Postman 設定中更新您的偏好設定。",
+          "manage_button": "在網路上開啟 Postman"
         },
         "web": {
-          "open_links_desktop": "始终在桌面应用程序中打开",
-          "open_links_desktop_desc": "自动在桌面应用程序中打开工作区相关链接。如果不可用，链接将在浏览器中打开。"
+          "open_links_desktop": "始終在桌面應用程式中開啟",
+          "open_links_desktop_desc": "自動在桌面應用程式中開啟工作區相關連結。如果不可用，連結將在瀏覽器中開啟。"
         }
       }
     },
     "data-choices": {
-      "label": "数据选择",
-      "essential": "存储应用程序运行所需的基本使用数据（身份验证令牌、审核日志等）",
-      "functional": "发送产品的匿名功能使用数据（错误报告等）",
-      "analytics": "发送匿名分析使用数据以改进产品",
-      "advertising": "出于广告目的发送匿名数据",
-      "sale_of_info": "出于出售信息的目的发送匿名数据",
-      "unknown": "出于未知目的发送匿名数据"
+      "label": "資料選擇",
+      "essential": "儲存應用程式執行所需的基本使用資料（身份驗證令牌、稽核日誌等）",
+      "functional": "傳送產品的匿名功能使用資料（錯誤報告等）",
+      "analytics": "傳送匿名分析使用資料以改進產品",
+      "advertising": "出於廣告目的傳送匿名資料",
+      "sale_of_info": "出於出售資訊的目的傳送匿名資料",
+      "unknown": "出於未知目的傳送匿名資料"
     }
   },
   "themes": {
-    "label": "主题",
-    "original_description": "使用适合您心情和风格的颜色来个性化您的体验。",
-    "description": "使用符合您风格的主题来个性化您的体验。手动选择主题或与系统设置同步，让机器设置您的白天和夜间主题。",
+    "label": "主題",
+    "original_description": "使用適合您心情和風格的顏色來個性化您的體驗。",
+    "description": "使用符合您風格的主題來個性化您的體驗。手動選擇主題或與系統設定同步，讓機器設定您的白天和夜間主題。",
     "banners": {
-      "workspace_theme_applied_note": "此工作区有其自己的主题，因此您无法在此处应用或预览所选主题。不用担心，您的偏好将被保存。<1><0>了解更多</0></1>"
+      "workspace_theme_applied_note": "此工作區有其自己的主題，因此您無法在此處應用或預覽所選主題。不用擔心，您的偏好將被儲存。<1><0>瞭解更多</0></1>"
     },
     "theme_option": {
-      "system": "系统默认值",
-      "light": "浅色",
+      "system": "系統預設值",
+      "light": "淺色",
       "dark": "深色",
       "dracula": "Dracula",
       "monokai": "Monokai",
       "ayu_light": "Ayu Light",
       "ayu_dark": "Ayu Dark",
-      "high_contrast_light": "高对比度浅色",
-      "high_contrast_dark": "高对比度深色",
-      "night_owl_light": "夜猫子浅色",
-      "night_owl_dark": "夜猫子深色",
+      "high_contrast_light": "高對比度淺色",
+      "high_contrast_dark": "高對比度深色",
+      "night_owl_light": "夜貓子淺色",
+      "night_owl_dark": "夜貓子深色",
       "solarized_light": "Solarized Light",
       "solarized_dark": "Solarized Dark"
     },
-    "reload_banner_text": "我们在应用主题时遇到错误。重新加载页面以重试。 <1>重新加载</1>",
-    "banner_text": "我们在加载主题时遇到问题。 <1>再试一次</1>",
-    "mode": "主题选择",
+    "reload_banner_text": "我們在應用主題時遇到錯誤。重新載入頁面以重試。 <1>重新載入</1>",
+    "banner_text": "我們在載入主題時遇到問題。 <1>再試一次</1>",
+    "mode": "主題選擇",
     "mode_options": {
-      "single": "手动",
-      "system": "与系统同步"
+      "single": "手動",
+      "system": "與系統同步"
     },
     "mode_system": {
       "headings": {
-        "day": "白天主题",
-        "night": "夜间主题"
+        "day": "白天主題",
+        "night": "夜間主題"
       },
       "descriptions": {
-        "day": "当系统设置为亮起时激活。",
-        "night": "当系统设置为黑暗时激活。"
+        "day": "當系統設定為亮起時啟用。",
+        "night": "當系統設定為黑暗時啟用。"
       },
       "badge": "使用中"
     }
   },
   "shortcuts": {
     "label": "快捷方式",
-    "toggle_switch_label": "键盘快捷键",
-    "restore_defaults_button_label": "恢复默认设置",
+    "toggle_switch_label": "鍵盤快捷鍵",
+    "restore_defaults_button_label": "恢復預設設定",
     "groups": {
-      "tabs": "选项卡",
-      "sidebar": "侧边栏",
-      "request": "请求",
-      "interface": "界面",
-      "window_and_modals": "窗口和模态框",
+      "tabs": "選項卡",
+      "sidebar": "側邊欄",
+      "request": "請求",
+      "interface": "介面",
+      "window_and_modals": "視窗和模態框",
       "console": "控制台",
       "postbot": "Postbot"
     },
-    "open_new_tab": "打开新标签",
-    "close_current_tab": "关闭选项卡",
-    "force_close_current_tab": "强制关闭选项卡",
-    "switch_to_next_tab": "切换到下一个选项卡",
-    "switch_to_previous_tab": "切换到上一个选项卡",
-    "switch_to_tab_at_position": "切换到指定位置的选项卡",
-    "reopen_last_closed_tab": "重新打开上次关闭的选项卡",
-    "switch_to_last_tab": "切换到最后一个选项卡",
-    "request_url": "请求 URL",
-    "save_current_request": "保存请求",
-    "save_current_request_as": "将请求另存为",
-    "send_current_request": "发送请求",
-    "send_and_download_current_request": "发送并下载请求",
-    "send_current_request_with_ai": "用 AI 发送请求",
-    "search_tabs": "搜索选项卡",
-    "search": "搜索侧边栏",
-    "toggle_left_sidebar": "切换左侧边栏",
-    "toggle_workbench": "切换工作台",
-    "toggle_right_sidebar": "切换右侧边栏",
-    "swap_sidebars": "交换侧边栏",
-    "reset_layout": "重置布局",
-    "select": "选择项目",
-    "next_item": "下一个项目",
-    "prev_item": "上一个项目",
-    "expand_item": "展开项目",
-    "expand_all": "全部展开",
-    "collapse_item": "折叠项目",
-    "collapse_all": "全部折叠",
-    "rename": "重命名项目",
-    "group_items": "组项目",
-    "move_item_up": "上移项目",
-    "move_item_down": "下移项目",
-    "cut": "剪切项目",
-    "copy": "复制项目",
-    "paste": "粘贴项目",
-    "duplicate": "重复项目",
-    "delete": "删除项目",
-    "fork": "创建一个 fork",
-    "toggle_find_replace": "查找",
-    "import": "导入",
-    "settings": "设置",
-    "shortcut_cheats": "打开快捷方式帮助",
+    "open_new_tab": "開啟新標籤",
+    "close_current_tab": "關閉選項卡",
+    "force_close_current_tab": "強制關閉選項卡",
+    "switch_to_next_tab": "切換到下一個選項卡",
+    "switch_to_previous_tab": "切換到上一個選項卡",
+    "switch_to_tab_at_position": "切換到指定位置的選項卡",
+    "reopen_last_closed_tab": "重新開啟上次關閉的選項卡",
+    "switch_to_last_tab": "切換到最後一個選項卡",
+    "request_url": "請求 URL",
+    "save_current_request": "儲存請求",
+    "save_current_request_as": "將請求另存為",
+    "send_current_request": "傳送請求",
+    "send_and_download_current_request": "傳送並下載請求",
+    "send_current_request_with_ai": "用 AI 傳送請求",
+    "search_tabs": "搜尋選項卡",
+    "search": "搜尋側邊欄",
+    "toggle_left_sidebar": "切換左側邊欄",
+    "toggle_workbench": "切換工作臺",
+    "toggle_right_sidebar": "切換右側邊欄",
+    "swap_sidebars": "交換側邊欄",
+    "reset_layout": "重置佈局",
+    "select": "選擇項目",
+    "next_item": "下一個項目",
+    "prev_item": "上一個項目",
+    "expand_item": "展開項目",
+    "expand_all": "全部展開",
+    "collapse_item": "摺疊項目",
+    "collapse_all": "全部摺疊",
+    "rename": "重新命名項目",
+    "group_items": "組項目",
+    "move_item_up": "上移項目",
+    "move_item_down": "下移項目",
+    "cut": "剪下項目",
+    "copy": "複製項目",
+    "paste": "貼上項目",
+    "duplicate": "重複項目",
+    "delete": "刪除項目",
+    "fork": "建立一個 fork",
+    "toggle_find_replace": "查詢",
+    "import": "匯入",
+    "settings": "設定",
+    "shortcut_cheats": "開啟快捷方式幫助",
     "open_create_new_modal": "新的...",
-    "new_console_window": "新建控制台窗口",
-    "new_requester_window": "新建 Postman 窗口",
-    "new_runner_tab": "新建运行器选项卡",
-    "navigate_to_previous_page": "返回上一页",
-    "navigate_to_next_page": "返回下一页",
+    "new_console_window": "新建控制台視窗",
+    "new_requester_window": "新建 Postman 視窗",
+    "new_runner_tab": "新建執行器選項卡",
+    "navigate_to_previous_page": "返回上一頁",
+    "navigate_to_next_page": "返回下一頁",
     "increase_ui_zoom": "放大",
-    "decrease_ui_zoom": "缩小",
-    "reset_ui_zoom": "重置缩放",
-    "toggle_layout": "切换两窗格视图",
-    "quit": "退出模态",
+    "decrease_ui_zoom": "縮小",
+    "reset_ui_zoom": "重置縮放",
+    "toggle_layout": "切換兩窗格檢視",
+    "quit": "退出模態",
     "space": "空格",
-    "focus_next": "聚焦下一个项目",
-    "universal_search_focus": "搜索",
-    "universal_search_in_current_workspace": "在当前工作区中搜索",
-    "environment_selector_focus": "环境选择器",
+    "focus_next": "聚焦下一個項目",
+    "universal_search_focus": "搜尋",
+    "universal_search_in_current_workspace": "在當前工作區中搜索",
+    "environment_selector_focus": "環境選擇器",
     "clear_console": "清除控制台",
-    "show_hide_console": "显示/隐藏控制台",
-    "trigger_postbot": "打开 Postbot",
-    "open_agent_mode": "开启代理模式",
-    "open_vault": "打开 Vault",
-    "open_browser_tab": "打开浏览器标签页",
-    "cancel_conversation": "取消对话",
+    "show_hide_console": "顯示/隱藏控制台",
+    "trigger_postbot": "開啟 Postbot",
+    "open_agent_mode": "開啟代理模式",
+    "open_vault": "開啟 Vault",
+    "open_browser_tab": "開啟瀏覽器標籤頁",
+    "cancel_conversation": "取消對話",
     "accept_all_tool_call": "全部接受",
-    "reject_all_tool_call": "全部拒绝",
-    "search_variable": "搜索变量",
+    "reject_all_tool_call": "全部拒絕",
+    "search_variable": "搜尋變數",
     "tooltips": {
       "conflict": {
-        "reassign_message_with_shortcut": "<0>该快捷键已被 <1>{shortcut}</1> 占用。</0><1>按 {osKey} 重新分配快捷键，按 ESC 取消。</1>",
-        "reassign_message_without_shortcut": "<0>该快捷键已被 <1>其他快捷键</1>占用。</0><1>按 {osKey} 重新分配快捷键，按 ESC 取消。</1>"
+        "reassign_message_with_shortcut": "<0>該快捷鍵已被 <1>{shortcut}</1> 佔用。</0><1>按 {osKey} 重新分配快捷鍵，按 ESC 取消。</1>",
+        "reassign_message_without_shortcut": "<0>該快捷鍵已被 <1>其他快捷鍵</1>佔用。</0><1>按 {osKey} 重新分配快捷鍵，按 ESC 取消。</1>"
       },
       "error": {
-        "system_reserved_message_with_keylabel": "{keyLabel} 快捷方式已用作系统快捷方式。尝试另一种组合。",
-        "system_reserved_message_without_keylabel": "该快捷方式已用作系统快捷方式。尝试另一种组合。",
-        "system_blacklisted_message": "不支持数字键盘以及某些功能键和导航键。尝试另一种组合。",
+        "system_reserved_message_with_keylabel": "{keyLabel} 快捷方式已用作系統快捷方式。嘗試另一種組合。",
+        "system_reserved_message_without_keylabel": "該快捷方式已用作系統快捷方式。嘗試另一種組合。",
+        "system_blacklisted_message": "不支援數字鍵盤以及某些功能鍵和導航鍵。嘗試另一種組合。",
         "no_modifier_key": {
-          "message_without_keylabel": "这是无效的快捷方式。快捷键必须包含 {modifiers} 键",
-          "message_with_keylabel": "{keyLabel} 是无效的快捷方式。快捷键必须包含 {modifiers} 键"
+          "message_without_keylabel": "這是無效的快捷方式。快捷鍵必須包含 {modifiers} 鍵",
+          "message_with_keylabel": "{keyLabel} 是無效的快捷方式。快捷鍵必須包含 {modifiers} 鍵"
         }
       },
-      "restore_default": "恢复默认快捷键"
+      "restore_default": "恢復預設快捷鍵"
     },
     "keys_between_label": "到",
     "empty_key_binding_placeholder": "未分配"
   },
   "data": {
-    "label": "数据",
+    "label": "資料",
     "export_data": {
-      "label": "导出集合和环境",
-      "description": "将所有集合和环境导出到单个转储文件。",
-      "exporting_label": "正在导出",
-      "request_data_export_label": "请求数据导出",
-      "export_data_success_message": "您的数据已成功导出。",
-      "export_data_error_message": "无法导出数据。请检查开发工具。"
+      "label": "匯出集合和環境",
+      "description": "將所有集合和環境匯出到單個轉儲檔案。",
+      "exporting_label": "正在匯出",
+      "request_data_export_label": "請求資料匯出",
+      "export_data_success_message": "您的資料已成功匯出。",
+      "export_data_error_message": "無法匯出資料。請檢查開發工具。"
     },
     "import_data": {
-      "label": "导入数据",
-      "description": "导入 Postman 数据转储。这可能会覆盖现有数据。",
-      "upload_files_label": "导入数据文件",
-      "format_not_recognised_error": "导入时出错：格式无法识别",
+      "label": "匯入資料",
+      "description": "匯入 Postman 資料轉儲。這可能會覆蓋現有資料。",
+      "upload_files_label": "匯入資料檔案",
+      "format_not_recognised_error": "匯入時出錯：格式無法識別",
       "import_conflict_modal": {
-        "environment_already_exists": "环境 <0>{name}</0> 已存在。",
+        "environment_already_exists": "環境 <0>{name}</0> 已存在。",
         "collection_already_exists": "集合 <0>{name}</0> 已存在。",
-        "what_you_like_to_do": "你想做什么？",
-        "apply_to_all": "适用于所有",
+        "what_you_like_to_do": "你想做什麼？",
+        "apply_to_all": "適用於所有",
         "replace": "代替",
-        "import_as_copy": "导入为副本"
+        "import_as_copy": "匯入為副本"
       }
     },
-    "scratchpad_data_heading": "便签本数据",
+    "scratchpad_data_heading": "便籤本資料",
     "migrate_data": {
-      "label": "迁移暂存器数据",
-      "description": "将所有便笺本数据迁移并同步到工作区。",
-      "migrate_data_button_label": "迁移数据"
+      "label": "遷移暫存器資料",
+      "description": "將所有便箋本資料遷移並同步到工作區。",
+      "migrate_data_button_label": "遷移資料"
     },
     "export_scratchpad_data": {
-      "label": "导出便笺本数据",
-      "description": "将所有暂存器数据导出到单个转储文件中。",
-      "export_data_button_label": "导出便笺本数据"
+      "label": "匯出便箋本資料",
+      "description": "將所有暫存器資料匯出到單個轉儲檔案中。",
+      "export_data_button_label": "匯出便箋本資料"
     }
   },
   "addons": {
-    "label": "附加组件",
+    "label": "附加元件",
     "postman_cli": {
       "heading": "Postman CLI",
-      "section_summary": "将 Postman 的强大功能带入您的命令行。运行集合、自动化测试并与 CI/CD 工作流程集成。",
+      "section_summary": "將 Postman 的強大功能帶入您的命令列。執行集合、自動化測試並與 CI/CD 工作流程整合。",
       "url": "https://www.npmjs.com/package/postman-cli",
-      "urlText": "从npm下载",
-      "installInTerminalText": "在终端中安装"
+      "urlText": "從npm下載",
+      "installInTerminalText": "在終端中安裝"
     },
     "postman_vscode": {
-      "heading": "Postman VS Code 扩展",
-      "section_summary": "发送请求、测试 API 和管理集合——所有这些都在您的代码编辑器中进行。也可用于 Cursor、Windsurf 和其他兼容的编辑器。",
+      "heading": "Postman VS Code 擴充套件",
+      "section_summary": "傳送請求、測試 API 和管理集合——所有這些都在您的程式碼編輯器中進行。也可用於 Cursor、Windsurf 和其他相容的編輯器。",
       "url": "https://learning.postman.com/docs/developer/vs-code-extension/install/",
-      "urlText": "安装在 VS Code 上"
+      "urlText": "安裝在 VS Code 上"
     },
     "postman_interceptor": {
-      "heading": "Postman 拦截器",
-      "section_summary": "直接从浏览器捕获 Cookie 和请求并将其同步到 Postman。使用它来测试经过身份验证的 API 并无缝调试基于浏览器的工作流程。",
+      "heading": "Postman 攔截器",
+      "section_summary": "直接從瀏覽器捕獲 Cookie 和請求並將其同步到 Postman。使用它來測試經過身份驗證的 API 並無縫除錯基於瀏覽器的工作流程。",
       "url": "https://chromewebstore.google.com/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo?hl=en",
-      "urlText": "安装在 Chrome 上"
+      "urlText": "安裝在 Chrome 上"
     }
   },
   "certificates": {
-    "label": "证书",
+    "label": "證書",
     "not_supported": {
-      "heading": "不支持",
-      "description": "使用云代理时不支持配置 SSL 证书。要按域查看和设置 SSL 证书，请使用 Postman 桌面代理。"
+      "heading": "不支援",
+      "description": "使用雲代理時不支援配置 SSL 證書。要按域檢視和設定 SSL 證書，請使用 Postman 桌面代理。"
     },
     "using_browser_certificates": {
-      "heading": "使用浏览器证书",
-      "description": "默认情况下，Postman 在发送 API 请求时使用浏览器的 SSL 证书。要按域查看和设置 SSL 证书，请使用 Postman 桌面代理。"
+      "heading": "使用瀏覽器證書",
+      "description": "預設情況下，Postman 在傳送 API 請求時使用瀏覽器的 SSL 證書。要按域檢視和設定 SSL 證書，請使用 Postman 桌面代理。"
     },
     "ca_certificates": {
-      "heading": "CA 证书",
+      "heading": "CA 證書",
       "pem_file": {
-        "label": "PEM 文件",
-        "description": "该文件应包含一个或多个 PEM 格式的受信任证书。",
-        "file_format_error": "所选的 PEM 文件不可读。请检查文件权限。"
+        "label": "PEM 檔案",
+        "description": "該檔案應包含一個或多個 PEM 格式的受信任證書。",
+        "file_format_error": "所選的 PEM 檔案不可讀。請檢查檔案許可權。"
       }
     },
     "client_certificates": {
-      "heading": "客户证书",
-      "add_certificate_label": "添加证书...",
-      "add_and_manage_ssl_certificates": "按域添加和管理 SSL 证书。了解有关<0>使用证书的更多信息</0>",
-      "host": "主机",
-      "passphrase": "密码",
-      "remove_certificate_tooltip": "删除证书",
+      "heading": "客戶證書",
+      "add_certificate_label": "新增證書...",
+      "add_and_manage_ssl_certificates": "按域新增和管理 SSL 證書。瞭解有關<0>使用證書的更多資訊</0>",
+      "host": "主機",
+      "passphrase": "密碼",
+      "remove_certificate_tooltip": "刪除證書",
       "crt_file": {
-        "label": "CRT 文件",
-        "error_message": "所选的 CRT 文件不可读，请检查文件权限。"
+        "label": "CRT 檔案",
+        "error_message": "所選的 CRT 檔案不可讀，請檢查檔案許可權。"
       },
       "key_file": {
-        "label": "密钥文件",
-        "error_message": "所选的 KEY 文件不可读，请检查文件权限。"
+        "label": "金鑰檔案",
+        "error_message": "所選的 KEY 檔案不可讀，請檢查檔案許可權。"
       },
       "pfx_file": {
-        "label": "PFX 文件",
-        "error_message": "所选的 PFX 文件不可读，请检查文件权限。"
+        "label": "PFX 檔案",
+        "error_message": "所選的 PFX 檔案不可讀，請檢查檔案許可權。"
       }
     },
     "add_certificate": {
-      "heading": "添加证书",
+      "heading": "新增證書",
       "host": {
-        "label": "主机",
+        "label": "主機",
         "placeholder": "getpostman.com",
         "prefix": "https://",
-        "error_message": "主机名是必需的"
+        "error_message": "主機名是必需的"
       },
       "port": {
         "placeholder": "443"
       },
-      "crt_file": "CRT 文件",
-      "key_file": "密钥文件",
-      "pfx_file": "PFX 文件",
-      "passphrase": "密码",
-      "add_button_label": "添加",
+      "crt_file": "CRT 檔案",
+      "key_file": "金鑰檔案",
+      "pfx_file": "PFX 檔案",
+      "passphrase": "密碼",
+      "add_button_label": "新增",
       "cancel_button_label": "取消",
-      "working_with_certificates": "了解有关 <1><0> 使用证书的更多信息</0></1>"
+      "working_with_certificates": "瞭解有關 <1><0> 使用證書的更多資訊</0></1>"
     }
   },
   "connected_accounts": {
-    "label": "关联账户"
+    "label": "關聯賬戶"
   },
   "experiments": {
-    "label": "功能预览",
+    "label": "功能預覽",
     "global": {
-      "description": "使用为早期采用者设计的测试版功能。随着我们完善体验，预计会出现快速迭代和更新。"
+      "description": "使用為早期採用者設計的測試版功能。隨著我們完善體驗，預計會出現快速迭代和更新。"
     },
     "live_debugging": {
-      "label": "实时会话"
+      "label": "即時會話"
     },
     "agent_mode": {
-      "label": "尝试代理模式"
+      "label": "嘗試代理模式"
     }
   },
   "proxy": {
     "common": {
-      "username_label": "用户名",
-      "password_label": "密码"
+      "username_label": "使用者名稱",
+      "password_label": "密碼"
     },
     "global": {
-      "auth_label": "代理授权",
-      "auth_desc": "使用基本的身份验证方法。",
-      "bypass_label": "代理绕过",
-      "bypass_desc": "输入逗号分隔的主机以绕过代理设置。",
-      "heading": "用于发送请求的代理配置",
-      "desc": "指定代理设置以充当通过 Postman 中的生成器发送的请求的中介。这些配置不适用于任何 Postman 服务。了解有关<0>使用自定义代理</0>的更多信息",
-      "respect_variables_label": "尊重 HTTP_PROXY、HTTPS_PROXY 和 NO_PROXY 环境变量",
-      "server_input_label": "代理服务器",
+      "auth_label": "代理授權",
+      "auth_desc": "使用基本的身份驗證方法。",
+      "bypass_label": "代理繞過",
+      "bypass_desc": "輸入逗號分隔的主機以繞過代理設定。",
+      "heading": "用於傳送請求的代理配置",
+      "desc": "指定代理設定以充當通過 Postman 中的生成器傳送的請求的中介。這些配置不適用於任何 Postman 服務。瞭解有關<0>使用自定義代理</0>的更多資訊",
+      "respect_variables_label": "尊重 HTTP_PROXY、HTTPS_PROXY 和 NO_PROXY 環境變數",
+      "server_input_label": "代理伺服器",
       "type_HTTP_label": "HTTP",
       "type_HTTPS_label": "HTTPS",
       "type_selector_label": "使用代理",
-      "type_selector_desc": "选择使用代理的请求类型。",
-      "use_custom_proxy_label": "使用自定义代理配置",
-      "use_system_proxy_label": "使用系统代理"
+      "type_selector_desc": "選擇使用代理的請求型別。",
+      "use_custom_proxy_label": "使用自定義代理配置",
+      "use_system_proxy_label": "使用系統代理"
     },
     "system": {
-      "auth_label": "该代理需要身份验证",
-      "heading": "默认代理配置",
-      "summary": "Postman 默认使用系统的代理配置连接到任何在线服务，或发送 API 请求。",
-      "restart_button_text": "保存并重新启动 Postman"
+      "auth_label": "該代理需要身份驗證",
+      "heading": "預設代理配置",
+      "summary": "Postman 預設使用系統的代理配置連線到任何線上服務，或傳送 API 請求。",
+      "restart_button_text": "儲存並重新啟動 Postman"
     },
-    "cloud_state_msg": "您的请求已通过云代理进行代理。要自定义代理配置，请使用 Postman 桌面代理。",
-    "cloud_state_title": "不适用",
+    "cloud_state_msg": "您的請求已通過雲代理進行代理。要自定義代理配置，請使用 Postman 桌面代理。",
+    "cloud_state_title": "不適用",
     "label": "代理",
-    "xhr_state_msg": "默认情况下，Postman 在发送 API 请求时使用浏览器的代理配置。要自定义代理配置，请使用 Postman 桌面代理。",
-    "xhr_state_title": "默认代理配置",
-    "invalid_host": "无效主机",
-    "invalid_port": "端口无效"
+    "xhr_state_msg": "預設情況下，Postman 在傳送 API 請求時使用瀏覽器的代理配置。要自定義代理配置，請使用 Postman 桌面代理。",
+    "xhr_state_title": "預設代理配置",
+    "invalid_host": "無效主機",
+    "invalid_port": "埠無效"
   },
   "postman_passport": {
     "label": "Passport Proxy",
     "heading": "Passport Proxy",
-    "description": "使用预置的客户端证书，将 API 请求通过组织的 Passport Proxy 转发。",
-    "current_configuration": "当前配置",
+    "description": "使用預置的客戶端證書，將 API 請求通過組織的 Passport Proxy 轉發。",
+    "current_configuration": "當前配置",
     "proxy_url": "代理 URL",
-    "certificate": "证书",
-    "cert_expires_in": "证书过期时间",
-    "status": "状态",
-    "status_connected": "已连接",
-    "status_disconnected": "已断开连接",
+    "certificate": "證書",
+    "cert_expires_in": "證書過期時間",
+    "status": "狀態",
+    "status_connected": "已連線",
+    "status_disconnected": "已斷開連線",
     "status_no_proxy": "未配置代理",
-    "status_no_proxy_detail": "你的团队尚未配置 Passport Proxy。",
-    "status_not_connected": "未连接",
-    "status_not_connected_detail": "无法为 Passport Proxy 预置证书。",
-    "error_generic": "无法连接到 Passport Proxy。",
-    "error_timed_out": "连接超时。请检查网络或 VPN。",
-    "error_unreachable": "无法访问代理管理端点。",
-    "error_tls": "TLS 握手失败。代理证书可能已轮换。",
+    "status_no_proxy_detail": "你的團隊尚未配置 Passport Proxy。",
+    "status_not_connected": "未連線",
+    "status_not_connected_detail": "無法為 Passport Proxy 預置證書。",
+    "error_generic": "無法連線到 Passport Proxy。",
+    "error_timed_out": "連線超時。請檢查網路或 VPN。",
+    "error_unreachable": "無法訪問代理管理端點。",
+    "error_tls": "TLS 握手失敗。代理證書可能已輪換。",
     "use_secured_proxy": "使用 Passport Proxy",
-    "override_banner": "Passport Proxy 已启用，请求将使用预置的客户端证书。启用期间，本页的全局代理和证书设置不会生效。如需修改，请先关闭 Passport Proxy。",
-    "settings_disabled_tooltip": "Passport Proxy 启用期间不可用。关闭 Passport Proxy 后即可修改这些设置。",
-    "cloud_state_title": "不适用",
-    "cloud_state_msg": "使用 Cloud Agent 时不支持 Passport Proxy。如需使用，请切换到 Postman Desktop Agent。",
+    "override_banner": "Passport Proxy 已啟用，請求將使用預置的客戶端證書。啟用期間，本頁的全域性代理和證書設定不會生效。如需修改，請先關閉 Passport Proxy。",
+    "settings_disabled_tooltip": "Passport Proxy 啟用期間不可用。關閉 Passport Proxy 後即可修改這些設定。",
+    "cloud_state_title": "不適用",
+    "cloud_state_msg": "使用 Cloud Agent 時不支援 Passport Proxy。如需使用，請切換到 Postman Desktop Agent。",
     "xhr_state_title": "使用桌面代理",
-    "xhr_state_msg": "Passport Proxy 需要 Postman Desktop Agent。请切换到桌面 Agent 后再配置 Passport Proxy。"
+    "xhr_state_msg": "Passport Proxy 需要 Postman Desktop Agent。請切換到桌面 Agent 後再配置 Passport Proxy。"
   },
   "update": {
     "label": "更新",
-    "page_heading": "应用程序更新",
+    "page_heading": "應用程式更新",
     "auto_update_major_version_toggle": {
-      "label": "自动下载主要更新",
-      "help": "Postman 自动下载次要更新和错误修复。"
+      "label": "自動下載主要更新",
+      "help": "Postman 自動下載次要更新和錯誤修復。"
     },
     "update_status_idle": {
       "heading": "您使用的是 Postman v{currentVersion}",
-      "cta": "检查更新",
-      "cta_tooltip": "您需要在线检查更新。"
+      "cta": "檢查更新",
+      "cta_tooltip": "您需要線上檢查更新。"
     },
     "update_status_update_available": {
       "heading": "可用更新",
-      "desc": "当前版本：v{currentVersion}{updateVersion, select, null {} undefined {} other { → 新版本：v{updateVersion}}}",
-      "cta": "下载更新",
-      "cta_tooltip": "您需要在线才能下载更新。"
+      "desc": "當前版本：v{currentVersion}{updateVersion, select, null {} undefined {} other { → 新版本：v{updateVersion}}}",
+      "cta": "下載更新",
+      "cta_tooltip": "您需要線上才能下載更新。"
     },
-    "update_status_checking": "正在检查更新...",
+    "update_status_checking": "正在檢查更新...",
     "update_status_update_not_available": {
       "heading": "你是最新的！",
       "desc": "Postman v{currentVersion} 是最新版本。",
-      "cta": "检查更新",
-      "cta_tooltip": "您需要在线检查更新。",
-      "last_checked": "上次检查时间为 {lastUpdateCheckedTimestamp, date, medium}，时间为 {lastUpdateCheckedTimestamp, time, short}。"
+      "cta": "檢查更新",
+      "cta_tooltip": "您需要線上檢查更新。",
+      "last_checked": "上次檢查時間為 {lastUpdateCheckedTimestamp, date, medium}，時間為 {lastUpdateCheckedTimestamp, time, short}。"
     },
-    "update_status_downloading": "正在下载更新...",
+    "update_status_downloading": "正在下載更新...",
     "update_status_downloaded": {
-      "heading": "已下载更新",
-      "desc": "当前版本：v{currentVersion}{updateVersion, select, null {} undefined {} other { → 新版本：v{updateVersion}}}",
-      "cta": "安装更新"
+      "heading": "已下載更新",
+      "desc": "當前版本：v{currentVersion}{updateVersion, select, null {} undefined {} other { → 新版本：v{updateVersion}}}",
+      "cta": "安裝更新"
     },
     "update_status_error": {
-      "desc": "出了点问题。请检查您的连接并尝试重新启动应用程序。",
-      "cta": "重试",
-      "cta_tooltip": "您需要在线检查更新。"
+      "desc": "出了點問題。請檢查您的連線並嘗試重新啟動應用程式。",
+      "cta": "重試",
+      "cta_tooltip": "您需要線上檢查更新。"
     },
     "updates_through_snap": {
       "up_to_date": {
         "heading": "你是最新的！",
-        "desc": "您使用的是 <0>v{currentVersion}</0>。每当发布新版本时，Snap 都会自动更新 Postman。"
+        "desc": "您使用的是 <0>v{currentVersion}</0>。每當釋出新版本時，Snap 都會自動更新 Postman。"
       },
       "troubleshoot": {
-        "desc": "更新遇到问题？",
-        "cta": "阅读我们的故障排除文档"
+        "desc": "更新遇到問題？",
+        "cta": "閱讀我們的故障排除文件"
       }
     }
   },
   "dev_options": {
-    "label": "开发者选项",
-    "page_heading": "开发者选项",
-    "page_para": "这些选项仅适用于测试版本中的内部 Postman 员工。",
+    "label": "開發者選項",
+    "page_heading": "開發者選項",
+    "page_para": "這些選項僅適用於測試版本中的內部 Postman 員工。",
     "active_track": {
-      "heading": "主动轨道",
-      "sub_heading": "切换活动轨道或输入自定义值。",
-      "search_placeholder": "键入要过滤的内容",
-      "button_tooltip": "设置活动轨迹并刷新页面"
+      "heading": "主動軌道",
+      "sub_heading": "切換活動軌道或輸入自定義值。",
+      "search_placeholder": "鍵入要過濾的內容",
+      "button_tooltip": "設定活動軌跡並重新整理頁面"
     },
     "web_socket": {
-      "heading": "禁用网络套接字",
-      "sub_heading": "打开以禁用应用程序的 Web Socket 连接。需要刷新/重新启动应用程序才能生效",
+      "heading": "停用網路套接字",
+      "sub_heading": "開啟以停用應用程式的 Web Socket 連線。需要重新整理/重新啟動應用程式才能生效",
       "toasts": {
-        "title": "重新加载应用程序",
-        "description": "更改设置以启用/禁用 WebSocket 后，需要刷新/重新启动 Postman 应用程序。"
+        "title": "重新載入應用程式",
+        "description": "更改設定以啟用/停用 WebSocket 後，需要重新整理/重新啟動 Postman 應用程式。"
       }
     },
     "postman_gateway_request_details": {
-      "heading": "将 Postman 网关请求详细信息显示为查询参数",
-      "sub_heading": "启用将请求详细信息（服务、方法和路径）显示为通过 Postman 网关服务路由的请求的查询参数。",
+      "heading": "將 Postman 閘道器請求詳細資訊顯示為查詢引數",
+      "sub_heading": "啟用將請求詳細資訊（服務、方法和路徑）顯示為通過 Postman 閘道器服務路由的請求的查詢引數。",
       "toasts": {
-        "title": "重新加载应用程序",
-        "description": "要应用设置更改以显示或隐藏请求详细信息，Postman 应用程序需要刷新或重新启动。"
+        "title": "重新載入應用程式",
+        "description": "要應用設定更改以顯示或隱藏請求詳細資訊，Postman 應用程式需要重新整理或重新啟動。"
       }
     },
     "web_socket_proxy": {
       "heading": "Websocket代理",
-      "sub_heading": "连接到自定义 websocket 代理而不是 bifrost。",
-      "button_tooltip": "设置websocket代理系统",
+      "sub_heading": "連線到自定義 websocket 代理而不是 bifrost。",
+      "button_tooltip": "設定websocket代理系統",
       "toasts": {
-        "success": "连接到 {webSocketProxyName}",
-        "error": "建立与 websocket 代理的连接时出错"
+        "success": "連線到 {webSocketProxyName}",
+        "error": "建立與 websocket 代理的連線時出錯"
       }
     },
     "download_app_preview": {
-      "heading": "下载桌面应用程序预览版本",
-      "sub_heading": "此桌面应用程序预览版本是从与 Web 应用程序版本相同的提交生成的。",
+      "heading": "下載桌面應用程式預覽版本",
+      "sub_heading": "此桌面應用程式預覽版本是從與 Web 應用程式版本相同的提交生成的。",
       "platforms": {
         "osx": {
-          "intel": "下载 Mac 英特尔应用程序",
-          "arm64": "下载Mac ARM64应用程序"
+          "intel": "下載 Mac 英特爾應用程式",
+          "arm64": "下載Mac ARM64應用程式"
         },
         "windows": {
-          "x64": "下载 Windows 64 应用程序",
-          "arm64": "下载 Windows ARM64 应用程序"
+          "x64": "下載 Windows 64 應用程式",
+          "arm64": "下載 Windows ARM64 應用程式"
         },
         "linux": {
-          "x64": "下载 Linux 64 应用程序",
-          "arm64": "下载 Linux ARM64 应用程序"
+          "x64": "下載 Linux 64 應用程式",
+          "arm64": "下載 Linux ARM64 應用程式"
         }
       }
     },
     "react_query_devtools": {
-      "heading": "启用 React 查询开发工具",
-      "sub_heading": "打开以显示 React Query Devtools 按钮。这仅适用于开发模式。"
+      "heading": "啟用 React 查詢開發工具",
+      "sub_heading": "開啟以顯示 React Query Devtools 按鈕。這僅適用於開發模式。"
     },
     "new_http_workbench": {
-      "heading": "启用新的 HTTP 工作台",
-      "sub_heading": "打开可为所有 HTTP 请求启用新的 HTTP 工作台。",
-      "button_text": "重新加载"
+      "heading": "啟用新的 HTTP 工作臺",
+      "sub_heading": "開啟可為所有 HTTP 請求啟用新的 HTTP 工作臺。",
+      "button_text": "重新載入"
     },
     "react_grab": {
-      "heading": "启用 React Grab",
-      "sub_heading": "将鼠标悬停在任何 UI 元素上，然后按 Cmd+C / Ctrl+C 复制其上下文。当中继服务器运行时自动发送到 Claude Code (npx @react-grab/claude-code@latest)。"
+      "heading": "啟用 React Grab",
+      "sub_heading": "將滑鼠懸停在任何 UI 元素上，然後按 Cmd+C / Ctrl+C 複製其上下文。當中繼伺服器執行時自動傳送到 Claude Code (npx @react-grab/claude-code@latest)。"
     }
   },
   "ai_settings": {
-    "label": "人工智能",
-    "page_para": "控制 Postman 内的人工智能功能",
+    "label": "人工智慧",
+    "page_para": "控制 Postman 內的人工智慧功能",
     "cloud_agent": {
-      "section_heading": "云代理",
-      "section_description": "启动新的云代理任务时应用默认值。",
-      "default_model_label": "默认型号",
-      "default_model_auto_option": "自动",
-      "default_repo_label": "默认仓库",
-      "load_error": "无法加载云代理设置。",
-      "update_error_toast_title": "无法更新云代理设置",
-      "update_error_toast_description": "请再试一次。"
+      "section_heading": "雲代理",
+      "section_description": "啟動新的雲代理任務時應用預設值。",
+      "default_model_label": "預設型號",
+      "default_model_auto_option": "自動",
+      "default_repo_label": "預設倉庫",
+      "load_error": "無法載入雲代理設定。",
+      "update_error_toast_title": "無法更新雲代理設定",
+      "update_error_toast_description": "請再試一次。"
     },
     "host_allowlist": {
-      "section_heading": "主机白名单",
-      "section_description": "允许 AI 工程师访问的主机。",
-      "your_hosts_label": "您的主机",
-      "add_host_button": "添加主机",
-      "empty_state": "未添加自定义主机。默认主机仍然适用。",
-      "show_defaults_button": "显示默认主机 ({count})",
-      "hide_defaults_button": "隐藏默认主机 ({count})",
-      "remove_host_aria_label": "删除 {host_pattern}",
-      "load_error_generic": "无法加载主机白名单。请再试一次。",
-      "load_error_forbidden": "您没有权限查看主机白名单。",
-      "add_error_toast": "无法添加主机。请稍后重试。",
-      "remove_error_toast": "无法删除主机。请稍后重试。",
+      "section_heading": "主機白名單",
+      "section_description": "允許 AI 工程師訪問的主機。",
+      "your_hosts_label": "您的主機",
+      "add_host_button": "新增主機",
+      "empty_state": "未新增自定義主機。預設主機仍然適用。",
+      "show_defaults_button": "顯示預設主機 ({count})",
+      "hide_defaults_button": "隱藏預設主機 ({count})",
+      "remove_host_aria_label": "刪除 {host_pattern}",
+      "load_error_generic": "無法載入主機白名單。請再試一次。",
+      "load_error_forbidden": "您沒有許可權檢視主機白名單。",
+      "add_error_toast": "無法新增主機。請稍後重試。",
+      "remove_error_toast": "無法刪除主機。請稍後重試。",
       "validation": {
-        "required": "需要主机模式。",
-        "too_long": "主机模式太长。",
-        "invalid": "使用有效的主机名或 *.example.com 模式。"
+        "required": "需要主機模式。",
+        "too_long": "主機模式太長。",
+        "invalid": "使用有效的主機名或 *.example.com 模式。"
       },
       "modal": {
-        "heading": "添加主机",
-        "host_pattern_label": "主机模式",
+        "heading": "新增主機",
+        "host_pattern_label": "主機模式",
         "host_pattern_placeholder": "*.example.com 或 api.partner.io",
-        "host_pattern_help": "使用 *。匹配任何子域 - *.example.com 匹配 api.example.com 和 deep.api.example.com。裸主机名仅与该确切主机匹配。不区分大小写。",
+        "host_pattern_help": "使用 *。匹配任何子域 - *.example.com 匹配 api.example.com 和 deep.api.example.com。裸主機名僅與該確切主機匹配。不區分大小寫。",
         "cancel_button": "取消",
-        "save_button": "添加"
+        "save_button": "新增"
       }
     },
     "memory": {
-      "tab_label": "记忆",
-      "memory_build_button": "构建",
-      "memory_refresh_button": "刷新",
-      "memory_refresh_success_title": "记忆刷新已排队",
-      "memory_refresh_success_description": "Postman 将很快开始构建知识。",
-      "memory_refresh_error_not_enabled": "你的团队未启用记忆功能。",
-      "memory_refresh_error_generic": "记忆刷新启动失败，请重试。",
-      "learning_prompt_label": "团队知识",
-      "learning_prompt_description": "可选，用于说明 Agent 应该学习你团队的哪些内容。可以提供 GitHub、New Relic 等第三方来源的信息，或团队工作的特定领域。",
-      "learning_prompt_save_button": "保存",
-      "load_error": "记忆设置加载失败。",
-      "update_error_toast_title": "记忆设置更新失败",
-      "update_error_toast_description": "请重试。",
-      "update_error_invalid_prompt": "提示词不能为空。如需移除，请清空该字段。",
-      "ai_disabled_title": "你的账号无法使用 Postman AI",
-      "ai_disabled_description": "Postman AI 当前对你处于停用状态。如需使用，请联系团队管理员申请权限。",
-      "non_admin_title": "需要管理员权限",
-      "non_admin_description": "只有团队管理员才能管理记忆设置。"
+      "tab_label": "記憶",
+      "memory_build_button": "構建",
+      "memory_refresh_button": "重新整理",
+      "memory_refresh_success_title": "記憶重新整理已排隊",
+      "memory_refresh_success_description": "Postman 將很快開始構建知識。",
+      "memory_refresh_error_not_enabled": "你的團隊未啟用記憶功能。",
+      "memory_refresh_error_generic": "記憶重新整理啟動失敗，請重試。",
+      "learning_prompt_label": "團隊知識",
+      "learning_prompt_description": "可選，用於說明 Agent 應該學習你團隊的哪些內容。可以提供 GitHub、New Relic 等第三方來源的資訊，或團隊工作的特定領域。",
+      "learning_prompt_save_button": "儲存",
+      "load_error": "記憶設定載入失敗。",
+      "update_error_toast_title": "記憶設定更新失敗",
+      "update_error_toast_description": "請重試。",
+      "update_error_invalid_prompt": "提示詞不能為空。如需移除，請清空該欄位。",
+      "ai_disabled_title": "你的賬號無法使用 Postman AI",
+      "ai_disabled_description": "Postman AI 當前對你處於停用狀態。如需使用，請聯絡團隊管理員申請許可權。",
+      "non_admin_title": "需要管理員許可權",
+      "non_admin_description": "只有團隊管理員才能管理記憶設定。"
     },
     "team_agents": {
       "tab_label": "代理商",
       "heading": "代理商",
-      "description": "为您的团队配置 Postman 代理设置。",
+      "description": "為您的團隊配置 Postman 代理設定。",
       "section_heading": "代理商",
-      "agent_name_column_header": "代理名称",
+      "agent_name_column_header": "代理名稱",
       "description_column_header": "描述",
-      "enabled_column_header": "启用",
+      "enabled_column_header": "啟用",
       "empty_value_placeholder": "—",
-      "agent_actions_aria_label": "代理动作",
-      "toggle_aria_label": "为您的团队启用 {agent_name}",
-      "menu_item_update_user_scopes": "更新用户范围",
-      "menu_item_view_agent_scopes": "查看范围",
-      "no_agents_title": "没有可用的代理",
-      "no_agents_description": "目前没有可显示的代理。",
-      "load_error_title": "无法加载代理",
-      "load_error_description": "获取代理时出现问题。请再试一次。",
-      "load_error_retry_button": "重试",
-      "ai_disabled_title": "Postman AI 不适用于您的帐户",
-      "ai_disabled_description": "Postman AI 目前已对您禁用。请联系团队管理员以请求访问权限。",
+      "agent_actions_aria_label": "代理動作",
+      "toggle_aria_label": "為您的團隊啟用 {agent_name}",
+      "menu_item_update_user_scopes": "更新使用者範圍",
+      "menu_item_view_agent_scopes": "檢視範圍",
+      "no_agents_title": "沒有可用的代理",
+      "no_agents_description": "目前沒有可顯示的代理。",
+      "load_error_title": "無法載入代理",
+      "load_error_description": "獲取代理時出現問題。請再試一次。",
+      "load_error_retry_button": "重試",
+      "ai_disabled_title": "Postman AI 不適用於您的帳戶",
+      "ai_disabled_description": "Postman AI 目前已對您停用。請聯絡團隊管理員以請求訪問許可權。",
       "view_scopes_modal": {
-        "content_label": "代理范围",
-        "fallback_heading": "代理范围",
-        "heading": "{agent_name} - 代理范围",
-        "no_scopes": "该代理不请求任何范围。",
+        "content_label": "代理範圍",
+        "fallback_heading": "代理範圍",
+        "heading": "{agent_name} - 代理範圍",
+        "no_scopes": "該代理不請求任何範圍。",
         "okay_button": "好的"
       },
       "update_scopes_modal": {
-        "content_label": "更新用户范围",
-        "fallback_heading": "更新用户范围",
-        "heading": "更新用户范围 - {agent_name}",
-        "body": "选择允许该代理代表您使用的范围。取消选择任何限制代理访问的范围。",
-        "load_error": "无法加载您当前的范围首选项。关闭并重试。",
-        "save_error": "无法更新范围。请再试一次。",
-        "no_scopes_to_configure": "该代理没有可配置的范围。",
-        "restore_defaults_button": "恢复默认范围",
-        "confirm_button": "更新用户范围",
+        "content_label": "更新使用者範圍",
+        "fallback_heading": "更新使用者範圍",
+        "heading": "更新使用者範圍 - {agent_name}",
+        "body": "選擇允許該代理代表您使用的範圍。取消選擇任何限制代理訪問的範圍。",
+        "load_error": "無法載入您當前的範圍首選項。關閉並重試。",
+        "save_error": "無法更新範圍。請再試一次。",
+        "no_scopes_to_configure": "該代理沒有可配置的範圍。",
+        "restore_defaults_button": "恢復預設範圍",
+        "confirm_button": "更新使用者範圍",
         "confirm_button_in_progress": "正在更新…"
       }
     }
   },
   "about": {
-    "architecture": "架构",
-    "browser_and_os": "浏览器和操作系统",
-    "os_platform": "操作系统平台",
-    "label": "关于",
-    "postman_for_web": "网页版 Postman",
+    "architecture": "架構",
+    "browser_and_os": "瀏覽器和作業系統",
+    "os_platform": "作業系統平臺",
+    "label": "關於",
+    "postman_for_web": "網頁版 Postman",
     "postman_for_darwin": "Mac 版 Postman",
     "postman_for_win32": "Windows 版 Postman",
     "postman_for_linux": "Linux 版 Postman",
-    "desktop_platform_version": "桌面平台版本",
+    "desktop_platform_version": "桌面平臺版本",
     "product_version": "版本",
-    "ui_version": "用户界面版本",
+    "ui_version": "使用者介面版本",
     "links": {
-      "website": "网站",
+      "website": "網站",
       "twitter": "Twitter",
-      "privacy": "隐私",
-      "release_notes": "发行说明",
-      "learning_center": "学习中心",
-      "report_issue": "报告问题"
+      "privacy": "隱私",
+      "release_notes": "發行說明",
+      "learning_center": "學習中心",
+      "report_issue": "報告問題"
     }
   }
 }

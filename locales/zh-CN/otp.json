@@ -1,30 +1,30 @@
 {
   "page": {
-    "heading": "验证您的帐户",
-    "loading": "正在发送您的验证码...",
-    "register_error": "我们现在无法发送验证码。请再试一次。"
+    "heading": "驗證您的帳戶",
+    "loading": "正在傳送您的驗證碼...",
+    "register_error": "我們現在無法傳送驗證碼。請再試一次。"
   },
   "registration_failure": {
-    "continue_cta": "继续前往 Postman"
+    "continue_cta": "繼續前往 Postman"
   },
   "footer": {
-    "copyright": "©2025 Postman, Inc. 保留所有权利。",
-    "terms": "使用条款",
-    "privacy": "隐私政策"
+    "copyright": "©2025 Postman, Inc. 保留所有權利。",
+    "terms": "使用條款",
+    "privacy": "隱私政策"
   },
   "form": {
-    "code_label": "验证码",
+    "code_label": "驗證碼",
     "code_placeholder": "123456",
-    "description": "我们已将验证码发送至<bold>{email}</bold>",
-    "submit_button": "验证账户",
-    "resend_prompt": "没有收到电子邮件？",
-    "resend_button": "重新发送代码",
-    "resend_button_with_cooldown": "{seconds} 秒后重新发送代码",
-    "resend_limit_reached": "您已达到此验证请求的重新发送限制。",
-    "restart_button": "发送新代码",
-    "session_expired": "您的验证会话已过期。发送新代码以继续。",
+    "description": "我們已將驗證碼傳送至<bold>{email}</bold>",
+    "submit_button": "驗證賬戶",
+    "resend_prompt": "沒有收到電子郵件？",
+    "resend_button": "重新傳送程式碼",
+    "resend_button_with_cooldown": "{seconds} 秒後重新傳送程式碼",
+    "resend_limit_reached": "您已達到此驗證請求的重新傳送限制。",
+    "restart_button": "傳送新程式碼",
+    "session_expired": "您的驗證會話已過期。傳送新程式碼以繼續。",
     "successful_banner": "成功！",
-    "error_code_length": "验证码必须包含六位数字。",
-    "error_generic": "出了点问题。请再试一次。"
+    "error_code_length": "驗證碼必須包含六位數字。",
+    "error_generic": "出了點問題。請再試一次。"
   }
 }

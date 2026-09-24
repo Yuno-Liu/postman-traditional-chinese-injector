@@ -1,858 +1,858 @@
 {
   "request_access": {
-    "title": "您似乎无权访问",
-    "request_access_button": "请求访问"
+    "title": "您似乎無權訪問",
+    "request_access_button": "請求訪問"
   },
   "response_errors": {
     "certifcate_verification": {
-      "fallback_warning": "证书验证失败",
-      "action_label": "禁用 SSL 验证",
+      "fallback_warning": "證書驗證失敗",
+      "action_label": "停用 SSL 驗證",
       "success_toast": {
-        "title": "SSL 验证已禁用"
+        "title": "SSL 驗證已停用"
       },
-      "unspecified": "未指定的证书验证错误",
-      "unable_to_get_issuer": "无法获取颁发者证书",
-      "unable_to_get_crl": "无法获取证书 CRL",
-      "unable_to_decrypt_cert_signature": "无法解密证书的签名",
-      "unable_to_decrypt_crl_signature": "无法解密 CRL 的签名",
-      "unable_to_decode_issuer_public_key": "无法解码颁发者公钥",
-      "signature_failure": "证书签名失败",
-      "crl_signature_failure": "CRL 签名失败",
-      "not_yet_valid": "证书尚未生效",
+      "unspecified": "未指定的證書驗證錯誤",
+      "unable_to_get_issuer": "無法獲取頒發者證書",
+      "unable_to_get_crl": "無法獲取證書 CRL",
+      "unable_to_decrypt_cert_signature": "無法解密證書的簽名",
+      "unable_to_decrypt_crl_signature": "無法解密 CRL 的簽名",
+      "unable_to_decode_issuer_public_key": "無法解碼頒發者公鑰",
+      "signature_failure": "證書籤名失敗",
+      "crl_signature_failure": "CRL 簽名失敗",
+      "not_yet_valid": "證書尚未生效",
       "crl_not_yet_valid": "CRL 尚未生效",
-      "has_expired": "证书已过期",
-      "crl_has_expired": "CRL 已过期",
-      "error_in_cert_not_before_field": "证书的 notBefore 字段格式错误",
-      "error_tls_cert_altname_invalid": "主机名/IP 与证书的替代名称不匹配",
-      "error_in_cert_not_after_field": "证书的 notAfter 字段格式错误",
-      "error_in_crl_last_update_field": "CRL 的 lastUpdate 字段格式错误",
-      "error_in_crl_next_update_field": "CRL 的 nextUpdate 字段格式错误",
-      "out_of_mem": "内存不足",
-      "depth_zero_self_signed_cert": "自签名证书",
-      "self_signed_cert_in_chain": "证书链中的自签名证书",
-      "unable_to_get_issuer_cert_locally": "无法获取本地颁发者证书",
-      "unable_to_verify_leaf_signature": "无法验证第一个证书",
-      "chain_too_long": "证书链太长",
-      "revoked": "证书被吊销",
-      "invalid_ca": "CA 证书无效",
-      "path_length_exceeded": "超出路径长度限制",
-      "invalid_purpose": "证书用途不受支持",
-      "untrusted": "证书不受信任",
-      "rejected": "证书被拒绝",
-      "subject_issuer_mismatch": "主体发行人不匹配",
-      "akid_skid_mismatch": "授权机构和主题密钥标识符不匹配",
-      "akid_issuer_serial_mismatch": "授权机构和发行人序列号不匹配",
-      "keyusage_no_certsign": "密钥使用不包括证书签名",
-      "unable_to_get_crl_issuer": "无法获取 CRL 颁发者证书",
-      "unhandled_critical_extension": "未处理的关键扩展",
-      "keyusage_no_crl_sign": "密钥使用不包括 CRL 签名",
-      "unhandled_critical_crl_extension": "未处理的关键 CRL 扩展",
-      "invalid_non_ca": "无效的非 CA 证书（具有 CA 标记）",
-      "proxy_path_length_exceeded": "超出代理路径长度限制",
-      "keyusage_no_digital_signature": "密钥使用不包括数字签名",
-      "proxy_certificates_not_allowed": "不允许使用代理证书，请设置适当的标志",
-      "invalid_extension": "无效的扩展",
-      "invalid_policy_extension": "证书策略扩展无效或不一致",
-      "no_explicit_policy": "无明确策略",
-      "different_crl_scope": "不同的 CRL 范围",
-      "unsupported_extension_feature": "不支持的扩展功能",
-      "unnested_resource": "RFC 3779 资源不是父资源的子集",
-      "permitted_violation": "允许的子树违规",
-      "excluded_violation": "排除子树违规",
-      "subtree_minmax": "不支持名称限制最小值和最大值",
-      "application_verification": "应用验证失败",
-      "unsupported_constraint_type": "不支持的名称约束类型",
-      "unsupported_constraint_syntax": "名称约束语法不受支持或无效",
-      "unsupported_name_syntax": "名称语法不受支持或无效",
-      "crl_path_validation_error": "CRL 路径验证错误",
-      "path_loop": "路径循环",
-      "suite_b_invalid_version": "Suite B：证书版本无效",
-      "suite_b_invalid_algorithm": "Suite B：无效的公钥算法",
-      "suite_b_invalid_curve": "Suite B：无效的 ECC 曲线",
-      "suite_b_invalid_signature_algorithm": "Suite B：签名算法无效",
-      "suite_b_los_not_allowed": "Suite B：此 LOS 不允许出现曲线",
-      "suite_b_cannot_sign_p_384_with_p_256": "Suite B：无法用 P-256 签署 P-384",
-      "host_mismatch": "主机名不匹配",
-      "email_mismatch": "电子邮件地址不匹配",
+      "has_expired": "證書已過期",
+      "crl_has_expired": "CRL 已過期",
+      "error_in_cert_not_before_field": "證書的 notBefore 欄位格式錯誤",
+      "error_tls_cert_altname_invalid": "主機名/IP 與證書的替代名稱不匹配",
+      "error_in_cert_not_after_field": "證書的 notAfter 欄位格式錯誤",
+      "error_in_crl_last_update_field": "CRL 的 lastUpdate 欄位格式錯誤",
+      "error_in_crl_next_update_field": "CRL 的 nextUpdate 欄位格式錯誤",
+      "out_of_mem": "記憶體不足",
+      "depth_zero_self_signed_cert": "自簽名證書",
+      "self_signed_cert_in_chain": "證書鏈中的自簽名證書",
+      "unable_to_get_issuer_cert_locally": "無法獲取本地頒發者證書",
+      "unable_to_verify_leaf_signature": "無法驗證第一個證書",
+      "chain_too_long": "證書鏈太長",
+      "revoked": "證書被吊銷",
+      "invalid_ca": "CA 證書無效",
+      "path_length_exceeded": "超出路徑長度限制",
+      "invalid_purpose": "證書用途不受支援",
+      "untrusted": "證書不受信任",
+      "rejected": "證書被拒絕",
+      "subject_issuer_mismatch": "主體發行人不匹配",
+      "akid_skid_mismatch": "授權機構和主題金鑰識別符號不匹配",
+      "akid_issuer_serial_mismatch": "授權機構和發行人序列號不匹配",
+      "keyusage_no_certsign": "金鑰使用不包括證書籤名",
+      "unable_to_get_crl_issuer": "無法獲取 CRL 頒發者證書",
+      "unhandled_critical_extension": "未處理的關鍵擴充套件",
+      "keyusage_no_crl_sign": "金鑰使用不包括 CRL 簽名",
+      "unhandled_critical_crl_extension": "未處理的關鍵 CRL 擴充套件",
+      "invalid_non_ca": "無效的非 CA 證書（具有 CA 標記）",
+      "proxy_path_length_exceeded": "超出代理路徑長度限制",
+      "keyusage_no_digital_signature": "金鑰使用不包括數字簽名",
+      "proxy_certificates_not_allowed": "不允許使用代理證書，請設定適當的標誌",
+      "invalid_extension": "無效的擴充套件",
+      "invalid_policy_extension": "證書策略擴充套件無效或不一致",
+      "no_explicit_policy": "無明確策略",
+      "different_crl_scope": "不同的 CRL 範圍",
+      "unsupported_extension_feature": "不支援的擴充套件功能",
+      "unnested_resource": "RFC 3779 資源不是父資源的子集",
+      "permitted_violation": "允許的子樹違規",
+      "excluded_violation": "排除子樹違規",
+      "subtree_minmax": "不支援名稱限制最小值和最大值",
+      "application_verification": "應用驗證失敗",
+      "unsupported_constraint_type": "不支援的名稱約束型別",
+      "unsupported_constraint_syntax": "名稱約束語法不受支援或無效",
+      "unsupported_name_syntax": "名稱語法不受支援或無效",
+      "crl_path_validation_error": "CRL 路徑驗證錯誤",
+      "path_loop": "路徑迴圈",
+      "suite_b_invalid_version": "Suite B：證書版本無效",
+      "suite_b_invalid_algorithm": "Suite B：無效的公鑰演算法",
+      "suite_b_invalid_curve": "Suite B：無效的 ECC 曲線",
+      "suite_b_invalid_signature_algorithm": "Suite B：簽名演算法無效",
+      "suite_b_los_not_allowed": "Suite B：此 LOS 不允許出現曲線",
+      "suite_b_cannot_sign_p_384_with_p_256": "Suite B：無法用 P-256 簽署 P-384",
+      "host_mismatch": "主機名不匹配",
+      "email_mismatch": "電子郵件地址不匹配",
       "ip_address_mismatch": "IP 地址不匹配",
-      "dane_no_match": "没有匹配的 DANE TLSA 记录",
-      "ee_key_too_small": "EE 证书密钥太弱",
-      "ca_key_too_small": "CA 证书密钥太弱",
-      "ca_md_too_weak": "CA 证书摘要算法太弱",
-      "invalid_call": "证书用途无效",
-      "store_lookup": "证书不受信任",
-      "no_valid_scts": "需要证书透明度，但未找到有效的 SCT",
-      "proxy_subject_name_violation": "代理主体名称违规",
-      "ocsp_verify_needed": "需要 OCSP 验证",
-      "ocsp_verify_failed": "OCSP 验证失败",
-      "ocsp_cert_unknown": "OCSP 响应者不知道证书"
+      "dane_no_match": "沒有匹配的 DANE TLSA 記錄",
+      "ee_key_too_small": "EE 證書金鑰太弱",
+      "ca_key_too_small": "CA 證書金鑰太弱",
+      "ca_md_too_weak": "CA 證書摘要演算法太弱",
+      "invalid_call": "證書用途無效",
+      "store_lookup": "證書不受信任",
+      "no_valid_scts": "需要證書透明度，但未找到有效的 SCT",
+      "proxy_subject_name_violation": "代理主體名稱違規",
+      "ocsp_verify_needed": "需要 OCSP 驗證",
+      "ocsp_verify_failed": "OCSP 驗證失敗",
+      "ocsp_cert_unknown": "OCSP 響應者不知道證書"
     },
     "http2_error": {
-      "action_label": "切换 HTTP 版本",
+      "action_label": "切換 HTTP 版本",
       "success_toast": {
         "message": "您可以更改此配置",
-        "settings_cta": "设置。",
-        "title": "切换到 HTTP/1.x"
+        "settings_cta": "設定。",
+        "title": "切換到 HTTP/1.x"
       },
-      "ssl_invalid_alpn_protocol": "ALPN 协议无效",
-      "altsvc_invalid_origin": "HTTP/2 ALTSVC 帧需要有效的来源",
-      "altsvc_length": "HTTP/2 ALTSVC 帧限制为 16382 字节",
-      "connect_authority": "CONNECT 请求需要 :authority 标头",
-      "connect_path": "CONNECT 请求禁止使用 :path 标头",
-      "connect_scheme": "CONNECT 请求禁止使用 :scheme 标头",
-      "goaway_session": "收到 GOAWAY 后无法创建新流",
-      "headers_after_respond": "响应启动后无法指定附加标头",
-      "headers_sent": "响应已启动。",
-      "header_single_value": "标头字段只能有一个值",
-      "info_status_not_allowed": "无法使用信息状态代码",
-      "invalid_connection_headers": "HTTP/1 禁止连接特定标头",
-      "invalid_header_value": "标头值无效",
-      "invalid_info_status": "无效的信息状态代码",
-      "invalid_origin": "HTTP/2 ORIGIN 帧需要有效的来源",
-      "pack_settings_length": "打包设置长度必须是 6 的倍数",
-      "pseudoheader": "伪标头无效或使用不正确",
-      "invalid_session": "会话已被摧毁",
-      "invalid_setting_value": "设置值无效",
-      "invalid_stream": "流已被破坏",
-      "max_pending_settings_ack": "已达到挂起设置确认的最大数量",
-      "nested_push": "一个推送流不能发起另一个推送流。",
-      "no_mem": "内存不足",
-      "no_socket_manipulation": "HTTP/2 套接字不应被直接操作（例如读取和写入）",
-      "origin_length": "HTTP/2 ORIGIN 帧限制为 16382 字节",
-      "out_of_streams": "没有可用的流 ID，因为已达到最大流 ID",
-      "payload_forbidden": "状态禁止带有负载的响应",
+      "ssl_invalid_alpn_protocol": "ALPN 協議無效",
+      "altsvc_invalid_origin": "HTTP/2 ALTSVC 幀需要有效的來源",
+      "altsvc_length": "HTTP/2 ALTSVC 幀限制為 16382 位元組",
+      "connect_authority": "CONNECT 請求需要 :authority 標頭",
+      "connect_path": "CONNECT 請求禁止使用 :path 標頭",
+      "connect_scheme": "CONNECT 請求禁止使用 :scheme 標頭",
+      "goaway_session": "收到 GOAWAY 後無法建立新流",
+      "headers_after_respond": "響應啟動後無法指定附加標頭",
+      "headers_sent": "響應已啟動。",
+      "header_single_value": "標頭欄位只能有一個值",
+      "info_status_not_allowed": "無法使用資訊狀態程式碼",
+      "invalid_connection_headers": "HTTP/1 禁止連線特定標頭",
+      "invalid_header_value": "標頭值無效",
+      "invalid_info_status": "無效的資訊狀態程式碼",
+      "invalid_origin": "HTTP/2 ORIGIN 幀需要有效的來源",
+      "pack_settings_length": "打包設定長度必須是 6 的倍數",
+      "pseudoheader": "偽標頭無效或使用不正確",
+      "invalid_session": "會話已被摧毀",
+      "invalid_setting_value": "設定值無效",
+      "invalid_stream": "流已被破壞",
+      "max_pending_settings_ack": "已達到掛起設定確認的最大數量",
+      "nested_push": "一個推送流不能發起另一個推送流。",
+      "no_mem": "記憶體不足",
+      "no_socket_manipulation": "HTTP/2 套接字不應被直接操作（例如讀取和寫入）",
+      "origin_length": "HTTP/2 ORIGIN 幀限制為 16382 位元組",
+      "out_of_streams": "沒有可用的流 ID，因為已達到最大流 ID",
+      "payload_forbidden": "狀態禁止帶有負載的響應",
       "ping_cancel": "HTTP/2 ping 已取消",
-      "ping_length": "HTTP/2 ping 负载必须为 8 个字节",
-      "psuedoheader_not_allowed": "无法设置 HTTP/2 伪标头",
-      "push_disabled": "HTTP/2 客户端已禁用推送流",
-      "send_file": "无法发送目录",
-      "send_file_noseek": "只能为常规文件指定偏移量或长度",
-      "session_error": "会话因错误而关闭。",
-      "settings_cancel": "HTTP/2 会话设置已取消",
-      "socket_bound": "套接字已绑定到 HTTP/2 会话",
-      "socket_unbound": "套接字已与 HTTP/2 会话断开",
-      "status_101": "HTTP 状态代码 101（切换协议）在 HTTP/2 中被禁止",
-      "status_invalid": "收到无效的状态代码",
-      "stream_cancel": "待处理的流已被取消",
-      "stream_error": "流关闭并出现错误。",
-      "stream_self_dependency": "流不能依赖自身",
-      "too_many_invalid_frames": "无效 HTTP/2 帧过多",
-      "trailers_already_sent": "尾部标头已发送",
-      "trailers_not_ready": "在发出 wantTrailers 事件之前，无法发送尾随标头",
-      "unsupported_protocol": "收到不支持的协议",
-      "http2_error": "发生非特定 HTTP/2 错误",
-      "http2_error_code": "发生非特定 HTTP/2 错误，错误代码：{errorCode}",
-      "http2_unsupported": "服务器不支持请求中使用的 HTTP 版本"
+      "ping_length": "HTTP/2 ping 負載必須為 8 個位元組",
+      "psuedoheader_not_allowed": "無法設定 HTTP/2 偽標頭",
+      "push_disabled": "HTTP/2 客戶端已停用推送流",
+      "send_file": "無法傳送目錄",
+      "send_file_noseek": "只能為常規檔案指定偏移量或長度",
+      "session_error": "會話因錯誤而關閉。",
+      "settings_cancel": "HTTP/2 會話設定已取消",
+      "socket_bound": "套接字已繫結到 HTTP/2 會話",
+      "socket_unbound": "套接字已與 HTTP/2 會話斷開",
+      "status_101": "HTTP 狀態程式碼 101（切換協議）在 HTTP/2 中被禁止",
+      "status_invalid": "收到無效的狀態程式碼",
+      "stream_cancel": "待處理的流已被取消",
+      "stream_error": "流關閉並出現錯誤。",
+      "stream_self_dependency": "流不能依賴自身",
+      "too_many_invalid_frames": "無效 HTTP/2 幀過多",
+      "trailers_already_sent": "尾部標頭已傳送",
+      "trailers_not_ready": "在發出 wantTrailers 事件之前，無法傳送尾隨標頭",
+      "unsupported_protocol": "收到不支援的協議",
+      "http2_error": "發生非特定 HTTP/2 錯誤",
+      "http2_error_code": "發生非特定 HTTP/2 錯誤，錯誤程式碼：{errorCode}",
+      "http2_unsupported": "伺服器不支援請求中使用的 HTTP 版本"
     }
   },
   "workspace_list_empty_states": {
     "no_workspaces_found": {
-      "heading": "未找到工作区",
-      "description": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
+      "heading": "未找到工作區",
+      "description": "嘗試不同的搜尋詞、調整過濾器或檢查拼寫錯誤。"
     },
     "no_personal_workspaces": {
-      "heading": "没有个人工作区",
-      "description": "个人工作区可让您独立处理 API。其他人无法访问它。",
-      "learn_more_button": "了解更多"
+      "heading": "沒有個人工作區",
+      "description": "個人工作區可讓您獨立處理 API。其他人無法訪問它。",
+      "learn_more_button": "瞭解更多"
     },
     "no_private_workspaces": {
-      "heading": "没有私有工作区",
-      "description": "私有工作区仅对受邀的团队成员可见。",
-      "learn_more_button": "了解更多"
+      "heading": "沒有私有工作區",
+      "description": "私有工作區僅對受邀的團隊成員可見。",
+      "learn_more_button": "瞭解更多"
     },
     "private_workspace_plan_missing": {
-      "heading": "升级以创建私有工作区",
-      "description": "私有工作区仅对受邀的团队成员可见。适用于 {enterprisePlanName} 计划。",
-      "upgrade_button": "升级计划",
-      "learn_more_button": "了解更多"
+      "heading": "升級以建立私有工作區",
+      "description": "私有工作區僅對受邀的團隊成員可見。適用於 {enterprisePlanName} 計劃。",
+      "upgrade_button": "升級計劃",
+      "learn_more_button": "瞭解更多"
     },
     "private_workspaces_search_empty": {
-      "title": "找不到私有工作区",
-      "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
+      "title": "找不到私有工作區",
+      "subtitle": "嘗試不同的搜尋詞、調整過濾器或檢查拼寫錯誤。"
     },
     "partner_workspaces_plan_missing": {
-      "title": "升级以创建合作伙伴工作区",
-      "subtitle": "合作伙伴工作区仅对受邀的团队成员和合作伙伴可见。适用于 {enterprisePlanName} 计划。",
+      "title": "升級以建立合作伙伴工作區",
+      "subtitle": "合作伙伴工作區僅對受邀的團隊成員和合作夥伴可見。適用於 {enterprisePlanName} 計劃。",
       "learn_more": {
-        "text": "了解更多"
+        "text": "瞭解更多"
       },
-      "action_text": "升级计划"
+      "action_text": "升級計劃"
     },
     "partner_workspaces_empty": {
-      "title": "没有合作伙伴工作区",
-      "subtitle": "合作伙伴工作区仅对受邀的团队成员和合作伙伴可见。",
-      "learn_more_text": "了解更多"
+      "title": "沒有合作伙伴工作區",
+      "subtitle": "合作伙伴工作區僅對受邀的團隊成員和合作夥伴可見。",
+      "learn_more_text": "瞭解更多"
     },
     "partner_workspaces_search_empty": {
-      "title": "未找到合作伙伴工作区",
-      "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
+      "title": "未找到合作伙伴工作區",
+      "subtitle": "嘗試不同的搜尋詞、調整過濾器或檢查拼寫錯誤。"
     },
     "public_workspaces_empty": {
-      "title": "没有公开工作区",
-      "subtitle": "公开 API 网络上的每个人都可以看到公开工作区来探索并开始协作。",
-      "learn_more_text": "了解更多"
+      "title": "沒有公開工作區",
+      "subtitle": "公開 API 網路上的每個人都可以看到公開工作區來探索並開始協作。",
+      "learn_more_text": "瞭解更多"
     },
     "public_workspaces_search_empty": {
-      "title": "找不到公开工作区",
-      "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
+      "title": "找不到公開工作區",
+      "subtitle": "嘗試不同的搜尋詞、調整過濾器或檢查拼寫錯誤。"
     },
     "personal_workspaces_search_empty": {
-      "title": "找不到个人工作区",
-      "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。",
-      "learn_more_text": "了解更多"
+      "title": "找不到個人工作區",
+      "subtitle": "嘗試不同的搜尋詞、調整過濾器或檢查拼寫錯誤。",
+      "learn_more_text": "瞭解更多"
     },
     "personal_workspaces_empty_for_you": {
-      "title": "您没有任何个人工作区",
-      "subtitle": "个人工作区可让您独立处理 API。",
-      "learn_more_text": "了解更多"
+      "title": "您沒有任何個人工作區",
+      "subtitle": "個人工作區可讓您獨立處理 API。",
+      "learn_more_text": "瞭解更多"
     },
     "personal_workspaces_empty_for_others": {
-      "title": "没有个人工作区",
-      "subtitle": "所选用户没有任何个人工作区。调整您的过滤器设置。"
+      "title": "沒有個人工作區",
+      "subtitle": "所選使用者沒有任何個人工作區。調整您的過濾器設定。"
     },
     "personal_workspaces_empty_no_access": {
-      "title": "您无权访问",
-      "subtitle": "您只能访问您自己的个人工作区。"
+      "title": "您無權訪問",
+      "subtitle": "您只能訪問您自己的個人工作區。"
     },
     "team_workspaces_empty": {
-      "title": "没有团队工作区",
-      "subtitle": "团队工作区可让您与团队实时协作处理 API。",
-      "learn_more_text": "了解更多"
+      "title": "沒有團隊工作區",
+      "subtitle": "團隊工作區可讓您與團隊即時協作處理 API。",
+      "learn_more_text": "瞭解更多"
     },
     "team_workspaces_search_empty": {
-      "title": "找不到团队工作区",
-      "subtitle": "尝试不同的搜索词、调整过滤器或检查拼写错误。"
+      "title": "找不到團隊工作區",
+      "subtitle": "嘗試不同的搜尋詞、調整過濾器或檢查拼寫錯誤。"
     },
     "all_workspaces_empty": {
-      "title": "没有工作区",
-      "subtitle": "工作区可让您组织 API 并进行协作。了解有关工作区的更多信息",
-      "action_text": "创建工作区",
-      "learn_more_text": "了解更多"
+      "title": "沒有工作區",
+      "subtitle": "工作區可讓您組織 API 並進行協作。瞭解有關工作區的更多資訊",
+      "action_text": "建立工作區",
+      "learn_more_text": "瞭解更多"
     },
     "initial_fetch_error": {
-      "title": "无法加载工作区",
-      "subtitle": "只是一根电线有问题。尝试重新加载。",
-      "action_text": "重新加载",
-      "learn_more_text": "了解更多"
+      "title": "無法載入工作區",
+      "subtitle": "只是一根電線有問題。嘗試重新載入。",
+      "action_text": "重新載入",
+      "learn_more_text": "瞭解更多"
     },
     "next_fetch_error": {
-      "title": "无法加载更多工作区",
-      "subtitle": "只是一根电线有问题。尝试重新加载。",
-      "action_text": "重新加载",
-      "learn_more_text": "了解更多"
+      "title": "無法載入更多工作區",
+      "subtitle": "只是一根電線有問題。嘗試重新載入。",
+      "action_text": "重新載入",
+      "learn_more_text": "瞭解更多"
     },
     "personal_workspaces_empty_no_access_with_reset_filters": {
-      "title": "您无权访问",
-      "subtitle": "您只能查看您创建的个人工作区。",
-      "action_text": "重置过滤器"
+      "title": "您無權訪問",
+      "subtitle": "您只能檢視您建立的個人工作區。",
+      "action_text": "重置過濾器"
     },
     "shared_partner_workspace_empty": {
-      "title": "正在等待工作人员...还没有连接！",
-      "subtitle": "当您的合作伙伴邀请您加入外部工作区时，他们将出现在此处，供您探索和协作。"
+      "title": "正在等待工作人員...還沒有連線！",
+      "subtitle": "當您的合作伙伴邀請您加入外部工作區時，他們將出現在此處，供您探索和協作。"
     }
   },
   "workspace_list_item": {
-    "aria_label": "{workspaceName}工作区",
-    "aria_label_disabled": "{workspaceName}工作区（禁用：{disabledReason}）"
+    "aria_label": "{workspaceName}工作區",
+    "aria_label_disabled": "{workspaceName}工作區（停用：{disabledReason}）"
   },
   "pending_requests_empty": {
-    "title": "没有待审核的请求",
-    "subtitle": "当队友想要与更广泛的受众分享他们的工作区时，可以在此处查看他们的请求。"
+    "title": "沒有待稽核的請求",
+    "subtitle": "當隊友想要與更廣泛的受眾分享他們的工作區時，可以在此處檢視他們的請求。"
   },
-  "try_again_message": "只是一根电线有问题。请再试一次。",
+  "try_again_message": "只是一根電線有問題。請再試一次。",
   "no_team_found_message": {
     "title": "API 尚未共享",
-    "description": "将此 API 共享给团队工作区以管理角色"
+    "description": "將此 API 共享給團隊工作區以管理角色"
   },
   "request_access_message": {
-    "title": "您似乎无权访问",
-    "button_label": "请求访问"
+    "title": "您似乎無權訪問",
+    "button_label": "請求訪問"
   },
   "create_new_workspace": {
-    "unable_to_create": "无法创建工作区",
-    "workspace_already_exists": "<0>工作区 <1>{workspaceName}</1> 已经存在。</0>"
+    "unable_to_create": "無法建立工作區",
+    "workspace_already_exists": "<0>工作區 <1>{workspaceName}</1> 已經存在。</0>"
   },
   "move_entity": {
-    "heading": "移动{entity}",
-    "move_entity_button": "移动{entity}",
-    "entity_moved_successfully": "{entityName} 现在位于 {selectedWorkspace}。 <0></0>",
+    "heading": "移動{entity}",
+    "move_entity_button": "移動{entity}",
+    "entity_moved_successfully": "{entityName} 現在位於 {selectedWorkspace}。 <0></0>",
     "cancel_button": "取消",
     "could_not_load_more_workspaces": {
-      "heading": "无法加载更多工作区",
-      "description": "只是一根电线有问题。尝试重新加载。",
-      "reload_button": "重新加载"
+      "heading": "無法載入更多工作區",
+      "description": "只是一根電線有問題。嘗試重新載入。",
+      "reload_button": "重新載入"
     },
     "could_not_move_entity": {
-      "heading": "只是一根电线有问题。再试一次。",
-      "description": "无法移动 {entity}"
+      "heading": "只是一根電線有問題。再試一次。",
+      "description": "無法移動 {entity}"
     },
     "could_not_load_workspaces": {
-      "heading": "无法加载工作区",
-      "description": "只是一根电线有问题。尝试重新加载。",
-      "reload_button": "重新加载"
+      "heading": "無法載入工作區",
+      "description": "只是一根電線有問題。嘗試重新載入。",
+      "reload_button": "重新載入"
     },
-    "editor_access_required": "获得编辑者访问权限以移动此 {entity}",
+    "editor_access_required": "獲得編輯者訪問許可權以移動此 {entity}",
     "info_text": {
-      "collection": "此集合的监视器将暂停并停留在当前工作区中。预定的运行将作为集合的一部分移动并继续运行。",
-      "collection_reusable": "此集合的监视器将暂停并停留在当前工作区中。预定的运行将作为集合的一部分移动并继续运行。链接请求将不再遵循原始请求的更新。",
-      "collection_with_pinning": "关联的监视器将暂停并停留在当前的工作区中。预定的运行将随集合移动并照常运行。任何固定的环境都不会移动。",
-      "collection_with_pinning_reusable": "关联的监视器将暂停并停留在当前的工作区中。预定的运行将随集合移动并照常运行。任何固定的环境都不会移动。链接请求将不再遵循原始请求的更新。",
-      "api": "此 API 的集合和环境将随此 API 移动到目的地工作区。",
-      "environment": "监视器、计划的集合运行、Mock Server 和使用此环境的集成可能不再工作。",
-      "environment_with_pinning": "监视器、计划的集合运行、Mock Server 以及使用此环境的集成可能不再工作。此外，此环境将从当前固定的所有集合中删除。",
-      "extensible_collection": "选择要将集合移动到的位置的工作区。"
+      "collection": "此集合的監視器將暫停並停留在當前工作區中。預定的執行將作為集合的一部分移動並繼續執行。",
+      "collection_reusable": "此集合的監視器將暫停並停留在當前工作區中。預定的執行將作為集合的一部分移動並繼續執行。連結請求將不再遵循原始請求的更新。",
+      "collection_with_pinning": "關聯的監視器將暫停並停留在當前的工作區中。預定的執行將隨集合移動並照常執行。任何固定的環境都不會移動。",
+      "collection_with_pinning_reusable": "關聯的監視器將暫停並停留在當前的工作區中。預定的執行將隨集合移動並照常執行。任何固定的環境都不會移動。連結請求將不再遵循原始請求的更新。",
+      "api": "此 API 的集合和環境將隨此 API 移動到目的地工作區。",
+      "environment": "監視器、計劃的集合執行、Mock Server 和使用此環境的整合可能不再工作。",
+      "environment_with_pinning": "監視器、計劃的集合執行、Mock Server 以及使用此環境的整合可能不再工作。此外，此環境將從當前固定的所有集合中刪除。",
+      "extensible_collection": "選擇要將集合移動到的位置的工作區。"
     },
-    "search_workspaces": "搜索工作区",
-    "workspace_list_label": "选择工作区",
-    "loading_workspaces": "加载工作区",
+    "search_workspaces": "搜尋工作區",
+    "workspace_list_label": "選擇工作區",
+    "loading_workspaces": "載入工作區",
     "workspace_visibility_filter": {
       "options": {
         "all": "全部",
-        "personal": "个人",
-        "team": "团队",
+        "personal": "個人",
+        "team": "團隊",
         "private": "私密",
         "partner": "合作伙伴",
-        "public": "公开"
+        "public": "公開"
       },
-      "filter_by_visibility": "按可见性过滤"
+      "filter_by_visibility": "按可見性過濾"
     },
-    "cannot_move_to_workspace": "您没有权限将 {entity} 移动到此工作区。"
+    "cannot_move_to_workspace": "您沒有許可權將 {entity} 移動到此工作區。"
   },
   "workspace_list": {
-    "loading_more_workspaces": "正在加载更多工作区..."
+    "loading_more_workspaces": "正在載入更多工作區..."
   },
   "export_collection": {
-    "heading": "导出集合",
+    "heading": "匯出集合",
     "export_button": "出口",
     "cancel_button": "取消",
-    "error_loading": "加载错误",
-    "learn_more_about_collection_formats": "<0>{name}</0> 将导出为 JSON 文件。了解有关<2><0>集合格式</0></2>的更多信息",
+    "error_loading": "載入錯誤",
+    "learn_more_about_collection_formats": "<0>{name}</0> 將匯出為 JSON 檔案。瞭解有關<2><0>集合格式</0></2>的更多資訊",
     "export_as": {
-      "label": "导出为：",
+      "label": "匯出為：",
       "collection_v2": "集合 v2",
       "collection_v21": "集合 v2.1"
     },
     "share_collection_recommendation": {
-      "learn_more": "了解更多",
+      "learn_more": "瞭解更多",
       "share_collection": "分享集合",
-      "save_time_by_sharing": "将您的集合发送给 <1>队友</1>？<3 /> 通过<5>分享</5>来节省时间。"
+      "save_time_by_sharing": "將您的集合傳送給 <1>隊友</1>？<3 /> 通過<5>分享</5>來節省時間。"
     }
   },
   "manage_roles": {
     "heading": "管理 {name} 上的角色",
-    "offline_message": "如果您想管理角色，请确保您在线",
+    "offline_message": "如果您想管理角色，請確保您線上",
     "role_permission_denied": {
-      "collection": "获取编辑者访问权限以管理此集合上的角色。",
-      "environment": "获取编辑者访问权限以管理此环境上的角色。",
-      "monitor": "获取编辑者访问权限以管理此监视器上的角色。",
-      "api": "获取编辑者访问权限以管理此 API 上的角色。",
-      "mock": "您无权在此 Mock Server 上编辑和管理角色。",
-      "flow": "您无权编辑和管理此 Flow 上的角色。"
+      "collection": "獲取編輯者訪問許可權以管理此集合上的角色。",
+      "environment": "獲取編輯者訪問許可權以管理此環境上的角色。",
+      "monitor": "獲取編輯者訪問許可權以管理此監視器上的角色。",
+      "api": "獲取編輯者訪問許可權以管理此 API 上的角色。",
+      "mock": "您無權在此 Mock Server 上編輯和管理角色。",
+      "flow": "您無權編輯和管理此 Flow 上的角色。"
     },
     "fetch_roles_fail": {
-      "collection": "为此集合获取角色时出现问题",
-      "environment": "为此环境获取角色时出现问题",
-      "monitor": "为此监视器获取角色时出现问题",
-      "api": "为此 API 获取角色时出现问题",
-      "mock": "为该 Mock Server 获取角色时出现问题",
-      "flow": "为此 Flow 获取角色时出现问题"
+      "collection": "為此集合獲取角色時出現問題",
+      "environment": "為此環境獲取角色時出現問題",
+      "monitor": "為此監視器獲取角色時出現問題",
+      "api": "為此 API 獲取角色時出現問題",
+      "mock": "為該 Mock Server 獲取角色時出現問題",
+      "flow": "為此 Flow 獲取角色時出現問題"
     },
     "update_roles_failed": {
-      "collection": "更新此集合的角色时出现问题",
-      "environment": "更新此环境的角色时出现问题",
-      "monitor": "更新此监视器的角色时出现问题",
-      "api": "更新此 API 的角色时出现问题",
-      "mock": "更新此 Mock Server 的角色时出现问题",
-      "flow": "更新此 Flow 的角色时出现问题",
-      "title": "无法更新角色"
+      "collection": "更新此集合的角色時出現問題",
+      "environment": "更新此環境的角色時出現問題",
+      "monitor": "更新此監視器的角色時出現問題",
+      "api": "更新此 API 的角色時出現問題",
+      "mock": "更新此 Mock Server 的角色時出現問題",
+      "flow": "更新此 Flow 的角色時出現問題",
+      "title": "無法更新角色"
     },
     "not_shared": {
-      "collection": "要让其他人访问它，请将集合移动到团队、私有或公开工作区。",
-      "environment": "要让其他人访问它，请将环境移动到团队、私有或公开工作区。",
-      "monitor": "此监视器位于您的个人工作区中，只有您可以访问。",
-      "api": "要让其他人访问它，请将 API 移动到团队、私有或公开工作区。",
-      "mock": "此 Mock Server 位于您的个人工作区中，只有您可以访问。",
-      "flow": "此 Flow 位于您的个人工作区中，只有您可以访问。"
+      "collection": "要讓其他人訪問它，請將集合移動到團隊、私有或公開工作區。",
+      "environment": "要讓其他人訪問它，請將環境移動到團隊、私有或公開工作區。",
+      "monitor": "此監視器位於您的個人工作區中，只有您可以訪問。",
+      "api": "要讓其他人訪問它，請將 API 移動到團隊、私有或公開工作區。",
+      "mock": "此 Mock Server 位於您的個人工作區中，只有您可以訪問。",
+      "flow": "此 Flow 位於您的個人工作區中，只有您可以訪問。"
     },
     "not_shared_title": {
-      "collection": "只有您有权访问此集合",
-      "environment": "只有您有权访问此环境",
-      "monitor": "只有您有权访问此监视器",
-      "api": "只有您有权访问此 API",
-      "mock": "只有您有权访问此 Mock Server",
-      "flow": "只有您有权访问此 Flow"
+      "collection": "只有您有權訪問此集合",
+      "environment": "只有您有權訪問此環境",
+      "monitor": "只有您有權訪問此監視器",
+      "api": "只有您有權訪問此 API",
+      "mock": "只有您有權訪問此 Mock Server",
+      "flow": "只有您有權訪問此 Flow"
     },
     "share_label": {
       "collection": "集合",
-      "environment": "环境",
-      "monitor": "监视器",
+      "environment": "環境",
+      "monitor": "監視器",
       "api": "API",
       "flow": "流程"
     },
-    "something_went_wrong_while_managing_roles": "管理角色时出现问题。",
-    "something_went_wrong": "出了点问题",
-    "signed_out_error": "您需要登录团队才能执行此操作。",
+    "something_went_wrong_while_managing_roles": "管理角色時出現問題。",
+    "something_went_wrong": "出了點問題",
+    "signed_out_error": "您需要登入團隊才能執行此操作。",
     "could_not_change_role": {
-      "title": "无法更改角色",
-      "description": "您的团队已满。 <2 /> 添加更多团队成员。"
+      "title": "無法更改角色",
+      "description": "您的團隊已滿。 <2 /> 新增更多團隊成員。"
     },
     "role_updated": "角色已更新",
-    "role_will_be_updated": "角色即将更新",
-    "role_update_acknowledged": "角色更新已确认",
-    "guest_role_upgrade_description": "团队管理员正在审查从访客到开发人员的角色变更。",
-    "team_admins_will_review_request": "对于访客角色更改，团队管理员将审核您的请求。",
-    "move_entity": "移动{entity}",
-    "view_roles_caption": "人们将从关联的 API 和工作区继承此 {entity} 上的角色。 <4><0>查看角色</0></4>",
-    "view_workspace_roles_caption": "人们将从工作区继承此 {entity} 上的角色。 <4><0>查看工作区角色</0></4>",
-    "disable_role_tooltip": "您只能在此 {entity} 上为用户分配 {enabledRolesString} 角色。您的计划不包括访问管理。",
+    "role_will_be_updated": "角色即將更新",
+    "role_update_acknowledged": "角色更新已確認",
+    "guest_role_upgrade_description": "團隊管理員正在審查從訪客到開發人員的角色變更。",
+    "team_admins_will_review_request": "對於訪客角色更改，團隊管理員將稽核您的請求。",
+    "move_entity": "移動{entity}",
+    "view_roles_caption": "人們將從關聯的 API 和工作區繼承此 {entity} 上的角色。 <4><0>檢視角色</0></4>",
+    "view_workspace_roles_caption": "人們將從工作區繼承此 {entity} 上的角色。 <4><0>檢視工作區角色</0></4>",
+    "disable_role_tooltip": "您只能在此 {entity} 上為使用者分配 {enabledRolesString} 角色。您的計劃不包括訪問管理。",
     "cancel_button": "取消",
     "update_roles_button": "更新角色",
     "upgrade_plan_info": {
-      "collection": "要更改人员的角色并设置合并此 {entityType}、<4><0> 上的拉取请求的条件，请将您的计划 </0></4> 升级到 {teamPlanName} 或 {enterprisePlanName}。",
-      "default": "要改变人们在此 {entityType} 上的角色，<4><0> 将您的计划 </0></4> 升级到 {teamPlanName} 或 {enterprisePlanName}。"
+      "collection": "要更改人員的角色並設定合併此 {entityType}、<4><0> 上的拉取請求的條件，請將您的計劃 </0></4> 升級到 {teamPlanName} 或 {enterprisePlanName}。",
+      "default": "要改變人們在此 {entityType} 上的角色，<4><0> 將您的計劃 </0></4> 升級到 {teamPlanName} 或 {enterprisePlanName}。"
     },
-    "select_role": "选择角色",
-    "everyone_in_team": "团队中的每个人",
+    "select_role": "選擇角色",
+    "everyone_in_team": "團隊中的每個人",
     "manage_roles_title": "管理角色",
-    "name_email_or_group": "姓名、电子邮件或群组名称",
-    "no_results_found": "没有找到结果",
-    "only_developers_can_edit_collections": "只有 <1><0>Developers</0></1> 可以编辑集合。转换后，他们将可以访问所有团队工作区。团队管理员将审查此更改。",
-    "currently_exists_in": "目前存在于",
-    "view_plans_info": "团队上的每个人都可以查看并更改此资源。要管理对资源的访问，请升级到 {teamPlanName} 或 {enterprisePlanName} 计划。 <0>查看计划.</0>",
-    "guests_will_be_converted_to_developer": "访客将在您的团队中转换为开发人员",
+    "name_email_or_group": "姓名、電子郵件或群組名稱",
+    "no_results_found": "沒有找到結果",
+    "only_developers_can_edit_collections": "只有 <1><0>Developers</0></1> 可以編輯集合。轉換後，他們將可以訪問所有團隊工作區。團隊管理員將審查此更改。",
+    "currently_exists_in": "目前存在於",
+    "view_plans_info": "團隊上的每個人都可以檢視並更改此資源。要管理對資源的訪問，請升級到 {teamPlanName} 或 {enterprisePlanName} 計劃。 <0>檢視計劃.</0>",
+    "guests_will_be_converted_to_developer": "訪客將在您的團隊中轉換為開發人員",
     "pull_request_settings": {
-      "failed_to_load": "无法加载拉取请求设置。请再试一次。",
-      "select_who_can_merge": "选择谁可以在此集合上合并拉取请求",
-      "only_collection_editors": "仅集合编辑者",
-      "select_teammates": "选择队友",
-      "select_users_hint": "默认情况下，所有目标集合编辑者都能够合并。",
-      "set_merge_checks": "设置合并条件",
-      "pull_request_merge_options": "当满足以下条件时，可以合并此集合上的拉取请求：",
-      "upgrade_plan_message": "此功能不包含在您当前的计划中。考虑升级到付费计划来访问它。"
+      "failed_to_load": "無法載入拉取請求設定。請再試一次。",
+      "select_who_can_merge": "選擇誰可以在此集合上合併拉取請求",
+      "only_collection_editors": "僅集合編輯者",
+      "select_teammates": "選擇隊友",
+      "select_users_hint": "預設情況下，所有目標集合編輯者都能夠合併。",
+      "set_merge_checks": "設定合併條件",
+      "pull_request_merge_options": "當滿足以下條件時，可以合併此集合上的拉取請求：",
+      "upgrade_plan_message": "此功能不包含在您當前的計劃中。考慮升級到付費計劃來訪問它。"
     },
     "roles_list": {
       "info_text": {
-        "api": "此 {memberType} 在此 {entity} 上拥有编辑权限，该权限继承自关联的 API。",
-        "workspace": "此 {memberType} 在此 {entity} 上拥有编辑权限，该权限继承自工作区。",
-        "workspace_or_group": "此 {memberType} 在此 {entity} 上拥有编辑权限，该权限继承自工作区或用户组。"
+        "api": "此 {memberType} 在此 {entity} 上擁有編輯許可權，該許可權繼承自關聯的 API。",
+        "workspace": "此 {memberType} 在此 {entity} 上擁有編輯許可權，該許可權繼承自工作區。",
+        "workspace_or_group": "此 {memberType} 在此 {entity} 上擁有編輯許可權，該許可權繼承自工作區或使用者組。"
       },
-      "role_item_subtitle_member": "{members, plural, one {# 成员} other {# 成员}}",
-      "role_item_subtitle_team": "{members, plural, one {# 团队成员} other {# 团队成员}}",
-      "role_item_subtitle_users": "{users, plural, one {# 组成员} other {# 组成员}}",
-      "no_members_present": "该组中没有成员。",
-      "view_group": "查看组",
-      "user_group_popover_heading": "{name}（{count, plural, one {# 位成员} other {# 位成员}}）",
+      "role_item_subtitle_member": "{members, plural, one {# 成員} other {# 成員}}",
+      "role_item_subtitle_team": "{members, plural, one {# 團隊成員} other {# 團隊成員}}",
+      "role_item_subtitle_users": "{users, plural, one {# 組成員} other {# 組成員}}",
+      "no_members_present": "該組中沒有成員。",
+      "view_group": "檢視組",
+      "user_group_popover_heading": "{name}（{count, plural, one {# 位成員} other {# 位成員}}）",
       "remove": "消除",
-      "permission_required": "您没有权限来执行此操作",
-      "guest_can_view_shared_collections": "访客只能查看与他们共享的集合。",
-      "guest": "访客"
+      "permission_required": "您沒有許可權來執行此操作",
+      "guest_can_view_shared_collections": "訪客只能檢視與他們共享的集合。",
+      "guest": "訪客"
     }
   },
   "auth_editor": {
-    "target_description_default": "<0>授权{authTargetType, select, data {数据} header {请求头} other {}}会在发送请求时自动生成。了解有关</0><1><0><0>授权</0></0></1>的更多信息",
-    "target_description_default_learning_center": "<0>授权{authTargetType, select, data {数据} header {请求头} other {}}会在发送请求时自动生成。了解有关</0><1><0>授权</0><1>的更多信息。</1></1>",
-    "target_description_learning_center": "<0>授权{authTargetType, select, data {数据} header {请求头} other {}}会在发送请求时自动生成。了解有关 </0><1><0>{authType}</0><1> 授权的更多信息。</1></1>",
-    "target_description_reusable": "<0>此请求已关联。它使用</0><1>授权</1><2>设置和变量，来自当前集合或环境，并在发送请求时自动生成请求头。</2>",
-    "add_authorization_to_label_full": "将授权数据添加到",
-    "add_authorization_to_label_short": "将验证数据添加到",
-    "learn_more": "了解更多关于",
-    "auth_link_text": "身份验证",
-    "auth_input_desc": "Postman 将根据请求方法自动在 body 和 URL 之间进行选择。",
-    "auth_retry_input_desc": "默认情况下，Postman 将从接收到的响应中提取值，将其添加到请求中，然后重试。您想禁用此功能吗？",
-    "auth_retry_input_toggle_label": "是的，禁用重试请求",
-    "auth_recommend_var": "<0>注意！这些参数保存敏感数据。为了在协作环境中工作时保证这些数据的安全，我们建议使用变量。了解有关 </0> <1>variables</1> 的更多信息。",
-    "auth_recommend_var_link_text": "变量",
-    "toggle_advanced_fields_aria_label": "切换高级配置",
+    "target_description_default": "<0>授權{authTargetType, select, data {資料} header {請求頭} other {}}會在傳送請求時自動生成。瞭解有關</0><1><0><0>授權</0></0></1>的更多資訊",
+    "target_description_default_learning_center": "<0>授權{authTargetType, select, data {資料} header {請求頭} other {}}會在傳送請求時自動生成。瞭解有關</0><1><0>授權</0><1>的更多資訊。</1></1>",
+    "target_description_learning_center": "<0>授權{authTargetType, select, data {資料} header {請求頭} other {}}會在傳送請求時自動生成。瞭解有關 </0><1><0>{authType}</0><1> 授權的更多資訊。</1></1>",
+    "target_description_reusable": "<0>此請求已關聯。它使用</0><1>授權</1><2>設定和變數，來自當前集合或環境，並在傳送請求時自動生成請求頭。</2>",
+    "add_authorization_to_label_full": "將授權資料新增到",
+    "add_authorization_to_label_short": "將驗證資料新增到",
+    "learn_more": "瞭解更多關於",
+    "auth_link_text": "身份驗證",
+    "auth_input_desc": "Postman 將根據請求方法自動在 body 和 URL 之間進行選擇。",
+    "auth_retry_input_desc": "預設情況下，Postman 將從接收到的響應中提取值，將其新增到請求中，然後重試。您想停用此功能嗎？",
+    "auth_retry_input_toggle_label": "是的，停用重試請求",
+    "auth_recommend_var": "<0>注意！這些引數儲存敏感資料。為了在協作環境中工作時保證這些資料的安全，我們建議使用變數。瞭解有關 </0> <1>variables</1> 的更多資訊。",
+    "auth_recommend_var_link_text": "變數",
+    "toggle_advanced_fields_aria_label": "切換高階配置",
     "inherited_auth": {
-      "inherited_desc": "<0>此 {entityType, select, collection {集合} folder {文件夹} request {请求} other {}} 正在使用来自 {entity, select, collection {集合} folder {文件夹} other {}} </0><1><0>{entityName}</0></1><2>中的 {authType}。</2>",
-      "inherited_desc_long_entity_name": "<0>此 {entityType, select, collection {集合} folder {文件夹} request {请求} other {}} 正在使用来自 {entity, select, collection {集合} folder {文件夹} other {}} </0><1><0>{entityName}</0></1> 中的 {authType}",
-      "not_inherited_desc": "此 {entityType, select, collection {集合} folder {文件夹} request {请求} other {}} 目前未继承任何授权辅助函数。将其保存在集合中以使用父级的授权助手。",
-      "edit_button": "编辑 {entityType, select, collection {集合} folder {文件夹} other {{entityType}}} 中的授权"
+      "inherited_desc": "<0>此 {entityType, select, collection {集合} folder {資料夾} request {請求} other {}} 正在使用來自 {entity, select, collection {集合} folder {資料夾} other {}} </0><1><0>{entityName}</0></1><2>中的 {authType}。</2>",
+      "inherited_desc_long_entity_name": "<0>此 {entityType, select, collection {集合} folder {資料夾} request {請求} other {}} 正在使用來自 {entity, select, collection {集合} folder {資料夾} other {}} </0><1><0>{entityName}</0></1> 中的 {authType}",
+      "not_inherited_desc": "此 {entityType, select, collection {集合} folder {資料夾} request {請求} other {}} 目前未繼承任何授權輔助函式。將其儲存在集合中以使用父級的授權助手。",
+      "edit_button": "編輯 {entityType, select, collection {集合} folder {資料夾} other {{entityType}}} 中的授權"
     },
     "no_auth": {
-      "description": "此{entityType, select, collection {集合} folder {文件夹} request {请求} other {请求}}未使用任何身份验证。",
-      "tooltip": "了解有关授权的更多信息"
+      "description": "此{entityType, select, collection {集合} folder {資料夾} request {請求} other {請求}}未使用任何身份驗證。",
+      "tooltip": "瞭解有關授權的更多資訊"
     },
     "auth_jwt": {
-      "input_algorithm": "算法",
-      "input_algorithm_tooltip": "用于生成 JWT 签名的算法",
-      "input_secret_key": "密钥",
-      "input_secret_key_tooltip": "密钥用于生成 JWT 签名",
-      "input_base64_checkbox": "密钥 Base64 编码",
-      "input_private_key": "私钥",
-      "input_private_key_tooltip": "私钥用于生成 JWT 签名，采用 PKCS#8 PEM 格式",
-      "textarea_private_key_placeholder": "PKCS#8 PEM 格式的私钥",
-      "input_payload_box": "有效载荷",
-      "input_payload_box_tooltip": "包含 JWT 传达的声明的 JSON 对象",
+      "input_algorithm": "演算法",
+      "input_algorithm_tooltip": "用於生成 JWT 簽名的演算法",
+      "input_secret_key": "金鑰",
+      "input_secret_key_tooltip": "金鑰用於生成 JWT 簽名",
+      "input_base64_checkbox": "金鑰 Base64 編碼",
+      "input_private_key": "私鑰",
+      "input_private_key_tooltip": "私鑰用於生成 JWT 簽名，採用 PKCS#8 PEM 格式",
+      "textarea_private_key_placeholder": "PKCS#8 PEM 格式的私鑰",
+      "input_payload_box": "有效載荷",
+      "input_payload_box_tooltip": "包含 JWT 傳達的宣告的 JSON 物件",
       "auth_advanced_settings": {
-        "input_token_prefix": "请求标头前缀",
-        "input_token_prefix_tooltip": "添加到请求中授权标头的前缀",
-        "input_query_key": "查询参数名称",
-        "input_header_box": "JWT 标头",
-        "input_header_box_tooltip": "这些值将附加到 JWT 标头",
-        "header_info": "算法特定的请求头会自动添加。"
+        "input_token_prefix": "請求標頭字首",
+        "input_token_prefix_tooltip": "新增到請求中授權標頭的字首",
+        "input_query_key": "查詢引數名稱",
+        "input_header_box": "JWT 標頭",
+        "input_header_box_tooltip": "這些值將附加到 JWT 標頭",
+        "header_info": "演算法特定的請求頭會自動新增。"
       },
-      "input_selector_label": "添加 JWT 令牌到",
+      "input_selector_label": "新增 JWT 令牌到",
       "token_location_aria_label": "令牌位置",
-      "algorithm_aria_label": "算法",
-      "token_add_to_opt_header": "请求头",
+      "algorithm_aria_label": "演算法",
+      "token_add_to_opt_header": "請求頭",
       "token_add_to_opt_auth_header": "Header",
-      "token_add_to_opt_auth_query_param": "查询参数",
-      "token_add_to_opt_query_param": "查询参数"
+      "token_add_to_opt_auth_query_param": "查詢引數",
+      "token_add_to_opt_query_param": "查詢引數"
     },
     "auth_digest": {
-      "input_username": "用户名",
-      "input_username_placeholder": "用户名",
-      "input_password": "密码",
-      "input_password_placeholder": "密码",
-      "input_realm": "领域",
-      "input_realm_tooltip": "这是服务器在 WWW-Authenticate 响应标头中指定的字符串。它至少应包含执行身份验证的主机的名称，并且还可能指示可能具有访问权限的用户的集合。",
+      "input_username": "使用者名稱",
+      "input_username_placeholder": "使用者名稱",
+      "input_password": "密碼",
+      "input_password_placeholder": "密碼",
+      "input_realm": "領域",
+      "input_realm_tooltip": "這是伺服器在 WWW-Authenticate 響應標頭中指定的字串。它至少應包含執行身份驗證的主機的名稱，並且還可能指示可能具有訪問許可權的使用者的集合。",
       "input_realm_placeholder": "testrealm@example.com",
-      "input_nonce": "随机数",
-      "input_nonce_tooltip": "这是服务器在 WWW-Authenticate 响应标头中指定的唯一字符串。",
-      "input_nonce_placeholder": "随机数",
-      "input_algorithm": "算法",
-      "input_algorithm_tooltip": "指示用于生成摘要和校验和的一对算法的字符串。",
+      "input_nonce": "隨機數",
+      "input_nonce_tooltip": "這是伺服器在 WWW-Authenticate 響應標頭中指定的唯一字串。",
+      "input_nonce_placeholder": "隨機數",
+      "input_algorithm": "演算法",
+      "input_algorithm_tooltip": "指示用於生成摘要和校驗和的一對演算法的字串。",
       "input_qop": "QOP",
-      "input_qop_tooltip": "指示应用于消息的“保护质量”。该值必须是服务器在 WWW-Authenticate 响应标头中指定的替代值之一。",
+      "input_qop_tooltip": "指示應用於訊息的“保護質量”。該值必須是伺服器在 WWW-Authenticate 響應標頭中指定的替代值之一。",
       "input_qop_placeholder": "例如 auth-int",
-      "input_nonce_count": "随机数计数",
-      "input_nonce_count_tooltip": "客户端使用此请求中的 nonce 值发送的请求数（包括当前请求）的十六进制计数。如果发送 qop 指令，则必须指定此项；如果服务器未在 WWW-Authenticate 响应标头中发送 qop 指令，则不得指定此项。",
+      "input_nonce_count": "隨機數計數",
+      "input_nonce_count_tooltip": "客戶端使用此請求中的 nonce 值傳送的請求數（包括當前請求）的十六進位制計數。如果傳送 qop 指令，則必須指定此項；如果伺服器未在 WWW-Authenticate 響應標頭中傳送 qop 指令，則不得指定此項。",
       "input_nonce_count_placeholder": "例如00000001",
-      "input_client_nonce": "客户端随机数",
-      "input_client_nonce_tooltip": "客户端提供的不透明引用字符串值，客户端和服务器都使用它来避免选择明文攻击，提供相互身份验证，并提供一些消息完整性保护。如果发送 qop 指令，则必须指定此项；如果服务器未在 WWW-Authenticate 响应标头中发送 qop 指令，则不得指定此项。",
+      "input_client_nonce": "客戶端隨機數",
+      "input_client_nonce_tooltip": "客戶端提供的不透明引用字串值，客戶端和伺服器都使用它來避免選擇明文攻擊，提供相互身份驗證，並提供一些訊息完整性保護。如果傳送 qop 指令，則必須指定此項；如果伺服器未在 WWW-Authenticate 響應標頭中傳送 qop 指令，則不得指定此項。",
       "input_client_nonce_placeholder": "例如0a4f113b",
       "input_opaque": "不透明",
-      "input_opaque_tooltip": "这是由服务器在 WWW-Authenticate 响应标头中指定的数据字符串，并且应在同一保护空间中与 URI 一起使用，无需更改。建议该字符串为base64 或十六进制数据。",
+      "input_opaque_tooltip": "這是由伺服器在 WWW-Authenticate 響應標頭中指定的資料字串，並且應在同一保護空間中與 URI 一起使用，無需更改。建議該字串為base64 或十六進位制資料。",
       "input_opaque_placeholder": "不透明"
     },
     "auth_apikey": {
-      "input_username": "键",
-      "input_username_placeholder": "键",
+      "input_username": "鍵",
+      "input_username_placeholder": "鍵",
       "input_password": "值",
       "input_password_placeholder": "值",
-      "input_addto": "添加到",
+      "input_addto": "新增到",
       "menu_header": "Header",
-      "menu_query": "查询参数"
+      "menu_query": "查詢引數"
     },
     "auth_bearer": {
       "input_token": "令牌",
       "input_token_placeholder": "令牌"
     },
     "auth_basic": {
-      "input_username": "用户名",
-      "input_username_placeholder": "用户名",
-      "input_password": "密码",
-      "input_password_placeholder": "密码",
-      "var_validation_msg": "使用变量来保证敏感数据的安全。"
+      "input_username": "使用者名稱",
+      "input_username_placeholder": "使用者名稱",
+      "input_password": "密碼",
+      "input_password_placeholder": "密碼",
+      "var_validation_msg": "使用變數來保證敏感資料的安全。"
     },
     "auth_sasl": {
-      "input_mechanism": "机制",
+      "input_mechanism": "機制",
       "mechanism_plain": "PLAIN",
       "mechanism_scram_sha_256": "SCRAM-SHA-256",
       "mechanism_scram_sha_512": "SCRAM-SHA-512",
-      "input_username": "用户名",
-      "input_username_placeholder": "用户名",
-      "input_password": "密码",
-      "input_password_placeholder": "密码"
+      "input_username": "使用者名稱",
+      "input_username_placeholder": "使用者名稱",
+      "input_password": "密碼",
+      "input_password_placeholder": "密碼"
     },
     "akamai-edgegrid": {
-      "input_access_token": "访问令牌",
-      "input_access_token_placeholder": "访问令牌",
-      "input_client_token": "客户端令牌",
-      "input_client_token_placeholder": "客户端令牌",
-      "input_client_secret": "客户端密钥",
-      "input_client_secret_placeholder": "客户端密钥",
-      "input_nonce": "随机数",
-      "input_nonce_placeholder": "随机数",
-      "input_nonce_tooltip": "由客户端生成的随机字符串。",
-      "input_timestamp": "时间戳",
-      "input_timestamp_placeholder": "时间戳",
-      "input_timestamp_tooltip": "<0>UTC 时间，采用 </0><1>yyyyMMddTHH:mm:ss+0000</1><2> 格式，如 Akamai 开发人员门户的 API 客户端身份验证部分中所指定。</2>",
-      "input_base_url": "基础 URL",
+      "input_access_token": "訪問令牌",
+      "input_access_token_placeholder": "訪問令牌",
+      "input_client_token": "客戶端令牌",
+      "input_client_token_placeholder": "客戶端令牌",
+      "input_client_secret": "客戶端金鑰",
+      "input_client_secret_placeholder": "客戶端金鑰",
+      "input_nonce": "隨機數",
+      "input_nonce_placeholder": "隨機數",
+      "input_nonce_tooltip": "由客戶端生成的隨機字串。",
+      "input_timestamp": "時間戳",
+      "input_timestamp_placeholder": "時間戳",
+      "input_timestamp_tooltip": "<0>UTC 時間，採用 </0><1>yyyyMMddTHH:mm:ss+0000</1><2> 格式，如 Akamai 開發人員門戶的 API 客戶端身份驗證部分中所指定。</2>",
+      "input_base_url": "基礎 URL",
       "input_base_url_placeholder": "基本 URL",
-      "input_base_url_tooltip": "基址 URL，没有协议。",
-      "input_headerstosign": "要签名的请求头",
-      "input_headerstosign_placeholder": "要签名的请求头",
-      "input_headerstosign_tooltip": "要签名的标头的逗号分隔列表。",
-      "input_max_body": "最大请求体大小",
-      "input_max_body_placeholder": "最大请求体大小",
-      "input_max_body_tooltip": "考虑哈希计算的最大主体大小。默认值：131,072 字节。"
+      "input_base_url_tooltip": "基址 URL，沒有協議。",
+      "input_headerstosign": "要簽名的請求頭",
+      "input_headerstosign_placeholder": "要簽名的請求頭",
+      "input_headerstosign_tooltip": "要簽名的標頭的逗號分隔列表。",
+      "input_max_body": "最大請求體大小",
+      "input_max_body_placeholder": "最大請求體大小",
+      "input_max_body_tooltip": "考慮雜湊計算的最大主體大小。預設值：131,072 位元組。"
     },
     "ntlmauth": {
-      "input_username": "用户名",
-      "input_username_placeholder": "用户名",
-      "input_password": "密码",
-      "input_password_placeholder": "密码",
-      "input_domain": "领域",
+      "input_username": "使用者名稱",
+      "input_username_placeholder": "使用者名稱",
+      "input_password": "密碼",
+      "input_password_placeholder": "密碼",
+      "input_domain": "領域",
       "input_domain_placeholder": "例如example.com",
-      "input_domain_tooltip": "要进行身份验证的域/主机。",
+      "input_domain_tooltip": "要進行身份驗證的域/主機。",
       "input_workstation": "工作站",
-      "input_workstation_placeholder": "例如约翰-PC",
-      "input_workstation_tooltip": "您电脑的主机名。",
-      "artemis_empty_state_title": "授权助手不可用",
-      "artemis_empty_state_message": "要自定义您的身份验证方案，请使用 Postman 桌面代理。",
-      "warning_invalid_char_username": "用户名包含无效字符",
-      "warning_restricted_username": "用户名是受限制的单词",
-      "warning_too_long_username": "用户名太长"
+      "input_workstation_placeholder": "例如約翰-PC",
+      "input_workstation_tooltip": "您電腦的主機名。",
+      "artemis_empty_state_title": "授權助手不可用",
+      "artemis_empty_state_message": "要自定義您的身份驗證方案，請使用 Postman 桌面代理。",
+      "warning_invalid_char_username": "使用者名稱包含無效字元",
+      "warning_restricted_username": "使用者名稱是受限制的單詞",
+      "warning_too_long_username": "使用者名稱太長"
     },
     "awssignature": {
-      "input_access_key": "访问密钥",
-      "input_access_key_placeholder": "访问密钥",
-      "input_secret_key": "密钥",
-      "input_secret_key_placeholder": "密钥",
-      "input_region": "AWS 地区",
+      "input_access_key": "訪問金鑰",
+      "input_access_key_placeholder": "訪問金鑰",
+      "input_secret_key": "金鑰",
+      "input_secret_key_placeholder": "金鑰",
+      "input_region": "AWS 地區",
       "input_region_placeholder": "例如 us-east-1",
-      "input_region_tooltip": "接收请求的区域（默认值：us-east-1）",
-      "input_service": "服务名称",
+      "input_region_tooltip": "接收請求的區域（預設值：us-east-1）",
+      "input_service": "服務名稱",
       "input_service_placeholder": "例如s3",
-      "input_service_tooltip": "接收请求的服务。",
-      "input_session": "会话令牌",
-      "input_session_placeholder": "会话令牌",
-      "input_session_tooltip": "仅在使用临时安全凭证时需要。",
-      "input_source": "来源",
-      "source_static": "静态",
-      "source_environment": "环境",
-      "input_source_tooltip": "「静态」使用此处填写的 Access Key 和 Secret。「环境」会在发送请求时，从本机的 AWS 配置（通过 AWS CLI）加载凭据。",
+      "input_service_tooltip": "接收請求的服務。",
+      "input_session": "會話令牌",
+      "input_session_placeholder": "會話令牌",
+      "input_session_tooltip": "僅在使用臨時安全憑證時需要。",
+      "input_source": "來源",
+      "source_static": "靜態",
+      "source_environment": "環境",
+      "input_source_tooltip": "「靜態」使用此處填寫的 Access Key 和 Secret。「環境」會在傳送請求時，從本機的 AWS 配置（通過 AWS CLI）載入憑據。",
       "input_profile": "AWS Profile",
       "input_profile_placeholder": "default",
-      "input_profile_tooltip": "用于加载凭据的 AWS 配置中的命名 Profile。留空则使用默认凭据链。"
+      "input_profile_tooltip": "用於載入憑據的 AWS 配置中的命名 Profile。留空則使用預設憑據鏈。"
     },
     "azure": {
-      "input_api_key": "API 密钥",
-      "input_api_key_placeholder": "API 密钥",
-      "input_resource_name": "资源名称",
+      "input_api_key": "API 金鑰",
+      "input_api_key_placeholder": "API 金鑰",
+      "input_resource_name": "資源名稱",
       "input_resource_name_placeholder": "例如my-beta-east2-openai",
-      "input_resource_name_tooltip": "Azure 资源名称。评估后的 URL 变为 https://{resourceName}.openai.azure.com/openai/{apiVersion}{model}",
+      "input_resource_name_tooltip": "Azure 資源名稱。評估後的 URL 變為 https://{resourceName}.openai.azure.com/openai/{apiVersion}{model}",
       "input_base_url": "基本 URL",
       "input_base_url_placeholder": "例如https://my-proxy.example.com",
-      "input_base_url_tooltip": "对 API 调用使用不同的 URL 前缀，例如使用代理服务器。提供后，resourceName 将被忽略。评估的 URL 变为 {baseURL}/{apiVersion}{model}",
+      "input_base_url_tooltip": "對 API 呼叫使用不同的 URL 字首，例如使用代理伺服器。提供後，resourceName 將被忽略。評估的 URL 變為 {baseURL}/{apiVersion}{model}",
       "input_api_version": "API 版本",
       "input_api_version_placeholder": "v1",
-      "input_api_version_tooltip": "Azure OpenAI API 版本。如果未指定，则默认为 v1。用于 URL 路径构造",
-      "input_use_deployment_based_urls": "使用基于部署的 URL",
-      "input_use_deployment_based_urls_tooltip": "使用 baseURL 启用时，使用特定于部署的 URL 格式：{baseURL}/deployments/{model}?api-版本={apiVersion}"
+      "input_api_version_tooltip": "Azure OpenAI API 版本。如果未指定，則預設為 v1。用於 URL 路徑構造",
+      "input_use_deployment_based_urls": "使用基於部署的 URL",
+      "input_use_deployment_based_urls_tooltip": "使用 baseURL 啟用時，使用特定於部署的 URL 格式：{baseURL}/deployments/{model}?api-版本={apiVersion}"
     },
     "auth_hawk": {
-      "input_auth_id": "Hawk 认证 ID",
-      "input_auth_id_placeholder": "Hawk 认证 ID",
-      "input_auth_key": "Hawk 认证密钥",
-      "input_auth_key_placeholder": "Hawk 认证密钥",
-      "input_algorithm": "算法",
+      "input_auth_id": "Hawk 認證 ID",
+      "input_auth_id_placeholder": "Hawk 認證 ID",
+      "input_auth_key": "Hawk 認證金鑰",
+      "input_auth_key_placeholder": "Hawk 認證金鑰",
+      "input_algorithm": "演算法",
       "input_algorithm_sha_256": "SHA-256",
       "input_algorithm_sha_1": "SHA-1",
-      "input_user": "用户",
-      "input_user_placeholder": "用户名",
-      "input_nonce": "随机数",
-      "input_nonce_placeholder": "随机数",
-      "input_nonce_tooltip": "由客户端生成的随机字符串。",
-      "input_extra_data": "扩展数据",
-      "input_extra_data_placeholder": "例如某些应用程序额外数据",
-      "input_extra_data_tooltip": "与请求一起发送的任何特定于应用程序的信息。",
-      "input_app_id": "应用程序",
-      "input_app_id_placeholder": "应用程序ID",
-      "input_app_id_tooltip": "这提供了凭据和应用程序之间的绑定，以防止攻击者欺骗应用程序使用颁发给其他人的凭据。",
+      "input_user": "使用者",
+      "input_user_placeholder": "使用者名稱",
+      "input_nonce": "隨機數",
+      "input_nonce_placeholder": "隨機數",
+      "input_nonce_tooltip": "由客戶端生成的隨機字串。",
+      "input_extra_data": "擴充套件資料",
+      "input_extra_data_placeholder": "例如某些應用程式額外資料",
+      "input_extra_data_tooltip": "與請求一起傳送的任何特定於應用程式的資訊。",
+      "input_app_id": "應用程式",
+      "input_app_id_placeholder": "應用程式ID",
+      "input_app_id_tooltip": "這提供了憑據和應用程式之間的繫結，以防止攻擊者欺騙應用程式使用頒發給其他人的憑據。",
       "input_delegation": "dlg",
-      "input_delegation_placeholder": "例如委托者",
-      "input_delegation_tooltip": "直接向其颁发凭证的应用程序的应用程序 ID。",
-      "input_timestamp": "时间戳",
-      "input_timestamp_placeholder": "时间戳",
-      "input_payload_hash": "包括有效负载哈希",
-      "input_payload_hash_tooltip": "Hawk 身份验证为有效负载验证提供可选支持。如果选择此选项，将计算有效负载哈希并将其包含在 MAC 计算和授权标头中。"
+      "input_delegation_placeholder": "例如委託者",
+      "input_delegation_tooltip": "直接向其頒發憑證的應用程式的應用程式 ID。",
+      "input_timestamp": "時間戳",
+      "input_timestamp_placeholder": "時間戳",
+      "input_payload_hash": "包括有效負載雜湊",
+      "input_payload_hash_tooltip": "Hawk 身份驗證為有效負載驗證提供可選支援。如果選擇此選項，將計算有效負載雜湊並將其包含在 MAC 計算和授權標頭中。"
     },
     "oauth1": {
-      "input_signature_method": "签名方式",
-      "input_signature_method_tooltip": "消费者用于签署请求的签名方法。",
-      "input_consumer_key": "消费者密钥",
-      "input_consumer_key_placeholder": "消费者密钥",
-      "input_consumer_key_tooltip": "消费者用来向服务提供商识别自身身份的值。",
-      "input_consumer_secret": "消费者密钥",
-      "input_consumer_secret_placeholder": "消费者密钥",
-      "input_consumer_secret_tooltip": "消费者使用密钥来建立消费者密钥的所有权。",
-      "input_access_token": "访问令牌",
-      "input_access_token_placeholder": "访问令牌",
-      "input_token_secret": "令牌密钥",
-      "input_token_secret_placeholder": "令牌密钥",
-      "input_token_secret_tooltip": "消费者使用密钥来建立给定令牌的所有权。",
-      "input_private_key": "私钥",
-      "input_private_key_tooltip": "PEM 格式的 RSA 私有密钥，用于签署请求。",
-      "textarea_private_key_placeholder": "私有密钥采用 PEM 格式",
-      "input_callback": "回调URL",
-      "input_callback_placeholder": "回调URL",
-      "input_callback_tooltip": "服务提供商在获得用户授权后将重定向到的绝对 URL。",
-      "input_verifier": "验证码",
-      "input_verifier_placeholder": "验证码",
-      "input_verifier_tooltip": "服务商获得用户授权后给出的验证码。",
-      "input_timestamp": "时间戳",
-      "input_timestamp_placeholder": "时间戳",
-      "input_nonce": "随机数",
-      "input_nonce_placeholder": "随机数",
-      "input_nonce_tooltip": "由客户端生成的随机字符串。",
+      "input_signature_method": "簽名方式",
+      "input_signature_method_tooltip": "消費者用於簽署請求的簽名方法。",
+      "input_consumer_key": "消費者金鑰",
+      "input_consumer_key_placeholder": "消費者金鑰",
+      "input_consumer_key_tooltip": "消費者用來向服務提供商識別自身身份的值。",
+      "input_consumer_secret": "消費者金鑰",
+      "input_consumer_secret_placeholder": "消費者金鑰",
+      "input_consumer_secret_tooltip": "消費者使用金鑰來建立消費者金鑰的所有權。",
+      "input_access_token": "訪問令牌",
+      "input_access_token_placeholder": "訪問令牌",
+      "input_token_secret": "令牌金鑰",
+      "input_token_secret_placeholder": "令牌金鑰",
+      "input_token_secret_tooltip": "消費者使用金鑰來建立給定令牌的所有權。",
+      "input_private_key": "私鑰",
+      "input_private_key_tooltip": "PEM 格式的 RSA 私有金鑰，用於簽署請求。",
+      "textarea_private_key_placeholder": "私有金鑰採用 PEM 格式",
+      "input_callback": "回撥URL",
+      "input_callback_placeholder": "回撥URL",
+      "input_callback_tooltip": "服務提供商在獲得使用者授權後將重定向到的絕對 URL。",
+      "input_verifier": "驗證碼",
+      "input_verifier_placeholder": "驗證碼",
+      "input_verifier_tooltip": "服務商獲得使用者授權後給出的驗證碼。",
+      "input_timestamp": "時間戳",
+      "input_timestamp_placeholder": "時間戳",
+      "input_nonce": "隨機數",
+      "input_nonce_placeholder": "隨機數",
+      "input_nonce_tooltip": "由客戶端生成的隨機字串。",
       "input_version": "版本",
       "input_version_placeholder": "版本",
-      "input_realm": "领域",
+      "input_realm": "領域",
       "input_realm_placeholder": "testrealm@example.com",
-      "input_realm_tooltip": "这是服务器在 WWW-Authenticate 响应标头中指定的字符串。它至少应包含执行身份验证的主机的名称，并且还可能指示可能具有访问权限的用户的集合。",
-      "input_include_body_hash": "包含请求体哈希",
-      "input_include_body_hash_tooltip": "OAuth 请求体哈希扩展为 application/x-www-form-urlencoded 以外的内容类型提供请求体完整性校验。选中此选项后，会计算 oauth_body_hash 参数并添加到请求中。",
-      "input_empty_params_signature": "签名中添加空参数",
-      "input_empty_params_signature_tooltip": "OAuth1.0 的某些实现需要将空参数添加到签名中。如果选择此选项，则上述任何留空的字段都将包含在授权数据中。",
-      "input_encode_auth_param": "对授权标头中的参数进行编码"
+      "input_realm_tooltip": "這是伺服器在 WWW-Authenticate 響應標頭中指定的字串。它至少應包含執行身份驗證的主機的名稱，並且還可能指示可能具有訪問許可權的使用者的集合。",
+      "input_include_body_hash": "包含請求體雜湊",
+      "input_include_body_hash_tooltip": "OAuth 請求體雜湊擴充套件為 application/x-www-form-urlencoded 以外的內容型別提供請求體完整性校驗。選中此選項後，會計算 oauth_body_hash 引數並新增到請求中。",
+      "input_empty_params_signature": "簽名中新增空引數",
+      "input_empty_params_signature_tooltip": "OAuth1.0 的某些實現需要將空引數新增到簽名中。如果選擇此選項，則上述任何留空的欄位都將包含在授權資料中。",
+      "input_encode_auth_param": "對授權標頭中的引數進行編碼"
     },
     "oauth2": {
       "share_token": "分享令牌",
-      "share_token_non_editable_tooltip": "您没有权限来编辑此令牌。",
-      "share_token_no_token_tooltip": "您必须有令牌才能共享它。",
-      "token_added_toast": "令牌已添加。",
+      "share_token_non_editable_tooltip": "您沒有許可權來編輯此令牌。",
+      "share_token_no_token_tooltip": "您必須有令牌才能共享它。",
+      "token_added_toast": "令牌已新增。",
       "bearer_token": "Bearer",
       "expiry_time_info": "今天 {expiryTime} 到期。",
-      "refreshing_token": "正在刷新令牌",
-      "refresh_token": "刷新",
-      "token_expired": "令牌已过期。",
-      "not_token_config_tooltip": "从可用令牌中选择令牌以在到期时自动刷新。",
-      "not_token_config_refresh_tooltip": "刷新令牌不存在。生成一个新的令牌以在过期时自动刷新。",
-      "not_token_config_access_token_url_tooltip": "访问令牌 URL 不存在。生成一个新的令牌以在过期时自动刷新。",
-      "access_token_not_available_tooltip": "访问令牌不可用",
+      "refreshing_token": "正在重新整理令牌",
+      "refresh_token": "重新整理",
+      "token_expired": "令牌已過期。",
+      "not_token_config_tooltip": "從可用令牌中選擇令牌以在到期時自動重新整理。",
+      "not_token_config_refresh_tooltip": "重新整理令牌不存在。生成一個新的令牌以在過期時自動重新整理。",
+      "not_token_config_access_token_url_tooltip": "訪問令牌 URL 不存在。生成一個新的令牌以在過期時自動重新整理。",
+      "access_token_not_available_tooltip": "訪問令牌不可用",
       "id_token_not_available_tooltip": "ID 令牌不可用",
-      "migration_banner_info": "通过将受众和资源参数移至配置 > 高级，获得对 Auth2 请求的更多控制和自定义。",
-      "handle_migration_button_text": "移动受众和资源",
-      "current_token": "当前令牌",
-      "session_token_non_sync": "此令牌仅供您使用。同步令牌以让该请求上的协作者使用它。",
+      "migration_banner_info": "通過將受眾和資源引數移至配置 > 高階，獲得對 Auth2 請求的更多控制和自定義。",
+      "handle_migration_button_text": "移動受眾和資源",
+      "current_token": "當前令牌",
+      "session_token_non_sync": "此令牌僅供您使用。同步令牌以讓該請求上的協作者使用它。",
       "token": "令牌",
       "shared_token": "共享令牌",
-      "no_tokens": "没有可用的令牌",
+      "no_tokens": "沒有可用的令牌",
       "manage_tokens": "管理令牌",
-      "use_token_type": "使用令牌类型",
-      "refresh_token_missing_toast": "无法刷新 OAuth2.0 令牌。刷新令牌缺失",
-      "header_prefix": "标头前缀",
-      "header_prefix_tooltip": "添加到授权标头中令牌之前。",
+      "use_token_type": "使用令牌型別",
+      "refresh_token_missing_toast": "無法重新整理 OAuth2.0 令牌。重新整理令牌缺失",
+      "header_prefix": "標頭字首",
+      "header_prefix_tooltip": "新增到授權標頭中令牌之前。",
       "header_prefix_placeholder": "例如Bearer",
-      "auto_refresh_token": "自动刷新令牌",
-      "expired_auto_refresh": "您过期的令牌将在发送请求之前自动刷新。",
-      "access_to_view_and_use": "这将允许任何有权访问此请求的人查看和使用它。",
+      "auto_refresh_token": "自動重新整理令牌",
+      "expired_auto_refresh": "您過期的令牌將在傳送請求之前自動重新整理。",
+      "access_to_view_and_use": "這將允許任何有權訪問此請求的人檢視和使用它。",
       "configure_new_heading": "配置新的令牌",
       "config_tab_fields": {
-        "access_token": "访问令牌地址",
-        "client_auth": "客户端验证",
-        "add_token_to": "添加令牌到",
-        "auth_url": "授权网址",
-        "client_id": "客户端ID",
-        "client_secret": "客户端密钥",
-        "grant_type": "授权类型",
-        "password": "密码",
-        "redirect_url": "重定向网址",
-        "scope": "范围",
-        "state": "状态",
-        "use_browser": "使用浏览器",
-        "username": "用户名",
-        "challenge_algo": "挑战算法",
-        "code_verifier": "代码验证器",
-        "token_name": "令牌名称",
-        "auth_request_param": "授权请求参数",
-        "token_request_param": "令牌请求参数",
-        "refresh_request_param": "刷新请求参数"
+        "access_token": "訪問令牌地址",
+        "client_auth": "客戶端驗證",
+        "add_token_to": "新增令牌到",
+        "auth_url": "授權網址",
+        "client_id": "客戶端ID",
+        "client_secret": "客戶端金鑰",
+        "grant_type": "授權型別",
+        "password": "密碼",
+        "redirect_url": "重定向網址",
+        "scope": "範圍",
+        "state": "狀態",
+        "use_browser": "使用瀏覽器",
+        "username": "使用者名稱",
+        "challenge_algo": "挑戰演算法",
+        "code_verifier": "程式碼驗證器",
+        "token_name": "令牌名稱",
+        "auth_request_param": "授權請求引數",
+        "token_request_param": "令牌請求引數",
+        "refresh_request_param": "重新整理請求引數"
       },
       "access_token_fields": {
-        "auth_code": "授权代码",
-        "auth_code_pkce": "授权代码（带 PKCE）",
-        "implicit": "隐含的",
-        "password_cred": "密码凭证",
-        "client_cred": "客户凭证",
-        "client_auth_type_header": "作为基本认证标头发送",
-        "client_auth_type_body": "在 Body 中发送客户端凭据",
+        "auth_code": "授權程式碼",
+        "auth_code_pkce": "授權程式碼（帶 PKCE）",
+        "implicit": "隱含的",
+        "password_cred": "密碼憑證",
+        "client_cred": "客戶憑證",
+        "client_auth_type_header": "作為基本認證標頭髮送",
+        "client_auth_type_body": "在 Body 中傳送客戶端憑據",
         "pkce_algo_type_s256": "SHA-256",
         "pkce_algo_type_plain": "明文",
-        "cred_highlight_msg": "该字段包含可能需要进行百分比编码的字符，具体取决于身份验证服务器。您可以通过右键单击该字段进行编码。",
-        "code_verifier_highlight_msg": "该字段包含无效字符。使用以下有效字符：[A-Z] / [a-z] / [0-9] / “-” / “.” /“_”/“~”。",
-        "code_verifier_validation_msg": "长度必须在 43 到 128 个字符之间。",
+        "cred_highlight_msg": "該欄位包含可能需要進行百分比編碼的字元，具體取決於身份驗證伺服器。您可以通過右鍵單擊該欄位進行編碼。",
+        "code_verifier_highlight_msg": "該欄位包含無效字元。使用以下有效字元：[A-Z] / [a-z] / [0-9] / “-” / “.” /“_”/“~”。",
+        "code_verifier_validation_msg": "長度必須在 43 到 128 個字元之間。",
         "clear_cookie_success": "cookie已成功清除",
-        "clear_cookie_error": "无法清除 Cookie。再试一次。",
-        "lc_banner_desc": "您可以在此处为 OAuth2 请求添加更多具体的自定义设置。了解有关<1>配置</1>的更多信息",
-        "input_refresh_url": "刷新令牌 URL",
+        "clear_cookie_error": "無法清除 Cookie。再試一次。",
+        "lc_banner_desc": "您可以在此處為 OAuth2 請求新增更多具體的自定義設定。瞭解有關<1>配置</1>的更多資訊",
+        "input_refresh_url": "重新整理令牌 URL",
         "input_refresh_placeholder": "https://example.com/login/oauth/refresh_token",
-        "input_refresh_tooltip": "Postman 使用此端点将刷新令牌交换为访问令牌。如果为空，它将使用访问令牌 URL 代替。",
-        "input_auth_request": "授权请求",
-        "auth_request_info_tooltip": "在授权请求的请求 URL 中添加为查询参数。",
-        "kveditor_key_placeholder": "创建参数",
-        "kvedior_options_heading": "发送",
-        "kveditor_options_tooltip": "这决定了如何将参数添加到请求",
-        "input_token_request": "令牌请求",
-        "token_request_info_tooltip": "在令牌请求的请求 URL 中添加为查询参数。",
-        "input_refresh_request": "刷新请求",
-        "refresh_request_param_tooltip": "添加或更新参数时，您需要生成并使用新的访问权限令牌来应用更改。",
+        "input_refresh_tooltip": "Postman 使用此端點將重新整理令牌交換為訪問令牌。如果為空，它將使用訪問令牌 URL 代替。",
+        "input_auth_request": "授權請求",
+        "auth_request_info_tooltip": "在授權請求的請求 URL 中新增為查詢引數。",
+        "kveditor_key_placeholder": "建立引數",
+        "kvedior_options_heading": "傳送",
+        "kveditor_options_tooltip": "這決定了如何將引數新增到請求",
+        "input_token_request": "令牌請求",
+        "token_request_info_tooltip": "在令牌請求的請求 URL 中新增為查詢引數。",
+        "input_refresh_request": "重新整理請求",
+        "refresh_request_param_tooltip": "新增或更新引數時，您需要生成並使用新的訪問許可權令牌來應用更改。",
         "input_token_name": "令牌姓名",
-        "input_token_placeholder": "输入令牌名称...",
-        "input_grant_type": "授权类型",
-        "input_callback_url": "回调URL",
-        "input_callback_url_tooltip": "这是您的应用程序获得授权后将被重定向到的回调 URL。 Postman 使用它来提取授权代码或访问令牌。回调 URL 应与您在应用程序注册过程中使用的回调相匹配。",
+        "input_token_placeholder": "輸入令牌名稱...",
+        "input_grant_type": "授權型別",
+        "input_callback_url": "回撥URL",
+        "input_callback_url_tooltip": "這是您的應用程式獲得授權後將被重定向到的回撥 URL。 Postman 使用它來提取授權程式碼或訪問令牌。回撥 URL 應與您在應用程式註冊過程中使用的回撥相匹配。",
         "input_callback_url_placeholder": "http://your-application.com/registered/callback",
-        "input_callback_url_browser_tooltip": "通过浏览器进行身份验证时，回调 URL 无法修改。",
-        "input_use_browser_checkbox": "使用浏览器授权",
-        "input_auth_url": "授权 URL",
-        "input_auth_url_tooltip": "授权服务器的端点。这用于获取授权代码。",
+        "input_callback_url_browser_tooltip": "通過瀏覽器進行身份驗證時，回撥 URL 無法修改。",
+        "input_use_browser_checkbox": "使用瀏覽器授權",
+        "input_auth_url": "授權 URL",
+        "input_auth_url_tooltip": "授權伺服器的端點。這用於獲取授權程式碼。",
         "input_auth_url_placeholder": "https://example.com/login/oauth/authorize",
-        "input_access_token_url": "访问令牌 URL",
-        "input_access_token_url_tooltip": "授权服务器的端点，用于获取访问令牌。",
+        "input_access_token_url": "訪問令牌 URL",
+        "input_access_token_url_tooltip": "授權伺服器的端點，用於獲取訪問令牌。",
         "input_access_token_url_placeholder": "https://example.com/login/oauth/access_token",
-        "input_client_id": "客户端 ID",
-        "input_client_id_tooltip": "在应用程序注册过程中向客户端颁发的客户端标识符。",
-        "input_client_id_placeholder": "客户端 ID",
-        "input_client_secret": "客户端密钥",
-        "input_client_secret_tooltip": "在应用程序注册过程中向客户端签发的客户端密钥。",
-        "input_client_secret_placeholder": "客户端密钥",
-        "input_username": "用户名",
-        "input_username_placeholder": "用户名",
-        "input_password": "密码",
-        "input_password_placeholder": "密码",
-        "input_algorithm": "代码挑战方法",
-        "input_algorithm_tooltip": "用于生成代码挑战的算法。",
-        "input_code_verifier": "代码验证器",
-        "input_code_verifier_tooltip": "用于将授权请求连接到令牌请求的随机 43-128 个字符的字符串。使用以下字符：[A-Z] / [a-z] / [0-9] / “-” / “.” /“_”/“~”。",
-        "input_code_verifier_placeholder": "如果留空则自动生成",
-        "input_scope": "范围",
-        "input_scope_tooltip": "访问请求的范围。它可能有多个以空格分隔的值。",
+        "input_client_id": "客戶端 ID",
+        "input_client_id_tooltip": "在應用程式註冊過程中向客戶端頒發的客戶端識別符號。",
+        "input_client_id_placeholder": "客戶端 ID",
+        "input_client_secret": "客戶端金鑰",
+        "input_client_secret_tooltip": "在應用程式註冊過程中向客戶端簽發的客戶端金鑰。",
+        "input_client_secret_placeholder": "客戶端金鑰",
+        "input_username": "使用者名稱",
+        "input_username_placeholder": "使用者名稱",
+        "input_password": "密碼",
+        "input_password_placeholder": "密碼",
+        "input_algorithm": "程式碼挑戰方法",
+        "input_algorithm_tooltip": "用於生成程式碼挑戰的演算法。",
+        "input_code_verifier": "程式碼驗證器",
+        "input_code_verifier_tooltip": "用於將授權請求連線到令牌請求的隨機 43-128 個字元的字串。使用以下字元：[A-Z] / [a-z] / [0-9] / “-” / “.” /“_”/“~”。",
+        "input_code_verifier_placeholder": "如果留空則自動生成",
+        "input_scope": "範圍",
+        "input_scope_tooltip": "訪問請求的範圍。它可能有多個以空格分隔的值。",
         "input_scope_placeholder": "例如 read:org",
-        "input_state": "状态",
-        "input_state_tooltip": "用于防止跨站点请求伪造的不透明值。",
-        "input_state_placeholder": "状态",
-        "input_client_authentication": "客户端认证",
-        "input_client_authentication_tooltip": "如果您在下面的高级选项中添加了 client_id 或 client_secret，则此客户端身份验证方法将被忽略。",
-        "advanced_auth_title": "高级",
+        "input_state": "狀態",
+        "input_state_tooltip": "用於防止跨站點請求偽造的不透明值。",
+        "input_state_placeholder": "狀態",
+        "input_client_authentication": "客戶端認證",
+        "input_client_authentication_tooltip": "如果您在下面的進階選項中添加了 client_id 或 client_secret，則此客戶端身份驗證方法將被忽略。",
+        "advanced_auth_title": "高階",
         "clear_cookies_button": "清除cookies",
-        "clear_cookies_tooltip": "清除之前 OAuth 2.0 会话中的所有 Cookie。",
-        "request_token_button": "获取新的访问令牌",
+        "clear_cookies_tooltip": "清除之前 OAuth 2.0 會話中的所有 Cookie。",
+        "request_token_button": "獲取新的訪問令牌",
         "send_options": {
-          "request_body": "请求体",
-          "request_url": "请求 URL",
-          "request_header": "请求头"
+          "request_body": "請求體",
+          "request_url": "請求 URL",
+          "request_header": "請求頭"
         }
       },
       "advanced_tab_fields": {
-        "resource": "资源",
-        "audience": "受众"
+        "resource": "資源",
+        "audience": "受眾"
       },
       "token_dropdown_placeholder": "可用令牌",
-      "token_dropdown_access_token": "访问令牌",
+      "token_dropdown_access_token": "訪問令牌",
       "token_dropdown_id_token": "ID 令牌",
       "sync_token_modal": {
         "remove_token": {
-          "title": "删除同步的令牌？",
-          "desc": "有权访问此请求的人将无法再看到或使用此令牌。他们将能够生成自己的访问权限令牌。",
-          "action_label": "删除同步的令牌"
+          "title": "刪除同步的令牌？",
+          "desc": "有權訪問此請求的人將無法再看到或使用此令牌。他們將能夠生成自己的訪問許可權令牌。",
+          "action_label": "刪除同步的令牌"
         },
         "replace_token": {
           "title": "同步令牌？",
-          "desc": "这个新的令牌将取代当前同步的令牌。任何有权访问请求的人都可以查看和使用新的令牌。",
+          "desc": "這個新的令牌將取代當前同步的令牌。任何有權訪問請求的人都可以檢視和使用新的令牌。",
           "action_label": "同步令牌"
         },
         "sync_and_save_token": {
-          "title": "保存并同步令牌？",
-          "desc": "应保存请求以同步令牌。同步此令牌将允许任何有权访问此请求的人查看并可能使用它。",
-          "action_label": "保存并同步令牌"
+          "title": "儲存並同步令牌？",
+          "desc": "應儲存請求以同步令牌。同步此令牌將允許任何有權訪問此請求的人檢視並可能使用它。",
+          "action_label": "儲存並同步令牌"
         },
         "sync_token": {
           "title": "同步令牌？",
-          "desc": "同步此令牌将允许任何有权访问此请求的人查看并可能使用它。",
+          "desc": "同步此令牌將允許任何有權訪問此請求的人檢視並可能使用它。",
           "action_label": "同步令牌"
         },
         "cancel_button": "取消"
@@ -860,50 +860,50 @@
       "token_location_aria_label": "令牌位置"
     },
     "asap": {
-      "input_algorithm": "算法",
-      "input_algorithm_tooltip": "用于生成 JWT 签名的算法",
-      "placeholder_issuer": "发行人",
-      "input_issuer": "发行人",
-      "info_issuer": "令牌的发行人，强制性的。",
-      "placeholder_audience": "受众",
-      "input_audience": "受众",
-      "info_audience": "令牌的受众，必填。",
-      "placeholder_kid": "密钥 ID",
-      "input_kid": "密钥 ID",
-      "info_kid": "用于签署令牌的密钥 ID，必填。",
-      "optional_section_label": "可选",
-      "input_private_key": "私钥",
-      "info_private_key": "用于生成 JWT 签名的私有密钥，采用 PKCS#8 PEM 或 base64 DER 格式，强制",
-      "input_optional_section": "可选",
-      "input_subject": "主题",
-      "placeholder_subject": "主题",
-      "input_claims": "附加声明",
-      "placeholder_expiry": "例如3600，默认：1小时",
+      "input_algorithm": "演算法",
+      "input_algorithm_tooltip": "用於生成 JWT 簽名的演算法",
+      "placeholder_issuer": "發行人",
+      "input_issuer": "發行人",
+      "info_issuer": "令牌的發行人，強制性的。",
+      "placeholder_audience": "受眾",
+      "input_audience": "受眾",
+      "info_audience": "令牌的受眾，必填。",
+      "placeholder_kid": "金鑰 ID",
+      "input_kid": "金鑰 ID",
+      "info_kid": "用於簽署令牌的金鑰 ID，必填。",
+      "optional_section_label": "可選",
+      "input_private_key": "私鑰",
+      "info_private_key": "用於生成 JWT 簽名的私有金鑰，採用 PKCS#8 PEM 或 base64 DER 格式，強制",
+      "input_optional_section": "可選",
+      "input_subject": "主題",
+      "placeholder_subject": "主題",
+      "input_claims": "附加宣告",
+      "placeholder_expiry": "例如3600，預設：1小時",
       "input_expiry": "到期日",
-      "info_expiry": "过期时间（以秒为单位）"
+      "info_expiry": "過期時間（以秒為單位）"
     },
     "auth_config": {
-      "noauth_desc_default": "<0>这个{entityType, select, collection {集合} folder {文件夹} request {请求} other {}}不使用任何授权。了解有关 </0><1><0><0>授权</0></0></1> 的更多信息",
-      "noauth_desc_learning_center": "<0>这个{entityType, select, collection {集合} folder {文件夹} request {请求} other {}}不使用任何授权。了解有关</0><1>授权</1>的更多信息。",
-      "noauth_link_text": "身份验证"
+      "noauth_desc_default": "<0>這個{entityType, select, collection {集合} folder {資料夾} request {請求} other {}}不使用任何授權。瞭解有關 </0><1><0><0>授權</0></0></1> 的更多資訊",
+      "noauth_desc_learning_center": "<0>這個{entityType, select, collection {集合} folder {資料夾} request {請求} other {}}不使用任何授權。瞭解有關</0><1>授權</1>的更多資訊。",
+      "noauth_link_text": "身份驗證"
     },
-    "cta_button": "预览request",
-    "auth_advanced_toggle": "高级配置",
-    "auth_advanced_desc": "除非指定了值，否则 Postman 会自动为其中一些字段生成默认值。",
-    "auth_type_selector_label": "类型",
-    "auth_type_selector_label_full": "认证类型",
+    "cta_button": "預覽request",
+    "auth_advanced_toggle": "高階配置",
+    "auth_advanced_desc": "除非指定了值，否則 Postman 會自動為其中一些欄位生成預設值。",
+    "auth_type_selector_label": "型別",
+    "auth_type_selector_label_full": "認證型別",
     "auth_types": {
-      "inherit": "从父级继承身份验证",
-      "no_auth": "无身份验证",
+      "inherit": "從父級繼承身份驗證",
+      "no_auth": "無身份驗證",
       "basic_auth": "Basic Auth",
       "bearer_auth": "Bearer Token",
       "jwt_auth": "JWT Bearer",
       "digest_auth": "Digest Auth",
       "oauth1": "OAuth 1.0",
       "oauth2": "OAuth 2.0",
-      "hawk": "Hawk 身份验证",
+      "hawk": "Hawk 身份驗證",
       "aws": "AWS Signature",
-      "ntlm_auth": "NTLM 身份验证",
+      "ntlm_auth": "NTLM 身份驗證",
       "apikey": "API Key",
       "akamai_edgegrid": "Akamai EdgeGrid",
       "asap": "ASAP（Atlassian）",
@@ -911,364 +911,364 @@
       "sasl": "SASL"
     },
     "add_auth_params_to": {
-      "url": "请求 URL",
-      "body_or_url": "请求体 / 请求 URL",
-      "headers": "请求头"
+      "url": "請求 URL",
+      "body_or_url": "請求體 / 請求 URL",
+      "headers": "請求頭"
     },
-    "var_validation_msg": "使用变量来保证敏感数据的安全。"
+    "var_validation_msg": "使用變數來保證敏感資料的安全。"
   },
   "headers_editor": {
-    "preview_header_warning": "这是重复的标头，将被您添加的 {headerKey} 标头覆盖。",
-    "user_added_header_warning": "这是一个重复的标头，将被 Postman 生成的 {headerKey} 标头覆盖。",
-    "bulk_edit_header_label": "自动生成的标题在批量编辑中不可见",
-    "tooltip_header_preview_hidden": "这些标头将自动添加并与请求一起发送。单击可查看和修改这些标头。",
-    "tooltip_header_preview_not_hidden": "单击可隐藏这些标题。它们仍将自动添加并与请求一起发送。",
+    "preview_header_warning": "這是重複的標頭，將被您新增的 {headerKey} 標頭覆蓋。",
+    "user_added_header_warning": "這是一個重複的標頭，將被 Postman 生成的 {headerKey} 標頭覆蓋。",
+    "bulk_edit_header_label": "自動生成的標題在批次編輯中不可見",
+    "tooltip_header_preview_hidden": "這些標頭將自動新增並與請求一起傳送。單擊可檢視和修改這些標頭。",
+    "tooltip_header_preview_not_hidden": "單擊可隱藏這些標題。它們仍將自動新增並與請求一起傳送。",
     "title": "Headers",
-    "preview_toggle_text_hidden": "{previewHeadersCount} 隐藏",
-    "preview_toggle_text_non_hidden": "隐藏自动生成的标头",
-    "kveditor_validation_key_msg": "该标头无法在浏览器中发送。要发送此标头的自定义值，请切换到 Postman 桌面代理。",
+    "preview_toggle_text_hidden": "{previewHeadersCount} 隱藏",
+    "preview_toggle_text_non_hidden": "隱藏自動生成的標頭",
+    "kveditor_validation_key_msg": "該標頭無法在瀏覽器中傳送。要傳送此標頭的自定義值，請切換到 Postman 桌面代理。",
     "preview_info": {
       "auth": {
         "tooltip": {
-          "header": "该标题是自动添加的",
-          "body": "添加此标头是因为请求使用了授权方法。\n\n该标头的值是暂定的。发送请求后，您可以在控制台中找到准确的值。\n\n使用授权选项卡删除授权或更改此标头的值。"
+          "header": "該標題是自動新增的",
+          "body": "新增此標頭是因為請求使用了授權方法。\n\n該標頭的值是暫定的。傳送請求後，您可以在控制台中找到準確的值。\n\n使用授權選項卡刪除授權或更改此標頭的值。"
         },
-        "entity_with_helper_meta": "转到authorization"
+        "entity_with_helper_meta": "轉到authorization"
       },
       "cookie": {
         "tooltip": {
-          "header": "该标题是自动添加的",
-          "body": "添加 Cookie 标头以发送与此端点关联的 Cookie。\n\n使用 Cookie 管理器删除标头或更改值。"
+          "header": "該標題是自動新增的",
+          "body": "新增 Cookie 標頭以傳送與此端點關聯的 Cookie。\n\n使用 Cookie 管理器刪除標頭或更改值。"
         },
-        "entity_with_helper_meta": "转到cookies"
+        "entity_with_helper_meta": "轉到cookies"
       },
       "cache_control": {
         "tooltip": {
-          "header": "我们建议使用此标头",
-          "body": "Postman 添加了“Cache-Control: no-cache”作为一项预防措施，以防止服务器在发出重复请求时返回过时的响应。\n\n您可以在应用程序设置中删除此标头或输入具有不同值的新标头。"
+          "header": "我們建議使用此標頭",
+          "body": "Postman 添加了“Cache-Control: no-cache”作為一項預防措施，以防止伺服器在發出重複請求時返回過時的響應。\n\n您可以在應用程式設定中刪除此標頭或輸入具有不同值的新標頭。"
         },
-        "entity_with_helper_meta": "前往设置"
+        "entity_with_helper_meta": "前往設定"
       },
       "postman_token": {
         "tooltip": {
-          "header": "我们建议使用此标头",
-          "body": "Postman-令牌标头将随机 UUID 附加到每个传出请求。 Postman 为 API 开发人员添加此标头，以便更好地调试发送的请求并确保单独的请求对于接收服务器来说是不同的。\n\n您可以在应用程序设置中删除此标头。"
+          "header": "我們建議使用此標頭",
+          "body": "Postman-令牌標頭將隨機 UUID 附加到每個傳出請求。 Postman 為 API 開發人員新增此標頭，以便更好地除錯傳送的請求並確保單獨的請求對於接收伺服器來說是不同的。\n\n您可以在應用程式設定中刪除此標頭。"
         },
-        "entity_with_helper_meta": "前往设置"
+        "entity_with_helper_meta": "前往設定"
       },
       "content_length": {
         "tooltip": {
-          "header": "该标题是自动添加的",
-          "body": "添加 Content-Length 标头是为了向服务器指示添加到此请求的请求体的大小。服务器使用该值来准确解析请求体。\n\n您可以删除标头或输入具有不同值的新标头。"
+          "header": "該標題是自動新增的",
+          "body": "新增 Content-Length 標頭是為了向伺服器指示新增到此請求的請求體的大小。伺服器使用該值來準確解析請求體。\n\n您可以刪除標頭或輸入具有不同值的新標頭。"
         },
-        "entity_with_helper_meta": "转到 Body"
+        "entity_with_helper_meta": "轉到 Body"
       },
       "content_type": {
         "tooltip": {
-          "header": "该标题是自动添加的",
-          "body": "添加 Content-Type 标头是为了帮助服务器识别请求中存在的请求体的媒体类型。\n\n使用请求 body 选项卡来控制值或删除此标头。"
+          "header": "該標題是自動新增的",
+          "body": "新增 Content-Type 標頭是為了幫助伺服器識別請求中存在的請求體的媒體型別。\n\n使用請求 body 選項卡來控制值或刪除此標頭。"
         },
-        "entity_with_helper_meta": "转到 Body"
+        "entity_with_helper_meta": "轉到 Body"
       },
       "user_agent": {
         "tooltip": {
-          "header": "我们建议使用此标头",
-          "body": "添加 User-Agent 标头是为了帮助服务器将 Postman 识别为 HTTP 请求应用程序或客户端。\n\n建议发送此标头，但您可以删除标头或输入具有不同值的新标头。"
+          "header": "我們建議使用此標頭",
+          "body": "新增 User-Agent 標頭是為了幫助伺服器將 Postman 識別為 HTTP 請求應用程式或客戶端。\n\n建議傳送此標頭，但您可以刪除標頭或輸入具有不同值的新標頭。"
         }
       },
       "accept": {
         "tooltip": {
-          "header": "我们建议使用此标头",
-          "body": "添加“Accept: */*”标头是为了告诉服务器 Postman 可以理解和处理所有形式的响应内容类型。\n\n建议发送此标头，但您可以删除标头或输入具有不同值的新标头。"
+          "header": "我們建議使用此標頭",
+          "body": "新增“Accept: */*”標頭是為了告訴伺服器 Postman 可以理解和處理所有形式的響應內容型別。\n\n建議傳送此標頭，但您可以刪除標頭或輸入具有不同值的新標頭。"
         }
       },
       "accept_encoding": {
         "tooltip": {
-          "header": "我们建议使用此标头",
-          "body": "添加 Accept-Encoding 标头是为了向服务器指示 Postman HTTP 客户端支持已定义的内容编码或压缩算法列表（如响应）。\n\n您可以删除标头或输入具有不同值的新标头。这样做可能无法在应用程序中准确呈现响应。"
+          "header": "我們建議使用此標頭",
+          "body": "新增 Accept-Encoding 標頭是為了向伺服器指示 Postman HTTP 客戶端支援已定義的內容編碼或壓縮演算法列表（如響應）。\n\n您可以刪除標頭或輸入具有不同值的新標頭。這樣做可能無法在應用程式中準確呈現響應。"
         }
       },
       "host": {
         "tooltip": {
-          "header": "我们建议使用此标头",
-          "body": "添加 Host 标头是为了标识将请求发送到服务器的域名。此标头由每个 HTTP 客户端隐式发送。\n\n您可以删除标头或输入具有不同值的新标头。如果没有这个标头，您的请求很可能会返回 HTTP 400 错误。"
+          "header": "我們建議使用此標頭",
+          "body": "新增 Host 標頭是為了標識將請求傳送到伺服器的域名。此標頭由每個 HTTP 客戶端隱式傳送。\n\n您可以刪除標頭或輸入具有不同值的新標頭。如果沒有這個標頭，您的請求很可能會返回 HTTP 400 錯誤。"
         }
       },
       "connection": {
         "tooltip": {
-          "header": "我们建议使用此标头",
-          "body": "Postman 添加了 Connection 标头，指示服务器在收到当前响应后保持底层网络连接打开。这允许 Postman 在对同一服务器的后续请求中重用相同的连接，以加快响应倍的速度。\n\n您可以删除此标头或输入具有不同值的新标头（例如“Connection: Close”）来控制此行为。"
+          "header": "我們建議使用此標頭",
+          "body": "Postman 添加了 Connection 標頭，指示伺服器在收到當前響應後保持底層網路連線開啟。這允許 Postman 在對同一伺服器的後續請求中重用相同的連線，以加快響應倍的速度。\n\n您可以刪除此標頭或輸入具有不同值的新標頭（例如“Connection: Close”）來控制此行為。"
         }
       },
       "fallback": {
         "tooltip": {
-          "header": "我们建议使用此标头",
-          "body": "该标头已自动添加。您可以选择删除它，或覆盖它的值。"
+          "header": "我們建議使用此標頭",
+          "body": "該標頭已自動新增。您可以選擇刪除它，或覆蓋它的值。"
         }
       }
     },
     "manage_presets": {
-      "modal_heading": "管理标头预设",
-      "disabled_tooltip": "您没有执行此操作的权限。",
-      "delete_tooltip": "删除",
+      "modal_heading": "管理標頭預設",
+      "disabled_tooltip": "您沒有執行此操作的許可權。",
+      "delete_tooltip": "刪除",
       "controls": {
-        "text": "标头预设是一组以键值对形式存储的标头。它使您能够将常用的标头存储在单个预设中，从而可以轻松地在多个请求中重用它们。",
-        "button_label": "添加标头预设"
+        "text": "標頭預設是一組以鍵值對形式儲存的標頭。它使您能夠將常用的標頭儲存在單個預設中，從而可以輕鬆地在多個請求中重用它們。",
+        "button_label": "新增標頭預設"
       },
-      "list_item_edit_tooltip": "编辑",
+      "list_item_edit_tooltip": "編輯",
       "add_preset": {
-        "title": "添加标头预设",
-        "section_name_placeholder": "标头预设名称",
+        "title": "新增標頭預設",
+        "section_name_placeholder": "標頭預設名稱",
         "section_controls_button": {
-          "submit": "添加",
+          "submit": "新增",
           "cancel": "取消"
         }
       },
       "edit_preset": {
-        "title": "编辑标题预设",
-        "section_name_placeholder": "标头预设名称",
+        "title": "編輯標題預設",
+        "section_name_placeholder": "標頭預設名稱",
         "section_controls_button": {
           "submit": "更新",
           "cancel": "取消"
         }
       },
       "delete_presets_modal": {
-        "title": "删除",
+        "title": "刪除",
         "primary_action": {
-          "deleting": "正在删除",
-          "delete": "删除"
+          "deleting": "正在刪除",
+          "delete": "刪除"
         },
-        "confirmation": "您确定要从此工作区中删除此标头预设吗？",
-        "error": "无法删除此标题预设"
+        "confirmation": "您確定要從此工作區中刪除此標頭預設嗎？",
+        "error": "無法刪除此標題預設"
       }
     },
     "headers_highlight_error": {
-      "key_whitespace": "键包含无效的空白字符。",
-      "key_invalid": "密钥包含无效字符。",
-      "value_invalid": "值包含无效的换行符。",
-      "invalid_iso_8859_1": "值包含非 ISO-8859-1 字符。"
+      "key_whitespace": "鍵包含無效的空白字元。",
+      "key_invalid": "金鑰包含無效字元。",
+      "value_invalid": "值包含無效的換行符。",
+      "invalid_iso_8859_1": "值包含非 ISO-8859-1 字元。"
     }
   },
   "url_params_editor": {
-    "query_params": "查询参数",
-    "path_var": "路径变量",
-    "warning_duplicate_param": "这是重复的 URL 参数，将被 Postman 生成的 {query_param} 覆盖。"
+    "query_params": "查詢引數",
+    "path_var": "路徑變數",
+    "warning_duplicate_param": "這是重複的 URL 引數，將被 Postman 生成的 {query_param} 覆蓋。"
   },
   "kveditor": {
     "description": "描述",
-    "description_tooltip": "说明仅出现在 Postman 文档中，并且 <1> 不会与您的请求一起发送 </1>。",
+    "description_tooltip": "說明僅出現在 Postman 檔案中，並且 <1> 不會與您的請求一起傳送 </1>。",
     "domains": "例如https://api.getpostman.com，https://*.postman.com",
-    "domains_tooltip": "秘密仅在提到的域中有效。使用 '*.example.com 允许所有子域。",
+    "domains_tooltip": "秘密僅在提到的域中有效。使用 '*.example.com 允許所有子域。",
     "value": "值",
-    "value_tooltip": "当您在集合、环境或全局变量中共享变量时，初始值将与团队共享。",
-    "value_tooltip_with_lc": "点击了解更多",
+    "value_tooltip": "當您在集合、環境或全域性變數中共享變數時，初始值將與團隊共享。",
+    "value_tooltip_with_lc": "點選瞭解更多",
     "initial_value": "初始值",
-    "value_hidden": "值已隐藏",
-    "disabled_sync_tooltip": "您的团队管理员已删除并阻止使用初始值以防止数据同步。",
-    "key": "键",
-    "type": "类型",
-    "type_tooltip": "使用密钥类型来存储密钥、令牌、秘密和密码。密钥类型可以屏蔽屏幕上的值。默认类型的值以纯文本形式可见。",
-    "type_tooltip_with_lc": "点击了解更多",
-    "content_type": "内容类型",
-    "content_type_tooltip": "Content-Type实体用于指示资源的媒体类型。如果此字段留空，Postman 将自动分配内容类型。",
-    "current_value": "当前值",
-    "current_value_tooltip": "发送请求时使用当前值。这些值永远不会同步到 Postman 的服务器。如果留空，则当前值自动使用初始值。",
-    "current_value_tooltip_with_lc": "点击了解更多",
+    "value_hidden": "值已隱藏",
+    "disabled_sync_tooltip": "您的團隊管理員已刪除並阻止使用初始值以防止資料同步。",
+    "key": "鍵",
+    "type": "型別",
+    "type_tooltip": "使用金鑰型別來儲存金鑰、令牌、秘密和密碼。金鑰型別可以遮蔽螢幕上的值。預設型別的值以純文本形式可見。",
+    "type_tooltip_with_lc": "點選瞭解更多",
+    "content_type": "內容型別",
+    "content_type_tooltip": "Content-Type實體用於指示資源的媒體型別。如果此欄位留空，Postman 將自動分配內容型別。",
+    "current_value": "當前值",
+    "current_value_tooltip": "傳送請求時使用當前值。這些值永遠不會同步到 Postman 的伺服器。如果留空，則當前值自動使用初始值。",
+    "current_value_tooltip_with_lc": "點選瞭解更多",
     "persist": "保留",
     "persist_all": "全部保留",
     "reset": "重置",
     "reset_all": "全部重置",
-    "reset_action_tooltip": "重置所有值会将所有当前值替换为变量的初始值。",
-    "bulk_edit": "批量编辑",
-    "key_value_edit": "键值编辑",
-    "show_columns": "显示栏目",
-    "options_heading": "选项",
-    "domains_heading": "允许的域",
-    "rows_separated_by_lines": "行由换行符分隔",
-    "keys_values_separated": "键和值由分隔：",
-    "prepend_row_keep_disabled": "将 // 添加到要添加但保持禁用状态的任何行",
-    "presets": "预设",
-    "option": "选项",
-    "options": "选项",
-    "filter_variables": "过滤变量",
-    "filter_vault_variables": "过滤秘密",
-    "duplicate_key": "重复密钥",
-    "remove_sort_reorder": "删除排序以重新排序",
-    "delete": "删除",
-    "deleted_status": "[已删除]",
+    "reset_action_tooltip": "重置所有值會將所有當前值替換為變數的初始值。",
+    "bulk_edit": "批次編輯",
+    "key_value_edit": "鍵值編輯",
+    "show_columns": "顯示欄目",
+    "options_heading": "選項",
+    "domains_heading": "允許的域",
+    "rows_separated_by_lines": "行由換行符分隔",
+    "keys_values_separated": "鍵和值由分隔：",
+    "prepend_row_keep_disabled": "將 // 新增到要新增但保持停用狀態的任何行",
+    "presets": "預設",
+    "option": "選項",
+    "options": "選項",
+    "filter_variables": "過濾變數",
+    "filter_vault_variables": "過濾秘密",
+    "duplicate_key": "重複金鑰",
+    "remove_sort_reorder": "刪除排序以重新排序",
+    "delete": "刪除",
+    "deleted_status": "[已刪除]",
     "show": "展示",
-    "hide": "隐藏",
-    "no_results_found": "没有找到结果",
-    "no_permissions": "您没有执行此操作的权限。",
-    "persist_will_replace": "保留所有值会将所有初始值替换为变量的当前值。",
+    "hide": "隱藏",
+    "no_results_found": "沒有找到結果",
+    "no_permissions": "您沒有執行此操作的許可權。",
+    "persist_will_replace": "保留所有值會將所有初始值替換為變數的當前值。",
     "sorted_a_to_z": "按 A 到 Z 排序",
     "sorted_z_to_a": "按 Z 到 A 排序",
-    "view_more_actions": "查看更多动作",
-    "manage_presets": "管理预设",
-    "change_type": "变更类型",
+    "view_more_actions": "檢視更多動作",
+    "manage_presets": "管理預設",
+    "change_type": "變更型別",
     "cancel": "取消",
-    "select_row": "选择参数行",
-    "deselect_row": "取消选择参数行",
-    "enable_all_rows": "启用所有参数",
-    "disable_all_rows": "禁用所有参数",
-    "toggle_sensitive_var_state": "切换敏感变量状态",
-    "disable_sync_initial_val": "这将禁用同步变量的初始值。",
-    "not_ask_again": "不要再问",
-    "reveal_hidden_values": "<0>这将为所有团队成员显示应用程序中各处的纯文本隐藏值。如果您希望自己在本地取消屏蔽该值，请在行末尾使用 </0><1></1><2> 图标.</2>",
-    "change_type_secret_to_default": "将类型从密钥更改为默认值？",
-    "change_type_default_to_secret": "将类型从默认更改为密钥？",
-    "change_var_to_default": "将 {var} 从密钥更改为默认值？",
-    "change_var_to_secret": "将 {var} 从默认值更改为密钥？",
-    "duplicate_key_warning": "该变量已被重复的键覆盖。",
-    "disable_filter_tooltip": "删除过滤器查询以执行此操作",
-    "disable_sort_tooltip": "删除排序以执行此操作",
+    "select_row": "選擇引數行",
+    "deselect_row": "取消選擇引數行",
+    "enable_all_rows": "啟用所有引數",
+    "disable_all_rows": "停用所有引數",
+    "toggle_sensitive_var_state": "切換敏感變數狀態",
+    "disable_sync_initial_val": "這將停用同步變數的初始值。",
+    "not_ask_again": "不要再問",
+    "reveal_hidden_values": "<0>這將為所有團隊成員顯示應用程式中各處的純文本隱藏值。如果您希望自己在本地取消遮蔽該值，請在行末尾使用 </0><1></1><2> 圖示.</2>",
+    "change_type_secret_to_default": "將型別從金鑰更改為預設值？",
+    "change_type_default_to_secret": "將型別從預設更改為金鑰？",
+    "change_var_to_default": "將 {var} 從金鑰更改為預設值？",
+    "change_var_to_secret": "將 {var} 從預設值更改為金鑰？",
+    "duplicate_key_warning": "該變數已被重複的鍵覆蓋。",
+    "disable_filter_tooltip": "刪除過濾器查詢以執行此操作",
+    "disable_sort_tooltip": "刪除排序以執行此操作",
     "text": "文本",
-    "file": "文件",
-    "default": "默认",
+    "file": "檔案",
+    "default": "預設",
     "secret": "私密",
     "feedback_modal": {
-      "modal_heading": "对集合中的类型提供反馈",
-      "fill_feedback": "请填写反馈信息。",
-      "followup_consent": "我希望 Postman 联系我进行后续跟进",
-      "followup_label": "请求跟进",
-      "feedback_label": "告诉我们如何改进？",
-      "feedback_placeholder": "例如：我有一个想法……",
+      "modal_heading": "對集合中的型別提供反饋",
+      "fill_feedback": "請填寫反饋資訊。",
+      "followup_consent": "我希望 Postman 聯絡我進行後續跟進",
+      "followup_label": "請求跟進",
+      "feedback_label": "告訴我們如何改進？",
+      "feedback_placeholder": "例如：我有一個想法……",
       "confirm_button_label": "提交"
     }
   },
   "fork_button": {
-    "tooltip": "复刻",
-    "label": "复刻",
+    "tooltip": "復刻",
+    "label": "復刻",
     "count_button": {
-      "offline_tooltip": "上网查看现有的分叉。",
-      "count_error_tooltip": "出了点问题。",
-      "fork_count": "{count, plural, =1 {# 个 fork} other {# 个 fork}}"
+      "offline_tooltip": "上網檢視現有的分叉。",
+      "count_error_tooltip": "出了點問題。",
+      "fork_count": "{count, plural, =1 {# 個 fork} other {# 個 fork}}"
     }
   },
   "watch": {
     "error": {
-      "message": "只是一根电线有问题。尝试再次执行该操作。",
-      "title": "出了点问题。再试一次。"
+      "message": "只是一根電線有問題。嘗試再次執行該操作。",
+      "title": "出了點問題。再試一次。"
     },
     "count_button": {
-      "offline_tooltip": "您重新上线后即可执行此操作。"
+      "offline_tooltip": "您重新上線後即可執行此操作。"
     },
     "toggle_button": {
-      "offline_tooltip": "您重新上线后即可执行此操作。",
-      "processing_tooltip": "正在处理您的请求，请稍候。",
-      "disable_tooltip": "您无权执行此操作。",
+      "offline_tooltip": "您重新上線後即可執行此操作。",
+      "processing_tooltip": "正在處理您的請求，請稍候。",
+      "disable_tooltip": "您無權執行此操作。",
       "label": {
-        "watching": "观看",
-        "watch": "关注",
-        "unwatch": "取消关注"
+        "watching": "觀看",
+        "watch": "關注",
+        "unwatch": "取消關注"
       }
     }
   },
   "ec_collection_run": {
     "tooltip": {
-      "no_permission": "您没有权限运行此集合。",
-      "is_offline": "当您重新上线后，即可运行此集合。"
+      "no_permission": "您沒有許可權執行此集合。",
+      "is_offline": "當您重新上線後，即可執行此集合。"
     }
   },
   "rfa_guest_button": {
     "tooltip": {
-      "comment": "集合编辑正在审核您的请求，以获得额外访问权限。",
-      "edit_request": "集合编辑正在审核您的编辑请求。",
-      "in_review": "你的申请正在审核中",
-      "text": "请求正在审核中",
-      "readonly_user_message": "您无权执行此操作。"
+      "comment": "集合編輯正在稽核您的請求，以獲得額外訪問許可權。",
+      "edit_request": "集合編輯正在稽核您的編輯請求。",
+      "in_review": "你的申請正在稽核中",
+      "text": "請求正在稽核中",
+      "readonly_user_message": "您無權執行此操作。"
     },
     "text": {
-      "comment_access": "请求访问评论",
-      "edit_access": "请求进行编辑"
+      "comment_access": "請求訪問評論",
+      "edit_access": "請求進行編輯"
     },
     "error": {
-      "request_failed": "无法创建请求进行编辑"
+      "request_failed": "無法建立請求進行編輯"
     }
   },
   "rfa_popover": {
     "heading": {
-      "text": "请求额外访问 {trigger}"
+      "text": "請求額外訪問 {trigger}"
     },
     "body": {
-      "primary_action": "请求访问",
-      "secondary_action": "也许稍后",
+      "primary_action": "請求訪問",
+      "secondary_action": "也許稍後",
       "acknowledge_action": "知道了",
       "text": {
-        "request_pending": "您的请求正在由 {model} 编辑审核。一旦他们回复，您就会收到通知。",
-        "request_role": "您需要请求更改角色，才能对此集合执行更多操作。"
+        "request_pending": "您的請求正在由 {model} 編輯稽核。一旦他們回覆，您就會收到通知。",
+        "request_role": "您需要請求更改角色，才能對此集合執行更多操作。"
       }
     },
     "error": {
-      "request_failed": "无法创建请求进行编辑"
+      "request_failed": "無法建立請求進行編輯"
     }
   },
   "entity_tab_header": {
     "breadcrumb": {
       "update_icon_tooltip": "更新集合",
-      "error_message": "无法重命名 {entity}。再试一次。"
+      "error_message": "無法重新命名 {entity}。再試一次。"
     }
   },
   "update_collection_icon": {
-    "retry": "重试",
-    "updates_enabled": "已启用更新",
-    "updates_disabled": "更新已禁用"
+    "retry": "重試",
+    "updates_enabled": "已啟用更新",
+    "updates_disabled": "更新已停用"
   },
   "copy_link_button": {
-    "copy_link": "复制链接",
-    "copied": "已复制",
-    "error_message": "发生一些错误",
+    "copy_link": "複製連結",
+    "copied": "已複製",
+    "error_message": "發生一些錯誤",
     "tooltip": {
-      "success": "链接已复制！",
-      "success_environment": "已使用活动环境复制链接！",
-      "copy_link": "将链接复制到 {entityName}",
-      "invite_to_WS_warning": "除非您邀请他们，否则没有人可以使用此链接访问您的个人工作区。",
-      "invite_warning": "没有人可以使用此链接访问您个人工作区中的 {entityName}，除非您邀请他们。"
+      "success": "連結已複製！",
+      "success_environment": "已使用活動環境複製連結！",
+      "copy_link": "將連結複製到 {entityName}",
+      "invite_to_WS_warning": "除非您邀請他們，否則沒有人可以使用此連結訪問您的個人工作區。",
+      "invite_warning": "沒有人可以使用此連結訪問您個人工作區中的 {entityName}，除非您邀請他們。"
     },
     "popover": {
-      "primary_button_text": "邀请成员"
+      "primary_button_text": "邀請成員"
     },
     "error": {
-      "toast_message": "尝试复制链接时发生一些错误！"
+      "toast_message": "嘗試複製連結時發生一些錯誤！"
     },
     "entity_name_map": {
-      "workspace": "工作区",
+      "workspace": "工作區",
       "collection": "集合",
-      "folder": "文件夹",
-      "request": "请求",
+      "folder": "資料夾",
+      "request": "請求",
       "api": "API",
       "apiVersion": "版本",
-      "environment": "环境",
+      "environment": "環境",
       "mock": "Mock Server",
-      "monitor": "监视器",
-      "documentation": "文档",
-      "apiDefinition": "API 定义",
+      "monitor": "監視器",
+      "documentation": "文件",
+      "apiDefinition": "API 定義",
       "example": "示例",
-      "history": "历史请求",
-      "globals": "全局变量",
+      "history": "歷史請求",
+      "globals": "全域性變數",
       "pullRequest": "Pull Request",
-      "run": "运行总结",
+      "run": "執行總結",
       "flow": "Flow",
-      "file": "文件",
+      "file": "檔案",
       "schedule": "日程",
-      "performanceRun": "报告",
-      "insights": "见解"
+      "performanceRun": "報告",
+      "insights": "見解"
     },
     "private_network_entity_name_map": {
-      "privateNetworkWorkspace": "工作区",
+      "privateNetworkWorkspace": "工作區",
       "privateNetworkAPI": "API",
-      "privateNetworkAPIDefinition": "定义",
-      "privateNetworkAPIFile": "文件",
+      "privateNetworkAPIDefinition": "定義",
+      "privateNetworkAPIFile": "檔案",
       "privateNetworkCollection": "集合",
-      "privateNetworkFolder": "文件夹"
+      "privateNetworkFolder": "資料夾"
     }
   },
   "fork_label": {
     "forked_from": "分叉自：",
-    "missing_info_message": "您无权访问此 {sourceModel} 或它已被删除。",
+    "missing_info_message": "您無權訪問此 {sourceModel} 或它已被刪除。",
     "pull_changes": "拉取更改",
-    "offline_tooltip": "您重新上线后即可执行此操作。",
-    "pull_changes_message": "原始 {model} 已更新。我们建议拉取更改。了解有关<1><0>拉取更改</0></1>的更多信息"
+    "offline_tooltip": "您重新上線後即可執行此操作。",
+    "pull_changes_message": "原始 {model} 已更新。我們建議拉取更改。瞭解有關<1><0>拉取更改</0></1>的更多資訊"
   },
   "entity_meta_info": {
     "id": {
@@ -1276,137 +1276,137 @@
     },
     "copy_button": {
       "tooltip": {
-        "success": "已复制"
+        "success": "已複製"
       },
-      "copy": "复制 {entityName} ID"
+      "copy": "複製 {entityName} ID"
     },
     "created_by": {
-      "heading": "创建者：",
+      "heading": "建立者：",
       "tooltip": {
-        "private": "该用户的个人资料为私有"
+        "private": "該使用者的個人資料為私有"
       },
       "you": "你"
     },
     "created_at": {
-      "heading": "创建于"
+      "heading": "建立於"
     },
     "updated_at": {
-      "heading": "最后更新",
-      "current_user_value": "通过 <3><0><0>你</0></0></3>",
-      "other_user_value": "通过 <3><0><0>{name}</0></0></3>"
+      "heading": "最後更新",
+      "current_user_value": "通過 <3><0><0>你</0></0></3>",
+      "other_user_value": "通過 <3><0><0>{name}</0></0></3>"
     }
   },
   "entity_actions_dropdown": {
-    "button_tooltip": "查看更多动作"
+    "button_tooltip": "檢視更多動作"
   },
   "scripts_editor": {
     "snippet_header": "片段",
-    "test_snippets_text": "<0>测试脚本是用 JavaScript 编写的，并在收到响应后运行。了解有关</0><1>测试脚本</1>的更多信息。",
-    "prerequest_snippets_text": "<0>请求前脚本是用 JavaScript 编写的，并在发送请求之前运行。了解有关 </0><1>请求前脚本</1> 的更多信息。"
+    "test_snippets_text": "<0>測試腳本是用 JavaScript 編寫的，並在收到響應後執行。瞭解有關</0><1>測試腳本</1>的更多資訊。",
+    "prerequest_snippets_text": "<0>請求前腳本是用 JavaScript 編寫的，並在傳送請求之前執行。瞭解有關 </0><1>請求前腳本</1> 的更多資訊。"
   },
   "empty_state": {
     "primary_action": "使用 Postman 桌面代理",
-    "secondary_action": "了解有关 Postman 代理的更多信息"
+    "secondary_action": "瞭解有關 Postman 代理的更多資訊"
   },
   "unsaved_response_state": {
-    "title": "响应未存储",
-    "action_button": "更改设置"
+    "title": "響應未儲存",
+    "action_button": "更改設定"
   },
   "more_actions_menu": {
-    "tooltip": "查看更多动作",
+    "tooltip": "檢視更多動作",
     "clear_response": {
-      "title": "清除响应"
+      "title": "清除響應"
     }
   },
   "rfa_guest_comments": {
     "title": {
-      "req_pending": "请求访问权限正在审核中",
-      "default": "使用评论与队友协作"
+      "req_pending": "請求訪問許可權正在稽核中",
+      "default": "使用評論與隊友協作"
     },
     "description": {
-      "req_pending": "获得批准后，您可以添加评论并与团队成员协作。",
-      "default": "请求对此集合的额外访问权限，以便添加和回复评论。"
+      "req_pending": "獲得批准後，您可以新增評論並與團隊成員協作。",
+      "default": "請求對此集合的額外訪問許可權，以便新增和回覆評論。"
     },
-    "button": "请求访问",
-    "toast_error": "无法创建请求来发表评论"
+    "button": "請求訪問",
+    "toast_error": "無法建立請求來發表評論"
   },
   "timeline_rich_inspector": {
-    "wrap_lines_tooltip": "自动换行",
-    "with_hex_dump": "显示消息",
-    "without_hex_dump": "显示十六进制转储",
-    "search_button_tooltip": "搜索"
+    "wrap_lines_tooltip": "自動換行",
+    "with_hex_dump": "顯示訊息",
+    "without_hex_dump": "顯示十六進位制轉儲",
+    "search_button_tooltip": "搜尋"
   },
-  "url_suggestions_popover_desc": "使用 <1><0>Postman 的回声服务</0></1> 探索 {echoProtocol}",
+  "url_suggestions_popover_desc": "使用 <1><0>Postman 的回聲服務</0></1> 探索 {echoProtocol}",
   "search_url_suggestions": {
-    "title": "来自 Postman API 网络",
+    "title": "來自 Postman API 網路",
     "warning_modal": {
-      "title": "这个请求将覆盖当前选项卡",
-      "description": "打开此请求将覆盖您在当前选项卡中所做的更改。",
-      "do_not_show_again": "不要再显示这个",
-      "overwrite_option": "覆盖当前选项卡",
-      "open_new_tab_option": "在新选项卡中打开"
+      "title": "這個請求將覆蓋當前選項卡",
+      "description": "開啟此請求將覆蓋您在當前選項卡中所做的更改。",
+      "do_not_show_again": "不要再顯示這個",
+      "overwrite_option": "覆蓋當前選項卡",
+      "open_new_tab_option": "在新選項卡中開啟"
     },
     "success_modal": {
-      "description": "请求已完成。",
+      "description": "請求已完成。",
       "undo_cta": "撤消"
     }
   },
   "item_view_header": {
     "save_button": {
-      "save": "保存",
-      "save_as": "另存为...",
-      "save_tooltip": "保存{itemTitle}",
-      "save_as_tooltip": "将 {itemTitle} 保存到集合",
-      "saving": "正在保存..."
+      "save": "儲存",
+      "save_as": "另存為...",
+      "save_tooltip": "儲存{itemTitle}",
+      "save_as_tooltip": "將 {itemTitle} 儲存到集合",
+      "saving": "正在儲存..."
     },
     "share_button": {
       "label": "分享",
       "tooltips": {
-        "no_edit_permission": "仅可以共享保存在集合中的请求。您需要编辑权限才能保存请求。",
-        "share_request": "分享请求"
+        "no_edit_permission": "僅可以共享儲存在集合中的請求。您需要編輯許可權才能儲存請求。",
+        "share_request": "分享請求"
       }
     }
   },
   "default_tab_title": {
     "prefix": {
-      "untitled": "无题",
+      "untitled": "無題",
       "new": "新的"
     },
-    "fallback_type": "请求",
-    "untitled_request": "无标题请求",
-    "new_request": "新请求"
+    "fallback_type": "請求",
+    "untitled_request": "無標題請求",
+    "new_request": "新請求"
   },
   "watchers_list": {
     "error": {
-      "title": "无法加载观察者",
-      "subtitle": "只是一根电线有问题。尝试重新加载观察者。",
-      "reload": "重新加载观察者"
+      "title": "無法載入觀察者",
+      "subtitle": "只是一根電線有問題。嘗試重新載入觀察者。",
+      "reload": "重新載入觀察者"
     },
     "title": {
-      "no_watchers": "没有观察者",
-      "watchers": "{count, plural, =1 {# 个观察者} other {# 个观察者}}"
+      "no_watchers": "沒有觀察者",
+      "watchers": "{count, plural, =1 {# 個觀察者} other {# 個觀察者}}"
     },
-    "subtitle": "观看这个{model}的人会出现在这里。",
+    "subtitle": "觀看這個{model}的人會出現在這裡。",
     "private": {
-      "tooltip": "帐户设置为私有的观察者保持匿名。",
-      "watchers": "{count, plural, =1 {# 个匿名观察者} other {# 个匿名观察者}}"
+      "tooltip": "帳戶設定為私有的觀察者保持匿名。",
+      "watchers": "{count, plural, =1 {# 個匿名觀察者} other {# 個匿名觀察者}}"
     },
     "current_user": "{name}（你）",
     "pull_request": {
       "preferences": {
         "title": {
-          "pull_requests": "观看拉取请求",
-          "not_watching": "未观看",
-          "comments": "留意评论",
+          "pull_requests": "觀看拉取請求",
+          "not_watching": "未觀看",
+          "comments": "留意評論",
           "updates": "留意更新"
         }
       },
       "display_name": "Pull Request"
     },
     "collection": "集合",
-    "extensibleCollection": "可扩展集合",
+    "extensibleCollection": "可擴充套件集合",
     "api": "API",
-    "workspace": "工作区"
+    "workspace": "工作區"
   },
   "multi_select_entity": {
     "all": "全部{type}"
@@ -1414,53 +1414,53 @@
   "live": {
     "default-title": "直播",
     "share-modal": {
-      "title": "直播会话",
-      "subtitle": "与您的队友实时协作。",
-      "start": "开始",
-      "end": "结束",
-      "leave": "离开",
-      "copy-link": "复制链接",
+      "title": "直播會話",
+      "subtitle": "與您的隊友即時協作。",
+      "start": "開始",
+      "end": "結束",
+      "leave": "離開",
+      "copy-link": "複製連結",
       "start-toast": {
         "success": {
-          "title": "直播会话已开始",
-          "description": "会话链接已复制到剪贴板。"
+          "title": "直播會話已開始",
+          "description": "會話連結已複製到剪貼簿。"
         },
         "error": {
-          "title": "无法开始直播会话",
-          "description": "无法开始实时协作会话。"
+          "title": "無法開始直播會話",
+          "description": "無法開始即時協作會話。"
         },
         "disabled_error": {
-          "title": "实时会话已禁用",
-          "description": "请联系团队管理员以启用此功能"
+          "title": "即時會話已停用",
+          "description": "請聯絡團隊管理員以啟用此功能"
         }
       }
     },
     "join-modal": {
-      "title": "开始在实时会话中一起构建！",
+      "title": "開始在即時會話中一起構建！",
       "info-list": {
-        "info-item1": "并行工作以立即调试请求。",
-        "info-item2": "在协作者之间查看相同的响应。",
-        "info-item3": "实时查看队友的变化。",
-        "info-item4": "更快地行动并共同构建更好的 API。"
+        "info-item1": "並行工作以立即除錯請求。",
+        "info-item2": "在協作者之間檢視相同的響應。",
+        "info-item3": "即時檢視隊友的變化。",
+        "info-item4": "更快地行動並共同構建更好的 API。"
       }
     },
     "close-modal": {
-      "title": "直播会话已结束",
-      "description": "主持人已结束直播会话。所有实时选项卡均已关闭。",
-      "confirmation": "关闭"
+      "title": "直播會話已結束",
+      "description": "主持人已結束直播會話。所有即時選項卡均已關閉。",
+      "confirmation": "關閉"
     },
     "status-popover": {
-      "title": "直播会话",
+      "title": "直播會話",
       "you": "你",
-      "end": "结束会话",
-      "leave": "离开会话",
-      "copy-link": "复制实时链接",
-      "copy-link-success": "链接已复制"
+      "end": "結束會話",
+      "leave": "離開會話",
+      "copy-link": "複製即時連結",
+      "copy-link-success": "連結已複製"
     },
-    "join-toast": "加入了直播会话。",
+    "join-toast": "加入了直播會話。",
     "send_button": {
       "tooltips": {
-        "no_send_permission": "您无权执行此操作。"
+        "no_send_permission": "您無權執行此操作。"
       }
     }
   }

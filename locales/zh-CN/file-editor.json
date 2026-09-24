@@ -1,11 +1,11 @@
 {
-  "untitled": "无题",
-  "read_only": "只读",
-  "loading_file": "正在加载文件...",
-  "failed_to_rename": "无法重命名文件：{error}",
-  "cut": "剪切",
-  "copy": "复制",
-  "paste": "粘贴",
-  "select_all": "选择全部",
-  "open_request": "打开请求"
+  "untitled": "無題",
+  "read_only": "只讀",
+  "loading_file": "正在載入檔案...",
+  "failed_to_rename": "無法重新命名檔案：{error}",
+  "cut": "剪下",
+  "copy": "複製",
+  "paste": "貼上",
+  "select_all": "選擇全部",
+  "open_request": "開啟請求"
 }

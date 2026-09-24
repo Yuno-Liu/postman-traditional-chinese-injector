@@ -1,365 +1,365 @@
 {
   "page": {
-    "title": "Postman 集成与应用市场",
-    "description": "浏览并将 Postman 与团队已在使用的工具（Slack、Jira、GitHub 等）连接，一切尽在同一个集成市场。",
-    "heading": "集成",
-    "subtitle": "发现、安装和管理集成。"
+    "title": "Postman 整合與應用市場",
+    "description": "瀏覽並將 Postman 與團隊已在使用的工具（Slack、Jira、GitHub 等）連線，一切盡在同一個整合市場。",
+    "heading": "整合",
+    "subtitle": "發現、安裝和管理整合。"
   },
   "listing": {
-    "searchPlaceholder": "搜索集成",
-    "connectedOnlyLabel": "仅显示团队已连接的集成",
-    "connectedEmpty": "您的团队暂无已连接的集成。",
-    "loading": "正在加载集成…",
-    "empty": "未找到集成",
-    "noResults": "没有与 \"{query}\" 匹配的集成",
-    "error": "无法加载集成",
-    "error_description": "加载集成时出错。请重试。",
-    "retry_button_label": "重试"
+    "searchPlaceholder": "搜尋整合",
+    "connectedOnlyLabel": "僅顯示團隊已連線的整合",
+    "connectedEmpty": "您的團隊暫無已連線的整合。",
+    "loading": "正在載入整合…",
+    "empty": "未找到整合",
+    "noResults": "沒有與 \"{query}\" 匹配的整合",
+    "error": "無法載入整合",
+    "error_description": "載入整合時出錯。請重試。",
+    "retry_button_label": "重試"
   },
   "card": {
-    "connected": "已连接",
+    "connected": "已連線",
     "byline": "作者：{author}"
   },
   "requestIntegration": {
-    "title": "没有找到你需要的？",
-    "description": "申请新的集成，由 Postman 团队进行审核。",
-    "buttonLabel": "申请集成"
+    "title": "沒有找到你需要的？",
+    "description": "申請新的整合，由 Postman 團隊進行稽核。",
+    "buttonLabel": "申請整合"
   },
   "integratedServices": {
-    "sectionTitle": "API Catalog - 集成服务",
-    "sectionDescription": "将 API Catalog 集成服务连接到 GitHub 仓库。",
-    "connectButton": "连接服务",
-    "connectPermissionTooltip": "只有具备 API Catalog Manager 角色的成员才能访问服务发现页面",
+    "sectionTitle": "API Catalog - 整合服務",
+    "sectionDescription": "將 API Catalog 整合服務連線到 GitHub 倉庫。",
+    "connectButton": "連線服務",
+    "connectPermissionTooltip": "只有具備 API Catalog Manager 角色的成員才能訪問服務發現頁面",
     "columns": {
-      "workspace": "工作区",
-      "repository": "仓库"
+      "workspace": "工作區",
+      "repository": "倉庫"
     },
-    "emptyState": "未找到集成服务",
-    "errorTitle": "集成服务加载失败",
-    "errorDescription": "加载集成服务时出错，请重试。",
-    "errorRetry": "重试"
+    "emptyState": "未找到整合服務",
+    "errorTitle": "整合服務載入失敗",
+    "errorDescription": "載入整合服務時出錯，請重試。",
+    "errorRetry": "重試"
   },
   "details": {
-    "notFoundTitle": "未找到集成",
-    "notFoundBody": "找不到该地址对应的集成。",
+    "notFoundTitle": "未找到整合",
+    "notFoundBody": "找不到該地址對應的整合。",
     "tabs": {
-      "overview": "概览",
-      "connections": "连接"
+      "overview": "概覽",
+      "connections": "連線"
     },
-    "backToHub": "返回集成列表",
-    "integrationBy": "由 {author} 提供的集成",
-    "aboutPublisher": "关于发布者",
-    "viewPublisherProfile": "查看 {author} 的主页",
-    "mediaPrevious": "上一个媒体",
-    "mediaNext": "下一个媒体",
-    "mediaExpand": "查看大图",
-    "mediaClose": "关闭媒体查看器",
-    "mediaViewerLabel": "媒体查看器",
-    "mediaCounter": "第 {current} 个，共 {total} 个",
-    "mediaImageAlt": "集成媒体第 {current} 个，共 {total} 个",
-    "connectIntegration": "连接集成",
-    "signInToConnect": "登录后连接"
+    "backToHub": "返回整合列表",
+    "integrationBy": "由 {author} 提供的整合",
+    "aboutPublisher": "關於釋出者",
+    "viewPublisherProfile": "檢視 {author} 的主頁",
+    "mediaPrevious": "上一個媒體",
+    "mediaNext": "下一個媒體",
+    "mediaExpand": "檢視大圖",
+    "mediaClose": "關閉媒體檢視器",
+    "mediaViewerLabel": "媒體檢視器",
+    "mediaCounter": "第 {current} 個，共 {total} 個",
+    "mediaImageAlt": "整合媒體第 {current} 個，共 {total} 個",
+    "connectIntegration": "連線整合",
+    "signInToConnect": "登入後連線"
   },
-  "viewDocs": "查看文档",
-  "connectButton": "连接",
-  "postmanUser": "Postman 用户",
+  "viewDocs": "檢視文件",
+  "connectButton": "連線",
+  "postmanUser": "Postman 使用者",
   "connectionSection": {
-    "connectedBadge": "已连接",
+    "connectedBadge": "已連線",
     "nameSuffix": "{name}（你）",
-    "otherTeamUsers_one": "+{count} 位其他团队成员",
-    "otherTeamUsers_other": "+{count} 位其他团队成员",
-    "disconnectSuccess": "{appName} 已成功断开连接。",
-    "disconnectError": "断开 {appName} 连接失败，请重试。",
+    "otherTeamUsers_one": "+{count} 位其他團隊成員",
+    "otherTeamUsers_other": "+{count} 位其他團隊成員",
+    "disconnectSuccess": "{appName} 已成功斷開連線。",
+    "disconnectError": "斷開 {appName} 連線失敗，請重試。",
     "table": {
-      "name": "名称",
-      "team": "团队",
-      "connectedBy": "连接者",
-      "email": "邮箱",
-      "disconnect": "断开连接"
+      "name": "名稱",
+      "team": "團隊",
+      "connectedBy": "連線者",
+      "email": "郵箱",
+      "disconnect": "斷開連線"
     },
     "wiz": {
       "disconnectModal": {
-        "heading": "断开 Wiz 连接？",
-        "body": "断开连接将永久删除团队已存储的安全态势数据及相关发现项，且无法撤销。重新连接后将重新开始一次安全扫描。",
+        "heading": "斷開 Wiz 連線？",
+        "body": "斷開連線將永久刪除團隊已儲存的安全態勢資料及相關發現項，且無法撤銷。重新連線後將重新開始一次安全掃描。",
         "cancel": "取消",
-        "confirm": "断开 Wiz 连接"
+        "confirm": "斷開 Wiz 連線"
       }
     },
     "jira": {
-      "title": "创建和查看 Jira Issue",
-      "description": "从集合、响应或 Monitor 创建 Jira Issue 或关联已有 Issue，无需离开 Postman 即可跟踪状态。"
+      "title": "建立和檢視 Jira Issue",
+      "description": "從集合、響應或 Monitor 建立 Jira Issue 或關聯已有 Issue，無需離開 Postman 即可跟蹤狀態。"
     },
     "github_app": {
-      "title": "已连接的 GitHub 账户",
-      "description": "Postman 已获得访问权限的 GitHub 组织。",
-      "githubUsername": "GitHub 用户名",
-      "githubOrganization": "GitHub 组织"
+      "title": "已連線的 GitHub 賬戶",
+      "description": "Postman 已獲得訪問許可權的 GitHub 組織。",
+      "githubUsername": "GitHub 使用者名稱",
+      "githubOrganization": "GitHub 組織"
     },
     "ecosystem": {
-      "connectedBadge": "已连接",
-      "connectButton": "连接项目",
-      "connectNoPermission": "你没有连接此应用的权限，请联系团队管理员。",
-      "viewDocs": "查看文档",
-      "neverUsed": "从未使用",
-      "removeSuccess": "已成功从工作区移除。",
-      "removeError": "移除失败，请重试。",
+      "connectedBadge": "已連線",
+      "connectButton": "連線專案",
+      "connectNoPermission": "你沒有連線此應用的許可權，請聯絡團隊管理員。",
+      "viewDocs": "檢視文件",
+      "neverUsed": "從未使用",
+      "removeSuccess": "已成功從工作區移除。",
+      "removeError": "移除失敗，請重試。",
       "removeModal": {
-        "title": "要从 {workspaceName} 中移除 {appName} 吗？",
-        "body": "Postman 将停止在此工作区中运行 {appName}。您可以随时重新连接。",
+        "title": "要從 {workspaceName} 中移除 {appName} 嗎？",
+        "body": "Postman 將停止在此工作區中執行 {appName}。您可以隨時重新連線。",
         "cancel": "取消",
         "confirm": "移除"
       },
-      "disconnectAll": "全部断开连接",
-      "disconnectAllNoPermission": "你没有断开此应用连接的权限，请联系团队管理员。",
-      "disconnectAllSuccess": "{appName} 已从所有工作区断开连接。",
-      "disconnectAllError": "断开 {appName} 连接失败，请重试。",
+      "disconnectAll": "全部斷開連線",
+      "disconnectAllNoPermission": "你沒有斷開此應用連線的許可權，請聯絡團隊管理員。",
+      "disconnectAllSuccess": "{appName} 已從所有工作區斷開連線。",
+      "disconnectAllError": "斷開 {appName} 連線失敗，請重試。",
       "disconnectAllModal": {
-        "title": "要断开所有工作区中的 {appName} 连接吗？",
-        "body": "Postman 将在每个已连接的工作区中停止运行 {appName}。您可以随时重新连接。",
+        "title": "要斷開所有工作區中的 {appName} 連線嗎？",
+        "body": "Postman 將在每個已連線的工作區中停止執行 {appName}。您可以隨時重新連線。",
         "cancel": "取消",
-        "confirm": "全部断开连接"
+        "confirm": "全部斷開連線"
       },
       "table": {
-        "workspace": "工作区",
+        "workspace": "工作區",
         "lastUsed": "最近使用",
-        "remove": "从工作区移除",
-        "removeNoPermission": "你没有从此工作区移除该应用的权限。"
+        "remove": "從工作區移除",
+        "removeNoPermission": "你沒有從此工作區移除該應用的許可權。"
       }
     },
     "gateway": {
-      "connectedBadge": "已连接",
+      "connectedBadge": "已連線",
       "authTitle": "{appName} - ({authLabel})",
-      "tableDescription": "云连接器让团队可以把 API 引入 API Catalog。API 规范随后会带着元数据（包括关联的环境和集群）出现在 API Catalog 中，并自动生成集合，便于在 Postman 中继续开发 API。",
+      "tableDescription": "雲聯結器讓團隊可以把 API 引入 API Catalog。API 規範隨後會帶著後設資料（包括關聯的環境和叢集）出現在 API Catalog 中，並自動生成集合，便於在 Postman 中繼續開發 API。",
       "authLabel": {
-        "accessKey": "Access Key 身份验证",
-        "assumeRole": "IAM Role 身份验证"
+        "accessKey": "Access Key 身份驗證",
+        "assumeRole": "IAM Role 身份驗證"
       },
-      "connectButton": "连接网关",
-      "connectNoPermission": "你没有连接此网关的权限，请联系团队管理员。",
-      "viewDocs": "查看文档",
-      "neverUsed": "从未使用",
-      "removeSuccess": "网关连接已成功移除。",
-      "removeError": "移除网关连接失败，请重试。",
+      "connectButton": "連線閘道器",
+      "connectNoPermission": "你沒有連線此閘道器的許可權，請聯絡團隊管理員。",
+      "viewDocs": "檢視文件",
+      "neverUsed": "從未使用",
+      "removeSuccess": "閘道器連線已成功移除。",
+      "removeError": "移除閘道器連線失敗，請重試。",
       "removeModal": {
-        "title": "要从 {appName} 中移除 {instanceName} 吗？",
-        "body": "Postman 将停止从此网关实例发现和导入服务。您可以随时重新连接。",
+        "title": "要從 {appName} 中移除 {instanceName} 嗎？",
+        "body": "Postman 將停止從此閘道器例項發現和匯入服務。您可以隨時重新連線。",
         "cancel": "取消",
         "confirm": "移除"
       },
-      "disconnectAll": "全部断开连接",
-      "disconnectAllNoPermission": "你没有断开此网关连接的权限，请联系团队管理员。",
-      "disconnectAllSuccess": "{appName} 已从所有网关实例断开连接。",
-      "disconnectAllError": "断开 {appName} 连接失败，请重试。",
+      "disconnectAll": "全部斷開連線",
+      "disconnectAllNoPermission": "你沒有斷開此閘道器連線的許可權，請聯絡團隊管理員。",
+      "disconnectAllSuccess": "{appName} 已從所有閘道器例項斷開連線。",
+      "disconnectAllError": "斷開 {appName} 連線失敗，請重試。",
       "disconnectAllModal": {
-        "title": "要断开所有 {appName} 实例吗？",
-        "body": "Postman 将在每个已连接的 {appName} 实例中停止发现和导入服务。您可以随时重新连接。",
+        "title": "要斷開所有 {appName} 例項嗎？",
+        "body": "Postman 將在每個已連線的 {appName} 例項中停止發現和匯入服務。您可以隨時重新連線。",
         "cancel": "取消",
-        "confirm": "全部断开连接"
+        "confirm": "全部斷開連線"
       },
       "table": {
-        "instanceName": "实例名称",
-        "postmanTeam": "Postman 团队",
+        "instanceName": "例項名稱",
+        "postmanTeam": "Postman 團隊",
         "lastUsed": "最近使用",
-        "discoveredServices": "已发现的服务",
-        "remove": "移除连接",
-        "removeNoPermission": "你没有移除此网关连接的权限。"
+        "discoveredServices": "已發現的服務",
+        "remove": "移除連線",
+        "removeNoPermission": "你沒有移除此閘道器連線的許可權。"
       }
     }
   },
   "personalNotifications": {
-    "title": "个人通知",
-    "description": "接收重要事件的个人通知，例如队友在评论中提到您，或令牌、密钥被泄露时。",
-    "connectedBadge": "已连接",
-    "connectButton": "连接",
+    "title": "個人通知",
+    "description": "接收重要事件的個人通知，例如隊友在評論中提到您，或令牌、金鑰被洩露時。",
+    "connectedBadge": "已連線",
+    "connectButton": "連線",
     "nameSuffix": "{name}（您）",
-    "otherTeamUsers_one": "还有 {count} 位团队成员",
-    "otherTeamUsers_other": "还有 {count} 位团队成员",
-    "disconnectSuccess": "个人通知已成功断开连接。",
-    "disconnectError": "断开个人通知连接失败，请重试。",
+    "otherTeamUsers_one": "還有 {count} 位團隊成員",
+    "otherTeamUsers_other": "還有 {count} 位團隊成員",
+    "disconnectSuccess": "個人通知已成功斷開連線。",
+    "disconnectError": "斷開個人通知連線失敗，請重試。",
     "table": {
       "name": "姓名",
-      "email": "邮箱",
-      "disconnect": "断开连接"
+      "email": "郵箱",
+      "disconnect": "斷開連線"
     }
   },
   "slackChannel": {
-    "privateChannel": "私密频道",
-    "channelUnavailable": "频道不可用",
-    "loginForChannelInfo": "登录以查看频道信息",
-    "workspaceColumn": "Slack 工作区",
-    "channelColumn": "Slack 频道"
+    "privateChannel": "私密頻道",
+    "channelUnavailable": "頻道不可用",
+    "loginForChannelInfo": "登入以檢影片道資訊",
+    "workspaceColumn": "Slack 工作區",
+    "channelColumn": "Slack 頻道"
   },
   "ms_teams": {
-    "tenantColumn": "组织",
-    "connectionColumn": "连接信息",
-    "privateChannel": "私有频道",
-    "channelUnavailable": "频道不可用",
+    "tenantColumn": "組織",
+    "connectionColumn": "連線資訊",
+    "privateChannel": "私有頻道",
+    "channelUnavailable": "頻道不可用",
     "chatUnavailable": "聊天不可用",
-    "loginForConnectionInfo": "登录后查看连接信息",
-    "sharedChannel": "共享频道",
-    "archivedTooltip": "此频道已归档",
-    "conversationTypeLabel": "会话类型",
-    "conversationTypeChannel": "频道",
+    "loginForConnectionInfo": "登入後檢視連線資訊",
+    "sharedChannel": "共享頻道",
+    "archivedTooltip": "此頻道已歸檔",
+    "conversationTypeLabel": "會話型別",
+    "conversationTypeChannel": "頻道",
     "conversationTypeGroupChat": "群聊",
-    "teamLabel": "团队",
-    "channelLabel": "频道",
-    "channelDescription": "必须是标准频道或共享频道，不支持私有频道。",
-    "channelPlaceholder": "输入以搜索频道",
-    "channelLoadError": "频道加载失败，请重试。",
-    "teamPlaceholder": "输入以搜索团队",
+    "teamLabel": "團隊",
+    "channelLabel": "頻道",
+    "channelDescription": "必須是標準頻道或共享頻道，不支援私有頻道。",
+    "channelPlaceholder": "輸入以搜尋頻道",
+    "channelLoadError": "頻道載入失敗，請重試。",
+    "teamPlaceholder": "輸入以搜尋團隊",
     "groupChatLabel": "群聊",
-    "groupChatPlaceholder": "输入以搜索群聊",
-    "groupChatLoadError": "群聊加载失败，请重试。"
+    "groupChatPlaceholder": "輸入以搜尋群聊",
+    "groupChatLoadError": "群聊載入失敗，請重試。"
   },
   "workspaceNotifications": {
-    "title": "工作区通知",
-    "description": "当队友添加或更改请求、集合或环境，或有人发布工作区更新时，随时接收更新通知。",
-    "addButton": "连接工作区",
+    "title": "工作區通知",
+    "description": "當隊友新增或更改請求、集合或環境，或有人釋出工作區更新時，隨時接收更新通知。",
+    "addButton": "連線工作區",
     "table": {
-      "workspace": "工作区",
-      "privateWorkspace": "私有工作区",
-      "privateWorkspaceTooltip": "您不是此工作区的成员"
+      "workspace": "工作區",
+      "privateWorkspace": "私有工作區",
+      "privateWorkspaceTooltip": "您不是此工作區的成員"
     },
     "pagination": {
-      "itemsPerPage": "每页条数",
-      "range": "第 {start}-{end} 条，共 {total} 条"
+      "itemsPerPage": "每頁條數",
+      "range": "第 {start}-{end} 條，共 {total} 條"
     },
     "modal": {
-      "createHeading": "连接频道",
-      "editHeading": "编辑频道集成",
-      "postmanWorkspaceLabel": "Postman 工作区",
-      "postmanWorkspacePlaceholder": "选择工作区",
-      "slackWorkspaceLabel": "{appName} 工作区",
-      "slackWorkspacePlaceholder": "选择工作区",
-      "channelLabel": "{appName} 频道",
-      "channelPlaceholder": "选择频道",
-      "channelConnected": "—已连接",
-      "channelLoadError": "频道加载失败，请重试。",
-      "frequencyLabel": "发送通知的方式…",
-      "frequencyRealtime": "实时发送",
-      "frequencyPeriodic": "定期以摘要形式发送",
+      "createHeading": "連線頻道",
+      "editHeading": "編輯頻道整合",
+      "postmanWorkspaceLabel": "Postman 工作區",
+      "postmanWorkspacePlaceholder": "選擇工作區",
+      "slackWorkspaceLabel": "{appName} 工作區",
+      "slackWorkspacePlaceholder": "選擇工作區",
+      "channelLabel": "{appName} 頻道",
+      "channelPlaceholder": "選擇頻道",
+      "channelConnected": "—已連線",
+      "channelLoadError": "頻道載入失敗，請重試。",
+      "frequencyLabel": "傳送通知的方式…",
+      "frequencyRealtime": "即時傳送",
+      "frequencyPeriodic": "定期以摘要形式傳送",
       "frequencyPeriodicBadge": "新",
-      "eventsHeading": "触发条件…",
-      "eventWorkspaceUpdate": "发布工作区动态",
-      "eventPullRequest": "创建或合并工作区 Pull Request",
-      "eventCreate": "添加请求、集合或环境",
-      "eventDelete": "删除请求、集合或环境",
-      "eventUpdate": "编辑请求或集合",
+      "eventsHeading": "觸發條件…",
+      "eventWorkspaceUpdate": "釋出工作區動態",
+      "eventPullRequest": "建立或合併工作區 Pull Request",
+      "eventCreate": "新增請求、集合或環境",
+      "eventDelete": "刪除請求、集合或環境",
+      "eventUpdate": "編輯請求或集合",
       "digest": {
         "dayLabel": "星期",
-        "dayPlaceholder": "选择日期",
-        "timeLabel": "时间",
-        "timezoneLabel": "时区",
-        "timezonePlaceholder": "选择时区",
+        "dayPlaceholder": "選擇日期",
+        "timeLabel": "時間",
+        "timezoneLabel": "時區",
+        "timezonePlaceholder": "選擇時區",
         "everyday": "每天",
         "weekdays": "工作日",
-        "weekends": "周末"
+        "weekends": "週末"
       },
-      "connectPrompt": "连接你的 {appName} 账号以选择频道。",
-      "connectButton": "连接 {appName}",
-      "connecting": "连接中…",
-      "connectError": "无法连接到 {appName}，请重试。",
+      "connectPrompt": "連線你的 {appName} 賬號以選擇頻道。",
+      "connectButton": "連線 {appName}",
+      "connecting": "連線中…",
+      "connectError": "無法連線到 {appName}，請重試。",
       "cancel": "取消",
-      "submitCreate": "连接",
-      "submitEdit": "保存更改",
-      "createSuccess": "频道连接成功。",
-      "updateSuccess": "频道连接已更新。",
-      "createError": "频道集成连接失败。",
-      "updateError": "频道集成更新失败。"
+      "submitCreate": "連線",
+      "submitEdit": "儲存更改",
+      "createSuccess": "頻道連線成功。",
+      "updateSuccess": "頻道連線已更新。",
+      "createError": "頻道整合連線失敗。",
+      "updateError": "頻道整合更新失敗。"
     }
   },
   "monitorNotifications": {
     "title": "Monitor 通知",
-    "description": "持续跟踪您的 API 的健康状况和性能，并自动将每次 Monitor 运行的结果发送到 {appName} 频道。",
-    "addButton": "连接 Monitor",
+    "description": "持續跟蹤您的 API 的健康狀況和效能，並自動將每次 Monitor 執行的結果傳送到 {appName} 頻道。",
+    "addButton": "連線 Monitor",
     "table": {
       "monitor": "Monitor"
     },
     "pagination": {
-      "itemsPerPage": "每页条数",
-      "range": "第 {start}-{end} 条，共 {total} 条"
+      "itemsPerPage": "每頁條數",
+      "range": "第 {start}-{end} 條，共 {total} 條"
     },
     "modal": {
-      "createHeading": "连接频道",
-      "editHeading": "编辑 Monitor 集成",
+      "createHeading": "連線頻道",
+      "editHeading": "編輯 Monitor 整合",
       "monitorLabel": "Monitor",
-      "monitorPlaceholder": "选择 Monitor",
-      "frequencyLabel": "发送通知的场景…",
-      "frequencyAllRuns": "每次运行完成时",
-      "frequencyOnlyFailures": "仅失败时（以及之后首次成功运行时）",
+      "monitorPlaceholder": "選擇 Monitor",
+      "frequencyLabel": "傳送通知的場景…",
+      "frequencyAllRuns": "每次執行完成時",
+      "frequencyOnlyFailures": "僅失敗時（以及之後首次成功執行時）",
       "cancel": "取消",
-      "submitCreate": "连接",
-      "submitEdit": "保存更改",
-      "createSuccess": "Monitor 连接成功。",
-      "updateSuccess": "Monitor 连接已更新。",
-      "createError": "Monitor 集成连接失败。",
-      "updateError": "Monitor 集成更新失败。"
+      "submitCreate": "連線",
+      "submitEdit": "儲存更改",
+      "createSuccess": "Monitor 連線成功。",
+      "updateSuccess": "Monitor 連線已更新。",
+      "createError": "Monitor 整合連線失敗。",
+      "updateError": "Monitor 整合更新失敗。"
     }
   },
   "delete_modal": {
-    "heading": "删除集成？",
-    "body": "删除此集成后，它执行的所有操作将立即停止。确定要继续吗？",
-    "confirm": "删除集成",
-    "confirm_in_progress": "正在删除…",
+    "heading": "刪除整合？",
+    "body": "刪除此整合後，它執行的所有操作將立即停止。確定要繼續嗎？",
+    "confirm": "刪除整合",
+    "confirm_in_progress": "正在刪除…",
     "cancel": "取消",
-    "success": "集成已成功删除。",
-    "error": "删除集成时出错，请重试。"
+    "success": "整合已成功刪除。",
+    "error": "刪除整合時出錯，請重試。"
   },
   "integrationSections": {
     "actions": {
-      "connect": "添加集成",
-      "runlog_label": "查看运行日志",
-      "edit_label": "编辑集成",
-      "delete_label": "删除集成",
-      "creator_only_edit": "只有该集成的创建者才能编辑此配置。",
-      "creator_only_delete": "仅集成的创建者可以删除它。"
+      "connect": "新增整合",
+      "runlog_label": "檢視執行日誌",
+      "edit_label": "編輯整合",
+      "delete_label": "刪除整合",
+      "creator_only_edit": "只有該整合的建立者才能編輯此配置。",
+      "creator_only_delete": "僅整合的建立者可以刪除它。"
     },
     "columns": {
-      "name": "名称",
+      "name": "名稱",
       "monitor": "Monitor",
       "collection": "集合",
-      "entity": "实体",
-      "status": "状态",
-      "workspace": "工作区",
-      "created_by": "创建者",
-      "last_run": "上次运行"
+      "entity": "實體",
+      "status": "狀態",
+      "workspace": "工作區",
+      "created_by": "建立者",
+      "last_run": "上次執行"
     },
     "status": {
-      "running": "运行中",
+      "running": "執行中",
       "success": "成功",
-      "failed": "失败"
+      "failed": "失敗"
     },
     "empty_value": "—",
     "error": {
-      "title": "无法加载此集成的连接",
-      "description": "数据加载失败。",
-      "reload": "重新加载"
+      "title": "無法載入此整合的連線",
+      "description": "資料載入失敗。",
+      "reload": "重新載入"
     }
   },
   "slackWorkspaceSelect": {
-    "addWorkspace": "添加另一个工作区",
-    "connected": "已连接"
+    "addWorkspace": "新增另一個工作區",
+    "connected": "已連線"
   },
   "agentTasks": {
     "title": "Agent Tasks",
-    "description": "在 {appName} 中 @Postman 即可启动 Agent 模式任务，并在会话线程中查看状态更新。",
-    "connectedBadge": "已连接",
-    "otherTeamUsers_one": "+{count} 位其他团队成员",
-    "otherTeamUsers_other": "+{count} 位其他团队成员",
+    "description": "在 {appName} 中 @Postman 即可啟動 Agent 模式任務，並在會話執行緒中檢視狀態更新。",
+    "connectedBadge": "已連線",
+    "otherTeamUsers_one": "+{count} 位其他團隊成員",
+    "otherTeamUsers_other": "+{count} 位其他團隊成員",
     "table": {
-      "name": "名称",
-      "email": "邮箱",
-      "orgIdentifier": "Slack 工作区",
+      "name": "名稱",
+      "email": "郵箱",
+      "orgIdentifier": "Slack 工作區",
       "remove": "移除"
     },
     "connectModal": {
-      "heading": "连接 Agent Tasks",
-      "body": "请选择你要连接的 {appName} 工作区。",
+      "heading": "連線 Agent Tasks",
+      "body": "請選擇你要連線的 {appName} 工作區。",
       "cancel": "取消",
-      "confirm": "连接",
-      "noWorkspaces": "尚未连接任何 Slack 工作区。请先添加一个。"
+      "confirm": "連線",
+      "noWorkspaces": "尚未連線任何 Slack 工作區。請先新增一個。"
     },
-    "removeError": "无法为该工作区关闭 Agent Tasks，请重试。",
-    "enableError": "无法为该工作区启用 Agent Tasks，请重试。"
+    "removeError": "無法為該工作區關閉 Agent Tasks，請重試。",
+    "enableError": "無法為該工作區啟用 Agent Tasks，請重試。"
   }
 }

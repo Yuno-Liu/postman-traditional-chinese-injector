@@ -1,176 +1,176 @@
 {
   "issues_length": {
-    "singular": "{ count } 问题",
-    "plural": "{ count } 问题"
+    "singular": "{ count } 問題",
+    "plural": "{ count } 問題"
   },
   "collection": {
-    "issues": "问题",
-    "heading": "已知问题"
+    "issues": "問題",
+    "heading": "已知問題"
   },
   "modal": {
-    "heading": "添加到 Jira Cloud",
+    "heading": "新增到 Jira Cloud",
     "jira_action": {
-      "title": "选择选项",
-      "create": "创建新问题",
-      "connect": "连接现有问题"
+      "title": "選擇選項",
+      "create": "建立新問題",
+      "connect": "連線現有問題"
     },
     "form": {
       "field": {
         "site": {
-          "label": "站点",
-          "placeholder": "选择站点",
+          "label": "站點",
+          "placeholder": "選擇站點",
           "footer": {
-            "text": "没有看到您的网站列出？",
-            "button_text": "切换账户"
+            "text": "沒有看到您的網站列出？",
+            "button_text": "切換賬戶"
           }
         },
         "project": {
-          "label": "项目",
-          "placeholder": "输入搜索项目",
-          "empty_state_message": "没有找到项目"
+          "label": "專案",
+          "placeholder": "輸入搜尋專案",
+          "empty_state_message": "沒有找到專案"
         },
         "issue_type": {
-          "label": "工作类型",
-          "placeholder": "选择工作类型",
-          "empty_state_message": "未找到工作类型"
+          "label": "工作型別",
+          "placeholder": "選擇工作型別",
+          "empty_state_message": "未找到工作型別"
         },
         "summary": {
           "label": "摘要",
-          "placeholder": "响应返回 404"
+          "placeholder": "響應返回 404"
         },
         "description": {
           "label": "描述",
-          "placeholder": "添加与您发现的问题相关的任何其他详细信息。"
+          "placeholder": "新增與您發現的問題相關的任何其他詳細資訊。"
         },
         "assignee": {
-          "label": "经办人",
-          "placeholder": "选择经办人",
-          "empty_state_message": "未找到经办人"
+          "label": "經辦人",
+          "placeholder": "選擇經辦人",
+          "empty_state_message": "未找到經辦人"
         },
         "issue": {
-          "label": "问题",
-          "placeholder": "输入以搜索问题",
-          "empty_state_message": "没有发现问题"
+          "label": "問題",
+          "placeholder": "輸入以搜尋問題",
+          "empty_state_message": "沒有發現問題"
         },
         "comment": {
-          "label": "附加评论",
-          "placeholder": "添加与该问题相关的任何其他详细信息。"
+          "label": "附加評論",
+          "placeholder": "新增與該問題相關的任何其他詳細資訊。"
         },
         "response": {
-          "label": "在问题中包含响应",
-          "info_text": "将当前响应数据和元添加到问题描述中"
+          "label": "在問題中包含響應",
+          "info_text": "將當前響應資料和元新增到問題描述中"
         }
       },
       "errors": {
-        "required": "这是必填字段",
-        "invalid_date": "您输入的日期格式不正确，请使用 { format }",
-        "invalid_estimate": "您输入的估算格式不正确，请使用 [#w #d #h #m]"
+        "required": "這是必填欄位",
+        "invalid_date": "您輸入的日期格式不正確，請使用 { format }",
+        "invalid_estimate": "您輸入的估算格式不正確，請使用 [#w #d #h #m]"
       },
       "action": {
         "cancel": "取消",
-        "create": "创建问题",
-        "connect": "连接问题",
-        "show": "显示可选字段",
-        "hide": "隐藏可选字段"
+        "create": "建立問題",
+        "connect": "連線問題",
+        "show": "顯示可選欄位",
+        "hide": "隱藏可選欄位"
       }
     },
     "toast": {
       "success": {
         "title": {
-          "create": "Jira 问题已创建",
-          "connect": "Jira 问题已连接"
+          "create": "Jira 問題已建立",
+          "connect": "Jira 問題已連線"
         },
         "description": {
           "text": {
-            "create": "{ key } 已为此 { entityName } 创建。",
-            "connect": "{ key } 现在已连接到此 { entityName }。"
+            "create": "{ key } 已為此 { entityName } 建立。",
+            "connect": "{ key } 現在已連線到此 { entityName }。"
           },
-          "button_text": "查看"
+          "button_text": "檢視"
         }
       },
       "error": {
         "auth": {
-          "title": "出了点问题",
-          "description": "连接 Jira 时出现问题。请再试一次。"
+          "title": "出了點問題",
+          "description": "連線 Jira 時出現問題。請再試一次。"
         },
         "required_fields": {
-          "title": "填写 Jira 中的必填字段。添加请求链接到问题以在 Postman 中查看。"
+          "title": "填寫 Jira 中的必填欄位。新增請求連結到問題以在 Postman 中檢視。"
         },
         "permission_denied": {
           "create": {
-            "title": "您需要权限才能在此 Jira 项目中创建问题。选择另一个项目。"
+            "title": "您需要許可權才能在此 Jira 專案中建立問題。選擇另一個項目。"
           },
           "connect": {
-            "title": "您需要权限来编辑此 Jira 项目中的问题。选择另一个项目。"
+            "title": "您需要許可權來編輯此 Jira 專案中的問題。選擇另一個項目。"
           }
         },
         "not_allowed_value_fields": {
-          "title": "无法创建 Jira 问题：标签不能包含空格。"
+          "title": "無法建立 Jira 問題：標籤不能包含空格。"
         }
       }
     },
     "warning": {
       "fields": {
-        "title": "不支持某些必填字段",
-        "description": "要从 Postman 创建此问题，请选择其他工作类型或在 Jira 设置中将上述字段设为可选。"
+        "title": "不支援某些必填欄位",
+        "description": "要從 Postman 建立此問題，請選擇其他工作型別或在 Jira 設定中將上述欄位設為可選。"
       },
       "scopes": {
-        "title": "我们需要您再次登录 Jira。",
-        "text": "这使我们可以加载创建您的问题所需的所有字段。",
-        "sign_in_button": "登录"
+        "title": "我們需要您再次登入 Jira。",
+        "text": "這使我們可以載入建立您的問題所需的所有欄位。",
+        "sign_in_button": "登入"
       },
       "expired_token": {
-        "title": "请重新登录。您的令牌已过期。",
-        "sign_in_button": "登录"
+        "title": "請重新登入。您的令牌已過期。",
+        "sign_in_button": "登入"
       }
     }
   },
   "context_bar": {
     "blank_state": {
       "auth": {
-        "title": "登录 Jira Cloud 查看问题",
-        "sign_in_button": "登录"
+        "title": "登入 Jira Cloud 檢視問題",
+        "sign_in_button": "登入"
       },
       "issues": {
-        "title": "此 { type } 没有未解决的问题",
-        "see_resolved_issues": "查看已解决的问题"
+        "title": "此 { type } 沒有未解決的問題",
+        "see_resolved_issues": "檢視已解決的問題"
       }
     },
     "request": {
       "add_button": "新建",
       "assignee": {
-        "assigned": "分配给 { assignee }",
+        "assigned": "分配給 { assignee }",
         "unassigned": "未分配"
       }
     },
     "collection": {
       "heading": {
-        "singular": "{ count } 问题在此集合中",
-        "plural": "{ count } 问题在此集合中"
+        "singular": "{ count } 問題在此集合中",
+        "plural": "{ count } 問題在此集合中"
       }
     }
   },
   "popover": {
     "nudges": {
-      "heading": "跟踪并修复 Jira 中的故障",
+      "heading": "跟蹤並修復 Jira 中的故障",
       "actions": {
-        "log_issue": "记录问题",
+        "log_issue": "記錄問題",
         "dismiss": "忽略"
       },
       "collection_run": {
-        "description": "创建 Jira 问题以与您的团队共享运行结果、分配任务并更快地解决故障。"
+        "description": "建立 Jira 問題以與您的團隊共享執行結果、分配任務並更快地解決故障。"
       },
       "monitor": {
-        "description": "创建 Jira 问题以与您的团队共享监控结果、分配任务并更快地解决故障。"
+        "description": "建立 Jira 問題以與您的團隊共享監控結果、分配任務並更快地解決故障。"
       }
     },
     "meta_actions": {
-      "heading": "遇到意外错误？",
-      "description": "通过将此请求和响应附加到 Jira Cloud 上的新问题，帮助团队快速重现问题。"
+      "heading": "遇到意外錯誤？",
+      "description": "通過將此請求和響應附加到 Jira Cloud 上的新問題，幫助團隊快速重現問題。"
     },
     "context_bar": {
-      "heading": "这可能是一个已知问题",
-      "description": "您的团队已将一个或多个 Jira 问题与此请求相关联。查看当前问题以获取可能的解决方法，或者在遇到不同情况时报告新问题。"
+      "heading": "這可能是一個已知問題",
+      "description": "您的團隊已將一個或多個 Jira 問題與此請求相關聯。檢視當前問題以獲取可能的解決方法，或者在遇到不同情況時報告新問題。"
     },
     "cta_button": "知道了"
   }

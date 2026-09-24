@@ -1,222 +1,222 @@
 {
-  "heading": "身份验证",
+  "heading": "身份驗證",
   "domain_management_heading": "域名管理",
   "domains": {
-    "heading": "使用您的域管理帐户",
-    "subheading": "域有助于确定哪些帐户可以是您的团队的成员并由您的管理员管理。验证后，您可以为团队 <Strong>{teamName}</Strong> 启用帐户管理。了解有关<Link><Text>无人认领帐户管理</Text></Link>的更多信息。",
+    "heading": "使用您的域管理帳戶",
+    "subheading": "域有助於確定哪些帳戶可以是您的團隊的成員並由您的管理員管理。驗證後，您可以為團隊 <Strong>{teamName}</Strong> 啟用帳戶管理。瞭解有關<Link><Text>無人認領帳戶管理</Text></Link>的更多資訊。",
     "titles": {
-      "upgrade": "升级以使用域捕获",
-      "access_denied": "您无权访问",
-      "manage_accounts": "使用您的域管理帐户",
-      "manage_accounts_verified_domain": "使用您已验证的域名管理帐户"
+      "upgrade": "升級以使用域捕獲",
+      "access_denied": "您無權訪問",
+      "manage_accounts": "使用您的域管理帳戶",
+      "manage_accounts_verified_domain": "使用您已驗證的域名管理帳戶"
     },
     "descriptions": {
-      "upgrade": "只有拥有<Strong>企业计划</Strong>的团队才能在一个团队中添加和管理使用其组织的域创建的 Postman 帐户。了解有关<Link><Text>域名捕获</Text></Link>的更多信息",
-      "access_denied": "只有团队管理员可以管理域账户。",
-      "manage_accounts": "您需要配置一种单点登录 (SSO) 身份验证方法，以添加和管理在一个团队中使用组织的域创建的 Postman 帐户。了解有关<Link><Text>域名捕获</Text></Link>的更多信息",
-      "manage_accounts_verified_domain": "验证您的域，以在一个团队中添加和管理使用您组织的域创建的 Postman 帐户。<Link><Text>了解更多</Text></Link>有关添加域的好处。"
+      "upgrade": "只有擁有<Strong>企業計劃</Strong>的團隊才能在一個團隊中新增和管理使用其組織的域建立的 Postman 帳戶。瞭解有關<Link><Text>域名捕獲</Text></Link>的更多資訊",
+      "access_denied": "只有團隊管理員可以管理域賬戶。",
+      "manage_accounts": "您需要配置一種單點登入 (SSO) 身份驗證方法，以新增和管理在一個團隊中使用組織的域建立的 Postman 帳戶。瞭解有關<Link><Text>域名捕獲</Text></Link>的更多資訊",
+      "manage_accounts_verified_domain": "驗證您的域，以在一個團隊中新增和管理使用您組織的域建立的 Postman 帳戶。<Link><Text>瞭解更多</Text></Link>有關新增域的好處。"
     },
     "cta_buttons": {
-      "contact_sales": "联系销售人员",
-      "view_plans": "查看计划",
-      "configure_sso": "配置单点登录",
-      "add_domain": "添加域名"
+      "contact_sales": "聯絡銷售人員",
+      "view_plans": "檢視計劃",
+      "configure_sso": "配置單點登入",
+      "add_domain": "新增域名"
     },
     "blank_state": {
       "partner": {
-        "forbidden_message": "作为合作伙伴，您没有权限查看此页面。",
-        "primary_action": "查看合作伙伴工作区",
-        "secondary_action": "前往首页"
+        "forbidden_message": "作為合作伙伴，您沒有許可權檢視此頁面。",
+        "primary_action": "檢視合作伙伴工作區",
+        "secondary_action": "前往首頁"
       },
       "default": {
-        "forbidden_message": "您没有权限查看此页面。"
+        "forbidden_message": "您沒有許可權檢視此頁面。"
       },
       "manage_capture_domain": {
-        "forbidden_message": "只有团队管理员可以管理域账户。"
+        "forbidden_message": "只有團隊管理員可以管理域賬戶。"
       },
       "feature_not_available": {
-        "title": "您的 Postman 计划不提供域验证和捕获",
-        "description": "您需要升级才能添加和管理在一个团队中使用其组织的域创建的 Postman 帐户。了解有关<Link><Text>域名捕获</Text></Link>的更多信息",
-        "upgrade_button": "升级"
+        "title": "您的 Postman 計劃不提供域驗證和捕獲",
+        "description": "您需要升級才能新增和管理在一個團隊中使用其組織的域建立的 Postman 帳戶。瞭解有關<Link><Text>域名捕獲</Text></Link>的更多資訊",
+        "upgrade_button": "升級"
       }
     },
-    "you_don_t_have_access": "您无权访问"
+    "you_don_t_have_access": "您無權訪問"
   },
   "domains_orgs": {
-    "subheading": "域有助于确定哪些帐户可以是您组织的成员并由您的管理员管理。验证后，您可以为组织 <Strong>{teamName}</Strong> 启用帐户管理。了解有关<Link><Text>无人认领帐户管理</Text></Link>的更多信息。"
+    "subheading": "域有助於確定哪些帳戶可以是您組織的成員並由您的管理員管理。驗證後，您可以為組織 <Strong>{teamName}</Strong> 啟用帳戶管理。瞭解有關<Link><Text>無人認領帳戶管理</Text></Link>的更多資訊。"
   },
   "auth_methods": {
-    "heading": "为您的团队设置身份验证方法",
-    "description_sso": "在不同的单点登录身份验证提供商之间进行选择，为您的团队设置自定义身份验证方法。",
-    "add_auth_button": "添加认证方式",
-    "custom_auth_limit_reached": "您已设置允许的自定义身份验证方法的最大数量。",
-    "description_scim": "使用您的身份提供商轻松加入和管理 Postman 团队成员。",
-    "sso_methods_heading": "单点登录认证方法",
-    "default_methods_heading": "默认身份验证方法",
-    "default_methods_description": "管理默认身份验证方法",
+    "heading": "為您的團隊設定身份驗證方法",
+    "description_sso": "在不同的單點登入身份驗證提供商之間進行選擇，為您的團隊設定自定義身份驗證方法。",
+    "add_auth_button": "新增認證方式",
+    "custom_auth_limit_reached": "您已設定允許的自定義身份驗證方法的最大數量。",
+    "description_scim": "使用您的身份提供商輕鬆加入和管理 Postman 團隊成員。",
+    "sso_methods_heading": "單點登入認證方法",
+    "default_methods_heading": "預設身份驗證方法",
+    "default_methods_description": "管理預設身份驗證方法",
     "blank_state": {
       "error": {
-        "title": "出了点问题",
-        "description": "我们无法获取身份验证方案。"
+        "title": "出了點問題",
+        "description": "我們無法獲取身份驗證方案。"
       },
       "no_view_permission": {
-        "title": "您的 Postman 计划不提供单点登录 (SSO)",
-        "description": "您需要升级才能使用此功能"
+        "title": "您的 Postman 計劃不提供單點登入 (SSO)",
+        "description": "您需要升級才能使用此功能"
       },
-      "get_enterprise_plan": "升级"
+      "get_enterprise_plan": "升級"
     }
   },
   "auth_methods_orgs": {
-    "heading": "为您的组织设置身份验证方法",
-    "description_sso": "在不同的单点登录身份验证提供商之间进行选择，为您的组织设置自定义身份验证方法。",
-    "description_scim": "使用您的身份提供商轻松加入和管理 Postman 组织成员。"
+    "heading": "為您的組織設定身份驗證方法",
+    "description_sso": "在不同的單點登入身份驗證提供商之間進行選擇，為您的組織設定自定義身份驗證方法。",
+    "description_scim": "使用您的身份提供商輕鬆加入和管理 Postman 組織成員。"
   },
   "auth_method_table": {
     "error": {
-      "title": "出了点问题",
-      "description": "{enabled, select, true {禁用} other {启用}}身份验证方法时发生错误。一段时间后重试。"
+      "title": "出了點問題",
+      "description": "{enabled, select, true {停用} other {啟用}}身份驗證方法時發生錯誤。一段時間後重試。"
     },
     "bulk_toggle_error": {
-      "title": "无法{enabled, select, false {禁用} other {启用}}所有身份验证方法",
-      "description": "{enabled, select, false {禁用} other {启用}}默认身份验证方法时发生错误。一段时间后重试。"
+      "title": "無法{enabled, select, false {停用} other {啟用}}所有身份驗證方法",
+      "description": "{enabled, select, false {停用} other {啟用}}預設身份驗證方法時發生錯誤。一段時間後重試。"
     },
-    "edit_button": "编辑",
+    "edit_button": "編輯",
     "headers": {
-      "auth_method": "认证方式",
-      "status": "状态",
-      "sso_provider": "单点登录提供商"
+      "auth_method": "認證方式",
+      "status": "狀態",
+      "sso_provider": "單點登入提供商"
     }
   },
   "scim_provisioning": {
     "heading": "SCIM 配置",
-    "description": "启用后，您可以使用身份提供商轻松加入和管理 Postman 团队成员。了解有关<Link><Text>SCIM 配置</Text></Link>的更多信息。",
-    "generate_scim_api_key_button": "生成 SCIM API 密钥"
+    "description": "啟用後，您可以使用身份提供商輕鬆加入和管理 Postman 團隊成員。瞭解有關<Link><Text>SCIM 配置</Text></Link>的更多資訊。",
+    "generate_scim_api_key_button": "生成 SCIM API 金鑰"
   },
   "scim_provisioning_orgs": {
-    "description": "启用后，您可以使用身份提供商轻松加入和管理 Postman 组织成员。了解有关<Link><Text>SCIM 配置</Text></Link>的更多信息。"
+    "description": "啟用後，您可以使用身份提供商輕鬆加入和管理 Postman 組織成員。瞭解有關<Link><Text>SCIM 配置</Text></Link>的更多資訊。"
   },
   "generate_scim_api_key_modal": {
     "heading": {
-      "copy_scim_api_key": "复制您的 SCIM API 密钥",
-      "generate_a_scim_api_key": "生成 SCIM API 密钥"
+      "copy_scim_api_key": "複製您的 SCIM API 金鑰",
+      "generate_a_scim_api_key": "生成 SCIM API 金鑰"
     },
-    "banner_msg": "请确保现在复制此 API 密钥。这是您唯一一次看到它未加密。",
-    "description": "使用此 API 密钥授权您的身份提供商访问 Postman 上的团队。",
+    "banner_msg": "請確保現在複製此 API 金鑰。這是您唯一一次看到它未加密。",
+    "description": "使用此 API 金鑰授權您的身份提供商訪問 Postman 上的團隊。",
     "generate_button": "生成",
-    "key_name_label": "密钥名称",
-    "copy_to_clipboard": "复制到剪贴板",
-    "copy_to_clipboard_msg": "复制到剪贴板",
-    "copied_msg": "复制了！",
+    "key_name_label": "金鑰名稱",
+    "copy_to_clipboard": "複製到剪貼簿",
+    "copy_to_clipboard_msg": "複製到剪貼簿",
+    "copied_msg": "複製了！",
     "error": {
-      "title": "出了点问题",
-      "description": "无法创建 API 密钥"
+      "title": "出了點問題",
+      "description": "無法建立 API 金鑰"
     }
   },
   "scim_provisioning_switch_modal": {
-    "heading": "{enabled, select, true {关闭} other {开启}} SCIM 配置？",
-    "enabled_description": "当 SCIM 关闭时，您无法使用身份提供商加入或管理 {teamName} 团队的成员。您的所有 SCIM API 密钥都将变为非活动状态。",
-    "other_description": "当 SCIM 启用时，团队成员只能由团队管理员删除，或使用您的身份提供商取消配置。",
+    "heading": "{enabled, select, true {關閉} other {開啟}} SCIM 配置？",
+    "enabled_description": "當 SCIM 關閉時，您無法使用身份提供商加入或管理 {teamName} 團隊的成員。您的所有 SCIM API 金鑰都將變為非活動狀態。",
+    "other_description": "當 SCIM 啟用時，團隊成員只能由團隊管理員刪除，或使用您的身份提供商取消配置。",
     "cancel_button": "取消",
-    "primary_button": "{enabled, select, true {关闭} other {开启}}",
+    "primary_button": "{enabled, select, true {關閉} other {開啟}}",
     "success": {
-      "description": "SCIM 配置已{enabled, select, true {关闭} other {开启}}"
+      "description": "SCIM 配置已{enabled, select, true {關閉} other {開啟}}"
     },
     "error": {
-      "title": "出了点问题",
-      "description": "更新 SCIM 设置时出错。"
+      "title": "出了點問題",
+      "description": "更新 SCIM 設定時出錯。"
     }
   },
   "scim_api_keys_table": {
     "headers": {
-      "key_name": "密钥名称",
-      "api_key": "API 密钥",
-      "created_by": "创建者",
+      "key_name": "金鑰名稱",
+      "api_key": "API 金鑰",
+      "created_by": "建立者",
       "expiry_date": "到期日",
-      "status": "状态"
+      "status": "狀態"
     },
-    "identifier_tooltip": "出于安全原因，您的 API 密钥已被屏蔽。您只能在生成后立即查看未屏蔽的 API 密钥。"
+    "identifier_tooltip": "出於安全原因，您的 API 金鑰已被遮蔽。您只能在生成後立即檢視未遮蔽的 API 金鑰。"
   },
   "api_key_dropdown": {
     "options": {
       "regenerate": "重新生成",
-      "rename": "重命名",
-      "delete": "删除"
+      "rename": "重新命名",
+      "delete": "刪除"
     }
   },
   "delete_scim_api_key_modal": {
-    "heading": "删除 API 密钥？",
-    "description": "您的身份提供商将无法使用 {selectedApiKeyName} API 密钥来访问您的团队。",
+    "heading": "刪除 API 金鑰？",
+    "description": "您的身份提供商將無法使用 {selectedApiKeyName} API 金鑰來訪問您的團隊。",
     "cancel_button": "取消",
-    "delete_button": "删除 API 密钥",
+    "delete_button": "刪除 API 金鑰",
     "success": {
-      "title": "SCIM API 密钥被删除",
-      "description": "您已成功删除 SCIM API 密钥"
+      "title": "SCIM API 金鑰被刪除",
+      "description": "您已成功刪除 SCIM API 金鑰"
     },
     "error": {
-      "title": "SCIM API 密钥未删除",
-      "description": "我们无法删除 SCIM API 密钥。请再次尝试删除。"
+      "title": "SCIM API 金鑰未刪除",
+      "description": "我們無法刪除 SCIM API 金鑰。請再次嘗試刪除。"
     }
   },
   "scim_api_key_status": {
     "error": {
-      "title": "出了点问题",
-      "description": "更新 API 密钥时发生错误。一段时间后重试。"
+      "title": "出了點問題",
+      "description": "更新 API 金鑰時發生錯誤。一段時間後重試。"
     },
-    "api_key_revoked_tooltip": "SCIM API 密钥已过期"
+    "api_key_revoked_tooltip": "SCIM API 金鑰已過期"
   },
   "regenerate_scim_api_key_modal": {
-    "heading": "重新生成 SCIM API 密钥",
-    "banner": "立即复制您未加密的 API 密钥。此后它将被屏蔽以确保其安全。",
-    "description": "确保更新身份提供商中的 API 密钥以授权其访问您的团队。",
-    "subheading": "您的 API 密钥",
-    "copy_button_tooltip": "复制到剪贴板",
-    "close_button": "关闭",
-    "copy_to_clipboard_button": "复制到剪贴板",
-    "regenerate_scim_api_key_description": "这将重新生成您的密钥名称 API 密钥并为您提供一个新密钥。您现有的密钥将在 6 小时内自动删除。",
-    "delete_check_box_label": "立即删除现有密钥",
+    "heading": "重新生成 SCIM API 金鑰",
+    "banner": "立即複製您未加密的 API 金鑰。此後它將被遮蔽以確保其安全。",
+    "description": "確保更新身份提供商中的 API 金鑰以授權其訪問您的團隊。",
+    "subheading": "您的 API 金鑰",
+    "copy_button_tooltip": "複製到剪貼簿",
+    "close_button": "關閉",
+    "copy_to_clipboard_button": "複製到剪貼簿",
+    "regenerate_scim_api_key_description": "這將重新生成您的金鑰名稱 API 金鑰併為您提供一個新金鑰。您現有的金鑰將在 6 小時內自動刪除。",
+    "delete_check_box_label": "立即刪除現有金鑰",
     "cancel_button": "取消",
-    "regenerate_button": "重新生成 API 密钥",
+    "regenerate_button": "重新生成 API 金鑰",
     "success": {
-      "title": "SCIM API 密钥已重新生成",
-      "description": "确保更新身份提供商中的 API 密钥以授权其访问您的团队。"
+      "title": "SCIM API 金鑰已重新生成",
+      "description": "確保更新身份提供商中的 API 金鑰以授權其訪問您的團隊。"
     },
     "error": {
-      "title": "出了点问题",
-      "description": "轮换 SCIM API 密钥时发生错误。一段时间后重试。"
+      "title": "出了點問題",
+      "description": "輪換 SCIM API 金鑰時發生錯誤。一段時間後重試。"
     }
   },
   "rename_scim_api_key_modal": {
     "success": {
-      "description": "SCIM API 密钥已成功重命名",
+      "description": "SCIM API 金鑰已成功重新命名",
       "title": "成功"
     },
     "error": {
-      "description": "无法重命名 SCIM API 密钥",
-      "title": "出了点问题"
+      "description": "無法重新命名 SCIM API 金鑰",
+      "title": "出了點問題"
     }
   },
   "api_key_rename_modal": {
-    "heading": "将您的 {apiKeyType, select, SCIM_API_Key {SCIM API Key} other {API Key}} 重命名",
-    "input_api_key_helper_text": "这将帮助您识别并轻松管理您的 {apiKeyType, select, SCIM_API_Key {SCIM API Keys} other {API Keys}}。",
+    "heading": "將您的 {apiKeyType, select, SCIM_API_Key {SCIM API Key} other {API Key}} 重新命名",
+    "input_api_key_helper_text": "這將幫助您識別並輕鬆管理您的 {apiKeyType, select, SCIM_API_Key {SCIM API Keys} other {API Keys}}。",
     "cancel_button": "取消",
-    "rename_button": "重命名"
+    "rename_button": "重新命名"
   },
   "signup_instruction": {
-    "heading": "登录说明",
-    "description": "在登录屏幕上显示自定义消息以帮助 {teamName} 成员登录。",
-    "visibility_warning": "任何到达您的登录页面的人都可以看到此消息。",
-    "message_label": "信息",
-    "link_label": "链接",
-    "optional": "（可选）",
-    "message_placeholder": "例如请联系 #it-support 获取登录帮助。",
+    "heading": "登入說明",
+    "description": "在登入螢幕上顯示自定義訊息以幫助 {teamName} 成員登入。",
+    "visibility_warning": "任何到達您的登入頁面的人都可以看到此訊息。",
+    "message_label": "資訊",
+    "link_label": "連結",
+    "optional": "（可選）",
+    "message_placeholder": "例如請聯絡 #it-support 獲取登入幫助。",
     "link_placeholder": "https://your-company.com/it-support",
-    "saving": "保存...",
-    "saved": "已保存",
+    "saving": "儲存...",
+    "saved": "已儲存",
     "error": {
-      "save_title": "保存指令失败",
-      "save_description": "出了点问题。请再试一次。",
-      "invalid_url": "URL 必须以 https:// 开头并包含有效的域。",
-      "message_too_long": "消息不能超过 100 个字符。"
+      "save_title": "儲存指令失敗",
+      "save_description": "出了點問題。請再試一次。",
+      "invalid_url": "URL 必須以 https:// 開頭並包含有效的域。",
+      "message_too_long": "訊息不能超過 100 個字元。"
     }
   }
 }

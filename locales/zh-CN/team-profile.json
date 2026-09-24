@@ -1,78 +1,78 @@
 {
   "growth": {
-    "title": "设置您的团队",
-    "url_subtitle": "您将使用此 URL 来访问 Postman",
-    "files_selected": "已选择 {numFiles} 文件",
-    "collections_selected": "已选择 {count} 个集合",
+    "title": "設定您的團隊",
+    "url_subtitle": "您將使用此 URL 來訪問 Postman",
+    "files_selected": "已選擇 {numFiles} 檔案",
+    "collections_selected": "已選擇 {count} 個集合",
     "select_collection_button": {
-      "text": "选择集合"
+      "text": "選擇集合"
     },
     "edit_domain_button": {
-      "text": "编辑"
+      "text": "編輯"
     },
     "import_file_button": {
-      "text": "导入 JSON 文件"
+      "text": "匯入 JSON 檔案"
     },
     "upload_team_image_modal": {
-      "title": "上传团队徽标",
-      "body": "上传自定义徽标，让您的团队有宾至如归的感觉。最大大小：2 MB"
+      "title": "上傳團隊徽標",
+      "body": "上傳自定義徽標，讓您的團隊有賓至如歸的感覺。最大大小：2 MB"
     },
-    "tooltip_text": "选择要导入或移动的项目，然后才能继续。您也可以选择“还没有”。",
+    "tooltip_text": "選擇要匯入或移動的專案，然後才能繼續。您也可以選擇“還沒有”。",
     "error": {
       "file_read": {
-        "title": "无法读取文件"
+        "title": "無法讀取檔案"
       },
       "update_team_discovery": {
-        "title": "请提供团队详细信息"
+        "title": "請提供團隊詳細資訊"
       },
       "move_collection": {
-        "title": "出了点问题",
-        "description": "尝试移动您的集合时发生错误"
+        "title": "出了點問題",
+        "description": "嘗試移動您的集合時發生錯誤"
       }
     },
     "workspace": {
-      "name": "{workspace} 工作区",
+      "name": "{workspace} 工作區",
       "selected_collection": {
         "text": "{collection, plural, one {集合} other {集合}}"
       },
       "team_discovery": {
-        "message": "您为您的团队 {domain} 团队发现功能。",
-        "title": "团队发现是 {domain}",
-        "profile_title": "团队发现",
-        "description": "团队发现可让组织中的人员看到您的团队和请求并加入。",
-        "turn_on": "打开团队发现"
+        "message": "您為您的團隊 {domain} 團隊發現功能。",
+        "title": "團隊發現是 {domain}",
+        "profile_title": "團隊發現",
+        "description": "團隊發現可讓組織中的人員看到您的團隊和請求並加入。",
+        "turn_on": "開啟團隊發現"
       },
       "import_collections": {
-        "description": "已成功将 {count, plural, one {# 个集合} other {# 个集合}} 导入到此工作区。"
+        "description": "已成功將 {count, plural, one {# 個集合} other {# 個集合}} 匯入到此工作區。"
       },
       "move_collections": {
-        "description": "您的集合将很快被移动。",
-        "message": "已成功将 {count, plural, one {# 个集合} other {# 个集合}} 移动到此工作区。"
+        "description": "您的集合將很快被移動。",
+        "message": "已成功將 {count, plural, one {# 個集合} other {# 個集合}} 移動到此工作區。"
       },
-      "continue": "继续"
+      "continue": "繼續"
     },
     "input": {
-      "name": "团队名称",
-      "url": "团队 URL",
-      "workspace_name": "新团队工作区名称",
+      "name": "團隊名稱",
+      "url": "團隊 URL",
+      "workspace_name": "新團隊工作區名稱",
       "add_existing_api": {
-        "label": "您想添加现有的 API 项目吗？",
+        "label": "您想新增現有的 API 專案嗎？",
         "options": {
           "yes": "是的",
-          "not_yet": "还没有"
+          "not_yet": "還沒有"
         }
       },
       "existing_api_selection": {
-        "label": "您想如何添加您的项目？",
+        "label": "您想如何新增您的專案？",
         "options": {
-          "import_from_local": "从本地导入",
-          "move_from_workspace": "从工作区移动"
+          "import_from_local": "從本地匯入",
+          "move_from_workspace": "從工作區移動"
         }
       }
     },
     "select_collections": {
-      "get_started": "开始使用现有集合",
-      "description": "帮助您的团队通过将 API 项目移动或导入到新的团队工作区<br />来快速上手。"
+      "get_started": "開始使用現有集合",
+      "description": "幫助您的團隊通過將 API 專案移動或匯入到新的團隊工作區<br />來快速上手。"
     }
   }
 }

@@ -1,150 +1,150 @@
 {
   "tab_title": "新建 Mock",
   "sections": {
-    "source": "来源",
-    "access": "访问权限",
-    "state": "状态",
-    "state_info": "使用 <code>pm.state</code> 管理 Mock 中的有状态数据。"
+    "source": "來源",
+    "access": "訪問許可權",
+    "state": "狀態",
+    "state_info": "使用 <code>pm.state</code> 管理 Mock 中的有狀態資料。"
   },
   "form": {
     "heading": "新建 Mock",
-    "name_label": "名称",
+    "name_label": "名稱",
     "name_default": "新建 Mock",
-    "name_placeholder": "你想模拟的服务或功能",
-    "name_required_tooltip": "为 mock 命名以继续。",
+    "name_placeholder": "你想模擬的服務或功能",
+    "name_required_tooltip": "為 mock 命名以繼續。",
     "url_label": "Mock URL",
-    "local_port_label": "端口",
+    "local_port_label": "埠",
     "local_url_helper": "",
-    "check_availability_cta": "检查",
-    "check_port_cta": "检查",
-    "port_available": "端口可用。",
-    "port_unavailable": "端口已被使用。选择一个不同的。",
-    "port_check_failed": "无法检查端口可用性。再试一次。",
-    "slug_unavailable": "slug 已被占用，请选择其他的。",
-    "slug_check_failed": "无法检查 slug 可用性。再试一次。",
-    "submit_cta": "创建 Mock",
+    "check_availability_cta": "檢查",
+    "check_port_cta": "檢查",
+    "port_available": "埠可用。",
+    "port_unavailable": "埠已被使用。選擇一個不同的。",
+    "port_check_failed": "無法檢查埠可用性。再試一次。",
+    "slug_unavailable": "slug 已被佔用，請選擇其他的。",
+    "slug_check_failed": "無法檢查 slug 可用性。再試一次。",
+    "submit_cta": "建立 Mock",
     "cancel_cta": "取消",
-    "create_in_progress": "创建中…",
+    "create_in_progress": "建立中…",
     "deploy_heading": "新建 Mock Server",
-    "deploy_cta": "创建并部署",
+    "deploy_cta": "建立並部署",
     "deploy_in_progress": "部署中…"
   },
   "cloud_config": {
-    "badge": "云",
-    "summary": "（可选）",
-    "summary_tooltip": "推送到云端，在 Postman 服务器上运行您的 Mock。",
+    "badge": "雲",
+    "summary": "（可選）",
+    "summary_tooltip": "推送到雲端，在 Postman 伺服器上執行您的 Mock。",
     "collapsed_action": "配置",
-    "description": "推送到云端，在 Postman 服务器上运行您的 Mock。",
+    "description": "推送到雲端，在 Postman 伺服器上執行您的 Mock。",
     "url_label": "URL",
-    "mock_auth_label": "访问权限"
+    "mock_auth_label": "訪問許可權"
   },
   "source_selector": {
-    "section_label": "选择来源",
+    "section_label": "選擇來源",
     "blank": {
-      "label": "从模板开始"
+      "label": "從模板開始"
     },
     "spec": {
-      "label": "规范",
-      "helper": "响应根据所选的 API 规范生成。",
-      "picker_placeholder": "选择一个规范",
-      "picker_empty": "此工作区尚无规格。"
+      "label": "規範",
+      "helper": "響應根據所選的 API 規範生成。",
+      "picker_placeholder": "選擇一個規範",
+      "picker_empty": "此工作區尚無規格。"
     },
     "collection": {
       "label": "集合",
-      "helper": "响应根据集合中保存的示例生成。",
-      "picker_placeholder": "选择或创建集合",
-      "picker_empty": "此工作区中还没有收藏。"
+      "helper": "響應根據集合中儲存的示例生成。",
+      "picker_placeholder": "選擇或建立集合",
+      "picker_empty": "此工作區中還沒有收藏。"
     }
   },
   "mock_server_create": {
-    "source_label": "生成来源"
+    "source_label": "生成來源"
   },
   "mock_source_picker": {
     "tab_all": "全部",
     "tab_mocks": "Mock",
     "tab_collections": "集合",
     "tab_specs": "Spec",
-    "search_placeholder": "搜索…",
-    "empty": "这里还是空的。请创建一个 Mock，或通过集合、Spec 生成后部署。",
-    "empty_collection": "这里还是空的。创建一个集合即可开始。",
-    "empty_spec": "这里还是空的。创建一个 Spec 即可开始。",
-    "empty_mock": "这里还是空的。创建一个 Mock 即可开始。",
-    "empty_short": "这里还是空的。",
+    "search_placeholder": "搜尋…",
+    "empty": "這裡還是空的。請建立一個 Mock，或通過集合、Spec 生成後部署。",
+    "empty_collection": "這裡還是空的。建立一個集合即可開始。",
+    "empty_spec": "這裡還是空的。建立一個 Spec 即可開始。",
+    "empty_mock": "這裡還是空的。建立一個 Mock 即可開始。",
+    "empty_short": "這裡還是空的。",
     "change_source": "更改",
-    "create_collection": "创建集合",
-    "create_spec": "创建 Spec",
-    "create_mock": "创建 Mock",
-    "empty_import": "导入"
+    "create_collection": "建立集合",
+    "create_spec": "建立 Spec",
+    "create_mock": "建立 Mock",
+    "empty_import": "匯入"
   },
   "sync": {
-    "keep_in_sync_collection_label": "集合变更时自动更新此 Mock",
-    "keep_in_sync_spec_label": "API 规范变更时自动更新此 Mock",
-    "keep_in_sync_collection_label_local": "集合变更时自动更新此 Mock（推送到云端后生效）",
-    "keep_in_sync_spec_label_local": "API 规范变更时自动更新此 Mock（推送到云端后生效）",
-    "keep_in_sync_collection_helper": "当集合/API 规范发生变化时自动重新生成。",
-    "keep_in_sync_spec_helper": "当集合/API 规范发生变化时自动重新生成。",
-    "keep_in_sync_collection_helper_local": "推送到云端后，当集合/API 规范发生变化时自动重新生成。",
-    "keep_in_sync_spec_helper_local": "推送到云端后，当集合/API 规范发生变化时自动重新生成。"
+    "keep_in_sync_collection_label": "集合變更時自動更新此 Mock",
+    "keep_in_sync_spec_label": "API 規範變更時自動更新此 Mock",
+    "keep_in_sync_collection_label_local": "集合變更時自動更新此 Mock（推送到雲端後生效）",
+    "keep_in_sync_spec_label_local": "API 規範變更時自動更新此 Mock（推送到雲端後生效）",
+    "keep_in_sync_collection_helper": "當集合/API 規範發生變化時自動重新生成。",
+    "keep_in_sync_spec_helper": "當集合/API 規範發生變化時自動重新生成。",
+    "keep_in_sync_collection_helper_local": "推送到雲端後，當集合/API 規範發生變化時自動重新生成。",
+    "keep_in_sync_spec_helper_local": "推送到雲端後，當集合/API 規範發生變化時自動重新生成。"
   },
   "import_area": {
-    "idle_inline": "拖入集合或 Spec，或<browse>浏览文件</browse>",
-    "file_replace": "替换",
+    "idle_inline": "拖入集合或 Spec，或<browse>瀏覽檔案</browse>",
+    "file_replace": "替換",
     "file_remove": "移除"
   },
   "ai_section": {
     "divider_text": "或",
-    "title": "使用 Postman AI 进行创作",
+    "title": "使用 Postman AI 進行創作",
     "local": {
       "card_mock_external": {
-        "title": "Mock 您代码库中的外部 API",
-        "description": "我们将扫描您的存储库中的出站呼叫，并建立一个像这些服务一样响应的本地 mock 。"
+        "title": "Mock 您程式碼庫中的外部 API",
+        "description": "我們將掃描您的儲存庫中的出站呼叫，並建立一個像這些服務一樣響應的本地 mock 。"
       },
       "card_mock_own": {
         "title": "Mock 您自己的 API",
-        "description": "创建您的服务公开的端点的数字孪生。"
+        "description": "建立您的服務公開的端點的數字孿生。"
       }
     },
     "cloud": {
       "card_mock_external": {
-        "title": "Mock 我的服务所依赖的外部 API",
-        "description": "描述 API 和 Postman AI 将为您创建 mock。"
+        "title": "Mock 我的服務所依賴的外部 API",
+        "description": "描述 API 和 Postman AI 將為您建立 mock。"
       },
       "card_generate_new": {
-        "title": "端到端结账服务",
-        "description": "使用端点、模式和实际示例数据绘制端到端的全新服务。"
+        "title": "端到端結賬服務",
+        "description": "使用端點、模式和實際示例資料繪製端到端的全新服務。"
       }
     }
   },
   "mock_auth": {
-    "public_label": "将此 Mock 设为公开",
-    "summary": "默认私有：仅工作区成员或提供有效的 <code>x-api-key</code> 才能调用。设为公开后，任何拥有该 URL 的人都可以访问。"
+    "public_label": "將此 Mock 設為公開",
+    "summary": "預設私有：僅工作區成員或提供有效的 <code>x-api-key</code> 才能呼叫。設為公開後，任何擁有該 URL 的人都可以訪問。"
   },
   "deploy_modal": {
     "title": "部署配置",
-    "redeploy_title": "重新部署 Mock 服务",
-    "name_label": "名称",
-    "name_placeholder": "为部署的 Mock Server 输入名称",
+    "redeploy_title": "重新部署 Mock 服務",
+    "name_label": "名稱",
+    "name_placeholder": "為部署的 Mock Server 輸入名稱",
     "url_label": "URL",
-    "public_label": "允许公开访问",
-    "access_helper": "私有 Mock 需要携带有效的 <code>x-api-key</code> 请求头才能访问。",
-    "sessions_label": "启用会话",
-    "sessions_helper": "每个调用方都会获得一份独立的 Mock 状态副本，通过 <code>x-mock-session</code> 请求头或 <code>pm_mock_session</code> Cookie 进行标识。",
-    "auto_deploy_label": "Mock 变更时自动部署",
-    "auto_deploy_helper": "Mock 发生变更时重新部署 Mock Server。",
+    "public_label": "允許公開訪問",
+    "access_helper": "私有 Mock 需要攜帶有效的 <code>x-api-key</code> 請求頭才能訪問。",
+    "sessions_label": "啟用會話",
+    "sessions_helper": "每個呼叫方都會獲得一份獨立的 Mock 狀態副本，通過 <code>x-mock-session</code> 請求頭或 <code>pm_mock_session</code> Cookie 進行標識。",
+    "auto_deploy_label": "Mock 變更時自動部署",
+    "auto_deploy_helper": "Mock 發生變更時重新部署 Mock Server。",
     "deploy_button": "部署",
     "redeploy_button": "重新部署",
     "cancel_button": "取消"
   },
   "errors": {
-    "unsupported_input": "无法将此文件识别为集合或规范。",
-    "unsupported_spec_version": "暂不支持此 API Spec 版本。",
-    "name_required": "Mock 名称为必填项。",
-    "local_port_invalid": "输入 1 到 65535 之间的端口。",
-    "slug_invalid": "使用小写字母、数字或连字符。必须以字母或数字开头。",
-    "source_picker_required_spec": "选择 OpenAPI 规范或拖放文件以继续。",
-    "source_picker_required_collection": "选择集合或拖放文件以继续。",
-    "source_picker_required_existing": "请选择一个代码 Mock 以继续。",
-    "cloud_spec_fetch_failed": "无法从此工作区加载该规范。稍后再试一次。",
-    "cloud_collection_fetch_failed": "无法从此工作区加载集合。稍后再试一次。"
+    "unsupported_input": "無法將此檔案識別為集合或規範。",
+    "unsupported_spec_version": "暫不支援此 API Spec 版本。",
+    "name_required": "Mock 名稱為必填項。",
+    "local_port_invalid": "輸入 1 到 65535 之間的埠。",
+    "slug_invalid": "使用小寫字母、數字或連字元。必須以字母或數字開頭。",
+    "source_picker_required_spec": "選擇 OpenAPI 規範或拖放檔案以繼續。",
+    "source_picker_required_collection": "選擇集合或拖放檔案以繼續。",
+    "source_picker_required_existing": "請選擇一個程式碼 Mock 以繼續。",
+    "cloud_spec_fetch_failed": "無法從此工作區載入該規範。稍後再試一次。",
+    "cloud_collection_fetch_failed": "無法從此工作區載入集合。稍後再試一次。"
   }
 }

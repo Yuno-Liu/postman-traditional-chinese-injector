@@ -1,6 +1,6 @@
 {
   "bulk_delete": {
-    "label": "{count, plural, one {# 个 API} other {# 个 API}}"
+    "label": "{count, plural, one {# 個 API} other {# 個 API}}"
   },
   "entity_type_icon": {
     "label": "API"

@@ -1,43 +1,43 @@
 {
   "steps": {
     "intro": {
-      "header": "欢迎！让我们开始吧🚀",
-      "description": "新来的？没问题！我们精心制作了一份快速的分步指南，帮助您了解基础知识。",
-      "minimized_content": "从这里开始🚀",
-      "time_estimate": "3 个步骤 · 3-5 分钟",
-      "cta_text": "开始使用"
+      "header": "歡迎！讓我們開始吧🚀",
+      "description": "新來的？沒問題！我們精心製作了一份快速的分步指南，幫助您瞭解基礎知識。",
+      "minimized_content": "從這裡開始🚀",
+      "time_estimate": "3 個步驟 · 3-5 分鐘",
+      "cta_text": "開始使用"
     },
     "send_request": {
-      "header": "首先发送请求",
-      "description": "通过创建并发送请求来测试 API 的行为。",
-      "minimized_content": "从这里开始🚀"
+      "header": "首先傳送請求",
+      "description": "通過建立併傳送請求來測試 API 的行為。",
+      "minimized_content": "從這裡開始🚀"
     },
     "save_collection": {
-      "header": "保存您的请求以便再次轻松访问它",
-      "description": "将您的请求保存到集合，让您的请求井井有条并触手可及。\n\n提示：使用 ⌘S 可以快速保存。",
+      "header": "儲存您的請求以便再次輕鬆訪問它",
+      "description": "將您的請求儲存到集合，讓您的請求井井有條並觸手可及。\n\n提示：使用 ⌘S 可以快速儲存。",
       "minimized_content": "你做得很好💪"
     },
     "use_postbot": {
-      "header": "使用 Postbot 增强您的请求",
-      "description": "让 Postbot 验证您的响应、调试问题、添加文档等。",
+      "header": "使用 Postbot 增強您的請求",
+      "description": "讓 Postbot 驗證您的響應、除錯問題、新增檔案等。",
       "minimized_content": "快完成了🙌"
     },
     "finished": {
       "header": "太棒了🎉",
-      "description": "创建您的第一个集合，干得好！现在探索更多方法来改进您的 API 工作流程。",
-      "minimized_content": "✅ 接下来是什么？",
-      "add_variables": "添加变量",
-      "document": "记录您的 API",
-      "automate": "自动化 API 测试",
+      "description": "建立您的第一個集合，幹得好！現在探索更多方法來改進您的 API 工作流程。",
+      "minimized_content": "✅ 接下來是什麼？",
+      "add_variables": "新增變數",
+      "document": "記錄您的 API",
+      "automate": "自動化 API 測試",
       "templates": "探索模板"
     },
-    "dont_show_button_text": "不再显示",
-    "skip_button_text": "跳过步骤",
-    "show_button_text": "告诉我怎么做"
+    "dont_show_button_text": "不再顯示",
+    "skip_button_text": "跳過步驟",
+    "show_button_text": "告訴我怎麼做"
   },
-  "guide_title": "您的入门指南",
+  "guide_title": "您的入門指南",
   "save_popover": {
-    "description": "从此处保存请求或使用键盘上的 {shortcut}。",
+    "description": "從此處儲存請求或使用鍵盤上的 {shortcut}。",
     "cta_text": "知道了"
   }
 }

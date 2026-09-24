@@ -2,198 +2,198 @@
   "address_bar": {
     "url_input": {
       "placeholder": {
-        "enter_url": "输入URL",
-        "tls_message": "使用 mqtts:// 通过 TLS 连接"
+        "enter_url": "輸入URL",
+        "tls_message": "使用 mqtts:// 通過 TLS 連線"
       },
-      "error": "URL 为必填项"
+      "error": "URL 為必填項"
     },
     "client_id_input": {
-      "client_id": "客户端 ID",
+      "client_id": "客戶端 ID",
       "id": "ID："
     },
     "version_switcher": {
-      "tooltip": "连接时无法更改版本"
+      "tooltip": "連線時無法更改版本"
     },
     "connect_button": {
       "tooltip": {
-        "no_permission": "您没有权限在此工作区中执行此操作。"
+        "no_permission": "您沒有許可權在此工作區中執行此操作。"
       }
     }
   },
   "agent": {
     "errors": {
-      "agent_not_connected": "切换到 Postman 桌面代理以与 MQTT 代理服务器连接。",
-      "agent_not_supported": "您正在使用旧版版本的 Postman 桌面代理，它不支持 MQTT 请求。更新桌面代理并重试。",
-      "agent_not_ready": "确保桌面代理已安装并正在运行。"
+      "agent_not_connected": "切換到 Postman 桌面代理以與 MQTT 代理伺服器連線。",
+      "agent_not_supported": "您正在使用舊版版本的 Postman 桌面代理，它不支援 MQTT 請求。更新桌面代理並重試。",
+      "agent_not_ready": "確保桌面代理已安裝並正在執行。"
     }
   },
   "compose_area": {
     "headers": {
-      "editor": "编辑器",
-      "saved_messages": "已保存的消息"
+      "editor": "編輯器",
+      "saved_messages": "已儲存的訊息"
     },
     "toolbar": {
       "properties_button": {
-        "tooltip": "传递每条已发送消息的元数据。",
-        "text": "属性"
+        "tooltip": "傳遞每條已傳送訊息的後設資料。",
+        "text": "屬性"
       },
       "retain": "保持",
       "beautify": "美化",
-      "add_topic": "添加主题",
-      "send": "发送",
+      "add_topic": "新增主題",
+      "send": "傳送",
       "qos": "QoS：",
-      "add_topic_error": "主题为必填项",
+      "add_topic_error": "主題為必填項",
       "messages": {
         "settings": {
           "response_topic": {
-            "label": "响应主题",
-            "placeholder": "添加主题"
+            "label": "響應主題",
+            "placeholder": "新增主題"
           },
           "correlation_data": {
-            "label": "相关数据",
-            "placeholder": "添加数据"
+            "label": "相關資料",
+            "placeholder": "新增資料"
           },
           "expiry_interval": {
-            "label": "消息过期间隔",
-            "placeholder": "添加间隔",
+            "label": "訊息過期間隔",
+            "placeholder": "新增間隔",
             "unit": "ms"
           },
           "content_type": {
-            "label": "内容类型",
-            "placeholder": "添加类型"
+            "label": "內容型別",
+            "placeholder": "新增型別"
           },
           "payload_format_indicator": {
-            "label": "有效负载格式指示器",
-            "placeholder": "添加指标"
+            "label": "有效負載格式指示器",
+            "placeholder": "新增指標"
           },
           "topic_alias": {
-            "label": "主题别名",
-            "placeholder": "添加整数值"
+            "label": "主題別名",
+            "placeholder": "新增整數值"
           },
-          "heading": "设置"
+          "heading": "設定"
         }
       }
     },
     "properties": {
       "columns": {
         "properties": {
-          "label": "属性",
-          "placeholder": "添加属性"
+          "label": "屬性",
+          "placeholder": "新增屬性"
         },
         "value": {
           "label": "值",
-          "placeholder": "添加值"
+          "placeholder": "新增值"
         }
       }
     },
     "saved_messages": {
-      "empty": "添加消息以在活动连接期间重复使用它们"
+      "empty": "新增訊息以在活動連線期間重複使用它們"
     }
   },
   "editor": {
     "tabs": {
-      "message": "消息",
-      "topics": "主题",
-      "authorization": "身份验证",
-      "properties": "属性",
-      "last_will": "最后遗嘱",
-      "settings": "设置"
+      "message": "訊息",
+      "topics": "主題",
+      "authorization": "身份驗證",
+      "properties": "屬性",
+      "last_will": "最後遺囑",
+      "settings": "設定"
     },
-    "request_heading": "请求"
+    "request_heading": "請求"
   },
   "request_properties": {
     "columns": {
       "properties": {
-        "label": "属性",
-        "placeholder": "添加属性"
+        "label": "屬性",
+        "placeholder": "新增屬性"
       },
       "value": {
         "label": "值",
-        "placeholder": "添加值"
+        "placeholder": "新增值"
       },
       "description": {
         "label": "描述",
-        "placeholder": "添加描述"
+        "placeholder": "新增描述"
       }
     }
   },
   "topics": {
     "columns": {
       "topics": {
-        "label": "主题",
-        "placeholder": "添加主题"
+        "label": "主題",
+        "placeholder": "新增主題"
       },
       "subscribe": {
-        "label": "订阅"
+        "label": "訂閱"
       },
       "description": {
         "label": "描述",
-        "placeholder": "添加描述"
+        "placeholder": "新增描述"
       },
       "qos": {
         "label": "QoS"
       }
     },
-    "validation_error": "主题名称不能为空",
+    "validation_error": "主題名稱不能為空",
     "settings": {
       "subscription_id": {
-        "label": "订阅标识符",
-        "placeholder": "添加标识符"
+        "label": "訂閱識別符號",
+        "placeholder": "新增識別符號"
       },
       "filter_local_msg": {
-        "label": "过滤本地消息"
+        "label": "過濾本地訊息"
       },
       "retain_as_published": {
-        "label": "保留已发布的状态"
+        "label": "保留已釋出的狀態"
       },
       "retain_handling": {
-        "label": "保留处理",
-        "placeholder": "选择保留处理"
+        "label": "保留處理",
+        "placeholder": "選擇保留處理"
       }
     }
   },
   "last_will": {
-    "will_delay": "遗嘱延迟"
+    "will_delay": "遺囑延遲"
   },
   "constants": {
-    "rename": "重命名",
-    "duplicate": "复制",
-    "delete": "删除",
+    "rename": "重新命名",
+    "duplicate": "複製",
+    "delete": "刪除",
     "cancel": "取消",
-    "disconnect": "断开",
-    "connect": "连接"
+    "disconnect": "斷開",
+    "connect": "連線"
   },
   "message_types": {
     "text": "文本",
     "json": "JSON",
     "base64": "Base64",
-    "hex": "十六进制"
+    "hex": "十六進位制"
   },
   "tooltips": {
     "qos": {
       "at_most_once": {
         "label": "最多一次",
-        "tooltip": "此服务级别不保证有效负载的送达；客户端采用“发送后即忘”的方式。"
+        "tooltip": "此服務級別不保證有效負載的送達；客戶端採用“傳送後即忘”的方式。"
       },
       "at_least_once": {
         "label": "至少一次",
-        "tooltip": "通过多次发送有效负载，确保有效负载至少被传送一次，直到客户端收到传送确认 (PUBACK)。"
+        "tooltip": "通過多次傳送有效負載，確保有效負載至少被傳送一次，直到客戶端收到傳送確認 (PUBACK)。"
       },
       "exactly_once": {
         "label": "正好一次",
-        "tooltip": "通过四部分握手保证有效负载准确交付一次。"
+        "tooltip": "通過四部分握手保證有效負載準確交付一次。"
       }
     },
-    "message_properties": "传递每条发送消息的元数据。",
-    "retain_message_long": "保留消息允许将已发布的消息存储在代理上，并在新订阅者连接到主题时将其传递给他们。这对于向最初发布消息时未订阅的客户端提供当前状态信息或配置更新非常有用。",
-    "retain_mesage_short": "保留消息允许将已发布的消息存储在代理上，并在新订阅者连接到主题时将其传递给他们。",
+    "message_properties": "傳遞每條傳送訊息的後設資料。",
+    "retain_message_long": "保留訊息允許將已釋出的訊息儲存在代理上，並在新訂閱者連線到主題時將其傳遞給他們。這對於向最初發布訊息時未訂閱的客戶端提供當前狀態資訊或配置更新非常有用。",
+    "retain_mesage_short": "保留訊息允許將已釋出的訊息儲存在代理上，並在新訂閱者連線到主題時將其傳遞給他們。",
     "retain_handling": {
       "receive_on_connect": {
-        "label": "连接时接收"
+        "label": "連線時接收"
       },
       "receive_if_unique": {
-        "label": "如果是唯一订阅则接收",
-        "tooltip": "仅当主题尚未订阅时，代理服务器才会发送保留的消息。"
+        "label": "如果是唯一訂閱則接收",
+        "tooltip": "僅當主題尚未訂閱時，代理伺服器才會傳送保留的訊息。"
       },
       "dont_receive": {
         "label": "不接收"
@@ -201,92 +201,92 @@
     }
   },
   "settings": {
-    "enable_server_certificate_verification": "启用服务器证书验证",
-    "verify_server_certificate_description": "通过安全连接连接到代理服务器时验证服务器证书。",
-    "verify_server_certificate_summary": "通过安全连接连接到 Broker 时验证服务器证书。",
-    "clean_session": "清除会话",
-    "clean_start": "干净的开始",
-    "clean_session_description": "配置代理服务器是否应以新连接启动而不保留任何以前的会话数据。",
-    "clean_session_summary": "代理服务器从新连接开始，不保留任何以前的会话数据。",
-    "session_expiry_interval": "会话到期间隔",
-    "session_expiry_interval_description": "配置会话到期间隔（以秒为单位）。这会影响代理服务器为您的客户端存储会话数据的时间。如果启用干净启动，则忽略该值。",
-    "session_expiry_interval_summary": "会话到期间隔（以秒为单位）。这会影响代理服务器为您的客户端存储会话数据的时间。如果启用干净启动，则忽略该值。",
-    "keep_alive": "保持活动",
-    "keep_alive_description": "配置保持活动间隔（以秒为单位）。",
-    "keep_alive_summary": "保持活动间隔（以秒为单位）。",
-    "auto_reconnect": "自动重新连接",
-    "auto_reconnect_description": "配置客户端是否应在突然断开连接时自动重新连接。",
-    "auto_reconnect_summary": "客户端在突然断开连接时自动重新连接。",
-    "connection_timeout": "连接超时",
-    "connection_timeout_description": "配置连接超时（以秒为单位）。",
-    "connection_timeout_summary": "连接超时（以秒为单位）。",
+    "enable_server_certificate_verification": "啟用伺服器證書驗證",
+    "verify_server_certificate_description": "通過安全連線連線到代理伺服器時驗證伺服器證書。",
+    "verify_server_certificate_summary": "通過安全連線連線到 Broker 時驗證伺服器證書。",
+    "clean_session": "清除會話",
+    "clean_start": "乾淨的開始",
+    "clean_session_description": "配置代理伺服器是否應以新連線啟動而不保留任何以前的會話資料。",
+    "clean_session_summary": "代理伺服器從新連線開始，不保留任何以前的會話資料。",
+    "session_expiry_interval": "會話到期間隔",
+    "session_expiry_interval_description": "配置會話到期間隔（以秒為單位）。這會影響代理伺服器為您的客戶端儲存會話資料的時間。如果啟用乾淨啟動，則忽略該值。",
+    "session_expiry_interval_summary": "會話到期間隔（以秒為單位）。這會影響代理伺服器為您的客戶端儲存會話資料的時間。如果啟用乾淨啟動，則忽略該值。",
+    "keep_alive": "保持活動",
+    "keep_alive_description": "配置保持活動間隔（以秒為單位）。",
+    "keep_alive_summary": "保持活動間隔（以秒為單位）。",
+    "auto_reconnect": "自動重新連線",
+    "auto_reconnect_description": "配置客戶端是否應在突然斷開連線時自動重新連線。",
+    "auto_reconnect_summary": "客戶端在突然斷開連線時自動重新連線。",
+    "connection_timeout": "連線超時",
+    "connection_timeout_description": "配置連線超時（以秒為單位）。",
+    "connection_timeout_summary": "連線超時（以秒為單位）。",
     "receive_maximum": "接收最大值",
-    "receive_maximum_description": "配置可同时处理的QoS 1和2消息的最大数量。",
-    "receive_maximum_summary": "可以同时处理的 QoS 1 和 2 消息的最大数量。",
-    "maximum_packet_size": "最大数据包大小",
-    "maximum_packet_size_description": "配置客户端可接受的最大数据包大小（以字节为单位）。",
-    "maximum_packet_size_summary": "客户端可接受的最大数据包大小（以字节为单位）。"
+    "receive_maximum_description": "配置可同時處理的QoS 1和2訊息的最大數量。",
+    "receive_maximum_summary": "可以同時處理的 QoS 1 和 2 訊息的最大數量。",
+    "maximum_packet_size": "最大數據包大小",
+    "maximum_packet_size_description": "配置客戶端可接受的最大數據包大小（以位元組為單位）。",
+    "maximum_packet_size_summary": "客戶端可接受的最大數據包大小（以位元組為單位）。"
   },
   "response_area": {
-    "heading": "响应",
+    "heading": "響應",
     "response_tabs": {
-      "messages": "消息"
+      "messages": "訊息"
     },
     "response_label": {
-      "not_subscribed": "未订阅任何主题",
-      "subscribed_to_topics": "已订阅 {listenerCount, plural, one {# 个主题} other {# 个主题}}",
+      "not_subscribed": "未訂閱任何主題",
+      "subscribed_to_topics": "已訂閱 {listenerCount, plural, one {# 個主題} other {# 個主題}}",
       "connection_status": {
-        "connected": "已连接",
-        "disconnected": "已断开连接",
-        "connecting": "正在连接"
+        "connected": "已連線",
+        "disconnected": "已斷開連線",
+        "connecting": "正在連線"
       },
-      "connection_details": "连接详情"
+      "connection_details": "連線詳情"
     },
     "response_tab": {
       "tabs_text": {
-        "messages": "消息",
-        "visualization": "可视化"
+        "messages": "訊息",
+        "visualization": "視覺化"
       },
-      "show_hidden_visualization": "显示隐藏的可视化 ({hiddenCount})",
-      "empty_state_message": "连接以发送和接收消息"
+      "show_hidden_visualization": "顯示隱藏的視覺化 ({hiddenCount})",
+      "empty_state_message": "連線以傳送和接收訊息"
     },
     "visualization_tab": {
       "empty_state": {
-        "heading": "尚未收到消息",
-        "description": "可视化是通过订阅主题收到的消息创建的"
+        "heading": "尚未收到訊息",
+        "description": "視覺化是通過訂閱主題收到的訊息建立的"
       }
     },
     "mqtt_timeline_event_categories": {
-      "sent_messages": "已发送消息",
-      "received_messages": "收到的消息",
+      "sent_messages": "已傳送訊息",
+      "received_messages": "收到的訊息",
       "other": "其他"
     },
     "mqtt_timeline_summaries": {
-      "couldnt_connect": "无法连接到代理服务器",
-      "connected": "已连接至代理服务器",
-      "disconnect_error": "与代理服务器断开连接时发生错误",
-      "disconnected": "已与代理服务器断开连接",
-      "reconnecting": "正在重新连接到代理服务器",
-      "error_occurred": "发生错误",
-      "subscribed_to": "已订阅",
-      "unsubscribed_from": "取消订阅",
-      "connection_aborted": "连接中止",
-      "response_pruned": "响应未存储。",
+      "couldnt_connect": "無法連線到代理伺服器",
+      "connected": "已連線至代理伺服器",
+      "disconnect_error": "與代理伺服器斷開連線時發生錯誤",
+      "disconnected": "已與代理伺服器斷開連線",
+      "reconnecting": "正在重新連線到代理伺服器",
+      "error_occurred": "發生錯誤",
+      "subscribed_to": "已訂閱",
+      "unsubscribed_from": "取消訂閱",
+      "connection_aborted": "連線中止",
+      "response_pruned": "響應未儲存。",
       "empty_payload": "（空的）"
     },
-    "packet_information": "数据包信息",
-    "connack_details": "CONNACK 详情",
-    "disconnect_details": "断开连接详细信息",
+    "packet_information": "資料包資訊",
+    "connack_details": "CONNACK 詳情",
+    "disconnect_details": "斷開連線詳細資訊",
     "visualization": {
-      "add_field": "添加字段"
+      "add_field": "新增欄位"
     },
     "visualization_actions": {
-      "line_chart": "折线图",
-      "bar_chart": "条形图",
+      "line_chart": "折線圖",
+      "bar_chart": "條形圖",
       "table": "表格",
-      "change_chart_type": "更改可视化类型",
-      "hide": "隐藏"
+      "change_chart_type": "更改視覺化型別",
+      "hide": "隱藏"
     },
-    "missing_key_message": "<Text><StyledText>切换到表格视图</StyledText>以访问另外 {missingFieldCount} {missingFieldCount, plural, one {个字段} other {个字段}}。</Text>"
+    "missing_key_message": "<Text><StyledText>切換到表格檢視</StyledText>以訪問另外 {missingFieldCount} {missingFieldCount, plural, one {個欄位} other {個欄位}}。</Text>"
   }
 }

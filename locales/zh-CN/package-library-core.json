@@ -1,12 +1,12 @@
 {
   "header": {
-    "text": "包库",
+    "text": "包庫",
     "button": {
       "new_package": "新建包",
-      "learn_more": "了解有关包的更多信息。"
+      "learn_more": "瞭解有關包的更多資訊。"
     },
     "icon": {
-      "team": "所有团队成员都可以访问库中的包。"
+      "team": "所有團隊成員都可以訪問庫中的包。"
     }
   },
   "content": {
@@ -15,105 +15,105 @@
     },
     "package_content": {
       "button": {
-        "save": "保存",
-        "delete": "删除",
+        "save": "儲存",
+        "delete": "刪除",
         "cancel": "取消",
-        "create": "创建"
+        "create": "建立"
       },
-      "add_desciption_prompt": "单击此处添加描述"
+      "add_desciption_prompt": "單擊此處新增描述"
     },
     "usage_view": {
       "error_state": {
-        "title": "无法加载包使用详细信息",
-        "description": "尝试刷新页面或稍后再回来查看。"
+        "title": "無法載入包使用詳細資訊",
+        "description": "嘗試重新整理頁面或稍後再回來檢視。"
       },
       "view_access": {
-        "title": "您需要一个不同的角色",
-        "description": "您需要管理员角色来查看包的使用情况。请联系您的团队管理员以更改您的角色或切换到其他帐户。"
+        "title": "您需要一個不同的角色",
+        "description": "您需要管理員角色來檢視包的使用情況。請聯絡您的團隊管理員以更改您的角色或切換到其他帳戶。"
       },
       "title": "包",
-      "description": "包是用于存储公共脚本以供重用的容器。此视图监视在团队中创建的包。"
+      "description": "包是用於儲存公共腳本以供重用的容器。此檢視監視在團隊中建立的包。"
     },
     "usage_view_table": {
       "input_search": {
-        "placeholder_text": "搜索包"
+        "placeholder_text": "搜尋包"
       },
       "single_select_users": {
-        "placeholder_text": "上传者：",
-        "empty_state_message": "目前没有用户添加包。"
+        "placeholder_text": "上傳者：",
+        "empty_state_message": "目前沒有使用者新增包。"
       },
       "column_headers": {
         "package": "包",
-        "created_by": "创建者：",
-        "created_on": "创建于",
+        "created_by": "建立者：",
+        "created_on": "建立於",
         "last_used": "上次使用"
       },
       "button": {
-        "delete": "删除",
-        "deleting": "正在删除"
+        "delete": "刪除",
+        "deleting": "正在刪除"
       }
     },
     "usage_view_empty_state": {
-      "title": "还没有包",
-      "description": "您可以在此处查看所有包及其上次检索（如果有）。"
+      "title": "還沒有包",
+      "description": "您可以在此處檢視所有包及其上次檢索（如果有）。"
     }
   },
   "constants": {
-    "learn_more": "了解更多",
+    "learn_more": "瞭解更多",
     "breadcrumb_names": {
-      "resource_usage": "资源使用情况",
+      "resource_usage": "資源使用情況",
       "packages": "包"
     }
   },
   "form": {
     "search_package": {
-      "placeholder_text": "查找包..."
+      "placeholder_text": "查詢包..."
     },
     "create_package": {
       "input": {
         "name": {
           "placeholder_text": "包名",
-          "note": "包创建后名称无法更改"
+          "note": "包建立後名稱無法更改"
         },
         "description": {
-          "placeholder_text": "添加摘要"
+          "placeholder_text": "新增摘要"
         }
       }
     }
   },
   "modal": {
     "package_select": {
-      "header_text": "将脚本添加到现有包中",
+      "header_text": "將腳本新增到現有包中",
       "button": {
-        "select": "选择",
+        "select": "選擇",
         "cancel": "取消"
       }
     },
     "new_unsaved_package": {
-      "header_text": "丢弃这个包吗？",
-      "content_text": "您正在创建一个包。如果继续，您的进度将会丢失。",
+      "header_text": "丟棄這個包嗎？",
+      "content_text": "您正在建立一個包。如果繼續，您的進度將會丟失。",
       "button": {
-        "discard": "放弃并继续",
+        "discard": "放棄並繼續",
         "back_to_package": "返回包"
       }
     },
     "unsaved_package": {
-      "header_text": "保存对“{packageName}”的更改吗？",
-      "content_text": "当前包“{packageName}”中有一些未保存的更改，如果继续，这些更改将会丢失。保存这些更改以避免丢失您的工作。",
+      "header_text": "儲存對“{packageName}”的更改嗎？",
+      "content_text": "當前包“{packageName}”中有一些未儲存的更改，如果繼續，這些更改將會丟失。儲存這些更改以避免丟失您的工作。",
       "button": {
-        "save": "保存更改",
-        "discard": "放弃更改",
+        "save": "儲存更改",
+        "discard": "放棄更改",
         "cancel": "取消"
       }
     },
     "delete_confirmation_modal": {
-      "header_text": "删除“{packageName}”？",
+      "header_text": "刪除“{packageName}”？",
       "content_text": {
-        "confirmation_prompt": "您确定要永久删除此包吗？",
-        "type_to_confirm_prompt": "要确认，请在下面输入“{packageName}”。"
+        "confirmation_prompt": "您確定要永久刪除此包嗎？",
+        "type_to_confirm_prompt": "要確認，請在下面輸入“{packageName}”。"
       },
       "button": {
-        "delete": "删除包",
+        "delete": "刪除包",
         "cancel": "取消"
       }
     }

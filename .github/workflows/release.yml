@@ -111,33 +111,33 @@ jobs:
             } >> release-notes.md
           fi
           cat >> release-notes.md <<'RELEASE_BODY'
-          把中文翻译注入 Postman 的非官方第三方工具。
+          把繁體中文翻譯注入 Postman 的非官方第三方工具。
 
-          - **桌面端**：下载对应平台的压缩包（Windows 为 `.zip`，Linux/macOS 为 `.tar.xz`），
-            解压得到单文件后，完全退出 Postman 再运行即可注入；`--restore` 还原。
-            （macOS/Linux 解压后如丢失执行权限：`chmod +x <文件名>`）
-          - **老 Windows**（Win8.1 / Server 2012 R2+，默认版报 `ClosePseudoConsole` 错时）：
-            下载 `postman-chinese-injector-win-x64-legacy.zip`（Node 运行时打包）。
-          - **网页版**：下载 `postman-chinese-injector-extension.zip`，解压后在 Chrome/Edge 用
-            「加载已解压的扩展程序」加载。
+          - **桌面端**：下載對應平台的壓縮包（Windows 為 `.zip`，Linux/macOS 為 `.tar.xz`），
+            解壓得到單檔案後，完全結束 Postman 再執行即可注入；`--restore` 還原。
+            （macOS/Linux 解壓後如丟失執行權限：`chmod +x <檔案名>`）
+          - **老 Windows**（Win8.1 / Server 2012 R2+，預設版報 `ClosePseudoConsole` 錯誤時）：
+            下載 `postman-chinese-injector-win-x64-legacy.zip`（Node 執行環境打包）。
+          - **網頁版**：下載 `postman-chinese-injector-extension.zip`，解壓後在 Chrome/Edge 用
+            「載入已解壓的擴充功能」載入。
 
-          详见 README。交流反馈 QQ 群：494969115。
+          詳見 README。
 
-          **完整性校验**：`SHA256SUMS.txt` 为本次构建的校验和；所有发行包均由 GitHub Actions
-          从公开源码构建并附带来源证明，可用
-          `gh attestation verify <文件> --repo ${{ github.repository }}` 验证。
+          **完整性校驗**：`SHA256SUMS.txt` 為本次構建的校驗和；所有發行包均由 GitHub Actions
+          從公開原始碼構建並附帶來源證明，可用
+          `gh attestation verify <檔案> --repo ${{ github.repository }}` 驗證。
 
-          > 🛡️ **杀毒软件报毒？** 单文件二进制（bun / pkg 打包）被启发式误判是行业通病，非真实威胁。
-          > 原因、核实办法与「直接跑源码」的替代方案见 README 的
-          > [杀毒软件报毒（误报）说明](https://github.com/${{ github.repository }}#杀毒软件报毒误报说明)。
+          > 🛡️ **防毒軟體報毒？** 單檔案二進位（bun / pkg 打包）被啟發式誤判是行業通病，非真實威脅。
+          > 原因、核實辦法與「直接跑原始碼」的替代方案見 README 的
+          > [防毒軟體報毒（誤報）說明](https://github.com/${{ github.repository }}#殺毒軟件報毒誤報說明)。
 
           ---
-          ⚠️ **法律声明**：本项目为社区维护的非官方工具，**与 Postman, Inc. 无任何关联**，
-          未获其授权、赞助或背书；"Postman" 是 Postman, Inc. 的商标。本仓库与发行包**不含、
-          也不分发** Postman 的任何源代码 / 二进制 / 原始语言包——仅有本项目自己的脚本与社区编写的
-          中文译文。本工具在你**自己的机器**上修改你**自己安装**的 Postman，是否使用由你自行决定
-          并承担风险，请遵守 Postman 的服务条款与 EULA。代码以 MIT 许可发布（不覆盖派生自 Postman
-          文案的译文数据）。本说明不构成法律意见。
+          ⚠️ **法律聲明**：本專案為社群維護的非官方工具，**與 Postman, Inc. 無任何關聯**，
+          未獲其授權、贊助或背書；"Postman" 是 Postman, Inc. 的商標。本倉庫與發行包**不含、
+          也不分發** Postman 的任何原始碼 / 二進位 / 原始語言包——僅有本專案自己的腳本與社群編寫的
+          中文譯文。本工具在你**自己的機器**上修改你**自己安裝**的 Postman，是否使用由你自行決定
+          並承擔風險，請遵守 Postman 的服務條款與 EULA。程式碼以 MIT 許可發布（不覆蓋派生自 Postman
+          文案的譯文數據）。本說明不構成法律意見。
           RELEASE_BODY
           cat release-notes.md
 

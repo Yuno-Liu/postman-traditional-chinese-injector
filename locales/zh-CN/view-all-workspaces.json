@@ -1,197 +1,197 @@
 {
   "metadata": {
-    "title": "工作空间"
+    "title": "工作空間"
   },
   "squad_workspaces_page": {
-    "back_to_all_teams": "所有团队",
-    "back_to_all_teams_accessible_name": "返回所有团队",
-    "breadcrumb_teams_label": "团队",
-    "breadcrumb_aria": "团队导航",
-    "breadcrumb_unknown_team": "团队"
+    "back_to_all_teams": "所有團隊",
+    "back_to_all_teams_accessible_name": "返回所有團隊",
+    "breadcrumb_teams_label": "團隊",
+    "breadcrumb_aria": "團隊導航",
+    "breadcrumb_unknown_team": "團隊"
   },
   "heading": {
-    "team": "所有工作区",
-    "personal": "您的工作空间"
+    "team": "所有工作區",
+    "personal": "您的工作空間"
   },
   "description": {
-    "team": "{teamName} 中所有工作区的目录。",
-    "personal": "您的工作区目录。",
-    "team_with_access": "您可以访问的 {teamName} 中所有工作区的目录。"
+    "team": "{teamName} 中所有工作區的目錄。",
+    "personal": "您的工作區目錄。",
+    "team_with_access": "您可以訪問的 {teamName} 中所有工作區的目錄。"
   },
   "go_back": "返回",
   "pending_requests_breadcrumb": {
     "first_breadcrumb_item_label": "全部",
-    "project_workspaces_tab_label": "项目工作区",
-    "second_breadcrumb_item_label": "外部工作空间",
-    "third_breadcrumb_item_label": "待处理的请求",
-    "archived_workspaces_tab_label": "存档的工作空间",
-    "inactive_workspaces_tab_label": "非活动工作区"
+    "project_workspaces_tab_label": "專案工作區",
+    "second_breadcrumb_item_label": "外部工作空間",
+    "third_breadcrumb_item_label": "待處理的請求",
+    "archived_workspaces_tab_label": "存檔的工作空間",
+    "inactive_workspaces_tab_label": "非活動工作區"
   },
-  "create_workspace_button_text": "创建工作区",
-  "manage_teams_button_text": "管理团队",
+  "create_workspace_button_text": "建立工作區",
+  "manage_teams_button_text": "管理團隊",
   "filters": {
-    "search_workspaces_placeholder": "搜索工作区...",
+    "search_workspaces_placeholder": "搜尋工作區...",
     "filter_by_visibility_dropdown": {
-      "placeholder": "访问类型",
-      "label": "按可见性筛选",
+      "placeholder": "訪問型別",
+      "label": "按可見性篩選",
       "options": {
         "all": {
-          "value": "所有工作区"
+          "value": "所有工作區"
         },
         "personal": {
-          "value": "个人",
-          "description": "仅创建者",
-          "workspace_type": "内部",
-          "workspace_access": "仅限你和受邀人员"
+          "value": "個人",
+          "description": "僅建立者",
+          "workspace_type": "內部",
+          "workspace_access": "僅限你和受邀人員"
         },
         "team": {
-          "value": "团队",
-          "description_team_user": "{teamName} 团队中的所有人",
-          "description_non_team_user": "你团队中的所有人",
-          "workspace_type": "内部",
-          "workspace_access": "你团队中的所有人"
+          "value": "團隊",
+          "description_team_user": "{teamName} 團隊中的所有人",
+          "description_non_team_user": "你團隊中的所有人",
+          "workspace_type": "內部",
+          "workspace_access": "你團隊中的所有人"
         },
         "private": {
           "value": "私有",
-          "description": "仅受邀团队成员",
-          "workspace_type": "内部",
-          "workspace_access": "仅限你和受邀人员"
+          "description": "僅受邀團隊成員",
+          "workspace_type": "內部",
+          "workspace_access": "僅限你和受邀人員"
         },
         "partner": {
           "value": "合作伙伴",
-          "description": "仅受邀成员和合作伙伴",
+          "description": "僅受邀成員和合作夥伴",
           "workspace_type": "合作伙伴",
-          "workspace_access": "仅受邀合作伙伴"
+          "workspace_access": "僅受邀合作伙伴"
         },
         "public": {
-          "value": "公开",
-          "description": "互联网上的任何人",
-          "workspace_type": "公开",
-          "workspace_access": "互联网上的任何人"
+          "value": "公開",
+          "description": "網際網路上的任何人",
+          "workspace_type": "公開",
+          "workspace_access": "網際網路上的任何人"
         }
       }
     },
     "filter_by_owner_dropdown": {
-      "placeholder": "创建者",
-      "empty_state_message": "未找到用户",
-      "selected_user_label": "{userCount, plural, one {# 个用户} other {# 个用户}}"
+      "placeholder": "建立者",
+      "empty_state_message": "未找到使用者",
+      "selected_user_label": "{userCount, plural, one {# 個使用者} other {# 個使用者}}"
     },
     "filter_by_workspace_access": {
-      "placeholder": "访问权限",
+      "placeholder": "訪問許可權",
       "options": {
-        "invited_people": "仅限你和受邀人员",
-        "team": "你团队中的所有人",
-        "partner": "仅受邀合作伙伴",
-        "public": "互联网上的任何人"
+        "invited_people": "僅限你和受邀人員",
+        "team": "你團隊中的所有人",
+        "partner": "僅受邀合作伙伴",
+        "public": "網際網路上的任何人"
       }
     }
   },
   "table": {
-    "caption": "工作区表格",
-    "row_aria_label": "打开工作区",
+    "caption": "工作區表格",
+    "row_aria_label": "開啟工作區",
     "favorite_button_aria_label": "{action} {workspaceName}",
     "column_headers": {
-      "first_column_header": "工作区名称",
-      "second_column_header": "创建者",
-      "third_column_header": "谁可以访问？",
-      "fourth_column_header": "最后更新时间",
-      "workspace_type": "类型",
-      "workspace_access": "访问权限",
-      "workspace_name": "名称",
+      "first_column_header": "工作區名稱",
+      "second_column_header": "建立者",
+      "third_column_header": "誰可以訪問？",
+      "fourth_column_header": "最後更新時間",
+      "workspace_type": "型別",
+      "workspace_access": "訪問許可權",
+      "workspace_name": "名稱",
       "actions": "操作"
     },
     "sharedpw_column_headers": {
-      "first_column_header": "工作区名称",
-      "second_column_header": "创建者",
+      "first_column_header": "工作區名稱",
+      "second_column_header": "建立者",
       "third_column_header": "所有者",
-      "fourth_column_header": "最后更新时间",
-      "workspace_type": "类型",
-      "workspace_access": "访问权限",
-      "workspace_name": "名称"
+      "fourth_column_header": "最後更新時間",
+      "workspace_type": "型別",
+      "workspace_access": "訪問許可權",
+      "workspace_name": "名稱"
     }
   },
   "banner": {
-    "personal_workspaces_banner": "你只能查看自己创建的个人工作区。",
-    "super_admin_banner": "作为超级管理员，你可以查看团队中创建的所有个人工作区。",
-    "simplified_super_admin_banner": "作为超级管理员，你可以查看团队中创建的所有工作区。"
+    "personal_workspaces_banner": "你只能檢視自己建立的個人工作區。",
+    "super_admin_banner": "作為超級管理員，你可以檢視團隊中建立的所有個人工作區。",
+    "simplified_super_admin_banner": "作為超級管理員，你可以檢視團隊中建立的所有工作區。"
   },
   "pending_request_item": {
-    "request_message_former_users": "一位前团队成员请求将此工作区设为{transitionVisibility}",
-    "request_message_current_users": "请求将此工作区设为{transitionVisibility}",
-    "request_message_org_former_users": "一位前团队成员请求将此工作区共享给组织中的所有人",
-    "request_message_org_current_users": "请求将此工作区共享给组织中的所有人",
-    "no_resources_added": "尚未添加任何资源",
-    "last_updated": "最后更新：",
+    "request_message_former_users": "一位前團隊成員請求將此工作區設為{transitionVisibility}",
+    "request_message_current_users": "請求將此工作區設為{transitionVisibility}",
+    "request_message_org_former_users": "一位前團隊成員請求將此工作區共享給組織中的所有人",
+    "request_message_org_current_users": "請求將此工作區共享給組織中的所有人",
+    "no_resources_added": "尚未新增任何資源",
+    "last_updated": "最後更新：",
     "approve": "批准",
-    "deny": "拒绝",
+    "deny": "拒絕",
     "collection": "{count, plural, one {# 集合} other {# 集合}}",
-    "environment": "{count, plural, one {# 环境} other {# 环境}}",
+    "environment": "{count, plural, one {# 環境} other {# 環境}}",
     "api": "{count, plural, one {# API} other {# API}}",
     "requester_self": "你",
-    "team_public_profile_modal_description": "在公开团队资料之前，请更新团队域名，并确保其符合公开可见性要求。团队域名有助于在 Postman 上标识你的团队。",
-    "team_public_profile_modal_cta": "继续"
+    "team_public_profile_modal_description": "在公開團隊資料之前，請更新團隊域名，並確保其符合公開可見性要求。團隊域名有助於在 Postman 上標識你的團隊。",
+    "team_public_profile_modal_cta": "繼續"
   },
-  "toast_approve_success": "请求已批准",
-  "toast_deny_success": "请求已拒绝",
+  "toast_approve_success": "請求已批准",
+  "toast_deny_success": "請求已拒絕",
   "archived_tab": {
     "bulk_selection": {
-      "text": "已选择 {count} 个工作区",
-      "restore_button_text": "恢复",
-      "delete_button_text": "删除"
+      "text": "已選擇 {count} 個工作區",
+      "restore_button_text": "恢復",
+      "delete_button_text": "刪除"
     },
     "empty_state": {
-      "title": "你没有已归档的工作区",
-      "description": "归档工作区以减少混乱，你可以随时恢复它们。"
+      "title": "你沒有已歸檔的工作區",
+      "description": "歸檔工作區以減少混亂，你可以隨時恢復它們。"
     },
     "table": {
       "column_headers": {
-        "workspace_name": "工作区名称",
-        "archived_on": "归档时间",
-        "archived_by": "归档者",
+        "workspace_name": "工作區名稱",
+        "archived_on": "歸檔時間",
+        "archived_by": "歸檔者",
         "actions": "操作"
       },
       "menu_button": {
         "restore": {
-          "text": "恢复",
-          "tooltip": "恢复工作区"
+          "text": "恢復",
+          "tooltip": "恢復工作區"
         },
         "delete": {
-          "text": "删除",
-          "tooltip": "删除工作区"
+          "text": "刪除",
+          "tooltip": "刪除工作區"
         }
       }
     },
     "toasts": {
       "bulk_restore": {
-        "failure_description": "只是网络出了点问题，请重试。",
-        "failure_title": "无法恢复 {count} 个工作区",
-        "success_description": "已恢复 {count} 个工作区"
+        "failure_description": "只是網路出了點問題，請重試。",
+        "failure_title": "無法恢復 {count} 個工作區",
+        "success_description": "已恢復 {count} 個工作區"
       },
       "bulk_delete": {
-        "failure_description": "只是网络出了点问题，请重试。",
-        "failure_title": "无法删除 {count} 个工作区",
-        "success_description": "已删除 {count} 个工作区"
+        "failure_description": "只是網路出了點問題，請重試。",
+        "failure_title": "無法刪除 {count} 個工作區",
+        "success_description": "已刪除 {count} 個工作區"
       },
       "restore": {
-        "failure_description": "只是网络出了点问题，请重试。",
-        "failure_title": "无法恢复工作区",
-        "success_description": "工作区已恢复"
+        "failure_description": "只是網路出了點問題，請重試。",
+        "failure_title": "無法恢復工作區",
+        "success_description": "工作區已恢復"
       },
       "delete": {
-        "failure_description": "只是网络出了点问题，请重试。",
-        "failure_title": "无法删除工作区",
-        "success_description": "工作区已删除"
+        "failure_description": "只是網路出了點問題，請重試。",
+        "failure_title": "無法刪除工作區",
+        "success_description": "工作區已刪除"
       }
     }
   },
-  "tidy_inactive_workspaces_nudge": "<0>整理一下？</0> <1>归档</1> <2>不活跃的工作区。</2>",
+  "tidy_inactive_workspaces_nudge": "<0>整理一下？</0> <1>歸檔</1> <2>不活躍的工作區。</2>",
   "pending_requests_empty": {
-    "title": "没有待审核的请求",
-    "description": "当队友想要与更广泛的受众分享他们的工作区时，可以在此处查看他们的请求。"
+    "title": "沒有待稽核的請求",
+    "description": "當隊友想要與更廣泛的受眾分享他們的工作區時，可以在此處檢視他們的請求。"
   },
   "pending_requests_error": {
-    "title": "无法加载待处理的请求",
-    "description": "加载待处理请求时出现问题。请再试一次。",
-    "retry": "再试一次"
+    "title": "無法載入待處理的請求",
+    "description": "載入待處理請求時出現問題。請再試一次。",
+    "retry": "再試一次"
   }
 }

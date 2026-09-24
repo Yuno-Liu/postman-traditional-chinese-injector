@@ -1,183 +1,183 @@
 {
   "name_cell": {
-    "contributors_count": "{count, plural, one {# 位贡献者} other {# 位贡献者}}"
+    "contributors_count": "{count, plural, one {# 位貢獻者} other {# 位貢獻者}}"
   },
   "created_by_cell": {
-    "private_user_label": "私有用户",
-    "view_profile_aria_label": "查看 {name} 的个人资料"
+    "private_user_label": "私有使用者",
+    "view_profile_aria_label": "檢視 {name} 的個人資料"
   },
   "favorite_cell": {
-    "unstar_aria_label": "取消收藏工作区",
-    "star_aria_label": "收藏工作区"
+    "unstar_aria_label": "取消收藏工作區",
+    "star_aria_label": "收藏工作區"
   },
   "type_cell": {
-    "personal": "内部",
-    "team": "内部",
-    "private": "内部",
+    "personal": "內部",
+    "team": "內部",
+    "private": "內部",
     "partner": "合作伙伴",
-    "public": "公开"
+    "public": "公開"
   },
   "access_cell": {
-    "personal": "仅限您和受邀人员",
-    "team": "团队中的所有人",
-    "private": "仅限您和受邀人员",
-    "partner": "仅限受邀合作伙伴",
-    "public": "互联网上的任何人"
+    "personal": "僅限您和受邀人員",
+    "team": "團隊中的所有人",
+    "private": "僅限您和受邀人員",
+    "partner": "僅限受邀合作伙伴",
+    "public": "網際網路上的任何人"
   },
   "creator_column": {
-    "header": "创建者",
+    "header": "建立者",
     "self_label": "你"
   },
   "filters": {
-    "search_placeholder": "搜索工作空间",
-    "created_by": "创建者",
-    "created_by_count": "{count, plural, one {1 位创建者} other {{count} 位创建者}}",
-    "created_by_placeholder": "选择创作者",
+    "search_placeholder": "搜尋工作空間",
+    "created_by": "建立者",
+    "created_by_count": "{count, plural, one {1 位建立者} other {{count} 位建立者}}",
+    "created_by_placeholder": "選擇創作者",
     "you": "{name}（你）",
-    "type": "类型",
-    "type_team": "内部的",
-    "type_public": "公开",
+    "type": "型別",
+    "type_team": "內部的",
+    "type_public": "公開",
     "type_partner": "合作伙伴",
-    "access": "使用权",
-    "access_invited": "只有你和被邀请的人",
-    "access_team": "您团队中的每个人",
-    "access_partner": "仅限受邀合作伙伴",
-    "access_public": "互联网上的任何人"
+    "access": "使用權",
+    "access_invited": "只有你和被邀請的人",
+    "access_team": "您團隊中的每個人",
+    "access_partner": "僅限受邀合作伙伴",
+    "access_public": "網際網路上的任何人"
   },
   "team_cell": {
-    "private_team_label": "私有团队",
-    "view_profile_aria_label": "查看 {teamName} 个人资料"
+    "private_team_label": "私有團隊",
+    "view_profile_aria_label": "檢視 {teamName} 個人資料"
   },
   "external_user_cell": {
-    "private_user_label": "私有用户",
-    "view_profile_aria_label": "查看 {name} 个人资料"
+    "private_user_label": "私有使用者",
+    "view_profile_aria_label": "檢視 {name} 個人資料"
   },
   "identity_cell": {
-    "loading": "加载中..."
+    "loading": "載入中..."
   },
   "role_cell": {
-    "admin": "管理员",
-    "editor": "编辑者",
+    "admin": "管理員",
+    "editor": "編輯者",
     "collaborator": "合作者",
-    "viewer": "查看者",
-    "partner_lead": "合作伙伴负责人"
+    "viewer": "檢視者",
+    "partner_lead": "合作伙伴負責人"
   },
   "columns": {
-    "name": "名称",
-    "contributors": "贡献者",
-    "last_activity": "上次活动",
-    "archived_on": "存档于",
-    "archived_by": "存档者",
-    "access": "使用权",
+    "name": "名稱",
+    "contributors": "貢獻者",
+    "last_activity": "上次活動",
+    "archived_on": "存檔於",
+    "archived_by": "存檔者",
+    "access": "使用權",
     "role": "你的角色",
-    "owned_by": "拥有者"
+    "owned_by": "擁有者"
   },
   "actions": {
-    "move": "移动",
-    "delete": "删除",
-    "archive": "存档",
-    "restore": "恢复",
-    "retry": "再试一次",
-    "copy_link": "复制链接"
+    "move": "移動",
+    "delete": "刪除",
+    "archive": "存檔",
+    "restore": "恢復",
+    "retry": "再試一次",
+    "copy_link": "複製連結"
   },
   "permissions": {
-    "no_permission": "您没有权限来执行此操作"
+    "no_permission": "您沒有許可權來執行此操作"
   },
   "bulk_disabled": {
-    "archive": "所有选定的工作区均已存档，或者您没有权限来存档它们",
-    "restore": "所选工作区均未存档，或者您没有权限来恢复它们",
-    "delete": "您没有权限来删除任何选定的工作区",
-    "move": "您没有权限来移动任何选定的工作区"
+    "archive": "所有選定的工作區均已存檔，或者您沒有許可權來存檔它們",
+    "restore": "所選工作區均未存檔，或者您沒有許可權來恢復它們",
+    "delete": "您沒有許可權來刪除任何選定的工作區",
+    "move": "您沒有許可權來移動任何選定的工作區"
   },
   "empty_state": {
-    "title": "没有工作空间",
-    "description": "此团队中还没有工作区。"
+    "title": "沒有工作空間",
+    "description": "此團隊中還沒有工作區。"
   },
   "filtered_empty_state": {
-    "title": "未找到工作区",
-    "description": "尝试调整您的搜索或过滤器。"
+    "title": "未找到工作區",
+    "description": "嘗試調整您的搜尋或過濾器。"
   },
   "error_state": {
-    "title": "无法加载工作区",
-    "description": "加载工作区时出现问题。"
+    "title": "無法載入工作區",
+    "description": "載入工作區時出現問題。"
   },
   "tab_empty_state": {
     "all": {
-      "title": "没有工作空间",
-      "description": "工作区可让您组织 API 并进行协作。",
-      "action": "了解更多"
+      "title": "沒有工作空間",
+      "description": "工作區可讓您組織 API 並進行協作。",
+      "action": "瞭解更多"
     },
     "external": {
-      "title": "正在等待工作人员...还没有连接！",
-      "description": "当您的合作伙伴邀请您加入外部工作区时，他们将出现在此处，供您探索和协作。",
-      "action": "了解更多"
+      "title": "正在等待工作人員...還沒有連線！",
+      "description": "當您的合作伙伴邀請您加入外部工作區時，他們將出現在此處，供您探索和協作。",
+      "action": "瞭解更多"
     },
     "archived": {
-      "title": "您没有存档的工作空间",
-      "description": "归档工作空间以减少混乱。您可以随时恢复它们。"
+      "title": "您沒有存檔的工作空間",
+      "description": "歸檔工作空間以減少混亂。您可以隨時恢復它們。"
     }
   },
-  "selected_count": "{count, plural, one {已选择 # 个工作区} other {已选择 # 个工作区}}",
+  "selected_count": "{count, plural, one {已選擇 # 個工作區} other {已選擇 # 個工作區}}",
   "confirm": {
     "cancel": "取消",
     "archive": {
-      "title": "存档工作区",
-      "description": "存档会从视图中删除工作区并关闭监视器，但您可以随时恢复它。",
-      "confirm": "存档"
+      "title": "存檔工作區",
+      "description": "存檔會從檢視中刪除工作區並關閉監視器，但您可以隨時恢復它。",
+      "confirm": "存檔"
     },
     "archive_bulk": {
-      "title": "存档工作区",
-      "description": "{count, plural, one {存档 # 个工作区？这会将其从视图中移除并关闭其监视器，但您可以随时恢复。} other {存档 # 个工作区？这会将它们从视图中移除并关闭其监视器，但您可以随时恢复。}}",
-      "confirm": "存档"
+      "title": "存檔工作區",
+      "description": "{count, plural, one {存檔 # 個工作區？這會將其從檢視中移除並關閉其監視器，但您可以隨時恢復。} other {存檔 # 個工作區？這會將它們從檢視中移除並關閉其監視器，但您可以隨時恢復。}}",
+      "confirm": "存檔"
     },
     "restore_bulk": {
-      "title": "恢复工作区",
-      "description": "{count, plural, one {恢复 # 个工作区？该工作区将再次对团队可见。} other {恢复 # 个工作区？这些工作区将再次对团队可见。}}",
-      "confirm": "恢复"
+      "title": "恢復工作區",
+      "description": "{count, plural, one {恢復 # 個工作區？該工作區將再次對團隊可見。} other {恢復 # 個工作區？這些工作區將再次對團隊可見。}}",
+      "confirm": "恢復"
     }
   },
   "delete_modal": {
-    "title_single": "删除工作区",
-    "title_plural": "删除工作区",
-    "description_single": "此工作区将被永久删除。此操作无法撤消。",
-    "description_plural": "{count, plural, one {永久删除 # 个工作区？此操作无法撤消。} other {永久删除 # 个工作区？此操作无法撤消。}}",
-    "input_label": "删除",
-    "input_prompt": "输入“{value}”确认",
-    "confirm": "删除"
+    "title_single": "刪除工作區",
+    "title_plural": "刪除工作區",
+    "description_single": "此工作區將被永久刪除。此操作無法撤消。",
+    "description_plural": "{count, plural, one {永久刪除 # 個工作區？此操作無法撤消。} other {永久刪除 # 個工作區？此操作無法撤消。}}",
+    "input_label": "刪除",
+    "input_prompt": "輸入“{value}”確認",
+    "confirm": "刪除"
   },
   "move_modal": {
-    "title_single": "移动“{name}”工作区",
-    "title_plural": "移动 {count} 工作区",
-    "description_single": "一旦工作区被移动，原始团队的成员将失去访问权限。",
-    "description_plural": "一旦移动，原团队的成员将失去访问权限。",
-    "select_placeholder": "选择团队",
-    "confirm": "移动工作区",
-    "confirm_plural": "移动工作空间"
+    "title_single": "移動“{name}”工作區",
+    "title_plural": "移動 {count} 工作區",
+    "description_single": "一旦工作區被移動，原始團隊的成員將失去訪問許可權。",
+    "description_plural": "一旦移動，原團隊的成員將失去訪問許可權。",
+    "select_placeholder": "選擇團隊",
+    "confirm": "移動工作區",
+    "confirm_plural": "移動工作空間"
   },
   "toasts": {
-    "archive_success": "工作区已存档",
-    "archive_error": "无法存档工作区",
-    "restore_success": "工作区已恢复",
-    "restore_error": "无法恢复工作区",
-    "delete_success": "工作区已删除",
-    "delete_error": "删除workspace失败",
-    "archive_bulk_success": "{count, plural, one {已存档 # 个工作区} other {已存档 # 个工作区}}",
-    "archive_bulk_error": "无法归档某些工作区",
-    "delete_bulk_success": "{count, plural, one {已删除 # 个工作区} other {已删除 # 个工作区}}",
-    "delete_bulk_error": "无法删除某些工作区",
-    "restore_bulk_success": "{count, plural, one {已恢复 # 个工作区} other {已恢复 # 个工作区}}",
-    "restore_bulk_error": "无法恢复某些工作区",
-    "copy_link_success": "链接已复制到剪贴板",
-    "copy_link_error": "复制链接失败",
-    "star_success": "工作区已加星标",
-    "star_error": "未能为工作区加注星标",
-    "unstar_success": "工作区未加星标",
-    "unstar_error": "无法取消工作区星标",
-    "move_success": "工作区已移动",
-    "move_success_plural": "{count, plural, one {已移动 # 个工作区} other {已移动 # 个工作区}}",
-    "move_error": "移动工作区失败",
-    "move_error_plural": "无法移动工作区",
-    "move_partial_error": "已移动 {succeeded} 个工作区（共 {count} 个）。其余的移动失败。",
-    "delete_partial_error": "已删除 {succeeded} 个工作区（共 {count} 个）。其余的删除失败。"
+    "archive_success": "工作區已存檔",
+    "archive_error": "無法存檔工作區",
+    "restore_success": "工作區已恢復",
+    "restore_error": "無法恢復工作區",
+    "delete_success": "工作區已刪除",
+    "delete_error": "刪除workspace失敗",
+    "archive_bulk_success": "{count, plural, one {已存檔 # 個工作區} other {已存檔 # 個工作區}}",
+    "archive_bulk_error": "無法歸檔某些工作區",
+    "delete_bulk_success": "{count, plural, one {已刪除 # 個工作區} other {已刪除 # 個工作區}}",
+    "delete_bulk_error": "無法刪除某些工作區",
+    "restore_bulk_success": "{count, plural, one {已恢復 # 個工作區} other {已恢復 # 個工作區}}",
+    "restore_bulk_error": "無法恢復某些工作區",
+    "copy_link_success": "連結已複製到剪貼簿",
+    "copy_link_error": "複製連結失敗",
+    "star_success": "工作區已加星標",
+    "star_error": "未能為工作區加註星標",
+    "unstar_success": "工作區未加星標",
+    "unstar_error": "無法取消工作區星標",
+    "move_success": "工作區已移動",
+    "move_success_plural": "{count, plural, one {已移動 # 個工作區} other {已移動 # 個工作區}}",
+    "move_error": "移動工作區失敗",
+    "move_error_plural": "無法移動工作區",
+    "move_partial_error": "已移動 {succeeded} 個工作區（共 {count} 個）。其餘的移動失敗。",
+    "delete_partial_error": "已刪除 {succeeded} 個工作區（共 {count} 個）。其餘的刪除失敗。"
   }
 }

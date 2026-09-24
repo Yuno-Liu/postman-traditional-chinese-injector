@@ -1,50 +1,50 @@
 {
-  "switch_accounts_cta": "切换账户",
-  "creating_request_heading": "只有团队成员可以访问此资源",
-  "creating_request_subheading": "请求成为团队成员以获得访问权限。",
-  "squad_request_heading": "该资源属于“{squadName}”",
-  "closed_squad_request_subheading": "请求作为协作者加入此团队以获得访问权限。",
-  "open_squad_request_subheading": "加入团队作为协作者，以请求访问此资源。",
-  "submit_cta": "请求加入团队",
-  "closed_squad_submit_cta": "请求加入团队",
-  "open_squad_submit_cta": "加入团队",
-  "current_sign_in_account_text": "您的登录身份为",
-  "email_verify_heading": "验证您的电子邮件以提交请求",
-  "email_verify_subheading": "我们已发送验证电子邮件至",
-  "resend_verification_email_cta": "重新发送电子邮件",
-  "email_verified_cta": "我已验证我的电子邮件",
-  "pending_request_heading": "您加入此团队的请求正在审核中",
-  "pending_request_subheading": "一旦团队管理员回复，我们就会通知您。",
+  "switch_accounts_cta": "切換賬戶",
+  "creating_request_heading": "只有團隊成員可以訪問此資源",
+  "creating_request_subheading": "請求成為團隊成員以獲得訪問許可權。",
+  "squad_request_heading": "該資源屬於“{squadName}”",
+  "closed_squad_request_subheading": "請求作為協作者加入此團隊以獲得訪問許可權。",
+  "open_squad_request_subheading": "加入團隊作為協作者，以請求訪問此資源。",
+  "submit_cta": "請求加入團隊",
+  "closed_squad_submit_cta": "請求加入團隊",
+  "open_squad_submit_cta": "加入團隊",
+  "current_sign_in_account_text": "您的登入身份為",
+  "email_verify_heading": "驗證您的電子郵件以提交請求",
+  "email_verify_subheading": "我們已傳送驗證電子郵件至",
+  "resend_verification_email_cta": "重新傳送電子郵件",
+  "email_verified_cta": "我已驗證我的電子郵件",
+  "pending_request_heading": "您加入此團隊的請求正在稽核中",
+  "pending_request_subheading": "一旦團隊管理員回覆，我們就會通知您。",
   "squad_pending_request_heading": "快到了！",
-  "squad_pending_request_subheading": "我们已请求所有者授予您访问该资源的权限。他们回复后我们会通知您。",
+  "squad_pending_request_subheading": "我們已請求所有者授予您訪問該資源的許可權。他們回覆後我們會通知您。",
   "approved_personal_rfa_heading": "快到了！",
-  "approved_personal_rfa_subheading": "使用我们发送到 <Strong>{email}</Strong> 的电子邮件加入团队并查看此资源。",
-  "continue_postman_cta": "继续 Postman",
-  "join_team_page_heading": "检查您的电子邮件以访问此资源",
-  "join_team_page_subheading": "您尝试访问的资源仅对 <0>{teamName}</0> 的成员可见。要获得访问权限，请接受我们发送至您邮箱的邀请。",
-  "email_sent_confirmation": "邮件已发送至 {currentUserEmail}。",
-  "resend_invite_email_cta": "重新发送邮件",
-  "resend_invite_confirmation": "邮件已重新发送！",
+  "approved_personal_rfa_subheading": "使用我們傳送到 <Strong>{email}</Strong> 的電子郵件加入團隊並檢視此資源。",
+  "continue_postman_cta": "繼續 Postman",
+  "join_team_page_heading": "檢查您的電子郵件以訪問此資源",
+  "join_team_page_subheading": "您嘗試訪問的資源僅對 <0>{teamName}</0> 的成員可見。要獲得訪問許可權，請接受我們傳送至您郵箱的邀請。",
+  "email_sent_confirmation": "郵件已傳送至 {currentUserEmail}。",
+  "resend_invite_email_cta": "重新傳送郵件",
+  "resend_invite_confirmation": "郵件已重新傳送！",
   "toast_content": {
     "email_not_verified": {
-      "title": "您的邮箱尚未验证",
-      "description": "请查收邮箱以完成验证。"
+      "title": "您的郵箱尚未驗證",
+      "description": "請查收郵箱以完成驗證。"
     },
     "default_error": {
-      "title": "请求发送失败",
-      "description": "线路出了点小问题，请重试。"
+      "title": "請求傳送失敗",
+      "description": "線路出了點小問題，請重試。"
     },
     "verification_email_sent": {
-      "title": "邮件已发送",
+      "title": "郵件已傳送",
       "description": "Please check your inbox for the latest verification email."
     },
     "invite_resent": {
-      "title": "邮件已发送",
-      "description": "请查收邮箱中的最新邀请。"
+      "title": "郵件已傳送",
+      "description": "請查收郵箱中的最新邀請。"
     },
     "invite_error": {
-      "title": "邮件发送失败",
-      "description": "线路出了点小问题，请重试。"
+      "title": "郵件傳送失敗",
+      "description": "線路出了點小問題，請重試。"
     }
   }
 }

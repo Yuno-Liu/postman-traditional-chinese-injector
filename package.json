@@ -1,7 +1,7 @@
 {
   "name": "postman-chinese-injector",
-  "version": "1.6.0",
-  "description": "把中文翻译注入 Postman 桌面端 / 网页版的非官方第三方汉化工具（跨平台 CLI + 浏览器扩展）。与 Postman, Inc. 无关。",
+  "version": "1.7.0",
+  "description": "把繁體中文翻譯注入 Postman 桌面端 / 網頁版的非官方第三方中文化工具（跨平台 CLI + 瀏覽器擴充功能）。與 Postman, Inc. 無關。",
   "bin": {
     "postman-chinese-injector": "postman-chinese-injector.js"
   },
@@ -11,6 +11,7 @@
     "test": "node --test",
     "patch": "node postman-chinese-injector.js",
     "restore": "node postman-chinese-injector.js --restore",
+    "convert:tw": "node scripts/convert-to-traditional.js",
     "build:data": "node scripts/build-data.js",
     "build:ext": "node scripts/build-extension.js",
     "build:compress": "node scripts/compress-dist.js",
@@ -36,5 +37,8 @@
     "pm-main-cn.js",
     "locales/"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "opencc-js": "^1.4.2"
+  }
 }

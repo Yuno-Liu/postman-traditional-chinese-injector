@@ -1,32 +1,32 @@
 {
   "editor": {
     "fork_recommendation_tooltip": {
-      "title": "创建 Fork 以保存更改",
-      "msg": "您没有权限修改此集合。请将该集合 Fork 到您的工作区后再保存更改。",
-      "action": "创建 Fork 并保存"
+      "title": "建立 Fork 以儲存更改",
+      "msg": "您沒有許可權修改此集合。請將該集合 Fork 到您的工作區後再儲存更改。",
+      "action": "建立 Fork 並儲存"
     },
     "save": {
       "text": {
-        "save": "保存",
-        "saving": "正在保存…"
+        "save": "儲存",
+        "saving": "正在儲存…"
       },
       "tooltip": {
-        "title": "创建 Fork 以保存更改",
-        "response_limit_exceeded": "响应超过 5 MB 限制",
-        "delete": "删除示例",
-        "no_changes": "没有新的更改需要保存。",
-        "save_response": "保存响应",
-        "save_response_git": "将更改保存到 Postman 和 Github"
+        "title": "建立 Fork 以儲存更改",
+        "response_limit_exceeded": "響應超過 5 MB 限制",
+        "delete": "刪除示例",
+        "no_changes": "沒有新的更改需要儲存。",
+        "save_response": "儲存響應",
+        "save_response_git": "將更改儲存到 Postman 和 Github"
       }
     },
     "header": {
-      "placeholder": "示例名称"
+      "placeholder": "示例名稱"
     },
-    "send_button_text": "试用",
+    "send_button_text": "試用",
     "tabs": {
-      "params": "参数",
+      "params": "引數",
       "headers": "Headers",
-      "body": "请求体"
+      "body": "請求體"
     },
     "content_pane": {
       "header": {
@@ -35,24 +35,24 @@
             "label": "分享",
             "tooltip": "分享示例"
           },
-          "delete": "删除",
+          "delete": "刪除",
           "filter": {
-            "tooltip": "筛选",
+            "tooltip": "篩選",
             "input": {
-              "json_placeholder": "使用 JSONPath 筛选：$.story",
-              "xml_placeholder": "使用 XPath 筛选：/story"
+              "json_placeholder": "使用 JSONPath 篩選：$.story",
+              "xml_placeholder": "使用 XPath 篩選：/story"
             },
             "error": {
               "syntax_error": {
-                "heading": "语法错误",
-                "desc": "输入的语法无效"
+                "heading": "語法錯誤",
+                "desc": "輸入的語法無效"
               },
               "no_match_error": {
-                "heading": "未找到匹配项",
-                "desc": "请尝试使用其他键进行筛选"
+                "heading": "未找到匹配項",
+                "desc": "請嘗試使用其他鍵進行篩選"
               },
-              "filtered_data_size_unsupported_error": "筛选后的数据超过 50 MB。请尝试细化筛选条件。",
-              "default_error": "筛选响应时发生错误"
+              "filtered_data_size_unsupported_error": "篩選後的資料超過 50 MB。請嘗試細化篩選條件。",
+              "default_error": "篩選響應時發生錯誤"
             }
           }
         }
@@ -61,499 +61,499 @@
   },
   "response": {
     "network_meta": {
-      "aria_label_unavailable": "XHR 请求无法获取网络信息。",
-      "aria_label_connection": "网络连接 {status}。",
-      "details_unavailable_tooltip_heading": "网络详情不可用",
-      "details_unavailable_tooltip_msg": "此请求是通过 Browser Agent 发送的。如需查看详细网络信息，请通过 Postman Desktop Agent 发送请求。",
-      "heading": "网络",
+      "aria_label_unavailable": "XHR 請求無法獲取網路資訊。",
+      "aria_label_connection": "網路連線 {status}。",
+      "details_unavailable_tooltip_heading": "網路詳情不可用",
+      "details_unavailable_tooltip_msg": "此請求是通過 Browser Agent 傳送的。如需檢視詳細網路資訊，請通過 Postman Desktop Agent 傳送請求。",
+      "heading": "網路",
       "agent": "代理",
       "http_version": "HTTP 版本",
       "local_address": "本地地址",
-      "remote_address": "远程地址",
-      "tls_protocol": "TLS 协议",
-      "cipher": "加密套件名称",
-      "certificate": "证书 CN",
-      "issuer": "颁发者 CN",
+      "remote_address": "遠端地址",
+      "tls_protocol": "TLS 協議",
+      "cipher": "加密套件名稱",
+      "certificate": "證書 CN",
+      "issuer": "頒發者 CN",
       "valid": "有效期至",
-      "certificate_warning": "证书验证失败",
+      "certificate_warning": "證書驗證失敗",
       "http_status_codes": {
-        "1XX": {
-          "detail": "这是一个 1xx 响应，表示应携带一些信息。"
-        },
         "100": {
-          "detail": "一切正常，请继续请求。"
+          "detail": "一切正常，請繼續請求。"
         },
         "101": {
-          "detail": "已收到“升级”连接的请求，正在切换协议。"
+          "detail": "已收到“升級”連線的請求，正在切換協議。"
         },
         "102": {
-          "detail": "正在处理响应，暂无可用响应。"
+          "detail": "正在處理響應，暫無可用響應。"
         },
         "103": {
-          "detail": "这表示客户端可以在服务器准备响应的同时开始预加载资源。"
+          "detail": "這表示客戶端可以在伺服器準備響應的同時開始預載入資源。"
         },
         "122": {
-          "detail": "这是一个非标准的 IE7 专用代码，表示 URI 长度超过了 2083 个字符的上限。"
-        },
-        "2XX": {
-          "detail": "这是一个 2xx 响应，说明一切正常。"
+          "detail": "這是一個非標準的 IE7 專用程式碼，表示 URI 長度超過了 2083 個字元的上限。"
         },
         "200": {
-          "detail": "请求成功，服务器已按预期做出响应。"
+          "detail": "請求成功，伺服器已按預期做出響應。"
         },
         "201": {
-          "detail": "已成功创建新资源。"
+          "detail": "已成功建立新資源。"
         },
         "202": {
-          "detail": "请求已被接收，但尚未被处理。"
+          "detail": "請求已被接收，但尚未被處理。"
         },
         "203": {
-          "detail": "返回的元数据并非来自源服务器，而是来自本地或第三方副本，因此可能与源数据不完全一致。"
+          "detail": "返回的後設資料並非來自源伺服器，而是來自本地或第三方副本，因此可能與源資料不完全一致。"
         },
         "204": {
-          "detail": "此请求除请求头外没有内容需要发送。"
+          "detail": "此請求除請求頭外沒有內容需要傳送。"
         },
         "205": {
-          "detail": "重置发送此请求的文档。"
+          "detail": "重置傳送此請求的檔案。"
         },
         "206": {
-          "detail": "根据“Range”请求头，仅接收部分资源。"
+          "detail": "根據“Range”請求頭，僅接收部分資源。"
         },
         "207": {
-          "detail": "此情况需要多个状态码，单一状态码不足以说明问题。"
+          "detail": "此情況需要多個狀態碼，單一狀態碼不足以說明問題。"
         },
         "208": {
-          "detail": "用于 <code>dav:propstat</code> 响应元素中，以避免重复枚举多个绑定到同一集合的内部成员。"
+          "detail": "用於 <code>dav:propstat</code> 響應元素中，以避免重複列舉多個繫結到同一集合的內部成員。"
         },
         "226": {
-          "detail": "服务器已完成针对该资源的 <code>GET</code> 请求，响应内容是对当前实例应用一次或多次实例操作后的结果表示。"
-        },
-        "3XX": {
-          "detail": "这是一个 3xx 响应，表示应将您重定向到其他位置。"
+          "detail": "伺服器已完成針對該資源的 <code>GET</code> 請求，響應內容是對當前例項應用一次或多次例項操作後的結果表示。"
         },
         "300": {
-          "detail": "该请求存在多个可能的响应。"
+          "detail": "該請求存在多個可能的響應。"
         },
         "301": {
-          "detail": "所请求资源的 URL 已被永久更改，您应在响应中收到了新的 URL。"
+          "detail": "所請求資源的 URL 已被永久更改，您應在響應中收到了新的 URL。"
         },
         "302": {
-          "detail": "所请求资源的 URL 已被“临时”更改，因此后续请求请继续使用当前 URL。"
+          "detail": "所請求資源的 URL 已被“臨時”更改，因此後續請求請繼續使用當前 URL。"
         },
         "303": {
-          "detail": "已重定向到所请求资源的另一个 URL。"
+          "detail": "已重定向到所請求資源的另一個 URL。"
         },
         "304": {
-          "detail": "响应内容未被修改，请继续使用缓存中的同一响应版本。"
+          "detail": "響應內容未被修改，請繼續使用快取中的同一響應版本。"
         },
         "305": {
-          "detail": "许多 HTTP 客户端（如 Mozilla 和 Internet Explorer）出于安全原因，无法正确处理带有此状态码的响应。"
+          "detail": "許多 HTTP 客戶端（如 Mozilla 和 Internet Explorer）出於安全原因，無法正確處理帶有此狀態碼的響應。"
         },
         "306": {
-          "detail": "已不再使用。最初的含义是“后续请求应使用指定的代理”。"
+          "detail": "已不再使用。最初的含義是“後續請求應使用指定的代理”。"
         },
         "307": {
-          "detail": "该资源暂时可在另一个 URL 上访问。向新 URL 发起请求时，请使用相同的请求方法。"
+          "detail": "該資源暫時可在另一個 URL 上訪問。向新 URL 發起請求時，請使用相同的請求方法。"
         },
         "308": {
-          "detail": "该资源已被永久移动到另一个 URL。向新 URL 发起请求时，请使用相同的请求方法。"
-        },
-        "4XX": {
-          "detail": "这是一个 4xx 错误，请求本身可能存在问题。"
+          "detail": "該資源已被永久移動到另一個 URL。向新 URL 發起請求時，請使用相同的請求方法。"
         },
         "400": {
-          "detail": "服务器无法理解该请求，可能是语法有误？"
+          "detail": "伺服器無法理解該請求，可能是語法有誤？"
         },
         "401": {
-          "detail": "此请求未通过身份验证。<button>请传入正确的身份验证凭据</button>。"
+          "detail": "此請求未通過身份驗證。<button>請傳入正確的身份驗證憑據</button>。"
         },
         "402": {
-          "detail": "访问所请求的资源需要付费。"
+          "detail": "訪問所請求的資源需要付費。"
         },
         "403": {
-          "detail": "禁止访问该资源。<button>是否尝试使用其他身份验证凭据</button>？"
+          "detail": "禁止訪問該資源。<button>是否嘗試使用其他身份驗證憑據</button>？"
         },
         "404": {
-          "detail": "找不到所请求的资源。"
+          "detail": "找不到所請求的資源。"
         },
         "405": {
-          "detail": "该资源不允许使用此请求方法。"
+          "detail": "該資源不允許使用此請求方法。"
         },
         "406": {
-          "detail": "服务器在执行“服务器驱动的内容协商”后未能找到任何相关内容。"
+          "detail": "伺服器在執行“伺服器驅動的內容協商”後未能找到任何相關內容。"
         },
         "407": {
-          "detail": "此请求未通过身份验证。<button>配置代理</button>。"
+          "detail": "此請求未通過身份驗證。<button>配置代理</button>。"
         },
         "408": {
-          "detail": "处理该请求耗时过长，连接已被终止。"
+          "detail": "處理該請求耗時過長，連線已被終止。"
         },
         "409": {
-          "detail": "该请求与服务器当前状态冲突，因此无法处理。"
+          "detail": "該請求與伺服器當前狀態衝突，因此無法處理。"
         },
         "410": {
-          "detail": "所请求的内容已从服务器上永久删除。"
+          "detail": "所請求的內容已從伺服器上永久刪除。"
         },
         "411": {
-          "detail": "由于缺少必需的“content-length”请求头，请求无法处理。"
+          "detail": "由於缺少必需的“content-length”請求頭，請求無法處理。"
         },
         "412": {
-          "detail": "服务器不满足请求头中设置的条件。"
+          "detail": "伺服器不滿足請求頭中設定的條件。"
         },
         "413": {
-          "detail": "请求内容过大，服务器无法处理。"
+          "detail": "請求內容過大，伺服器無法處理。"
         },
         "414": {
-          "detail": "URI 过长，服务器无法处理。"
+          "detail": "URI 過長，伺服器無法處理。"
         },
         "415": {
-          "detail": "服务器不支持所请求数据的媒体格式。"
+          "detail": "伺服器不支援所請求資料的媒體格式。"
         },
         "416": {
-          "detail": "无法满足请求中“Range”请求头指定的范围，该范围可能超出了目标 URI 的数据大小。"
+          "detail": "無法滿足請求中“Range”請求頭指定的範圍，該範圍可能超出了目標 URI 的資料大小。"
         },
         "417": {
-          "detail": "无法满足请求头字段“Expect”所指示的期望。"
+          "detail": "無法滿足請求頭欄位“Expect”所指示的期望。"
         },
         "418": {
-          "detail": "而且我拒绝煮咖啡！"
+          "detail": "而且我拒絕煮咖啡！"
         },
         "419": {
-          "detail": "跨站请求伪造（CSRF）验证失败。"
+          "detail": "跨站請求偽造（CSRF）驗證失敗。"
         },
         "420": {
-          "detail": "这是一个 4xx 错误，请求本身可能存在问题。"
+          "detail": "這是一個 4xx 錯誤，請求本身可能存在問題。"
         },
         "421": {
-          "detail": "该请求被定向到了一个无法返回响应的服务器。"
+          "detail": "該請求被定向到了一個無法返回響應的伺服器。"
         },
         "422": {
-          "detail": "请求格式正确，但存在语义错误。"
+          "detail": "請求格式正確，但存在語義錯誤。"
         },
         "423": {
-          "detail": "所请求的资源已被锁定。"
+          "detail": "所請求的資源已被鎖定。"
         },
         "424": {
-          "detail": "由于前一个请求失败，此请求也随之失败。"
+          "detail": "由於前一個請求失敗，此請求也隨之失敗。"
         },
         "425": {
-          "detail": "服务器不愿承担处理可能被重放的请求的风险。"
+          "detail": "伺服器不願承擔處理可能被重放的請求的風險。"
         },
         "426": {
-          "detail": "无法使用当前协议处理该请求。请查看“Upgrade”响应头以了解支持的协议。"
+          "detail": "無法使用當前協議處理該請求。請檢視“Upgrade”響應頭以瞭解支援的協議。"
         },
         "428": {
-          "detail": "为防止冲突，源服务器要求该请求必须是条件请求。"
+          "detail": "為防止衝突，源伺服器要求該請求必須是條件請求。"
         },
         "429": {
-          "detail": "由于在给定时间内发送的请求过多，无法处理该请求。"
+          "detail": "由於在給定時間內傳送的請求過多，無法處理該請求。"
         },
         "431": {
-          "detail": "请求头过大，服务器无法处理。"
+          "detail": "請求頭過大，伺服器無法處理。"
         },
         "444": {
-          "detail": "这是 nginx HTTP 服务器的一项扩展。服务器不向客户端返回任何信息并关闭连接（可用于阻止恶意软件）。"
+          "detail": "這是 nginx HTTP 伺服器的一項擴充套件。伺服器不向客戶端返回任何資訊並關閉連線（可用於阻止惡意軟體）。"
         },
         "449": {
-          "detail": "由于缺少必要信息，该请求无法处理。"
+          "detail": "由於缺少必要資訊，該請求無法處理。"
         },
         "450": {
-          "detail": "家长控制阻止了对该资源的访问。"
+          "detail": "家長控制阻止了對該資源的訪問。"
         },
         "451": {
-          "detail": "所请求的资源因法律原因无法提供，例如被政府审查的网页。"
+          "detail": "所請求的資源因法律原因無法提供，例如被政府審查的網頁。"
         },
         "460": {
-          "detail": "连接在超时时间结束前已被关闭。"
+          "detail": "連線在超時時間結束前已被關閉。"
         },
         "463": {
-          "detail": "“X-Forwarded-For”请求头包含的 IP 地址过多。"
+          "detail": "“X-Forwarded-For”請求頭包含的 IP 地址過多。"
         },
         "464": {
-          "detail": "HTTP 请求协议不兼容。"
+          "detail": "HTTP 請求協議不相容。"
         },
         "494": {
-          "detail": "请求或部分请求头过大，无法处理。"
+          "detail": "請求或部分請求頭過大，無法處理。"
         },
         "495": {
-          "detail": "无法验证客户端证书。<button>配置正确的 SSL 证书</button>。"
+          "detail": "無法驗證客戶端證書。<button>配置正確的 SSL 證書</button>。"
         },
         "496": {
-          "detail": "缺少客户端证书。<button>配置正确的 SSL 证书</button>。"
+          "detail": "缺少客戶端證書。<button>配置正確的 SSL 證書</button>。"
         },
         "497": {
-          "detail": "向安全（HTTPS）端口发送了不安全（HTTP）的请求。"
+          "detail": "向安全（HTTPS）埠傳送了不安全（HTTP）的請求。"
         },
         "498": {
-          "detail": "身份验证令牌无效。<button>请传入正确的身份验证令牌</button>。"
+          "detail": "身份驗證令牌無效。<button>請傳入正確的身份驗證令牌</button>。"
         },
         "499": {
-          "detail": "连接在服务器完成任务前已被关闭。"
-        },
-        "5XX": {
-          "detail": "这是一个 5xx 响应，服务器出现了问题。"
+          "detail": "連線在伺服器完成任務前已被關閉。"
         },
         "500": {
-          "detail": "服务器遇到了不知如何处理的情况。"
+          "detail": "伺服器遇到了不知如何處理的情況。"
         },
         "501": {
-          "detail": "服务器不支持该请求方法，因此无法处理。"
+          "detail": "伺服器不支援該請求方法，因此無法處理。"
         },
         "502": {
-          "detail": "作为网关运行的服务器收到了无效响应。"
+          "detail": "作為閘道器執行的伺服器收到了無效響應。"
         },
         "503": {
-          "detail": "服务器已宕机（可能正在维护或负载过高）。"
+          "detail": "伺服器已宕機（可能正在維護或負載過高）。"
         },
         "504": {
-          "detail": "作为网关运行的服务器未能及时收到响应。"
+          "detail": "作為閘道器執行的伺服器未能及時收到響應。"
         },
         "505": {
-          "detail": "服务器不支持请求中使用的 HTTP 版本。"
+          "detail": "伺服器不支援請求中使用的 HTTP 版本。"
         },
         "506": {
-          "detail": "服务器存在内部配置错误：所选的变体资源被配置为自行进行透明内容协商，因此无法作为协商过程中的有效端点。"
+          "detail": "伺服器存在內部配置錯誤：所選的變體資源被配置為自行進行透明內容協商，因此無法作為協商過程中的有效端點。"
         },
         "507": {
-          "detail": "由于服务器无法存储完成请求所需的表示形式，该方法无法在此资源上执行。"
+          "detail": "由於伺服器無法儲存完成請求所需的表示形式，該方法無法在此資源上執行。"
         },
         "508": {
-          "detail": "服务器在处理请求时检测到无限循环。"
+          "detail": "伺服器在處理請求時檢測到無限迴圈。"
         },
         "509": {
-          "detail": "该虚拟主机服务已超出可用带宽。"
+          "detail": "該虛擬主機服務已超出可用頻寬。"
         },
         "510": {
-          "detail": "服务器需要对请求进行进一步扩展才能完成处理。"
+          "detail": "伺服器需要對請求進行進一步擴展才能完成處理。"
         },
         "511": {
-          "detail": "客户端需要先进行身份验证才能获得网络访问权限。"
+          "detail": "客戶端需要先進行身份驗證才能獲得網路訪問許可權。"
         },
         "520": {
-          "detail": "出现了未知问题。"
+          "detail": "出現了未知問題。"
         },
         "521": {
-          "detail": "与 Cloudflare 的连接成功，但无法连接到源服务器。"
+          "detail": "與 Cloudflare 的連線成功，但無法連線到源伺服器。"
         },
         "522": {
-          "detail": "在 Cloudflare 连接到源服务器之前连接已超时。"
+          "detail": "在 Cloudflare 連線到源伺服器之前連線已超時。"
         },
         "523": {
-          "detail": "无法访问源服务器。"
+          "detail": "無法訪問源伺服器。"
         },
         "524": {
-          "detail": "在源服务器完成请求之前连接已超时。"
+          "detail": "在源伺服器完成請求之前連線已超時。"
         },
         "525": {
-          "detail": "与源服务器的 SSL 握手失败。"
+          "detail": "與源伺服器的 SSL 握手失敗。"
         },
         "526": {
-          "detail": "由于 SSL 证书无效，无法与源服务器建立连接。"
+          "detail": "由於 SSL 證書無效，無法與源伺服器建立連線。"
         },
         "527": {
-          "detail": "Cloudflare 与源站的 Railgun 服务器之间出现错误。"
+          "detail": "Cloudflare 與源站的 Railgun 伺服器之間出現錯誤。"
         },
         "529": {
-          "detail": "由于服务器负载过高，无法处理该请求。"
+          "detail": "由於伺服器負載過高，無法處理該請求。"
         },
         "530": {
-          "detail": "无法连接到服务器。"
+          "detail": "無法連線到伺服器。"
         },
         "561": {
-          "detail": "身份提供商（IdP）在身份验证过程中返回了错误。"
+          "detail": "身份提供商（IdP）在身份驗證過程中返回了錯誤。"
         },
         "598": {
-          "detail": "代理背后与位于代理前面的 HTTP 客户端之间发生了网络读取超时。"
+          "detail": "代理背後與位於代理前面的 HTTP 客戶端之間發生了網路讀取超時。"
         },
         "599": {
-          "detail": "代理背后与位于代理前面的 HTTP 客户端之间发生了连接超时。"
+          "detail": "代理背後與位於代理前面的 HTTP 客戶端之間發生了連線超時。"
+        },
+        "1XX": {
+          "detail": "這是一個 1xx 響應，表示應攜帶一些資訊。"
+        },
+        "2XX": {
+          "detail": "這是一個 2xx 響應，說明一切正常。"
+        },
+        "3XX": {
+          "detail": "這是一個 3xx 響應，表示應將您重定向到其他位置。"
+        },
+        "4XX": {
+          "detail": "這是一個 4xx 錯誤，請求本身可能存在問題。"
+        },
+        "5XX": {
+          "detail": "這是一個 5xx 響應，伺服器出現了問題。"
         }
       }
     },
-    "status_meta_label": "状态：",
+    "status_meta_label": "狀態：",
     "status_meta": {
-      "aria_label": "响应状态：{status}（{code}）"
+      "aria_label": "響應狀態：{status}（{code}）"
     },
     "timing_meta": {
-      "label": "耗时：",
-      "phase_cached": "缓存",
+      "label": "耗時：",
+      "phase_cached": "快取",
       "tooltip_row": {
         "event": "事件",
-        "event_row_value": "时间",
-        "prepare": "准备",
+        "event_row_value": "時間",
+        "prepare": "準備",
         "wait": "Socket 初始化",
-        "dns": "DNS 查询",
+        "dns": "DNS 查詢",
         "tcp": "TCP 握手",
         "secure_handshake": "SSL 握手",
         "first_byte": "等待中（TTFB）",
-        "download": "下载",
-        "process": "处理",
-        "total": "总计"
+        "download": "下載",
+        "process": "處理",
+        "total": "總計"
       },
       "unavailable_tooltip": {
-        "title": "响应时间不可用",
-        "msg": "如需查看响应时间的完整明细，请通过 Postman Desktop Agent 发送请求。"
+        "title": "響應時間不可用",
+        "msg": "如需檢視響應時間的完整明細，請通過 Postman Desktop Agent 傳送請求。"
       },
-      "aria_label": "响应时间：{time}"
+      "aria_label": "響應時間：{time}"
     },
     "size_meta": {
       "label": "大小：",
       "tooltip": {
-        "title": "响应大小",
+        "title": "響應大小",
         "rows": {
-          "body": "请求体",
+          "body": "請求體",
           "headers": "Headers",
-          "uncompressed": "未压缩"
+          "uncompressed": "未壓縮"
         },
-        "xhr_agent_used": "如需精确的大小明细，请通过 Postman Desktop Agent 发送请求。",
-        "xhr_agent_not_used": "所有大小计算均为近似值",
-        "request_size_title": "请求大小"
+        "xhr_agent_used": "如需精確的大小明細，請通過 Postman Desktop Agent 傳送請求。",
+        "xhr_agent_not_used": "所有大小計算均為近似值",
+        "request_size_title": "請求大小"
       },
-      "aria_label": "响应大小：{size}"
+      "aria_label": "響應大小：{size}"
     },
     "meta_actions": {
       "cancel_response": "取消",
-      "save_as_example": "保存响应",
-      "view_more_tooltip": "查看更多操作",
+      "save_as_example": "儲存響應",
+      "view_more_tooltip": "檢視更多操作",
       "menu_item": {
         "update_example": "更新示例",
-        "save_response_to_file": "将响应保存到文件",
-        "clear_response": "清除响应",
-        "add_to_jira_cloud": "添加到 Jira Cloud"
+        "save_response_to_file": "將響應儲存到檔案",
+        "clear_response": "清除響應",
+        "add_to_jira_cloud": "新增到 Jira Cloud"
       },
       "disable_save_response_reason": {
-        "activeSSEStream": "请先关闭流以保存响应。",
-        "no_permission": "您需要拥有该集合的编辑者权限才能保存示例。",
-        "media_message": "无法为媒体类型的响应保存示例。",
-        "size_exceeded": "超过 5 MB 的响应无法保存为示例。",
-        "request_not_saved": "请先保存此请求以创建示例。",
-        "ongoing_request": "正在加载响应。",
-        "reusable_request": "此请求为链接请求，不支持保存示例。"
+        "activeSSEStream": "請先關閉流以儲存響應。",
+        "no_permission": "您需要擁有該集合的編輯者許可權才能儲存示例。",
+        "media_message": "無法為媒體型別的響應儲存示例。",
+        "size_exceeded": "超過 5 MB 的響應無法儲存為示例。",
+        "request_not_saved": "請先儲存此請求以建立示例。",
+        "ongoing_request": "正在載入響應。",
+        "reusable_request": "此請求為連結請求，不支援儲存示例。"
       },
       "disable_download_response_reason": {
-        "activeSSEStream": "请先关闭流以下载响应。",
-        "empty_body": "将响应体保存到文件时，请求体不能为空。",
-        "no_permission": "您需要拥有该集合的编辑者权限才能保存示例。"
+        "activeSSEStream": "請先關閉流以下載響應。",
+        "empty_body": "將響應體儲存到檔案時，請求體不能為空。",
+        "no_permission": "您需要擁有該集合的編輯者許可權才能儲存示例。"
       },
       "disable_clear_response_reason": {
-        "activeSSEStream": "请先关闭流以清除响应。"
+        "activeSSEStream": "請先關閉流以清除響應。"
       }
     },
-    "loading_message": "正在发送请求…",
-    "loading_active_env_message": "正在获取当前环境并发送请求",
-    "heading": "响应",
+    "loading_message": "正在傳送請求…",
+    "loading_active_env_message": "正在獲取當前環境併傳送請求",
+    "heading": "響應",
     "empty_view_message": {
-      "without_url": "发送请求以获取响应",
-      "with_url": "发送请求以获取响应",
-      "sending_request": "正在发送请求…",
+      "without_url": "傳送請求以獲取響應",
+      "with_url": "傳送請求以獲取響應",
+      "sending_request": "正在傳送請求…",
       "ai_banner": {
-        "header_text": "使用 Postman AI 整理您不断增长的集合",
+        "header_text": "使用 Postman AI 整理您不斷增長的集合",
         "button_text": "整理集合"
       }
     },
     "error_view_message": {
-      "request": "无法发送请求",
-      "response": "无法获取响应",
-      "script": "评估 {scriptPhase} 脚本时出错",
-      "troubleshoot": "了解如何排查请求问题",
-      "fallback": "出现了一些问题"
+      "request": "無法傳送請求",
+      "response": "無法獲取響應",
+      "script": "評估 {scriptPhase} 腳本時出錯",
+      "troubleshoot": "瞭解如何排查請求問題",
+      "fallback": "出現了一些問題"
     },
     "grw_1632_errors": {
       "err_orion_localhost_request": {
-        "title": "Cloud Agent 错误：无法发送请求。",
-        "description": "在本地测试 API 时，您需要使用 Postman Desktop Agent。您当前选择的是其他 Agent，无法向 Localhost 发送请求。",
-        "safari_description": "在本地测试 API 时，您需要使用 Postman Desktop Agent。Safari 不支持 Desktop Agent，请尝试切换浏览器。"
+        "title": "Cloud Agent 錯誤：無法傳送請求。",
+        "description": "在本地測試 API 時，您需要使用 Postman Desktop Agent。您當前選擇的是其他 Agent，無法向 Localhost 傳送請求。",
+        "safari_description": "在本地測試 API 時，您需要使用 Postman Desktop Agent。Safari 不支援 Desktop Agent，請嘗試切換瀏覽器。"
       },
       "err_pm_cors": {
-        "title": "CORS 错误：无法发送请求。",
-        "description": "由于跨源资源共享（CORS）策略，该请求已被阻止。",
-        "safari_description": "由于跨源资源共享（CORS）策略，该请求已被阻止。您需要使用 Postman Desktop Agent。Safari 不支持 Desktop Agent，请尝试切换浏览器。"
+        "title": "CORS 錯誤：無法傳送請求。",
+        "description": "由於跨源資源共享（CORS）策略，該請求已被阻止。",
+        "safari_description": "由於跨源資源共享（CORS）策略，該請求已被阻止。您需要使用 Postman Desktop Agent。Safari 不支援 Desktop Agent，請嘗試切換瀏覽器。"
       },
       "err_pm_mixed_content": {
-        "title": "混合内容错误：无法发送请求。",
-        "description": "由于请求了不安全的 HTTP 资源，该请求已被阻止。",
-        "safari_description": "由于请求了不安全的 HTTP 资源，该请求已被阻止。您需要使用 Postman Desktop Agent。Safari 不支持 Desktop Agent，请尝试切换浏览器。"
+        "title": "混合內容錯誤：無法傳送請求。",
+        "description": "由於請求了不安全的 HTTP 資源，該請求已被阻止。",
+        "safari_description": "由於請求了不安全的 HTTP 資源，該請求已被阻止。您需要使用 Postman Desktop Agent。Safari 不支援 Desktop Agent，請嘗試切換瀏覽器。"
       }
     },
     "errors": {
-      "default_text": "错误",
-      "message_default": "错误：{errorMessage}",
-      "action_label": "在控制台中查看",
+      "default_text": "錯誤",
+      "message_default": "錯誤：{errorMessage}",
+      "action_label": "在控制台中檢視",
       "switch_agent": "使用 Postman 的 Desktop Agent",
       "cloud_agent": {
-        "bad_request": "请确认请求 URL、变量和其他属性均有效。",
-        "unauth_not_reachable": "无法连接到 Cloud Agent，请稍后重试或选择其他 Agent。",
-        "forbidden": "您已达到 Cloud Agent 的月度调用次数上限，请选择其他 Agent。",
-        "rate_limit_exceeded": "已超出 Cloud Agent 的速率限制，请稍后重试或选择其他 Agent。",
-        "internal_error": "无法发送此请求，请选择其他 Agent。",
+        "bad_request": "請確認請求 URL、變數和其他屬性均有效。",
+        "unauth_not_reachable": "無法連線到 Cloud Agent，請稍後重試或選擇其他 Agent。",
+        "forbidden": "您已達到 Cloud Agent 的月度呼叫次數上限，請選擇其他 Agent。",
+        "rate_limit_exceeded": "已超出 Cloud Agent 的速率限制，請稍後重試或選擇其他 Agent。",
+        "internal_error": "無法傳送此請求，請選擇其他 Agent。",
         "error_orion": {
           "ipv6_request": "Can not send requests to IPv6 addresses. Select a different agent.",
-          "request_abort": "请求处理耗时超过 30 秒。请使用其他不受时间限制的 Agent 发送请求。",
-          "request_timeout": "请求超时",
+          "request_abort": "請求處理耗時超過 30 秒。請使用其他不受時間限制的 Agent 傳送請求。",
+          "request_timeout": "請求超時",
           "blocked_request": "Can not send requests to reserved address. Make sure address is publicly accessible or select a different agent.",
           "localhost_request": "Can not send requests to localhost. Select a different agent.",
-          "enotfound": "无法解析主机。请确认该域名可公开访问，或选择其他 Agent。",
-          "enodata": "无法解析主机。请确认该域名可公开访问，或选择其他 Agent。"
+          "enotfound": "無法解析主機。請確認該域名可公開訪問，或選擇其他 Agent。",
+          "enodata": "無法解析主機。請確認該域名可公開訪問，或選擇其他 Agent。"
         }
       },
       "general": {
-        "etimedout": "请求超时",
-        "esockettimedout": "响应超时"
+        "etimedout": "請求超時",
+        "esockettimedout": "響應超時"
       },
       "access_proxy": {
-        "unauthorized": "你无权在当前 API 中使用所引用的{count, plural, one {密钥} other {密钥}}。{count, plural, one {引用} other {引用}}：\"{refs}\"",
-        "unsupported_vault_type": "该代理未针对所引用{count, plural, one {密钥} other {密钥}}使用的 Vault 类型进行配置。{count, plural, one {引用} other {引用}}：\"{refs}\"",
-        "decrypt_failed": "Postman 无法解密所引用的{count, plural, one {密钥} other {密钥}}。{count, plural, one {引用} other {引用}}：\"{refs}\"",
-        "missing_ref": "找不到所引用的{count, plural, one {密钥} other {密钥}}。{count, plural, one {引用} other {引用}}：\"{refs}\"",
-        "resolve_error": "无法解析此请求中的密钥。",
-        "revoked": "你的访问权限已被撤销。请重新连接 Passport 后重试。",
-        "rate_limited": "通过代理的请求过于频繁，请稍后重试。",
-        "origin_error": "无法访问目标服务器。",
-        "client_cert_required": "缺少证书。请在设置中重新启用 Secured Access Proxy。",
-        "client_cert_untrusted": "代理不信任你的证书。请重新连接 Passport。",
-        "client_cert_expired": "你的证书已过期。请重新连接 Passport。",
-        "client_cert_identity_missing": "你的证书缺少身份信息。请重新连接 Passport。",
-        "identity_revoked": "你的访问权限已被撤销。",
-        "http_unsupported": "仅支持 HTTPS 请求 URL。请使用 https:// 开头的 URL，或在设置中关闭 Secured Access Proxy。",
-        "missing": "缺少证书。请在设置中启用 Secured Access Proxy 以预置证书。",
-        "expired": "证书已过期或即将过期。请重新连接 Passport。",
-        "config": "已启用，但未配置主机 / 端口。",
-        "handshake": "mTLS 握手失败。请重新连接 Passport。",
-        "open_passport_action": "打开 Passport 设置"
+        "unauthorized": "你無權在當前 API 中使用所引用的{count, plural, one {金鑰} other {金鑰}}。{count, plural, one {引用} other {引用}}：\"{refs}\"",
+        "unsupported_vault_type": "該代理未針對所引用{count, plural, one {金鑰} other {金鑰}}使用的 Vault 型別進行配置。{count, plural, one {引用} other {引用}}：\"{refs}\"",
+        "decrypt_failed": "Postman 無法解密所引用的{count, plural, one {金鑰} other {金鑰}}。{count, plural, one {引用} other {引用}}：\"{refs}\"",
+        "missing_ref": "找不到所引用的{count, plural, one {金鑰} other {金鑰}}。{count, plural, one {引用} other {引用}}：\"{refs}\"",
+        "resolve_error": "無法解析此請求中的金鑰。",
+        "revoked": "你的訪問許可權已被撤銷。請重新連線 Passport 後重試。",
+        "rate_limited": "通過代理的請求過於頻繁，請稍後重試。",
+        "origin_error": "無法訪問目標伺服器。",
+        "client_cert_required": "缺少證書。請在設定中重新啟用 Secured Access Proxy。",
+        "client_cert_untrusted": "代理不信任你的證書。請重新連線 Passport。",
+        "client_cert_expired": "你的證書已過期。請重新連線 Passport。",
+        "client_cert_identity_missing": "你的證書缺少身份資訊。請重新連線 Passport。",
+        "identity_revoked": "你的訪問許可權已被撤銷。",
+        "http_unsupported": "僅支援 HTTPS 請求 URL。請使用 https:// 開頭的 URL，或在設定中關閉 Secured Access Proxy。",
+        "missing": "缺少證書。請在設定中啟用 Secured Access Proxy 以預置證書。",
+        "expired": "證書已過期或即將過期。請重新連線 Passport。",
+        "config": "已啟用，但未配置主機 / 埠。",
+        "handshake": "mTLS 握手失敗。請重新連線 Passport。",
+        "open_passport_action": "開啟 Passport 設定"
       },
-      "cors": "由于 CORS 策略，该请求已被阻止",
-      "mixed_content": "由于请求了不安全的 HTTP 资源，该请求已被阻止",
+      "cors": "由於 CORS 策略，該請求已被阻止",
+      "mixed_content": "由於請求了不安全的 HTTP 資源，該請求已被阻止",
       "parse": {
-        "hpe_invalid_constant": "服务器返回了格式错误的响应",
+        "hpe_invalid_constant": "伺服器返回了格式錯誤的響應",
         "default_message": "Parse Error:",
         "hpe_invalid_header_token": {
-          "invalid_header_char": "响应头的值中似乎包含无效字符",
-          "invalid_header_token": "响应头的键或值中似乎包含无效字符"
+          "invalid_header_char": "響應頭的值中似乎包含無效字元",
+          "invalid_header_token": "響應頭的鍵或值中似乎包含無效字元"
         },
         "hpe_invalid_content_length": {
-          "invalid_char": "响应头“Content-Length”中似乎包含无效字符",
-          "empty": "响应头“Content-Length”不能为空"
+          "invalid_char": "響應頭“Content-Length”中似乎包含無效字元",
+          "empty": "響應頭“Content-Length”不能為空"
         },
         "hpe_unexpected_content_length": {
-          "chunked_encoding": "使用分块编码时，响应头中不能包含“Content-Length”",
-          "transfer_encoding": "“Content-Length”和“Transfer-Encoding”不能同时出现在响应头中",
-          "duplicate": "响应中存在重复的“Content-Length”请求头"
+          "chunked_encoding": "使用分塊編碼時，響應頭中不能包含“Content-Length”",
+          "transfer_encoding": "“Content-Length”和“Transfer-Encoding”不能同時出現在響應頭中",
+          "duplicate": "響應中存在重複的“Content-Length”請求頭"
         }
       },
       "response_size_limit_exceeded": {
-        "name": "错误",
-        "message": "已达到最大响应大小",
-        "action_label": "增加响应大小限制"
+        "name": "錯誤",
+        "message": "已達到最大響應大小",
+        "action_label": "增加響應大小限制"
       }
     },
     "security_warning": {
       "heading": "View security warnings",
-      "desc": "安全警告表示您的 API 可能存在潜在的安全风险。",
+      "desc": "安全警告表示您的 API 可能存在潛在的安全風險。",
       "button_label": "知道了"
     },
     "viewer_tabs": {
       "body": {
-        "label": "请求体",
+        "label": "請求體",
         "text_viewer": {
           "languages": {
             "json": "JSON",
@@ -562,237 +562,237 @@
             "yaml": "YAML",
             "javascript": "JavaScript",
             "text": "文本",
-            "auto": "自动",
+            "auto": "自動",
             "base64": "Base64",
-            "hex": "十六进制",
-            "raw": "原始数据",
+            "hex": "十六進位制",
+            "raw": "原始資料",
             "markdown": "Markdown"
           },
-          "pretty_wrap_tooltip": "自动换行",
-          "pretty_search_tooltip": "搜索",
-          "copy_button_tooltip": "复制",
-          "wrap_lines": "自动换行",
-          "unwrap_lines": "取消换行",
-          "wrap_lines_aria_label": "切换自动换行",
-          "search": "搜索",
-          "search_aria_label": "在响应中搜索",
+          "pretty_wrap_tooltip": "自動換行",
+          "pretty_search_tooltip": "搜尋",
+          "copy_button_tooltip": "複製",
+          "wrap_lines": "自動換行",
+          "unwrap_lines": "取消換行",
+          "wrap_lines_aria_label": "切換自動換行",
+          "search": "搜尋",
+          "search_aria_label": "在響應中搜索",
           "schema": "Schema",
-          "show_schema": "显示 Schema",
-          "hide_schema": "隐藏 Schema",
-          "schema_toggle_aria_label": "切换 Schema 视图",
-          "copy": "复制",
-          "copied": "已复制",
-          "copy_error": "错误",
-          "copy_response_aria_label": "复制响应",
-          "response_copied_aria_label": "响应已复制到剪贴板",
-          "copy_failed_aria_label": "响应复制失败",
-          "filter_aria_label": "切换响应筛选",
+          "show_schema": "顯示 Schema",
+          "hide_schema": "隱藏 Schema",
+          "schema_toggle_aria_label": "切換 Schema 檢視",
+          "copy": "複製",
+          "copied": "已複製",
+          "copy_error": "錯誤",
+          "copy_response_aria_label": "複製響應",
+          "response_copied_aria_label": "響應已複製到剪貼簿",
+          "copy_failed_aria_label": "響應複製失敗",
+          "filter_aria_label": "切換響應篩選",
           "formatting_label": "正在格式化…",
           "preview": {
-            "error_heading": "{title}加载失败",
-            "title": "不该发生这种情况。",
-            "reload_button": "<span><text>重新加载{title} </text></span><text>或稍后再试。</text>"
+            "error_heading": "{title}載入失敗",
+            "title": "不該發生這種情況。",
+            "reload_button": "<span><text>重新載入{title} </text></span><text>或稍後再試。</text>"
           },
           "visualize": {
             "empty": {
-              "title": "设置可视化工具",
-              "desc": "<0>如需可视化响应，请在请求的测试或请求前脚本中添加 pm.visualizer.set() 方法。了解更多关于</0><1>响应可视化</1><2>的信息。</2>"
+              "title": "設定視覺化工具",
+              "desc": "<0>如需視覺化響應，請在請求的測試或請求前腳本中新增 pm.visualizer.set() 方法。瞭解更多關於</0><1>響應視覺化</1><2>的資訊。</2>"
             },
             "refresh": {
-              "tooltip": "刷新可视化",
-              "error_toast": "运行脚本时发生错误，请在 Postman Console 中查看更多信息。",
-              "error_message_fallback": "渲染可视化内容时发生错误。"
+              "tooltip": "重新整理視覺化",
+              "error_toast": "執行腳本時發生錯誤，請在 Postman Console 中檢視更多資訊。",
+              "error_message_fallback": "渲染視覺化內容時發生錯誤。"
             },
             "with_postbot": {
-              "loading_response": "处理中…",
-              "generating_script": "正在使用 Postbot 生成脚本…",
+              "loading_response": "處理中…",
+              "generating_script": "正在使用 Postbot 生成腳本…",
               "error_after_loaded": {
-                "text": "无法生成可视化内容。",
-                "description": "<0>请重新使用 Postbot 尝试，或在脚本选项卡中使用 pm.visualizer.set() 方法自行设置可视化工具。了解更多关于</0><1>响应可视化</1><2>的信息。</2>",
-                "button_label": "重试",
-                "retrying": "正在重试…"
+                "text": "無法生成視覺化內容。",
+                "description": "<0>請重新使用 Postbot 嘗試，或在腳本選項卡中使用 pm.visualizer.set() 方法自行設定視覺化工具。瞭解更多關於</0><1>響應視覺化</1><2>的資訊。</2>",
+                "button_label": "重試",
+                "retrying": "正在重試…"
               },
-              "button_label": "可视化响应",
+              "button_label": "視覺化響應",
               "visualizer_list": {
                 "table": "表格",
-                "linear_chart": "折线图",
-                "bar_graph": "柱状图",
-                "trigger_prompt": "使用提示词设置"
+                "linear_chart": "折線圖",
+                "bar_graph": "柱狀圖",
+                "trigger_prompt": "使用提示詞設定"
               },
               "empty": {
-                "title": "使用 Postbot 可视化响应",
-                "desc": "<0>您也可以在测试或请求前脚本选项卡中使用 pm.visualizer.set() 方法自行设置可视化工具。了解更多关于</0><1>响应可视化</1><2>的信息。</2>"
+                "title": "使用 Postbot 視覺化響應",
+                "desc": "<0>您也可以在測試或請求前腳本選項卡中使用 pm.visualizer.set() 方法自行設定視覺化工具。瞭解更多關於</0><1>響應視覺化</1><2>的資訊。</2>"
               },
-              "toggle_options_aria_label": "切换可视化选项",
-              "disabled_while_executing_tooltip": "响应加载中"
+              "toggle_options_aria_label": "切換視覺化選項",
+              "disabled_while_executing_tooltip": "響應載入中"
             }
           },
           "tabs": {
             "pretty": "格式化",
-            "raw": "原始数据",
-            "preview": "预览",
-            "visualize": "可视化"
+            "raw": "原始資料",
+            "preview": "預覽",
+            "visualize": "視覺化"
           }
         },
         "sse_stream_viewer": {
-          "comment_inspector_label": "注释",
+          "comment_inspector_label": "註釋",
           "timeline": {
             "id_title": "ID",
-            "copy_tooltip": "点击复制",
-            "retry_label": "重试",
+            "copy_tooltip": "點選複製",
+            "retry_label": "重試",
             "size_label": "大小",
-            "notification": "新消息",
+            "notification": "新訊息",
             "empty_summary": "空",
             "toolbar": {
-              "input_placeholder": "搜索",
-              "dropdown_button": "所有消息",
-              "menu_item": "所有消息",
-              "clear_button": "清除消息"
+              "input_placeholder": "搜尋",
+              "dropdown_button": "所有訊息",
+              "menu_item": "所有訊息",
+              "clear_button": "清除訊息"
             }
           }
         },
         "table_viewer": {
           "errors": {
-            "heading": "无法生成表格视图",
-            "data_error": "无法解析响应体以生成表格。请检查响应内容是否为有效的 JSON 或 XML，或更改语言设置。",
-            "response_size": "响应体过大，无法生成表格。"
+            "heading": "無法生成表格檢視",
+            "data_error": "無法解析響應體以生成表格。請檢查響應內容是否為有效的 JSON 或 XML，或更改語言設定。",
+            "response_size": "響應體過大，無法生成表格。"
           }
         },
         "preview_viewer": {
           "errors": {
-            "heading": "无法生成预览",
-            "data_error": "无法将 {language} 格式的响应体解析为预览。",
-            "response_size": "响应体过大，无法生成预览。"
+            "heading": "無法生成預覽",
+            "data_error": "無法將 {language} 格式的響應體解析為預覽。",
+            "response_size": "響應體過大，無法生成預覽。"
           }
         }
       },
       "cookies": {
         "label": "Cookie",
         "empty_cookies_viewer": {
-          "title": "未收到服务器返回的 Cookie",
-          "desc": "您的所有 Cookie 及其关联的域名都会显示在这里。"
+          "title": "未收到伺服器返回的 Cookie",
+          "desc": "您的所有 Cookie 及其關聯的域名都會顯示在這裡。"
         },
         "table_headers": {
-          "name": "名称",
+          "name": "名稱",
           "value": "值",
           "domain": "域名",
-          "path": "路径",
-          "expires": "过期时间",
+          "path": "路徑",
+          "expires": "過期時間",
           "http_only": "HttpOnly",
           "secure": "Secure"
         },
         "xhr_agent_used_on_browser_empty_state": {
-          "title": "没有可用的 Cookie",
-          "message": "通过浏览器发送请求时，Postman 无法访问 Cookie。如需捕获和管理 Cookie，请尝试使用 Postman Desktop Agent。"
+          "title": "沒有可用的 Cookie",
+          "message": "通過瀏覽器傳送請求時，Postman 無法訪問 Cookie。如需捕獲和管理 Cookie，請嘗試使用 Postman Desktop Agent。"
         }
       },
       "headers": {
         "label": "Headers",
         "types": {
-          "accept_ranges": "指示客户端是否可以请求文件的一部分，而不必下载整个文件。",
-          "access_control_allow_credentials": "指示是否将响应暴露给前端 JavaScript 代码。在响应预检请求时，用于指示实际请求是否可以携带凭据发起。",
-          "access_control_allow_headers": "用于响应预检请求，指定实际请求中可以使用哪些 HTTP 请求头。",
-          "access_control_allow_origin": "指定可以访问该响应的 URI。",
-          "access_control_allow_methods": "用于响应预检请求，指定可以访问该资源的一种或多种方法。",
-          "access_control_expose_headers": "指定哪些请求头可以作为响应的一部分暴露出来。",
-          "access_control_max_age": "指定预检请求结果可被缓存的时长（以秒为单位）。",
-          "access_control_request_method": "用于预检请求，告知服务器实际请求将使用哪种 HTTP 方法。",
-          "access_control_request_headers": "用于预检请求，告知服务器实际请求将使用哪些 HTTP 请求头。",
-          "age": "指示对象在代理缓存中存在的时长（以秒为单位）。",
-          "allow": "一种实体请求头，用于指定资源支持的方法。必须在响应 HTTP 405（不允许使用该方法）时发送。",
-          "cache_control": "一种通用请求头，用于指定请求和响应中的缓存规则。缓存时长以秒为单位。",
-          "connection": "一种通用请求头，用于指定当前事务结束后网络连接是否保持打开状态。",
-          "content_encoding": "一种实体请求头，用于指示应用于实体主体的编码方式。",
-          "content_language": "一种实体请求头，用于指示目标受众所使用的语言。",
-          "content_length": "一种实体请求头，用于指示实体主体的大小（以字节为单位）。",
-          "content_location": "一种实体请求头，用于指定无需进一步内容协商即可访问该资源的 URL。",
-          "content_md5": "一种实体请求头，包含实体主体经过 Base64 编码后的摘要。",
-          "content_disposition": "指示响应内容是在浏览器中显示，还是作为附件保存到本地。",
-          "content_range": "指示部分消息在完整消息主体中所属的位置。",
-          "content_type": "指示资源的媒体类型。",
-          "date": "一种通用请求头，包含消息发送的日期和时间。",
-          "etag": "用于标识某个资源的特定版本。",
-          "expires": "指示响应被视为过期的日期和时间。",
-          "last_modified": "指示资源最后被修改的日期和时间。",
-          "link": "指示与另一资源之间的类型化关系，该关系类型由 RFC 5988 定义。",
-          "location": "指示页面应重定向到的 URL。",
-          "p3p": "指定 P3P（隐私偏好平台项目）策略，这是一种已废弃的协议，允许网站声明其将如何使用从用户处收集的信息。主要适用于旧版本的 Internet Explorer 和 Edge 浏览器。",
-          "pragma": "一种通用请求头，其具体实现方式因情况而异，可能会在请求-响应链中产生不同的效果。",
-          "proxy_authenticate": "指定访问代理服务器背后的资源所需的身份验证方法。",
-          "refresh": "指示客户端应重定向到的位置。这是由 Netscape 引入的一种专有的非标准请求头扩展，目前大多数浏览器都支持。",
-          "retry_after": "指示在发起后续请求前应等待的秒数。",
-          "server": "包含有关服务器如何处理请求的信息。",
-          "set_cookie": "用于服务器向用户代理发送 Cookie。",
-          "status": "HTTP/2 专用的伪请求头，用于指示响应的状态。",
-          "strict_transport_security": "使网站能够告知浏览器只能通过 HTTPS 进行访问。",
-          "trailer": "指示给定的标头字段集出现在使用分块传输编码编码的消息的尾部中。",
-          "transfer_encoding": "指定用于将实体传输给用户的编码形式。",
-          "vary": "确定如何匹配未来的请求标头，以决定是否可以使用缓存的响应而不是请求新的标头。",
-          "via": "由代理添加并用于跟踪消息转发、避免请求循环并识别发送者的协议功能。",
-          "warning": "包含有关消息状态可能出现的问题的信息。",
-          "www_authenticate": "指定访问资源时应使用的身份验证方法。",
-          "x_requested_with": "识别 Ajax 请求。大多数 JavaScript 框架都会发送带有 XMLHttpRequest 值的标头。",
-          "x_do_not_track": "可用于要求 Web 应用程序不要跟踪用户。注意：此标头在很大程度上被 Web 应用程序忽略。",
-          "dnt": "可用于要求 Web 应用程序不要跟踪用户。这是 Mozilla 的 X-Do-Not-Track 标头的版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支持此标头。注意：此标头在很大程度上被 Web 应用程序忽略。",
-          "x_forwarded_for": "标识通过 HTTP 代理或负载均衡器连接到 Web 服务器的客户端的原始 IP 地址。",
-          "x_frame_options": "用于通过确保其内容未嵌入其他网站来避免点击劫持攻击。",
-          "x_xss_protection": "当页面检测到反射的跨站点脚本 (XSS) 攻击时，停止加载页面。",
-          "x_content_type_options": "可用于选择退出 MIME 类型，从声明的内容类型中嗅探响应。",
-          "x_forwarded_proto": "标识客户端用于连接到代理或负载均衡器的协议（HTTP 或 HTTPS）。",
-          "x_powered_by": "指定支持 Web 应用程序的技术（例如 ASP.NET、PHP、JBoss）。"
+          "accept_ranges": "指示客戶端是否可以請求檔案的一部分，而不必下載整個檔案。",
+          "access_control_allow_credentials": "指示是否將響應暴露給前端 JavaScript 程式碼。在響應預檢請求時，用於指示實際請求是否可以攜帶憑據發起。",
+          "access_control_allow_headers": "用於響應預檢請求，指定實際請求中可以使用哪些 HTTP 請求頭。",
+          "access_control_allow_origin": "指定可以訪問該響應的 URI。",
+          "access_control_allow_methods": "用於響應預檢請求，指定可以訪問該資源的一種或多種方法。",
+          "access_control_expose_headers": "指定哪些請求頭可以作為響應的一部分暴露出來。",
+          "access_control_max_age": "指定預檢請求結果可被快取的時長（以秒為單位）。",
+          "access_control_request_method": "用於預檢請求，告知伺服器實際請求將使用哪種 HTTP 方法。",
+          "access_control_request_headers": "用於預檢請求，告知伺服器實際請求將使用哪些 HTTP 請求頭。",
+          "age": "指示物件在代理快取中存在的時長（以秒為單位）。",
+          "allow": "一種實體請求頭，用於指定資源支援的方法。必須在響應 HTTP 405（不允許使用該方法）時傳送。",
+          "cache_control": "一種通用請求頭，用於指定請求和響應中的快取規則。快取時長以秒為單位。",
+          "connection": "一種通用請求頭，用於指定當前事務結束後網路連線是否保持開啟狀態。",
+          "content_encoding": "一種實體請求頭，用於指示應用於實體主體的編碼方式。",
+          "content_language": "一種實體請求頭，用於指示目標受眾所使用的語言。",
+          "content_length": "一種實體請求頭，用於指示實體主體的大小（以位元組為單位）。",
+          "content_location": "一種實體請求頭，用於指定無需進一步內容協商即可訪問該資源的 URL。",
+          "content_md5": "一種實體請求頭，包含實體主體經過 Base64 編碼後的摘要。",
+          "content_disposition": "指示響應內容是在瀏覽器中顯示，還是作為附件儲存到本地。",
+          "content_range": "指示部分訊息在完整訊息主體中所屬的位置。",
+          "content_type": "指示資源的媒體型別。",
+          "date": "一種通用請求頭，包含訊息傳送的日期和時間。",
+          "etag": "用於標識某個資源的特定版本。",
+          "expires": "指示響應被視為過期的日期和時間。",
+          "last_modified": "指示資源最後被修改的日期和時間。",
+          "link": "指示與另一資源之間的型別化關係，該關係型別由 RFC 5988 定義。",
+          "location": "指示頁面應重定向到的 URL。",
+          "p3p": "指定 P3P（隱私偏好平臺專案）策略，這是一種已廢棄的協議，允許網站宣告其將如何使用從使用者處收集的資訊。主要適用於舊版本的 Internet Explorer 和 Edge 瀏覽器。",
+          "pragma": "一種通用請求頭，其具體實現方式因情況而異，可能會在請求-響應鏈中產生不同的效果。",
+          "proxy_authenticate": "指定訪問代理伺服器背後的資源所需的身份驗證方法。",
+          "refresh": "指示客戶端應重定向到的位置。這是由 Netscape 引入的一種專有的非標準請求頭擴充套件，目前大多數瀏覽器都支援。",
+          "retry_after": "指示在發起後續請求前應等待的秒數。",
+          "server": "包含有關伺服器如何處理請求的資訊。",
+          "set_cookie": "用於伺服器向用戶代理傳送 Cookie。",
+          "status": "HTTP/2 專用的偽請求頭，用於指示響應的狀態。",
+          "strict_transport_security": "使網站能夠告知瀏覽器只能通過 HTTPS 進行訪問。",
+          "trailer": "指示給定的標頭欄位集出現在使用分塊傳輸編碼編碼的訊息的尾部中。",
+          "transfer_encoding": "指定用於將實體傳輸給使用者的編碼形式。",
+          "vary": "確定如何匹配未來的請求標頭，以決定是否可以使用快取的響應而不是請求新的標頭。",
+          "via": "由代理新增並用於跟蹤訊息轉發、避免請求迴圈並識別傳送者的協議功能。",
+          "warning": "包含有關訊息狀態可能出現的問題的資訊。",
+          "www_authenticate": "指定訪問資源時應使用的身份驗證方法。",
+          "x_requested_with": "識別 Ajax 請求。大多數 JavaScript 框架都會傳送帶有 XMLHttpRequest 值的標頭。",
+          "x_do_not_track": "可用於要求 Web 應用程式不要跟蹤使用者。注意：此標頭在很大程度上被 Web 應用程式忽略。",
+          "dnt": "可用於要求 Web 應用程式不要跟蹤使用者。這是 Mozilla 的 X-Do-Not-Track 標頭的版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支援此標頭。注意：此標頭在很大程度上被 Web 應用程式忽略。",
+          "x_forwarded_for": "標識通過 HTTP 代理或負載均衡器連線到 Web 伺服器的客戶端的原始 IP 地址。",
+          "x_frame_options": "用於通過確保其內容未嵌入其他網站來避免點選劫持攻擊。",
+          "x_xss_protection": "當頁面檢測到反射的跨站點腳本 (XSS) 攻擊時，停止載入頁面。",
+          "x_content_type_options": "可用於選擇退出 MIME 型別，從宣告的內容型別中嗅探響應。",
+          "x_forwarded_proto": "標識客戶端用於連線到代理或負載均衡器的協議（HTTP 或 HTTPS）。",
+          "x_powered_by": "指定支援 Web 應用程式的技術（例如 ASP.NET、PHP、JBoss）。"
         }
       },
       "tests": {
-        "label": "测试结果",
+        "label": "測試結果",
         "empty_test_results": {
-          "title": "没有针对此请求的测试",
-          "desc": "编写测试脚本来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
+          "title": "沒有針對此請求的測試",
+          "desc": "編寫測試腳本來自動除錯。瞭解有關<1><0>編寫測試</0></1>的更多資訊",
           "with_postbot": {
-            "trigger_prompt": "没有针对此请求的测试",
-            "title": "没有针对此请求的测试",
-            "desc": "编写测试脚本来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
+            "trigger_prompt": "沒有針對此請求的測試",
+            "title": "沒有針對此請求的測試",
+            "desc": "編寫測試腳本來自動除錯。瞭解有關<1><0>編寫測試</0></1>的更多資訊",
             "error_after_loaded": {
-              "text": "无法生成测试。",
-              "button_label": "再试一次",
-              "error_muted_button_label": "刷新结果"
+              "text": "無法生成測試。",
+              "button_label": "再試一次",
+              "error_muted_button_label": "重新整理結果"
             },
-            "secondary_button_label": "生成测试",
-            "tertiary_button_tooltip": "刷新结果",
+            "secondary_button_label": "生成測試",
+            "tertiary_button_tooltip": "重新整理結果",
             "loading_text": "正在努力..."
           }
         },
         "viewer": {
           "tabs": {
-            "passed": "通过",
-            "skipped": "跳过",
-            "failed": "失败的"
+            "passed": "通過",
+            "skipped": "跳過",
+            "failed": "失敗的"
           },
-          "menu_results_label": "结果类型",
-          "refresh_results_tooltip": "刷新结果",
-          "empty_message": "所选过滤器没有可用的测试",
+          "menu_results_label": "結果型別",
+          "refresh_results_tooltip": "重新整理結果",
+          "empty_message": "所選過濾器沒有可用的測試",
           "status": {
-            "passed": "通过了",
-            "skipped": "跳过",
-            "failed": "失败的"
+            "passed": "通過了",
+            "skipped": "跳過",
+            "failed": "失敗的"
           },
           "with_postbot": {
-            "error_after_loaded": "无法修复测试。",
-            "button_label": "再试一次",
+            "error_after_loaded": "無法修復測試。",
+            "button_label": "再試一次",
             "loading_text": "正在努力...",
-            "fix_test_button": "修复测试",
+            "fix_test_button": "修復測試",
             "trigger_prompt": {
-              "with_error_msg_and_name": "修复 pm.test(\"{testName}\")，当前抛出 {errorName}: {errorMessage}",
-              "with_error_msg": "修复 pm.test(\"{testName}\")，当前抛出错误：{errorMessage}",
-              "default": "修复 pm.test(\"{testName}\")"
+              "with_error_msg_and_name": "修復 pm.test(\"{testName}\")，當前丟擲 {errorName}: {errorMessage}",
+              "with_error_msg": "修復 pm.test(\"{testName}\")，當前丟擲錯誤：{errorMessage}",
+              "default": "修復 pm.test(\"{testName}\")"
             }
           },
           "error": {
             "with_postbot": {
-              "prefix_message": "无法评估测试脚本",
-              "suffix_message": "无法修复测试。",
-              "try_again_button": "再试一次",
-              "fix_script_button": "用 AI 修复脚本",
-              "refresh_text": "刷新结果",
+              "prefix_message": "無法評估測試腳本",
+              "suffix_message": "無法修復測試。",
+              "try_again_button": "再試一次",
+              "fix_script_button": "用 AI 修復腳本",
+              "refresh_text": "重新整理結果",
               "loading_text": "正在努力..."
             }
           }
@@ -802,18 +802,18 @@
     },
     "schema_editor": {
       "error_boundary": {
-        "title": "架构编辑者加载失败",
-        "description": "加载架构编辑者时发生意外错误。"
+        "title": "架構編輯者載入失敗",
+        "description": "載入架構編輯者時發生意外錯誤。"
       }
     },
     "example": {
       "status_selector_label": {
-        "short": "状态",
-        "long": "状态码"
+        "short": "狀態",
+        "long": "狀態碼"
       },
-      "status_input_placeholder": "输入响应代码",
+      "status_input_placeholder": "輸入響應程式碼",
       "tabs": {
-        "body": "请求体",
+        "body": "請求體",
         "headers": "Headers"
       }
     }

@@ -1,44 +1,44 @@
 {
   "error": {
-    "title": "出了点问题",
-    "description": "我们无法加载团队配置文件。请再试一次。",
-    "retry": "再试一次"
+    "title": "出了點問題",
+    "description": "我們無法載入團隊配置檔案。請再試一次。",
+    "retry": "再試一次"
   },
   "breadcrumbs": {
-    "teams": "团队",
-    "aria_label": "团队简介面包屑"
+    "teams": "團隊",
+    "aria_label": "團隊簡介面包屑"
   },
   "no_access": {
-    "title": "您无权访问",
-    "description": "只有团队成员可以查看此页面。",
-    "request_raised": "您已请求加入此团队。一旦获得批准，您将自动加入。"
+    "title": "您無權訪問",
+    "description": "只有團隊成員可以檢視此頁面。",
+    "request_raised": "您已請求加入此團隊。一旦獲得批准，您將自動加入。"
   },
   "avatar_stack": {
     "more": "+{count} 更多"
   },
-  "default_team_name": "团队",
+  "default_team_name": "團隊",
   "members_popover": {
-    "title_one": "{count} 位成员",
-    "title_other": "{count} 成员",
-    "trigger_label": "显示成员",
-    "private_user": "私有用户"
+    "title_one": "{count} 位成員",
+    "title_other": "{count} 成員",
+    "trigger_label": "顯示成員",
+    "private_user": "私有使用者"
   },
   "tabs": {
     "workspaces": {
-      "title": "工作区",
-      "create_button": "创建工作区",
-      "search_limit": "显示前 500 个结果。优化您的搜索以找到更多信息。",
+      "title": "工作區",
+      "create_button": "建立工作區",
+      "search_limit": "顯示前 500 個結果。最佳化您的搜尋以找到更多資訊。",
       "empty_state": {
-        "text": "还没有工作区",
-        "subtext": "创建或移动现有工作区到此团队即可开始。"
+        "text": "還沒有工作區",
+        "subtext": "建立或移動現有工作區到此團隊即可開始。"
       }
     },
     "members": {
-      "title": "成员",
-      "add_button": "添加成员",
+      "title": "成員",
+      "add_button": "新增成員",
       "empty_state": {
-        "text": "还没有会员",
-        "subtext": "加入或邀请队友加入此团队即可开始。"
+        "text": "還沒有會員",
+        "subtext": "加入或邀請隊友加入此團隊即可開始。"
       }
     }
   }

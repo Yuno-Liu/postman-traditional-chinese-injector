@@ -1,115 +1,115 @@
 {
-  "collection_fork_label": "<0>这个集合是从 </0><1>{baseCollectionName}</1> 分叉出来的",
+  "collection_fork_label": "<0>這個集合是從 </0><1>{baseCollectionName}</1> 分叉出來的",
   "fork": {
     "workbench": {
       "sign_in_modal": {
-        "title": "登录以创建 fork",
-        "subtitle": "您需要登录才能 fork 集合。继续创建一个帐户。它是免费的！"
+        "title": "登入以建立 fork",
+        "subtitle": "您需要登入才能 fork 集合。繼續建立一個帳戶。它是免費的！"
       },
       "signed_out_state": {
         "title": "您已退出",
-        "description": "请登录以继续分叉",
+        "description": "請登入以繼續分叉",
         "sign_in_button": "登入"
       },
       "offline_state": {
-        "title": "您离线",
-        "body": "无法连接到服务器。请检查您的网络设置。",
-        "retry_button": "重试"
+        "title": "您離線",
+        "body": "無法連線到伺服器。請檢查您的網路設定。",
+        "retry_button": "重試"
       },
       "error_state": {
-        "title": "无法获取源 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} other {}}",
-        "description": "我们无法获取有关源 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} other {}} 的信息。请再试一次。"
+        "title": "無法獲取源 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} other {}}",
+        "description": "我們無法獲取有關源 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} other {}} 的資訊。請再試一次。"
       },
       "no_permission_state": {
-        "description": "您没有权限到 fork 进入此团队的工作区。",
-        "no_workspaces_description": "您没有任何可以 fork 进入的工作空间。创建一个工作区来开始。",
-        "no_workspaces_no_permission_description": "您没有任何可以 fork 进入的工作空间。请联系您的团队管理员以获取工作区访问权限。",
-        "create_workspace_button": "创建工作区",
-        "close_button": "关闭"
+        "description": "您沒有許可權到 fork 進入此團隊的工作區。",
+        "no_workspaces_description": "您沒有任何可以 fork 進入的工作空間。建立一個工作區來開始。",
+        "no_workspaces_no_permission_description": "您沒有任何可以 fork 進入的工作空間。請聯絡您的團隊管理員以獲取工作區訪問許可權。",
+        "create_workspace_button": "建立工作區",
+        "close_button": "關閉"
       },
       "fork_tab_header": {
-        "title": "Fork {modelDisplayName, select, collection {集合} environment {环境} flow {流程} other {}}",
-        "source_label": "来源 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} other {}}",
+        "title": "Fork {modelDisplayName, select, collection {集合} environment {環境} flow {流程} other {}}",
+        "source_label": "來源 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} other {}}",
         "by": "<0>作者</0><1>{teamName}</1>"
       }
     },
     "fork_table_body": {
-      "learn_more_about_forks": "了解有关分叉的更多信息",
-      "learn_more_about_forks_default": "<span>了解更多有关 </span> <Flex><Text><Link>分叉</Link></Text><IconActionOpenWebStroke /></Flex>",
-      "retry_button": "重试",
-      "fork_singular": "复刻",
+      "learn_more_about_forks": "瞭解有關分叉的更多資訊",
+      "learn_more_about_forks_default": "<span>瞭解更多有關 </span> <Flex><Text><Link>分叉</Link></Text><IconActionOpenWebStroke /></Flex>",
+      "retry_button": "重試",
+      "fork_singular": "復刻",
       "fork_plural": "分叉",
       "offline_state": {
-        "title": "您离线",
-        "message": "请检查您的互联网连接，然后重试。"
+        "title": "您離線",
+        "message": "請檢查您的網際網路連線，然後重試。"
       },
-      "forbidden_title": "禁止访问",
-      "error_title": "错误",
-      "forbidden_message": "您没有权限来查看此内容。",
-      "error_message": "发生错误。请稍后重试。",
+      "forbidden_title": "禁止訪問",
+      "error_title": "錯誤",
+      "forbidden_message": "您沒有許可權來檢視此內容。",
+      "error_message": "發生錯誤。請稍後重試。",
       "total_forks_title": "{modelName} 的 {totalForks} {forkText}",
-      "no_forks_title": "没有分叉",
-      "hidden_forks_message": "它们不可见，因为它们位于您无权访问的工作区中。",
-      "all_forks_message": "从该 {modelName} 创建的所有分叉都将出现在此处。",
-      "fork_label": "Fork 标签",
-      "created_by": "创建者：",
-      "created_on": "创建于",
+      "no_forks_title": "沒有分叉",
+      "hidden_forks_message": "它們不可見，因為它們位於您無權訪問的工作區中。",
+      "all_forks_message": "從該 {modelName} 建立的所有分叉都將出現在此處。",
+      "fork_label": "Fork 標籤",
+      "created_by": "建立者：",
+      "created_on": "建立於",
       "of_text": "的",
-      "hidden_forks_text": "其中一些不在此列表中，因为它们位于您无权访问的工作区中。",
+      "hidden_forks_text": "其中一些不在此列表中，因為它們位於您無權訪問的工作區中。",
       "forks_label": "分叉 ({modelName})",
-      "fork_list_description": "{modelName} 的 {count, plural, one {# 个 fork} other {# 个 fork}}。",
-      "fork_list_description_line2": "其中 {hiddenForks} 不在此列表中，因为它们位于您无权访问的工作区中。",
+      "fork_list_description": "{modelName} 的 {count, plural, one {# 個 fork} other {# 個 fork}}。",
+      "fork_list_description_line2": "其中 {hiddenForks} 不在此列表中，因為它們位於您無權訪問的工作區中。",
       "created_on_date": "{dateObj, date, medium}",
       "pagination": {
-        "no_more_pages": "没有更多页面需要加载"
+        "no_more_pages": "沒有更多頁面需要載入"
       }
     },
     "forks_tooltip": "分叉",
-    "create_fork_tab": "创建Fork",
-    "created_success": "Fork 创建",
+    "create_fork_tab": "建立Fork",
+    "created_success": "Fork 建立",
     "error": {
-      "title": "分叉正在进行中",
-      "info": "{model} 正在后台被分叉。请稍后检查 {model} 列表以查看 fork。",
-      "generic_message": "创建 fork 时出现问题。请再试一次。"
+      "title": "分叉正在進行中",
+      "info": "{model} 正在後臺被分叉。請稍後檢查 {model} 列表以檢視 fork。",
+      "generic_message": "建立 fork 時出現問題。請再試一次。"
     }
   },
   "pull_changes": {
-    "tab_title": "拉动变更"
+    "tab_title": "拉動變更"
   },
   "fork_recommendation_popup": {
-    "title": "创建 fork 来保存更改",
-    "message": "您没有权限来更改此集合。 Fork 的集合到工作区以保存更改。",
-    "button_label": "创建 Fork 并保存",
-    "error_message": "您没有执行此操作所需的权限。",
-    "upgrade_partner_error_message": "您没有执行此操作的权限。请升级到Editor 角色。",
-    "sign_in_title": "登录以创建 fork",
-    "sign_in_subtitle": "您需要登录才能 fork 集合。继续创建一个帐户。它是免费的！"
+    "title": "建立 fork 來儲存更改",
+    "message": "您沒有許可權來更改此集合。 Fork 的集合到工作區以儲存更改。",
+    "button_label": "建立 Fork 並儲存",
+    "error_message": "您沒有執行此操作所需的許可權。",
+    "upgrade_partner_error_message": "您沒有執行此操作的許可權。請升級到Editor 角色。",
+    "sign_in_title": "登入以建立 fork",
+    "sign_in_subtitle": "您需要登入才能 fork 集合。繼續建立一個帳戶。它是免費的！"
   },
   "navigate": {
-    "creating_fork_message": "将集合分叉到 {teamName} 团队",
-    "switch_teams_message": "将你传送到团队 {teamName}",
-    "do_not_close_tab_message": "坚持几秒钟。请不要关闭或刷新此选项卡。"
+    "creating_fork_message": "將集合分叉到 {teamName} 團隊",
+    "switch_teams_message": "將你傳送到團隊 {teamName}",
+    "do_not_close_tab_message": "堅持幾秒鐘。請不要關閉或重新整理此選項卡。"
   },
   "public_collection_fork_banner": {
-    "description": "要对此集合进行更改，请将 fork 更改为您的工作区。",
-    "button_label": "复刻集合"
+    "description": "要對此集合進行更改，請將 fork 更改為您的工作區。",
+    "button_label": "復刻集合"
   },
   "fork_label": {
     "fork_info": {
-      "last_updated": "最后更新：{relativeTime}",
-      "source_collection_error": "您无权访问源集合或它已被删除。",
-      "copy_collection_id_tooltip": "复制 {entityType, select, collection {集合} specification {规格} environment {环境} flow {流程} other {实体}} ID",
-      "copy_collection_url_tooltip": "复制 {entityType, select, collection {集合} specification {规格} environment {环境} flow {流程} other {实体}} URL",
-      "pulling_changes_message": "在后台拉动更改...",
-      "changes_available_message": "有变化需要拉动。",
-      "pull_changes_link": "拉动变更",
-      "merge_conflicts_message": "发现合并冲突。解决它们以拉取更改。",
-      "view_diff_link": "查看差异",
+      "last_updated": "最後更新：{relativeTime}",
+      "source_collection_error": "您無權訪問源集合或它已被刪除。",
+      "copy_collection_id_tooltip": "複製 {entityType, select, collection {集合} specification {規格} environment {環境} flow {流程} other {實體}} ID",
+      "copy_collection_url_tooltip": "複製 {entityType, select, collection {集合} specification {規格} environment {環境} flow {流程} other {實體}} URL",
+      "pulling_changes_message": "在後臺拉動更改...",
+      "changes_available_message": "有變化需要拉動。",
+      "pull_changes_link": "拉動變更",
+      "merge_conflicts_message": "發現合併衝突。解決它們以拉取更改。",
+      "view_diff_link": "檢視差異",
       "auto_sync_config": {
-        "auto_sync_changes_label": "自动拉取更改：",
+        "auto_sync_changes_label": "自動拉取更改：",
         "auto_sync_status_on": "在",
-        "auto_sync_status_off": "离开",
-        "edit_auto_sync_config": "编辑"
+        "auto_sync_status_off": "離開",
+        "edit_auto_sync_config": "編輯"
       }
     }
   }
