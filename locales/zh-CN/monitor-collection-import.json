@@ -1,6 +1,6 @@
 {
   "modal": {
-    "title": "导入 Collection",
+    "title": "导入",
     "paste_label": "粘贴 Collection、API 规范、cURL 命令或 URL",
     "hint_intro": "支持以下格式：",
     "hint_collection": "Postman Collection JSON 或 API 规范：粘贴原始内容或拖放文件。",
@@ -25,7 +25,6 @@
     "unrecognised": "格式无效。请粘贴 Collection、API 规范、cURL 命令或 URL。",
     "unsupported_grpcurl": "暂不支持在此导入 gRPC 请求。请先在侧边栏创建 Collection，再在上方选择它。",
     "unsupported_file": "所选文件类型无法导入。支持的类型：{extensions}。",
-    "too_large": "所选文件超过 {limitMb} MB。请改为从侧边栏导入，然后在上方选择它。",
     "unreadable_file": "无法读取所选文件。请尝试直接粘贴其内容。"
   }
 }

@@ -6,6 +6,8 @@ pm-chinese-data.json
 pm-chinese-src.json
 pm-scratchpad-data.json
 pm-scratchpad-src.json
+pm-main-data.json
+pm-main-src.json
 
 # SDD 进度账本等本地临时文件
 .superpowers/

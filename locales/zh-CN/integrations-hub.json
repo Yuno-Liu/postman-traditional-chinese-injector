@@ -1,6 +1,7 @@
 {
   "page": {
-    "title": "集成",
+    "title": "Postman 集成与应用市场",
+    "description": "浏览并将 Postman 与团队已在使用的工具（Slack、Jira、GitHub 等）连接，一切尽在同一个集成市场。",
     "heading": "集成",
     "subtitle": "发现、安装和管理集成。"
   },
@@ -18,6 +19,11 @@
   "card": {
     "connected": "已连接",
     "byline": "作者：{author}"
+  },
+  "requestIntegration": {
+    "title": "没有找到你需要的？",
+    "description": "申请新的集成，由 Postman 团队进行审核。",
+    "buttonLabel": "申请集成"
   },
   "integratedServices": {
     "sectionTitle": "API Catalog - 集成服务",
@@ -43,6 +49,7 @@
     "backToHub": "返回集成列表",
     "integrationBy": "由 {author} 提供的集成",
     "aboutPublisher": "关于发布者",
+    "viewPublisherProfile": "查看 {author} 的主页",
     "mediaPrevious": "上一个媒体",
     "mediaNext": "下一个媒体",
     "mediaExpand": "查看大图",
@@ -342,7 +349,7 @@
     "table": {
       "name": "名称",
       "email": "邮箱",
-      "orgIdentifier": "Slack Workspace",
+      "orgIdentifier": "Slack 工作区",
       "remove": "移除"
     },
     "connectModal": {

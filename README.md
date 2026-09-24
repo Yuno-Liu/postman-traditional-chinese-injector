@@ -139,7 +139,13 @@ Postman **登入态**主界面是远程网页，走上面的语言包拦截即�
 - 用 `MutationObserver` 遍历 DOM，把**与内置词典精确整串匹配**的可见英文文本 / 属性替换成中文；
 - **跳过输入框与代码编辑器**（`input` / `textarea` / `contenteditable` / CodeMirror / Monaco）子树，绝不改动你输入的请求体、URL 等内容。
 
-一条命令即注入两个钩子、自动适配版本与登入状态，无需你关心自己是哪种情形。词典源自社区归档项目 [Postman-cn](https://github.com/hlmd/Postman-cn)，仅覆盖常见 Scratch Pad 界面文案；动态 / 参数化文案（如「This *collection* is empty」）暂不翻译。
+词典源自社区归档项目 [Postman-cn](https://github.com/hlmd/Postman-cn)，仅覆盖常见 Scratch Pad 界面文案；动态 / 参数化文案（如「This *collection* is empty」）暂不翻译。
+
+### 原生菜单汉化
+
+左上角菜单（文件 / 编辑 / 视图 / 帮助）、macOS 应用菜单、Dock 菜单和部分确认框是**主进程**用 Electron 原生 API 画的，既不走 DOM 也不请求语言包。为此注入时还会在主进程入口 `main.js` 最前面插入第三个钩子 `pm-main-cn.js`：包装 `Menu.buildFromTemplate` 与 `dialog.showMessageBox`，按词典 `locales/main/zh-CN.json` 把菜单 / 对话框文案整串替换成中文（支持 `About {{appName}}` 这类占位）。
+
+一条命令即注入全部钩子、自动适配版本与登入状态，无需你关心自己是哪种情形。
 
 ---
 
@@ -150,12 +156,15 @@ postman-chinese-injector/
 ├── postman-chinese-injector.js   # 桌面端注入 CLI：构建 / 备份 / 解包 / 注入 / 打包 app.asar，含 --restore
 ├── pm-chinese.js                 # 运行时钩子（桌面端与浏览器扩展共用的唯一真源）
 ├── pm-scratchpad-cn.js           # 第二个钩子：登出态 Scratch Pad 的 DOM 词典替换（仅桌面端）
+├── pm-main-cn.js                 # 第三个钩子：主进程原生菜单 / 对话框汉化（仅桌面端）
 ├── locales/
 │   ├── zh-CN/                    # 语言包翻译源：每个模块一个 json，可单独编辑
 │   │   ├── api-client-core.json
 │   │   └── ...
-│   └── scratchpad/
-│       └── zh-CN.json            # Scratch Pad DOM 词典（英文整串 → 中文）
+│   ├── scratchpad/
+│   │   └── zh-CN.json            # Scratch Pad DOM 词典（英文整串 → 中文）
+│   └── main/
+│       └── zh-CN.json            # 主进程原生菜单 / 对话框词典（英文整串 → 中文）
 ├── scripts/
 │   ├── build-data.js             # 合并 locales/ 并生成可嵌入二进制的快照（见下）
 │   ├── build-scratchpad-dict.js  # 构建 / 维护 Scratch Pad 词典 locales/scratchpad/zh-CN.json
@@ -168,7 +177,7 @@ postman-chinese-injector/
 └── package.json                  # bin 命令 postman-chinese-injector、构建脚本、依赖 @electron/asar
 ```
 
-> `build-data.js` 生成 4 份供 `bun --compile` 静态内嵌的快照：`pm-chinese-data.json`（语言包合并数据）、`pm-chinese-src.json`（`pm-chinese.js` 源码）、`pm-scratchpad-data.json`（Scratch Pad 词典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 源码）。它们都是构建产物，不在源码里单独存放；用 `node postman-chinese-injector.js` 直接注入时不需要，那条路直接从 `locales/` 与本地钩子读。
+> `build-data.js` 生成 6 份供 `bun --compile` 静态内嵌的快照：`pm-chinese-data.json`（语言包合并数据）、`pm-chinese-src.json`（`pm-chinese.js` 源码）、`pm-scratchpad-data.json`（Scratch Pad 词典）、`pm-scratchpad-src.json`（`pm-scratchpad-cn.js` 源码）、`pm-main-data.json`（主进程菜单词典）、`pm-main-src.json`（`pm-main-cn.js` 源码）。它们都是构建产物，不在源码里单独存放；用 `node postman-chinese-injector.js` 直接注入时不需要，那条路直接从 `locales/` 与本地钩子读。
 
 ---
 
@@ -406,6 +415,7 @@ locales/zh-CN/
 - 拦截的源语言固定为 `en-US` / `ja`、展示语言 `zh-CN`，写死在 `pm-chinese.js` 里。
 - 目前只注入简体中文（`locales/zh-CN/`）。
 - 登出态 Scratch Pad 的 DOM 词典单独放在 `locales/scratchpad/zh-CN.json`（英文整串 → 中文），由 `scripts/build-scratchpad-dict.js` 维护。
+- 主进程原生菜单 / 对话框词典放在 `locales/main/zh-CN.json`（英文整串 → 中文），手工维护。
 
 ---
 

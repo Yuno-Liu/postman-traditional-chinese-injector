@@ -1,0 +1,5 @@
+{
+  "github": {
+    "install_github_app_helper_text": "如果看不到您的组织，可能需要在您的个人账户或组织上<Link><Text>安装 Postman 应用</Text></Link>。"
+  }
+}

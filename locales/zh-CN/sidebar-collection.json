@@ -180,7 +180,13 @@
     },
     "export": {
       "label": "导出",
-      "disabled_tooltip": "您没有 权限 来导出此 集合。"
+      "disabled_tooltip": "您没有 权限 来导出此 集合。",
+      "intent": {
+        "teammates": "与团队成员共享",
+        "ci": "在 CI/CD 中运行",
+        "git": "存储到 Git 仓库",
+        "other": "其他"
+      }
     },
     "manage_roles": {
       "label": "管理角色"
@@ -238,6 +244,9 @@
     },
     "fork": {
       "label": "Fork"
+    },
+    "use": {
+      "label": "使用 / Fork"
     },
     "sort": {
       "label": "排序",

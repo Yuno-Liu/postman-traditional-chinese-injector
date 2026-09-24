@@ -50,7 +50,7 @@
     "duration_placeholder": "输入持续时间",
     "idle_placeholder": "输入空闲时间",
     "end_position_placeholder": "输入时间戳",
-    "milliseconds_suffix": "ms"
+    "milliseconds_suffix": "毫秒"
   },
   "topics": {
     "pane": {
@@ -64,10 +64,15 @@
     "loading": "正在加载 Topic…",
     "load_error": "无法加载 Topic",
     "retry": "重试",
+    "duplicate_topic": "已有另一个 Topic 解析为此名称",
     "remove_aria_label": "移除 Topic {name}",
     "filter_placeholder": "筛选 Topic",
     "filter_aria_label": "筛选 Topic",
-    "no_matches": "没有匹配“{query}”的 Topic"
+    "no_matches": "没有匹配“{query}”的 Topic",
+    "empty_title": "暂无 Topic",
+    "empty_description": "列出所有 Topic 以从 Broker 中选择，或添加一个 Topic 进行流式传输",
+    "broker_empty_title": "未找到 Topic",
+    "broker_empty_description": "此 Broker 未报告任何 Topic"
   },
   "status": {
     "idle": "空闲",
@@ -78,7 +83,41 @@
   },
   "schema": {
     "label": "模式",
-    "aria_label": "切换模式显示"
+    "field_label": "关联 Schema",
+    "optional": "（可选）",
+    "topic_required": "请先添加 Topic，再为其关联 Schema",
+    "aria_label": "切换模式显示",
+    "placeholder": "选择 Schema",
+    "select_aria_label": "Topic {topic} 的 Schema",
+    "column_tooltip": "根据 Schema 校验事件负载",
+    "empty": "此 Workspace 中没有包含 Kafka 服务器的 AsyncAPI 规范",
+    "load_error": "无法加载规范",
+    "open_specification": "打开规范",
+    "unresolved": {
+      "topic-empty": "未为此规范选择 Topic",
+      "topic-absent": "此规范未描述该 Topic",
+      "schema-absent": "规范中没有该 Topic 的消息 Schema"
+    },
+    "validation": {
+      "passed": "Schema 校验通过",
+      "failed": "Schema 校验失败",
+      "warned": "负载与 Schema 不一致",
+      "passed_badge": "校验通过",
+      "failed_badge": "校验失败",
+      "warned_badge": "校验警告",
+      "aria_label": "Schema 校验：{status}",
+      "skipped": {
+        "no-schema": "此 Topic 未关联 Schema",
+        "empty-payload": "此事件没有可校验的负载",
+        "not-json": "此负载不是 JSON，因此未进行校验",
+        "schema-invalid": "无法读取关联的 Schema",
+        "pending": "尚未校验"
+      }
+    },
+    "derived_tooltip": "由 {name} 定义。请编辑规范以进行更改。",
+    "derived_aria_label": "{value}。由源规范定义，无法在此编辑。",
+    "create_specification": "新建 AsyncAPI {version} 规范",
+    "creating_specification": "正在创建规范…"
   },
   "fields": {
     "partition_placeholder": "自动"
@@ -104,14 +143,20 @@
     "value_too_large": "{size} 超出 {limit} 限制",
     "value_serde": "Value 序列化方式",
     "serde": {
-      "text": "String",
+      "text": "字符串",
       "json": "JSON",
       "base64": "Base64",
       "hex": "Hex"
     },
     "headers": "请求头",
     "ack": "Ack",
-    "generate": "生成",
+    "generate": "根据 Schema 生成",
+    "beautify": "美化",
+    "generate_tooltip": "使用根据关联 Schema 构建的示例替换该值",
+    "generate_denied": {
+      "no_schema": "请为此 Topic 关联 Schema 以生成示例值",
+      "not_json": "仅 JSON 序列化方式支持生成示例值"
+    },
     "pane": {
       "details": "详情",
       "value": "Value"
@@ -165,5 +210,23 @@
   },
   "produce": {
     "title": "生产"
+  },
+  "runner": {
+    "empty": {
+      "no_events": "此请求未产生任何流事件。"
+    },
+    "ended_reason": {
+      "unknown": "未知"
+    },
+    "event": {
+      "subscribed": "已订阅 {topics}",
+      "consume_ended": "流已结束（{reason}）",
+      "error": "流错误"
+    }
+  },
+  "topics_to_stream": {
+    "heading": "要流式传输的 Topic",
+    "empty": "在左侧选择 Topic 以进行流式传输",
+    "unnamed": "未命名 Topic"
   }
 }

@@ -20,7 +20,8 @@
     "remote": "从公开 URL 获取数据文件。",
     "mysql": "连接 MySQL 数据库，并将某张表作为此数据集的一部分进行查询。",
     "postgres": "连接 PostgreSQL 数据库，并将某张表作为此数据集的一部分进行查询。",
-    "sqlserver": "连接 SQL Server 数据库，并将某张表作为此数据集的一部分进行查询。"
+    "sqlserver": "连接 SQL Server 数据库，并将某张表作为此数据集的一部分进行查询。",
+    "jdbc": "通过 JDBC 驱动连接数据库，并将其作为此数据集的一部分进行查询。"
   },
   "upgrade_modal": {
     "description": "数据集让你可以在 Postman 中存储、连接和复用结构化数据，从文件到实时数据库皆可。升级套餐即可开始使用。"
@@ -275,7 +276,43 @@
     "jdbc_native_query_info_label": "关于 JDBC 原生查询",
     "jdbc_native_query_tooltip": "此查询会通过 JDBC 驱动原样直接发送给数据库。自动补全和 SQL 校验可能尚不可用。",
     "deleted_source": "[已删除的数据源]",
-    "empty_table": "运行查询以查看数据"
+    "empty_table": "运行查询以查看数据",
+    "save_output_as_source": "将输出保存为数据源",
+    "use_view": "使用视图",
+    "more_output_actions": "此输出的更多操作",
+    "use_view_in_collection_run": "Collection 运行",
+    "use_view_in_monitor": "Monitor"
+  },
+  "save_view_output_modal": {
+    "title": "将输出保存为数据源",
+    "description": "将此视图的输出存储为新的 Postman 云端数据源，以便在云端运行、Monitor 和其他视图中复用数据库数据源的结果。",
+    "name_label": "数据源名称",
+    "name_placeholder": "例如 top_customers_snapshot",
+    "name_invalid": "请使用字母、数字和下划线，并以字母或下划线开头。",
+    "name_taken": "此数据集中已存在同名数据源，请使用其他名称。",
+    "row_count_hint": "{count, plural, one {将上传 # 行} other {将上传 # 行}}",
+    "unsaved_query_hint": "将使用当前显示的未保存查询。",
+    "cancel": "取消",
+    "save": "保存",
+    "error_title": "输出保存失败",
+    "empty_result": "此视图未返回任何行，没有可保存的内容。",
+    "too_many_rows": "此视图返回的行数超过单次可保存的上限（最多 {limit, number} 行）。请缩小查询范围后重试。",
+    "too_large": "此视图的输出超过单次可保存的上限 {limit}。请缩小查询范围后重试。",
+    "success_toast": "视图输出已保存为新数据源",
+    "no_dataset_file": "此数据集在磁盘上尚无文件，因此无法将输出保存为数据源。"
+  },
+  "use_view_in_runner_modal": {
+    "title": "在 Collection 运行中使用",
+    "description": "打开 Collection Runner，并将此视图设为运行的迭代数据。",
+    "view_label": "数据集视图",
+    "collection_label": "Collection",
+    "collection_placeholder": "选择 Collection",
+    "no_collections": "此 Workspace 中没有可运行的 Collection。",
+    "load_error": "无法加载此 Workspace 中的 Collection。",
+    "retry": "重试",
+    "open_error": "无法打开 Collection Runner，请重试。",
+    "cancel": "取消",
+    "submit": "在 Runner 中打开"
   },
   "dataset_create": {
     "new_dataset": "新数据集",
@@ -537,7 +574,7 @@
       "sort_column": "按 {column} 排序",
       "sort_column_ascending": "按 {column} 排序，当前为升序",
       "sort_column_descending": "按 {column} 排序，当前为降序",
-      "resize_column": "调整 {column} 列宽",
+      "resize_column": "调整 {column} 列宽。按 Enter 键可自适应内容宽度",
       "detail": {
         "copy": "复制",
         "copied": "已复制",

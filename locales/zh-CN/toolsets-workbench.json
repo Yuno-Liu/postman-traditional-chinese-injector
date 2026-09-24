@@ -101,6 +101,7 @@
   "server": {
     "heading": "本地 MCP 服务器",
     "start_server_button": "启动服务器",
+    "start_server_desktop_app_tooltip": "下载 Postman 桌面应用以使用此功能。",
     "stop_server_button": "停止服务器",
     "restart_button": "重启",
     "restart_for_changes_button": "重启以应用更改",

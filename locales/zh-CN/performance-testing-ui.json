@@ -173,7 +173,7 @@
       }
     },
     "buttons": {
-      "run": "运行",
+      "run": "开始运行",
       "starting_run": "开始运行..."
     },
     "no_create_access": {
@@ -231,6 +231,9 @@
         "info_aria_label": "关于 Setup Collection",
         "environment_mutation_helper_text": "在测试前运行。对 Environment 的修改会延续到测试和 Teardown 阶段。",
         "placeholder": "选择 Setup Collection",
+        "trigger_add": "+ Setup",
+        "trigger_selected": "Setup：{name}",
+        "trigger_remove": "移除 Setup Collection",
         "failed_primary_cause": "Setup 生命周期 Collection 运行失败。",
         "unknown_primary_cause": "Setup 生命周期 Collection 的运行结果未知。"
       },
@@ -239,8 +242,16 @@
         "short_label": "Teardown（可选）",
         "info_aria_label": "关于 Teardown Collection",
         "environment_mutation_helper_text": "在测试后运行，并沿用此前对 Environment 的修改。",
-        "placeholder": "选择 Teardown Collection"
+        "placeholder": "选择 Teardown Collection",
+        "trigger_add": "+ Teardown",
+        "trigger_selected": "Teardown：{name}",
+        "trigger_remove": "移除 Teardown Collection"
       },
+      "create_collection": "新建 Collection",
+      "import_collection": "导入 Collection",
+      "open_collection": "在新标签页中打开 Collection",
+      "create_collection_no_permission": "你没有在此 Workspace 中创建 Collection 的权限。",
+      "import_collection_no_permission": "你没有向此 Workspace 导入 Collection 的权限。",
       "environment_restore_failed": "此次生命周期运行所保存的 Environment 已不可用。请先恢复该 Environment 或清除 Setup Collection，然后重新运行。",
       "gate_off_prefill": "本次运行不支持生命周期 Collection。请在启用生命周期 Collection 的情况下，作为云端测试重新运行。",
       "load_error": "Collection 加载失败。请重试后再选择生命周期 Collection。",
@@ -341,8 +352,8 @@
       "app": "应用程序"
     },
     "button": {
-      "run_on_cloud": "在云端运行",
-      "run_on_cloud_static_ip": "在云端运行（静态 IP）"
+      "run_on_cloud": "开始运行",
+      "run_on_cloud_static_ip": "开始运行（静态 IP）"
     },
     "static_ip": {
       "label": "出口路由策略",
@@ -467,6 +478,12 @@
     "upgrade": {
       "heading": "升级后即可将 Dataset 用作迭代数据",
       "description": "Dataset 可以在应用内、CLI 和云端运行中，为性能测试提供可复用、可共享的测试数据。升级方案即可将 Dataset 视图附加为迭代数据。"
+    }
+  },
+  "compare_runs": {
+    "footer": {
+      "default": "默认显示此 Collection 最近的 20 次运行。可按运行名称或编号搜索，与更早的运行进行比较。",
+      "search_results": "显示与搜索词匹配的最近 20 次运行。"
     }
   }
 }

@@ -395,11 +395,11 @@
     "next_steps": "下一步？",
     "caught_up": "已全部处理完毕",
     "ready_headlines": {
-      "ready_to_go": "一切就绪！",
-      "all_systems_go": "各项检查均已通过！",
-      "standing_by_for_launch": "准备就绪，随时可以开始！",
-      "coast_is_clear": "没有任何阻碍！",
-      "no_anomalies_detected": "未检测到异常！"
+      "ready_to_go": "准备就绪",
+      "all_systems_go": "一切就绪",
+      "standing_by_for_launch": "随时待命",
+      "coast_is_clear": "畅通无阻",
+      "no_anomalies_detected": "未检测到异常"
     },
     "next_steps_description": "需要帮助规划下一步吗？",
     "view_next_steps": "查看下一步",
@@ -414,6 +414,7 @@
     "think_harder": "深入思考",
     "accept_cta": "接受",
     "apply_fix_cta": "应用修复",
+    "apply_fix_short_cta": "修复",
     "decline_cta": "拒绝",
     "more_actions_label": "更多操作",
     "open_conversation_cta": "打开会话",

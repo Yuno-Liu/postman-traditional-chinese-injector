@@ -199,6 +199,20 @@
       "skipped_tests": "跳过",
       "request_errors": "错误"
     },
+    "empty_collection": {
+      "no_requests_title": "没有可运行的请求",
+      "no_requests_description": "<0>{collectionName}</0> 中没有可供 Monitor 运行的请求。请至少添加一个请求以查看结果。",
+      "add_request": "添加请求",
+      "import_request": "导入请求",
+      "updated_title": "Collection 已更新",
+      "updated_description": "<0>{collectionName}</0> 已更新。运行 Monitor 以查看其结果。",
+      "run_now": "立即运行",
+      "import_failed": "无法打开导入对话框。请检查网络连接后重试。",
+      "request_added_title": "请求已添加到 {collectionName}",
+      "request_added_description": "请先更新并保存该请求，再尝试运行 Monitor。",
+      "run_monitor": "运行 Monitor",
+      "go_back": "返回"
+    },
     "job_information": {
       "runner": "运行器",
       "region": "地区",
@@ -322,8 +336,10 @@
     "header": "创建 Monitor",
     "default_monitor_name": "新建 Monitor",
     "what_to_monitor": "监控什么？",
+    "what_to_monitor_info": "选择包含要监控请求的 Collection。API 规范或导入会先生成一个 Collection。",
     "how_to_run_monitor": "如何运行 Monitor？",
     "runner_section": "运行器",
+    "runner_section_info": "此 Monitor 的运行位置。可使用 Postman 云端区域，或使用私有运行器访问你网络内部的 API。",
     "notifications_section": "通知",
     "notifications_summary_leading": "通知",
     "notifications_summary_trailing": "，当运行失败或出错时",
@@ -337,6 +353,11 @@
     "collection_or_spec_select": "选择 Collection 或 API 规范",
     "open_collection_in_new_tab": "在新标签页中打开 Collection",
     "open_spec_in_new_tab": "在新标签页中打开 API 规范",
+    "source_filter_all": "全部",
+    "source_filter_collections": "Collection",
+    "source_filter_specs": "API 规范",
+    "no_collections": "没有可用的 Collection",
+    "no_specs": "没有可用的 API 规范",
     "create_collection": "新建 Collection",
     "create_collection_no_permission": "你没有在此 Workspace 中创建 Collection 的权限",
     "import_collection": "导入 Collection",
@@ -364,6 +385,7 @@
     "regions": "地区",
     "runners": "运行器",
     "runners_auto_select": "自动选择",
+    "runners_auto_select_info": "Postman 会为你选择一个云端区域。",
     "runners_select_placeholder": "选择运行器",
     "runners_section_cloud": "云",
     "runners_section_private": "私有",
@@ -431,7 +453,7 @@
       }
     },
     "warnings": {
-      "no_environment_found": "未找到 Environment"
+      "no_environment_found": "此 Workspace 中没有 Environment。"
     },
     "data_file": {
       "select_label": "数据文件",
@@ -452,6 +474,7 @@
     },
     "dataset_compat": {
       "partial": "此 <view>视图</view> 使用了与 Monitor 不兼容的 <sources>本地数据源</sources>。请将其上传到 Postman Cloud，或改用可访问这些数据源的私有 Runner 运行此 Monitor。",
+      "private_runner_only": "此<view>视图</view>使用了 <sources>JDBC 数据源</sources>，只有私有运行器才能执行——Postman 云端 Monitor 无法加载 JDBC 驱动。请在私有运行器上运行此 Monitor，或清除此选择。",
       "confirm": "上传到 Postman Cloud",
       "clear": "清除",
       "converting": "上传中…",
@@ -463,7 +486,7 @@
     "settings": "设置",
     "iteration_data": {
       "label": "迭代数据",
-      "info": "按数据文件的每一行各运行一次 Collection，或使用 Dataset 获得可筛选、可复用的数据。",
+      "info": "使用来自文件或数据库的数据。Monitor 会对每一行运行一次迭代。",
       "search_placeholder": "搜索",
       "none_placeholder": "无",
       "selected_view_fallback": "已选视图",
@@ -471,7 +494,6 @@
       "upload_datafile": "上传数据文件...",
       "accepted_formats": "CSV、JSON",
       "selected_pill": "已选数据文件",
-      "datasets_heading": "Dataset",
       "new_dataset": "新建 Dataset",
       "new_dataset_no_permission": "你没有在此 Workspace 中创建数据集的权限。",
       "no_datasets": "此 Workspace 中还没有 Dataset。",

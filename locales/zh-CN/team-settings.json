@@ -488,8 +488,8 @@
           "state": "迁移状态"
         },
         "roles": {
-          "super_admin": "SuperAdmin",
-          "admin": "Admin",
+          "super_admin": "超级管理员",
+          "admin": "管理员",
           "member": "成员"
         },
         "sizes": {

@@ -421,7 +421,8 @@
     "approve_cta": "批准",
     "deny_cta": "拒绝",
     "view_all": "查看全部",
-    "more_actions_aria": "{name} 的更多操作"
+    "more_actions_aria": "{name} 的更多操作",
+    "you": "您"
   },
   "share_entity": {
     "heading": "分享 {entity}",

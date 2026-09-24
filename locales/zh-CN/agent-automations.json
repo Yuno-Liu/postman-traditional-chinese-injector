@@ -169,7 +169,14 @@
       "workspace_label": "Workspace",
       "workspace_placeholder": "选择 Workspace",
       "collection_label": "Collection",
-      "collection_placeholder": "选择 Collection"
+      "collection_placeholder": "选择 Collection",
+      "monitor_label": "Monitor",
+      "monitor_placeholder": "选择 Monitor",
+      "monitor_partial_warning": "部分 Monitor 无法加载，列表可能不完整。",
+      "monitor_load_error": "无法加载 Monitor，请重试。",
+      "status_label": "运行结果",
+      "status_success": "成功",
+      "status_failure": "失败"
     }
   },
   "edit": {
@@ -207,7 +214,8 @@
     "github_repo_required": "仓库为必填项",
     "github_branch_required": "分支为必填项",
     "workspace_required": "请选择 Workspace",
-    "collection_required": "请选择 Collection"
+    "collection_required": "请选择 Collection",
+    "monitor_required": "Monitor 为必填项"
   },
   "run_history": {
     "search_placeholder": "搜索运行记录……",

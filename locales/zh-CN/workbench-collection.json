@@ -56,6 +56,10 @@
               "confirm": "应用模板"
             }
           },
+          "add_request_section": {
+            "heading": "此 Collection 为空。添加一个请求以开始使用。",
+            "cta": "添加请求"
+          },
           "footer": {
             "text": "查看完整文档"
           },

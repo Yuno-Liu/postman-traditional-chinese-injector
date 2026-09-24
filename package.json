@@ -33,6 +33,7 @@
     "postman-chinese-injector.js",
     "pm-chinese.js",
     "pm-scratchpad-cn.js",
+    "pm-main-cn.js",
     "locales/"
   ],
   "license": "MIT"

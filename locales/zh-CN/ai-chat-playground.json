@@ -8,10 +8,12 @@
   "conversation": {
     "assistant_label": "助手",
     "authentication_error_message": "提供方拒绝了此 API Key。请检查密钥后重试。",
+    "authentication_failed_message": "身份验证失败。请检查您的凭据后重试。",
     "cors_error_message": "提供方或组织不允许来自此浏览器的请求。",
     "duplicate_tool_name_error_message": "所选工具的名称必须唯一。请重命名或取消选择重复的工具后重试。",
     "error_message": "无法生成响应。",
     "messages_label": "对话消息",
+    "postman_consent_error_message": "Postman AI 访问不可用。请添加您自己的 API 密钥，或等待访问恢复。",
     "provider_tool_configuration_details_message": "提供方拒绝了一个或多个所选工具：{details}",
     "retry_button_label": "重试",
     "thinking_status": "思考中…",
@@ -28,11 +30,16 @@
     "user_label": "你"
   },
   "credentials": {
+    "access_unavailable_notice": "Postman AI 访问暂时不可用。您也可以在下方输入 API 密钥。",
+    "add_api_key_button_label": "手动添加 API 密钥",
     "api_key_label": "API Key",
     "api_key_placeholder": "输入 API Key",
+    "checking_access_status": "正在检查 Postman AI 访问权限…",
     "clear_button_label": "清除密钥",
+    "consent_required_notice": "Postman AI 需要您的同意。您也可以在下方输入 API 密钥。",
     "provider_label": "提供方",
-    "session_notice": "你的 API Key 仅保存在本次浏览器会话的内存中，并直接发送给提供方。"
+    "session_notice": "你的 API Key 仅保存在本次浏览器会话的内存中，并直接发送给提供方。",
+    "use_postman_button_label": "使用 Postman"
   },
   "header": {
     "clear_chat_button_label": "清空对话",
@@ -42,12 +49,9 @@
   },
   "suggestions": {
     "chain_tools": "串联两个工具",
-    "edge_case": "测试边界情况",
     "error": "触发一个错误",
-    "multi_turn": "模拟多轮对话",
     "optional_parameter": "测试可选参数",
-    "test_all_tools": "测试全部工具",
-    "vague_prompt": "发送一条模糊的提示词"
+    "test_all_tools": "测试全部工具"
   },
   "system_prompt": {
     "default_value": "你是一名乐于助人的助手。请给出简洁、准确的回答，并清晰说明工具的使用过程。",

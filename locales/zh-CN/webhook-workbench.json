@@ -208,6 +208,7 @@
       "copy_path_success_toast": "请求 URL 已复制",
       "replay_button": "重播",
       "replaying_button": "正在重播...",
+      "open_as_http_request_button": "作为 HTTP 请求打开",
       "save_request_button": "保存请求",
       "save_request_button_tooltip": "将请求保存到集合",
       "collapse_inspector_button": "折叠检查器",

@@ -209,7 +209,7 @@
     "simulation_mock_mode_mock_option": "Mock",
     "simulation_mock_mode_live_option": "Live",
     "simulation_mock_mock_url_caption": "Mock URL",
-    "simulation_mock_live_url_caption": "Live URL",
+    "simulation_mock_live_url_caption": "线上 URL",
     "simulation_mock_add_not_deployed_tooltip": "请先部署此 Mock，然后再将其添加到模拟中。",
     "simulation_mock_add_button_label": "添加 Mock",
     "simulation_mock_add_all_configured_tooltip": "工作区内所有 Mock 均已配置",
@@ -560,7 +560,11 @@
     "no_results_title": "没有符合您搜索的资源",
     "no_results_description": "尝试不同的搜索词",
     "dataset_pull_failure": "数据集：{name}（{error}）",
-    "dataset_pull_failure_without_detail": "数据集：{name}"
+    "dataset_pull_failure_without_detail": "数据集：{name}",
+    "flow_batch_pull_failure": "Flow：{error}",
+    "flow_batch_pull_failure_without_detail": "Flow：拉取所选 Flow 失败",
+    "sdk_batch_pull_failure": "SDK：{error}",
+    "sdk_batch_pull_failure_without_detail": "SDK：拉取所选 SDK 失败"
   },
   "local_view_popover": {
     "default": {
@@ -674,6 +678,10 @@
         "title": "将文件夹连接到 Workspace",
         "description": "将此文件夹关联到 Workspace，即可与 Postman 云端同步。"
       },
+      "run_app_test": {
+        "title": "使用 Postman 运行应用测试",
+        "description": "将你的测试套件与应用程序清单集成，并采集本地运行的结果。"
+      },
       "generate_artifacts": {
         "title": "生成 API 制品",
         "description": "使用 Postman AI 生成 Collection、Environment 等内容。"
@@ -714,6 +722,12 @@
     "generate_errors": {
       "no_folder_title": "未选择文件夹",
       "no_folder_description": "请先打开本地文件夹，再生成 API 制品"
+    },
+    "run_app_test": {
+      "no_folder_title": "未选择文件夹",
+      "no_folder_description": "运行应用测试前，请先打开一个本地文件夹",
+      "run_failed": "无法在终端中运行该命令",
+      "view_in_inventory": "在应用程序清单中查看"
     }
   },
   "diagnostics": {

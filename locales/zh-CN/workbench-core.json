@@ -95,14 +95,14 @@
   },
   "environment_selector": {
     "type_to_filter": "键入要过滤的内容",
-    "no_environment": "无环境",
-    "select_environment": "选择环境",
+    "no_environment": "无 Environment",
+    "select_environment": "选择 Environment",
     "others": "其他的",
     "no_permission_error": "您没有 权限 来执行此操作。",
     "read_only": "只读",
     "group_label": {
       "pinned": "固定到此 集合",
-      "other": "其他环境"
+      "other": "其他 Environment"
     },
     "menu_options": {
       "set_as_default": "设置为默认值",
@@ -114,18 +114,23 @@
     },
     "empty_state": {
       "no_pins": "固定 环境 以在使用此 集合 时自动切换到它",
-      "no_environments": "未找到环境",
-      "no_environments_can_create": "未找到环境。 <0>创建一个</0>。",
+      "no_environments": "未找到 Environment",
+      "no_environments_can_create": "未找到 Environment。<0>创建一个</0>。",
       "no_environments_in_workspace_header": "无环境",
-      "no_environments_in_workspace_body": "使用环境轻松切换变量值并在不同的设置中测试您的 API。 \n了解有关<0>环境</0>的更多信息。",
+      "no_environments_in_workspace_body": "使用 Environment 可轻松切换变量值，并在不同配置下测试您的 API。详细了解 <0>Environment</0>。",
       "create_environment": "创建环境",
       "forbidden_environments_title": "对环境的访问被 管理员 撤销",
       "forbidden_environments_message": "这可能是由于安全策略所致。请联系您的 管理员 以获取更多详细信息或帮助。"
     },
+    "footer": {
+      "create_environment": "新建 Environment",
+      "create_environment_no_permission": "您没有在此 Workspace 中创建 Environment 的权限",
+      "create_environment_offline": "您必须在线才能创建 Environment"
+    },
     "default_environment_tooltip": "使用 集合 时会自动选择默认 环境。",
     "dropdown": {
       "search_placeholder": "搜索",
-      "add_button_tooltip": "创建环境",
+      "add_button_tooltip": "创建 Environment",
       "aria_label": "环境 选择器。按 Enter 或 Space 打开下拉菜单。"
     },
     "error_state": {

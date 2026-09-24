@@ -43,6 +43,7 @@
     "breadcrumb_root": "共享 保险库",
     "workbench": {
       "description": "在您的 工作区 中存储和共享机密。共享 保险库 中的机密特定于 工作区，工作区 成员可以访问，并可跨设备使用。",
+      "team_description": "在团队中存储和共享密钥。每个密钥的访问权限由其作用域控制。",
       "learn_more": "了解更多",
       "save": {
         "button": "保存",
@@ -110,7 +111,14 @@
       "loading_workspaces": "正在加载 Workspace...",
       "access_info": "已共享 Workspace 的成员可以查看和使用此密钥的值，但由于该密钥属于当前 Workspace，只有 {workspaceName} 能更改或撤销其共享设置。",
       "cancel": "取消",
-      "save_changes": "保存更改"
+      "save_changes": "保存更改",
+      "access_info_team_scoped": "团队中每个 Workspace 的成员都可以在请求中查看和使用共享密钥引用。",
+      "access_info_workspace_owned": "仅此 Workspace 的成员可以在请求中查看和使用共享密钥引用。",
+      "access_info_workspace_shared": "所选 Workspace 的成员可以在请求中查看和使用共享密钥引用。"
+    },
+    "external": {
+      "edit": "编辑外部密钥",
+      "relink": "重新关联外部密钥"
     }
   },
   "external_providers": {
@@ -122,7 +130,7 @@
           "help": "Vault 服务器的基础 URL，非标准端口需一并填写（例如 https://vault.example.com:8200），且必须支持 HTTPS 访问。"
         },
         "namespace": {
-          "label": "Namespace",
+          "label": "命名空间",
           "help": "Vault Enterprise / HCP 的 Namespace。使用开源版 Vault 时留空。"
         }
       },
@@ -271,7 +279,11 @@
       "open_collection": "打开 Collection",
       "open_globals": "打开全局变量",
       "globals_label": "全局变量"
-    }
+    },
+    "delete_secret": "删除密钥",
+    "hide_secret": "隐藏密钥",
+    "show_secret": "显示密钥",
+    "value_placeholder": "值"
   },
   "azure": {
     "label": {
@@ -364,6 +376,11 @@
         },
         "absent": "系统密码管理器中未保存 Vault 密钥。请手动输入密钥以解锁 Vault。",
         "error": "无法从系统密码管理器获取 Vault 密钥。请重试，或手动输入密钥。"
+      },
+      "error": {
+        "invalid_key": "该 Vault 密钥无效。请检查密钥后重试。",
+        "keychain_key_invalid": "系统密码管理器中保存的 Vault 密钥无效。请手动输入密钥以解锁 Vault。",
+        "unknown": "无法解锁 Vault，请重试。"
       },
       "reset_vault": {
         "help_text": "找不到钥匙？",
@@ -572,6 +589,15 @@
           "cancel": "取消"
         }
       }
+    },
+    "sign_in_error": {
+      "title": "Postman 无法完成登录 {provider_name}",
+      "instruction": "请重试。如果问题持续出现，请将以下信息提供给您的 {provider_name} 管理员。",
+      "from_provider": "来自 {provider_name} · HTTP {status_code}",
+      "from_provider_no_status": "来自 {provider_name}",
+      "copy_details": "复制详情",
+      "copied": "已复制",
+      "retry": "重试"
     },
     "main": {
       "button": {
@@ -987,6 +1013,121 @@
   "workspace_visibility": {
     "clear_shared_vault_secrets": {
       "description": "如果此 工作区 被设为公开，共享 保险库 中存储的所有机密将被自动清除，以防止公开泄露。"
+    }
+  },
+  "team_shared_vault": {
+    "add_modal": {
+      "cancel": "取消",
+      "domains_label": "允许的域名（可选）",
+      "domains_placeholder": "api.example.com, *.internal.example.com",
+      "edit_subtitle": "更新此密钥。更改将应用于所有使用它的地方。",
+      "edit_title": "编辑密钥",
+      "key_label": "键",
+      "key_placeholder": "例如 stripe_secret_key",
+      "key_value_required": "键和密钥值均为必填项。",
+      "no_workspace": "没有活动的 Workspace，无法创建密钥。",
+      "pick_at_least_one_user": "请至少选择一位要共享的团队成员。",
+      "save": "保存",
+      "save_changes": "保存更改",
+      "save_failed": "密钥创建失败。",
+      "scope_label": "谁可以访问此密钥",
+      "scope_team": "整个团队",
+      "scope_team_desc": "本团队的每位成员都可以使用此密钥。",
+      "scope_user": "指定用户",
+      "scope_user_desc": "选择可以使用此密钥的团队成员。",
+      "scope_workspace": "Workspace",
+      "scope_workspace_desc": "仅此 Workspace 的成员可以使用。",
+      "subtitle": "此密钥将由您创建，默认仅在此 Workspace 内私有。",
+      "title": "添加密钥",
+      "value_label": "密钥值",
+      "value_note": "除查看弹窗外，该值在所有位置均会被遮盖，且只有您可以显示或编辑它。",
+      "value_placeholder": "例如 sk_live_..."
+    },
+    "catalog": {
+      "delete": "删除",
+      "edit_link": "编辑外部密钥关联",
+      "edit_secret": "编辑密钥",
+      "empty": "暂无共享 Vault 密钥。",
+      "empty_filtered": "没有符合筛选条件的密钥。",
+      "header_allowed_domains": "允许的域名",
+      "header_created": "创建时间",
+      "header_creator": "创建者",
+      "header_key": "键",
+      "header_shared_with": "共享对象",
+      "share_button": "共享",
+      "view_value": "查看值",
+      "scope_team_wide": "全团队",
+      "scope_restricted": "受限",
+      "scope_people": "{count, plural, one {# 人} other {# 人}}"
+    },
+    "container": {
+      "add_secret": "+ 添加密钥"
+    },
+    "delete_modal": {
+      "cancel": "取消",
+      "confirm": "删除",
+      "delete_failed": "密钥删除失败。",
+      "title": "删除密钥"
+    },
+    "external": {
+      "link_secret": "关联外部密钥"
+    },
+    "filters": {
+      "all_creators": "所有创建者",
+      "clear_creator": "所有创建者",
+      "creator": "创建者",
+      "creator_panel_label": "按创建者筛选",
+      "creator_placeholder": "搜索团队成员",
+      "no_teammates": "没有匹配的团队成员",
+      "search_placeholder": "按键名搜索"
+    },
+    "share_modal": {
+      "cancel": "取消",
+      "info_team": "本团队的每位成员都可以在请求中查看和使用此密钥的引用。",
+      "info_user": "只有所选团队成员（以及您）可以查看和使用此密钥的引用。",
+      "info_workspace": "此密钥的作用域为其所属 Workspace。与团队成员或整个团队共享后将无法撤销。",
+      "loading_grants": "正在加载当前共享设置…",
+      "pick_at_least_one_user": "请至少选择一位要共享的团队成员。",
+      "save": "保存更改",
+      "save_failed": "共享设置保存失败。",
+      "team_desc": "本团队的所有人都可以使用此密钥",
+      "team_title": "所有团队成员",
+      "title": "管理共享",
+      "user_desc": "选择可以使用此密钥的团队成员",
+      "user_title": "与用户共享",
+      "who_heading": "谁可以访问此密钥",
+      "workspace_desc": "此密钥只能在此 Workspace 内使用，不会共享到其他地方",
+      "workspace_required": "没有活动的 Workspace，无法保存 Workspace 共享设置。",
+      "workspace_title": "仅限此 Workspace"
+    },
+    "shared_with": {
+      "team_heading": "已与此团队的所有人共享",
+      "workspace_only": "仅限 Workspace",
+      "user_heading": "{count, plural, one {已与 # 人共享} other {已与 # 人共享}}",
+      "workspace_heading": "{count, plural, one {已在 # 个 Workspace 中共享} other {已在 # 个 Workspace 中共享}}"
+    },
+    "tabs": {
+      "external": "外部 Vault",
+      "managed": "Postman Vault"
+    },
+    "user_picker": {
+      "label": "团队成员",
+      "no_matches": "没有与搜索匹配的团队成员",
+      "placeholder": "输入电子邮件地址",
+      "remove_user": "移除 {name}"
+    },
+    "value_modal": {
+      "cancel": "取消",
+      "external_note": "此密钥在运行时从其提供方解析，不会存储在 Postman 中。",
+      "load_failed": "无法加载此密钥的值。",
+      "loading": "正在加载值…",
+      "read_only": "您没有编辑此密钥的权限。",
+      "reference_label": "引用",
+      "reference_title": "密钥引用",
+      "save": "保存",
+      "save_failed": "值保存失败。",
+      "title": "密钥值",
+      "value_label": "值"
     }
   }
 }

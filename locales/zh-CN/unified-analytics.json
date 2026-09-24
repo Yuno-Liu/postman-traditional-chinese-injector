@@ -502,7 +502,6 @@
       "non_deleted_integrations": "未删除的集成",
       "postman_api": "Postman API",
       "custom_domains": "自定义域名",
-      "cloud_agent_requests": "Cloud Agent 请求",
       "legend": {
         "limit": "限额",
         "usage": "用量"

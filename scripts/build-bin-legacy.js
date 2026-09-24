@@ -69,6 +69,7 @@ function main() {
       // Scratch Pad 快照：buildData 已在 ROOT 生成，必须一并带进 staging，否则 pkg 打出的
       // 二进制缺内嵌快照，运行时报「缺少 Scratch Pad 钩子源码 pm-scratchpad-cn.js（且无内嵌快照）」。
       'pm-scratchpad-data.json', 'pm-scratchpad-src.json',
+      'pm-main-data.json', 'pm-main-src.json',
     ]) {
       fs.copyFileSync(path.join(ROOT, f), path.join(stage, f));
     }
@@ -82,6 +83,7 @@ function main() {
       pkg: { targets: [target], assets: [
         'pm-chinese-data.json', 'pm-chinese-src.json',
         'pm-scratchpad-data.json', 'pm-scratchpad-src.json',
+      'pm-main-data.json', 'pm-main-src.json',
       ] },
     }, null, 2));
 

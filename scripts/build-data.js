@@ -81,6 +81,19 @@ function buildData(lang = 'zh-CN') {
     console.warn(`[警告] 未找到 ${path.relative(ROOT, spDict)}，跳过 Scratch Pad 快照（请先跑 build-scratchpad-dict.js）`);
   }
 
+  // 主进程原生菜单：词典快照 + 钩子源码快照（供 bun --compile 内嵌）
+  const mainDict = path.join(ROOT, 'locales', 'main', 'zh-CN.json');
+  if (!fs.existsSync(mainDict)) throw new Error(`找不到主进程词典: ${mainDict}`);
+  const mDict = JSON.parse(fs.readFileSync(mainDict, 'utf8'));
+  const mDataOut = path.join(ROOT, 'pm-main-data.json');
+  fs.writeFileSync(mDataOut, JSON.stringify(mDict), 'utf8');
+  console.log(`[完成] 主进程词典 -> ${path.relative(ROOT, mDataOut)} (${Object.keys(mDict).length} 条)`);
+  const mHookSrc = path.join(ROOT, 'pm-main-cn.js');
+  if (!fs.existsSync(mHookSrc)) throw new Error(`找不到钩子源码: ${mHookSrc}`);
+  const mHookOut = path.join(ROOT, 'pm-main-src.json');
+  fs.writeFileSync(mHookOut, JSON.stringify({ src: fs.readFileSync(mHookSrc, 'utf8') }), 'utf8');
+  console.log(`[完成] 主进程钩子源码 -> ${path.relative(ROOT, mHookOut)} (${(fs.statSync(mHookOut).size / 1024).toFixed(0)} KB)`);
+
   return { lang, count };
 }
 

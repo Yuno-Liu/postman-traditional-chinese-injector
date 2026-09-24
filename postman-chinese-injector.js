@@ -55,6 +55,10 @@ const DATA_NAME = 'pm-chinese-data.json'; // 注入时在 asar 内生成的 bund
 const SCRATCH_HOOK_NAME = 'pm-scratchpad-cn.js';
 const SCRATCH_HOOK_SRC = path.join(BASE_DIR, SCRATCH_HOOK_NAME);
 const SCRATCH_DATA_NAME = 'pm-scratchpad-data.json';
+const MAIN_HOOK_NAME = 'pm-main-cn.js';
+const MAIN_HOOK_SRC = path.join(BASE_DIR, MAIN_HOOK_NAME);
+const MAIN_DATA_NAME = 'pm-main-data.json';
+const MAIN_ENTRY = 'main.js'; // 主进程入口（package.json 的 main）
 
 const BAK_SUFFIX = '.bak';
 const MARK_START = '// === PM-I18N START ===';
@@ -63,6 +67,11 @@ const INJECT_BLOCK =
   `\n${MARK_START}\n` +
   "try { require('./pm-chinese.js'); } catch (e) { console.error('[pm-chinese] load failed', e); }\n" +
   "try { require('./pm-scratchpad-cn.js'); } catch (e) { console.error('[pm-scratchpad] load failed', e); }\n" +
+  `${MARK_END}\n`;
+// 主进程入口的注入块：须插在 main.js 最前面，赶在 Postman 建菜单之前包装好 Menu
+const MAIN_INJECT_BLOCK =
+  `${MARK_START}\n` +
+  "try { require('./pm-main-cn.js'); } catch (e) { console.error('[pm-main] load failed', e); }\n" +
   `${MARK_END}\n`;
 
 // ---------- 小工具 ----------
@@ -210,6 +219,51 @@ function loadScratchpadDict() {
   const emb = loadEmbeddedScratchpadDict();
   if (emb && typeof emb === 'object' && Object.keys(emb).length) return { dict: emb, from: '内嵌快照' };
   throw new Error('缺少 Scratch Pad 词典（locales/scratchpad/zh-CN.json 或内嵌快照）');
+}
+
+// 主进程钩子源码 / 词典（逻辑同 Scratch Pad）
+function loadEmbeddedMainHook() {
+  try { return require('./pm-main-src.json').src || null; } catch (e) { return null; }
+}
+function mainHookSource() {
+  const cands = [];
+  try { cands.push(path.join(path.dirname(process.execPath), MAIN_HOOK_NAME)); } catch (e) { /* ignore */ }
+  cands.push(MAIN_HOOK_SRC);
+  for (const p of cands) {
+    if (isFile(p)) return { src: fs.readFileSync(p, 'utf8'), from: p };
+  }
+  const emb = loadEmbeddedMainHook();
+  if (emb) return { src: emb, from: '内嵌快照' };
+  throw new Error(`缺少主进程钩子源码 ${MAIN_HOOK_NAME}（且无内嵌快照）`);
+}
+function loadEmbeddedMainDict() {
+  try { return require('./pm-main-data.json'); } catch (e) { return null; }
+}
+function loadMainDict() {
+  for (const root of localeRoots()) {
+    const p = path.join(root, 'main', 'zh-CN.json');
+    if (isFile(p)) {
+      try { return { dict: JSON.parse(fs.readFileSync(p, 'utf8')), from: p }; } catch (e) { /* 坏文件则继续 */ }
+    }
+  }
+  const emb = loadEmbeddedMainDict();
+  if (emb && typeof emb === 'object' && Object.keys(emb).length) return { dict: emb, from: '内嵌快照' };
+  throw new Error('缺少主进程词典（locales/main/zh-CN.json 或内嵌快照）');
+}
+
+// 把注入块插到 main.js 最前面（若有 'use strict' 指令则插在其后，免得破坏严格模式）
+function injectMainEntry(text) {
+  const clean = stripBlock(text);
+  const m = /^(\s*(['"])use strict\2;?[ \t]*\r?\n?)/.exec(clean);
+  return m ? m[1] + MAIN_INJECT_BLOCK + clean.slice(m[1].length) : MAIN_INJECT_BLOCK + clean;
+}
+
+// 在 appRoot 写入注入后的 main.js + 主进程钩子与词典；entrySrc 为干净的 main.js 原文
+function writeMainHook(appRoot, mainHook, mainDict, entrySrc) {
+  fs.writeFileSync(path.join(appRoot, MAIN_ENTRY), injectMainEntry(entrySrc), 'utf8');
+  fs.writeFileSync(path.join(appRoot, MAIN_HOOK_NAME), mainHook.src, 'utf8');
+  fs.writeFileSync(path.join(appRoot, MAIN_DATA_NAME), JSON.stringify(mainDict.dict), 'utf8');
+  console.log(`[注入] ${MAIN_ENTRY} <- require('./${MAIN_HOOK_NAME}')（原生菜单，${Object.keys(mainDict.dict).length} 条）`);
 }
 
 // 候选 locales 根目录（按优先级）：① 紧挨真正的可执行文件（允许在 exe 旁放 locales/ 覆盖
@@ -360,6 +414,8 @@ async function patchAsar(target, lang) {
   const hook = hookSource();
   const spHook = scratchpadHookSource();
   const spDict = loadScratchpadDict();
+  const mainHook = mainHookSource();
+  const mainDict = loadMainDict();
 
   // 0) 从 locales/<lang>/ 构建注入数据（二进制无 locales 时用内嵌数据）
   const { bundle, count, embedded } = buildBundle(lang);
@@ -398,6 +454,11 @@ async function patchAsar(target, lang) {
   fs.writeFileSync(path.join(preloadDir, SCRATCH_DATA_NAME), JSON.stringify(spDict.dict), 'utf8');
   console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(spDict.dict).length} 条）`);
 
+  // 3.5) 主进程入口注入原生菜单钩子（钩子/词典与 main.js 同目录）
+  const stagedEntry = path.join(staging, MAIN_ENTRY);
+  if (!isFile(stagedEntry)) throw new Error(`解包后找不到主进程入口 ${MAIN_ENTRY}`);
+  writeMainHook(staging, mainHook, mainDict, fs.readFileSync(stagedEntry, 'utf8'));
+
   // 4) 打包回 app.asar
   console.log('[打包] 临时目录 -> app.asar');
   await asarPack(staging, asar);
@@ -420,6 +481,8 @@ async function patchDir(target, lang) {
   const hook = hookSource();
   const spHook = scratchpadHookSource();
   const spDict = loadScratchpadDict();
+  const mainHook = mainHookSource();
+  const mainDict = loadMainDict();
 
   // 0) 构建注入数据
   const { bundle, count, embedded } = buildBundle(lang);
@@ -447,6 +510,16 @@ async function patchDir(target, lang) {
   fs.writeFileSync(path.join(preloadDir, SCRATCH_HOOK_NAME), spHook.src, 'utf8');
   fs.writeFileSync(path.join(preloadDir, SCRATCH_DATA_NAME), JSON.stringify(spDict.dict), 'utf8');
   console.log(`[写入] ${SCRATCH_HOOK_NAME} + ${SCRATCH_DATA_NAME}（${Object.keys(spDict.dict).length} 条）`);
+
+  // 4) 主进程入口：同样备份为 main.js.bak 并始终从备份注入
+  const entry = path.join(appDir, MAIN_ENTRY);
+  const entryBak = entry + BAK_SUFFIX;
+  if (!isFile(entryBak)) {
+    if (!isFile(entry)) throw new Error(`找不到主进程入口 ${MAIN_ENTRY}: ${appDir}`);
+    fs.writeFileSync(entryBak, stripBlock(fs.readFileSync(entry, 'utf8')), 'utf8');
+    console.log(`[备份] ${MAIN_ENTRY} -> ${path.basename(entryBak)}`);
+  }
+  writeMainHook(appDir, mainHook, mainDict, fs.readFileSync(entryBak, 'utf8'));
 
   console.log('\n[成功] 已注入未打包的 app/ 目录。完全退出并重启 Postman；');
   console.log('       界面出现中文即生效。');
@@ -492,6 +565,21 @@ function restoreDir(target) {
     const p = path.join(preloadDir, f);
     if (isFile(p)) { fs.rmSync(p, { force: true }); console.log(`[还原] 删除 ${f}`); did = true; }
   }
+  // 主进程入口：用 main.js.bak 覆盖回，并删除主进程钩子与词典
+  const entry = path.join(appDir, MAIN_ENTRY);
+  if (isFile(entry + BAK_SUFFIX)) {
+    fs.copyFileSync(entry + BAK_SUFFIX, entry);
+    console.log(`[还原] 已用 ${MAIN_ENTRY}${BAK_SUFFIX} 覆盖回 ${MAIN_ENTRY}`);
+    did = true;
+  } else if (isFile(entry)) {
+    const raw = fs.readFileSync(entry, 'utf8');
+    const cleaned = stripBlock(raw);
+    if (cleaned !== raw) { fs.writeFileSync(entry, cleaned, 'utf8'); console.log(`[还原] 已移除 ${MAIN_ENTRY} 中的注入块`); did = true; }
+  }
+  for (const f of [MAIN_HOOK_NAME, MAIN_DATA_NAME]) {
+    const p = path.join(appDir, f);
+    if (isFile(p)) { fs.rmSync(p, { force: true }); console.log(`[还原] 删除 ${f}`); did = true; }
+  }
   if (!did) console.log('[还原] 未发现注入痕迹，无需还原');
   else console.log('       （备份保留；如需彻底清理可手动删除）');
 }
@@ -527,6 +615,9 @@ function statusDir(target) {
   console.log(`  pm-chinese.js 在 app/ 内: ${hasHook ? '是' : '否'}`);
   console.log(`  pm-chinese-data.json 在 app/ 内: ${hasData ? '是' : '否'}${count != null ? `（${count} 模块）` : ''}`);
   console.log(`  Scratch Pad 钩子在 app/ 内: ${hasScratch ? '是' : '否'}`);
+  let mainInjected = false;
+  try { mainInjected = fs.readFileSync(path.join(appDir, MAIN_ENTRY), 'utf8').includes(`require('./${MAIN_HOOK_NAME}')`); } catch (e) { /* ignore */ }
+  console.log(`  原生菜单钩子（${MAIN_ENTRY}）: ${mainInjected && isFile(path.join(appDir, MAIN_HOOK_NAME)) ? '已注入' : '未注入'}`);
   console.log(`  preload 注入行 require('./pm-chinese.js'): ${injected ? '有' : '无'}`);
 
   const ok = hasHook && hasData && injected;
@@ -547,12 +638,13 @@ function statusAsar(target) {
   console.log(`  备份 ${path.basename(bak)}: ${isFile(bak) ? '有（注入过至少一次）' : '无'}`);
 
   let hasHook = false, hasData = false, injected = false, count = null, preloadRel = null;
-  let hasScratch = false;
+  let hasScratch = false, hasMain = false;
   try {
     const files = asarList(asar);
     hasHook = files.some((f) => /(^|[\\/])pm-chinese\.js$/.test(f));
     hasData = files.some((f) => /(^|[\\/])pm-chinese-data\.json$/.test(f));
     hasScratch = files.some((f) => /(^|[\\/])pm-scratchpad-cn\.js$/.test(f));
+    hasMain = files.some((f) => /^[\\/]?pm-main-cn\.js$/.test(f));
     preloadRel = findPreloadInAsar(files);
   } catch (e) {
     console.log('  无法读取 asar 内容:', e.message);
@@ -569,6 +661,11 @@ function statusAsar(target) {
   console.log(`  pm-chinese.js 在 asar 内: ${hasHook ? '是' : '否'}`);
   console.log(`  pm-chinese-data.json 在 asar 内: ${hasData ? '是' : '否'}${count != null ? `（${count} 模块）` : ''}`);
   console.log(`  Scratch Pad 钩子在 asar 内: ${hasScratch ? '是' : '否'}`);
+  let mainInjected = false;
+  try {
+    mainInjected = hasMain && asarReadFile(asar, MAIN_ENTRY).includes(`require('./${MAIN_HOOK_NAME}')`);
+  } catch (e) { /* ignore */ }
+  console.log(`  原生菜单钩子（${MAIN_ENTRY}）: ${mainInjected ? '已注入' : '未注入'}`);
   console.log(`  preload 注入行 require('./pm-chinese.js'): ${injected ? '有' : '无'}`);
 
   const ok = hasHook && hasData && injected;
@@ -629,7 +726,7 @@ async function main() {
 }
 
 // 导出供测试用（作为 CLI 运行时不受影响）
-module.exports = { findPreloadIn, findPreloadInAsar, resolveDirPreload, PRELOAD_CANDIDATES, scratchpadHookSource, loadScratchpadDict };
+module.exports = { findPreloadIn, findPreloadInAsar, resolveDirPreload, PRELOAD_CANDIDATES, scratchpadHookSource, loadScratchpadDict, mainHookSource, loadMainDict, injectMainEntry, stripBlock };
 
 if (require.main === module) {
   main().catch((e) => {

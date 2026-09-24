@@ -33,6 +33,10 @@
     "resource": {
       "title": "依赖项",
       "description": "在本地文件系统中使用此 Collection。"
+    },
+    "flow": {
+      "title": "Flows",
+      "description": "基于此 Collection 中的请求构建 Flow。"
     }
   },
   "fork": {
@@ -58,5 +62,14 @@
       "error_title": "无法添加 Collection",
       "error_message": "添加该 Collection 时出错，请重试。"
     }
+  },
+  "flow": {
+    "name_field": "Flow 名称",
+    "default_name": "来自“{name}” Collection 的 Flow",
+    "active_workspace_note": "Flow 将创建在当前活动的 Workspace 中。",
+    "local_mode_disabled": "本地模式下无法使用 Flow。",
+    "no_permission_disabled": "您没有权限在此 Workspace 中创建 Flow。",
+    "error_title": "无法创建 Flow",
+    "error_message": "基于此 Collection 创建 Flow 时出错，请重试。"
   }
 }
