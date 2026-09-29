@@ -1,0 +1,53 @@
+name: publish-update-data
+
+# main 上译文 / 钩子有改动时，打包在线热更新数据包 pm-update.json.gz，
+# 强推到只含这一个文件的孤儿分支 update-data；注入程序运行时从这里（及 jsDelivr 镜像）拉取。
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'locales/**'
+      - 'pm-chinese.js'
+      - 'pm-scratchpad-cn.js'
+      - 'pm-main-cn.js'
+      - 'updater.js'
+      - 'scripts/build-data.js'
+      - 'scripts/build-update.js'
+      - '.github/workflows/update-data.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: update-data
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build update bundle
+        run: node scripts/build-update.js
+
+      - name: Push to update-data branch
+        working-directory: dist/update
+        run: |
+          set -e
+          git init -q
+          git checkout -q --orphan update-data
+          git add pm-update.json.gz
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -qm "data: ${GITHUB_SHA}"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" update-data
+
+      # jsDelivr 对分支文件缓存最长 12h，主动刷新一下（失败无妨，客户端会同时比对 GitHub raw）
+      - name: Purge jsDelivr cache
+        continue-on-error: true
+        run: curl -fsS "https://purge.jsdelivr.net/gh/${{ github.repository }}@update-data/pm-update.json.gz"

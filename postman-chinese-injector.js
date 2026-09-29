@@ -46,6 +46,7 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 const { spawnSync } = require('child_process');
+const updater = require('./updater');
 
 const BASE_DIR = __dirname;
 const HOOK_SRC = path.join(BASE_DIR, 'pm-chinese.js');
@@ -163,6 +164,28 @@ function asarReadFile(archive, name) {
   return asar.extractFile(archive, name).toString('utf8');
 }
 
+// ---------- 在线译文数据包（见 updater.js）----------
+// 注入前由 prepareRemoteData() 填充；各取数函数的优先级：exe 旁 / 源码旁的本地文件 > 在线数据包 > 内嵌快照。
+let remoteData = null;
+
+function loadEmbeddedMeta() {
+  try { return require('./pm-build-meta.json'); } catch (e) { return null; }
+}
+
+// 身边有 locales/<lang>/（源码模式或 exe 旁手动覆盖）时以本地为准，不联网取译文
+function hasLocalLocales(lang) {
+  return localeRoots().some((root) => isDir(path.join(root, lang)));
+}
+
+async function prepareRemoteData(opts, lang) {
+  if (hasLocalLocales(lang)) return;
+  const meta = loadEmbeddedMeta();
+  remoteData = await updater.resolveDataBundle({ embeddedAt: meta && meta.committedAt, offline: opts.offline });
+  if (remoteData) console.log(`[更新] 使用在线译文（来源 ${remoteData.from}，提交于 ${remoteData.committedAt}）`);
+}
+
+const REMOTE_FROM = () => `在线数据包（${remoteData.from}）`;
+
 // ---------- 从 locales/<lang>/*.json 构建注入用的扁平 bundle ----------
 // 编译成单文件二进制时身边没有 locales/，改用编译期嵌入的 pm-chinese-data.json。
 function loadEmbedded() {
@@ -184,6 +207,7 @@ function hookSource() {
   for (const p of cands) {
     if (isFile(p)) return { src: fs.readFileSync(p, 'utf8'), from: p };
   }
+  if (remoteData) return { src: remoteData.hook, from: REMOTE_FROM() };
   const emb = loadEmbeddedHook();
   if (emb) return { src: emb, from: '内嵌快照' };
   throw new Error(`缺少钩子源码 pm-chinese.js（已尝试: ${cands.join('、')}，且无内嵌快照）`);
@@ -200,6 +224,7 @@ function scratchpadHookSource() {
   for (const p of cands) {
     if (isFile(p)) return { src: fs.readFileSync(p, 'utf8'), from: p };
   }
+  if (remoteData && remoteData.scratchpadHook) return { src: remoteData.scratchpadHook, from: REMOTE_FROM() };
   const emb = loadEmbeddedScratchpadHook();
   if (emb) return { src: emb, from: '内嵌快照' };
   throw new Error(`缺少 Scratch Pad 钩子源码 ${SCRATCH_HOOK_NAME}（且无内嵌快照）`);
@@ -216,6 +241,7 @@ function loadScratchpadDict() {
       try { return { dict: JSON.parse(fs.readFileSync(p, 'utf8')), from: p }; } catch (e) { /* 坏文件则继续 */ }
     }
   }
+  if (remoteData && remoteData.scratchpadDict) return { dict: remoteData.scratchpadDict, from: REMOTE_FROM() };
   const emb = loadEmbeddedScratchpadDict();
   if (emb && typeof emb === 'object' && Object.keys(emb).length) return { dict: emb, from: '内嵌快照' };
   throw new Error('缺少 Scratch Pad 词典（locales/scratchpad/zh-CN.json 或内嵌快照）');
@@ -232,6 +258,7 @@ function mainHookSource() {
   for (const p of cands) {
     if (isFile(p)) return { src: fs.readFileSync(p, 'utf8'), from: p };
   }
+  if (remoteData) return { src: remoteData.mainHook, from: REMOTE_FROM() };
   const emb = loadEmbeddedMainHook();
   if (emb) return { src: emb, from: '内嵌快照' };
   throw new Error(`缺少主进程钩子源码 ${MAIN_HOOK_NAME}（且无内嵌快照）`);
@@ -246,6 +273,7 @@ function loadMainDict() {
       try { return { dict: JSON.parse(fs.readFileSync(p, 'utf8')), from: p }; } catch (e) { /* 坏文件则继续 */ }
     }
   }
+  if (remoteData) return { dict: remoteData.mainDict, from: REMOTE_FROM() };
   const emb = loadEmbeddedMainDict();
   if (emb && typeof emb === 'object' && Object.keys(emb).length) return { dict: emb, from: '内嵌快照' };
   throw new Error('缺少主进程词典（locales/main/zh-CN.json 或内嵌快照）');
@@ -282,9 +310,10 @@ function buildBundle(lang) {
     if (isDir(d)) { dir = d; break; }
   }
   if (!dir) {
+    if (remoteData) return { bundle: remoteData.data, count: Object.keys(remoteData.data).length, source: REMOTE_FROM() };
     const emb = loadEmbedded();
     if (emb && typeof emb === 'object' && Object.keys(emb).length) {
-      return { bundle: emb, count: Object.keys(emb).length, embedded: true };
+      return { bundle: emb, count: Object.keys(emb).length, source: '内嵌数据' };
     }
     throw new Error(`找不到语言目录 locales/${lang}/（且无内嵌数据）`);
   }
@@ -306,7 +335,7 @@ function buildBundle(lang) {
     }
   }
   if (!count) throw new Error(`${dir} 下没有可用的翻译文件`);
-  return { bundle, count, embedded: false, dir };
+  return { bundle, count, source: `locales/${lang}/`, dir };
 }
 
 // ---------- 跨平台定位 Postman resources 目录 ----------
@@ -418,8 +447,8 @@ async function patchAsar(target, lang) {
   const mainDict = loadMainDict();
 
   // 0) 从 locales/<lang>/ 构建注入数据（二进制无 locales 时用内嵌数据）
-  const { bundle, count, embedded } = buildBundle(lang);
-  console.log(`[构建] ${embedded ? '内嵌数据' : 'locales/' + lang + '/'} -> ${DATA_NAME}（${count} 模块）`);
+  const { bundle, count, source } = buildBundle(lang);
+  console.log(`[构建] ${source} -> ${DATA_NAME}（${count} 模块）`);
 
   // 1) 确保有 pristine 备份，且始终从备份打补丁
   if (!isFile(bak)) {
@@ -485,8 +514,8 @@ async function patchDir(target, lang) {
   const mainDict = loadMainDict();
 
   // 0) 构建注入数据
-  const { bundle, count, embedded } = buildBundle(lang);
-  console.log(`[构建] ${embedded ? '内嵌数据' : 'locales/' + lang + '/'} -> ${DATA_NAME}（${count} 模块）`);
+  const { bundle, count, source } = buildBundle(lang);
+  console.log(`[构建] ${source} -> ${DATA_NAME}（${count} 模块）`);
 
   // 1) 确保有 pristine 备份（剥掉可能已存在的注入块，保证备份干净），且始终从备份打补丁
   if (!isFile(bak)) {
@@ -689,6 +718,8 @@ function printHelp() {
   --resources <dir>         直接指定含 app.asar 或未打包 app/ 的目录（跳过自动探测）
   --postman-dir <dir>       指定 Postman 安装根目录
   --app-version <v>         Windows 多版本共存时指定 app-<version>（默认最新）
+  --offline                 不联网：不检查程序新版本、不拉取在线译文（有本机缓存则用缓存）
+  --no-self-update          只拉取最新译文，不自动更新程序本身
   -v, --version             显示本工具版本
   -h, --help                显示帮助
 
@@ -701,7 +732,7 @@ function printHelp() {
 }
 
 function parseArgs(argv) {
-  const opts = { postmanDir: null, resources: null, appVersion: null, restore: false, status: false };
+  const opts = { postmanDir: null, resources: null, appVersion: null, restore: false, status: false, offline: false, selfUpdate: true };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === '--restore') opts.restore = true;
@@ -709,6 +740,8 @@ function parseArgs(argv) {
     else if (a === '--resources') opts.resources = argv[++i];
     else if (a === '--postman-dir') opts.postmanDir = argv[++i];
     else if (a === '--app-version') opts.appVersion = argv[++i];
+    else if (a === '--offline') opts.offline = true;
+    else if (a === '--no-self-update') opts.selfUpdate = false;
     else if (a === '-v' || a === '--version') { console.log(toolVersion()); process.exit(0); }
     else if (a === '-h' || a === '--help') { printHelp(); process.exit(0); }
     else { console.error(`[错误] 未知参数: ${a}（用 --help 查看用法）`); process.exit(2); }
@@ -717,12 +750,23 @@ function parseArgs(argv) {
 }
 
 async function main() {
-  const opts = parseArgs(process.argv.slice(2));
+  const argv = process.argv.slice(2);
+  const opts = parseArgs(argv);
+  const patching = !opts.status && !opts.restore;
+  updater.cleanupOldBinary();
+  // 先自更新：新版本可能带来新的探测 / 注入逻辑，更新成功则直接交给新版本跑完并退出
+  if (patching && !opts.offline && opts.selfUpdate) {
+    const code = await updater.selfUpdate({ currentVersion: toolVersion(), argv });
+    if (code !== null) process.exit(code);
+  }
   const target = resolveTarget(opts);
   console.log(`[目标] ${target.resourcesDir}（${target.kind === 'asar' ? 'app.asar' : '未打包 app/ 目录'}）`);
   if (opts.status) status(target);
   else if (opts.restore) restore(target);
-  else await patch(target, DEFAULT_LANG);
+  else {
+    await prepareRemoteData(opts, DEFAULT_LANG);
+    await patch(target, DEFAULT_LANG);
+  }
 }
 
 // 导出供测试用（作为 CLI 运行时不受影响）

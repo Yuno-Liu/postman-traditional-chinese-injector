@@ -22,6 +22,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { spawnSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
 
@@ -94,7 +95,17 @@ function buildData(lang = 'zh-CN') {
   fs.writeFileSync(mHookOut, JSON.stringify({ src: fs.readFileSync(mHookSrc, 'utf8') }), 'utf8');
   console.log(`[完成] 主进程钩子源码 -> ${path.relative(ROOT, mHookOut)} (${(fs.statSync(mHookOut).size / 1024).toFixed(0)} KB)`);
 
-  return { lang, count };
+  // 构建元信息：译文对应的提交时间，供程序判断在线数据包 / 本机缓存是否比内嵌快照新
+  const meta = { commit: gitOut(['rev-parse', 'HEAD']), committedAt: gitOut(['log', '-1', '--format=%cI']) || new Date().toISOString() };
+  fs.writeFileSync(path.join(ROOT, 'pm-build-meta.json'), JSON.stringify(meta), 'utf8');
+  console.log(`[完成] 构建元信息 -> pm-build-meta.json（${meta.committedAt}）`);
+
+  return { lang, count, meta };
+}
+
+function gitOut(args) {
+  const r = spawnSync('git', args, { cwd: ROOT, encoding: 'utf8' });
+  return r.status === 0 ? r.stdout.trim() : null;
 }
 
 module.exports = { buildData };

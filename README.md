@@ -154,6 +154,7 @@ Postman **登入态**主界面是远程网页，走上面的语言包拦截即�
 ```
 postman-chinese-injector/
 ├── postman-chinese-injector.js   # 桌面端注入 CLI：构建 / 备份 / 解包 / 注入 / 打包 app.asar，含 --restore
+├── updater.js                    # 在线更新：程序自更新（GitHub Release）+ 译文热更新（update-data 分支）
 ├── pm-chinese.js                 # 运行时钩子（桌面端与浏览器扩展共用的唯一真源）
 ├── pm-scratchpad-cn.js           # 第二个钩子：登出态 Scratch Pad 的 DOM 词典替换（仅桌面端）
 ├── pm-main-cn.js                 # 第三个钩子：主进程原生菜单 / 对话框汉化（仅桌面端）
@@ -167,13 +168,14 @@ postman-chinese-injector/
 │       └── zh-CN.json            # 主进程原生菜单 / 对话框词典（英文整串 → 中文）
 ├── scripts/
 │   ├── build-data.js             # 合并 locales/ 并生成可嵌入二进制的快照（见下）
+│   ├── build-update.js           # 生成在线热更新数据包 dist/update/pm-update.json.gz（CI 推到 update-data 分支）
 │   ├── build-scratchpad-dict.js  # 构建 / 维护 Scratch Pad 词典 locales/scratchpad/zh-CN.json
 │   ├── build-extension.js        # 打包 Chrome/Edge (MV3) 浏览器扩展，给 Postman 网页版用
 │   ├── build-bin.js              # 用 bun --compile 编译单文件二进制（复用本地缓存的运行时）
 │   ├── build-bin-legacy.js       # 用 pkg（Node 运行时）打老系统版 Windows 二进制
 │   ├── fetch-runtimes.js         # 预拉取各平台 bun 运行时到本地缓存，规避交叉编译时的在线下载
 │   └── compress-dist.js          # 把 dist/ 的二进制并行压成发行包（zip / tar.xz）
-├── .github/workflows/            # CI：打 tag 自动交叉编译、并行压缩并发 Release
+├── .github/workflows/            # CI：打 tag 自动交叉编译并发 Release；main 改译文自动发布在线数据包
 └── package.json                  # bin 命令 postman-chinese-injector、构建脚本、依赖 @electron/asar
 ```
 
@@ -217,9 +219,23 @@ postman-chinese-injector/
 # 3. 重启 Postman，界面出现中文即成功
 ```
 
-二进制已内嵌全部中文译文与 `@electron/asar`，无需联网、无需 Node。
+二进制已内嵌全部中文译文与 `@electron/asar`，无需 Node；断网也能用内嵌译文注入。
 
-> 译文有更新但不想换二进制？把一个 `locales/<lang>/` 文件夹放在**可执行文件旁边**即可覆盖内嵌数据。
+#### 自动更新（程序 + 译文）
+
+Postman 更新频繁，二进制每次运行注入前会自动联网检查两件事，任何一步失败都只提示、不影响注入：
+
+1. **程序自更新** —— 对比 GitHub 最新 Release，有新版则下载本平台压缩包（GitHub 直连与 `ghfast.top` 镜像**同时下载**，谁先完成用谁），按 Release 附带的 `SHA256SUMS.txt` 校验后替换自身，再以相同参数运行新版本。
+2. **译文热更新** —— main 分支每次改动译文，CI 就把最新译文 + 钩子打成 `pm-update.json.gz` 推到 [`update-data`](../../tree/update-data) 分支；程序同时从 GitHub raw 与 jsDelivr 镜像拉取、取最新一份，缓存到本机（Windows `%LOCALAPPDATA%\postman-chinese-injector`、macOS `~/Library/Caches/…`、Linux `~/.cache/…`），离线时用缓存。**不用等发版，译文修好就能拿到。**
+
+| 想要 | 加参数 |
+|------|--------|
+| 只更新译文、不替换程序 | `--no-self-update` |
+| 完全不联网（有缓存用缓存，否则用内嵌） | `--offline` |
+
+> Windows 自更新后程序旁会留一个 `*.exe.old`，下次运行自动删除。程序所在目录没有写权限时自更新会跳过，照常注入。
+
+> 想用自己改的译文？把一个 `locales/<lang>/` 文件夹放在**可执行文件旁边**即可覆盖内嵌与在线数据（此时不联网取译文）。
 
 > [!NOTE]
 > **macOS 用户**：Apple Silicon 首次运行可能报 `zsh: killed` /「已损坏」，注入可能报 `EPERM`——均非文件损坏，处理见 **👉 [macOS 首次运行 / 注入排障](docs/macos-troubleshooting.md)**。
@@ -244,6 +260,8 @@ node postman-chinese-injector.js  # 注入；或 npm install -g . 后用 postman
 | `--resources <dir>` | 直接指定含 `app.asar` 或未打包 `app/` 的目录（跳过自动探测） |
 | `--postman-dir <dir>` | 指定 Postman 安装根目录 |
 | `--app-version 12.16.1` | Windows 多版本共存时指定 `app-<version>`（默认最新） |
+| `--offline` | 不联网：不自更新、不拉取在线译文（有本机缓存则用缓存） |
+| `--no-self-update` | 只拉取最新译文，不自动更新程序本身 |
 | `-v`, `--version` | 显示本工具版本 |
 | `-h`, `--help` | 帮助 |
 
@@ -434,7 +452,7 @@ locales/zh-CN/
 那是 `@electron/asar` v4 的限制。把 Node 升到 22.12+ 即可；若无法升级，按上文把 `ASAR_PKG` / 依赖改回 `@electron/asar@3`（兼容 Node 12+）。
 
 **Postman 自动更新后又变回英文**
-更新会生成新的版本目录（不含补丁），重新跑一次 `node postman-chinese-injector.js` 即可。
+更新会生成新的版本目录（不含补丁），重新跑一次注入程序即可——它会先自动把自己和译文更新到最新再注入。
 
 **想卸载汉化**
 桌面端 `node postman-chinese-injector.js --restore`；网页版在 `chrome://extensions` 移除扩展。

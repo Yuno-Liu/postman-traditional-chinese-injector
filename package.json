@@ -12,6 +12,7 @@
     "patch": "node postman-chinese-injector.js",
     "restore": "node postman-chinese-injector.js --restore",
     "build:data": "node scripts/build-data.js",
+    "build:update": "node scripts/build-update.js",
     "build:ext": "node scripts/build-extension.js",
     "build:compress": "node scripts/compress-dist.js",
     "build:runtimes": "node scripts/fetch-runtimes.js",
@@ -31,6 +32,7 @@
   },
   "files": [
     "postman-chinese-injector.js",
+    "updater.js",
     "pm-chinese.js",
     "pm-scratchpad-cn.js",
     "pm-main-cn.js",
