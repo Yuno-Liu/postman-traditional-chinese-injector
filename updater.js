@@ -290,6 +290,24 @@ function extractTarXz(archive, destDir) {
   return path.join(destDir, files[0]);
 }
 
+// 校验和文件很小，优先直连 GitHub（多试几次，国内偶发 TLS 中断）；都失败再走镜像。
+// 走镜像时校验和与压缩包同源，只能防下载截断、不能防镜像篡改，故打印提示。
+async function fetchSums(tag) {
+  const url = releaseAsset(tag, 'SHA256SUMS.txt');
+  let lastErr;
+  for (let i = 0; i < 3; i++) {
+    try { return (await getOk(url, { timeout: 15000 })).body; } catch (e) { lastErr = e; }
+  }
+  for (const mirror of ASSET_MIRRORS.slice(1)) {
+    try {
+      const { body } = await getOk(mirror(url), { timeout: 15000 });
+      console.log('[自更新] 直连 GitHub 取校验和失败，已改用镜像获取');
+      return body;
+    } catch (e) { lastErr = e; }
+  }
+  throw new Error(`获取 SHA256SUMS.txt 失败: ${lastErr && lastErr.message}`);
+}
+
 // 所有源同时下载，第一个下完且 SHA256 校验通过的胜出，其余立即取消。
 // 直连 GitHub 在国内常是「不断但极慢」的涓流，串行重试会卡很久；并发则总能拿到最快那条。
 async function downloadAsset(tag, name, expectSha, log) {
@@ -369,7 +387,7 @@ async function selfUpdate({ currentVersion, argv, log = console.log } = {}) {
   try {
     // 临时目录放在 exe 同目录，保证最后的 rename 不跨文件系统
     work = fs.mkdtempSync(path.join(path.dirname(process.execPath), '.pmci-update-'));
-    const { body: sumsBuf } = await getOk(releaseAsset(tag, 'SHA256SUMS.txt'), { timeout: 15000 });
+    const sumsBuf = await fetchSums(tag);
     const expect = parseSums(sumsBuf.toString('utf8'))[name];
     if (!expect) throw new Error(`SHA256SUMS.txt 里没有 ${name}`);
     const archive = await downloadAsset(tag, name, expect, log);
