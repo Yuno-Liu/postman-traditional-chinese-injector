@@ -201,7 +201,7 @@
       "pin_button": "将文档固定到概览",
       "add_readme_button": "添加 WORKSPACE-README",
       "select_placeholder": "选择要固定的文档",
-      "empty_msg": "此 workspace 中暂无文档。",
+      "empty_msg": "此工作区中暂无文档。",
       "toast": {
         "pin_error": {
           "title": "无法固定文档",
@@ -351,7 +351,7 @@
       },
       "monitors": {
         "title": "监控集合",
-        "description": "设置 Monitor，以便在出现错误时收到通知。"
+        "description": "设置监控，以便在出现错误时收到通知。"
       },
       "runner": {
         "title": "试用集合运行器",
@@ -362,11 +362,11 @@
         "description": "了解如何编写脚本来自动执行您的工作流程。"
       },
       "collection_monitor": {
-        "title": "集合监控",
-        "description": "了解如何设置 Monitor，以便在出现错误时收到通知。"
+        "title": "Collection Monitor",
+        "description": "了解如何设置监控，以便在出现错误时收到通知。"
       },
       "collection_runner": {
-        "title": "集合运行器",
+        "title": "Collection Runner",
         "description": "了解如何创建并自动执行测试序列。"
       }
     }
@@ -779,13 +779,13 @@
     "partner_workspace_info_text": "更改工作区类型后，您将成为<1><0>合作伙伴管理者</0></1>。",
     "cleanup_workspace": {
       "heading": "归档或删除",
-      "description": "归档会将此工作区从视图中移除，并关闭 Monitor。您可以随时恢复，或永久删除。",
+      "description": "归档会将此工作区从视图中移除，并关闭监控。您可以随时恢复，或永久删除。",
       "primary_action_text": "删除工作区",
       "secondary_action_text": "归档工作区"
     },
     "restore_workspace": {
       "heading": "此工作区已归档",
-      "description": "已从视图中移除，Monitor 已关闭。",
+      "description": "已从视图中移除，监控已关闭。",
       "primary_action_text": "删除工作区",
       "secondary_action_text": "恢复工作区"
     },
@@ -897,7 +897,7 @@
       "heading": "工作区概览",
       "description": "选择要固定到概览的文档。",
       "select_placeholder": "选择文档",
-      "empty_state": "此 workspace 中暂无文档。",
+      "empty_state": "此工作区中暂无文档。",
       "toast": {
         "error": {
           "title": "无法更新固定的文档",
@@ -1101,7 +1101,7 @@
   },
   "workspace_tools": {
     "invite_to_workspace": {
-      "invite_prompt_with_name": "您即将邀请用户加入工作区“{workspaceName}”。",
+      "invite_prompt_with_name": "您即将邀请用户加入工作区 “{workspaceName}”。",
       "invite_prompt_without_name": "您即将邀请用户加入当前活动的工作区。",
       "email_label": "电子邮件：",
       "role_label": "角色：",

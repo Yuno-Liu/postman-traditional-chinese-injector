@@ -31,7 +31,7 @@
     "connectButton": "连接服务",
     "connectPermissionTooltip": "只有具备 API Catalog Manager 角色的成员才能访问服务发现页面",
     "columns": {
-      "workspace": "工作区",
+      "workspace": "Workspace",
       "repository": "仓库"
     },
     "emptyState": "未找到集成服务",
@@ -87,7 +87,7 @@
     },
     "jira": {
       "title": "创建和查看 Jira Issue",
-      "description": "从集合、响应或 Monitor 创建 Jira Issue 或关联已有 Issue，无需离开 Postman 即可跟踪状态。"
+      "description": "从集合、响应或监控创建 Jira Issue 或关联已有 Issue，无需离开 Postman 即可跟踪状态。"
     },
     "github_app": {
       "title": "已连接的 GitHub 账户",
@@ -227,13 +227,13 @@
     "modal": {
       "createHeading": "连接频道",
       "editHeading": "编辑频道集成",
-      "postmanWorkspaceLabel": "Postman 工作区",
+      "postmanWorkspaceLabel": "Postman Workspace",
       "postmanWorkspacePlaceholder": "选择工作区",
       "slackWorkspaceLabel": "{appName} 工作区",
       "slackWorkspacePlaceholder": "选择工作区",
       "channelLabel": "{appName} 频道",
       "channelPlaceholder": "选择频道",
-      "channelConnected": "—已连接",
+      "channelConnected": "— 已连接",
       "channelLoadError": "频道加载失败，请重试。",
       "frequencyLabel": "发送通知的方式…",
       "frequencyRealtime": "实时发送",
@@ -269,9 +269,9 @@
     }
   },
   "monitorNotifications": {
-    "title": "Monitor 通知",
-    "description": "持续跟踪您的 API 的健康状况和性能，并自动将每次 Monitor 运行的结果发送到 {appName} 频道。",
-    "addButton": "连接 Monitor",
+    "title": "监控通知",
+    "description": "持续跟踪您的 API 的健康状况和性能，并自动将每次监控运行的结果发送到 {appName} 频道。",
+    "addButton": "连接监控",
     "table": {
       "monitor": "Monitor"
     },
@@ -281,19 +281,19 @@
     },
     "modal": {
       "createHeading": "连接频道",
-      "editHeading": "编辑 Monitor 集成",
+      "editHeading": "编辑监控集成",
       "monitorLabel": "Monitor",
-      "monitorPlaceholder": "选择 Monitor",
+      "monitorPlaceholder": "选择监控",
       "frequencyLabel": "发送通知的场景…",
       "frequencyAllRuns": "每次运行完成时",
       "frequencyOnlyFailures": "仅失败时（以及之后首次成功运行时）",
       "cancel": "取消",
       "submitCreate": "连接",
       "submitEdit": "保存更改",
-      "createSuccess": "Monitor 连接成功。",
-      "updateSuccess": "Monitor 连接已更新。",
-      "createError": "Monitor 集成连接失败。",
-      "updateError": "Monitor 集成更新失败。"
+      "createSuccess": "监控连接成功。",
+      "updateSuccess": "监控连接已更新。",
+      "createError": "监控集成连接失败。",
+      "updateError": "监控集成更新失败。"
     }
   },
   "delete_modal": {
@@ -317,7 +317,7 @@
     "columns": {
       "name": "名称",
       "monitor": "Monitor",
-      "collection": "集合",
+      "collection": "Collection",
       "entity": "实体",
       "status": "状态",
       "workspace": "工作区",
@@ -341,7 +341,7 @@
     "connected": "已连接"
   },
   "agentTasks": {
-    "title": "Agent Tasks",
+    "title": "Agent 任务",
     "description": "在 {appName} 中 @Postman 即可启动 Agent 模式任务，并在会话线程中查看状态更新。",
     "connectedBadge": "已连接",
     "otherTeamUsers_one": "+{count} 位其他团队成员",

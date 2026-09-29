@@ -149,19 +149,19 @@
         "subtitle": "截至报告日期，团队中存在的未删除元素的累计数量。",
         "description_1": "工作区由不同的元素组成，每个元素支撑着您 API 工作流的一部分。查看这些元素的指标有助于您了解工作区的使用情况、团队精力的投入方向，以及需要关注的领域。",
         "description_2": "活动量高通常意味着该元素正在积极支持开发或协作。活动量低或下降则可能表明配置过时、资源闲置，或存在简化工作区的机会。",
-        "description_3": "请注意，不同元素的使用方式本身就有差异。例如，Monitor 按计划运行，而集合则依赖手动使用。结合具体情境解读指标，有助于您做出更好的决策。",
+        "description_3": "请注意，不同元素的使用方式本身就有差异。例如，监控按计划运行，而集合则依赖手动使用。结合具体情境解读指标，有助于您做出更好的决策。",
         "action_header": "要提升工作区的效能，可以考虑：",
         "action_1": "审查活动很少或没有活动的元素，并归档不再使用的内容",
         "action_2": "检查使用频率高的元素，确保它们有文档说明且易于复用",
-        "action_3": "使环境和 Mock 与当前开发阶段保持一致",
-        "action_4": "确保 Monitor 和 Flow 能够反映您最重要的工作流程",
+        "action_3": "使环境和模拟服务器与当前开发阶段保持一致",
+        "action_4": "确保监控和流程能够反映您最重要的工作流程",
         "legend": {
           "collections": {
-            "label": "集合",
+            "label": "Collection",
             "description": "已保存的一组 API 请求，可供运行和复用。"
           },
           "environments": {
-            "label": "环境",
+            "label": "Environment",
             "description": "一组变量，可让您在测试和生产等不同配置之间切换。"
           },
           "mocks": {
@@ -497,8 +497,8 @@
       }
     },
     "meter_usage": {
-      "monitor_requests": "Monitor 请求",
-      "mock_requests": "Mock 请求",
+      "monitor_requests": "监控请求",
+      "mock_requests": "模拟请求",
       "non_deleted_integrations": "未删除的集成",
       "postman_api": "Postman API",
       "custom_domains": "自定义域名",
@@ -530,22 +530,22 @@
       "development": {
         "title": "开发",
         "unit": "工作空间",
-        "tooltip": "选定期间内正在开发的工作空间数量。如果工作区具有集合、Specs、Mocks 或流程创建/更新/删除活动或 SDK 生成，则将其计数。"
+        "tooltip": "选定期间内正在开发的工作空间数量。如果工作区具有集合、规范、模拟服务器或流程创建/更新/删除活动或 SDK 生成，则将其计数。"
       },
       "testing": {
         "title": "测试",
         "unit": "运行",
-        "tooltip": "所选时间段内的总功能测试运行（手动、CLI、CI/CD、计划）和性能测试运行（手动、自动）。"
+        "tooltip": "所选时间段内的总功能测试运行（手动、CLI、CI/CD、计划）和 性能 测试运行（手动、自动）。"
       },
       "production": {
         "title": "生产",
         "unit": "运行",
-        "tooltip": "所选期间内监控运行和生产流程执行总数。"
+        "tooltip": "所选期间内 监控 运行和生产 流程 执行总数。"
       },
       "distribution": {
         "title": "分发",
         "unit": "工作空间",
-        "tooltip": "在选定时间段内通过私有 API 网络、合作伙伴工作区和公开工作区共享的工作区数量。"
+        "tooltip": "在选定时间段内通过 私有 API 网络、合作伙伴 工作区和 公开 工作区共享的工作区数量。"
       },
       "api_management": {
         "title": "API 管理",
@@ -565,7 +565,7 @@
       },
       "testing_datasets": {
         "collection_runner": "功能测试",
-        "performance_testing": "性能测试",
+        "performance_testing": "性能 测试",
         "manual": "手动",
         "automated": "自动化"
       },
@@ -589,25 +589,25 @@
       },
       "distribution_datasets": {
         "private_api_network": "私有 API 网络",
-        "partner_workspaces": "合作伙伴工作区",
-        "public_workspaces": "公开工作区"
+        "partner_workspaces": "合作伙伴 工作区",
+        "public_workspaces": "公开 工作区"
       },
       "tooltip_total_label": "总计："
     },
     "insight_panels": {
       "collections": {
         "title": "活跃集合",
-        "tooltip": "在选定时间段内进行创建、更新或删除操作的任何集合。",
+        "tooltip": "在选定时间段内进行创建、更新或删除操作的任何 集合。",
         "over_time_title": "活跃集合趋势",
         "list_title": "最受欢迎的集合",
         "value_column": "集合已更新"
       },
       "flows": {
         "title": "活跃流程",
-        "tooltip": "流程在选定的时间段内进行编辑或执行活动。",
+        "tooltip": "流程 在选定的时间段内进行编辑或执行活动。",
         "over_time_title": "活跃流程趋势",
         "list_title": "最流行的流程",
-        "value_column": "流程已更新"
+        "value_column": "流程 已更新"
       },
       "sdks": {
         "title": "生成的 SDK",
@@ -626,10 +626,10 @@
       },
       "mocks": {
         "title": "活跃模拟",
-        "tooltip": "在选定的时间段内具有配置或请求活动的 Mock 服务器，包括本地和云模拟。",
+        "tooltip": "在选定的时间段内具有配置或 请求 活动的模拟服务器，包括本地和云模拟。",
         "over_time_title": "活跃模拟趋势",
         "list_title": "最受欢迎的模拟",
-        "value_column": "Mock 请求"
+        "value_column": "模拟请求"
       },
       "test_runs": {
         "title": "试运行",
@@ -639,7 +639,7 @@
       },
       "functional_tests": {
         "title": "功能测试",
-        "tooltip": "在选定的时间段内运行功能测试 (集合运行器)，按执行类型细分。",
+        "tooltip": "在选定的时间段内运行功能测试 (集合 运行器)，按执行类型细分。",
         "over_time_title": "功能测试趋势",
         "list_title": "最受测试的集合",
         "value_column": "试运行",
@@ -651,13 +651,13 @@
         }
       },
       "performance_tests": {
-        "title": "性能测试",
-        "tooltip": "性能测试在选定的时间段内运行，按执行类型细分。",
-        "over_time_title": "性能测试趋势",
+        "title": "性能 测试",
+        "tooltip": "性能 测试在选定的时间段内运行，按执行类型细分。",
+        "over_time_title": "性能 测试趋势",
         "list_title": "最受测试的集合",
         "value_column": "试运行",
         "datasets": {
-          "performance": "性能测试"
+          "performance": "性能 测试"
         }
       },
       "api_catalog": {
@@ -668,34 +668,34 @@
       },
       "active_monitors": {
         "title": "活跃监控",
-        "over_time_title": "监控运行趋势",
+        "over_time_title": "监控 运行趋势",
         "list_title": "最受欢迎的监控",
-        "value_column": "监控运行",
+        "value_column": "监控 运行",
         "tooltip_unit": "操作"
       },
       "production_flows": {
         "title": "生产流程",
-        "over_time_title": "流程执行趋势",
+        "over_time_title": "流程 执行趋势",
         "list_title": "最流行的流程",
-        "value_column": "流程执行",
+        "value_column": "流程 执行",
         "development_chart_label": "开发",
         "production_chart_label": "生产"
       },
       "private_api_network": {
         "title": "私有 API 网络",
-        "tooltip": "在选定的时间段内通过私有 API 网络分配的工作空间。",
+        "tooltip": "在选定的时间段内通过 私有 API 网络分配的工作空间。",
         "list_title": "顶级工作空间",
         "value_column": "浏览量"
       },
       "partner_workspaces": {
-        "title": "合作伙伴工作区",
+        "title": "合作伙伴 工作区",
         "tooltip": "在选定时间段内与合作伙伴共享的工作空间。",
         "list_title": "顶级工作空间",
         "value_column": "浏览量"
       },
       "public_workspaces": {
-        "title": "公开工作区",
-        "tooltip": "在选定时间段内发布到公开 API 网络的工作空间。",
+        "title": "公开 工作区",
+        "tooltip": "在选定时间段内发布到 公开 API 网络的工作空间。",
         "list_title": "顶级工作空间",
         "value_column": "浏览量"
       }
@@ -752,7 +752,7 @@
       "hours_ago": "{count, plural, one {# 小时前} other {# 小时前}}"
     },
     "labels": {
-      "private_user": "私有用户",
+      "private_user": "私有 用户",
       "yes": "是",
       "no": "否"
     },
@@ -775,8 +775,8 @@
       "partner": "合作伙伴",
       "internal": "内部",
       "overview": "概述",
-      "team_members": "团队成员",
-      "team_overview": "团队概述",
+      "team_members": "团队 成员",
+      "team_overview": "团队 概述",
       "billing": "计费"
     },
     "accessibility": {
@@ -785,12 +785,12 @@
       "monthly_snapshot": "每月快照"
     },
     "hidden_labels": {
-      "workspace_name": "工作区名称被隐藏",
-      "collection_name": "集合名称被隐藏"
+      "workspace_name": "工作区 名称被隐藏",
+      "collection_name": "集合 名称被隐藏"
     },
     "hidden_tooltips": {
-      "workspace_name": "在您当前的访问权限下，此工作区名称不可见",
-      "collection_name": "在您当前的访问权限下，此集合名称不可见"
+      "workspace_name": "在您当前的访问权限下，此 工作区 名称不可见",
+      "collection_name": "在您当前的访问权限下，此 集合 名称不可见"
     },
     "view_modes": {
       "total_number": "总数",
@@ -818,7 +818,7 @@
         "created_by": "创建者",
         "invited_by": "邀请者",
         "invite_type": "邀请类型",
-        "invite_date": "邀请日期",
+        "invite_date": "邀请 日期",
         "accepted_on": "接受日期",
         "accepted_by": "接受者",
         "last_active": "最后活跃",
@@ -849,16 +849,16 @@
         "method": "方法",
         "timestamp": "时间戳",
         "type": "类型",
-        "public_profile_enabled": "公开配置文件已启用"
+        "public_profile_enabled": "公开 配置文件已启用"
       }
     },
     "banner": {
       "workspace_data_notice": {
-        "overview": "此仪表板显示来自所有内部、合作伙伴和公开工作区的数据。不包括个人工作区。数据在每个月月底后刷新。",
-        "internal": "不包括个人工作区。数据在每个月月底后刷新。",
-        "partner": "不包括内部和个人工作区。数据在每天结束时刷新。"
+        "overview": "此仪表板显示来自所有内部、合作伙伴和 公开 工作区的数据。不包括 个人 工作区。数据在每个月月底后刷新。",
+        "internal": "不包括 个人 工作区。数据在每个月月底后刷新。",
+        "partner": "不包括内部和 个人 工作区。数据在每天结束时刷新。"
       },
-      "byok_notice": "某些 API 请求数据不可用，因为为此团队启用了自带密钥 (BYOK)。",
+      "byok_notice": "某些 API 请求 数据不可用，因为为此 团队 启用了自带密钥 (BYOK)。",
       "byok_notice_link": "详细了解 BYOK 如何影响分析。"
     },
     "byok": {
@@ -904,7 +904,7 @@
       "metrics": {
         "internal_active_users": {
           "title": "活跃用户",
-          "description": "在内部工作区中查看、创建、编辑、分叉或发送请求的用户"
+          "description": "在内部工作区中查看、创建、编辑、分叉或发送 请求 的用户"
         },
         "active_workspaces": {
           "description": "具有查看、创建、编辑记录或发出过 API 请求的工作区"
@@ -922,18 +922,18 @@
     }
   },
   "sidebar": {
-    "go_to_homepage": "转到主页— {pageTitle}",
+    "go_to_homepage": "转到主页 — {pageTitle}",
     "reports": "报告",
     "ai_report_and_usage": "AI报告及使用",
     "workspaces": "工作空间",
-    "team_and_org": "团队和组织",
+    "team_and_org": "团队 和组织",
     "feature_usage": "API 生命周期",
     "overview": "概述",
     "internal_metrics": "内部工作空间",
-    "partnership_metrics": "合作伙伴工作区",
-    "public_network_metrics": "公开工作区",
+    "partnership_metrics": "合作伙伴 工作区",
+    "public_network_metrics": "公开 工作区",
     "team_overview": "概述",
-    "team_members": "团队成员",
+    "team_members": "团队 成员",
     "billing": "计费",
     "ai_usage": "代理模式",
     "usage_reports": "使用报告"
@@ -962,7 +962,7 @@
       "agent_mode_users": "代理模式用户",
       "agent_mode_users_tooltip": "在选定时间段内使用代理模式的唯一用户总数。",
       "agent_mode_sessions": "代理模式会话",
-      "agent_mode_sessions_tooltip": "在选定时间段内启动的代理模式会话总数。当用户打开代理模式并发送第一个提示时，会话启动。",
+      "agent_mode_sessions_tooltip": "在选定时间段内启动的代理模式会话总数。当用户打开代理模式并发送第一个提示时，会话 启动。",
       "messages_sent": "已发送消息",
       "messages_sent_tooltip": "所选时间段内以代理模式发送的消息总数。",
       "ai_credits_used": "使用的人工智能积分",
@@ -1037,10 +1037,10 @@
   },
   "layout": {
     "toggle": {
-      "hide_left": "隐藏左侧侧边栏",
-      "show_left": "显示左侧侧边栏",
-      "hide_right": "隐藏右侧侧边栏",
-      "show_right": "显示右侧侧边栏"
+      "hide_left": "隐藏左侧 侧边栏",
+      "show_left": "显示左侧 侧边栏",
+      "hide_right": "隐藏右侧 侧边栏",
+      "show_right": "显示右侧 侧边栏"
     }
   }
 }

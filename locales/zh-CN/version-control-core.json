@@ -22,11 +22,11 @@
         "fork_label_with_username": "{userName} 的 fork",
         "fork_label_without_username": "我的 Fork",
         "update_user_profile_modal": {
-          "description": "要在公开工作区中从 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 创建 fork，您必须将个人资料设为公开。您的个人资料将进行以下更改。",
-          "error_toast_message": "要从公开工作区 fork 一个 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}}，您需要先设置公开个人资料。"
+          "description": "要在公开工作区中从 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} specification {规范} other {}} 创建 fork，您必须将个人资料设为公开。您的个人资料将进行以下更改。",
+          "error_toast_message": "要从公开工作区 fork 一个 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} specification {规范} other {}}，您需要先设置公开个人资料。"
         },
-        "description": "Fork 会创建 {modelType, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 的副本，让您可以在不影响原始文件的情况下进行更改。了解有关 <3>forks</3> 的更多信息。",
-        "helper_text": "指定一个标签，以区分此 fork 与原始 {modelType, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}}。",
+        "description": "Fork 会创建 {modelType, select, collection {集合} environment {环境} flow {流程} specification {规范} other {}} 的副本，让您可以在不影响原始文件的情况下进行更改。了解有关 <3>forks</3> 的更多信息。",
+        "helper_text": "指定一个标签，以区分此 fork 与原始 {modelType, select, collection {集合} environment {环境} flow {流程} specification {规范} other {}}。",
         "fork_label": "Fork 标签",
         "workspace_label": "工作区",
         "team_label": "团队",
@@ -34,11 +34,11 @@
         "workspace_helper_text": "fork 将在选定的工作区中创建。",
         "workspace_selector_restrict_fork_message": "这里不能 fork",
         "auto_sync_changes_label": "自动拉取更改",
-        "auto_sync_changes_checkbox_label": "自动从源 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 拉取更改",
+        "auto_sync_changes_checkbox_label": "自动从源 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} specification {规范} other {}} 拉取更改",
         "notifications_label": "通知",
-        "notifications_checkbox_label": "关注源 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 以获取更新通知",
-        "notifications_checkbox_label_forked": "关注已 fork 的 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 以获取更新通知",
-        "notifications_checkbox_info_text": "您将会收到有关原始 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 所做更改的通知。",
+        "notifications_checkbox_label": "关注源 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} specification {规范} other {}} 以获取更新通知",
+        "notifications_checkbox_label_forked": "关注已 fork 的 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} specification {规范} other {}} 以获取更新通知",
+        "notifications_checkbox_info_text": "您将会收到有关原始 {modelDisplayName, select, collection {集合} environment {环境} flow {流程} specification {规范} other {}} 所做更改的通知。",
         "fork_confirm_button_label": "Fork {modelDisplayName, select, collection {集合} environment {环境} flow {流程} specification {规范} other {}}",
         "fork_confirm_button_disabled_tooltip": "重新上线后即可执行此操作",
         "fork_cancel_button_label": "取消",
@@ -81,11 +81,11 @@
     "popover": {
       "fork_cta": "复刻 {model}",
       "cancel": "取消",
-      "no_permission": "您没有权限要导出",
+      "no_permission": "您没有 权限 要导出",
       "no_permission_partner_description": "查看者角色的合作伙伴无法导出集合。您可以改为 fork 此集合。"
     },
     "view_plans": {
-      "title": "Fork 到您自己的团队",
+      "title": "Fork 到您自己的 团队",
       "description": "将此团队升级为付费 Postman 计划，以便 fork 并创建此集合的副本。",
       "cta": "查看计划",
       "add_paid_team": "在付费 Postman 计划上创建团队，以 fork 并创建此集合的副本。"

@@ -6,7 +6,7 @@
   "spec": "{count, plural, one {# 规格} other {# 规格}}",
   "found_in_repository": "在您的存储库中找到 {items}",
   "connect": "连接",
-  "connect_folder": "连接到工作区",
+  "connect_folder": "连接到 工作区",
   "switch_to_local_title": "切换到本地模式",
   "switch_to_local_connected_description": "你当前查看的是 Postman Cloud。切换到本地模式，即可直接在 Git 仓库中操作文件并保持同步。",
   "switch_to_local_cta": "切换到本地",
@@ -66,6 +66,7 @@
   "ask_ai": "询问人工智能",
   "failed_to_copy_files": "复制文件失败",
   "failed_to_move_items": "无法移动项目",
+  "failed_to_rename": "重命名失败",
   "unexpected_error": "发生意外错误",
   "more_actions": "更多操作",
   "git_onboarding_no_connection_heading": "使用 Git 协作",
@@ -88,7 +89,7 @@
   "generate_config_file": "生成配置文件",
   "open_collection": "打开集合",
   "open_request": "打开请求",
-  "open_flow": "打开Flow",
+  "open_flow": "打开流程",
   "git_setup_title": "配置 Git",
   "git_setup_body": "跟踪 API 变更，并与代码库保持同步。",
   "git_setup_step_initialize": "初始化",
@@ -105,7 +106,9 @@
   "create_menu_folder": "添加文件夹",
   "create_menu_label": "新建文件或文件夹",
   "create_menu_aria_label": "创建文件或文件夹",
+  "name_input_label": "名称",
+  "new_file_name_label": "文件名",
+  "new_folder_name_label": "文件夹名称",
   "failed_to_create_folder": "文件夹创建失败",
-  "folder_created": "文件夹已创建",
-  "folder_created_rename_unavailable": "已创建“{folderName}”，但无法打开以进行重命名。"
+  "failed_to_create_file": "文件创建失败"
 }

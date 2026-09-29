@@ -44,7 +44,7 @@
     }
   },
   "scope": {
-    "default_title": "个人空间",
+    "default_title": "个人 空间",
     "team_title": "{teamName} 团队"
   },
   "sort_label": "排序方式",
@@ -93,7 +93,7 @@
         "request": "请求",
         "environment": "环境",
         "document": "文档",
-        "mock": "Code Mock"
+        "mock": "代码模拟服务器"
       },
       "featured_label": "精选",
       "trending_label": "流行趋势",
@@ -127,12 +127,12 @@
         "entity_type": {
           "folder": "文件夹",
           "api": "API",
-          "workspace": "工作区",
+          "workspace": "Workspace",
           "team": "团队",
           "flow": "Flow",
-          "collection": "集合",
+          "collection": "Collection",
           "request": "请求",
-          "environment": "环境",
+          "environment": "Environment",
           "document": "文档",
           "mock": "Code Mock"
         }

@@ -14,11 +14,11 @@
     "accessible_name": "状态：{status}"
   },
   "share": {
-    "tooltip": "分享 Monitor",
+    "tooltip": "分享监控",
     "popover": {
       "private": {
         "heading": "与团队分享",
-        "content": "此 Monitor 位于您的个人工作区中。",
+        "content": "此监控位于您的个人工作区中。",
         "content2": "除非您邀请他们，否则没有人可以访问此内容。",
         "button": "邀请人员"
       },
@@ -73,46 +73,46 @@
       "default_disabled_msg": "您没有权限执行已禁用的操作",
       "console_disabled_msg": "您没有权限查看此信息。",
       "activity_info_msg": "该用户的个人资料为私密。",
-      "request_access_msg": "要执行此操作，请申请此 Monitor 的额外访问权限。",
+      "request_access_msg": "要执行此操作，请申请此监控的额外访问权限。",
       "collection_moved_msg": "无法执行已禁用的操作，因为关联的集合已移动到其他工作区",
-      "publish_editor_required_msg": "您需要编辑者访问权限才能发布或取消发布 Monitor 报告",
-      "publish_restricted_workspace_msg": "您无法从此工作区发布 Monitor 报告。要发布，请在内部团队工作区中创建 Monitor。",
+      "publish_editor_required_msg": "您需要编辑者访问权限才能发布或取消发布监控报告",
+      "publish_restricted_workspace_msg": "您无法从此工作区发布监控报告。要发布，请在内部团队工作区中创建监控。",
       "unpublish_requires_manage_publish": "只有团队管理员可以取消发布此报告。"
     },
     "forbidden_error": {
       "encryption_failed": {
         "title": "由于安全策略而拒绝访问",
-        "body": "在恢复访问之前，您将无法运行 Monitor。请联系您的团队管理员寻求帮助。"
+        "body": "在恢复访问之前，您将无法运行监控。请联系您的团队管理员寻求帮助。"
       },
       "decryption_failed": {
         "title": "由于安全策略而拒绝访问",
-        "body": "在恢复访问之前，您将无法访问 Monitor 详细信息。请联系您的团队管理员寻求帮助。"
+        "body": "在恢复访问之前，您将无法访问监控详细信息。请联系您的团队管理员寻求帮助。"
       }
     },
     "user_visible_action": {
-      "update": "编辑了此 Monitor",
-      "update_roles": "已编辑此 Monitor 上的角色",
-      "pause": "暂停了此 Monitor",
-      "resume": "恢复了此 Monitor",
-      "delete": "删除了此 Monitor",
-      "create": "创建了此 Monitor"
+      "update": "编辑了此监控",
+      "update_roles": "已编辑此监控上的角色",
+      "pause": "暂停了此监控",
+      "resume": "恢复了此监控",
+      "delete": "删除了此监控",
+      "create": "创建了此监控"
     },
     "user_visible_system_action": {
-      "create_team_change": "创建替换 Monitor（团队成员资格发生变化）",
-      "create": "Monitor 已创建",
-      "delete_team_change": "Monitor 已删除（团队成员资格发生变化）",
-      "delete": "Monitor 已删除",
-      "pause_inactivity": "Monitor 已暂停（用户不活动）",
-      "pause_unhealthy": "Monitor 已暂停（频繁运行失败）",
-      "pause_collection_environment_deleted": "Monitor 已暂停（集合或环境已取消共享或删除）",
-      "pause_collection_moved": "Monitor 已暂停（关联的集合已从工作区中移除）",
-      "pause_environment_moved": "Monitor 已暂停（关联的环境已从工作区中移除）",
-      "pause_no_workspace": "Monitor 已暂停（不存在于任何工作区中）",
-      "pause_support": "Monitor 已由 Postman 支持代表暂停",
-      "pause": "Monitor 已暂停",
-      "resume_system_action": "Monitor 已作为系统操作的一部分恢复。",
-      "resume": "Monitor 已恢复",
-      "update": "Monitor 已编辑"
+      "create_team_change": "创建替换监控（团队成员资格发生变化）",
+      "create": "监控已创建",
+      "delete_team_change": "监控已删除（团队成员资格发生变化）",
+      "delete": "监控已删除",
+      "pause_inactivity": "监控已暂停（用户不活动）",
+      "pause_unhealthy": "监控已暂停（频繁运行失败）",
+      "pause_collection_environment_deleted": "监控已暂停（集合或环境已取消共享或删除）",
+      "pause_collection_moved": "监控已暂停（关联的集合已从工作区中移除）",
+      "pause_environment_moved": "监控已暂停（关联的环境已从工作区中移除）",
+      "pause_no_workspace": "监控已暂停（不存在于任何工作区中）",
+      "pause_support": "监控已由 Postman 支持代表暂停",
+      "pause": "监控已暂停",
+      "resume_system_action": "监控已作为系统操作的一部分恢复。",
+      "resume": "监控已恢复",
+      "update": "监控已编辑"
     },
     "user_visible_state_sentence": {
       "waiting": "准备运行。",
@@ -138,13 +138,13 @@
     "activity_logs": {
       "you": "你"
     },
-    "activity_logs_list_end": "结束！您已查看此 Monitor 的所有活动。",
+    "activity_logs_list_end": "结束！您已查看此监控的所有活动。",
     "activity_logs_search_placeholder": "搜索用户",
     "activity_logs_no_users": "没有找到用户",
     "activity_logs_load_more": "加载更多",
     "monitor_details": {
       "id_label": "ID",
-      "copy_id_tooltip": "复制 Monitor ID",
+      "copy_id_tooltip": "复制监控 ID",
       "copied_tooltip": "已复制",
       "creator_label": "创建者：",
       "created_at_label": "创建于",
@@ -153,8 +153,8 @@
       "no_collection": "没有集合"
     },
     "activity_logs_empty_state": {
-      "text": "看起来这个 Monitor 没有任何活动",
-      "sub_text": "活动源可让您随时了解此 Monitor 的相关动态",
+      "text": "看起来这个监控没有任何活动",
+      "sub_text": "活动源可让您随时了解此监控的相关动态",
       "with_filters_text": "未发现任何活动",
       "with_filters_sub_text": "调整您的过滤器并重试。"
     },
@@ -169,15 +169,15 @@
       "init": "单击上图中的某个运行可查看其详细信息"
     },
     "monitor_action": {
-      "no_run": "此 Monitor 尚未运行过",
-      "deleted": "Monitor 已删除。",
-      "create": "创建 Monitor",
+      "no_run": "此监控尚未运行过",
+      "deleted": "监控已删除。",
+      "create": "创建监控",
       "show_less": "显示较少"
     },
     "monitor_runs": {
       "run_placeholder": "当它出现时，结果将出现在此处。您可以等待它按照计划运行，也可以手动触发运行。",
-      "will_run": "此 Monitor 将按其常规计划运行。",
-      "will_not_run": "此 Monitor 将不再按计划运行。",
+      "will_run": "此监控将按其常规计划运行。",
+      "will_not_run": "此监控将不再按计划运行。",
       "run_button": "运行"
     },
     "monitor_test_results": {
@@ -201,16 +201,16 @@
     },
     "empty_collection": {
       "no_requests_title": "没有可运行的请求",
-      "no_requests_description": "<0>{collectionName}</0> 中没有可供 Monitor 运行的请求。请至少添加一个请求以查看结果。",
+      "no_requests_description": "<0>{collectionName}</0> 中没有可供监控运行的请求。请至少添加一个请求以查看结果。",
       "add_request": "添加请求",
       "import_request": "导入请求",
       "updated_title": "集合已更新",
-      "updated_description": "<0>{collectionName}</0> 已更新。运行 Monitor 以查看其结果。",
+      "updated_description": "<0>{collectionName}</0> 已更新。运行监控以查看其结果。",
       "run_now": "立即运行",
       "import_failed": "无法打开导入对话框。请检查网络连接后重试。",
       "request_added_title": "请求已添加到 {collectionName}",
-      "request_added_description": "请先更新并保存该请求，再尝试运行 Monitor。",
-      "run_monitor": "运行 Monitor",
+      "request_added_description": "请先更新并保存该请求，再尝试运行监控。",
+      "run_monitor": "运行监控",
       "go_back": "返回"
     },
     "job_information": {
@@ -239,24 +239,24 @@
       "view": "视图：",
       "filter_by": "过滤依据：",
       "clear_filters": "清除过滤器",
-      "clear_filters_description": "清除筛选条件以查看 Monitor 运行情况",
+      "clear_filters_description": "清除筛选条件以查看监控运行情况",
       "all_requests": "请求",
       "all_regions": "地区",
       "all_runners": "运行器"
     },
     "monitor_action_error": {
-      "create": "无法创建 Monitor",
-      "load": "无法加载 Monitor",
-      "fetch": "无法获取 Monitor",
-      "update": "无法更新 Monitor",
-      "creation_error": "创建 Monitor 时出错",
-      "pipeline_error": "创建 Monitor 的管道中出现错误",
-      "ceiling_error": "已达到 Monitor 创建上限。",
+      "create": "无法创建监控",
+      "load": "无法加载监控",
+      "fetch": "无法获取监控",
+      "update": "无法更新监控",
+      "creation_error": "创建监控时出错",
+      "pipeline_error": "创建监控的管道中出现错误",
+      "ceiling_error": "已达到监控创建上限。",
       "check_internet": "请检查您的互联网连接，然后重试。",
-      "something_went_wrong": "创建此 Monitor 时出现问题，您可以稍后再试。",
-      "unsupported_collection_for_runner": "此集合使用了多种协议。请将自托管 Runner 升级到 1.47.0 或更高版本，或改用 Postman 云端区域运行此 Monitor。",
-      "load_retry": "无法加载 Monitor，请稍后重试。",
-      "invalid_aggregate": "Monitor 性能视图中的聚合函数无效",
+      "something_went_wrong": "创建此监控时出现问题，您可以稍后再试。",
+      "unsupported_collection_for_runner": "此集合使用了多种协议。请将自托管运行器升级到 1.47.0 或更高版本，或改用 Postman 云端区域运行此监控。",
+      "load_retry": "无法加载监控，请稍后重试。",
+      "invalid_aggregate": "监控性能视图中的聚合函数无效",
       "request_aggregate": "getChartData：请求聚合值无效。",
       "activity_load_failure": "无法加载活动源",
       "retry": "请稍后重试"
@@ -266,13 +266,13 @@
       "no_results": "更改您的过滤器并重试。"
     },
     "empty_state": {
-      "create_error": "无法创建 Monitor",
-      "edit_error": "无法编辑 Monitor",
-      "no_environment": "没有 Monitor 使用此环境",
-      "no_collection": "尚未为此集合创建任何 Monitor",
+      "create_error": "无法创建监控",
+      "edit_error": "无法编辑监控",
+      "no_environment": "没有监控使用此环境",
+      "no_collection": "尚未为此集合创建任何监控",
       "no_results": "没有找到结果",
-      "no_monitors_setup": "您尚未设置任何 Monitor",
-      "monitor_collection_run": "Monitor 允许您定期运行集合，以检查其性能和响应。",
+      "no_monitors_setup": "您尚未设置任何监控",
+      "monitor_collection_run": "监控允许您定期运行集合，以检查其性能和响应。",
       "no_run_results": "还没有结果",
       "no_tests_run": "没有运行测试",
       "deleted_items_in_selection": "在自定义运行顺序中发现已删除的请求或文件夹，导致在运行任何请求之前出现错误。",
@@ -282,7 +282,7 @@
         "description": "这是一个较旧的运行。测试结果和运行日志不可用。您可以联系 <1><0><0>Postman Support</0></0></1> 来获取此信息。"
       }
     },
-    "create_new": "创建新 Monitor",
+    "create_new": "创建新监控",
     "schedule_selector": {
       "at": "在"
     },
@@ -308,23 +308,23 @@
       "error": "获取集合时发生错误"
     },
     "monitor_action_success": {
-      "create": "Monitor 已创建",
-      "updated": "Monitor 已更新",
-      "resumed": "Monitor 已恢复",
-      "paused": "Monitor 已暂停"
+      "create": "监控已创建",
+      "updated": "监控已更新",
+      "resumed": "监控已恢复",
+      "paused": "监控已暂停"
     },
     "email_validation_error": {
       "invalid": "电子邮件地址无效",
       "duplicate": "该电子邮件已存在"
     },
     "no_environment": "没有环境",
-    "uptime_app_message": "正常运行时间 Monitor 目前仅在 Postman Web 应用程序上可用。",
-    "uptime_documentation": "了解有关正常运行时间 Monitor 的更多信息",
+    "uptime_app_message": "正常运行时间监控目前仅在 Postman Web 应用程序上可用。",
+    "uptime_documentation": "了解有关正常运行时间监控的更多信息",
     "uptime_browser_transition": "打开 Web App",
     "feedback_type": {
       "feature_missing": "缺少一个关键功能",
-      "not_expected": "Monitor 功能不是我所期望的",
-      "poor_experience": "使用 Monitor 时的体验不佳或过于复杂",
+      "not_expected": "监控功能不是我所期望的",
+      "poor_experience": "使用监控时的体验不佳或过于复杂",
       "just_exploring": "我只是在探索",
       "something_else": "其他原因"
     }
@@ -333,54 +333,62 @@
     "show_more": "显示另外 {monitorLength} 项"
   },
   "form": {
-    "header": "创建 Monitor",
-    "default_monitor_name": "新建 Monitor",
+    "header": "创建监控",
+    "default_monitor_name": "新建监控",
     "what_to_monitor": "监控什么？",
     "what_to_monitor_info": "选择包含要监控请求的集合。API 规范或导入会先生成一个集合。",
-    "how_to_run_monitor": "如何运行 Monitor？",
+    "what_to_monitor_info_local_mode": "选择云端中包含要监控请求的集合。",
+    "how_to_run_monitor": "如何运行监控？",
     "runner_section": "运行器",
-    "runner_section_info": "此 Monitor 的运行位置。可使用 Postman 云端区域，或使用私有运行器访问你网络内部的 API。",
+    "runner_section_info": "此监控的运行位置。可使用 Postman 云端区域，或使用私有运行器访问你网络内部的 API。",
     "notifications_section": "通知",
     "notifications_summary_leading": "通知",
     "notifications_summary_trailing": "，当运行失败或出错时",
     "notification_recipients_collapsed_hint": "添加运行失败和出错时的邮件接收人",
     "schedule_tab": "按计划运行",
     "cli_tab": "通过 Postman CLI",
-    "name": "Monitor 名称",
+    "name": "监控名称",
     "collection": "集合",
     "no_collections_or_specs": "没有可用的集合或 API 规范",
     "collection_select": "选择集合",
     "collection_or_spec_select": "选择集合或 API 规范",
+    "collection_select_local_mode": "选择集合",
+    "no_collections_local_mode": "云端没有可用的集合",
     "open_collection_in_new_tab": "在新标签页中打开集合",
     "open_spec_in_new_tab": "在新标签页中打开 API 规范",
     "source_filter_all": "全部",
-    "source_filter_collections": "集合",
+    "source_filter_collections": "Collection",
     "source_filter_specs": "API 规范",
     "no_collections": "没有可用的集合",
     "no_specs": "没有可用的 API 规范",
     "create_collection": "新建集合",
     "create_collection_no_permission": "你没有在此工作区中创建集合的权限",
+    "create_collection_disabled_local_mode": "监控只能使用存储在云端的集合。请切换到云端模式以创建新的集合。",
     "import_collection": "导入集合",
     "import_collection_no_permission": "你没有在此工作区中导入集合的权限",
+    "import_collection_disabled_local_mode": "监控只能使用存储在云端的集合。请切换到云端模式以导入新的集合。",
     "import_collection_in_progress": "集合正在导入中",
     "spec_collection_generating": "正在根据 {specName} 生成集合",
     "spec_collection_unsupported": "无法根据此规范生成集合",
     "spec_collection_no_permission": "你没有根据此规范生成集合的权限",
     "spec_collection_failed": "无法根据该规范生成集合",
-    "collection_monitor_select": "请选择要 Monitor 的集合。",
+    "collection_monitor_select": "请选择要监控的集合。",
     "multi_protocol_beta_banner": {
       "beta_badge": "Beta",
       "description": "<0></0> 对包含 <1>GraphQL</1> 和 <2>gRPC</2> 请求的集合的支持目前处于 Beta 阶段。"
     },
     "collection_version_tag": "集合标签",
-    "version_tag_select": "为此 Monitor 选择一个集合标签。",
-    "version_tag_current_version": "为此 Monitor 选择一个集合标签。如果该集合未链接到 API，则只能基于当前标签创建 Monitor。",
+    "version_tag_select": "为此监控选择一个集合标签。",
+    "version_tag_current_version": "为此监控选择一个集合标签。如果该集合未链接到 API，则只能基于当前标签创建监控。",
     "environment": "环境",
+    "environment_info_local_mode": "选择监控要使用的云端环境。",
     "create_environment": "新建环境",
     "create_environment_no_permission": "你没有在此工作区中创建环境的权限",
+    "create_environment_disabled_local_mode": "监控只能使用存储在云端的环境。请切换到云端模式以创建新的环境。",
+    "environment_clear": "清除",
     "no_environment": "无",
     "learn_more": "了解更多",
-    "environment_placeholder": "此环境中的变量值将用于您的所有 Monitor 调用。",
+    "environment_placeholder": "此环境中的变量值将用于您的所有监控调用。",
     "run": "运行",
     "regions": "地区",
     "runners": "运行器",
@@ -391,8 +399,8 @@
     "runners_section_private": "私有",
     "runners_empty": "没有可用的运行器",
     "run_monitor": "运行方法",
-    "run_monitor_info": "选择如何触发此 Monitor：可选择自动定期运行的计划，或用于按需执行的 Postman CLI。",
-    "monitor_run_info": "<0>创建 Monitor 后，您也可以点击“运行”按钮来触发一次运行。查看您的</0><1><0>使用限制</0></1>",
+    "run_monitor_info": "选择如何触发此监控：可选择自动定期运行的计划，或用于按需执行的 Postman CLI。",
+    "monitor_run_info": "<0>创建监控后，您也可以点击“运行”按钮来触发一次运行。查看您的</0><1><0>使用限制</0></1>",
     "frequent_runs_info": "频繁运行可以让您更好地了解性能，但也会花费更多的监控调用，这可能受到您的 Postman 账户的限制",
     "region_auto_select": "自动选择区域",
     "region_manual_select": "手动选择区域",
@@ -402,8 +410,8 @@
     "execution_source_select": "您可以选择一个或多个部署环境来监控您的请求。",
     "upgrade": "您使用的是免费计划。升级为手动选择特定监控区域。",
     "upgrade_generic": "您使用的是免费计划。升级您的计划以使用此功能。",
-    "region_selection_feature": "Monitor 区域选择",
-    "publish_report_feature": "Monitor 发布报告",
+    "region_selection_feature": "监控区域选择",
+    "publish_report_feature": "监控发布报告",
     "email": "接收有关运行失败和错误的电子邮件通知",
     "email_add": "添加另一个收件人电子邮件",
     "notification": "您最多可以添加 5 个通知收件人",
@@ -416,7 +424,7 @@
     "retry": "<0>重试</0><1></1><2>{attempts, plural, one {次} other {次}}</2>",
     "retry_fail": "如果运行失败重试",
     "retry_usage_note": "（重试会消耗额外的监控调用次数。）",
-    "retry_monitor_run": "仅当上次运行成功时，才会重试失败的 Monitor 运行。",
+    "retry_monitor_run": "仅当上次运行成功时，才会重试失败的监控运行。",
     "run_now": "立即运行",
     "run_now_info_create": "（创建时立即触发一次运行，不受计划限制）",
     "run_now_info_update": "（更新时立即触发一次运行，不受计划限制）",
@@ -430,8 +438,8 @@
       "paid": "请输入 1 毫秒到 900000 毫秒之间的值"
     },
     "request_timeout_info": {
-      "free": "Monitor 运行不能超过 10 分钟，即 600000 毫秒。",
-      "paid": "Monitor 运行不能超过 15 分钟，即 900000 毫秒。"
+      "free": "监控运行不能超过 10 分钟，即 600000 毫秒。",
+      "paid": "监控运行不能超过 15 分钟，即 900000 毫秒。"
     },
     "set_req_timeout": "设置请求超时",
     "set_delay": "在请求之前设置延迟",
@@ -440,20 +448,21 @@
     "no_results": "没有找到结果",
     "request_timeout": "请求超时值应大于 0 毫秒。",
     "request_delay": "请求延迟值应大于 0 毫秒。",
-    "edit_monitor": "编辑 Monitor",
+    "edit_monitor": "编辑监控",
     "editing_badge": "编辑中",
-    "no_empty_name": "请输入 Monitor 名称",
+    "no_empty_name": "请输入监控名称",
     "select_version_tag": "为此集合选择一个标签",
     "at_this_time": "此时",
     "labels": {
       "button": {
-        "create": "创建 Monitor",
-        "edit": "更新 Monitor",
+        "create": "创建监控",
+        "edit": "更新监控",
         "cancel": "取消"
       }
     },
     "warnings": {
-      "no_environment_found": "此工作区中没有环境。"
+      "no_environment_found": "此工作区中没有环境。",
+      "environment_list_load_error": "环境加载失败，请重试。"
     },
     "data_file": {
       "select_label": "数据文件",
@@ -466,27 +475,27 @@
       "preview_error_title": "无法预览",
       "preview_error_detail": "无法读取此文件的内容。",
       "parse_error": "此文件读取失败，请确认是有效的 CSV 或 JSON 文件。",
-      "save_as_dataset": "另存为 Dataset",
-      "save_as_dataset_hint": "将此文件保存为 Dataset，即可用 SQL 筛选、排序和清洗数据行。",
-      "save_as_dataset_success": "Dataset 已创建",
-      "save_as_dataset_error": "Dataset 创建失败",
+      "save_as_dataset": "另存为数据集",
+      "save_as_dataset_hint": "将此文件保存为数据集，即可用 SQL 筛选、排序和清洗数据行。",
+      "save_as_dataset_success": "数据集已创建",
+      "save_as_dataset_error": "数据集创建失败",
       "save_as_dataset_no_permission": "你没有在此工作区中创建数据集的权限。"
     },
     "dataset_compat": {
-      "partial": "此 <view>视图</view> 使用了与 Monitor 不兼容的 <sources>本地数据源</sources>。请将其上传到 Postman Cloud，或改用可访问这些数据源的私有 Runner 运行此 Monitor。",
-      "private_runner_only": "此<view>视图</view>使用了 <sources>JDBC 数据源</sources>，只有私有运行器才能执行——Postman 云端 Monitor 无法加载 JDBC 驱动。请在私有运行器上运行此 Monitor，或清除此选择。",
+      "partial": "此 <view>视图</view> 使用了与监控不兼容的 <sources>本地数据源</sources>。请将其上传到 Postman Cloud，或改用可访问这些数据源的私有运行器运行此监控。",
+      "private_runner_only": "此<view>视图</view>使用了 <sources>JDBC 数据源</sources>，只有私有运行器才能执行——Postman 云端监控无法加载 JDBC 驱动。请在私有运行器上运行此监控，或清除此选择。",
       "confirm": "上传到 Postman Cloud",
       "clear": "清除",
       "converting": "上传中…",
       "convert_success": "数据源已上传到 Postman Cloud。",
       "convert_error": "数据源上传失败，请重试。",
-      "incompatible": "此 <view>视图</view> 使用了 <sources>数据库数据源</sources>。只有该数据库可通过公网访问时，Monitor 才能使用它们。"
+      "incompatible": "此 <view>视图</view> 使用了 <sources>数据库数据源</sources>。只有该数据库可通过公网访问时，监控才能使用它们。"
     },
     "scroll_to_bottom": "滚动到底部",
     "settings": "设置",
     "iteration_data": {
       "label": "迭代数据",
-      "info": "使用来自文件或数据库的数据。Monitor 会对每一行运行一次迭代。",
+      "info": "使用来自文件或数据库的数据。监控会对每一行运行一次迭代。",
       "search_placeholder": "搜索",
       "none_placeholder": "无",
       "selected_view_fallback": "已选视图",
@@ -494,9 +503,10 @@
       "upload_datafile": "上传数据文件...",
       "accepted_formats": "CSV、JSON",
       "selected_pill": "已选数据文件",
-      "new_dataset": "新建 Dataset",
+      "new_dataset": "新建数据集",
       "new_dataset_no_permission": "你没有在此工作区中创建数据集的权限。",
-      "no_datasets": "此工作区中还没有 Dataset。",
+      "new_dataset_disabled_local_mode": "监控只能使用存储在云端的数据集。请切换到云端模式以添加新的数据集。",
+      "no_datasets": "此工作区中还没有数据集。",
       "no_views": "还没有视图。",
       "create_view": "新建一个",
       "open_in_tab": "在新标签页中打开",
@@ -515,8 +525,13 @@
       "repetition_repeat_last_desc": "运行指定次数的迭代。数据行用尽后，剩余迭代继续使用最后一行。",
       "repetition_stop_at_end_desc": "运行指定次数的迭代。数据行用尽后即停止运行。",
       "upgrade": {
-        "heading": "升级后即可使用 Dataset 和数据文件",
-        "description": "Dataset 和数据文件可以为 Monitor 提供测试数据，两者均为付费方案功能。升级方案即可开始使用。"
+        "heading": "升级后即可使用数据集和数据文件",
+        "description": "数据集和数据文件可以为监控提供测试数据，两者均为付费方案功能。升级方案即可开始使用。"
+      }
+    },
+    "preview_panel": {
+      "tabs": {
+        "iteration_data": "数据"
       }
     },
     "warning_message": {
@@ -524,23 +539,23 @@
     },
     "file_uplaod_status": {
       "single_request": "请求缺少文件",
-      "single_request_info": "此请求使用了本地文件，请上传以避免 Monitor 运行期间发生错误。",
+      "single_request_info": "此请求使用了本地文件，请上传以避免监控运行期间发生错误。",
       "multiple_requests": "缺少文件的请求",
-      "multiple_requests_info": "这些请求使用了本地文件，请上传以避免 Monitor 运行期间发生错误。"
+      "multiple_requests_info": "这些请求使用了本地文件，请上传以避免监控运行期间发生错误。"
     }
   },
   "delete_confirmation": {
-    "monitor": "删除 Monitor",
+    "monitor": "删除监控",
     "schedule": "删除日程",
     "deleting_button": "正在删除",
     "delete_button": "删除",
-    "feedback_options_label": "帮助我们了解如何改进 Monitor 功能"
+    "feedback_options_label": "帮助我们了解如何改进监控功能"
   },
   "tab_loading_error": {
     "title": "找不到 {entityType, select, monitor {Monitor} other {{entityType}}}",
     "body": "它可能已被移动或删除。",
-    "uptime_unavailable_title": "正常运行时间 Monitor 已不再可用",
-    "uptime_unavailable_body": "此 Monitor 类型已停用，请改用常规 Monitor。"
+    "uptime_unavailable_title": "正常运行时间监控已不再可用",
+    "uptime_unavailable_body": "此监控类型已停用，请改用常规监控。"
   },
   "status_tooltip": {
     "health": "此 {entityType, select, monitor {Monitor} schedule {日程} other {{entityType}}} 是 <3>{status, select, paused {已暂停} healthy {健康} unhealthy {不健康} other {{status}}}</3>。",
@@ -557,14 +572,14 @@
     "request_access": "请求访问权限",
     "add_to_jira": "添加到 Jira Cloud",
     "publish_monitor_report": "发布",
-    "monitor_report": "Monitor 报告",
+    "monitor_report": "监控报告",
     "published": "已发布",
-    "published_monitor": "已发布的 Monitor",
-    "published_monitor_pending_tooltip": "已发布—变更请求正在审核中",
+    "published_monitor": "已发布的监控",
+    "published_monitor_pending_tooltip": "已发布 — 变更请求正在审核中",
     "copy_link": "复制链接",
     "unpublish": "取消发布",
-    "unpublish_success": "Monitor 报告已取消发布",
-    "unpublish_error": "无法取消发布 Monitor 报告",
+    "unpublish_success": "监控报告已取消发布",
+    "unpublish_error": "无法取消发布监控报告",
     "pending_approval": "发布待批准",
     "withdraw_request": "撤回请求",
     "update_request": "更新请求",
@@ -583,14 +598,14 @@
     "view_only_access": "您只有查看权限"
   },
   "publish_modal": {
-    "title": "发布 Monitor 报告",
-    "description": "此报告显示 Monitor 运行状态、请求详细信息和响应时间趋势，将作为公开页面共享。",
+    "title": "发布监控报告",
+    "description": "此报告显示监控运行状态、请求详细信息和响应时间趋势，将作为公开页面共享。",
     "report_name_label": "报告名称",
     "report_name_helper": "显示在报告顶部、浏览器选项卡和共享链接中。",
     "report_name_placeholder": "例如订单 API 健康报告",
     "description_label": "描述",
     "description_helper": "添加简短摘要以在共享链接和预览中提供上下文。",
-    "description_placeholder": "例如生产端点的每日监控结果",
+    "description_placeholder": "例如生产端点的每日 监控 结果",
     "show_requests_label": "显示请求端点",
     "show_requests_helper": "在公开报告中包含请求 URL。",
     "cancel": "取消",
@@ -601,15 +616,15 @@
     "copy_link": "复制链接",
     "view_report": "查看报告",
     "link_copied": "链接已复制到剪贴板",
-    "publish_success": "Monitor 报告发布成功",
-    "publish_error": "未能发布 Monitor 报告",
+    "publish_success": "监控报告发布成功",
+    "publish_error": "未能发布监控报告",
     "request_update_title": "请求更新已发布的报告",
     "edit_title": "编辑已发布的报告",
     "publish_updates": "发布更新",
     "updating": "更新中...",
     "update_success": "已发布的报告更新成功",
     "last_published": "最后发布：",
-    "governance_note": "注意：您的团队需要管理员批准才能发布 Monitor 报告。",
+    "governance_note": "注意：您的团队需要管理员批准才能发布监控报告。",
     "approval_message_label": "批准留言",
     "approval_message_placeholder": "解释为什么应该发布这份报告。",
     "request_to_publish": "请求发布",
@@ -729,8 +744,8 @@
       "text": "了解您的服务何时中断",
       "sub_text": "监控跨区域 URL 的正常运行时间，并设置及时警报，无需创建集合。",
       "badge_text": "测试版",
-      "button_text": "创建正常运行时间 Monitor",
-      "link_text": "了解有关正常运行时间 Monitor 的更多信息"
+      "button_text": "创建正常运行时间监控",
+      "link_text": "了解有关正常运行时间监控的更多信息"
     }
   },
   "collapsible_state_line": {
@@ -798,7 +813,7 @@
       "title": "活动提要"
     },
     "info": {
-      "title": "Monitor 详细信息"
+      "title": "监控详细信息"
     }
   },
   "cli": {
@@ -814,13 +829,13 @@
       }
     },
     "note": {
-      "creation": "创建 Monitor 后将生成 Monitor ID"
+      "creation": "创建监控后将生成监控 ID"
     },
-    "trigger_monitor_run_using_cli": "使用 Postman CLI 触发 Monitor 运行",
+    "trigger_monitor_run_using_cli": "使用 Postman CLI 触发监控运行",
     "run_using_cli": "使用 Postman CLI 运行",
-    "run_monitor_using_cli": "使用 Postman CLI 触发 Monitor 运行",
+    "run_monitor_using_cli": "使用 Postman CLI 触发监控运行",
     "install_postman_cli_step_1": "1. 安装 Postman CLI",
-    "trigger_monitor_run_step_2": "2. 触发 Monitor 运行",
+    "trigger_monitor_run_step_2": "2. 触发监控运行",
     "automate_using_cli": "使用 Postman CLI 自动运行。",
     "command_instruction": "在终端中复制并运行此命令"
   }

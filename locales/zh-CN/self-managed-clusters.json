@@ -2,7 +2,7 @@
   "heading": "运行器",
   "add_cluster_button": "添加运行器",
   "retry_button": "重试",
-  "description": "运行器在您的网络内执行 Monitor，以便您可以测试私有或受防火墙限制的 API。",
+  "description": "运行器在您的网络内执行监控，以便您可以测试私有或受防火墙限制的 API。",
   "learn_more": "了解更多",
   "give_feedback": "提供反馈",
   "search_placeholder": "按运行器名称过滤",
@@ -76,7 +76,7 @@
     "modal": {
       "heading": "永久删除运行器？",
       "confirmation": "<text>您确定要删除运行器<bold>\"{clusterName}\"</bold>吗？</text>",
-      "warning": "删除此运行器将停止使用它的所有 Monitor。",
+      "warning": "删除此运行器将停止使用它的所有监控。",
       "cancel_button": "取消",
       "delete_button": "删除"
     },
@@ -104,7 +104,7 @@
       "name_placeholder": "输入运行器名称",
       "name_helper_text": "例如，内部 API 运行器 Beta 1",
       "description_label": "描述",
-      "description_placeholder": "例如，为 beta API 执行 Monitor 运行",
+      "description_placeholder": "例如，为 beta API 执行监控运行",
       "custom_runner_created_by": "由您的团队创建"
     },
     "button": {
@@ -141,7 +141,7 @@
     }
   },
   "runner": {
-    "runner_info_text": "您可以选择所需区域中的 Postman 运行器，或选择您自己网络内的运行器来运行 Monitor。",
+    "runner_info_text": "您可以选择所需区域中的 Postman 运行器，或选择您自己网络内的运行器来运行监控。",
     "runner_setup_help": "要设置新的运行器，请联系您的团队管理员。",
     "auto_select": "自动选择",
     "manually_select": "手动选择",

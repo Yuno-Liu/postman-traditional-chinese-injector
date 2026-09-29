@@ -38,7 +38,7 @@
   },
   "display": {
     "materialize_error_title": "草稿工作区加载失败",
-    "materialize_error_title_with_id": "草稿工作区 {workspaceId} 加载失败",
+    "materialize_error_title_with_id": "草稿 Workspace {workspaceId} 加载失败",
     "unavailable_title": "工作区合并不可用",
     "unavailable_load_description": "我们无法加载此草稿工作区的更改，请重新打开草稿工作区后重试。",
     "diff_error_title": "合并差异计算失败"

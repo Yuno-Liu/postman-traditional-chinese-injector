@@ -143,15 +143,15 @@
     }
   },
   "secret_field": {
-    "link_to_vault": "链接到保险库密钥",
-    "unlink_vault": "取消链接保险库密钥",
+    "link_to_vault": "链接到 保险库 密钥",
+    "unlink_vault": "取消链接 保险库 密钥",
     "view_in_vault": "在 Vault 中查看",
     "new_secret": "新建密钥",
-    "link_aria_label": "将 {label} 链接到保险库密钥",
-    "unlink_aria_label": "取消 {label} 与保险库密钥的链接",
+    "link_aria_label": "将 {label} 链接到 保险库 密钥",
+    "unlink_aria_label": "取消 {label} 与 保险库 密钥 的链接",
     "search_placeholder": "搜索秘密...",
     "no_matching": "没有匹配的秘密",
-    "no_available": "没有可用的保险库秘密",
+    "no_available": "没有可用的 保险库 秘密",
     "choose_file": "选择文件",
     "file_prompt_suffix": "（您也可以在下方粘贴{label}）",
     "selected_file": "已选文件：",
@@ -285,7 +285,7 @@
   },
   "save_view_output_modal": {
     "title": "将输出保存为数据源",
-    "description": "将此视图的输出存储为新的 Postman 云端数据源，以便在云端运行、Monitor 和其他视图中复用数据库数据源的结果。",
+    "description": "将此视图的输出存储为新的 Postman 云端数据源，以便在云端运行、监控和其他视图中复用数据库数据源的结果。",
     "name_label": "数据源名称",
     "name_placeholder": "例如 top_customers_snapshot",
     "name_invalid": "请使用字母、数字和下划线，并以字母或下划线开头。",
@@ -305,14 +305,14 @@
     "title": "在集合运行中使用",
     "description": "打开集合运行器，并将此视图设为运行的迭代数据。",
     "view_label": "数据集视图",
-    "collection_label": "集合",
+    "collection_label": "Collection",
     "collection_placeholder": "选择集合",
     "no_collections": "此工作区中没有可运行的集合。",
     "load_error": "无法加载此工作区中的集合。",
     "retry": "重试",
     "open_error": "无法打开集合运行器，请重试。",
     "cancel": "取消",
-    "submit": "在 Runner 中打开"
+    "submit": "在运行器中打开"
   },
   "dataset_create": {
     "new_dataset": "新数据集",
@@ -324,7 +324,7 @@
     "description_label": "描述",
     "empty_state_banner": {
       "title": "什么是数据集？",
-      "description": "数据集用于组织来自文件和数据库的可复用数据，让你能用 SQL 查询它，并在集合运行、脚本、Mock Server 和 Monitor 中使用。",
+      "description": "数据集用于组织来自文件和数据库的可复用数据，让你能用 SQL 查询它，并在集合运行、脚本、模拟服务器和监控中使用。",
       "learn_more": "了解详情"
     },
     "toasts": {
@@ -354,7 +354,7 @@
       },
       "sample": {
         "prompt": "刚开始使用？先从示例数据源试试。",
-        "name": "Customers",
+        "name": "客户",
         "description": "包含联系方式、所在地区和账户状态字段的客户资料。",
         "add_error": "无法添加该示例数据源，请重试。"
       },
@@ -523,7 +523,7 @@
   "agent_unavailable": {
     "not_installed": {
       "title": "安装 Postman Desktop Agent 后才能运行此查询",
-      "body": "此 Dataset 使用了运行在你本机上的数据源。请安装 Postman Desktop Agent，以便从浏览器查询该数据源。",
+      "body": "此数据集使用了运行在你本机上的数据源。请安装 Postman Desktop Agent，以便从浏览器查询该数据源。",
       "cta": "安装 Postman Desktop Agent"
     },
     "wrong_version": {

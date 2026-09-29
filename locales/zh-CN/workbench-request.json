@@ -95,8 +95,8 @@
         },
         "change_agent": "更换 Agent",
         "agent_name": {
-          "desktop": "Desktop Agent",
-          "cloud": "Cloud Agent"
+          "desktop": "桌面代理",
+          "cloud": "云代理"
         }
       },
       "fork_recommendation": {
@@ -129,7 +129,7 @@
         "short_label": "验证"
       },
       "overview": "概览",
-      "headers": "Headers",
+      "headers": "请求头",
       "body": {
         "label": "请求体",
         "editor": {
@@ -333,7 +333,7 @@
     "opt_in_modal": {
       "terms": "使用此功能，即表示您同意在 Postman 中使用 AI 的 <1><0>条款</0></1>",
       "primary_action": "继续",
-      "desc": "<0>Postbot 是您处理所有 API 相关事务的 AI 助手，可以帮助您为 API 编写测试，甚至构建 Flow。只需查看</0> <1><0> </0> <1></1> <2>图标。</2></1>",
+      "desc": "<0>Postbot 是您处理所有 API 相关事务的 AI 助手，可以帮助您为 API 编写测试，甚至构建流程。只需查看</0> <1><0> </0> <1></1> <2>图标。</2></1>",
       "tooltip_close": "关闭"
     },
     "split_loading_message": "正在努力...",

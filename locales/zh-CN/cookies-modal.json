@@ -4,8 +4,8 @@
     "message": "Postman 通过浏览器发送请求时无法访问cookie。要捕获和管理 Cookie，请尝试 Postman 桌面代理。"
   },
   "generic_empty_state": {
-    "message": "您使用的是较旧版本的 Postman 桌面代理，它不能用于添加或编辑 Cookie。 \n\n单击工具栏中的 Postman 代理图标更新桌面代理，或切换到使用 Postman 云代理。",
-    "secondary_action": "切换到云代理"
+    "message": "您使用的是较旧版本的 Postman 桌面代理，它不能用于添加或编辑 Cookie。 \n\n单击工具栏中的 Postman 代理图标更新 桌面代理，或切换到使用 Postman 云代理。",
+    "secondary_action": "切换到 云代理"
   },
   "heading": {
     "browser": "管理 Cookie",
@@ -16,6 +16,9 @@
       "label": "管理 Cookie",
       "domain_del_success_toast": "所有 Cookie 均已成功清除。",
       "domain_del_error_toast": "无法删除域 {deletedDomain} 的 Cookie。",
+      "cookie_domain_mismatch_toast": "此处不支持更改 Cookie 的域名，编辑已丢弃。",
+      "cookie_save_error_toast": "Cookie 更改保存失败。",
+      "cookie_name_missing_toast": "Cookie 必须有名称，编辑已丢弃。",
       "domain_allowlist_button": "域名白名单",
       "domain_clear_all_button": "清除所有 Cookie"
     },
@@ -90,10 +93,6 @@
   "add_domain_button": "添加域名",
   "domains_list": {
     "empty": "没有可用的 Cookie",
-    "cookie_editor_action": {
-      "cancel": "取消",
-      "save": "保存"
-    },
     "add_cookie_button": "添加 Cookie"
   }
 }

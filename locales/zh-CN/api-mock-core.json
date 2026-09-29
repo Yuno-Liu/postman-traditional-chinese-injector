@@ -1,21 +1,21 @@
 {
   "info_pane_mock_listing": {
     "header": {
-      "text": "Mock 服务器",
+      "text": "模拟服务器",
       "new_button": "新的",
-      "tooltip": "创建 mock 服务器"
+      "tooltip": "创建模拟服务器"
     },
     "list": {
       "connection_error_state": {
-        "text": "无法加载 mock 服务器"
+        "text": "无法加载模拟服务器"
       },
       "error_fetching_state": {
-        "text": "加载 mock 服务器时出现意外错误。请再试一次。",
+        "text": "加载模拟服务器时出现意外错误。请再试一次。",
         "button": "再试一次"
       },
       "no_mock_state": {
-        "collection_text": "没有为此集合创建 mock 服务器。",
-        "environment_text": "没有 mock 服务器使用此环境。"
+        "collection_text": "没有为此集合创建模拟服务器。",
+        "environment_text": "没有模拟服务器使用此环境。"
       },
       "default_state": {
         "show_more": "显示 {mocksLength} 更多",
@@ -32,26 +32,24 @@
   "delete_confirmation": {
     "delete": "删除",
     "deleting": "正在删除",
-    "toast_delete_confirmation": "Mock 服务器已删除",
-    "toast_delete_error": "无法删除 mock"
+    "toast_delete_confirmation": "模拟服务器已删除",
+    "toast_delete_error": "无法删除模拟服务器"
   },
   "local_mock_logs_panel": {
     "state_tab_count": "状态（{count}）",
     "logs_tab_count": "日志（{count}）",
     "logs_load_failed": "日志加载失败",
     "logs_waiting_title": "等待请求……",
-    "logs_waiting_subtitle": "向 Mock Server 发送请求即可查看日志",
+    "logs_waiting_subtitle": "向模拟服务器发送请求即可查看日志",
     "logs_no_match": "没有匹配的日志",
     "logs_no_match_subtitle": "试试调整筛选条件",
     "logs_retry": "重试",
     "logs_start_to_run_title": "暂无日志",
-    "logs_start_to_run": "启动 Mock Server 后即可在此查看日志",
+    "logs_start_to_run": "启动模拟服务器后即可在此查看日志",
     "local_run_desktop_only_title": "仅限桌面客户端",
-    "local_run_desktop_only_description": "浏览器中不支持本地运行。请使用 Postman 桌面客户端，或部署为 Mock Server。"
+    "local_run_desktop_only_description": "浏览器中不支持本地运行。请使用 Postman 桌面客户端，或部署为模拟服务器。"
   },
   "mock_start_history": {
-    "current_start": "当前启动 {id}",
-    "menu_heading": "此 Mock 的启动记录",
     "last_n": "最近 {count} 次",
     "source_app": "应用",
     "source_cli": "CLI",
@@ -63,8 +61,8 @@
     "trigger_label": "{when} · {source}",
     "started_by_you": "由您启动 · {when}",
     "started_by_other": "由 {who} 启动 · {when}",
-    "cli_by_you": "postman mock run · 由您执行 · {when}",
-    "cli_by_other": "postman mock run · 由 {who} 执行 · {when}",
+    "cli_by_you": "postman 模拟服务器 run · 由您执行 · {when}",
+    "cli_by_other": "postman 模拟服务器 run · 由 {who} 执行 · {when}",
     "ci_meta": "{who} · {when}",
     "yesterday": "昨天 {time}",
     "other_day": "{date} {time}",
@@ -96,6 +94,12 @@
     "col_errors": "错误",
     "col_status": "状态",
     "empty_title": "暂无启动记录",
+    "list_load_failed": "无法加载先前的启动记录",
+    "duration_h": "{count} 小时",
+    "duration_m": "{count} 分钟",
+    "duration_s": "{count} 秒",
+    "entity_missing_mock": "此模拟服务器已不可用",
+    "entity_missing_simulation": "此模拟已不可用",
     "status_running": "运行中",
     "status_stopped": "已停止",
     "refresh": "刷新",
@@ -114,15 +118,20 @@
     "log_col_latency": "延迟",
     "log_col_example": "匹配的示例",
     "log_col_called_by": "调用方",
-    "logs_load_failed": "日志加载失败"
-  },
-  "simulation_start_history": {
-    "col_members": "成员",
-    "identity_members": "成员",
-    "members_heading": "成员启动记录",
-    "member_col_mock": "Mock",
-    "empty_title": "暂无模拟运行",
-    "members_empty": "此次运行没有成员启动记录"
+    "logs_load_failed": "日志加载失败",
+    "mock_start_load_failed": "无法加载此模拟服务器启动记录。",
+    "simulation_start_load_failed": "无法加载此模拟启动记录。",
+    "mock_start_entity": "模拟服务器启动",
+    "simulation_start_entity": "模拟启动",
+    "unnamed_simulation": "模拟",
+    "start_tab_stale": "此标签页已过期。请关闭后从历史记录中重新打开该启动记录。",
+    "previous_start": "先前的启动",
+    "previous_start_with_id": "先前的启动 · {startId}",
+    "open_mock": "打开模拟服务器",
+    "open_simulation": "打开模拟",
+    "simulation_started": "模拟已启动",
+    "simulation_stopped": "模拟已停止",
+    "back_to_logs": "返回日志"
   },
   "mock_filter_bar": {
     "filter_label": "筛选",
@@ -132,17 +141,17 @@
     "filter_by_header": "请求头",
     "session_footer": "使用 <code>pm_mock_session</code> Cookie 或 <code>x-mock-session</code> 请求头，将日志和状态限定在某个会话内。",
     "session_disabled_value": "默认会话",
-    "session_disabled_hint": "此 Mock 已关闭会话，因此所有流量共用同一份状态。在 Mock 设置中启用会话，即可按调用方隔离日志和状态。",
+    "session_disabled_hint": "此模拟服务器已关闭会话，因此所有流量共用同一份状态。在模拟服务器设置中启用会话，即可按调用方隔离日志和状态。",
     "local_server_live": "本地服务器运行中",
     "session_delete": "删除会话"
   },
   "caller_identity": {
-    "title_private": "私密 Mock",
-    "title_public": "公开 Mock",
-    "body_private": "请使用有效的 <code>x-api-key</code> 或通过 Postman 访问以使用此私有 Mock。",
-    "body_public": "任何人都可以访问此 Mock。",
-    "badge_aria_private": "私密 Mock：调用方需经过验证。打开调用方身份详情。",
-    "badge_aria_public": "公开 Mock：调用方无需验证。打开调用方身份详情。"
+    "title_private": "私密模拟服务器",
+    "title_public": "公开模拟服务器",
+    "body_private": "请使用有效的 <code>x-api-key</code> 或通过 Postman 访问以使用此私有模拟服务器。",
+    "body_public": "任何人都可以访问此模拟服务器。",
+    "badge_aria_private": "私密模拟服务器：调用方需经过验证。打开调用方身份详情。",
+    "badge_aria_public": "公开模拟服务器：调用方无需验证。打开调用方身份详情。"
   },
   "local_mock_state_panel": {
     "key_list": {
@@ -156,7 +165,7 @@
     },
     "toolbar": {
       "session_label": "会话",
-      "session_info_tooltip": "每个会话都是 pm.state 的独立副本。任何有权访问 Mock 的人都可以查看任意会话。",
+      "session_info_tooltip": "每个会话都是 pm.state 的独立副本。任何有权访问模拟服务器的人都可以查看任意会话。",
       "large_values_truncated": "较大的值已被截断",
       "clear_session_state": "清除会话数据",
       "delete_logs_and_state": "删除日志和状态",
@@ -168,15 +177,15 @@
       "failed_to_read": "状态读取失败",
       "refresh_failed": "刷新失败——显示上次读取的内容。",
       "no_state_yet": "暂无状态",
-      "state_appears_here": "使用 <pmState>pm.state</pmState> 可在 Mock 中持久化数据。<docsLink>了解状态。</docsLink>",
-      "start_mock_to_write": "启动 Mock 并写入 pm.state。",
+      "state_appears_here": "使用 <pmState>pm.state</pmState> 可在模拟服务器中持久化数据。<docsLink>了解状态。</docsLink>",
+      "start_mock_to_write": "启动模拟服务器并写入 pm.state。",
       "shared_empty": "共享状态为空",
       "shared_empty_subtitle": "没有会话的调用方产生的状态会显示在此处。",
       "your_session_empty": "您的会话为空",
       "session_empty": "此会话为空",
       "session_empty_subtitle": "向此会话发送请求以添加状态。",
       "isolated_no_session": "发送请求以启动您的会话",
-      "isolated_no_session_subtitle": "此 Mock 为隔离模式，因此您的第一个请求将获得独立会话（显示为“您的”）。"
+      "isolated_no_session_subtitle": "此模拟服务器为隔离模式，因此您的第一个请求将获得独立会话（显示为“您的”）。"
     },
     "toasts": {
       "key_reset": "已重置“{key}”",

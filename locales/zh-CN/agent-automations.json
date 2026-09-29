@@ -166,14 +166,14 @@
       "day_friday": "星期五",
       "day_saturday": "星期六",
       "day_sunday": "星期日",
-      "workspace_label": "工作区",
+      "workspace_label": "Workspace",
       "workspace_placeholder": "选择工作区",
-      "collection_label": "集合",
+      "collection_label": "Collection",
       "collection_placeholder": "选择集合",
       "monitor_label": "Monitor",
-      "monitor_placeholder": "选择 Monitor",
-      "monitor_partial_warning": "部分 Monitor 无法加载，列表可能不完整。",
-      "monitor_load_error": "无法加载 Monitor，请重试。",
+      "monitor_placeholder": "选择监控",
+      "monitor_partial_warning": "部分监控无法加载，列表可能不完整。",
+      "monitor_load_error": "无法加载监控，请重试。",
       "status_label": "运行结果",
       "status_success": "成功",
       "status_failure": "失败"
@@ -215,7 +215,7 @@
     "github_branch_required": "分支为必填项",
     "workspace_required": "请选择工作区",
     "collection_required": "请选择集合",
-    "monitor_required": "Monitor 为必填项"
+    "monitor_required": "监控为必填项"
   },
   "run_history": {
     "search_placeholder": "搜索运行记录……",

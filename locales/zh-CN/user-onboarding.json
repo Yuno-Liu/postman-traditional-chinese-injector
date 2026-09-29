@@ -84,26 +84,33 @@
       }
     },
     "roles": {
-      "backend_developer": "后端开发人员",
-      "frontend_developer": "前端开发人员",
-      "fullstack_developer": "全栈开发人员",
-      "mobile_developer": "移动开发者",
-      "data_engineer": "数据工程师",
-      "devops_engineer": "DevOps/平台工程师",
-      "qa_test_engineer": "质量保证/测试工程师",
-      "engineering_lead_manager": "工程主管/经理",
-      "engineering_executive": "工程高管",
-      "api_program_product_manager": "API 程序/产品经理",
-      "student_educator": "学生/教育者",
+      "developer_engineer": "开发人员 / 工程师",
+      "qa_test_engineer": "QA / 测试工程师",
+      "devops_engineer": "DevOps / 平台工程师",
+      "architect_designer": "架构师 / API 设计师",
+      "engineering_lead_manager": "工程经理 / 负责人",
+      "engineering_executive": "工程高管（总监 / VP / CTO）",
+      "api_program_product_manager": "产品 / API 项目经理",
+      "student_educator": "学生 / 教育工作者",
       "other": "其他"
     },
     "role_use_cases": {
-      "build_apis": "构建 API",
-      "testing_apis": "测试API",
-      "integrate_apis": "集成API",
-      "lead_a_team_that_works_with_apis": "领导一个使用 API 的团队",
-      "manage_api_strategy_for_my_org": "管理我的组织的 API 策略",
-      "evaluate_postman_for_my_company": "为我的公司评估 Postman"
+      "design_a_new_api": "设计新 API",
+      "test_or_debug_an_api": "测试或调试 API",
+      "build_with_third_party_api": "使用第三方 / 公共 API 进行构建",
+      "set_up_my_team": "在 Postman 上设置我的团队",
+      "evaluate_postman": "评估 Postman",
+      "document_and_share_apis": "编写文档并共享 API",
+      "manage_enterprise_api_program": "管理我们的企业 API 项目"
+    },
+    "role_use_case_descriptions": {
+      "design_a_new_api": "从 Spec Hub 中的规范开始",
+      "test_or_debug_an_api": "发送请求、检查响应并编写测试",
+      "build_with_third_party_api": "查找 API 并将其集成到我的产品中",
+      "set_up_my_team": "协作、工作区、角色",
+      "evaluate_postman": "判断它是否适合我们",
+      "document_and_share_apis": "与我的团队或外部使用者共享",
+      "manage_enterprise_api_program": "在一处统一对整个组织的 API 进行标准化、安全保护和治理"
     },
     "team_sizes": {
       "1_member": "1 名成员",
@@ -227,7 +234,7 @@
     "success": {
       "send_invites": {
         "title": "已发送邀请",
-        "description": "新成员接受您的邀请后就会加入。"
+        "description": "新成员接受您的 邀请 后就会加入。"
       },
       "save_profile": {
         "title": "个人资料已保存",
@@ -235,7 +242,7 @@
       },
       "create_team": {
         "title": "团队创建成功",
-        "description": "当您的请求获得批准时，我们会通知您。"
+        "description": "当您的 请求 获得批准时，我们会通知您。"
       },
       "verified_team_full": {
         "title": "您加入团队的请求正在审核中",

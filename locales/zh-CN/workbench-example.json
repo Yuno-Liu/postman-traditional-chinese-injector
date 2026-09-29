@@ -25,7 +25,7 @@
     "send_button_text": "试用",
     "tabs": {
       "params": "参数",
-      "headers": "Headers",
+      "headers": "请求头",
       "body": "请求体"
     },
     "content_pane": {
@@ -77,9 +77,6 @@
       "valid": "有效期至",
       "certificate_warning": "证书验证失败",
       "http_status_codes": {
-        "1XX": {
-          "detail": "这是一个 1xx 响应，表示应携带一些信息。"
-        },
         "100": {
           "detail": "一切正常，请继续请求。"
         },
@@ -94,9 +91,6 @@
         },
         "122": {
           "detail": "这是一个非标准的 IE7 专用代码，表示 URI 长度超过了 2083 个字符的上限。"
-        },
-        "2XX": {
-          "detail": "这是一个 2xx 响应，说明一切正常。"
         },
         "200": {
           "detail": "请求成功，服务器已按预期做出响应。"
@@ -128,9 +122,6 @@
         "226": {
           "detail": "服务器已完成针对该资源的 <code>GET</code> 请求，响应内容是对当前实例应用一次或多次实例操作后的结果表示。"
         },
-        "3XX": {
-          "detail": "这是一个 3xx 响应，表示应将您重定向到其他位置。"
-        },
         "300": {
           "detail": "该请求存在多个可能的响应。"
         },
@@ -157,9 +148,6 @@
         },
         "308": {
           "detail": "该资源已被永久移动到另一个 URL。向新 URL 发起请求时，请使用相同的请求方法。"
-        },
-        "4XX": {
-          "detail": "这是一个 4xx 错误，请求本身可能存在问题。"
         },
         "400": {
           "detail": "服务器无法理解该请求，可能是语法有误？"
@@ -290,9 +278,6 @@
         "499": {
           "detail": "连接在服务器完成任务前已被关闭。"
         },
-        "5XX": {
-          "detail": "这是一个 5xx 响应，服务器出现了问题。"
-        },
         "500": {
           "detail": "服务器遇到了不知如何处理的情况。"
         },
@@ -367,6 +352,21 @@
         },
         "599": {
           "detail": "代理背后与位于代理前面的 HTTP 客户端之间发生了连接超时。"
+        },
+        "1XX": {
+          "detail": "这是一个 1xx 响应，表示应携带一些信息。"
+        },
+        "2XX": {
+          "detail": "这是一个 2xx 响应，说明一切正常。"
+        },
+        "3XX": {
+          "detail": "这是一个 3xx 响应，表示应将您重定向到其他位置。"
+        },
+        "4XX": {
+          "detail": "这是一个 4xx 错误，请求本身可能存在问题。"
+        },
+        "5XX": {
+          "detail": "这是一个 5xx 响应，服务器出现了问题。"
         }
       }
     },
@@ -402,7 +402,7 @@
         "title": "响应大小",
         "rows": {
           "body": "请求体",
-          "headers": "Headers",
+          "headers": "请求头",
           "uncompressed": "未压缩"
         },
         "xhr_agent_used": "如需精确的大小明细，请通过 Postman Desktop Agent 发送请求。",
@@ -454,7 +454,7 @@
     "error_view_message": {
       "request": "无法发送请求",
       "response": "无法获取响应",
-      "script": "评估 {scriptPhase} 脚本时出错",
+      "script": "评估 {scriptPhase} 脚本 时出错",
       "troubleshoot": "了解如何排查请求问题",
       "fallback": "出现了一些问题"
     },
@@ -624,7 +624,7 @@
                 "desc": "<0>您也可以在测试或请求前脚本选项卡中使用 pm.visualizer.set() 方法自行设置可视化工具。了解更多关于</0><1>响应可视化</1><2>的信息。</2>"
               },
               "toggle_options_aria_label": "切换可视化选项",
-              "disabled_while_executing_tooltip": "响应加载中"
+              "disabled_while_executing_tooltip": "响应 加载中"
             }
           },
           "tabs": {
@@ -687,7 +687,7 @@
         }
       },
       "headers": {
-        "label": "Headers",
+        "label": "请求头",
         "types": {
           "accept_ranges": "指示客户端是否可以请求文件的一部分，而不必下载整个文件。",
           "access_control_allow_credentials": "指示是否将响应暴露给前端 JavaScript 代码。在响应预检请求时，用于指示实际请求是否可以携带凭据发起。",
@@ -727,17 +727,17 @@
           "strict_transport_security": "使网站能够告知浏览器只能通过 HTTPS 进行访问。",
           "trailer": "指示给定的标头字段集出现在使用分块传输编码编码的消息的尾部中。",
           "transfer_encoding": "指定用于将实体传输给用户的编码形式。",
-          "vary": "确定如何匹配未来的请求标头，以决定是否可以使用缓存的响应而不是请求新的标头。",
-          "via": "由代理添加并用于跟踪消息转发、避免请求循环并识别发送者的协议功能。",
+          "vary": "确定如何匹配未来的 请求 标头，以决定是否可以使用缓存的 响应 而不是请求新的标头。",
+          "via": "由代理添加并用于跟踪消息转发、避免 请求 循环并识别发送者的协议功能。",
           "warning": "包含有关消息状态可能出现的问题的信息。",
           "www_authenticate": "指定访问资源时应使用的身份验证方法。",
           "x_requested_with": "识别 Ajax 请求。大多数 JavaScript 框架都会发送带有 XMLHttpRequest 值的标头。",
           "x_do_not_track": "可用于要求 Web 应用程序不要跟踪用户。注意：此标头在很大程度上被 Web 应用程序忽略。",
-          "dnt": "可用于要求 Web 应用程序不要跟踪用户。这是 Mozilla 的 X-Do-Not-Track 标头的版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支持此标头。注意：此标头在很大程度上被 Web 应用程序忽略。",
+          "dnt": "可用于要求 Web 应用程序不要跟踪用户。这是 Mozilla 的 X-Do-Not-Track 标头的 版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支持此标头。注意：此标头在很大程度上被 Web 应用程序忽略。",
           "x_forwarded_for": "标识通过 HTTP 代理或负载均衡器连接到 Web 服务器的客户端的原始 IP 地址。",
           "x_frame_options": "用于通过确保其内容未嵌入其他网站来避免点击劫持攻击。",
           "x_xss_protection": "当页面检测到反射的跨站点脚本 (XSS) 攻击时，停止加载页面。",
-          "x_content_type_options": "可用于选择退出 MIME 类型，从声明的内容类型中嗅探响应。",
+          "x_content_type_options": "可用于选择退出 MIME 类型，从声明的内容类型中嗅探 响应 。",
           "x_forwarded_proto": "标识客户端用于连接到代理或负载均衡器的协议（HTTP 或 HTTPS）。",
           "x_powered_by": "指定支持 Web 应用程序的技术（例如 ASP.NET、PHP、JBoss）。"
         }
@@ -745,12 +745,12 @@
       "tests": {
         "label": "测试结果",
         "empty_test_results": {
-          "title": "没有针对此请求的测试",
-          "desc": "编写测试脚本来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
+          "title": "没有针对此 请求 的测试",
+          "desc": "编写测试 脚本 来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
           "with_postbot": {
-            "trigger_prompt": "没有针对此请求的测试",
-            "title": "没有针对此请求的测试",
-            "desc": "编写测试脚本来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
+            "trigger_prompt": "没有针对此 请求 的测试",
+            "title": "没有针对此 请求 的测试",
+            "desc": "编写测试 脚本 来自动调试。了解有关<1><0>编写测试</0></1>的更多信息",
             "error_after_loaded": {
               "text": "无法生成测试。",
               "button_label": "再试一次",
@@ -788,10 +788,10 @@
           },
           "error": {
             "with_postbot": {
-              "prefix_message": "无法评估测试脚本",
+              "prefix_message": "无法评估测试 脚本",
               "suffix_message": "无法修复测试。",
               "try_again_button": "再试一次",
-              "fix_script_button": "用 AI 修复脚本",
+              "fix_script_button": "用 AI 修复 脚本",
               "refresh_text": "刷新结果",
               "loading_text": "正在努力..."
             }
@@ -802,8 +802,8 @@
     },
     "schema_editor": {
       "error_boundary": {
-        "title": "架构编辑者加载失败",
-        "description": "加载架构编辑者时发生意外错误。"
+        "title": "架构 编辑者 加载失败",
+        "description": "加载架构 编辑者 时发生意外错误。"
       }
     },
     "example": {
@@ -811,10 +811,10 @@
         "short": "状态",
         "long": "状态码"
       },
-      "status_input_placeholder": "输入响应代码",
+      "status_input_placeholder": "输入 响应 代码",
       "tabs": {
         "body": "请求体",
-        "headers": "Headers"
+        "headers": "请求头"
       }
     }
   }

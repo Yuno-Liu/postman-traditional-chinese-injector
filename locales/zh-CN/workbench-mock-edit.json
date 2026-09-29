@@ -1,25 +1,25 @@
 {
   "mock_edit_tab": {
     "something_went_wrong": "出了点问题",
-    "unexpected_error": "加载 Mock Server 时发生意外错误，请重试。",
+    "unexpected_error": "加载模拟服务器时发生意外错误，请重试。",
     "try_again": "重试",
     "not_signed_in_error": "您需要一个账户才能继续探索 Postman。",
     "mock_server": "Mock Server"
   },
   "mock_edit_container": {
-    "default_disabled_tooltip_text": "此 Mock Server 没有新的更改可保存",
-    "invalid_name_header_delay_text": "请输入 Mock 名称、有效的固定网络延迟和请求头键，以更新 Mock Server。",
-    "invalid_name_header_text": "请输入 Mock 名称和请求头键，以更新 Mock Server。",
-    "invalid_name_delay_text": "请输入名称和有效的固定网络延迟，以更新 Mock Server。",
-    "invalid_delay_header_text": "请输入有效的固定网络延迟和请求头键，以更新 Mock Server。",
-    "invalid_name": "请为此 Mock Server 输入名称。",
+    "default_disabled_tooltip_text": "此模拟服务器没有新的更改可保存",
+    "invalid_name_header_delay_text": "请输入模拟服务器名称、有效的固定网络延迟和请求头键，以更新模拟服务器。",
+    "invalid_name_header_text": "请输入模拟服务器名称和请求头键，以更新模拟服务器。",
+    "invalid_name_delay_text": "请输入名称和有效的固定网络延迟，以更新模拟服务器。",
+    "invalid_delay_header_text": "请输入有效的固定网络延迟和请求头键，以更新模拟服务器。",
+    "invalid_name": "请为此模拟服务器输入名称。",
     "invalid_delay": "请输入有效的固定网络延迟。",
     "invalid_header": "请输入用于响应匹配的请求头键。",
-    "update_mock_text": "更新 Mock Server",
+    "update_mock_text": "更新模拟服务器",
     "cancel": "取消",
     "changes_saved": "更改已保存",
-    "update_success_msg": "您已更新 {name} Mock Server。",
-    "unable_to_edit": "无法编辑 Mock"
+    "update_success_msg": "您已更新 {name} 模拟服务器。",
+    "unable_to_edit": "无法编辑模拟服务器"
   },
   "mock_edit_form": {
     "make_payment": "立即付款",

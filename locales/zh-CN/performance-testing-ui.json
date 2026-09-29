@@ -231,7 +231,7 @@
         "info_aria_label": "关于 Setup 集合",
         "environment_mutation_helper_text": "在测试前运行。对环境的修改会延续到测试和 Teardown 阶段。",
         "placeholder": "选择 Setup 集合",
-        "trigger_add": "+ Setup",
+        "trigger_add": "+ 准备",
         "trigger_selected": "Setup：{name}",
         "trigger_remove": "移除 Setup 集合",
         "failed_primary_cause": "Setup 生命周期集合运行失败。",
@@ -243,7 +243,7 @@
         "info_aria_label": "关于 Teardown 集合",
         "environment_mutation_helper_text": "在测试后运行，并沿用此前对环境的修改。",
         "placeholder": "选择 Teardown 集合",
-        "trigger_add": "+ Teardown",
+        "trigger_add": "+ 清理",
         "trigger_selected": "Teardown：{name}",
         "trigger_remove": "移除 Teardown 集合"
       },
@@ -297,6 +297,16 @@
       "waiting_for_infra": "等待云基础设施...",
       "terminated_no_data_title": "运行结束，没有指标",
       "terminated_no_data_description": "此运行在生成任何性能数据之前终止。它可能在设置过程中失败或在测试开始之前停止。",
+      "resolution_failure_reason": {
+        "dataset_no_compiled_data": "所选数据集尚无已编译的数据。请在运行前导入数据源。",
+        "dataset_unsupported_source": "云端运行不支持此数据集视图的数据源。请先将数据源上传到 Postman。",
+        "dataset_service_unconfigured": "此环境中的云端运行不支持数据集。如需启用，请联系 Postman 支持团队。",
+        "dataset_service_bad_response": "加载数据集时出错，请重试。",
+        "dataset_view_not_found": "Postman 找不到此数据集或视图，或者你没有访问权限。",
+        "dataset_service_unreachable": "数据集加载失败，请重试。",
+        "dataset_too_large": "所选数据集视图过大，无法用于云端运行。请通过行范围（起始/结束）或筛选视图缩小范围。"
+      },
+      "dataset_resolution_start_failure": "无法为本次运行加载所选数据集。请确认数据集和视图仍然存在且你有访问权限，然后重试。",
       "test_running": "测试运行中...",
       "metrics_pending": "测试完成后，性能指标将可用。",
       "run_in_progress_title": "运行中",
@@ -387,7 +397,7 @@
         "teardown_collection_empty": "等待 Teardown 集合运行完成。",
         "finishing": "总结",
         "finishing_empty": "结束运行并提供结果。",
-        "finishing_failed": "无法汇总所有实例的结果。“摘要”选项卡中可能提供部分结果。",
+        "finishing_failed": "无法汇总所有实例的结果。 “摘要”选项卡中可能提供部分结果。",
         "status": {
           "pending": "待处理",
           "active": "进行中",
@@ -405,7 +415,7 @@
       },
       "banners": {
         "pre_instrumentation": "此运行早于执行跟踪，因此详细的活动不可用。",
-        "incomplete": "部分活动日志—您的结果不受影响。",
+        "incomplete": "部分活动日志 — 您的结果不受影响。",
         "user_aborted_untraced": "此运行已手动停止。未记录停止信号后的活动。"
       },
       "stage_strip": {
@@ -436,6 +446,7 @@
         "empty_filter_description": "尝试调整阶段或状态过滤器，或清除搜索。",
         "empty_default_title": "没有记录任何活动",
         "empty_default_description": "此次运行未捕获任何执行活动。",
+        "dataset_resolution_failed": "数据集解析失败",
         "lifecycle": {
           "setup_success": "Setup 已完成",
           "setup_failure": "Setup 失败",
@@ -476,8 +487,8 @@
   },
   "datasets": {
     "upgrade": {
-      "heading": "升级后即可将 Dataset 用作迭代数据",
-      "description": "Dataset 可以在应用内、CLI 和云端运行中，为性能测试提供可复用、可共享的测试数据。升级方案即可将 Dataset 视图附加为迭代数据。"
+      "heading": "升级后即可将数据集用作迭代数据",
+      "description": "数据集可以在应用内、CLI 和云端运行中，为性能测试提供可复用、可共享的测试数据。升级方案即可将数据集视图附加为迭代数据。"
     }
   },
   "compare_runs": {

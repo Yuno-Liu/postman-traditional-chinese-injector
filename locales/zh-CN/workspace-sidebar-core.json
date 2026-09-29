@@ -119,25 +119,25 @@
     "elements": {
       "http": {
         "card_label": "HTTP",
-        "info_text": "超文本传输​​协议 (HTTP) 是一种应用层协议，通常用于构建 REST API。使用 HTTP 请求测试您的 HTTP API。",
+        "info_text": "超文本传输​​协议 (HTTP) 是一种应用层协议，通常用于构建 REST API。使用 HTTP 请求 测试您的 HTTP API。",
         "no_permission_text": "您没有权限在这个工作区中创建 HTTP 请求。",
         "offline_text": "您需要在线才能创建 HTTP 请求。"
       },
       "graphql": {
         "card_label": "GraphQL",
-        "info_text": "GraphQL 是一种 API 查询语言，旨在为客户端提供其所需的准确信息。使用 GraphQL 请求测试您的 GraphQL API。",
+        "info_text": "GraphQL 是一种 API 查询语言，旨在为客户端提供其所需的准确信息。使用 GraphQL 请求 测试您的 GraphQL API。",
         "no_permission_text": "您没有权限在这个工作区中创建 GraphQL 请求。",
         "offline_text": "您需要在线才能创建 GraphQL 请求。"
       },
       "grpc": {
         "card_label": "gRPC",
-        "info_text": "gRPC 是一个高性能的 RPC 框架，常用于构建微服务。使用 gRPC 请求测试您的 gRPC API。",
+        "info_text": "gRPC 是一个高性能的 RPC 框架，常用于构建微服务。使用 gRPC 请求 测试您的 gRPC API。",
         "no_permission_text": "您没有权限在这个工作区中创建 gRPC 请求。",
         "offline_text": "您需要在线才能创建 gRPC 请求。"
       },
       "websocket": {
         "card_label": "WebSocket",
-        "info_text": "WebSocket 使用持久通信通道实现客户端和服务器之间的实时通信。使用 WebSocket 请求测试基于 WebSocket 的 API。",
+        "info_text": "WebSocket 使用持久通信通道实现客户端和服务器之间的实时通信。使用 WebSocket 请求 测试基于 WebSocket 的 API。",
         "no_permission_text": "您没有权限在这个工作区中创建 WebSocket 请求。",
         "offline_text": "您需要在线才能创建 WebSocket 请求。"
       },
@@ -162,13 +162,13 @@
       },
       "socketio": {
         "card_label": "Socket.IO",
-        "info_text": "Socket.IO 是一个构建在 WebSocket 之上的框架，用于启用事件驱动的客户端-服务器通信。使用 Socket.IO 请求测试基于 Socket.IO 的 API。",
+        "info_text": "Socket.IO 是一个构建在 WebSocket 之上的框架，用于启用事件驱动的客户端-服务器通信。使用 Socket.IO 请求 测试基于 Socket.IO 的 API。",
         "no_permission_text": "您没有权限在这个工作区中创建 Socket.IO 请求。",
         "offline_text": "您需要在线才能创建 Socket.IO 请求。"
       },
       "mqtt": {
         "card_label": "MQTT",
-        "info_text": "MQTT 是一种广泛用于物联网 (IoT) 的轻量级消息传递协议。使用 MQTT 请求测试基于 MQTT 的 API。",
+        "info_text": "MQTT 是一种广泛用于物联网 (IoT) 的轻量级消息传递协议。使用 MQTT 请求 测试基于 MQTT 的 API。",
         "no_permission_text": "您没有权限在这个工作区中创建 MQTT 请求。",
         "offline_text": "您需要在线才能创建 MQTT 请求。"
       },
@@ -192,17 +192,17 @@
       },
       "monitor": {
         "card_label": "监控",
-        "info_text": "使用 Monitor 安排您的 Postman 集合定期运行。",
-        "disabled_text": "Monitor 帮助您按计划运行 Postman 集合。",
-        "offline_text": "离线时无法创建 Monitor。",
-        "no_permission_text": "您没有权限在这个工作区中创建 Monitor。"
+        "info_text": "使用监控安排您的 Postman 集合定期运行。",
+        "disabled_text": "监控帮助您按计划运行 Postman 集合。",
+        "offline_text": "离线时无法创建监控。",
+        "no_permission_text": "您没有权限在这个工作区中创建监控。"
       },
       "flows": {
         "card_label": "流程",
-        "info_text": "Flow 让您可视化、测试和自动化 API 工作流程",
-        "disabled_text": "Postman Flow 是用于构建 API 驱动的应用程序的可视化工具。您可以使用 Flow 来链接请求、处理数据并在工作区中创建真实的工作流程。",
-        "offline_text": "离线时无法创建 Flow。",
-        "no_permission_text": "您没有权限在这个工作区中创建 Flow。"
+        "info_text": "流程让您可视化、测试和自动化 API 工作流程",
+        "disabled_text": "Postman 流程是用于构建 API 驱动的应用程序的可视化工具。您可以使用流程来链接请求、处理数据并在工作区中创建真实的工作流程。",
+        "offline_text": "离线时无法创建流程。",
+        "no_permission_text": "您没有权限在这个工作区中创建流程。"
       },
       "workspace": {
         "card_label": "工作区",
@@ -230,33 +230,33 @@
         "create_with_template_label": "使用模板创建",
         "create_with_ai_mock_dependencies_label": "模拟外部 API",
         "create_with_ai_mock_service_label": "模拟您自己的服务",
-        "offline_text": "离线状态下无法创建 Mock 服务器。",
-        "no_permission_text": "您没有权限在此工作区中创建 Mock 服务器。"
+        "offline_text": "离线状态下无法创建模拟服务器。",
+        "no_permission_text": "您没有权限在此工作区中创建模拟服务器。"
       },
       "mock_server": {
-        "card_label": "Mock 服务器",
-        "info_text": "将 Mock 部署为在线服务。"
+        "card_label": "模拟服务器",
+        "info_text": "将模拟服务器部署为在线服务。"
       },
       "classic_mock_server": {
         "card_label": "Mock Server",
-        "info_text": "根据集合中保存的示例创建 Mock 服务器。"
+        "info_text": "根据集合中保存的示例创建模拟服务器。"
       },
       "mock_with_collection": {
         "card_label": "从集合创建",
-        "info_text": "基于集合中已保存的示例创建 Mock Server。"
+        "info_text": "基于集合中已保存的示例创建模拟服务器。"
       },
       "mock_with_code": {
         "card_label": "虚拟服务",
         "info_text": "创建由代码驱动的虚拟服务。"
       },
       "code_based_mock": {
-        "card_label": "Mock 服务",
-        "info_text": "创建 Mock",
-        "offline_text": "离线状态下无法创建 Mock。",
-        "no_permission_text": "你没有在此工作区中创建 Mock 的权限。"
+        "card_label": "模拟服务器服务",
+        "info_text": "创建模拟服务器",
+        "offline_text": "离线状态下无法创建模拟服务器。",
+        "no_permission_text": "你没有在此工作区中创建模拟服务器的权限。"
       },
       "local_mock": {
-        "info_text": "编写 Mock 的行为逻辑，可在本地运行或部署为 Mock Server。"
+        "info_text": "编写模拟服务器的行为逻辑，可在本地运行或部署为模拟服务器。"
       },
       "documentation": {
         "card_label": "文档"
@@ -265,13 +265,13 @@
         "card_label": "文档",
         "info_text": "创建文档以编写指南、笔记或 API 文档。",
         "create_error": "文档创建失败，请重试。",
-        "no_permission_text": "你没有权限在此 workspace 中创建文档。"
+        "no_permission_text": "你没有权限在此工作区中创建文档。"
       },
       "sdk_gen": {
         "card_label": "SDK",
         "offline_text": "离线时无法生成 SDK。",
         "no_permission_text": "您没有权限在此工作区中生成 SDK。",
-        "no_edit_permission_collection": "您需要对此集合的编辑权限才能生成 SDK。",
+        "no_edit_permission_collection": "您需要对此 集合 的编辑权限才能生成 SDK。",
         "no_edit_permission_spec": "您需要对此 API 定义的编辑权限才能生成 SDK。"
       },
       "webhook": {
@@ -433,8 +433,8 @@
         "plural": "元素"
       },
       "collection": {
-        "singular": "集合",
-        "plural": "集合"
+        "singular": "Collection",
+        "plural": "Collection"
       },
       "folder": {
         "singular": "文件夹",
@@ -449,8 +449,8 @@
         "plural": "示例"
       },
       "environment": {
-        "singular": "环境",
-        "plural": "环境"
+        "singular": "Environment",
+        "plural": "Environment"
       },
       "globals": {
         "singular": "全局变量",
@@ -461,12 +461,12 @@
         "plural": "API"
       },
       "mock": {
-        "singular": "Mock 服务器",
-        "plural": "Mock 服务器"
+        "singular": "模拟服务器",
+        "plural": "模拟服务器"
       },
       "extensible_collection": {
-        "singular": "集合",
-        "plural": "集合"
+        "singular": "Collection",
+        "plural": "Collection"
       },
       "api_definition_file": {
         "singular": "定义文件",
@@ -529,8 +529,8 @@
         "plural": "集合运行"
       },
       "performance_test": {
-        "singular": "性能测试",
-        "plural": "性能测试"
+        "singular": "性能 测试",
+        "plural": "性能 测试"
       },
       "monitor": {
         "singular": "Monitor",
@@ -539,6 +539,7 @@
     },
     "share_button": "分享",
     "copy_link": "复制链接",
+    "copy_link_upgrade_heading": "链接已复制。升级以添加团队成员，让他们可以打开此链接",
     "dirty_share": "您未保存的更改将不会被共享。",
     "something_went_wrong": "出了点问题",
     "with_people": "与人",
@@ -637,7 +638,7 @@
     "run_in_postman": {
       "default_label": "了解更多。",
       "public_workspace_label": "在 Postman 中运行",
-      "embed_learn_more_button": "在您的网站或文档中嵌入 <1><0>{buttonText}</0></1> 按钮，以便人们更轻松地发现您的集合并与之互动。",
+      "embed_learn_more_button": "在您的网站或文档中嵌入 <1><0>{buttonText}</0></1> 按钮，以便人们更轻松地发现您的 集合 并与之互动。",
       "everyone_can_view_and_fork_public_collection": "Postman 上的每个人都可以查看并 fork 这个公开集合。",
       "generating_code_snippet": "正在生成代码片段...",
       "render_static_button_message": "该按钮将指向集合的静态快照。它不会随着集合的更改而更新。",
@@ -747,7 +748,7 @@
     },
     "description_single": "Deleting this will remove all monitors, scheduled runs, and integrations, deactivate any associated mock servers.",
     "description_single_reusable": "Deleting this will remove monitors, scheduled runs, and integrations. Mock servers get deactivated, and linked requests will no longer follow updates from the original.",
-    "description_multiple": "这将停用与这些集合相关联的 Monitor、计划运行、集成和 Mock Server。",
+    "description_multiple": "这将停用与这些集合相关联的监控、计划运行、集成和模拟服务器。",
     "description_multiple_docs_sites": "所有文档站点都被删除。",
     "description_single_git_link": "Deleting this will remove all monitors, scheduled runs, and integrations, disconnect the remote repository, and deactivate any associated mock servers.",
     "description_single_git_link_reusable": "Deleting this will remove all monitors, scheduled runs, and integrations, disconnect the remote repository. Mock servers get deactivated, and linked requests will no longer follow updates from the original.",
@@ -762,7 +763,7 @@
     "delete_extinsible_collection": "确定要删除此集合吗？",
     "could_not_restore_message": "此集合无法从回收站中恢复。",
     "delete_confirmation_text": "确定要删除 <1>{name}</1> 吗？",
-    "delete_pinned_doc_confirmation": "此文档已固定到 workspace 概览中。确定要删除吗？",
+    "delete_pinned_doc_confirmation": "此文档已固定到工作区概览中。确定要删除吗？",
     "this_cant_be_undone": "此操作无法撤销。",
     "delete_entity_question": "删除 {entity}？",
     "delete_elements_question": "删除元素？",
@@ -828,7 +829,7 @@
     },
     "restore": {
       "heading": "此工作区已归档",
-      "description": "<0>它已从视图中移除，Monitor 也已关闭。</0> <1><0>恢复</0></1>",
+      "description": "<0>它已从视图中移除，监控也已关闭。</0> <1><0>恢复</0></1>",
       "toast": {
         "success_description": "工作区已恢复",
         "failure_description": "出现了一点小故障，请重试。",

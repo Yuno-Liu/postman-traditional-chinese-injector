@@ -5,7 +5,7 @@
   "header": {
     "heading": "回收站",
     "back_to_workspace": "返回",
-    "description": "您有权限访问的工作区中已删除的 {model} 将显示在此处。如果您拥有编辑权限，可以恢复或永久删除这些项目。"
+    "description": "您有权限访问的工作区中已删除的{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {环境} environment {环境} Flow {流程} flow {流程} other {{model}}}将显示在此处。如果您拥有编辑权限，可以恢复或永久删除这些项目。"
   },
   "table": {
     "header": {
@@ -28,17 +28,17 @@
       "description": "您删除的集合将显示在此处。"
     },
     "blankState": {
-      "title": "未找到 {model}",
+      "title": "未找到{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {环境} environment {环境} Flow {流程} flow {流程} other {{model}}}",
       "description": "请尝试其他搜索词、调整筛选条件或检查拼写错误。"
     }
   },
   "actions": {
     "delete": {
       "toasts": {
-        "success_body": "集合 {name} 已成功删除。",
+        "success_body": "Collection {name} 已成功删除。",
         "success_title": "集合已永久删除",
         "error_body": "无法删除集合。",
-        "permission_error": "您没有权限删除此 {model}"
+        "permission_error": "您没有权限删除此{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {环境} environment {环境} Flow {流程} flow {流程} other {{model}}}"
       }
     },
     "restore": {
@@ -48,7 +48,7 @@
         "success_body": "{collection} 现已在 {workspace} 中。",
         "success_title": "集合恢复成功",
         "success_link": "查看集合",
-        "permission_error": "您没有权限恢复此 {model}"
+        "permission_error": "您没有权限恢复此{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {环境} environment {环境} Flow {流程} flow {流程} other {{model}}}"
       }
     },
     "commons": {
@@ -112,17 +112,17 @@
     }
   },
   "banner": {
-    "auto_removal": "系统将自动从回收站中删除 {model}。",
-    "auto_removal_fix_days": "系统将根据您的套餐，在固定天数后自动从回收站中删除 {model}。",
-    "auto_removal_retention_days": "系统将在 {count, plural, one {# 天} other {# 天}}后自动从回收站中删除 {model}。"
+    "auto_removal": "系统将自动从回收站中删除{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {环境} environment {环境} Flow {流程} flow {流程} other {{model}}}。",
+    "auto_removal_fix_days": "系统将根据您的套餐，在固定天数后自动从回收站中删除{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {环境} environment {环境} Flow {流程} flow {流程} other {{model}}}。",
+    "auto_removal_retention_days": "系统将在 {count, plural, one {# 天} other {# 天}}后自动从回收站中删除{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {环境} environment {环境} Flow {流程} flow {流程} other {{model}}}。"
   },
   "filters": {
     "search": {
-      "clear_button_tooltip": "清除 {model} 名称",
-      "placeholder": "搜索 {model}"
+      "clear_button_tooltip": "清除{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {环境} environment {环境} Flow {流程} flow {流程} other {{model}}}名称",
+      "placeholder": "搜索{model, select, Collection {集合} collection {集合} Collections {集合} collections {集合} Environment {环境} environment {环境} Flow {流程} flow {流程} other {{model}}}"
     },
     "workspaces": {
-      "placeholder": "工作区",
+      "placeholder": "Workspace",
       "empty_state_message": "未找到工作区"
     },
     "deleted_by": {

@@ -1,5 +1,7 @@
 {
   "composer": {
+    "model_picker_aria_label": "模型：{model}",
+    "model_picker_heading": "选择模型",
     "model_select_label": "模型",
     "placeholder": "输入提示词",
     "send_button_label": "发送消息",
@@ -30,16 +32,22 @@
     "user_label": "你"
   },
   "credentials": {
-    "access_unavailable_notice": "Postman AI 访问暂时不可用。您也可以在下方输入 API 密钥。",
-    "add_api_key_button_label": "手动添加 API 密钥",
+    "access_unavailable_notice": "Postman AI 暂时无法访问。请使用你自己的 API 密钥继续。",
     "api_key_label": "API Key",
     "api_key_placeholder": "输入 API Key",
+    "api_key_required_notice": "添加 API 密钥以发送消息。",
     "checking_access_status": "正在检查 Postman AI 访问权限…",
+    "checking_status": "正在检查…",
     "clear_button_label": "清除密钥",
-    "consent_required_notice": "Postman AI 需要您的同意。您也可以在下方输入 API 密钥。",
+    "consent_required_notice": "Postman AI 需要你的同意。请使用你自己的 API 密钥继续。",
+    "included_group_label": "已包含",
+    "key_added_status": "已添加密钥",
+    "key_missing_status": "无密钥",
+    "postman_included_notice": "已包含在你的 Postman 套餐中，无需 API 密钥。",
+    "postman_unavailable_status": "不可用",
     "provider_label": "提供方",
     "session_notice": "你的 API Key 仅保存在本次浏览器会话的内存中，并直接发送给提供方。",
-    "use_postman_button_label": "使用 Postman"
+    "your_providers_group_label": "你的提供商"
   },
   "header": {
     "clear_chat_button_label": "清空对话",
