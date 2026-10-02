@@ -67,7 +67,7 @@
   },
   "cartographer": {
     "empty_state": {
-      "description": "選擇一個資料來源以檢視其結構。"
+      "description": "選擇一個數據源以檢視其結構。"
     },
     "loading": {
       "description": "正在載入 Schema…"
@@ -143,15 +143,15 @@
     }
   },
   "secret_field": {
-    "link_to_vault": "連結到保險庫金鑰",
-    "unlink_vault": "取消連結保險庫金鑰",
+    "link_to_vault": "連結到 保險庫 金鑰",
+    "unlink_vault": "取消連結 保險庫 金鑰",
     "view_in_vault": "在 Vault 中檢視",
     "new_secret": "新建金鑰",
-    "link_aria_label": "將 {label} 連結到保險庫金鑰",
-    "unlink_aria_label": "取消 {label} 與保險庫金鑰的連結",
+    "link_aria_label": "將 {label} 連結到 保險庫 金鑰",
+    "unlink_aria_label": "取消 {label} 與 保險庫 金鑰 的連結",
     "search_placeholder": "搜尋秘密...",
     "no_matching": "沒有匹配的秘密",
-    "no_available": "沒有可用的保險庫秘密",
+    "no_available": "沒有可用的 保險庫 秘密",
     "choose_file": "選擇檔案",
     "file_prompt_suffix": "（您也可以在下方貼上{label}）",
     "selected_file": "已選檔案：",
@@ -198,7 +198,7 @@
   },
   "data_source_edit": {
     "extend_with_ai": "用 AI 擴充套件",
-    "extend_with_ai_tooltip": "生成並追加合成資料行",
+    "extend_with_ai_tooltip": "生成並追加合成數據行",
     "extend_with_ai_unavailable": "此資料來源的原始資料為只讀，無法擴充套件",
     "loading": "正在載入源...",
     "last_refreshed_label": "上次重新整理",
@@ -285,11 +285,11 @@
   },
   "save_view_output_modal": {
     "title": "將輸出儲存為資料來源",
-    "description": "將此檢視的輸出儲存為新的 Postman 雲端資料來源，以便在雲端執行、Monitor 和其他檢視中複用資料庫資料來源的結果。",
+    "description": "將此檢視的輸出儲存為新的 Postman 雲端資料來源，以便在雲端執行、監控和其他檢視中複用資料庫資料來源的結果。",
     "name_label": "資料來源名稱",
     "name_placeholder": "例如 top_customers_snapshot",
     "name_invalid": "請使用字母、數字和下劃線，並以字母或下劃線開頭。",
-    "name_taken": "此資料集中已存在同名資料來源，請使用其他名稱。",
+    "name_taken": "此資料集中已存在同名數據源，請使用其他名稱。",
     "row_count_hint": "{count, plural, one {將上傳 # 行} other {將上傳 # 行}}",
     "unsaved_query_hint": "將使用當前顯示的未儲存查詢。",
     "cancel": "取消",
@@ -305,14 +305,14 @@
     "title": "在集合執行中使用",
     "description": "開啟集合執行器，並將此檢視設為執行的迭代資料。",
     "view_label": "資料集檢視",
-    "collection_label": "集合",
+    "collection_label": "Collection",
     "collection_placeholder": "選擇集合",
     "no_collections": "此工作區中沒有可執行的集合。",
     "load_error": "無法載入此工作區中的集合。",
     "retry": "重試",
     "open_error": "無法開啟集合執行器，請重試。",
     "cancel": "取消",
-    "submit": "在 Runner 中開啟"
+    "submit": "在執行器中開啟"
   },
   "dataset_create": {
     "new_dataset": "新資料集",
@@ -324,7 +324,7 @@
     "description_label": "描述",
     "empty_state_banner": {
       "title": "什麼是資料集？",
-      "description": "資料集用於組織來自檔案和資料庫的可複用資料，讓你能用 SQL 查詢它，並在集合執行、腳本、Mock Server 和 Monitor 中使用。",
+      "description": "資料集用於組織來自檔案和資料庫的可複用資料，讓你能用 SQL 查詢它，並在集合執行、腳本、模擬伺服器和監控中使用。",
       "learn_more": "瞭解詳情"
     },
     "toasts": {
@@ -354,8 +354,8 @@
       },
       "sample": {
         "prompt": "剛開始使用？先從示例資料來源試試。",
-        "name": "Customers",
-        "description": "包含聯絡方式、所在地區和賬戶狀態列位的客戶資料。",
+        "name": "客戶",
+        "description": "包含聯絡方式、所在地區和賬戶狀態欄位的客戶資料。",
         "add_error": "無法新增該示例資料來源，請重試。"
       },
       "enterprise_upgrade": {
@@ -373,7 +373,7 @@
         "jdbc": "JDBC 資料來源",
         "remote": "公共 URL"
       },
-      "add_busy": "另一個資料來源仍在新增中，請等待完成後重試。"
+      "add_busy": "另一個數據源仍在新增中，請等待完成後重試。"
     },
     "views": {
       "title": "資料檢視",
@@ -523,7 +523,7 @@
   "agent_unavailable": {
     "not_installed": {
       "title": "安裝 Postman Desktop Agent 後才能執行此查詢",
-      "body": "此 Dataset 使用了執行在你本機上的資料來源。請安裝 Postman Desktop Agent，以便從瀏覽器查詢該資料來源。",
+      "body": "此資料集使用了執行在你本機上的資料來源。請安裝 Postman Desktop Agent，以便從瀏覽器查詢該資料來源。",
       "cta": "安裝 Postman Desktop Agent"
     },
     "wrong_version": {
@@ -553,7 +553,7 @@
       "local_file_workspace": "本地檔案資料來源僅在桌面端的本地工作區中可用。請改用資料庫或遠端檔案資料來源，或切換到本地工作區。"
     },
     "choose_file": "選擇檔案",
-    "unsupported_source": "資料守護程式尚不支援該資料來源型別。",
+    "unsupported_source": "資料守護程序尚不支援該資料來源型別。",
     "local_file_unavailable_web": "網頁版不支援本地檔案。請開啟 Postman 桌面應用查詢本地檔案，或在此使用遠端檔案或資料庫資料來源。",
     "schema": {
       "search_placeholder": "搜尋 Schema",

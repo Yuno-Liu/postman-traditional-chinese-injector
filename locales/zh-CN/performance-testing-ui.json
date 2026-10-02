@@ -84,7 +84,7 @@
         "not_ready": "設定系統進行效能測試時出現問題。"
       },
       "limit_exceeded": "超出執行限制",
-      "workload_running": "另一個效能測試已經在進行中。請等待當前測試完成，然後再開始新的測試。"
+      "workload_running": "另一個性能測試已經在進行中。請等待當前測試完成，然後再開始新的測試。"
     },
     "tooltips": {
       "booting": "您的系統正在設定以進行效能測試。這可能需要幾秒鐘。"
@@ -212,7 +212,7 @@
       }
     },
     "warnings": {
-      "high_virtual_users": "高 VU 執行可能會影響您的系統效能。"
+      "high_virtual_users": "高 VU 執行可能會影響您的系統性能。"
     },
     "delete_confirmation": {
       "title": "刪除效能執行",
@@ -231,7 +231,7 @@
         "info_aria_label": "關於 Setup 集合",
         "environment_mutation_helper_text": "在測試前執行。對環境的修改會延續到測試和 Teardown 階段。",
         "placeholder": "選擇 Setup 集合",
-        "trigger_add": "+ Setup",
+        "trigger_add": "+ 準備",
         "trigger_selected": "Setup：{name}",
         "trigger_remove": "移除 Setup 集合",
         "failed_primary_cause": "Setup 生命週期集合執行失敗。",
@@ -243,7 +243,7 @@
         "info_aria_label": "關於 Teardown 集合",
         "environment_mutation_helper_text": "在測試後執行，並沿用此前對環境的修改。",
         "placeholder": "選擇 Teardown 集合",
-        "trigger_add": "+ Teardown",
+        "trigger_add": "+ 清理",
         "trigger_selected": "Teardown：{name}",
         "trigger_remove": "移除 Teardown 集合"
       },
@@ -297,6 +297,16 @@
       "waiting_for_infra": "等待雲基礎設施...",
       "terminated_no_data_title": "執行結束，沒有指標",
       "terminated_no_data_description": "此執行在生成任何效能資料之前終止。它可能在設定過程中失敗或在測試開始之前停止。",
+      "resolution_failure_reason": {
+        "dataset_no_compiled_data": "所選資料集尚無已編譯的資料。請在執行前匯入資料來源。",
+        "dataset_unsupported_source": "雲端執行不支援此資料集檢視的資料來源。請先將資料來源上傳到 Postman。",
+        "dataset_service_unconfigured": "此環境中的雲端執行不支援資料集。如需啟用，請聯絡 Postman 支援團隊。",
+        "dataset_service_bad_response": "載入資料集時出錯，請重試。",
+        "dataset_view_not_found": "Postman 找不到此資料集或檢視，或者你沒有訪問許可權。",
+        "dataset_service_unreachable": "資料集載入失敗，請重試。",
+        "dataset_too_large": "所選資料集檢視過大，無法用於雲端執行。請通過行範圍（起始/結束）或篩選檢視縮小範圍。"
+      },
+      "dataset_resolution_start_failure": "無法為本次執行載入所選資料集。請確認資料集和檢視仍然存在且你有訪問許可權，然後重試。",
       "test_running": "測試執行中...",
       "metrics_pending": "測試完成後，效能指標將可用。",
       "run_in_progress_title": "執行中",
@@ -357,7 +367,7 @@
     },
     "static_ip": {
       "label": "出口路由策略",
-      "info_aria_label": "設定壓測負載機傳送請求所使用的源 IP。",
+      "info_aria_label": "設定壓測負載機發送請求所使用的源 IP。",
       "shared_description": "請求來自共享的 IP 地址池。",
       "static_description": "請求來自可在防火牆中加入白名單的靜態 IP。<Link><Text>瞭解更多</Text></Link>",
       "option_shared": "動態 IP",
@@ -387,7 +397,7 @@
         "teardown_collection_empty": "等待 Teardown 集合執行完成。",
         "finishing": "總結",
         "finishing_empty": "結束執行並提供結果。",
-        "finishing_failed": "無法彙總所有例項的結果。“摘要”選項卡中可能提供部分結果。",
+        "finishing_failed": "無法彙總所有例項的結果。 “摘要”選項卡中可能提供部分結果。",
         "status": {
           "pending": "待處理",
           "active": "進行中",
@@ -405,7 +415,7 @@
       },
       "banners": {
         "pre_instrumentation": "此執行早於執行跟蹤，因此詳細的活動不可用。",
-        "incomplete": "部分活動日誌—您的結果不受影響。",
+        "incomplete": "部分活動日誌 — 您的結果不受影響。",
         "user_aborted_untraced": "此執行已手動停止。未記錄停止訊號後的活動。"
       },
       "stage_strip": {
@@ -436,6 +446,7 @@
         "empty_filter_description": "嘗試調整階段或狀態過濾器，或清除搜尋。",
         "empty_default_title": "沒有記錄任何活動",
         "empty_default_description": "此次執行未捕獲任何執行活動。",
+        "dataset_resolution_failed": "資料集解析失敗",
         "lifecycle": {
           "setup_success": "Setup 已完成",
           "setup_failure": "Setup 失敗",
@@ -476,8 +487,8 @@
   },
   "datasets": {
     "upgrade": {
-      "heading": "升級後即可將 Dataset 用作迭代資料",
-      "description": "Dataset 可以在應用內、CLI 和雲端執行中，為效能測試提供可複用、可共享的測試資料。升級方案即可將 Dataset 檢視附加為迭代資料。"
+      "heading": "升級後即可將資料集用作迭代資料",
+      "description": "資料集可以在應用內、CLI 和雲端執行中，為效能測試提供可複用、可共享的測試資料。升級方案即可將資料集檢視附加為迭代資料。"
     }
   },
   "compare_runs": {

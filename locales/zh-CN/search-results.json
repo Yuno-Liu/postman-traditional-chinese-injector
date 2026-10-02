@@ -44,7 +44,7 @@
     }
   },
   "scope": {
-    "default_title": "個人空間",
+    "default_title": "個人 空間",
     "team_title": "{teamName} 團隊"
   },
   "sort_label": "排序方式",
@@ -92,8 +92,8 @@
         "collection": "集合",
         "request": "請求",
         "environment": "環境",
-        "document": "檔案",
-        "mock": "Code Mock"
+        "document": "文件",
+        "mock": "程式碼模擬伺服器"
       },
       "featured_label": "精選",
       "trending_label": "流行趨勢",
@@ -127,13 +127,13 @@
         "entity_type": {
           "folder": "資料夾",
           "api": "API",
-          "workspace": "工作區",
+          "workspace": "Workspace",
           "team": "團隊",
           "flow": "Flow",
-          "collection": "集合",
+          "collection": "Collection",
           "request": "請求",
-          "environment": "環境",
-          "document": "檔案",
+          "environment": "Environment",
+          "document": "文件",
           "mock": "Code Mock"
         }
       }

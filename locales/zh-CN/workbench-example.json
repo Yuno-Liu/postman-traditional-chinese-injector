@@ -25,7 +25,7 @@
     "send_button_text": "試用",
     "tabs": {
       "params": "引數",
-      "headers": "Headers",
+      "headers": "請求頭",
       "body": "請求體"
     },
     "content_pane": {
@@ -108,7 +108,7 @@
           "detail": "此請求除請求頭外沒有內容需要傳送。"
         },
         "205": {
-          "detail": "重置傳送此請求的檔案。"
+          "detail": "重置傳送此請求的文件。"
         },
         "206": {
           "detail": "根據“Range”請求頭，僅接收部分資源。"
@@ -402,7 +402,7 @@
         "title": "響應大小",
         "rows": {
           "body": "請求體",
-          "headers": "Headers",
+          "headers": "請求頭",
           "uncompressed": "未壓縮"
         },
         "xhr_agent_used": "如需精確的大小明細，請通過 Postman Desktop Agent 傳送請求。",
@@ -440,7 +440,7 @@
       }
     },
     "loading_message": "正在傳送請求…",
-    "loading_active_env_message": "正在獲取當前環境併傳送請求",
+    "loading_active_env_message": "正在獲取當前環境併發送請求",
     "heading": "響應",
     "empty_view_message": {
       "without_url": "傳送請求以獲取響應",
@@ -454,7 +454,7 @@
     "error_view_message": {
       "request": "無法傳送請求",
       "response": "無法獲取響應",
-      "script": "評估 {scriptPhase} 腳本時出錯",
+      "script": "評估 {scriptPhase} 腳本 時出錯",
       "troubleshoot": "瞭解如何排查請求問題",
       "fallback": "出現了一些問題"
     },
@@ -624,7 +624,7 @@
                 "desc": "<0>您也可以在測試或請求前腳本選項卡中使用 pm.visualizer.set() 方法自行設定視覺化工具。瞭解更多關於</0><1>響應視覺化</1><2>的資訊。</2>"
               },
               "toggle_options_aria_label": "切換視覺化選項",
-              "disabled_while_executing_tooltip": "響應載入中"
+              "disabled_while_executing_tooltip": "響應 載入中"
             }
           },
           "tabs": {
@@ -687,7 +687,7 @@
         }
       },
       "headers": {
-        "label": "Headers",
+        "label": "請求頭",
         "types": {
           "accept_ranges": "指示客戶端是否可以請求檔案的一部分，而不必下載整個檔案。",
           "access_control_allow_credentials": "指示是否將響應暴露給前端 JavaScript 程式碼。在響應預檢請求時，用於指示實際請求是否可以攜帶憑據發起。",
@@ -727,17 +727,17 @@
           "strict_transport_security": "使網站能夠告知瀏覽器只能通過 HTTPS 進行訪問。",
           "trailer": "指示給定的標頭欄位集出現在使用分塊傳輸編碼編碼的訊息的尾部中。",
           "transfer_encoding": "指定用於將實體傳輸給使用者的編碼形式。",
-          "vary": "確定如何匹配未來的請求標頭，以決定是否可以使用快取的響應而不是請求新的標頭。",
-          "via": "由代理新增並用於跟蹤訊息轉發、避免請求迴圈並識別傳送者的協議功能。",
+          "vary": "確定如何匹配未來的 請求 標頭，以決定是否可以使用快取的 響應 而不是請求新的標頭。",
+          "via": "由代理新增並用於跟蹤訊息轉發、避免 請求 迴圈並識別傳送者的協議功能。",
           "warning": "包含有關訊息狀態可能出現的問題的資訊。",
           "www_authenticate": "指定訪問資源時應使用的身份驗證方法。",
-          "x_requested_with": "識別 Ajax 請求。大多數 JavaScript 框架都會傳送帶有 XMLHttpRequest 值的標頭。",
+          "x_requested_with": "識別 Ajax 請求。大多數 JavaScript 框架都會發送帶有 XMLHttpRequest 值的標頭。",
           "x_do_not_track": "可用於要求 Web 應用程式不要跟蹤使用者。注意：此標頭在很大程度上被 Web 應用程式忽略。",
-          "dnt": "可用於要求 Web 應用程式不要跟蹤使用者。這是 Mozilla 的 X-Do-Not-Track 標頭的版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支援此標頭。注意：此標頭在很大程度上被 Web 應用程式忽略。",
+          "dnt": "可用於要求 Web 應用程式不要跟蹤使用者。這是 Mozilla 的 X-Do-Not-Track 標頭的 版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支援此標頭。注意：此標頭在很大程度上被 Web 應用程式忽略。",
           "x_forwarded_for": "標識通過 HTTP 代理或負載均衡器連線到 Web 伺服器的客戶端的原始 IP 地址。",
           "x_frame_options": "用於通過確保其內容未嵌入其他網站來避免點選劫持攻擊。",
           "x_xss_protection": "當頁面檢測到反射的跨站點腳本 (XSS) 攻擊時，停止載入頁面。",
-          "x_content_type_options": "可用於選擇退出 MIME 型別，從宣告的內容型別中嗅探響應。",
+          "x_content_type_options": "可用於選擇退出 MIME 型別，從宣告的內容型別中嗅探 響應 。",
           "x_forwarded_proto": "標識客戶端用於連線到代理或負載均衡器的協議（HTTP 或 HTTPS）。",
           "x_powered_by": "指定支援 Web 應用程式的技術（例如 ASP.NET、PHP、JBoss）。"
         }
@@ -745,12 +745,12 @@
       "tests": {
         "label": "測試結果",
         "empty_test_results": {
-          "title": "沒有針對此請求的測試",
-          "desc": "編寫測試腳本來自動除錯。瞭解有關<1><0>編寫測試</0></1>的更多資訊",
+          "title": "沒有針對此 請求 的測試",
+          "desc": "編寫測試 腳本 來自動除錯。瞭解有關<1><0>編寫測試</0></1>的更多資訊",
           "with_postbot": {
-            "trigger_prompt": "沒有針對此請求的測試",
-            "title": "沒有針對此請求的測試",
-            "desc": "編寫測試腳本來自動除錯。瞭解有關<1><0>編寫測試</0></1>的更多資訊",
+            "trigger_prompt": "沒有針對此 請求 的測試",
+            "title": "沒有針對此 請求 的測試",
+            "desc": "編寫測試 腳本 來自動除錯。瞭解有關<1><0>編寫測試</0></1>的更多資訊",
             "error_after_loaded": {
               "text": "無法生成測試。",
               "button_label": "再試一次",
@@ -788,10 +788,10 @@
           },
           "error": {
             "with_postbot": {
-              "prefix_message": "無法評估測試腳本",
+              "prefix_message": "無法評估測試 腳本",
               "suffix_message": "無法修復測試。",
               "try_again_button": "再試一次",
-              "fix_script_button": "用 AI 修復腳本",
+              "fix_script_button": "用 AI 修復 腳本",
               "refresh_text": "重新整理結果",
               "loading_text": "正在努力..."
             }
@@ -802,8 +802,8 @@
     },
     "schema_editor": {
       "error_boundary": {
-        "title": "架構編輯者載入失敗",
-        "description": "載入架構編輯者時發生意外錯誤。"
+        "title": "架構 編輯者 載入失敗",
+        "description": "載入架構 編輯者 時發生意外錯誤。"
       }
     },
     "example": {
@@ -811,10 +811,10 @@
         "short": "狀態",
         "long": "狀態碼"
       },
-      "status_input_placeholder": "輸入響應程式碼",
+      "status_input_placeholder": "輸入 響應 程式碼",
       "tabs": {
         "body": "請求體",
-        "headers": "Headers"
+        "headers": "請求頭"
       }
     }
   }

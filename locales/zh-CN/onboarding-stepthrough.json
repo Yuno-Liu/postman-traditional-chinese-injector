@@ -8,8 +8,8 @@
       "cta_text": "開始使用"
     },
     "send_request": {
-      "header": "首先傳送請求",
-      "description": "通過建立併傳送請求來測試 API 的行為。",
+      "header": "首先發送 請求",
+      "description": "通過建立併發送請求來測試 API 的行為。",
       "minimized_content": "從這裡開始🚀"
     },
     "save_collection": {
@@ -19,7 +19,7 @@
     },
     "use_postbot": {
       "header": "使用 Postbot 增強您的請求",
-      "description": "讓 Postbot 驗證您的響應、除錯問題、新增檔案等。",
+      "description": "讓 Postbot 驗證您的響應、除錯問題、新增文件等。",
       "minimized_content": "快完成了🙌"
     },
     "finished": {

@@ -166,14 +166,14 @@
       "day_friday": "星期五",
       "day_saturday": "星期六",
       "day_sunday": "星期日",
-      "workspace_label": "工作區",
+      "workspace_label": "Workspace",
       "workspace_placeholder": "選擇工作區",
-      "collection_label": "集合",
+      "collection_label": "Collection",
       "collection_placeholder": "選擇集合",
       "monitor_label": "Monitor",
-      "monitor_placeholder": "選擇 Monitor",
-      "monitor_partial_warning": "部分 Monitor 無法載入，列表可能不完整。",
-      "monitor_load_error": "無法載入 Monitor，請重試。",
+      "monitor_placeholder": "選擇監控",
+      "monitor_partial_warning": "部分監控無法載入，列表可能不完整。",
+      "monitor_load_error": "無法載入監控，請重試。",
       "status_label": "執行結果",
       "status_success": "成功",
       "status_failure": "失敗"
@@ -215,7 +215,7 @@
     "github_branch_required": "分支為必填項",
     "workspace_required": "請選擇工作區",
     "collection_required": "請選擇集合",
-    "monitor_required": "Monitor 為必填項"
+    "monitor_required": "監控為必填項"
   },
   "run_history": {
     "search_placeholder": "搜尋執行記錄……",

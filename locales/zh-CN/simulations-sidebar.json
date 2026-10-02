@@ -5,7 +5,7 @@
   "status_active": "活躍的",
   "status_idle": "閒置的",
   "row_aria_label": "{name}（{status}）",
-  "copy_simulation_url_tooltip": "複製 Mock URL",
+  "copy_simulation_url_tooltip": "複製模擬伺服器 URL",
   "more_actions_tooltip": "檢視更多動作",
   "menu_start": "開始",
   "menu_stop": "停止",

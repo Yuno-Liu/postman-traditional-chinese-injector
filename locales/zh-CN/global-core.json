@@ -118,7 +118,7 @@
       "title": "環境"
     },
     "mock_servers": {
-      "title": "Mock 伺服器"
+      "title": "模擬伺服器"
     },
     "monitors": {
       "title": "Monitor"
@@ -160,7 +160,7 @@
       "open_button": "在桌面上開啟"
     },
     "top_banner": {
-      "title": "在桌面應用程式中開啟這個工作區嗎？",
+      "title": "在桌面應用程式中開啟這個 工作區 嗎？",
       "button_text": "在桌面上開啟"
     }
   },

@@ -95,8 +95,8 @@
         },
         "change_agent": "更換 Agent",
         "agent_name": {
-          "desktop": "Desktop Agent",
-          "cloud": "Cloud Agent"
+          "desktop": "桌面代理",
+          "cloud": "雲代理"
         }
       },
       "fork_recommendation": {
@@ -120,7 +120,7 @@
   },
   "editor_tab": {
     "tabs": {
-      "docs": "檔案",
+      "docs": "文件",
       "params": {
         "label": "引數"
       },
@@ -129,7 +129,7 @@
         "short_label": "驗證"
       },
       "overview": "概覽",
-      "headers": "Headers",
+      "headers": "請求頭",
       "body": {
         "label": "請求體",
         "editor": {
@@ -333,7 +333,7 @@
     "opt_in_modal": {
       "terms": "使用此功能，即表示您同意在 Postman 中使用 AI 的 <1><0>條款</0></1>",
       "primary_action": "繼續",
-      "desc": "<0>Postbot 是您處理所有 API 相關事務的 AI 助手，可以幫助您為 API 編寫測試，甚至構建 Flow。只需檢視</0> <1><0> </0> <1></1> <2>圖示。</2></1>",
+      "desc": "<0>Postbot 是您處理所有 API 相關事務的 AI 助手，可以幫助您為 API 編寫測試，甚至構建流程。只需檢視</0> <1><0> </0> <1></1> <2>圖示。</2></1>",
       "tooltip_close": "關閉"
     },
     "split_loading_message": "正在努力...",

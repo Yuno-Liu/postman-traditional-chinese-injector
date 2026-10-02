@@ -56,6 +56,22 @@ test('inSkippableSubtree 向上遍历祖先', () => {
   assert.strictEqual(inSkippableSubtree(t2), false);
 });
 
+test('inSkippableSubtree 放行编辑器占位提示', () => {
+  const monaco = fakeEl('DIV', { class: 'monaco-editor' });
+  const ph = fakeEl('SPAN', { class: 'monaco-placeholder' }); ph.parentNode = monaco;
+  assert.strictEqual(inSkippableSubtree(fakeText('Use JavaScript', ph)), false);
+  const slate = fakeEl('DIV', { contenteditable: 'true' });
+  const sph = fakeEl('SPAN', { 'data-slate-placeholder': 'true', contenteditable: 'false' }); sph.parentNode = slate;
+  const inner = fakeEl('SPAN'); inner.parentNode = sph;
+  assert.strictEqual(inSkippableSubtree(fakeText('Add a description', inner)), false);
+  const bot = fakeEl('DIV', { 'data-testid': 'inline-postbot-container' }); bot.parentNode = monaco;
+  const p = fakeEl('P'); p.parentNode = bot;
+  assert.strictEqual(inSkippableSubtree(fakeText('Close', p)), false);
+  // 编辑器正文仍跳过
+  const line = fakeEl('SPAN', { class: 'mtk1' }); line.parentNode = monaco;
+  assert.strictEqual(inSkippableSubtree(fakeText('Delete', line)), true);
+});
+
 test('isActive 覆盖 Postman 完整版上下文（网页版 + 桌面 file:// 窗口）', () => {
   // 桌面端：所有 Postman Electron 窗口均为 file://（Scratch Pad 与登入态主窗口都算）
   assert.strictEqual(isActive({ protocol: 'file:', pathname: '/C:/x/html/scratchpad.html' }), true);

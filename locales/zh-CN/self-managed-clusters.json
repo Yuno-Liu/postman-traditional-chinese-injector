@@ -2,7 +2,7 @@
   "heading": "執行器",
   "add_cluster_button": "新增執行器",
   "retry_button": "重試",
-  "description": "執行器在您的網路內執行 Monitor，以便您可以測試私有或受防火牆限制的 API。",
+  "description": "執行器在您的網路內執行監控，以便您可以測試私有或受防火牆限制的 API。",
   "learn_more": "瞭解更多",
   "give_feedback": "提供反饋",
   "search_placeholder": "按執行器名稱過濾",
@@ -35,7 +35,7 @@
     "unavailableWorkspace": "不可用",
     "unavailableWorkspaceTooltip": "該工作區可能是私有或已被刪除。您無權訪問其詳細資訊。",
     "created_by": "建立者：",
-    "created_on": "建立於",
+    "created_on": "創建於",
     "modified_on": "修改於"
   },
   "dropdown": {
@@ -76,7 +76,7 @@
     "modal": {
       "heading": "永久刪除執行器？",
       "confirmation": "<text>您確定要刪除執行器<bold>\"{clusterName}\"</bold>嗎？</text>",
-      "warning": "刪除此執行器將停止使用它的所有 Monitor。",
+      "warning": "刪除此執行器將停止使用它的所有監控。",
       "cancel_button": "取消",
       "delete_button": "刪除"
     },
@@ -104,7 +104,7 @@
       "name_placeholder": "輸入執行器名稱",
       "name_helper_text": "例如，內部 API 執行器 Beta 1",
       "description_label": "描述",
-      "description_placeholder": "例如，為 beta API 執行 Monitor 執行",
+      "description_placeholder": "例如，為 beta API 執行監控執行",
       "custom_runner_created_by": "由您的團隊建立"
     },
     "button": {
@@ -141,7 +141,7 @@
     }
   },
   "runner": {
-    "runner_info_text": "您可以選擇所需區域中的 Postman 執行器，或選擇您自己網路內的執行器來執行 Monitor。",
+    "runner_info_text": "您可以選擇所需區域中的 Postman 執行器，或選擇您自己網路內的執行器來執行監控。",
     "runner_setup_help": "要設定新的執行器，請聯絡您的團隊管理員。",
     "auto_select": "自動選擇",
     "manually_select": "手動選擇",
@@ -161,7 +161,7 @@
         },
         "setup": {
           "title": "2. 在終端中執行此命令",
-          "security_warning_with_key": "安全地複製並儲存此金鑰，因為關閉此視窗後將無法訪問它。如果需要，可以稍後重置金鑰。",
+          "security_warning_with_key": "安全地複製並存儲此金鑰，因為關閉此視窗後將無法訪問它。如果需要，可以稍後重置金鑰。",
           "security_warning_without_key": "丟了鑰匙？您可以重置它，但這將停用任何現有的跑步者，直到使用新金鑰更新它們為止。"
         }
       }

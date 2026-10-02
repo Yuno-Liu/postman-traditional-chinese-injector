@@ -153,6 +153,7 @@ Postman **登入態**主介面是遠端網頁，走上述的語言包攔截即�
 postman-traditional-chinese-injector/
 ├── postman-traditional-chinese-injector.js # 桌面端注入 CLI：建置 / 備份 / 解包 / 注入 / 打包 app.asar，含 --restore
 ├── postman-chinese-injector.js             # 向下相容入口
+├── updater.js                              # 線上更新：程式自更新（GitHub Release）+ 譯文熱更新（update-data 分支）
 ├── pm-chinese.js                           # 執行階段掛鉤（桌面端與瀏覽器擴充功能共用的唯一核心）
 ├── pm-scratchpad-cn.js                     # 第二個掛鉤：登出態 Scratch Pad 的 DOM 詞典替換（僅桌面端）
 ├── pm-main-cn.js                           # 第三個掛鉤：主行程原生選單 / 對話框中文化（僅桌面端）
@@ -167,13 +168,14 @@ postman-traditional-chinese-injector/
 ├── scripts/
 │   ├── convert-to-traditional.js           # 一鍵將語言包與詞典轉換為繁體中文工具
 │   ├── build-data.js                       # 合併 locales/ 並產生可嵌入二進位程式的快照（見下）
+│   ├── build-update.js                     # 產生線上熱更新數據包 dist/update/pm-update.json.gz（CI 推到 update-data 分支）
 │   ├── build-scratchpad-dict.js            # 建置 / 維護 Scratch Pad 詞典 locales/scratchpad/zh-CN.json
 │   ├── build-extension.js                  # 打包 Chrome/Edge (MV3) 瀏覽器擴充功能，供 Postman 網頁版使用
 │   ├── build-bin.js                        # 使用 bun --compile 編譯單檔案二進位執行檔（復用本地快取的執行環境）
 │   ├── build-bin-legacy.js                 # 使用 pkg（Node 執行環境）打包舊版 Windows 二進位執行檔
 │   ├── fetch-runtimes.js                   # 預先拉取各平台 bun 執行環境至本地快取，避免交叉編譯時線上重複下載
 │   └── compress-dist.js                    # 將 dist/ 的二進位程式平行壓縮為發行包（zip / tar.xz）
-├── .github/workflows/                      # CI：建立 tag 自動交叉編譯、平行壓縮並發布 Release
+├── .github/workflows/                      # CI：打 tag 自動交叉編譯並發布 Release；main 改譯文自動發布線上數據包
 └── package.json                            # bin 命令 postman-traditional-chinese-injector、建置腳本、依賴 @electron/asar
 ```
 
@@ -217,9 +219,23 @@ postman-traditional-chinese-injector/
 # 3. 重啟 Postman，介面顯示繁體中文即成功
 ```
 
-二進位程式已內嵌全部繁體中文譯文與 `@electron/asar`，無需聯網、無需安裝 Node。
+二進位程式已內嵌全部繁體中文譯文與 `@electron/asar`，無需 Node；斷網也能用內嵌譯文注入。
 
-> 譯文有更新但不想更換二進位程式？將 `locales/<lang>/` 資料夾放置於**執行檔同目錄**即可覆蓋內嵌數據。
+#### 自動更新（程式 + 譯文）
+
+Postman 更新頻繁，二進位程式每次執行注入前會自動連網檢查兩件事，任何一步失敗都只提示、不影響注入：
+
+1. **程式自更新** —— 對比 GitHub 最新 Release，有新版則下載本平台壓縮包（GitHub 直連與 `ghfast.top` 鏡像**同時下載**，誰先完成用誰），按 Release 附帶的 `SHA256SUMS.txt` 校驗後替換自身，再以相同參數執行新版本。
+2. **譯文熱更新** —— main 分支每次更動譯文，CI 就把最新譯文 + 掛鉤打成 `pm-update.json.gz` 推到 [`update-data`](../../tree/update-data) 分支；程式同時從 GitHub raw 與 jsDelivr 鏡像拉取、取最新一份，快取到本機（Windows `%LOCALAPPDATA%\postman-traditional-chinese-injector`、macOS `~/Library/Caches/…`、Linux `~/.cache/…`），離線時用快取。**不用等發版，譯文修好就能拿到。**
+
+| 想要 | 加參數 |
+|------|--------|
+| 只更新譯文、不替換程式 | `--no-self-update` |
+| 完全不連網（有快取用快取，否則用內嵌） | `--offline` |
+
+> Windows 自更新後程式旁會留一個 `*.exe.old`，下次執行自動刪除。程式所在目錄沒有寫入權限時自更新會跳過，照常注入。
+
+> 想用自己改的譯文？把一個 `locales/<lang>/` 資料夾放在**執行檔旁邊**即可覆蓋內嵌與線上數據（此時不連網取譯文）。
 
 > [!NOTE]
 > **macOS 使用者**：Apple Silicon 首次執行可能提示 `zsh: killed` /「已損毀」，注入時可能提示 `EPERM`——均非檔案損毀，處理方式請見 **👉 [macOS 首次執行 / 注入排障](docs/macos-troubleshooting.md)**。
@@ -244,6 +260,8 @@ node postman-traditional-chinese-injector.js  # 注入；或 npm install -g . �
 | `--resources <dir>` | 直接指定含有 `app.asar` 或未打包 `app/` 的目錄（跳過自動偵測） |
 | `--postman-dir <dir>` | 指定 Postman 安裝根目錄 |
 | `--app-version 12.16.1` | Windows 多版本共存時指定 `app-<version>`（預設選擇最新版） |
+| `--offline` | 不連網：不自更新、不拉取線上譯文（有本機快取則用快取） |
+| `--no-self-update` | 只拉取最新譯文，不自動更新程式本身 |
 | `-v`, `--version` | 顯示本工具版本 |
 | `-h`, `--help` | 顯示說明訊息 |
 
@@ -416,7 +434,7 @@ locales/zh-CN/
 此為 `@electron/asar` v4 的限制。將 Node 升級至 22.12+ 即可；若無法升級，請將依賴改回 `@electron/asar@3`。
 
 **Postman 自動更新後又變回英文**
-更新會產生新的版本目錄（不含中文化補丁），重新執行一次 `node postman-traditional-chinese-injector.js` 即可。
+更新會產生新的版本目錄（不含補丁），重新執行一次注入程式即可——它會先自動把自己和譯文更新到最新再注入。
 
 **如何卸載中文化**
 桌面端執行 `node postman-traditional-chinese-injector.js --restore`；網頁版在 `chrome://extensions` 移除該擴充功能。

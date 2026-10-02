@@ -14,6 +14,7 @@
     "restore": "node postman-traditional-chinese-injector.js --restore",
     "convert:tw": "node scripts/convert-to-traditional.js",
     "build:data": "node scripts/build-data.js",
+    "build:update": "node scripts/build-update.js",
     "build:ext": "node scripts/build-extension.js",
     "build:compress": "node scripts/compress-dist.js",
     "build:runtimes": "node scripts/fetch-runtimes.js",
@@ -34,6 +35,7 @@
   "files": [
     "postman-traditional-chinese-injector.js",
     "postman-chinese-injector.js",
+    "updater.js",
     "pm-chinese.js",
     "pm-scratchpad-cn.js",
     "pm-main-cn.js",

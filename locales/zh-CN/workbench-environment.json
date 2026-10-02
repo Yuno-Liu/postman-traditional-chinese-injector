@@ -92,8 +92,8 @@
           "disable_secret": "已停用同步私密變數的值"
         },
         "description": {
-          "all_disabled": "為保護資料，您的團隊管理員已停用同步所有變數的初始值。使用這些初始值的 Mock Server、Monitor 和 Newman 將受到影響。",
-          "secret_disabled": "為保護私密資料，您的團隊管理員已停用同步私密變數的初始值。使用這些初始值的 Mock Server、Monitor 和 Newman 將受到影響。"
+          "all_disabled": "為保護資料，您的團隊管理員已停用同步所有變數的初始值。使用這些初始值的模擬伺服器、監控和 Newman 將受到影響。",
+          "secret_disabled": "為保護私密資料，您的團隊管理員已停用同步私密變數的初始值。使用這些初始值的模擬伺服器、監控和 Newman 將受到影響。"
         }
       },
       "table": {
@@ -113,8 +113,8 @@
     "title": "環境詳情",
     "variable_sync_disable_impact_info_bar": {
       "description": {
-        "all_disabled": "由於團隊管理員已停用變數同步，Mock、Monitor 和 Newman 將無法使用任何變數的值。",
-        "secret_disabled": "由於團隊管理員已停用私密變數同步，Mock、Monitor 和 Newman 將無法使用私密變數的值。"
+        "all_disabled": "由於團隊管理員已停用變數同步，模擬伺服器、監控和 Newman 將無法使用任何變數的值。",
+        "secret_disabled": "由於團隊管理員已停用私密變數同步，模擬伺服器、監控和 Newman 將無法使用私密變數的值。"
       }
     }
   },

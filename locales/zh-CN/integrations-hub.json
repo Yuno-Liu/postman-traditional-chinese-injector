@@ -31,7 +31,7 @@
     "connectButton": "連線服務",
     "connectPermissionTooltip": "只有具備 API Catalog Manager 角色的成員才能訪問服務發現頁面",
     "columns": {
-      "workspace": "工作區",
+      "workspace": "Workspace",
       "repository": "倉庫"
     },
     "emptyState": "未找到整合服務",
@@ -87,7 +87,7 @@
     },
     "jira": {
       "title": "建立和檢視 Jira Issue",
-      "description": "從集合、響應或 Monitor 建立 Jira Issue 或關聯已有 Issue，無需離開 Postman 即可跟蹤狀態。"
+      "description": "從集合、響應或監控建立 Jira Issue 或關聯已有 Issue，無需離開 Postman 即可跟蹤狀態。"
     },
     "github_app": {
       "title": "已連線的 GitHub 賬戶",
@@ -185,7 +185,7 @@
   "slackChannel": {
     "privateChannel": "私密頻道",
     "channelUnavailable": "頻道不可用",
-    "loginForChannelInfo": "登入以檢影片道資訊",
+    "loginForChannelInfo": "登入以檢視頻道資訊",
     "workspaceColumn": "Slack 工作區",
     "channelColumn": "Slack 頻道"
   },
@@ -227,13 +227,13 @@
     "modal": {
       "createHeading": "連線頻道",
       "editHeading": "編輯頻道整合",
-      "postmanWorkspaceLabel": "Postman 工作區",
+      "postmanWorkspaceLabel": "Postman Workspace",
       "postmanWorkspacePlaceholder": "選擇工作區",
       "slackWorkspaceLabel": "{appName} 工作區",
       "slackWorkspacePlaceholder": "選擇工作區",
       "channelLabel": "{appName} 頻道",
       "channelPlaceholder": "選擇頻道",
-      "channelConnected": "—已連線",
+      "channelConnected": "— 已連線",
       "channelLoadError": "頻道載入失敗，請重試。",
       "frequencyLabel": "傳送通知的方式…",
       "frequencyRealtime": "即時傳送",
@@ -269,9 +269,9 @@
     }
   },
   "monitorNotifications": {
-    "title": "Monitor 通知",
-    "description": "持續跟蹤您的 API 的健康狀況和效能，並自動將每次 Monitor 執行的結果傳送到 {appName} 頻道。",
-    "addButton": "連線 Monitor",
+    "title": "監控通知",
+    "description": "持續跟蹤您的 API 的健康狀況和效能，並自動將每次監控執行的結果傳送到 {appName} 頻道。",
+    "addButton": "連線監控",
     "table": {
       "monitor": "Monitor"
     },
@@ -281,19 +281,19 @@
     },
     "modal": {
       "createHeading": "連線頻道",
-      "editHeading": "編輯 Monitor 整合",
+      "editHeading": "編輯監控整合",
       "monitorLabel": "Monitor",
-      "monitorPlaceholder": "選擇 Monitor",
+      "monitorPlaceholder": "選擇監控",
       "frequencyLabel": "傳送通知的場景…",
       "frequencyAllRuns": "每次執行完成時",
       "frequencyOnlyFailures": "僅失敗時（以及之後首次成功執行時）",
       "cancel": "取消",
       "submitCreate": "連線",
       "submitEdit": "儲存更改",
-      "createSuccess": "Monitor 連線成功。",
-      "updateSuccess": "Monitor 連線已更新。",
-      "createError": "Monitor 整合連線失敗。",
-      "updateError": "Monitor 整合更新失敗。"
+      "createSuccess": "監控連線成功。",
+      "updateSuccess": "監控連線已更新。",
+      "createError": "監控整合連線失敗。",
+      "updateError": "監控整合更新失敗。"
     }
   },
   "delete_modal": {
@@ -317,7 +317,7 @@
     "columns": {
       "name": "名稱",
       "monitor": "Monitor",
-      "collection": "集合",
+      "collection": "Collection",
       "entity": "實體",
       "status": "狀態",
       "workspace": "工作區",
@@ -341,7 +341,7 @@
     "connected": "已連線"
   },
   "agentTasks": {
-    "title": "Agent Tasks",
+    "title": "Agent 任務",
     "description": "在 {appName} 中 @Postman 即可啟動 Agent 模式任務，並在會話執行緒中檢視狀態更新。",
     "connectedBadge": "已連線",
     "otherTeamUsers_one": "+{count} 位其他團隊成員",

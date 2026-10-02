@@ -31,7 +31,7 @@
   },
   "container": {
     "tabs": {
-      "overview": "檔案",
+      "overview": "文件",
       "updates": "更新",
       "settings": "設定",
       "issues": "問題",
@@ -198,13 +198,13 @@
       }
     },
     "pinned_document": {
-      "pin_button": "將檔案固定到概覽",
+      "pin_button": "將文件固定到概覽",
       "add_readme_button": "新增 WORKSPACE-README",
-      "select_placeholder": "選擇要固定的檔案",
-      "empty_msg": "此 workspace 中暫無檔案。",
+      "select_placeholder": "選擇要固定的文件",
+      "empty_msg": "此工作區中暫無文件。",
       "toast": {
         "pin_error": {
-          "title": "無法固定檔案",
+          "title": "無法固定文件",
           "description": "只是線路出了點小問題，請重試。"
         },
         "create_error": {
@@ -342,7 +342,7 @@
         "description": "通過設定所需的身份驗證來訪問資料。"
       },
       "documentation": {
-        "title": "新增檔案",
+        "title": "新增文件",
         "description": "幫助他人瞭解如何呼叫您的介面。"
       },
       "tests": {
@@ -351,7 +351,7 @@
       },
       "monitors": {
         "title": "監控集合",
-        "description": "設定 Monitor，以便在出現錯誤時收到通知。"
+        "description": "設定監控，以便在出現錯誤時收到通知。"
       },
       "runner": {
         "title": "試用集合執行器",
@@ -362,11 +362,11 @@
         "description": "瞭解如何編寫腳本來自動執行您的工作流程。"
       },
       "collection_monitor": {
-        "title": "集合監控",
-        "description": "瞭解如何設定 Monitor，以便在出現錯誤時收到通知。"
+        "title": "Collection Monitor",
+        "description": "瞭解如何設定監控，以便在出現錯誤時收到通知。"
       },
       "collection_runner": {
-        "title": "集合執行器",
+        "title": "Collection Runner",
         "description": "瞭解如何建立並自動執行測試序列。"
       }
     }
@@ -758,7 +758,7 @@
           },
           {
             "headline": "合作伙伴無法編輯此工作區",
-            "info": "他們可以檢視工作區中的所有資源併傳送請求"
+            "info": "他們可以檢視工作區中的所有資源併發送請求"
           }
         ],
         "note": "為防止意外資料洩露，此操作無法撤銷。",
@@ -779,13 +779,13 @@
     "partner_workspace_info_text": "更改工作區型別後，您將成為<1><0>合作伙伴管理者</0></1>。",
     "cleanup_workspace": {
       "heading": "歸檔或刪除",
-      "description": "歸檔會將此工作區從檢視中移除，並關閉 Monitor。您可以隨時恢復，或永久刪除。",
+      "description": "歸檔會將此工作區從檢視中移除，並關閉監控。您可以隨時恢復，或永久刪除。",
       "primary_action_text": "刪除工作區",
       "secondary_action_text": "歸檔工作區"
     },
     "restore_workspace": {
       "heading": "此工作區已歸檔",
-      "description": "已從檢視中移除，Monitor 已關閉。",
+      "description": "已從檢視中移除，監控已關閉。",
       "primary_action_text": "刪除工作區",
       "secondary_action_text": "恢復工作區"
     },
@@ -895,13 +895,13 @@
     },
     "pinned_document": {
       "heading": "工作區概覽",
-      "description": "選擇要固定到概覽的檔案。",
-      "select_placeholder": "選擇檔案",
-      "empty_state": "此 workspace 中暫無檔案。",
+      "description": "選擇要固定到概覽的文件。",
+      "select_placeholder": "選擇文件",
+      "empty_state": "此工作區中暫無文件。",
       "toast": {
         "error": {
-          "title": "無法更新固定的檔案",
-          "description": "更新固定檔案時出錯，請重試。"
+          "title": "無法更新固定的文件",
+          "description": "更新固定文件時出錯，請重試。"
         }
       }
     },
@@ -1101,7 +1101,7 @@
   },
   "workspace_tools": {
     "invite_to_workspace": {
-      "invite_prompt_with_name": "您即將邀請使用者加入工作區“{workspaceName}”。",
+      "invite_prompt_with_name": "您即將邀請使用者加入工作區 “{workspaceName}”。",
       "invite_prompt_without_name": "您即將邀請使用者加入當前活動的工作區。",
       "email_label": "電子郵件：",
       "role_label": "角色：",
@@ -1111,21 +1111,21 @@
       "error_role_required": "邀請使用者加入工作區需要指定角色"
     },
     "manage_document_pin": {
-      "prompt_pin": "你即將置頂一篇檔案。",
-      "prompt_pin_with_workspace": "你即將在工作區“{workspaceName}”中置頂一篇檔案。",
-      "prompt_unpin": "你即將取消置頂一篇檔案。",
-      "prompt_unpin_with_workspace": "你即將在工作區“{workspaceName}”中取消置頂一篇檔案。",
-      "document_label": "檔案：",
+      "prompt_pin": "你即將置頂一篇文件。",
+      "prompt_pin_with_workspace": "你即將在工作區“{workspaceName}”中置頂一篇文件。",
+      "prompt_unpin": "你即將取消置頂一篇文件。",
+      "prompt_unpin_with_workspace": "你即將在工作區“{workspaceName}”中取消置頂一篇文件。",
+      "document_label": "文件：",
       "document_id_fallback": "（ID：{documentId}）",
       "action_label": "操作：",
       "action_pin": "置頂到工作區概覽",
       "action_unpin": "從工作區概覽取消置頂",
-      "description_pin": "此操作會將該檔案展示在工作區概覽中。同一時間只能置頂一篇檔案，此前置頂的檔案將被替換。",
-      "description_unpin": "此操作會將該檔案從工作區概覽中移除。",
-      "confirm_prompt": "要批准此次檔案置頂變更嗎？",
-      "error_document_id_required": "管理檔案置頂需要提供 documentId",
+      "description_pin": "此操作會將該文件展示在工作區概覽中。同一時間只能置頂一篇文件，此前置頂的文件將被替換。",
+      "description_unpin": "此操作會將該文件從工作區概覽中移除。",
+      "confirm_prompt": "要批准此次文件置頂變更嗎？",
+      "error_document_id_required": "管理文件置頂需要提供 documentId",
       "error_should_pin_required": "shouldPin 必須是明確的布林值（true 為置頂，false 為取消置頂）",
-      "error_args_unparseable": "無法解析檔案置頂工具的引數"
+      "error_args_unparseable": "無法解析文件置頂工具的引數"
     }
   }
 }

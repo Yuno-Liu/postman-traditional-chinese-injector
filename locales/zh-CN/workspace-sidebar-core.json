@@ -119,25 +119,25 @@
     "elements": {
       "http": {
         "card_label": "HTTP",
-        "info_text": "超文本傳輸​​協議 (HTTP) 是一種應用層協議，通常用於構建 REST API。使用 HTTP 請求測試您的 HTTP API。",
+        "info_text": "超文本傳輸​​協議 (HTTP) 是一種應用層協議，通常用於構建 REST API。使用 HTTP 請求 測試您的 HTTP API。",
         "no_permission_text": "您沒有許可權在這個工作區中建立 HTTP 請求。",
         "offline_text": "您需要線上才能建立 HTTP 請求。"
       },
       "graphql": {
         "card_label": "GraphQL",
-        "info_text": "GraphQL 是一種 API 查詢語言，旨在為客戶端提供其所需的準確資訊。使用 GraphQL 請求測試您的 GraphQL API。",
+        "info_text": "GraphQL 是一種 API 查詢語言，旨在為客戶端提供其所需的準確資訊。使用 GraphQL 請求 測試您的 GraphQL API。",
         "no_permission_text": "您沒有許可權在這個工作區中建立 GraphQL 請求。",
         "offline_text": "您需要線上才能建立 GraphQL 請求。"
       },
       "grpc": {
         "card_label": "gRPC",
-        "info_text": "gRPC 是一個高效能的 RPC 框架，常用於構建微服務。使用 gRPC 請求測試您的 gRPC API。",
+        "info_text": "gRPC 是一個高效能的 RPC 框架，常用於構建微服務。使用 gRPC 請求 測試您的 gRPC API。",
         "no_permission_text": "您沒有許可權在這個工作區中建立 gRPC 請求。",
         "offline_text": "您需要線上才能建立 gRPC 請求。"
       },
       "websocket": {
         "card_label": "WebSocket",
-        "info_text": "WebSocket 使用持久通訊通道實現客戶端和伺服器之間的即時通訊。使用 WebSocket 請求測試基於 WebSocket 的 API。",
+        "info_text": "WebSocket 使用持久通訊通道實現客戶端和伺服器之間的即時通訊。使用 WebSocket 請求 測試基於 WebSocket 的 API。",
         "no_permission_text": "您沒有許可權在這個工作區中建立 WebSocket 請求。",
         "offline_text": "您需要線上才能建立 WebSocket 請求。"
       },
@@ -162,13 +162,13 @@
       },
       "socketio": {
         "card_label": "Socket.IO",
-        "info_text": "Socket.IO 是一個構建在 WebSocket 之上的框架，用於啟用事件驅動的客戶端-伺服器通訊。使用 Socket.IO 請求測試基於 Socket.IO 的 API。",
+        "info_text": "Socket.IO 是一個構建在 WebSocket 之上的框架，用於啟用事件驅動的客戶端-伺服器通訊。使用 Socket.IO 請求 測試基於 Socket.IO 的 API。",
         "no_permission_text": "您沒有許可權在這個工作區中建立 Socket.IO 請求。",
         "offline_text": "您需要線上才能建立 Socket.IO 請求。"
       },
       "mqtt": {
         "card_label": "MQTT",
-        "info_text": "MQTT 是一種廣泛用於物聯網 (IoT) 的輕量級訊息傳遞協議。使用 MQTT 請求測試基於 MQTT 的 API。",
+        "info_text": "MQTT 是一種廣泛用於物聯網 (IoT) 的輕量級訊息傳遞協議。使用 MQTT 請求 測試基於 MQTT 的 API。",
         "no_permission_text": "您沒有許可權在這個工作區中建立 MQTT 請求。",
         "offline_text": "您需要線上才能建立 MQTT 請求。"
       },
@@ -192,17 +192,17 @@
       },
       "monitor": {
         "card_label": "監控",
-        "info_text": "使用 Monitor 安排您的 Postman 集合定期執行。",
-        "disabled_text": "Monitor 幫助您按計劃執行 Postman 集合。",
-        "offline_text": "離線時無法建立 Monitor。",
-        "no_permission_text": "您沒有許可權在這個工作區中建立 Monitor。"
+        "info_text": "使用監控安排您的 Postman 集合定期執行。",
+        "disabled_text": "監控幫助您按計劃執行 Postman 集合。",
+        "offline_text": "離線時無法建立監控。",
+        "no_permission_text": "您沒有許可權在這個工作區中建立監控。"
       },
       "flows": {
         "card_label": "流程",
-        "info_text": "Flow 讓您視覺化、測試和自動化 API 工作流程",
-        "disabled_text": "Postman Flow 是用於構建 API 驅動的應用程式的視覺化工具。您可以使用 Flow 來連結請求、處理資料並在工作區中建立真實的工作流程。",
-        "offline_text": "離線時無法建立 Flow。",
-        "no_permission_text": "您沒有許可權在這個工作區中建立 Flow。"
+        "info_text": "流程讓您視覺化、測試和自動化 API 工作流程",
+        "disabled_text": "Postman 流程是用於構建 API 驅動的應用程式的視覺化工具。您可以使用流程來連結請求、處理資料並在工作區中建立真實的工作流程。",
+        "offline_text": "離線時無法建立流程。",
+        "no_permission_text": "您沒有許可權在這個工作區中建立流程。"
       },
       "workspace": {
         "card_label": "工作區",
@@ -230,48 +230,48 @@
         "create_with_template_label": "使用模板建立",
         "create_with_ai_mock_dependencies_label": "模擬外部 API",
         "create_with_ai_mock_service_label": "模擬您自己的服務",
-        "offline_text": "離線狀態下無法建立 Mock 伺服器。",
-        "no_permission_text": "您沒有許可權在此工作區中建立 Mock 伺服器。"
+        "offline_text": "離線狀態下無法建立模擬伺服器。",
+        "no_permission_text": "您沒有許可權在此工作區中建立模擬伺服器。"
       },
       "mock_server": {
-        "card_label": "Mock 伺服器",
-        "info_text": "將 Mock 部署為線上服務。"
+        "card_label": "模擬伺服器",
+        "info_text": "將模擬伺服器部署為線上服務。"
       },
       "classic_mock_server": {
         "card_label": "Mock Server",
-        "info_text": "根據集合中儲存的示例建立 Mock 伺服器。"
+        "info_text": "根據集合中儲存的示例建立模擬伺服器。"
       },
       "mock_with_collection": {
         "card_label": "從集合建立",
-        "info_text": "基於集合中已儲存的示例建立 Mock Server。"
+        "info_text": "基於集合中已儲存的示例建立模擬伺服器。"
       },
       "mock_with_code": {
         "card_label": "虛擬服務",
         "info_text": "建立由程式碼驅動的虛擬服務。"
       },
       "code_based_mock": {
-        "card_label": "Mock 服務",
-        "info_text": "建立 Mock",
-        "offline_text": "離線狀態下無法建立 Mock。",
-        "no_permission_text": "你沒有在此工作區中建立 Mock 的許可權。"
+        "card_label": "模擬伺服器服務",
+        "info_text": "建立模擬伺服器",
+        "offline_text": "離線狀態下無法建立模擬伺服器。",
+        "no_permission_text": "你沒有在此工作區中建立模擬伺服器的許可權。"
       },
       "local_mock": {
-        "info_text": "編寫 Mock 的行為邏輯，可在本地執行或部署為 Mock Server。"
+        "info_text": "編寫模擬伺服器的行為邏輯，可在本地執行或部署為模擬伺服器。"
       },
       "documentation": {
-        "card_label": "檔案"
+        "card_label": "文件"
       },
       "document": {
-        "card_label": "檔案",
-        "info_text": "建立檔案以編寫指南、筆記或 API 文件。",
-        "create_error": "檔案建立失敗，請重試。",
-        "no_permission_text": "你沒有許可權在此 workspace 中建立檔案。"
+        "card_label": "文件",
+        "info_text": "建立文件以編寫指南、筆記或 API 文件。",
+        "create_error": "文件建立失敗，請重試。",
+        "no_permission_text": "你沒有許可權在此工作區中建立文件。"
       },
       "sdk_gen": {
         "card_label": "SDK",
         "offline_text": "離線時無法生成 SDK。",
         "no_permission_text": "您沒有許可權在此工作區中生成 SDK。",
-        "no_edit_permission_collection": "您需要對此集合的編輯許可權才能生成 SDK。",
+        "no_edit_permission_collection": "您需要對此 集合 的編輯許可權才能生成 SDK。",
         "no_edit_permission_spec": "您需要對此 API 定義的編輯許可權才能生成 SDK。"
       },
       "webhook": {
@@ -336,8 +336,8 @@
         "plural": "分支"
       },
       "docs_site": {
-        "singular": "檔案站點",
-        "plural": "檔案站點"
+        "singular": "文件站點",
+        "plural": "文件站點"
       }
     }
   },
@@ -433,8 +433,8 @@
         "plural": "元素"
       },
       "collection": {
-        "singular": "集合",
-        "plural": "集合"
+        "singular": "Collection",
+        "plural": "Collection"
       },
       "folder": {
         "singular": "資料夾",
@@ -449,8 +449,8 @@
         "plural": "示例"
       },
       "environment": {
-        "singular": "環境",
-        "plural": "環境"
+        "singular": "Environment",
+        "plural": "Environment"
       },
       "globals": {
         "singular": "全域性變數",
@@ -461,12 +461,12 @@
         "plural": "API"
       },
       "mock": {
-        "singular": "Mock 伺服器",
-        "plural": "Mock 伺服器"
+        "singular": "模擬伺服器",
+        "plural": "模擬伺服器"
       },
       "extensible_collection": {
-        "singular": "集合",
-        "plural": "集合"
+        "singular": "Collection",
+        "plural": "Collection"
       },
       "api_definition_file": {
         "singular": "定義檔案",
@@ -529,8 +529,8 @@
         "plural": "集合執行"
       },
       "performance_test": {
-        "singular": "效能測試",
-        "plural": "效能測試"
+        "singular": "效能 測試",
+        "plural": "效能 測試"
       },
       "monitor": {
         "singular": "Monitor",
@@ -539,6 +539,7 @@
     },
     "share_button": "分享",
     "copy_link": "複製連結",
+    "copy_link_upgrade_heading": "連結已複製。升級以新增團隊成員，讓他們可以開啟此連結",
     "dirty_share": "您未儲存的更改將不會被共享。",
     "something_went_wrong": "出了點問題",
     "with_people": "與人",
@@ -637,7 +638,7 @@
     "run_in_postman": {
       "default_label": "瞭解更多。",
       "public_workspace_label": "在 Postman 中執行",
-      "embed_learn_more_button": "在您的網站或檔案中嵌入 <1><0>{buttonText}</0></1> 按鈕，以便人們更輕鬆地發現您的集合並與之互動。",
+      "embed_learn_more_button": "在您的網站或文件中嵌入 <1><0>{buttonText}</0></1> 按鈕，以便人們更輕鬆地發現您的 集合 並與之互動。",
       "everyone_can_view_and_fork_public_collection": "Postman 上的每個人都可以檢視並 fork 這個公開集合。",
       "generating_code_snippet": "正在生成程式碼片段...",
       "render_static_button_message": "該按鈕將指向集合的靜態快照。它不會隨著集合的更改而更新。",
@@ -734,8 +735,8 @@
     "success_popover": {
       "no_docs": {
         "title": "請求已分享",
-        "description": "完善的檔案能幫助團隊更輕鬆地理解請求。",
-        "button_text": "使用 AI 建立檔案"
+        "description": "完善的文件能幫助團隊更輕鬆地理解請求。",
+        "button_text": "使用 AI 建立文件"
       }
     }
   },
@@ -747,8 +748,8 @@
     },
     "description_single": "Deleting this will remove all monitors, scheduled runs, and integrations, deactivate any associated mock servers.",
     "description_single_reusable": "Deleting this will remove monitors, scheduled runs, and integrations. Mock servers get deactivated, and linked requests will no longer follow updates from the original.",
-    "description_multiple": "這將停用與這些集合相關聯的 Monitor、計劃執行、整合和 Mock Server。",
-    "description_multiple_docs_sites": "所有檔案站點都被刪除。",
+    "description_multiple": "這將停用與這些集合相關聯的監控、計劃執行、整合和模擬伺服器。",
+    "description_multiple_docs_sites": "所有文件站點都被刪除。",
     "description_single_git_link": "Deleting this will remove all monitors, scheduled runs, and integrations, disconnect the remote repository, and deactivate any associated mock servers.",
     "description_single_git_link_reusable": "Deleting this will remove all monitors, scheduled runs, and integrations, disconnect the remote repository. Mock servers get deactivated, and linked requests will no longer follow updates from the original.",
     "failed_load": "詳細資訊載入失敗",
@@ -762,7 +763,7 @@
     "delete_extinsible_collection": "確定要刪除此集合嗎？",
     "could_not_restore_message": "此集合無法從回收站中恢復。",
     "delete_confirmation_text": "確定要刪除 <1>{name}</1> 嗎？",
-    "delete_pinned_doc_confirmation": "此檔案已固定到 workspace 概覽中。確定要刪除嗎？",
+    "delete_pinned_doc_confirmation": "此文件已固定到工作區概覽中。確定要刪除嗎？",
     "this_cant_be_undone": "此操作無法撤銷。",
     "delete_entity_question": "刪除 {entity}？",
     "delete_elements_question": "刪除元素？",
@@ -828,7 +829,7 @@
     },
     "restore": {
       "heading": "此工作區已歸檔",
-      "description": "<0>它已從檢視中移除，Monitor 也已關閉。</0> <1><0>恢復</0></1>",
+      "description": "<0>它已從檢視中移除，監控也已關閉。</0> <1><0>恢復</0></1>",
       "toast": {
         "success_description": "工作區已恢復",
         "failure_description": "出現了一點小故障，請重試。",

@@ -18,7 +18,7 @@
   },
   "data_file_upgrade": {
     "heading": "升級以使用資料檔案",
-    "description": "資料檔案可讓您使用測試資料驅動 Monitor 執行以及功能性和效能集合執行。升級您的計劃以開始使用。"
+    "description": "資料檔案可讓您使用測試資料驅動監控執行以及功能性和效能集合執行。升級您的計劃以開始使用。"
   },
   "test_data_upgrade": {
     "heading": "升級以使用資料集和資料檔案",
@@ -135,30 +135,30 @@
     "request_could_not_be_sent": "請求無法傳送"
   },
   "mock_bindings": {
-    "title": "分配 Mock",
-    "title_info": "此集合中的以下變數和主機 URL 可以被 Mock",
+    "title": "分配模擬伺服器",
+    "title_info": "此集合中的以下變數和主機 URL 可以被模擬伺服器",
     "urls_column": "URL",
     "mock_column": "MOCK",
     "scenario_column": "場景",
-    "empty_heading": "未分配 Mock",
-    "empty_description": "將此集合中的 URL 指向 Mock，即可在執行期間攔截其請求。",
+    "empty_heading": "未分配模擬伺服器",
+    "empty_description": "將此集合中的 URL 指向模擬伺服器，即可在執行期間攔截其請求。",
     "add_url": "新增 URL",
     "url_placeholder": "輸入 URL",
-    "url_aria_label": "要 Mock 的 URL",
+    "url_aria_label": "要模擬的 URL",
     "url_invalid_warning": "這不是有效的 URL。",
     "remove_url_aria_label": "移除 URL",
     "mock_aria_label": "Mock",
-    "select_mock_placeholder": "選擇 Mock",
+    "select_mock_placeholder": "選擇模擬伺服器",
     "mocks_group": "Mock",
     "mock_servers_group": "Mock Server",
     "create_with_ai": "使用 AI 建立",
-    "create_new_mock": "新建 Mock",
+    "create_new_mock": "新建模擬伺服器",
     "scenario_aria_label": "場景",
     "select_scenario_placeholder": "選擇場景",
     "scenarios_loading": "載入中...",
-    "use_mock_aria_label": "在本次執行中使用此 Mock",
-    "mock_enabled_tooltip": "Mock 已啟用—請求由 Mock 響應",
-    "mock_disabled_tooltip": "Mock 已停用—請求將直接傳送到真實主機"
+    "use_mock_aria_label": "在本次執行中使用此模擬伺服器",
+    "mock_enabled_tooltip": "模擬伺服器已啟用 — 請求由模擬伺服器響應",
+    "mock_disabled_tooltip": "模擬伺服器已停用 — 請求將直接傳送到真實主機"
   },
   "empty_state": {
     "functional": {

@@ -22,11 +22,11 @@
         "fork_label_with_username": "{userName} 的 fork",
         "fork_label_without_username": "我的 Fork",
         "update_user_profile_modal": {
-          "description": "要在公開工作區中從 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 建立 fork，您必須將個人資料設為公開。您的個人資料將進行以下更改。",
-          "error_toast_message": "要從公開工作區 fork 一個 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}}，您需要先設定公開個人資料。"
+          "description": "要在公開工作區中從 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 建立 fork，您必須將個人資料設為公開。您的個人資料將進行以下更改。",
+          "error_toast_message": "要從公開工作區 fork 一個 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}}，您需要先設定公開個人資料。"
         },
-        "description": "Fork 會建立 {modelType, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 的副本，讓您可以在不影響原始檔案的情況下進行更改。瞭解有關 <3>forks</3> 的更多資訊。",
-        "helper_text": "指定一個標籤，以區分此 fork 與原始 {modelType, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}}。",
+        "description": "Fork 會建立 {modelType, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 的副本，讓您可以在不影響原始檔案的情況下進行更改。瞭解有關 <3>forks</3> 的更多資訊。",
+        "helper_text": "指定一個標籤，以區分此 fork 與原始 {modelType, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}}。",
         "fork_label": "Fork 標籤",
         "workspace_label": "工作區",
         "team_label": "團隊",
@@ -34,11 +34,11 @@
         "workspace_helper_text": "fork 將在選定的工作區中建立。",
         "workspace_selector_restrict_fork_message": "這裡不能 fork",
         "auto_sync_changes_label": "自動拉取更改",
-        "auto_sync_changes_checkbox_label": "自動從源 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 拉取更改",
+        "auto_sync_changes_checkbox_label": "自動從源 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 拉取更改",
         "notifications_label": "通知",
-        "notifications_checkbox_label": "關注源 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 以獲取更新通知",
-        "notifications_checkbox_label_forked": "關注已 fork 的 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 以獲取更新通知",
-        "notifications_checkbox_info_text": "您將會收到有關原始 {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} 所做更改的通知。",
+        "notifications_checkbox_label": "關注源 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 以獲取更新通知",
+        "notifications_checkbox_label_forked": "關注已 fork 的 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 以獲取更新通知",
+        "notifications_checkbox_info_text": "您將會收到有關原始 {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}} 所做更改的通知。",
         "fork_confirm_button_label": "Fork {modelDisplayName, select, collection {集合} environment {環境} flow {流程} specification {規範} other {}}",
         "fork_confirm_button_disabled_tooltip": "重新上線後即可執行此操作",
         "fork_cancel_button_label": "取消",
@@ -81,11 +81,11 @@
     "popover": {
       "fork_cta": "復刻 {model}",
       "cancel": "取消",
-      "no_permission": "您沒有許可權要匯出",
+      "no_permission": "您沒有 許可權 要匯出",
       "no_permission_partner_description": "檢視者角色的合作伙伴無法匯出集合。您可以改為 fork 此集合。"
     },
     "view_plans": {
-      "title": "Fork 到您自己的團隊",
+      "title": "Fork 到您自己的 團隊",
       "description": "將此團隊升級為付費 Postman 計劃，以便 fork 並建立此集合的副本。",
       "cta": "檢視計劃",
       "add_paid_team": "在付費 Postman 計劃上建立團隊，以 fork 並建立此集合的副本。"

@@ -4,14 +4,14 @@
     "description": "你訪問的頁面不存在。"
   },
   "settings_page": {
-    "heading": "共享保險庫",
+    "heading": "共享 保險庫",
     "description": "安全地與團隊共享敏感資料。除公開工作區外，Shared Vault 在每個工作區中預設可用。可按工作區單獨覆蓋設定，以貫徹最小許可權原則。",
-    "update_error": "無法更新共享保險庫設定。請稍後重試。",
-    "toast_enabled": "為您的團隊啟用共享保險庫",
-    "toast_disabled": "已為您的團隊關閉共享保險庫",
+    "update_error": "無法更新共享 保險庫 設定。請稍後重試。",
+    "toast_enabled": "為您的 團隊 啟用共享 保險庫",
+    "toast_disabled": "已為您的 團隊 關閉共享 保險庫",
     "button_switch_on": "開啟",
     "button_switch_off": "關",
-    "global_switch_off_tooltip": "對於某些工作區，移動到共享保險庫策略處於活動狀態。請更改策略以關閉共享保險庫。"
+    "global_switch_off_tooltip": "對於某些工作區，移動到共享 保險庫 策略處於活動狀態。請更改策略以關閉共享 保險庫。"
   },
   "vault_settings_panel": {
     "open_settings": "設定",
@@ -47,17 +47,17 @@
     }
   },
   "workspace_selector": {
-    "column_enabled": "共享保險庫",
+    "column_enabled": "共享 保險庫",
     "bulk_enable": "開啟",
     "bulk_disable": "關",
-    "toast_update_success": "已成功更新共享保險庫設定",
-    "toast_update_error": "無法更新工作區設定。請再試一次。",
+    "toast_update_success": "已成功更新共享 保險庫 設定",
+    "toast_update_error": "無法更新 工作區 設定。請再試一次。",
     "empty_title": "未找到工作區",
     "empty_description": "嘗試調整過濾器或搜尋以查詢工作區。",
     "error_title": "無法載入工作區",
-    "error_description": "我們無法載入您工作區的共享保險庫設定。請再試一次。",
+    "error_description": "我們無法載入您工作區的共享 保險庫 設定。請再試一次。",
     "error_retry": "重試",
-    "public_workspace_disabled_tooltip": "出於安全原因，公開工作區不支援共享保險庫。",
-    "workspace_switch_off_tooltip": "移至共享保險庫策略對此工作區有效。請更改策略以關閉共享保險庫。"
+    "public_workspace_disabled_tooltip": "出於安全原因，公開 工作區不支援共享 保險庫。",
+    "workspace_switch_off_tooltip": "移至共享 保險庫 策略對此 工作區 有效。請更改策略以關閉共享 保險庫。"
   }
 }

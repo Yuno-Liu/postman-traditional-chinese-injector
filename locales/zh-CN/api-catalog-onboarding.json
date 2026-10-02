@@ -1,5 +1,15 @@
 {
   "github": {
     "install_github_app_helper_text": "如果看不到您的組織，可能需要在您的個人賬戶或組織上<Link><Text>安裝 Postman 應用</Text></Link>。"
+  },
+  "github_onboarding_step1": {
+    "forbidden_workspace_toast": {
+      "title": "無許可權",
+      "description": "你沒有在此處建立工作區的許可權。請向團隊管理員申請訪問許可權後重試。"
+    },
+    "create_workspace_failed_toast": {
+      "title": "工作區建立失敗",
+      "description": "建立工作區時出現問題，請重試。"
+    }
   }
 }

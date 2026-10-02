@@ -4,8 +4,8 @@
     "message": "Postman 通過瀏覽器傳送請求時無法訪問cookie。要捕獲和管理 Cookie，請嘗試 Postman 桌面代理。"
   },
   "generic_empty_state": {
-    "message": "您使用的是較舊版本的 Postman 桌面代理，它不能用於新增或編輯 Cookie。 \n\n單擊工具欄中的 Postman 代理圖示更新桌面代理，或切換到使用 Postman 雲代理。",
-    "secondary_action": "切換到雲代理"
+    "message": "您使用的是較舊版本的 Postman 桌面代理，它不能用於新增或編輯 Cookie。 \n\n單擊工具欄中的 Postman 代理圖示更新 桌面代理，或切換到使用 Postman 雲代理。",
+    "secondary_action": "切換到 雲代理"
   },
   "heading": {
     "browser": "管理 Cookie",
@@ -16,6 +16,9 @@
       "label": "管理 Cookie",
       "domain_del_success_toast": "所有 Cookie 均已成功清除。",
       "domain_del_error_toast": "無法刪除域 {deletedDomain} 的 Cookie。",
+      "cookie_domain_mismatch_toast": "此處不支援更改 Cookie 的域名，編輯已丟棄。",
+      "cookie_save_error_toast": "Cookie 更改儲存失敗。",
+      "cookie_name_missing_toast": "Cookie 必須有名稱，編輯已丟棄。",
       "domain_allowlist_button": "域名白名單",
       "domain_clear_all_button": "清除所有 Cookie"
     },
@@ -90,10 +93,6 @@
   "add_domain_button": "新增域名",
   "domains_list": {
     "empty": "沒有可用的 Cookie",
-    "cookie_editor_action": {
-      "cancel": "取消",
-      "save": "儲存"
-    },
     "add_cookie_button": "新增 Cookie"
   }
 }

@@ -8,8 +8,8 @@
       "public": "公開網路"
     },
     "entity_labels": {
-      "collections": "集合",
-      "environments": "環境",
+      "collections": "Collection",
+      "environments": "Environment",
       "specs": "規格",
       "sdks": "SDK",
       "flows": "流程",
@@ -31,7 +31,7 @@
       },
       "in": {
         "label": "工作區",
-        "inline_label_count": "工作區（{count}）",
+        "inline_label_count": "Workspace（{count}）",
         "placeholder": "按工作區過濾",
         "search_aria_label": "按工作區過濾",
         "search_input_placeholder": "搜尋工作空間",

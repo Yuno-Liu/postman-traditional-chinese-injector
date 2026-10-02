@@ -1,29 +1,29 @@
 {
   "error": {
     "something_went_wrong": "出了點問題",
-    "unexpected_error": "載入 Mock Server 時發生意外錯誤。請再試一次。",
+    "unexpected_error": "載入模擬伺服器時發生意外錯誤。請再試一次。",
     "try_again": "再試一次"
   },
   "mock_server": {
-    "message": "Mock Server 允許您在集合中模擬端點及其相應的響應，而無需實際設定後端。",
-    "create_mock_server": "建立 Mock Server",
-    "create_classic_mock_server": "經典 Mock Server",
+    "message": "模擬伺服器允許您在集合中模擬端點及其相應的響應，而無需實際設定後端。",
+    "create_mock_server": "建立模擬伺服器",
+    "create_classic_mock_server": "經典模擬伺服器",
     "create_code_mock": "Mock",
     "offline_error": "您重新上線後即可執行此操作。",
-    "permission_error": "您沒有許可權來執行此操作。",
+    "permission_error": "您沒有 許可權 來執行此操作。",
     "not_signed_error": "您需要一個帳戶才能繼續探索 Postman。",
-    "no_team_error": "您需要登入團隊才能執行此操作",
-    "no_mock_server": "您還沒有任何 Mock Server。",
-    "inactive_mock": "無法對已停用的 Mock Server 執行此操作。",
+    "no_team_error": "您需要登入 團隊 才能執行此操作",
+    "no_mock_server": "您還沒有任何模擬伺服器。",
+    "inactive_mock": "無法對已停用的模擬伺服器執行此操作。",
     "offline": "您離線了",
-    "request_access": "請求訪問"
+    "request_access": "請求 訪問"
   },
   "filesystem": {
     "no_mocks": "在儲存庫中找不到模擬",
-    "no_mocks_message": "將 mock 清單檔案新增到連線的儲存庫中的 postman/mocks 資料夾中，以便在此處檢視它們。",
+    "no_mocks_message": "將模擬伺服器清單檔案新增到連線的儲存庫中的 postman/mocks 資料夾 中，以便在此處檢視它們。",
     "search_placeholder": "搜尋模擬",
     "empty_state": {
-      "title": "建立您的第一個 Mock",
+      "title": "建立您的第一個模擬伺服器",
       "description": "直接從檔案系統模擬端點和響應。本地模擬存在於您的程式碼庫中，並與您的 Git 工作流程保持同步。",
       "learn_more": "瞭解更多",
       "create": "建立"
@@ -31,8 +31,8 @@
   },
   "sidebar_mock_list_item": {
     "read_only": "只讀",
-    "copy_url": "複製 Mock URL",
-    "copy_success": "Mock URL 已複製",
+    "copy_url": "複製模擬伺服器 URL",
+    "copy_success": "模擬伺服器 URL 已複製",
     "rename": "重新命名",
     "manage_roles": "管理角色",
     "move": "移動",

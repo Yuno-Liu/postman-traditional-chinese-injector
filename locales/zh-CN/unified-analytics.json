@@ -50,10 +50,10 @@
         "title": "團隊成員參與度隨時間變化",
         "subtitle": "瞭解使用者如何參與您的工作區，有助於您評估使用者發現、上手並使用您的 API 的成功程度。",
         "description_1": "這些指標展示了使用者如何與您的工作區互動，以及他們是否能夠成功呼叫 API。",
-        "description_2": "長期跟蹤參與度可以揭示上手環節的不足、可用性問題，或改進檔案和配置的機會。",
+        "description_2": "長期跟蹤參與度可以揭示上手環節的不足、可用性問題，或改進文件和配置的機會。",
         "action_header": "要提升使用者參與度，可以考慮：",
         "action_1": "審查那些呼叫了 API 卻未收到成功響應的使用者的上手內容",
-        "action_2": "新增清晰的示例和檔案，幫助新使用者更快上手",
+        "action_2": "新增清晰的示例和文件，幫助新使用者更快上手",
         "action_3": "監控長期趨勢，及時發現 API 使用量的下降或提升",
         "action_4": "對比新使用者與成功使用者的資料，找出使用者卡住的環節",
         "legend": {
@@ -149,19 +149,19 @@
         "subtitle": "截至報告日期，團隊中存在的未刪除元素的累計數量。",
         "description_1": "工作區由不同的元素組成，每個元素支撐著您 API 工作流的一部分。檢視這些元素的指標有助於您瞭解工作區的使用情況、團隊精力的投入方向，以及需要關注的領域。",
         "description_2": "活動量高通常意味著該元素正在積極支援開發或協作。活動量低或下降則可能表明配置過時、資源閒置，或存在簡化工作區的機會。",
-        "description_3": "請注意，不同元素的使用方式本身就有差異。例如，Monitor 按計劃執行，而集合則依賴手動使用。結合具體情境解讀指標，有助於您做出更好的決策。",
+        "description_3": "請注意，不同元素的使用方式本身就有差異。例如，監控按計劃執行，而集合則依賴手動使用。結合具體情境解讀指標，有助於您做出更好的決策。",
         "action_header": "要提升工作區的效能，可以考慮：",
         "action_1": "審查活動很少或沒有活動的元素，並歸檔不再使用的內容",
-        "action_2": "檢查使用頻率高的元素，確保它們有檔案說明且易於複用",
-        "action_3": "使環境和 Mock 與當前開發階段保持一致",
-        "action_4": "確保 Monitor 和 Flow 能夠反映您最重要的工作流程",
+        "action_2": "檢查使用頻率高的元素，確保它們有文件說明且易於複用",
+        "action_3": "使環境和模擬伺服器與當前開發階段保持一致",
+        "action_4": "確保監控和流程能夠反映您最重要的工作流程",
         "legend": {
           "collections": {
-            "label": "集合",
+            "label": "Collection",
             "description": "已儲存的一組 API 請求，可供執行和複用。"
           },
           "environments": {
-            "label": "環境",
+            "label": "Environment",
             "description": "一組變數，可讓您在測試和生產等不同配置之間切換。"
           },
           "mocks": {
@@ -230,7 +230,7 @@
         "action_header": "要降低集合的錯誤率，可以考慮：",
         "action_1": "檢查請求配置、引數和請求頭",
         "action_2": "改進身份驗證配置和示例",
-        "action_3": "在集合中新增更清晰的檔案或使用說明",
+        "action_3": "在集合中新增更清晰的文件或使用說明",
         "action_4": "跨環境測試請求，及早發現配置問題",
         "legend": {
           "4xx": {
@@ -266,7 +266,7 @@
       "drilldowns": {
         "total_partners": "已接受邀請的合作伙伴",
         "workspace_visited": "已訪問該合作伙伴工作區的合作伙伴",
-        "viewed_collection": "已檢視某個集合或其檔案的合作伙伴",
+        "viewed_collection": "已檢視某個集合或其文件的合作伙伴",
         "request_sent": "已傳送 API 請求的合作伙伴",
         "success_200_ok": "已獲得成功 API 響應的合作伙伴"
       },
@@ -276,7 +276,7 @@
         "description_1": "通過檢視此漏斗，您可以識別上手流程中的阻礙點，並將改進重點放在對幫助合作伙伴獲得首次成功 API 響應最關鍵的環節上。",
         "action_header": "要改善合作伙伴上手體驗，可以考慮：",
         "action_1": "審查流失率最高的環節，找出缺失的指引或配置問題",
-        "action_2": "改進身份驗證和請求相關的檔案及示例",
+        "action_2": "改進身份驗證和請求相關的文件及示例",
         "action_3": "在合作伙伴訪問工作區或檢視集合後提供更明確的後續步驟指引",
         "action_4": "長期跟蹤進展，以衡量上手體驗改進的效果"
       },
@@ -329,7 +329,7 @@
       },
       "pending_invitations_tooltip": {
         "content": "部分合作夥伴可能在上次資料重新整理後已接受邀請，請檢視成員頁面獲取最新資訊。",
-        "aria_label": "有關待處理合作夥伴邀請的資訊"
+        "aria_label": "有關待處理合作伙伴邀請的資訊"
       }
     },
     "needs_attention": {
@@ -497,8 +497,8 @@
       }
     },
     "meter_usage": {
-      "monitor_requests": "Monitor 請求",
-      "mock_requests": "Mock 請求",
+      "monitor_requests": "監控請求",
+      "mock_requests": "模擬請求",
       "non_deleted_integrations": "未刪除的整合",
       "postman_api": "Postman API",
       "custom_domains": "自定義域名",
@@ -530,22 +530,22 @@
       "development": {
         "title": "開發",
         "unit": "工作空間",
-        "tooltip": "選定期間內正在開發的工作空間數量。如果工作區具有集合、Specs、Mocks 或流程建立/更新/刪除活動或 SDK 生成，則將其計數。"
+        "tooltip": "選定期間內正在開發的工作空間數量。如果工作區具有集合、規範、模擬伺服器或流程建立/更新/刪除活動或 SDK 生成，則將其計數。"
       },
       "testing": {
         "title": "測試",
         "unit": "執行",
-        "tooltip": "所選時間段內的總功能測試執行（手動、CLI、CI/CD、計劃）和效能測試執行（手動、自動）。"
+        "tooltip": "所選時間段內的總功能測試執行（手動、CLI、CI/CD、計劃）和 效能 測試執行（手動、自動）。"
       },
       "production": {
         "title": "生產",
         "unit": "執行",
-        "tooltip": "所選期間內監控執行和生產流程執行總數。"
+        "tooltip": "所選期間內 監控 執行和生產 流程 執行總數。"
       },
       "distribution": {
         "title": "分發",
         "unit": "工作空間",
-        "tooltip": "在選定時間段內通過私有 API 網路、合作伙伴工作區和公開工作區共享的工作區數量。"
+        "tooltip": "在選定時間段內通過 私有 API 網路、合作伙伴 工作區和 公開 工作區共享的工作區數量。"
       },
       "api_management": {
         "title": "API 管理",
@@ -565,7 +565,7 @@
       },
       "testing_datasets": {
         "collection_runner": "功能測試",
-        "performance_testing": "效能測試",
+        "performance_testing": "效能 測試",
         "manual": "手動",
         "automated": "自動化"
       },
@@ -589,25 +589,25 @@
       },
       "distribution_datasets": {
         "private_api_network": "私有 API 網路",
-        "partner_workspaces": "合作伙伴工作區",
-        "public_workspaces": "公開工作區"
+        "partner_workspaces": "合作伙伴 工作區",
+        "public_workspaces": "公開 工作區"
       },
       "tooltip_total_label": "總計："
     },
     "insight_panels": {
       "collections": {
         "title": "活躍集合",
-        "tooltip": "在選定時間段內進行建立、更新或刪除操作的任何集合。",
+        "tooltip": "在選定時間段內進行建立、更新或刪除操作的任何 集合。",
         "over_time_title": "活躍集合趨勢",
         "list_title": "最受歡迎的集合",
         "value_column": "集合已更新"
       },
       "flows": {
         "title": "活躍流程",
-        "tooltip": "流程在選定的時間段內進行編輯或執行活動。",
+        "tooltip": "流程 在選定的時間段內進行編輯或執行活動。",
         "over_time_title": "活躍流程趨勢",
         "list_title": "最流行的流程",
-        "value_column": "流程已更新"
+        "value_column": "流程 已更新"
       },
       "sdks": {
         "title": "生成的 SDK",
@@ -626,10 +626,10 @@
       },
       "mocks": {
         "title": "活躍模擬",
-        "tooltip": "在選定的時間段內具有配置或請求活動的 Mock 伺服器，包括本地和雲模擬。",
+        "tooltip": "在選定的時間段內具有配置或 請求 活動的模擬伺服器，包括本地和雲模擬。",
         "over_time_title": "活躍模擬趨勢",
         "list_title": "最受歡迎的模擬",
-        "value_column": "Mock 請求"
+        "value_column": "模擬請求"
       },
       "test_runs": {
         "title": "試執行",
@@ -639,7 +639,7 @@
       },
       "functional_tests": {
         "title": "功能測試",
-        "tooltip": "在選定的時間段內執行功能測試 (集合執行器)，按執行型別細分。",
+        "tooltip": "在選定的時間段內執行功能測試 (集合 執行器)，按執行型別細分。",
         "over_time_title": "功能測試趨勢",
         "list_title": "最受測試的集合",
         "value_column": "試執行",
@@ -651,13 +651,13 @@
         }
       },
       "performance_tests": {
-        "title": "效能測試",
-        "tooltip": "效能測試在選定的時間段內執行，按執行型別細分。",
-        "over_time_title": "效能測試趨勢",
+        "title": "效能 測試",
+        "tooltip": "效能 測試在選定的時間段內執行，按執行型別細分。",
+        "over_time_title": "效能 測試趨勢",
         "list_title": "最受測試的集合",
         "value_column": "試執行",
         "datasets": {
-          "performance": "效能測試"
+          "performance": "效能 測試"
         }
       },
       "api_catalog": {
@@ -668,34 +668,34 @@
       },
       "active_monitors": {
         "title": "活躍監控",
-        "over_time_title": "監控執行趨勢",
+        "over_time_title": "監控 執行趨勢",
         "list_title": "最受歡迎的監控",
-        "value_column": "監控執行",
+        "value_column": "監控 執行",
         "tooltip_unit": "操作"
       },
       "production_flows": {
         "title": "生產流程",
-        "over_time_title": "流程執行趨勢",
+        "over_time_title": "流程 執行趨勢",
         "list_title": "最流行的流程",
-        "value_column": "流程執行",
+        "value_column": "流程 執行",
         "development_chart_label": "開發",
         "production_chart_label": "生產"
       },
       "private_api_network": {
         "title": "私有 API 網路",
-        "tooltip": "在選定的時間段內通過私有 API 網路分配的工作空間。",
+        "tooltip": "在選定的時間段內通過 私有 API 網路分配的工作空間。",
         "list_title": "頂級工作空間",
         "value_column": "瀏覽量"
       },
       "partner_workspaces": {
-        "title": "合作伙伴工作區",
+        "title": "合作伙伴 工作區",
         "tooltip": "在選定時間段內與合作伙伴共享的工作空間。",
         "list_title": "頂級工作空間",
         "value_column": "瀏覽量"
       },
       "public_workspaces": {
-        "title": "公開工作區",
-        "tooltip": "在選定時間段內釋出到公開 API 網路的工作空間。",
+        "title": "公開 工作區",
+        "tooltip": "在選定時間段內釋出到 公開 API 網路的工作空間。",
         "list_title": "頂級工作空間",
         "value_column": "瀏覽量"
       }
@@ -752,7 +752,7 @@
       "hours_ago": "{count, plural, one {# 小時前} other {# 小時前}}"
     },
     "labels": {
-      "private_user": "私有使用者",
+      "private_user": "私有 使用者",
       "yes": "是",
       "no": "否"
     },
@@ -775,8 +775,8 @@
       "partner": "合作伙伴",
       "internal": "內部",
       "overview": "概述",
-      "team_members": "團隊成員",
-      "team_overview": "團隊概述",
+      "team_members": "團隊 成員",
+      "team_overview": "團隊 概述",
       "billing": "計費"
     },
     "accessibility": {
@@ -785,12 +785,12 @@
       "monthly_snapshot": "每月快照"
     },
     "hidden_labels": {
-      "workspace_name": "工作區名稱被隱藏",
-      "collection_name": "集合名稱被隱藏"
+      "workspace_name": "工作區 名稱被隱藏",
+      "collection_name": "集合 名稱被隱藏"
     },
     "hidden_tooltips": {
-      "workspace_name": "在您當前的訪問許可權下，此工作區名稱不可見",
-      "collection_name": "在您當前的訪問許可權下，此集合名稱不可見"
+      "workspace_name": "在您當前的訪問許可權下，此 工作區 名稱不可見",
+      "collection_name": "在您當前的訪問許可權下，此 集合 名稱不可見"
     },
     "view_modes": {
       "total_number": "總數",
@@ -814,11 +814,11 @@
         "role": "角色",
         "roles": "角色",
         "joined_on": "加入於",
-        "created_on": "建立於",
+        "created_on": "創建於",
         "created_by": "建立者",
         "invited_by": "邀請者",
         "invite_type": "邀請型別",
-        "invite_date": "邀請日期",
+        "invite_date": "邀請 日期",
         "accepted_on": "接受日期",
         "accepted_by": "接受者",
         "last_active": "最後活躍",
@@ -849,16 +849,16 @@
         "method": "方法",
         "timestamp": "時間戳",
         "type": "型別",
-        "public_profile_enabled": "公開配置檔案已啟用"
+        "public_profile_enabled": "公開 配置檔案已啟用"
       }
     },
     "banner": {
       "workspace_data_notice": {
-        "overview": "此儀錶板顯示來自所有內部、合作伙伴和公開工作區的資料。不包括個人工作區。資料在每個月月底後重新整理。",
-        "internal": "不包括個人工作區。資料在每個月月底後重新整理。",
-        "partner": "不包括內部和個人工作區。資料在每天結束時重新整理。"
+        "overview": "此儀表板顯示來自所有內部、合作伙伴和 公開 工作區的資料。不包括 個人 工作區。資料在每個月月底後重新整理。",
+        "internal": "不包括 個人 工作區。資料在每個月月底後重新整理。",
+        "partner": "不包括內部和 個人 工作區。資料在每天結束時重新整理。"
       },
-      "byok_notice": "某些 API 請求資料不可用，因為為此團隊啟用了自帶金鑰 (BYOK)。",
+      "byok_notice": "某些 API 請求 資料不可用，因為為此 團隊 啟用了自帶金鑰 (BYOK)。",
       "byok_notice_link": "詳細瞭解 BYOK 如何影響分析。"
     },
     "byok": {
@@ -904,7 +904,7 @@
       "metrics": {
         "internal_active_users": {
           "title": "活躍使用者",
-          "description": "在內部工作區中檢視、建立、編輯、分叉或傳送請求的使用者"
+          "description": "在內部工作區中檢視、建立、編輯、分叉或傳送 請求 的使用者"
         },
         "active_workspaces": {
           "description": "具有檢視、建立、編輯記錄或發出過 API 請求的工作區"
@@ -922,18 +922,18 @@
     }
   },
   "sidebar": {
-    "go_to_homepage": "轉到主頁— {pageTitle}",
+    "go_to_homepage": "轉到主頁 — {pageTitle}",
     "reports": "報告",
     "ai_report_and_usage": "AI報告及使用",
     "workspaces": "工作空間",
-    "team_and_org": "團隊和組織",
+    "team_and_org": "團隊 和組織",
     "feature_usage": "API 生命週期",
     "overview": "概述",
     "internal_metrics": "內部工作空間",
-    "partnership_metrics": "合作伙伴工作區",
-    "public_network_metrics": "公開工作區",
+    "partnership_metrics": "合作伙伴 工作區",
+    "public_network_metrics": "公開 工作區",
     "team_overview": "概述",
-    "team_members": "團隊成員",
+    "team_members": "團隊 成員",
     "billing": "計費",
     "ai_usage": "代理模式",
     "usage_reports": "使用報告"
@@ -962,7 +962,7 @@
       "agent_mode_users": "代理模式使用者",
       "agent_mode_users_tooltip": "在選定時間段內使用代理模式的唯一使用者總數。",
       "agent_mode_sessions": "代理模式會話",
-      "agent_mode_sessions_tooltip": "在選定時間段內啟動的代理模式會話總數。當使用者開啟代理模式併傳送第一個提示時，會話啟動。",
+      "agent_mode_sessions_tooltip": "在選定時間段內啟動的代理模式會話總數。當用戶開啟代理模式併發送第一個提示時，會話 啟動。",
       "messages_sent": "已傳送訊息",
       "messages_sent_tooltip": "所選時間段內以代理模式傳送的訊息總數。",
       "ai_credits_used": "使用的人工智慧積分",
@@ -1037,10 +1037,10 @@
   },
   "layout": {
     "toggle": {
-      "hide_left": "隱藏左側側邊欄",
-      "show_left": "顯示左側側邊欄",
-      "hide_right": "隱藏右側側邊欄",
-      "show_right": "顯示右側側邊欄"
+      "hide_left": "隱藏左側 側邊欄",
+      "show_left": "顯示左側 側邊欄",
+      "hide_right": "隱藏右側 側邊欄",
+      "show_right": "顯示右側 側邊欄"
     }
   }
 }

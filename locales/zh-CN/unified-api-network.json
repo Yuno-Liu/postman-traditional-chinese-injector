@@ -179,16 +179,16 @@
       "pending": "請求中"
     },
     "modal": {
-      "title": "請求訪問",
+      "title": "請求 訪問",
       "close_aria_label": "關閉模式",
       "reason_label": "原因",
       "reason_placeholder": "為什麼需要訪問許可權？",
-      "send": "傳送請求",
+      "send": "傳送 請求",
       "sending": "正在傳送...",
       "toast": {
-        "success_title": "請求已傳送",
-        "success_body": "您用於訪問 {workspaceName} 的請求已傳送。",
-        "error_body": "訪問請求時出錯。"
+        "success_title": "請求 已傳送",
+        "success_body": "您用於訪問 {workspaceName} 的 請求 已傳送。",
+        "error_body": "訪問 請求 時出錯。"
       }
     }
   },
@@ -196,8 +196,8 @@
     "actions": {
       "access_requested": "請求訪問",
       "access_requested_workspace": "請求訪問 {workspaceName}",
-      "request_access": "請求訪問",
-      "request_access_workspace": "請求訪問 {workspaceName}",
+      "request_access": "請求 訪問",
+      "request_access_workspace": "請求 訪問 {workspaceName}",
       "options": "{workspaceName} 的選項",
       "remove": "從名稱空間中移除",
       "view": "開啟",
@@ -262,12 +262,12 @@
     "card": {
       "workspace_count_one": "{count} 個工作區",
       "workspace_count_other": "{count} 個工作區",
-      "created": "建立於 {date}",
+      "created": "創建於 {date}",
       "by_user": "由 {user}",
       "no_description": "無描述",
       "access_level": {
         "open": "團隊",
-        "access_by_request": "通過請求訪問",
+        "access_by_request": "通過 請求 訪問",
         "invite_only": "僅限邀請"
       },
       "empty_workspaces": "沒有工作區",
@@ -280,7 +280,7 @@
         "trigger_label": "檢視 {namespaceName} 成員",
         "title_one": "{count} 位成員",
         "title_other": "{count} 成員",
-        "overflow_one": "{count} 更多成員",
+        "overflow_one": "{count} 更多 成員",
         "overflow_other": "{count} 更多成員",
         "managers_section": "管理員",
         "members_section": "成員"
@@ -447,15 +447,15 @@
       "options": {
         "open": {
           "title": "我的組織中的任何人",
-          "description": "您組織中的任何成員將能夠看到此名稱空間及其內容"
+          "description": "您組織中的任何 成員 將能夠看到此名稱空間及其內容"
         },
         "request": {
-          "title": "通過請求訪問",
-          "description": "您組織中的使用者將看到名稱空間名稱，但需要傳送請求才能訪問其內容"
+          "title": "通過 請求 訪問",
+          "description": "您組織中的使用者將看到名稱空間名稱，但需要傳送 請求 才能訪問其內容"
         },
         "invite_only": {
           "title": "僅限邀請",
-          "description": "您組織中的使用者將看不到此名稱空間。名稱空間管理器可以通過邀請提供訪問許可權"
+          "description": "您組織中的使用者將看不到此名稱空間。名稱空間管理器可以通過 邀請 提供訪問許可權"
         }
       }
     }

@@ -67,8 +67,8 @@
       "requested-make-team_withLabel": "<userLink>{userName}</userLink> 正在請求將 <entityLink>{entityName}</entityLink> {entityLabel} 設為團隊工作區。",
       "requested-make-partner": "<userLink>{userName}</userLink> 請求將 <entityLink>{entityName}</entityLink> 設為合作伙伴工作區。",
       "requested-make-partner_withLabel": "<userLink>{userName}</userLink> 請求將 <entityLink>{entityName}</entityLink> {entityLabel} 設為合作伙伴工作區。",
-      "requested-publish-docs": "<userLink>{userName}</userLink> 正在請求釋出 <entityLink>{entityName}</entityLink> 的檔案。",
-      "requested-publish-docs_withLabel": "<userLink>{userName}</userLink> 正在請求釋出 <entityLink>{entityName}</entityLink> {entityLabel} 的檔案。",
+      "requested-publish-docs": "<userLink>{userName}</userLink> 正在請求釋出 <entityLink>{entityName}</entityLink> 的文件。",
+      "requested-publish-docs_withLabel": "<userLink>{userName}</userLink> 正在請求釋出 <entityLink>{entityName}</entityLink> {entityLabel} 的文件。",
       "requested-action-default": "<userLink>{userName}</userLink> 正在請求對 <entityLink>{entityName}</entityLink> 執行操作。",
       "requested-action-default_withLabel": "<userLink>{userName}</userLink> 正在請求對 <entityLink>{entityName}</entityLink> {entityLabel} 執行操作。",
       "approve-button": "批准",
@@ -190,7 +190,7 @@
   "readme": {
     "edit-readme": "編輯自述檔案",
     "create-readme": "自述檔案",
-    "description": "通過註釋、連結和關鍵資源來指導您的團隊，幫助他們入門",
+    "description": "通過註釋、連結和關鍵資源來指導您的 團隊，幫助他們入門",
     "disabled-tooltip": "您沒有許可權管理自述檔案。請聯絡您的管理員。",
     "modal": {
       "create-title": "組織自述檔案",

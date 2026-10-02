@@ -84,26 +84,33 @@
       }
     },
     "roles": {
-      "backend_developer": "後端開發人員",
-      "frontend_developer": "前端開發人員",
-      "fullstack_developer": "全棧開發人員",
-      "mobile_developer": "移動開發者",
-      "data_engineer": "資料工程師",
-      "devops_engineer": "DevOps/平臺工程師",
-      "qa_test_engineer": "質量保證/測試工程師",
-      "engineering_lead_manager": "工程主管/經理",
-      "engineering_executive": "工程高管",
-      "api_program_product_manager": "API 程式/產品經理",
-      "student_educator": "學生/教育者",
+      "developer_engineer": "開發人員 / 工程師",
+      "qa_test_engineer": "QA / 測試工程師",
+      "devops_engineer": "DevOps / 平臺工程師",
+      "architect_designer": "架構師 / API 設計師",
+      "engineering_lead_manager": "工程經理 / 負責人",
+      "engineering_executive": "工程高管（總監 / VP / CTO）",
+      "api_program_product_manager": "產品 / API 專案經理",
+      "student_educator": "學生 / 教育工作者",
       "other": "其他"
     },
     "role_use_cases": {
-      "build_apis": "構建 API",
-      "testing_apis": "測試API",
-      "integrate_apis": "整合API",
-      "lead_a_team_that_works_with_apis": "領導一個使用 API 的團隊",
-      "manage_api_strategy_for_my_org": "管理我的組織的 API 策略",
-      "evaluate_postman_for_my_company": "為我的公司評估 Postman"
+      "design_a_new_api": "設計新 API",
+      "test_or_debug_an_api": "測試或除錯 API",
+      "build_with_third_party_api": "使用第三方 / 公共 API 進行構建",
+      "set_up_my_team": "在 Postman 上設定我的團隊",
+      "evaluate_postman": "評估 Postman",
+      "document_and_share_apis": "編寫文件並共享 API",
+      "manage_enterprise_api_program": "管理我們的企業 API 專案"
+    },
+    "role_use_case_descriptions": {
+      "design_a_new_api": "從 Spec Hub 中的規範開始",
+      "test_or_debug_an_api": "傳送請求、檢查響應並編寫測試",
+      "build_with_third_party_api": "查詢 API 並將其整合到我的產品中",
+      "set_up_my_team": "協作、工作區、角色",
+      "evaluate_postman": "判斷它是否適合我們",
+      "document_and_share_apis": "與我的團隊或外部使用者共享",
+      "manage_enterprise_api_program": "在一處統一對整個組織的 API 進行標準化、安全保護和治理"
     },
     "team_sizes": {
       "1_member": "1 名成員",
@@ -117,7 +124,7 @@
     "title": "驗證您的電子郵件以確保您的帳戶安全",
     "description": "我們已傳送驗證電子郵件至",
     "resend_text": "還沒有收到電子郵件嗎？",
-    "resend": "重新傳送",
+    "resend": "重新發送",
     "verifyCTA": "我已驗證我的電子郵件",
     "toast_content": {
       "email_not_verified": {
@@ -227,7 +234,7 @@
     "success": {
       "send_invites": {
         "title": "已傳送邀請",
-        "description": "新成員接受您的邀請後就會加入。"
+        "description": "新成員接受您的 邀請 後就會加入。"
       },
       "save_profile": {
         "title": "個人資料已儲存",
@@ -235,7 +242,7 @@
       },
       "create_team": {
         "title": "團隊建立成功",
-        "description": "當您的請求獲得批准時，我們會通知您。"
+        "description": "當您的 請求 獲得批准時，我們會通知您。"
       },
       "verified_team_full": {
         "title": "您加入團隊的請求正在稽核中",
@@ -263,7 +270,7 @@
       },
       "setup_team": {
         "title": "團隊設定不完整",
-        "description": "我們無法完成部分團隊設定，但您可以繼續操作，稍後可在團隊儀錶板中更新這些設定。"
+        "description": "我們無法完成部分團隊設定，但您可以繼續操作，稍後可在團隊儀表板中更新這些設定。"
       },
       "create_team": {
         "title": "團隊建立失敗",

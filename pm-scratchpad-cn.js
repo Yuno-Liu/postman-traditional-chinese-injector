@@ -13,7 +13,8 @@
  * pm-scratchpad-data.json 用 fs 读（Scratch Pad 窗口 nodeIntegration=true + contextIsolation=false）。
  *
  * 安全：只做整串精确匹配；跳过 input/textarea/[contenteditable]/.CodeMirror/.monaco-editor
- * 子树，避免篡改用户输入的请求体/URL。
+ * 子树，避免篡改用户输入的请求体/URL。例外：编辑器内嵌的界面元素——空态占位提示
+ * （.monaco-placeholder、[data-slate-placeholder]）与内联 Postbot 面板——不是用户内容，照常翻译。
  */
 (function () {
   'use strict';
@@ -22,6 +23,7 @@
   var ATTRS = ['placeholder', 'title', 'aria-label'];
   var SKIP_TAGS = { INPUT: 1, TEXTAREA: 1, SCRIPT: 1, STYLE: 1 };
   var SKIP_CLASS_RE = /(^|\s)(CodeMirror|monaco-editor)(\s|$)/;
+  var PLACEHOLDER_CLASS_RE = /(^|\s)monaco-placeholder(\s|$)/;
   // 完整版 Postman 网页版域名（锚定 (^|\.) 防止 evil-postman.com 误命中）
   var HOST_RE = /(^|\.)(postman\.co|postman\.com|getpostman\.com)$/i;
 
@@ -49,10 +51,19 @@
     return SKIP_CLASS_RE.test(cls);
   }
 
-  // 纯函数：文本节点是否落在可跳过子树内（向上遍历祖先）
+  // 纯函数：元素是否为编辑器内嵌的界面元素（位于编辑器内，但不是用户内容）
+  function isPlaceholderEl(el) {
+    if (!el || el.nodeType !== 1 || !el.getAttribute) return false;
+    if (el.getAttribute('data-slate-placeholder') != null) return true;
+    if (el.getAttribute('data-testid') === 'inline-postbot-container') return true;
+    return PLACEHOLDER_CLASS_RE.test(el.getAttribute('class') || '');
+  }
+
+  // 纯函数：文本节点是否落在可跳过子树内（向上遍历祖先；先遇到内嵌界面元素则不跳过）
   function inSkippableSubtree(node) {
     var p = node && node.parentNode;
     while (p) {
+      if (isPlaceholderEl(p)) return false;
       if (isSkippableEl(p)) return true;
       p = p.parentNode;
     }

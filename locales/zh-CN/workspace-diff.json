@@ -38,7 +38,7 @@
   },
   "display": {
     "materialize_error_title": "草稿工作區載入失敗",
-    "materialize_error_title_with_id": "草稿工作區 {workspaceId} 載入失敗",
+    "materialize_error_title_with_id": "草稿 Workspace {workspaceId} 載入失敗",
     "unavailable_title": "工作區合併不可用",
     "unavailable_load_description": "我們無法載入此草稿工作區的更改，請重新開啟草稿工作區後重試。",
     "diff_error_title": "合併差異計算失敗"
