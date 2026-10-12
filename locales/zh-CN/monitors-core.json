@@ -225,7 +225,22 @@
       "line_number": "行号",
       "time_stamp": "时间戳",
       "console_output": "控制台输出",
-      "file_helper_text": "使用来自 <0> {name} </0> 的数据运行"
+      "file_helper_text": "使用来自 <0> {name} </0> 的数据运行",
+      "live_progress_chip": {
+        "preparing": "准备中",
+        "running": "运行中",
+        "retrying": "重试中",
+        "completed": "已完成",
+        "failed": "失败",
+        "aborted": "已中止"
+      },
+      "live_progress_requests_executed": "{count, plural, one {个请求已执行} other {个请求已执行}}",
+      "live_progress_preparing_subtext": {
+        "waiting": "等待开始。",
+        "starting": "正在获取你的集合。"
+      },
+      "live_progress_running_subtext": "正在执行请求。",
+      "live_progress_checking_status": "正在检查运行状态。"
     },
     "performance_graph": {
       "failed_percent": "失败百分比：<1>{failedPercent}%</1>",
@@ -411,6 +426,11 @@
     "upgrade": "您使用的是免费计划。升级为手动选择特定监控区域。",
     "upgrade_generic": "您使用的是免费计划。升级您的计划以使用此功能。",
     "region_selection_feature": "监控区域选择",
+    "minute_frequency_feature": "监控分钟级频率",
+    "upgrade_cta": "升级",
+    "runners_upgrade_heading": "升级到 Solo 套餐以使用高级运行器选项",
+    "minute_frequency_upgrade_heading": "升级到 Solo 套餐以使用监控的高级频率选项",
+    "runners_upgrade_overlay": "升级后可选择区域或私有运行器，以访问你网络内部的 API",
     "publish_report_feature": "监控发布报告",
     "email": "接收有关运行失败和错误的电子邮件通知",
     "email_add": "添加另一个收件人电子邮件",
@@ -531,15 +551,26 @@
     },
     "preview_panel": {
       "tabs": {
-        "collection_preview": "预览",
+        "collection_preview": "运行顺序",
         "iteration_data": "数据"
       },
+      "use_latest_collection": "使用最新的集合",
+      "use_latest_collection_info": "集合的更改将在下次运行时自动生效。",
       "collection_preview_error": "无法加载此集合的结构。",
       "request_added_toast": {
         "description": "请先更新并保存请求，再尝试运行监控。",
         "run": "运行监控",
         "go_back": "返回"
       }
+    },
+    "collection_deleted": "所选集合已不存在，请选择其他集合。",
+    "request_selection": {
+      "fixed_list_note": "此监控仅按指定顺序运行所选请求。之后添加到集合中的请求不会运行，除非在此处手动添加。对现有请求的编辑仍会生效。",
+      "undo": "撤销",
+      "dismiss": "关闭",
+      "empty": "请至少选择一个请求供监控运行。",
+      "items_missing": "部分所选请求已不在集合中。请检查运行顺序后重新保存。",
+      "invalid": "无法保存运行顺序。请重置后重试。"
     },
     "warning_message": {
       "unuploaded_files": "{files, plural, one {此集合中有 # 个请求缺少关联文件} other {此集合中有 # 个请求缺少关联文件}}"
@@ -575,6 +606,7 @@
     "resume": "恢复",
     "rename": "重命名",
     "edit": "编辑",
+    "review": "查看",
     "manage_roles": "管理角色",
     "request_access": "请求访问权限",
     "add_to_jira": "添加到 Jira Cloud",

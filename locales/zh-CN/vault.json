@@ -1,7 +1,7 @@
 {
   "title": "Postman Vault",
   "passport_secrets": {
-    "title": "Passport Secrets",
+    "title": "Passport 密钥",
     "description": "您在网络中被授予访问权限的 API 凭据。每一项都是<0>密钥引用</0>——一个在运行时通过 Passport 代理解析的指针，因此真实值永远不会被存储或显示。您可以在请求、环境中使用它，或将其复制到 Postman 之外使用。",
     "columns": {
       "name": "名称",
@@ -1090,6 +1090,7 @@
       "no_teammates": "没有匹配的团队成员",
       "search_placeholder": "按键名搜索",
       "workspace_label": "工作区",
+      "workspace_loading": "正在加载工作区...",
       "workspace_no_match": "没有匹配的工作区",
       "workspace_placeholder": "搜索工作区"
     },

@@ -13,7 +13,22 @@
     "postman_cli": {
       "install_in_terminal": "在终端中安装",
       "run_in_terminal": "在终端中运行",
-      "add_api_key_tooltip": "添加 API Key 后才能运行此命令"
+      "add_api_key_tooltip": "添加 API Key 后才能运行此命令",
+      "setup_collection_omitted": "此命令未包含初始化集合，因为 Postman CLI 只能运行已同步到 Postman 的集合。",
+      "teardown_collection_omitted": "此命令未包含清理集合，因为 Postman CLI 只能运行已同步到 Postman 的集合。",
+      "load_shape": {
+        "min_cli_version": "你的 Postman CLI 版本为 v{installedVersion}，此命令需要 v{version} 或更高版本。",
+        "unavailable_tooltip": "Postman CLI 无法运行此负载曲线",
+        "unsupported": {
+          "base_not_below_peak_initial_load": "Postman CLI 要求初始负载低于虚拟用户数（{virtualUsers}）。请调低该值，或使用“固定”负载配置进行平稳运行。",
+          "base_not_below_peak_base_load": "Postman CLI 要求基本负载低于虚拟用户数（{virtualUsers}）。请调低该值，或使用“固定”负载配置进行平稳运行。",
+          "ramp_up_no_ramp": "Postman CLI 无法运行时长为零的加速阶段。请在图表上将手柄拖开。",
+          "ramp_up_fills_duration": "Postman CLI 无法运行在测试结束时才达到峰值的加速阶段。请将加速手柄往前拖，或增加测试时长。",
+          "spike_no_ramp_down": "Postman CLI 无法运行瞬间回落的尖峰。请将尖峰结束手柄往后拖。",
+          "peak_no_hold_or_ramp_down": "Postman CLI 无法运行既无保持也无减速阶段的峰值。请在图表上将手柄拖开。",
+          "starts_past_peak": "Postman CLI 无法运行从峰值开始的负载曲线。请将第一个手柄往后拖。"
+        }
+      }
     },
     "errors": {
       "start_run": {
@@ -374,7 +389,7 @@
       "static_description": "请求来自可在防火墙中加入白名单的静态 IP。<Link><Text>了解更多</Text></Link>",
       "option_shared": "动态 IP",
       "option_static": "静态 IP",
-      "option_internal_stage": "Internal Staging Runners",
+      "option_internal_stage": "内部预发布运行器",
       "internal_stage_description": "请求来自 Postman 的 Internal Staging Runners。仅限 Postman 员工使用。",
       "upgrade_heading": "升级后可使用静态 IP 在云端运行性能测试",
       "upgrade_description": "将云端性能测试的流量通过可加入白名单的静态 IP 转发，即可访问防火墙后的 API。升级套餐即可开始使用。"

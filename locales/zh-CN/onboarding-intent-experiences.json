@@ -1,0 +1,21 @@
+{
+  "design_api_spec": {
+    "modal": {
+      "heading": "创建规范",
+      "description": "设计一个新的 API 规范以开始使用。",
+      "format": {
+        "heading": "选择格式",
+        "description": "我们会为你创建一个可编辑的初始文件。",
+        "select_label": "规范格式",
+        "select_placeholder": "选择格式"
+      },
+      "create_button_label": "创建规范",
+      "close_button_label": "关闭",
+      "creating_status": "正在创建你的规范..."
+    },
+    "toast": {
+      "create_error_check_before_retry": "无法创建你的规范。请刷新页面，确认是否已创建后再重试。",
+      "open_error": "规范已创建，但无法打开。请在侧边栏中查找。"
+    }
+  }
+}

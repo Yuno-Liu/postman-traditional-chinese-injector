@@ -723,6 +723,10 @@
     },
     "learn_more": "详细了解 Postman 的原生 Git 支持",
     "open_folder": "打开文件夹",
+    "recent_folders": {
+      "title": "打开文件夹",
+      "open_new_folder": "打开新文件夹"
+    },
     "desktop_only_note": "<0>注意</0><1>：原生 Git 支持仅在桌面应用中可用。</1>",
     "download_desktop_app": "下载桌面应用",
     "open_desktop_app": "打开桌面应用"

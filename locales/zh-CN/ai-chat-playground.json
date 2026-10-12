@@ -54,7 +54,7 @@
     "clear_chat_button_label": "清空对话",
     "conversation_tab": "对话",
     "system_prompt_tab": "系统提示词",
-    "title": "Playground"
+    "title": "试验场"
   },
   "suggestions": {
     "chain_tools": "串联两个工具",

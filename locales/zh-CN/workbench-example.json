@@ -396,6 +396,13 @@
       },
       "aria_label": "响应时间：{time}"
     },
+    "perf_test": {
+      "load_test_cta": "负载测试",
+      "run_cta": "运行性能测试",
+      "dismiss": "暂不",
+      "nudge": "看看此请求在负载下的表现。",
+      "create_error": "无法创建用于运行性能测试的集合，请重试。"
+    },
     "size_meta": {
       "label": "大小：",
       "tooltip": {

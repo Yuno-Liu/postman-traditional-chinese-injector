@@ -272,6 +272,12 @@
     },
     "could_not_find_workspace": "找不到这个 工作区。",
     "share_workspace_error": "分享此 工作区 时出了点问题",
+    "pending_invites": {
+      "resend_success": "邀请已重新发送",
+      "resend_error": "重新发送邀请时出错",
+      "revoke_success": "邀请已撤销",
+      "revoke_error": "撤销邀请时出错"
+    },
     "failed_to_assign_editor_role": "无法将 流程 编辑者 角色 分配给某些用户。",
     "invited_to_workspace": "已受邀加入 工作区",
     "invited_to_workspace_for_non_team_users": "邀请 请求 已发送",

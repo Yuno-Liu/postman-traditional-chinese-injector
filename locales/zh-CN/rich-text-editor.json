@@ -107,8 +107,10 @@
       "folder": "文件夹",
       "request": "请求",
       "example": "示例",
-      "environment": "环境"
+      "environment": "环境",
+      "learning_center": "学习中心"
     },
+    "learning_center_page": "{page} | Postman Learning Center",
     "loading": "加载中...",
     "options": "链接选项"
   },

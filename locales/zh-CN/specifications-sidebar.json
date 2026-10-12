@@ -1,4 +1,8 @@
 {
+  "permission_load": {
+    "banner_message": "部分规范的权限无法加载。",
+    "retry_button": "重试"
+  },
   "entity_type_icon": {
     "label": "规范"
   },

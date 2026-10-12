@@ -375,6 +375,7 @@
   "toast": {
     "items_moved": "{count} 物品已移动",
     "could_not_move_items": "无法移动物品",
+    "sort_blocked": "清除排序后才能移动项目",
     "items_linked": "已关联 {count} 个项目",
     "only_requests_can_be_linked": "只有请求可以被关联",
     "only_http_requests_can_be_linked": "只有 HTTP 请求可以被关联",

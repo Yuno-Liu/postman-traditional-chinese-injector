@@ -76,7 +76,7 @@
         "placeholder": "选择角色"
       },
       "role_use_case": {
-        "label": "以下哪项最符合您希望在 Postman 中做的事？",
+        "label": "以下哪项最能描述你想在 Postman 中做的事情以及你的角色？",
         "placeholder": "选择选项"
       },
       "team_size": {
@@ -97,20 +97,20 @@
     "role_use_cases": {
       "design_a_new_api": "设计新 API",
       "test_or_debug_an_api": "测试或调试 API",
-      "build_with_third_party_api": "使用第三方 / 公共 API 进行构建",
+      "build_with_third_party_api": "基于第三方或公共 API 进行开发",
       "set_up_my_team": "在 Postman 上设置我的团队",
       "evaluate_postman": "评估 Postman",
-      "document_and_share_apis": "编写文档并共享 API",
+      "document_and_share_apis": "编写并分享 API 文档",
       "manage_enterprise_api_program": "管理我们的企业 API 项目"
     },
     "role_use_case_descriptions": {
       "design_a_new_api": "从 Spec Hub 中的规范开始",
-      "test_or_debug_an_api": "发送请求、检查响应并编写测试",
-      "build_with_third_party_api": "查找 API 并将其集成到我的产品中",
-      "set_up_my_team": "协作、工作区、角色",
-      "evaluate_postman": "判断它是否适合我们",
+      "test_or_debug_an_api": "发送请求、检查响应、编写测试",
+      "build_with_third_party_api": "查找 API 并将其集成到我的应用中",
+      "set_up_my_team": "包括协作、工作区和角色",
+      "evaluate_postman": "探索并了解它是否适合我的团队",
       "document_and_share_apis": "与我的团队或外部使用者共享",
-      "manage_enterprise_api_program": "在一处统一对整个组织的 API 进行标准化、安全保护和治理"
+      "manage_enterprise_api_program": "在整个组织内统一规范、保障安全并治理 API"
     },
     "team_sizes": {
       "1_member": "1 名成员",

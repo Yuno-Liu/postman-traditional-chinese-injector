@@ -9,7 +9,13 @@
   "actions": {
     "connect_account_button": "连接账户",
     "discover_services_button": "发现服务",
+    "disconnect_account_button": "断开账户连接",
     "retry_button": "重试"
+  },
+  "toasts": {
+    "disconnect_success_title": "账户已断开连接",
+    "disconnect_error_title": "无法断开账户连接",
+    "disconnect_error_description": "请重试。"
   },
   "table": {
     "account_header": "账户",

@@ -251,7 +251,8 @@
     "access_selector": {
       "who_can_access_label": "谁可以访问",
       "team_access_label": "{teamName} 中的所有人",
-      "team_access_label_no_team": "您团队中的所有人"
+      "team_access_label_no_team": "您团队中的所有人",
+      "public_partner_settings_hint": "公开或合作伙伴可见性可稍后在工作区设置中更改。"
     },
     "workspace_type_helper_text": {
       "internal": "与您的团队共享 API。",

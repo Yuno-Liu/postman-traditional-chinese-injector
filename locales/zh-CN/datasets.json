@@ -33,7 +33,7 @@
     "postgres": "PostgreSQL",
     "sqlserver": "SQL Server",
     "jdbc": "JDBC",
-    "cloud": "Postman Cloud Store"
+    "cloud": "Postman 云存储"
   },
   "source_address_bar": {
     "placeholder": {
@@ -105,7 +105,8 @@
       "database": "数据库",
       "username": "用户名",
       "password": "密码",
-      "table": "表",
+      "table": "表（可选）",
+      "table_help": "可选。表名留空即可查询并使用整个数据库；如需将某张表的数据与数据集中的其他数据源组合，请填写表名。",
       "schema": "模式"
     },
     "validation": {
@@ -208,7 +209,7 @@
       "settings": "设置"
     },
     "jdbc_preview_unavailable_heading": "无法预览",
-    "jdbc_preview_unavailable_message": "目前 JDBC 数据源不支持预览。请创建视图，对数据库执行查询。",
+    "jdbc_preview_unavailable_message": "直接查询数据库的数据源不支持预览。请创建视图来对数据库运行查询。",
     "create_view": "创建视图",
     "jdbc_settings": {
       "source_info": "数据源信息",
@@ -237,7 +238,9 @@
     "row_count": "{count, plural, one {# 行} other {# 行}}",
     "row_count_capped": "仅显示前 {count, number} 行",
     "row_count_of_total": "显示 {total, number} 行中的 {shown, number} 行",
-    "update": "更新"
+    "update": "更新",
+    "update_anyway": "仍然更新",
+    "blank_table_breaks_views": "未指定表时，此数据源会连接整个数据库，只能通过原生视图查询。{count, plural, one {此视图读取了该表，将无法继续使用} other {这 # 个视图读取了该表，将无法继续使用}}：{views}。"
   },
   "agent_schema": {
     "row_count_unknown": "行数未知",
@@ -268,20 +271,21 @@
   "data_view": {
     "run": "运行",
     "save": "保存",
+    "save_options_label": "保存选项",
     "reset": "重置",
     "save_as_new_view": "另存为新视图",
     "data_label": "数据",
     "query_label": "查询",
-    "jdbc_native_query_badge": "JDBC 原生查询",
-    "jdbc_native_query_info_label": "关于 JDBC 原生查询",
-    "jdbc_native_query_tooltip": "此查询会通过 JDBC 驱动原样直接发送给数据库。自动补全和 SQL 校验可能尚不可用。",
+    "jdbc_native_query_badge": "原生查询",
+    "jdbc_native_query_info_label": "关于原生查询",
+    "jdbc_native_query_tooltip": "此查询将原样发送到你的数据库服务器。请使用数据库自身的查询语言（SQL 方言）编写。自动补全和查询校验可能不可用。",
     "deleted_source": "[已删除的数据源]",
     "empty_table": "运行查询以查看数据",
-    "save_output_as_source": "将输出保存为数据源",
+    "save_output_as_source": "另存为数据源",
     "use_view": "使用视图",
-    "more_output_actions": "此输出的更多操作",
     "use_view_in_collection_run": "集合运行",
-    "use_view_in_monitor": "监控"
+    "use_view_in_monitor": "监控",
+    "more_header_actions": "更多操作"
   },
   "save_view_output_modal": {
     "title": "将输出保存为数据源",
@@ -366,7 +370,7 @@
       "kind": {
         "ai": "用 AI 添加",
         "local": "本地文件",
-        "cloud": "Postman Cloud Store",
+        "cloud": "Postman 云存储",
         "mysql": "MySQL",
         "postgres": "Postgres",
         "sqlserver": "SQL Server",
@@ -489,9 +493,12 @@
     "sources_label": "数据源",
     "sources_placeholder": "选择数据源",
     "native_query_label": "要执行的查询（之后可编辑）",
-    "native_query_info_label": "关于 JDBC 查询执行",
-    "native_query_tooltip": "对于 JDBC 数据源，所写的查询会原样发送给数据库服务器并执行。",
-    "jdbc_single_source": "JDBC 数据源只能单独使用，不能与其他数据源混用。",
+    "native_query_info_label": "关于原生查询执行",
+    "native_query_placeholder": "使用此数据库自身的 SQL 编写查询，例如 SELECT * FROM my_table",
+    "native_query_tooltip": "此查询将原样发送到你的数据库服务器。请使用数据库自身的查询语言（SQL 方言）编写。自动补全和查询校验可能不可用。",
+    "jdbc_single_source": "直接在数据库上运行查询的数据源只能单独使用，不能与其他数据源混用。",
+    "native_only_selected": "{name} 直接在数据库上运行查询，因此不能与其他数据源组合。",
+    "native_only_disabled": "{name} 连接整个数据库并运行自身的 SQL，因此不能与其他数据源组合。",
     "submit": "创建视图",
     "cancel": "取消"
   },
@@ -687,11 +694,11 @@
     "database_hint": "此处只能添加文件。如需添加数据库数据源，请从侧边栏打开数据集并在其中添加。",
     "saving_to_workspace": "正在保存到此工作区。",
     "saving_to_repository": "正在保存到仓库文件夹。",
-    "advanced": "高级选项",
+    "more_options": "更多选项",
     "dataset_label": "数据集",
-    "default_dataset_option": "{datasetName}（默认）",
-    "new_dataset_option": "新建数据集…",
-    "new_dataset_name_label": "新数据集名称",
+    "new_dataset_target": "新建数据集",
+    "dataset_name_label": "数据集名称",
+    "creates_dataset": "将创建“{datasetName}”，并以该文件作为数据源和视图。",
     "view_name_label": "视图名称",
     "description_label": "描述",
     "description_placeholder": "这些数据涵盖哪些内容以及何时使用",

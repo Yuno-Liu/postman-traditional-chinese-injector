@@ -70,7 +70,7 @@
     "start_from": "起始位置",
     "earliest": "最早",
     "latest": "最新",
-    "offset": "Offset",
+    "offset": "偏移量",
     "timestamp": "时间戳",
     "offset_placeholder": "输入 offset",
     "timestamp_placeholder": "输入时间戳"
@@ -168,13 +168,13 @@
     "inherit_hint": "继承自上级。"
   },
   "event": {
-    "topic": "Topic",
+    "topic": "主题",
     "topic_placeholder": "添加 Topic",
     "partition": "分区",
-    "key": "Key",
+    "key": "键",
     "key_placeholder": "消息 Key",
     "key_serde": "Key 序列化方式",
-    "value": "Value",
+    "value": "值",
     "value_too_large": "{size} 超出 {limit} 限制",
     "value_serde": "Value 序列化方式",
     "serde": {
@@ -194,17 +194,17 @@
     },
     "pane": {
       "details": "详情",
-      "value": "Value"
+      "value": "值"
     }
   },
   "consume": {
     "stream": {
       "field": {
-        "topic": "Topic",
+        "topic": "主题",
         "partition": "分区",
-        "offset": "Offset",
-        "key": "Key",
-        "value": "Value",
+        "offset": "偏移量",
+        "key": "键",
+        "value": "值",
         "headers": "请求头"
       }
     }
@@ -238,7 +238,7 @@
         "hex": "Hex"
       },
       "tab": {
-        "value": "Value",
+        "value": "值",
         "meta": "元数据"
       }
     }

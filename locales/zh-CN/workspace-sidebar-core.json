@@ -432,6 +432,10 @@
         "singular": "元素",
         "plural": "元素"
       },
+      "workspace": {
+        "singular": "workspace",
+        "plural": "workspaces"
+      },
       "collection": {
         "singular": "Collection",
         "plural": "Collection"
@@ -740,6 +744,30 @@
       }
     }
   },
+  "access_blocked": {
+    "heading": "访问受阻（{blockedCount}）",
+    "invite_cta": "邀请",
+    "invited_cta": "已邀请",
+    "invited_tooltip": "已发出邀请。团队管理员批准其请求后即会授予访问权限。",
+    "remove_cta": "移除",
+    "more_actions_aria": "{memberName} 的更多操作",
+    "group_members_meta": "{count, plural, =1 {# 位群组成员} other {# 位群组成员}}",
+    "team_members_meta": "{count, plural, =1 {# 位团队成员} other {# 位团队成员}}",
+    "group_popover_count_label": "{count, plural, =1 {# 位成员} other {# 位成员}}",
+    "group_popover_loading": "正在加载成员…",
+    "group_popover_empty": "此群组中没有成员。",
+    "group_popover_unavailable": "无法加载成员，请重试。",
+    "group_popover_view_group": "查看群组",
+    "view_all": "显示全部",
+    "invite_toast": {
+      "title": "已发送角色升级请求",
+      "description": "团队管理员将审核授予 {role} 访问权限的请求。"
+    },
+    "upgraded_toast": {
+      "title": "已授予访问权限",
+      "description": "{name} 现在拥有此 {entity} 的 {role} 访问权限。"
+    }
+  },
   "delete_entity": {
     "collection_deleted": "集合已删除",
     "heading": {
@@ -839,5 +867,11 @@
   },
   "share_response": {
     "copy_response_link_aria_label": "复制响应链接"
+  },
+  "pending_invites": {
+    "invite_as": "（以 {role} 身份受邀）",
+    "resend_cta": "重新发送邀请",
+    "remove_cta": "移除",
+    "more_actions_aria": "发送给 {email} 的邀请的更多操作"
   }
 }

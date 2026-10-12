@@ -104,23 +104,10 @@
     "deny_cta": "否定",
     "view_all": "显示全部"
   },
-  "blocked_access_section": {
-    "heading": "访问被阻止 ({count})",
-    "group_members_meta": "{count, plural, =1 {# 个组成员} other {# 个组成员}}",
-    "group_popover_heading": "{name}（{count, plural, =1 {# 个成员} other {# 个成员}}）",
-    "invite_cta": "邀请",
-    "invited_cta": "受邀",
-    "invited_tooltip": "已经邀请了。一旦团队经理批准其请求，将授予访问权限。",
-    "more_actions_aria": "{memberName} 的更多操作",
-    "remove_cta": "移除",
-    "team_members_meta": "{count, plural, =1 {# 位团队成员} other {# 位团队成员}}",
-    "view_all": "显示全部",
-    "toast": {
-      "error": "出了点问题。请再试一次。"
-    }
-  },
   "user_group_popover": {
-    "heading": "{name}（{count, plural, =1 {# 位成员} other {# 位成员}}）",
+    "count_label": "{count, plural, =1 {# 位成员} other {# 位成员}}",
+    "members_loading": "正在加载成员…",
+    "members_unavailable": "无法加载成员，请重试。",
     "view_group": "查看分组",
     "no_members": "该分组暂无成员。",
     "trigger_label": "分组成员"
@@ -199,7 +186,8 @@
     },
     "pinned_document": {
       "pin_button": "将文档固定到概览",
-      "add_readme_button": "添加 WORKSPACE-README",
+      "add_readme_button": "添加工作区 README",
+      "write_with_ai_button": "使用 AI 撰写",
       "select_placeholder": "选择要固定的文档",
       "empty_msg": "此工作区中暂无文档。",
       "toast": {
