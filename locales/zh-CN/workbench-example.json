@@ -108,7 +108,7 @@
           "detail": "此請求除請求頭外沒有內容需要傳送。"
         },
         "205": {
-          "detail": "重置傳送此請求的文件。"
+          "detail": "重置傳送此請求的檔案。"
         },
         "206": {
           "detail": "根據“Range”請求頭，僅接收部分資源。"
@@ -396,6 +396,13 @@
       },
       "aria_label": "響應時間：{time}"
     },
+    "perf_test": {
+      "load_test_cta": "負載測試",
+      "run_cta": "執行效能測試",
+      "dismiss": "暫不",
+      "nudge": "看看此請求在負載下的表現。",
+      "create_error": "無法建立用於執行效能測試的集合，請重試。"
+    },
     "size_meta": {
       "label": "大小：",
       "tooltip": {
@@ -440,7 +447,7 @@
       }
     },
     "loading_message": "正在傳送請求…",
-    "loading_active_env_message": "正在獲取當前環境併發送請求",
+    "loading_active_env_message": "正在獲取當前環境併傳送請求",
     "heading": "響應",
     "empty_view_message": {
       "without_url": "傳送請求以獲取響應",
@@ -576,7 +583,7 @@
           "wrap_lines_aria_label": "切換自動換行",
           "search": "搜尋",
           "search_aria_label": "在響應中搜索",
-          "schema": "Schema",
+          "schema": "模式",
           "show_schema": "顯示 Schema",
           "hide_schema": "隱藏 Schema",
           "schema_toggle_aria_label": "切換 Schema 檢視",
@@ -731,7 +738,7 @@
           "via": "由代理新增並用於跟蹤訊息轉發、避免 請求 迴圈並識別傳送者的協議功能。",
           "warning": "包含有關訊息狀態可能出現的問題的資訊。",
           "www_authenticate": "指定訪問資源時應使用的身份驗證方法。",
-          "x_requested_with": "識別 Ajax 請求。大多數 JavaScript 框架都會發送帶有 XMLHttpRequest 值的標頭。",
+          "x_requested_with": "識別 Ajax 請求。大多數 JavaScript 框架都會傳送帶有 XMLHttpRequest 值的標頭。",
           "x_do_not_track": "可用於要求 Web 應用程式不要跟蹤使用者。注意：此標頭在很大程度上被 Web 應用程式忽略。",
           "dnt": "可用於要求 Web 應用程式不要跟蹤使用者。這是 Mozilla 的 X-Do-Not-Track 標頭的 版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支援此標頭。注意：此標頭在很大程度上被 Web 應用程式忽略。",
           "x_forwarded_for": "標識通過 HTTP 代理或負載均衡器連線到 Web 伺服器的客戶端的原始 IP 地址。",

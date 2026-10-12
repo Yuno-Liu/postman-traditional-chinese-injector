@@ -64,12 +64,23 @@ const MAIN_ENTRY = 'main.js'; // 主进程入口（package.json 的 main）
 const BAK_SUFFIX = '.bak';
 const MARK_START = '// === PM-I18N START ===';
 const MARK_END = '// === PM-I18N END ===';
+// 鉤子按「preload 所在目錄」解析：真正的 preload（webPreferences.preload）裡 require('./x') 即相對本文件；
+// 但 Postman 7.x 的 js/preload.js 是 HTML 用 <script> 載入的，那裡 require 相對的是頁面目錄 html/，
+// 故優先用 document.currentScript 定位本腳本所在目錄。
 const INJECT_BLOCK =
   `\n${MARK_START}\n` +
-  "try { require('./pm-chinese.js'); } catch (e) { console.error('[pm-chinese] load failed', e); }\n" +
-  "try { require('./pm-scratchpad-cn.js'); } catch (e) { console.error('[pm-scratchpad] load failed', e); }\n" +
+  '(function () {\n' +
+  "  var pmDir = null;\n" +
+  "  try {\n" +
+  "    var cs = typeof document !== 'undefined' && document.currentScript;\n" +
+  "    if (cs && /^file:/.test(cs.src)) pmDir = require('path').dirname(require('url').fileURLToPath(cs.src));\n" +
+  "  } catch (e) { /* ignore，回落到相對 require */ }\n" +
+  "  function pmRequire(name) { return pmDir ? require(require('path').join(pmDir, name)) : require('./' + name); }\n" +
+  "  try { pmRequire('pm-chinese.js'); } catch (e) { console.error('[pm-chinese] load failed', e); }\n" +
+  "  try { pmRequire('pm-scratchpad-cn.js'); } catch (e) { console.error('[pm-scratchpad] load failed', e); }\n" +
+  '})();\n' +
   `${MARK_END}\n`;
-// 主进程入口的注入块：须插在 main.js 最前面，赶在 Postman 建菜单之前包装好 Menu
+// 主進程入口的注入塊：須插在 main.js 最前面，趕在 Postman 建選單之前包裝好 Menu
 const MAIN_INJECT_BLOCK =
   `${MARK_START}\n` +
   "try { require('./pm-main-cn.js'); } catch (e) { console.error('[pm-main] load failed', e); }\n" +
@@ -82,11 +93,12 @@ function isDir(p) {
 function isFile(p) {
   try { return fs.statSync(p).isFile(); } catch (e) { return false; }
 }
-// 渲染进程 preload 在不同 Postman 版本里的相对路径（按优先级排序）：
-//   新版        -> preload_desktop.js（根目录）
-//   老版(10.24) -> preload/desktop/index.js（见 windowManager.js 的 webPreferences.preload）
-// 注意：根目录还有个主进程用的 preload.js，不能误选，故只匹配这份明确清单。
-const PRELOAD_CANDIDATES = ['preload_desktop.js', path.join('preload', 'desktop', 'index.js')];
+// 渲染進程 preload 在不同 Postman 版本裡的相對路徑（按優先順序排序）：
+//   新版        -> preload_desktop.js（根目錄）
+//   老版(10.24) -> preload/desktop/index.js（見 windowManager.js 的 webPreferences.preload）
+//   7.x         -> js/preload.js（沒有 webPreferences.preload；視窗開 nodeIntegration，各 html 頁用 <script> 載入它）
+// 注意：根目錄還有個主進程用的 preload.js，不能誤選，故只匹配這份明確清單。
+const PRELOAD_CANDIDATES = ['preload_desktop.js', path.join('preload', 'desktop', 'index.js'), path.join('js', 'preload.js')];
 // 在 root（解包后的 staging 或未打包 app/）里定位渲染进程 preload，找不到返回 null。
 function findPreloadIn(root) {
   for (const rel of PRELOAD_CANDIDATES) {

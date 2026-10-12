@@ -5,6 +5,8 @@
   "context_menu": {
     "new_request": "新建請求",
     "duplicate_tab": "複製選項卡",
+    "split_tab": "向右拆分",
+    "split_tab_left": "向左拆分",
     "close_tab": "關閉選項卡",
     "force_close_current": "強制關閉選項卡",
     "close_others": "關閉其他選項卡",
@@ -225,7 +227,7 @@
     "navigation_aria_label": "上下文欄導航",
     "close": "關閉上下文欄",
     "documentation": {
-      "title": "文件"
+      "title": "檔案"
     },
     "comments": {
       "title": "評論"
@@ -374,7 +376,7 @@
         },
         "body": {
           "helper_text": "最近建立：",
-          "created_on": "創建於：{dateObj, date, medium}"
+          "created_on": "建立於：{dateObj, date, medium}"
         },
         "footer": {
           "view_all": "檢視所有分叉",
@@ -784,7 +786,18 @@
         "description_shared_self": "此金鑰已儲存在你的共享保管庫中。",
         "store_in_plain_text_button": "以明文儲存",
         "store_in_plain_text_error": "無法恢復該值。請檢查保管庫是否已解鎖，然後重試。",
-        "store_in_plain_text_failed": "無法以明文儲存該值。請重試。"
+        "store_in_plain_text_failed": "無法以明文儲存該值。請重試。",
+        "reason_prompt": "為什麼這個值需要保持明文？",
+        "reason_visibility": "您的管理員可以看到此申請及其原因。",
+        "cancel_button": "取消",
+        "close_button": "關閉",
+        "reasons": {
+          "false_positive": "誤報",
+          "test_data": "測試資料",
+          "public_information": "公開資訊",
+          "internal_use_only": "僅限內部使用",
+          "temporary_use_only": "僅臨時使用"
+        }
       },
       "info_row": {
         "initial": "初始值",

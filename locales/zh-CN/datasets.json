@@ -16,7 +16,7 @@
   "source_type_tooltip": {
     "file": "從你的計算機上傳 CSV、JSON 或 Excel 檔案，或複用已儲存到此工作區的檔案。",
     "local": "使用你計算機上的檔案。檔案保留在本機，並在本地進行查詢。",
-    "cloud": "使用儲存在 Postman Cloud 中的檔案，與所有可訪問此工作區的人共享。",
+    "cloud": "使用儲存到此工作區的檔案。",
     "remote": "從公開 URL 獲取資料檔案。",
     "mysql": "連線 MySQL 資料庫，並將某張表作為此資料集的一部分進行查詢。",
     "postgres": "連線 PostgreSQL 資料庫，並將某張表作為此資料集的一部分進行查詢。",
@@ -33,7 +33,7 @@
     "postgres": "PostgreSQL",
     "sqlserver": "SQL Server",
     "jdbc": "JDBC",
-    "cloud": "Postman Cloud Store"
+    "cloud": "Postman 雲端儲存"
   },
   "source_address_bar": {
     "placeholder": {
@@ -67,7 +67,7 @@
   },
   "cartographer": {
     "empty_state": {
-      "description": "選擇一個數據源以檢視其結構。"
+      "description": "選擇一個資料來源以檢視其結構。"
     },
     "loading": {
       "description": "正在載入 Schema…"
@@ -105,7 +105,8 @@
       "database": "資料庫",
       "username": "使用者名稱",
       "password": "密碼",
-      "table": "表",
+      "table": "表（可選）",
+      "table_help": "可選。表名留空即可查詢並使用整個資料庫；如需將某張表的資料與資料集中的其他資料來源組合，請填寫表名。",
       "schema": "模式"
     },
     "validation": {
@@ -198,7 +199,7 @@
   },
   "data_source_edit": {
     "extend_with_ai": "用 AI 擴充套件",
-    "extend_with_ai_tooltip": "生成並追加合成數據行",
+    "extend_with_ai_tooltip": "生成並追加合成資料行",
     "extend_with_ai_unavailable": "此資料來源的原始資料為只讀，無法擴充套件",
     "loading": "正在載入源...",
     "last_refreshed_label": "上次重新整理",
@@ -208,7 +209,7 @@
       "settings": "設定"
     },
     "jdbc_preview_unavailable_heading": "無法預覽",
-    "jdbc_preview_unavailable_message": "目前 JDBC 資料來源不支援預覽。請建立檢視，對資料庫執行查詢。",
+    "jdbc_preview_unavailable_message": "直接查詢資料庫的資料來源不支援預覽。請建立檢視來對資料庫執行查詢。",
     "create_view": "建立檢視",
     "jdbc_settings": {
       "source_info": "資料來源資訊",
@@ -237,7 +238,9 @@
     "row_count": "{count, plural, one {# 行} other {# 行}}",
     "row_count_capped": "僅顯示前 {count, number} 行",
     "row_count_of_total": "顯示 {total, number} 行中的 {shown, number} 行",
-    "update": "更新"
+    "update": "更新",
+    "update_anyway": "仍然更新",
+    "blank_table_breaks_views": "未指定表時，此資料來源會連線整個資料庫，只能通過原生檢視查詢。{count, plural, one {此檢視讀取了該表，將無法繼續使用} other {這 # 個檢視讀取了該表，將無法繼續使用}}：{views}。"
   },
   "agent_schema": {
     "row_count_unknown": "行數未知",
@@ -268,20 +271,21 @@
   "data_view": {
     "run": "執行",
     "save": "儲存",
+    "save_options_label": "儲存選項",
     "reset": "重置",
     "save_as_new_view": "另存為新檢視",
     "data_label": "資料",
     "query_label": "查詢",
-    "jdbc_native_query_badge": "JDBC 原生查詢",
-    "jdbc_native_query_info_label": "關於 JDBC 原生查詢",
-    "jdbc_native_query_tooltip": "此查詢會通過 JDBC 驅動原樣直接傳送給資料庫。自動補全和 SQL 校驗可能尚不可用。",
+    "jdbc_native_query_badge": "原生查詢",
+    "jdbc_native_query_info_label": "關於原生查詢",
+    "jdbc_native_query_tooltip": "此查詢將原樣傳送到你的資料庫伺服器。請使用資料庫自身的查詢語言（SQL 方言）編寫。自動補全和查詢校驗可能不可用。",
     "deleted_source": "[已刪除的資料來源]",
     "empty_table": "執行查詢以檢視資料",
-    "save_output_as_source": "將輸出儲存為資料來源",
+    "save_output_as_source": "另存為資料來源",
     "use_view": "使用檢視",
-    "more_output_actions": "此輸出的更多操作",
     "use_view_in_collection_run": "集合執行",
-    "use_view_in_monitor": "Monitor"
+    "use_view_in_monitor": "監控",
+    "more_header_actions": "更多操作"
   },
   "save_view_output_modal": {
     "title": "將輸出儲存為資料來源",
@@ -289,7 +293,7 @@
     "name_label": "資料來源名稱",
     "name_placeholder": "例如 top_customers_snapshot",
     "name_invalid": "請使用字母、數字和下劃線，並以字母或下劃線開頭。",
-    "name_taken": "此資料集中已存在同名數據源，請使用其他名稱。",
+    "name_taken": "此資料集中已存在同名資料來源，請使用其他名稱。",
     "row_count_hint": "{count, plural, one {將上傳 # 行} other {將上傳 # 行}}",
     "unsaved_query_hint": "將使用當前顯示的未儲存查詢。",
     "cancel": "取消",
@@ -305,7 +309,7 @@
     "title": "在集合執行中使用",
     "description": "開啟集合執行器，並將此檢視設為執行的迭代資料。",
     "view_label": "資料集檢視",
-    "collection_label": "Collection",
+    "collection_label": "集合",
     "collection_placeholder": "選擇集合",
     "no_collections": "此工作區中沒有可執行的集合。",
     "load_error": "無法載入此工作區中的集合。",
@@ -355,7 +359,7 @@
       "sample": {
         "prompt": "剛開始使用？先從示例資料來源試試。",
         "name": "客戶",
-        "description": "包含聯絡方式、所在地區和賬戶狀態欄位的客戶資料。",
+        "description": "包含聯絡方式、所在地區和賬戶狀態列位的客戶資料。",
         "add_error": "無法新增該示例資料來源，請重試。"
       },
       "enterprise_upgrade": {
@@ -366,14 +370,14 @@
       "kind": {
         "ai": "用 AI 新增",
         "local": "本地檔案",
-        "cloud": "Postman Cloud Store",
+        "cloud": "Postman 雲端儲存",
         "mysql": "MySQL",
         "postgres": "Postgres",
         "sqlserver": "SQL Server",
         "jdbc": "JDBC 資料來源",
         "remote": "公共 URL"
       },
-      "add_busy": "另一個數據源仍在新增中，請等待完成後重試。"
+      "add_busy": "另一個資料來源仍在新增中，請等待完成後重試。"
     },
     "views": {
       "title": "資料檢視",
@@ -489,9 +493,12 @@
     "sources_label": "資料來源",
     "sources_placeholder": "選擇資料來源",
     "native_query_label": "要執行的查詢（之後可編輯）",
-    "native_query_info_label": "關於 JDBC 查詢執行",
-    "native_query_tooltip": "對於 JDBC 資料來源，所寫的查詢會原樣傳送給資料庫伺服器並執行。",
-    "jdbc_single_source": "JDBC 資料來源只能單獨使用，不能與其他資料來源混用。",
+    "native_query_info_label": "關於原生查詢執行",
+    "native_query_placeholder": "使用此資料庫自身的 SQL 編寫查詢，例如 SELECT * FROM my_table",
+    "native_query_tooltip": "此查詢將原樣傳送到你的資料庫伺服器。請使用資料庫自身的查詢語言（SQL 方言）編寫。自動補全和查詢校驗可能不可用。",
+    "jdbc_single_source": "直接在資料庫上執行查詢的資料來源只能單獨使用，不能與其他資料來源混用。",
+    "native_only_selected": "{name} 直接在資料庫上執行查詢，因此不能與其他資料來源組合。",
+    "native_only_disabled": "{name} 連線整個資料庫並執行自身的 SQL，因此不能與其他資料來源組合。",
     "submit": "建立檢視",
     "cancel": "取消"
   },
@@ -553,7 +560,7 @@
       "local_file_workspace": "本地檔案資料來源僅在桌面端的本地工作區中可用。請改用資料庫或遠端檔案資料來源，或切換到本地工作區。"
     },
     "choose_file": "選擇檔案",
-    "unsupported_source": "資料守護程序尚不支援該資料來源型別。",
+    "unsupported_source": "資料守護程式尚不支援該資料來源型別。",
     "local_file_unavailable_web": "網頁版不支援本地檔案。請開啟 Postman 桌面應用查詢本地檔案，或在此使用遠端檔案或資料庫資料來源。",
     "schema": {
       "search_placeholder": "搜尋 Schema",
@@ -674,5 +681,32 @@
         }
       }
     }
+  },
+  "quick_create": {
+    "title": "從檔案建立資料集",
+    "save_as_title": "另存為資料集",
+    "file_label": "檔案",
+    "drop_or_browse": "拖放 CSV 或 JSON 檔案，或<browse>瀏覽</browse>",
+    "replace_file": "替換檔案",
+    "remove_file": "移除檔案",
+    "unsupported_file": "只能新增 CSV 和 JSON 檔案。",
+    "adds_to": "將該檔案作為資料來源和檢視新增到“{datasetName}”中。",
+    "database_hint": "此處只能新增檔案。如需新增資料庫資料來源，請從側邊欄開啟資料集並在其中新增。",
+    "saving_to_workspace": "正在儲存到此工作區。",
+    "saving_to_repository": "正在儲存到倉庫資料夾。",
+    "more_options": "更多選項",
+    "dataset_label": "資料集",
+    "new_dataset_target": "新建資料集",
+    "dataset_name_label": "資料集名稱",
+    "creates_dataset": "將建立“{datasetName}”，並以該檔案作為資料來源和檢視。",
+    "view_name_label": "檢視名稱",
+    "description_label": "描述",
+    "description_placeholder": "這些資料涵蓋哪些內容以及何時使用",
+    "save": "儲存",
+    "cancel": "取消",
+    "created": "已將“{viewName}”新增到“{datasetName}”",
+    "failed": "資料集建立失敗，請重試。",
+    "file_too_large": "此檔案過大，無法儲存為資料集。請選擇小於 {limitMb} MB 的檔案，或改為將其儲存到工作區。",
+    "no_permission": "您沒有在此工作區中建立資料集的許可權，且此處沒有可供新增的資料集。"
   }
 }

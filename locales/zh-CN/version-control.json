@@ -53,7 +53,7 @@
       "all_forks_message": "從該 {modelName} 建立的所有分叉都將出現在此處。",
       "fork_label": "Fork 標籤",
       "created_by": "建立者：",
-      "created_on": "創建於",
+      "created_on": "建立於",
       "of_text": "的",
       "hidden_forks_text": "其中一些不在此列表中，因為它們位於您無權訪問的工作區中。",
       "forks_label": "分叉 ({modelName})",

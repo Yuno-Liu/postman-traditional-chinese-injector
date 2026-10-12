@@ -262,7 +262,7 @@
     "card": {
       "workspace_count_one": "{count} 個工作區",
       "workspace_count_other": "{count} 個工作區",
-      "created": "創建於 {date}",
+      "created": "建立於 {date}",
       "by_user": "由 {user}",
       "no_description": "無描述",
       "access_level": {

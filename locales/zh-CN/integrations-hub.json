@@ -31,7 +31,7 @@
     "connectButton": "連線服務",
     "connectPermissionTooltip": "只有具備 API Catalog Manager 角色的成員才能訪問服務發現頁面",
     "columns": {
-      "workspace": "Workspace",
+      "workspace": "工作區",
       "repository": "倉庫"
     },
     "emptyState": "未找到整合服務",
@@ -87,7 +87,10 @@
     },
     "jira": {
       "title": "建立和檢視 Jira Issue",
-      "description": "從集合、響應或監控建立 Jira Issue 或關聯已有 Issue，無需離開 Postman 即可跟蹤狀態。"
+      "description": "從集合、響應或監控建立 Jira Issue 或關聯已有 Issue，無需離開 Postman 即可跟蹤狀態。",
+      "jiraSite": "Jira 站點",
+      "otherSites_one": "+ 其他 {count} 個",
+      "otherSites_other": "+ 其他 {count} 個"
     },
     "github_app": {
       "title": "已連線的 GitHub 賬戶",
@@ -103,6 +106,8 @@
       "neverUsed": "從未使用",
       "removeSuccess": "已成功從工作區移除。",
       "removeError": "移除失敗，請重試。",
+      "loadError": "無法載入已連線的工作區。",
+      "reload": "重新載入",
       "removeModal": {
         "title": "要從 {workspaceName} 中移除 {appName} 嗎？",
         "body": "Postman 將停止在此工作區中執行 {appName}。您可以隨時重新連線。",
@@ -136,6 +141,7 @@
       },
       "connectButton": "連線閘道器",
       "connectNoPermission": "你沒有連線此閘道器的許可權，請聯絡團隊管理員。",
+      "connectPlanRequired": "閘道器連線僅適用於 Postman 企業版套餐。",
       "viewDocs": "檢視文件",
       "neverUsed": "從未使用",
       "removeSuccess": "閘道器連線已成功移除。",
@@ -185,7 +191,7 @@
   "slackChannel": {
     "privateChannel": "私密頻道",
     "channelUnavailable": "頻道不可用",
-    "loginForChannelInfo": "登入以檢視頻道資訊",
+    "loginForChannelInfo": "登入以檢影片道資訊",
     "workspaceColumn": "Slack 工作區",
     "channelColumn": "Slack 頻道"
   },
@@ -273,7 +279,7 @@
     "description": "持續跟蹤您的 API 的健康狀況和效能，並自動將每次監控執行的結果傳送到 {appName} 頻道。",
     "addButton": "連線監控",
     "table": {
-      "monitor": "Monitor"
+      "monitor": "監控"
     },
     "pagination": {
       "itemsPerPage": "每頁條數",
@@ -282,7 +288,7 @@
     "modal": {
       "createHeading": "連線頻道",
       "editHeading": "編輯監控整合",
-      "monitorLabel": "Monitor",
+      "monitorLabel": "監控",
       "monitorPlaceholder": "選擇監控",
       "frequencyLabel": "傳送通知的場景…",
       "frequencyAllRuns": "每次執行完成時",
@@ -316,8 +322,8 @@
     },
     "columns": {
       "name": "名稱",
-      "monitor": "Monitor",
-      "collection": "Collection",
+      "monitor": "監控",
+      "collection": "集合",
       "entity": "實體",
       "status": "狀態",
       "workspace": "工作區",

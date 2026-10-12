@@ -219,7 +219,7 @@
   },
   "example_documentation": {
     "error": {
-      "text": "無法從示例載入文件。",
+      "text": "無法從示例載入檔案。",
       "button_text": "再試一次"
     },
     "empty": "<0>新增示例</0> <1>來說明請求如何工作。</1>",
@@ -579,7 +579,7 @@
   },
   "unknown_file": "未知檔案",
   "documentation": {
-    "title": "文件",
+    "title": "檔案",
     "required": "必需的",
     "repeated": "重複的",
     "table": {

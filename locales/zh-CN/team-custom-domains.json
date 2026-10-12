@@ -14,7 +14,7 @@
   "add_custom_domain": "新增自定義域",
   "upgrade_your_plan": {
     "title": "升級您的計劃",
-    "description": "您目前使用的是免費計劃。切換到付費計劃以在自定義域上託管您的文件。 <CustomLink><br></br><Text>檢視計劃</Text></CustomLink>"
+    "description": "您目前使用的是免費計劃。切換到付費計劃以在自定義域上託管您的檔案。 <CustomLink><br></br><Text>檢視計劃</Text></CustomLink>"
   },
   "add_your_team_first_domain": {
     "title": "新增您的 團隊 的第一個域"
@@ -49,7 +49,7 @@
     },
     "verify_custom_domain_success": {
       "title": "自定義域已驗證",
-      "description": "您的自定義域現已驗證。您現在可以使用此域訪問已釋出集合的文件。"
+      "description": "您的自定義域現已驗證。您現在可以使用此域訪問已釋出集合的檔案。"
     },
     "verify_custom_domain_error": {
       "title": "出了點問題",

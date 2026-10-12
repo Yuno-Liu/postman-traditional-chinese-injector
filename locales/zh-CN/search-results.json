@@ -92,7 +92,7 @@
         "collection": "集合",
         "request": "請求",
         "environment": "環境",
-        "document": "文件",
+        "document": "檔案",
         "mock": "程式碼模擬伺服器"
       },
       "featured_label": "精選",
@@ -133,7 +133,7 @@
           "collection": "Collection",
           "request": "請求",
           "environment": "Environment",
-          "document": "文件",
+          "document": "檔案",
           "mock": "Code Mock"
         }
       }

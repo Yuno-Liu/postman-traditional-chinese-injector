@@ -29,8 +29,8 @@
     "org_helper_text": "您希望在 Postman 上顯示的組織名稱。",
     "team_domain": "團隊 域",
     "org_domain": "組織域",
-    "team_domain_helper_text": "用於登入和訪問您的 團隊 儀表板的唯一 團隊 域。",
-    "org_domain_helper_text": "用於登入和訪問組織儀表板的唯一組織域。",
+    "team_domain_helper_text": "用於登入和訪問您的 團隊 儀錶板的唯一 團隊 域。",
+    "org_domain_helper_text": "用於登入和訪問組織儀錶板的唯一組織域。",
     "favicon": "網站圖示",
     "favicon_helper_text": "上傳 ICO 檔案，用作 團隊 已釋出文件的圖示。",
     "org_favicon_helper_text": "上傳 ICO 檔案，用作您組織已釋出文件的圖示。",
@@ -81,7 +81,7 @@
   },
   "confirm_domain_change_modal": {
     "heading": "更改 團隊 URL",
-    "sub_heading": "更改您的 團隊 URL 將破壞您頁面的所有現有連結。您的 團隊 會員將必須再次登入才能使用儀表板。您確定要繼續嗎？",
+    "sub_heading": "更改您的 團隊 URL 將破壞您頁面的所有現有連結。您的 團隊 會員將必須再次登入才能使用儀錶板。您確定要繼續嗎？",
     "cancel": "取消",
     "submit": "提交"
   }

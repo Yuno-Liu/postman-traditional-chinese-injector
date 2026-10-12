@@ -33,7 +33,7 @@
       "switch_to_postman_editor_button_tooltip": "切換到 Postman 編輯器"
     },
     "error": {
-      "title": "無法載入文件",
+      "title": "無法載入檔案",
       "message": "只是一根電線有問題。嘗試重新載入。"
     },
     "placeholder": "新增 {type} 描述..."
@@ -42,7 +42,7 @@
     "try_request_button_label": "嘗試請求",
     "open_request_button_label": "開啟請求"
   },
-  "documentation_entity_title": "文件",
+  "documentation_entity_title": "檔案",
   "unsaved_changes_modal": {
     "title": "未儲存的更改",
     "description": "在開啟評論模式之前儲存 請求 以避免丟失您的工作。",

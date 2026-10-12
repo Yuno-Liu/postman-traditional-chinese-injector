@@ -1,4 +1,8 @@
 {
+  "permission_load": {
+    "banner_message": "部分規範的許可權無法載入。",
+    "retry_button": "重試"
+  },
   "entity_type_icon": {
     "label": "規範"
   },

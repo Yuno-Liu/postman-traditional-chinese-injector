@@ -13,7 +13,22 @@
     "postman_cli": {
       "install_in_terminal": "在終端中安裝",
       "run_in_terminal": "在終端中執行",
-      "add_api_key_tooltip": "新增 API Key 後才能執行此命令"
+      "add_api_key_tooltip": "新增 API Key 後才能執行此命令",
+      "setup_collection_omitted": "此命令未包含初始化集合，因為 Postman CLI 只能執行已同步到 Postman 的集合。",
+      "teardown_collection_omitted": "此命令未包含清理集合，因為 Postman CLI 只能執行已同步到 Postman 的集合。",
+      "load_shape": {
+        "min_cli_version": "你的 Postman CLI 版本為 v{installedVersion}，此命令需要 v{version} 或更高版本。",
+        "unavailable_tooltip": "Postman CLI 無法執行此負載曲線",
+        "unsupported": {
+          "base_not_below_peak_initial_load": "Postman CLI 要求初始負載低於虛擬使用者數（{virtualUsers}）。請調低該值，或使用“固定”負載配置進行平穩執行。",
+          "base_not_below_peak_base_load": "Postman CLI 要求基本負載低於虛擬使用者數（{virtualUsers}）。請調低該值，或使用“固定”負載配置進行平穩執行。",
+          "ramp_up_no_ramp": "Postman CLI 無法執行時長為零的加速階段。請在圖表上將手柄拖開。",
+          "ramp_up_fills_duration": "Postman CLI 無法執行在測試結束時才達到峰值的加速階段。請將加速手柄往前拖，或增加測試時長。",
+          "spike_no_ramp_down": "Postman CLI 無法執行瞬間回落的尖峰。請將尖峰結束手柄往後拖。",
+          "peak_no_hold_or_ramp_down": "Postman CLI 無法執行既無保持也無減速階段的峰值。請在圖表上將手柄拖開。",
+          "starts_past_peak": "Postman CLI 無法執行從峰值開始的負載曲線。請將第一個手柄往後拖。"
+        }
+      }
     },
     "errors": {
       "start_run": {
@@ -84,7 +99,7 @@
         "not_ready": "設定系統進行效能測試時出現問題。"
       },
       "limit_exceeded": "超出執行限制",
-      "workload_running": "另一個性能測試已經在進行中。請等待當前測試完成，然後再開始新的測試。"
+      "workload_running": "另一個效能測試已經在進行中。請等待當前測試完成，然後再開始新的測試。"
     },
     "tooltips": {
       "booting": "您的系統正在設定以進行效能測試。這可能需要幾秒鐘。"
@@ -212,7 +227,7 @@
       }
     },
     "warnings": {
-      "high_virtual_users": "高 VU 執行可能會影響您的系統性能。"
+      "high_virtual_users": "高 VU 執行可能會影響您的系統效能。"
     },
     "delete_confirmation": {
       "title": "刪除效能執行",
@@ -265,7 +280,9 @@
     },
     "rejections": {
       "vuh_blocked": "請讓管理員在賬單資源用量中為效能測試啟用按量付費。",
-      "vuh_blocked_linked": "請讓管理員在<Link><Text>賬單資源用量</Text></Link>中為效能測試啟用按量付費。"
+      "vuh_blocked_linked": "請讓管理員在<Link><Text>賬單資源用量</Text></Link>中為效能測試啟用按量付費。",
+      "internal_pool_forbidden": "您的團隊無權在此工作區中使用 Internal Staging Runners。請選擇其他出口選項。",
+      "internal_pool_unavailable": "Internal Staging Runners 暫時不可用。請稍後重試，或選擇其他出口選項。"
     },
     "status": {
       "initializing": "正在初始化",
@@ -372,6 +389,8 @@
       "static_description": "請求來自可在防火牆中加入白名單的靜態 IP。<Link><Text>瞭解更多</Text></Link>",
       "option_shared": "動態 IP",
       "option_static": "靜態 IP",
+      "option_internal_stage": "內部預釋出執行器",
+      "internal_stage_description": "請求來自 Postman 的 Internal Staging Runners。僅限 Postman 員工使用。",
       "upgrade_heading": "升級後可使用靜態 IP 在雲端執行效能測試",
       "upgrade_description": "將雲端效能測試的流量通過可加入白名單的靜態 IP 轉發，即可訪問防火牆後的 API。升級套餐即可開始使用。"
     },

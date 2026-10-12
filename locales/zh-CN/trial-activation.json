@@ -1,0 +1,14 @@
+{
+  "heading": "恭喜！您的 {tier, select, solo {Solo} team {Team} business {Enterprise} enterprise {Enterprise} other {新}} 試用現已啟用。",
+  "invite": {
+    "prompt": "邀請您的隊友加入。您新增的每位成員都將解鎖共享工作區、即時協作和角色功能。",
+    "placeholder": "新增郵箱",
+    "send_cta": "傳送邀請",
+    "send_disabled": "請至少輸入一個郵箱地址以傳送邀請。",
+    "invalid_email": "請輸入有效的郵箱地址。",
+    "sent_hint": "邀請已發出。",
+    "sent_toast": "{count, plural, one {已傳送 # 份邀請} other {已傳送 # 份邀請}}",
+    "sent_toast_description": "他們將收到一封包含加入團隊連結的郵件。",
+    "send_failed": "無法傳送邀請，請重試。"
+  }
+}

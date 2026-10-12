@@ -70,7 +70,7 @@
     "running_duration": "已執行 {duration}",
     "ran_duration": "運行了 {duration}",
     "placeholder": "歷史記錄",
-    "unnamed_mock": "Mock",
+    "unnamed_mock": "模擬伺服器",
     "previous_starts": "歷史啟動",
     "tab_count": "歷史啟動 {count}",
     "history": "歷史記錄",

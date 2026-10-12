@@ -160,7 +160,7 @@
         },
         "select": {
           "title": "選擇現有的 集合",
-          "subtitle": "通過新增文件使您的 集合 更易於使用。選擇要記錄的 集合。",
+          "subtitle": "通過新增檔案使您的 集合 更易於使用。選擇要記錄的 集合。",
           "tooltips": {
             "empty_collection": "此 工作區 要麼為空，要麼您不是此處任何集合的 編輯者。",
             "no_collections": "此 工作區 沒有任何集合。"
@@ -203,17 +203,17 @@
         "new": "<0>{name}</0> 建立並記錄",
         "select": "<0>{name}</0> 已記錄"
       },
-      "creation_error_subtitle": "建立此文件時出現問題。您可以稍後再試。",
+      "creation_error_subtitle": "建立此檔案時出現問題。您可以稍後再試。",
       "next_steps": {
         "title": "下一步",
         "add_details": {
-          "title": "在您的文件中新增更多詳細資訊",
+          "title": "在您的檔案中新增更多詳細資訊",
           "subtitle": "為了方便入門，您還可以描述 請求 params、body，甚至 集合 資料夾。"
         },
         "learn_how_button": "瞭解如何",
         "share_with_team": {
           "title": "與您的 團隊 分享",
-          "subtitle": "將文件共享到 團隊 工作區，以便您的團隊成員可以檢視並協作。"
+          "subtitle": "將檔案共享到 團隊 工作區，以便您的團隊成員可以檢視並協作。"
         },
         "share_with_world": {
           "title": "與世界分享",
@@ -225,9 +225,9 @@
           "learn_more_button": "瞭解如何建立示例"
         }
       },
-      "subtitle": "看看你漂亮的新文件：",
+      "subtitle": "看看你漂亮的新檔案：",
       "view_documentation": "檢視文件",
-      "helper_text": "該文件是 私有，因此只有您與之共享 集合 的人才能檢視它。"
+      "helper_text": "該檔案是 私有，因此只有您與之共享 集合 的人才能檢視它。"
     }
   },
   "collection_empty": {

@@ -1,4 +1,18 @@
 {
+  "agent_mode": {
+    "loading": "正在載入 Agent Mode…",
+    "placeholder": "詢問你的 API 架構——依賴關係、影響範圍、歸屬、呼叫關係…",
+    "hide_right_sidebar": "隱藏右側邊欄",
+    "show_right_sidebar": "顯示右側邊欄",
+    "load_error_title": "Agent Mode 載入失敗",
+    "load_error_description": "載入 Agent Mode 時出錯。你可以在不離開此頁面的情況下重試。",
+    "load_error_retry": "重試"
+  },
+  "query_tools": {
+    "links_line": "從你的工具中查詢",
+    "cli_label": "CLI",
+    "mcp_label": "MCP"
+  },
   "connectors": {
     "status": {
       "active_jobs": "{count, plural, one {# 個索引任務執行中} other {# 個索引任務執行中}}",

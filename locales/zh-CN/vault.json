@@ -1,7 +1,7 @@
 {
   "title": "Postman Vault",
   "passport_secrets": {
-    "title": "Passport Secrets",
+    "title": "Passport 金鑰",
     "description": "您在網路中被授予訪問許可權的 API 憑據。每一項都是<0>金鑰引用</0>——一個在執行時通過 Passport 代理解析的指標，因此真實值永遠不會被儲存或顯示。您可以在請求、環境中使用它，或將其複製到 Postman 之外使用。",
     "columns": {
       "name": "名稱",
@@ -1035,7 +1035,7 @@
       "scope_team_desc": "本團隊的每位成員都可以使用此金鑰。",
       "scope_user": "指定使用者",
       "scope_user_desc": "選擇可以使用此金鑰的團隊成員。",
-      "scope_workspace": "Workspace",
+      "scope_workspace": "工作區",
       "scope_workspace_desc": "僅此工作區的成員可以使用。",
       "subtitle": "此金鑰將由您建立，預設僅在此工作區內私有。",
       "title": "新增金鑰",
@@ -1089,7 +1089,8 @@
       "current_workspace": "當前工作區",
       "no_teammates": "沒有匹配的團隊成員",
       "search_placeholder": "按鍵名搜尋",
-      "workspace_label": "Workspace",
+      "workspace_label": "工作區",
+      "workspace_loading": "正在載入工作區...",
       "workspace_no_match": "沒有匹配的工作區",
       "workspace_placeholder": "搜尋工作區"
     },
@@ -1118,7 +1119,7 @@
       "requester": "申請人",
       "scope": "作用域",
       "scope_specific_people": "指定成員",
-      "scope_workspace": "Workspace",
+      "scope_workspace": "工作區",
       "secret": "金鑰",
       "select_all": "選擇所有申請",
       "select_one": "選擇來自 {name} 的申請",

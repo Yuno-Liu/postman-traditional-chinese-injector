@@ -1,13 +1,13 @@
 {
   "sandbox_terms_modal": {
     "heading": "啟用沙盒 環境",
-    "intro": "啟用即表示您承認並同意以下使用要求適用於您的組織對沙盒 環境 的使用，作為您與 Postman 的協議中引用的文件的一部分：",
+    "intro": "啟用即表示您承認並同意以下使用要求適用於您的組織對沙盒 環境 的使用，作為您與 Postman 的協議中引用的檔案的一部分：",
     "bullet_1": "提供沙箱僅用於測試和評估目的",
     "bullet_2": "客戶只能在沙盒中使用測試資料或虛擬資料；不得提交生產資料和個人資料",
     "bullet_3": "Postman 可以隨時刪除沙盒資料",
     "bullet_4": "沙箱按“原樣”提供，沒有服務水平承諾、賠償或保證",
     "bullet_5": "使用和功能限制可能適用",
-    "accept_button": "接受並激活",
+    "accept_button": "接受並啟用",
     "decline_button": "取消",
     "accept_error": "無法啟用沙盒 環境。請再試一次。"
   },
@@ -197,8 +197,8 @@
     },
     "external_package_management": {
       "title": "外部包",
-      "description": "允許 團隊 成員在其腳本中使用來自外部登錄檔的包，例如 npm 和 JSR。",
-      "read_only_description": "在腳本中使用來自外部登錄檔的包，例如 npm 和 JSR。",
+      "description": "允許 團隊 成員在其腳本中使用來自外部登入檔的包，例如 npm 和 JSR。",
+      "read_only_description": "在腳本中使用來自外部登入檔的包，例如 npm 和 JSR。",
       "breadcrumbs": {
         "team_resources": "團隊 資源",
         "collections": "外部包"
@@ -223,7 +223,7 @@
         "validation": {
           "empty": "輸入包名",
           "too_long": "封裝模式不得超過 {maxLength} 個字元",
-          "invalid_registry": "包名稱必須以登錄檔開頭（例如 npm: 或 jsr:）",
+          "invalid_registry": "包名稱必須以登入檔開頭（例如 npm: 或 jsr:）",
           "invalid_format": "輸入有效的包名稱和 版本（例如 npm:lodash@1.1.0 或 npm:lodash@*）"
         }
       },
@@ -238,7 +238,7 @@
         },
         "upgrade_enterprise": {
           "title": "升級以管理允許的包",
-          "description": "通過升級到企業計劃來允許來自外部登錄檔的特定包。 <1>瞭解Postman企業計劃.</1>",
+          "description": "通過升級到企業計劃來允許來自外部登入檔的特定包。 <1>瞭解Postman企業計劃.</1>",
           "primary_button": "升級至企業"
         }
       },
@@ -516,7 +516,7 @@
     "verify_email_banner": {
       "title": "驗證您的電子郵件地址以管理 團隊 訪問設定",
       "description": "我們向 {userEmail} 傳送了一封驗證電子郵件。",
-      "resend_cta": "重新發送驗證郵件",
+      "resend_cta": "重新傳送驗證郵件",
       "verified_cta": "我已驗證我的電子郵件"
     },
     "join_via_link": {

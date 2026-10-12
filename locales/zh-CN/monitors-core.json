@@ -147,7 +147,7 @@
       "copy_id_tooltip": "複製監控 ID",
       "copied_tooltip": "已複製",
       "creator_label": "建立者：",
-      "created_at_label": "創建於",
+      "created_at_label": "建立於",
       "collection_label": "集合",
       "environment_label": "環境",
       "no_collection": "沒有集合"
@@ -225,7 +225,22 @@
       "line_number": "行號",
       "time_stamp": "時間戳",
       "console_output": "控制台輸出",
-      "file_helper_text": "使用來自 <0> {name} </0> 的資料執行"
+      "file_helper_text": "使用來自 <0> {name} </0> 的資料執行",
+      "live_progress_chip": {
+        "preparing": "準備中",
+        "running": "執行中",
+        "retrying": "重試中",
+        "completed": "已完成",
+        "failed": "失敗",
+        "aborted": "已中止"
+      },
+      "live_progress_requests_executed": "{count, plural, one {個請求已執行} other {個請求已執行}}",
+      "live_progress_preparing_subtext": {
+        "waiting": "等待開始。",
+        "starting": "正在獲取你的集合。"
+      },
+      "live_progress_running_subtext": "正在執行請求。",
+      "live_progress_checking_status": "正在檢查執行狀態。"
     },
     "performance_graph": {
       "failed_percent": "失敗百分比：<1>{failedPercent}%</1>",
@@ -411,6 +426,11 @@
     "upgrade": "您使用的是免費計劃。升級為手動選擇特定監控區域。",
     "upgrade_generic": "您使用的是免費計劃。升級您的計劃以使用此功能。",
     "region_selection_feature": "監控區域選擇",
+    "minute_frequency_feature": "監控分鐘級頻率",
+    "upgrade_cta": "升級",
+    "runners_upgrade_heading": "升級到 Solo 套餐以使用高階執行器選項",
+    "minute_frequency_upgrade_heading": "升級到 Solo 套餐以使用監控的高階頻率選項",
+    "runners_upgrade_overlay": "升級後可選擇區域或私有執行器，以訪問你網路內部的 API",
     "publish_report_feature": "監控釋出報告",
     "email": "接收有關執行失敗和錯誤的電子郵件通知",
     "email_add": "新增另一個收件人電子郵件",
@@ -503,7 +523,7 @@
       "upload_datafile": "上傳資料檔案...",
       "accepted_formats": "CSV、JSON",
       "selected_pill": "已選資料檔案",
-      "new_dataset": "新建資料集",
+      "add_file": "新增檔案",
       "new_dataset_no_permission": "你沒有在此工作區中建立資料集的許可權。",
       "new_dataset_disabled_local_mode": "監控只能使用儲存在雲端的資料集。請切換到雲端模式以新增新的資料集。",
       "no_datasets": "此工作區中還沒有資料集。",
@@ -531,8 +551,26 @@
     },
     "preview_panel": {
       "tabs": {
+        "collection_preview": "執行順序",
         "iteration_data": "資料"
+      },
+      "use_latest_collection": "使用最新的集合",
+      "use_latest_collection_info": "集合的更改將在下次執行時自動生效。",
+      "collection_preview_error": "無法載入此集合的結構。",
+      "request_added_toast": {
+        "description": "請先更新並儲存請求，再嘗試執行監控。",
+        "run": "執行監控",
+        "go_back": "返回"
       }
+    },
+    "collection_deleted": "所選集合已不存在，請選擇其他集合。",
+    "request_selection": {
+      "fixed_list_note": "此監控僅按指定順序執行所選請求。之後新增到集合中的請求不會執行，除非在此處手動新增。對現有請求的編輯仍會生效。",
+      "undo": "撤銷",
+      "dismiss": "關閉",
+      "empty": "請至少選擇一個請求供監控執行。",
+      "items_missing": "部分所選請求已不在集合中。請檢查執行順序後重新儲存。",
+      "invalid": "無法儲存執行順序。請重置後重試。"
     },
     "warning_message": {
       "unuploaded_files": "{files, plural, one {此集合中有 # 個請求缺少關聯檔案} other {此集合中有 # 個請求缺少關聯檔案}}"
@@ -568,6 +606,7 @@
     "resume": "恢復",
     "rename": "重新命名",
     "edit": "編輯",
+    "review": "檢視",
     "manage_roles": "管理角色",
     "request_access": "請求訪問許可權",
     "add_to_jira": "新增到 Jira Cloud",

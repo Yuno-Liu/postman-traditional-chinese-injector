@@ -146,7 +146,7 @@
     "title": "自定義域名",
     "description_intro": "在您自己的品牌域名上託管 API 文件。",
     "description_lead": "您將解鎖：",
-    "description_item_branded_subdomain": "在您的子域名下發布文件（例如 docs.yourco.com）",
+    "description_item_branded_subdomain": "在您的子域名下發布檔案（例如 docs.yourco.com）",
     "description_item_automatic_ssl": "通過 Let's Encrypt 自動獲取 SSL 證書",
     "description_item_consistent_branding": "為 API 使用者保持一致的品牌形象"
   },

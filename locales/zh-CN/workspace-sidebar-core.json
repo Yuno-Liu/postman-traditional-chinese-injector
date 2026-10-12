@@ -238,7 +238,7 @@
         "info_text": "將模擬伺服器部署為線上服務。"
       },
       "classic_mock_server": {
-        "card_label": "Mock Server",
+        "card_label": "模擬伺服器",
         "info_text": "根據集合中儲存的示例建立模擬伺服器。"
       },
       "mock_with_collection": {
@@ -259,13 +259,13 @@
         "info_text": "編寫模擬伺服器的行為邏輯，可在本地執行或部署為模擬伺服器。"
       },
       "documentation": {
-        "card_label": "文件"
+        "card_label": "檔案"
       },
       "document": {
-        "card_label": "文件",
-        "info_text": "建立文件以編寫指南、筆記或 API 文件。",
-        "create_error": "文件建立失敗，請重試。",
-        "no_permission_text": "你沒有許可權在此工作區中建立文件。"
+        "card_label": "檔案",
+        "info_text": "建立檔案以編寫指南、筆記或 API 文件。",
+        "create_error": "檔案建立失敗，請重試。",
+        "no_permission_text": "你沒有許可權在此工作區中建立檔案。"
       },
       "sdk_gen": {
         "card_label": "SDK",
@@ -336,8 +336,8 @@
         "plural": "分支"
       },
       "docs_site": {
-        "singular": "文件站點",
-        "plural": "文件站點"
+        "singular": "檔案站點",
+        "plural": "檔案站點"
       }
     }
   },
@@ -431,6 +431,10 @@
       "element": {
         "singular": "元素",
         "plural": "元素"
+      },
+      "workspace": {
+        "singular": "workspace",
+        "plural": "workspaces"
       },
       "collection": {
         "singular": "Collection",
@@ -638,7 +642,7 @@
     "run_in_postman": {
       "default_label": "瞭解更多。",
       "public_workspace_label": "在 Postman 中執行",
-      "embed_learn_more_button": "在您的網站或文件中嵌入 <1><0>{buttonText}</0></1> 按鈕，以便人們更輕鬆地發現您的 集合 並與之互動。",
+      "embed_learn_more_button": "在您的網站或檔案中嵌入 <1><0>{buttonText}</0></1> 按鈕，以便人們更輕鬆地發現您的 集合 並與之互動。",
       "everyone_can_view_and_fork_public_collection": "Postman 上的每個人都可以檢視並 fork 這個公開集合。",
       "generating_code_snippet": "正在生成程式碼片段...",
       "render_static_button_message": "該按鈕將指向集合的靜態快照。它不會隨著集合的更改而更新。",
@@ -735,9 +739,33 @@
     "success_popover": {
       "no_docs": {
         "title": "請求已分享",
-        "description": "完善的文件能幫助團隊更輕鬆地理解請求。",
-        "button_text": "使用 AI 建立文件"
+        "description": "完善的檔案能幫助團隊更輕鬆地理解請求。",
+        "button_text": "使用 AI 建立檔案"
       }
+    }
+  },
+  "access_blocked": {
+    "heading": "訪問受阻（{blockedCount}）",
+    "invite_cta": "邀請",
+    "invited_cta": "已邀請",
+    "invited_tooltip": "已發出邀請。團隊管理員批准其請求後即會授予訪問許可權。",
+    "remove_cta": "移除",
+    "more_actions_aria": "{memberName} 的更多操作",
+    "group_members_meta": "{count, plural, =1 {# 位群組成員} other {# 位群組成員}}",
+    "team_members_meta": "{count, plural, =1 {# 位團隊成員} other {# 位團隊成員}}",
+    "group_popover_count_label": "{count, plural, =1 {# 位成員} other {# 位成員}}",
+    "group_popover_loading": "正在載入成員…",
+    "group_popover_empty": "此群組中沒有成員。",
+    "group_popover_unavailable": "無法載入成員，請重試。",
+    "group_popover_view_group": "檢視群組",
+    "view_all": "顯示全部",
+    "invite_toast": {
+      "title": "已傳送角色升級請求",
+      "description": "團隊管理員將稽核授予 {role} 訪問許可權的請求。"
+    },
+    "upgraded_toast": {
+      "title": "已授予訪問許可權",
+      "description": "{name} 現在擁有此 {entity} 的 {role} 訪問許可權。"
     }
   },
   "delete_entity": {
@@ -746,12 +774,12 @@
       "forked_collection": "刪除此復刻的集合？",
       "delete_collection": "刪除“{collectionName}”？"
     },
-    "description_single": "Deleting this will remove all monitors, scheduled runs, and integrations, deactivate any associated mock servers.",
-    "description_single_reusable": "Deleting this will remove monitors, scheduled runs, and integrations. Mock servers get deactivated, and linked requests will no longer follow updates from the original.",
-    "description_multiple": "這將停用與這些集合相關聯的監控、計劃執行、整合和模擬伺服器。",
+    "description_single": "刪除後將移除所有{removedEntities}，並停用所有關聯的模擬伺服器。所有文件站點都將被刪除。",
+    "description_single_reusable": "刪除後將移除{removedEntities}。模擬伺服器將被停用，關聯的請求將不再跟隨原始內容的更新。所有文件站點都將被刪除。",
+    "description_multiple": "這將停用{removedEntities}，以及與這些集合關聯的模擬伺服器。",
     "description_multiple_docs_sites": "所有文件站點都被刪除。",
-    "description_single_git_link": "Deleting this will remove all monitors, scheduled runs, and integrations, disconnect the remote repository, and deactivate any associated mock servers.",
-    "description_single_git_link_reusable": "Deleting this will remove all monitors, scheduled runs, and integrations, disconnect the remote repository. Mock servers get deactivated, and linked requests will no longer follow updates from the original.",
+    "description_single_git_link": "刪除後將移除所有{removedEntities}，斷開遠端倉庫連線，並停用所有關聯的模擬伺服器。所有文件站點都將被刪除。",
+    "description_single_git_link_reusable": "刪除後將移除所有{removedEntities}，並斷開遠端倉庫連線。模擬伺服器將被停用，關聯的請求將不再跟隨原始內容的更新。所有文件站點都將被刪除。",
     "failed_load": "詳細資訊載入失敗",
     "delete_permanently": "永久刪除",
     "delete": "刪除",
@@ -763,7 +791,7 @@
     "delete_extinsible_collection": "確定要刪除此集合嗎？",
     "could_not_restore_message": "此集合無法從回收站中恢復。",
     "delete_confirmation_text": "確定要刪除 <1>{name}</1> 嗎？",
-    "delete_pinned_doc_confirmation": "此文件已固定到工作區概覽中。確定要刪除嗎？",
+    "delete_pinned_doc_confirmation": "此檔案已固定到工作區概覽中。確定要刪除嗎？",
     "this_cant_be_undone": "此操作無法撤銷。",
     "delete_entity_question": "刪除 {entity}？",
     "delete_elements_question": "刪除元素？",
@@ -839,5 +867,11 @@
   },
   "share_response": {
     "copy_response_link_aria_label": "複製響應連結"
+  },
+  "pending_invites": {
+    "invite_as": "（以 {role} 身份受邀）",
+    "resend_cta": "重新發送邀請",
+    "remove_cta": "移除",
+    "more_actions_aria": "傳送給 {email} 的邀請的更多操作"
   }
 }

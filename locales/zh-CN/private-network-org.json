@@ -159,7 +159,7 @@
       "emptyDescription": "嘗試調整您的搜尋或過濾器來查詢工作區。"
     },
     "toasts": {
-      "successBothTitle": "新增併發送請求",
+      "successBothTitle": "新增併傳送請求",
       "successBothDesc": "您有權訪問的工作區已新增。其他人的請求已傳送給網路和團隊經理。",
       "successAddedTitle": "添加了工作區",
       "successAddedDesc": "{count, plural, =1 {已成功將 # 個工作區新增到網路。} other {已成功將 # 個工作區新增到網路。}}",
@@ -195,7 +195,7 @@
       "countLabel": "{count, plural, one {# 個 fork} other {# 個 fork}}",
       "noForks": "沒有 fork",
       "latestFork": "最近的 fork",
-      "createdOn": "創建於 {date} 前",
+      "createdOn": "建立於 {date} 前",
       "signInTitle": "登入以建立 fork",
       "signInSubtitle": "您需要登入才能 fork 集合。繼續建立一個賬戶，完全免費！"
     },

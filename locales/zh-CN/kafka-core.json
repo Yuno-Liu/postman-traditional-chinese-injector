@@ -26,16 +26,51 @@
   "tabs": {
     "event": "事件",
     "topics": "Topic",
-    "authorization": "身份驗證"
+    "authorization": "身份驗證",
+    "scripts": "腳本"
   },
   "placeholder": {
     "coming_soon": "即將推出。"
+  },
+  "scripts": {
+    "events": {
+      "before_produce": {
+        "label": "生產前",
+        "description": "“生產前”腳本在事件傳送到 Broker 之前執行。",
+        "placeholder": "// 在此編寫生產前腳本…",
+        "tooltip_text": "在事件傳送到 Broker 之前執行。"
+      },
+      "after_produce": {
+        "label": "生產後",
+        "description": "“生產後”腳本在 Broker 確認已生產的事件後執行。",
+        "placeholder": "// 在此編寫生產後腳本…",
+        "tooltip_text": "在 Broker 確認已生產的事件後執行。"
+      },
+      "before_consume": {
+        "label": "消費前",
+        "description": "“消費前”腳本在訂閱開始流式傳輸之前執行。",
+        "placeholder": "// 在此編寫消費前腳本…",
+        "tooltip_text": "在訂閱開始流式傳輸之前執行。"
+      },
+      "on_message": {
+        "label": "收到訊息時",
+        "description": "“收到訊息時”腳本在流式傳輸期間每收到一條記錄執行一次。",
+        "placeholder": "// 在此編寫逐條訊息腳本…",
+        "tooltip_text": "在流式傳輸期間每收到一條記錄執行一次。"
+      },
+      "after_consume": {
+        "label": "消費後",
+        "description": "“消費後”腳本在流結束後執行。",
+        "placeholder": "// 在此編寫消費後腳本…",
+        "tooltip_text": "在流結束後執行。"
+      }
+    }
   },
   "offsets": {
     "start_from": "起始位置",
     "earliest": "最早",
     "latest": "最新",
-    "offset": "Offset",
+    "offset": "偏移量",
     "timestamp": "時間戳",
     "offset_placeholder": "輸入 offset",
     "timestamp_placeholder": "輸入時間戳"
@@ -133,13 +168,13 @@
     "inherit_hint": "繼承自上級。"
   },
   "event": {
-    "topic": "Topic",
+    "topic": "主題",
     "topic_placeholder": "新增 Topic",
     "partition": "分割槽",
-    "key": "Key",
+    "key": "鍵",
     "key_placeholder": "訊息 Key",
     "key_serde": "Key 序列化方式",
-    "value": "Value",
+    "value": "值",
     "value_too_large": "{size} 超出 {limit} 限制",
     "value_serde": "Value 序列化方式",
     "serde": {
@@ -159,17 +194,17 @@
     },
     "pane": {
       "details": "詳情",
-      "value": "Value"
+      "value": "值"
     }
   },
   "consume": {
     "stream": {
       "field": {
-        "topic": "Topic",
+        "topic": "主題",
         "partition": "分割槽",
-        "offset": "Offset",
-        "key": "Key",
-        "value": "Value",
+        "offset": "偏移量",
+        "key": "鍵",
+        "value": "值",
         "headers": "請求頭"
       }
     }
@@ -203,7 +238,7 @@
         "hex": "Hex"
       },
       "tab": {
-        "value": "Value",
+        "value": "值",
         "meta": "後設資料"
       }
     }

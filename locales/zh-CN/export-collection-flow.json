@@ -75,5 +75,14 @@
     "export_success": "集合匯出成功。",
     "export_failed": "無法匯出此集合，請檢查 DevTools。",
     "secure_failed": "無法保護檢測到的金鑰。"
+  },
+  "survey": {
+    "heading": "告訴我們此次匯出的用途",
+    "subheading": "這有助於我們為您打造更好的工具。",
+    "placeholder": "告訴我們您的使用場景",
+    "chips_aria_label": "建議的原因",
+    "error": "請新增原因後繼續",
+    "submit": "開始匯出",
+    "cancel": "取消"
   }
 }

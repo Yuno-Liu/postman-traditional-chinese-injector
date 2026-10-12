@@ -50,7 +50,7 @@
       "picker_empty": "此 工作區 尚無規格。"
     },
     "collection": {
-      "label": "Collection",
+      "label": "集合",
       "helper": "響應根據集合中儲存的示例生成。",
       "picker_placeholder": "選擇或建立集合",
       "picker_empty": "此 工作區 中還沒有收藏。"

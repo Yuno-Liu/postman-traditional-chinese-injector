@@ -19,9 +19,9 @@
   "invite_users": {
     "heading": "邀請 人加入您的 團隊",
     "add_email_heading": "新增電子郵件地址",
-    "add_email_subheading": "一旦您建立 團隊，我們就會發送邀請。",
+    "add_email_subheading": "一旦您建立 團隊，我們就會傳送邀請。",
     "title": "新增電子郵件地址",
-    "subtitle": "一旦您建立 團隊，我們就會發送邀請。"
+    "subtitle": "一旦您建立 團隊，我們就會傳送邀請。"
   },
   "step_1": "第 1 步（共 2 步）",
   "step_2": "第 2 步（共 2 步）",

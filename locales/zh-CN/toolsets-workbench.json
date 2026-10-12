@@ -6,6 +6,7 @@
   "data": {
     "load_failed": "無法載入工具集，請檢查工作區檔案後重試。",
     "save_failed": "該工具無法儲存。",
+    "create_tool_failed": "無法建立該工具。",
     "conflict_message": "在您進行未儲存的更改期間，此工具已在編輯器外部發生變化。",
     "conflict_reload_button": "重新載入最新版本",
     "conflict_keep_button": "保留我的更改"
@@ -22,12 +23,15 @@
     "search_label": "搜尋工具",
     "search_placeholder": "搜尋工具",
     "clear_search_tooltip": "清除工具搜尋",
+    "add_tool_button_tooltip": "新增工具",
     "display_options_button_tooltip": "自定義工具詳情顯示",
     "show_description_option": "描述",
     "show_input_parameters_option": "輸入引數",
     "tool_list_aria_label": "此工具集中可選的工具",
     "select_tool_aria_label": "選擇 {title}",
     "deselect_tool_aria_label": "取消選擇 {title}",
+    "open_tool_aria_label": "開啟 {title}",
+    "toggle_tool_tooltip": "啟用或停用此工具",
     "input_parameter_required": "{type}，必填",
     "input_parameter_optional": "{type}，可選",
     "empty_search": "沒有符合搜尋條件的工具。",
@@ -121,7 +125,7 @@
     "copied_to_clipboard": "已複製到剪貼簿",
     "copy_failed": "複製失敗",
     "unknown_error": "本地 MCP 伺服器請求失敗。",
-    "port_needs_restart_short": "重啟後端口生效",
+    "port_needs_restart_short": "重啟後埠生效",
     "restart_for_port_button": "使用新埠重啟",
     "port_save_failed": "無法儲存伺服器埠。請檢查 Toolset 檔案是否可寫。",
     "port_in_use_generic_error": "該埠已被佔用。請更換埠後重試。",
@@ -339,6 +343,7 @@
     "toolset_rename_input_label": "重新命名 {title}",
     "tool_open_menu_item": "開啟",
     "tool_rename_menu_item": "重新命名",
+    "tool_duplicate_menu_item": "複製",
     "tool_delete_menu_item": "刪除",
     "tool_more_actions_tooltip": "{title} 的更多操作",
     "tool_rename_input_label": "重新命名 {title}",
@@ -349,8 +354,13 @@
     "add_tool_button_tooltip": "新增工具",
     "add_tool_menu_item": "新增工具",
     "rename_label": "重新命名",
+    "duplicate_label": "複製",
     "delete_label": "刪除",
     "rename_input_label": "重新命名 {title}",
     "context_menu_trigger_tooltip": "更多操作"
+  },
+  "delete_confirmation": {
+    "toolset_message": "確定要刪除 {name} 及其所有工具嗎？此操作無法撤銷。",
+    "tool_message": "確定要刪除 {name} 嗎？此操作無法撤銷。"
   }
 }

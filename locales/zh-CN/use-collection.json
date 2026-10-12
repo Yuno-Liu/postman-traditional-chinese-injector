@@ -27,7 +27,7 @@
   "use_as": {
     "label": "使用方式",
     "fork": {
-      "title": "Fork",
+      "title": "復刻",
       "description": "在此集合的副本上進行操作。"
     },
     "resource": {
@@ -43,7 +43,7 @@
     "local_mode_disabled": "本地模式下無法使用 Fork。",
     "no_permission_disabled": "您沒有許可權 Fork 此集合。",
     "label_field": "Fork 標籤",
-    "default_label": "Fork",
+    "default_label": "復刻",
     "default_label_with_name": "{name} 的 Fork",
     "auto_pull_label": "自動從源集合拉取變更",
     "watch_source_label": "關注源集合",

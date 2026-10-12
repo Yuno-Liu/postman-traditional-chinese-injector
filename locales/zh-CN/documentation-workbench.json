@@ -13,7 +13,7 @@
         "copy_publish_link": "複製已釋出的連結",
         "respond_to_publish_request": "回覆釋出 請求",
         "edit_requested_publish_settings": "編輯請求的釋出設定",
-        "edit_published_documentation": "編輯已釋出的文件",
+        "edit_published_documentation": "編輯已釋出的檔案",
         "approve_deny_publish_request": "批准/拒絕釋出 請求"
       },
       "documentation_config_bar": {
@@ -22,12 +22,12 @@
         "publish": "釋出文件"
       },
       "published_url_label": "此 集合 釋出於：",
-      "publish_limit_reached_tooltip": "您已達到釋出文件的限制。您可以取消釋出 團隊 中的現有文件或聯絡支援人員以增加限制。",
+      "publish_limit_reached_tooltip": "您已達到釋出文件的限制。您可以取消釋出 團隊 中的現有檔案或聯絡支援人員以增加限制。",
       "publish_feature_disabled_tooltip": "此功能目前在您所在的地區不可用。",
       "spam_tooltip": "由於您的內容不符合我們的社群標準，我們已暫時阻止您釋出文件。請稍後重試或聯絡支援人員。",
       "withdraw_publish_confirmation": {
         "heading": "撤回請求？",
-        "description": "您確定要撤回 請求 來發布此 集合 的文件嗎？",
+        "description": "您確定要撤回 請求 來發布此 集合 的檔案嗎？",
         "confirm_button_text": "確認",
         "cancel_button_text": "取消"
       }
@@ -161,10 +161,10 @@
       "message": "提供的 版本 無效"
     }
   },
-  "documentation_workbench_title": "文件",
+  "documentation_workbench_title": "檔案",
   "request_overview": {
-    "documentation_title": "文件",
-    "view_collection_documentation": "檢視完整文件",
+    "documentation_title": "檔案",
+    "view_collection_documentation": "檢視完整檔案",
     "request_snippet": "程式碼片段"
   },
   "version_dropdown_label": "版本",

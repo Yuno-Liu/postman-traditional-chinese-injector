@@ -49,7 +49,7 @@
 
 中文化對桌面端的適配依賴兩點，滿足即可注入：
 
-- 主視窗 preload 腳本可注入 —— 新版為根目錄 `preload_desktop.js`，舊版（10.24）為 `preload/desktop/index.js`，腳本自動判別；
+- 主視窗 preload 腳本可注入 —— 新版為根目錄 `preload_desktop.js`，舊版（10.24）為 `preload/desktop/index.js`，7.x 為各頁面用 `<script>` 載入的 `js/preload.js`，腳本自動判別；
 - 介面語言包走 `.../_ar-assets/locales/<lang>/<module>-<hash>.json` 遠端載入 —— 執行階段掛鉤攔截這些回應進行合併替換。
 
 | 項目 | 說明 |

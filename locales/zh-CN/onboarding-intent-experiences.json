@@ -1,0 +1,21 @@
+{
+  "design_api_spec": {
+    "modal": {
+      "heading": "建立規範",
+      "description": "設計一個新的 API 規範以開始使用。",
+      "format": {
+        "heading": "選擇格式",
+        "description": "我們會為你建立一個可編輯的初始檔案。",
+        "select_label": "規範格式",
+        "select_placeholder": "選擇格式"
+      },
+      "create_button_label": "建立規範",
+      "close_button_label": "關閉",
+      "creating_status": "正在建立你的規範..."
+    },
+    "toast": {
+      "create_error_check_before_retry": "無法建立你的規範。請重新整理頁面，確認是否已建立後再重試。",
+      "open_error": "規範已建立，但無法開啟。請在側邊欄中查詢。"
+    }
+  }
+}

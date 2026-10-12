@@ -31,7 +31,7 @@
   },
   "container": {
     "tabs": {
-      "overview": "文件",
+      "overview": "檔案",
       "updates": "更新",
       "settings": "設定",
       "issues": "問題",
@@ -104,23 +104,10 @@
     "deny_cta": "否定",
     "view_all": "顯示全部"
   },
-  "blocked_access_section": {
-    "heading": "訪問被阻止 ({count})",
-    "group_members_meta": "{count, plural, =1 {# 個組成員} other {# 個組成員}}",
-    "group_popover_heading": "{name}（{count, plural, =1 {# 個成員} other {# 個成員}}）",
-    "invite_cta": "邀請",
-    "invited_cta": "受邀",
-    "invited_tooltip": "已經邀請了。一旦團隊經理批准其請求，將授予訪問許可權。",
-    "more_actions_aria": "{memberName} 的更多操作",
-    "remove_cta": "移除",
-    "team_members_meta": "{count, plural, =1 {# 位團隊成員} other {# 位團隊成員}}",
-    "view_all": "顯示全部",
-    "toast": {
-      "error": "出了點問題。請再試一次。"
-    }
-  },
   "user_group_popover": {
-    "heading": "{name}（{count, plural, =1 {# 位成員} other {# 位成員}}）",
+    "count_label": "{count, plural, =1 {# 位成員} other {# 位成員}}",
+    "members_loading": "正在載入成員…",
+    "members_unavailable": "無法載入成員，請重試。",
     "view_group": "檢視分組",
     "no_members": "該分組暫無成員。",
     "trigger_label": "分組成員"
@@ -199,12 +186,13 @@
     },
     "pinned_document": {
       "pin_button": "將文件固定到概覽",
-      "add_readme_button": "新增 WORKSPACE-README",
+      "add_readme_button": "新增工作區 README",
+      "write_with_ai_button": "使用 AI 撰寫",
       "select_placeholder": "選擇要固定的文件",
       "empty_msg": "此工作區中暫無文件。",
       "toast": {
         "pin_error": {
-          "title": "無法固定文件",
+          "title": "無法固定檔案",
           "description": "只是線路出了點小問題，請重試。"
         },
         "create_error": {
@@ -342,7 +330,7 @@
         "description": "通過設定所需的身份驗證來訪問資料。"
       },
       "documentation": {
-        "title": "新增文件",
+        "title": "新增檔案",
         "description": "幫助他人瞭解如何呼叫您的介面。"
       },
       "tests": {
@@ -435,6 +423,7 @@
       "description": "為此工作區指定資產型別以進行分類。每個工作區同時只能有一種資產型別。",
       "placeholder": "選擇資產型別",
       "readonly_hint": "你沒有更改資產型別的許可權。",
+      "not_git_connected_hint": "將此工作區連線到 Git 才能更改其資產型別。",
       "toast_success": "資產型別已更新",
       "toast_error": "資產型別更新失敗，請重試。",
       "next_steps": {
@@ -758,7 +747,7 @@
           },
           {
             "headline": "合作伙伴無法編輯此工作區",
-            "info": "他們可以檢視工作區中的所有資源併發送請求"
+            "info": "他們可以檢視工作區中的所有資源併傳送請求"
           }
         ],
         "note": "為防止意外資料洩露，此操作無法撤銷。",
@@ -895,13 +884,13 @@
     },
     "pinned_document": {
       "heading": "工作區概覽",
-      "description": "選擇要固定到概覽的文件。",
-      "select_placeholder": "選擇文件",
-      "empty_state": "此工作區中暫無文件。",
+      "description": "選擇要固定到概覽的檔案。",
+      "select_placeholder": "選擇檔案",
+      "empty_state": "此工作區中暫無檔案。",
       "toast": {
         "error": {
-          "title": "無法更新固定的文件",
-          "description": "更新固定文件時出錯，請重試。"
+          "title": "無法更新固定的檔案",
+          "description": "更新固定檔案時出錯，請重試。"
         }
       }
     },
@@ -1111,21 +1100,21 @@
       "error_role_required": "邀請使用者加入工作區需要指定角色"
     },
     "manage_document_pin": {
-      "prompt_pin": "你即將置頂一篇文件。",
-      "prompt_pin_with_workspace": "你即將在工作區“{workspaceName}”中置頂一篇文件。",
-      "prompt_unpin": "你即將取消置頂一篇文件。",
-      "prompt_unpin_with_workspace": "你即將在工作區“{workspaceName}”中取消置頂一篇文件。",
-      "document_label": "文件：",
+      "prompt_pin": "你即將置頂一篇檔案。",
+      "prompt_pin_with_workspace": "你即將在工作區“{workspaceName}”中置頂一篇檔案。",
+      "prompt_unpin": "你即將取消置頂一篇檔案。",
+      "prompt_unpin_with_workspace": "你即將在工作區“{workspaceName}”中取消置頂一篇檔案。",
+      "document_label": "檔案：",
       "document_id_fallback": "（ID：{documentId}）",
       "action_label": "操作：",
       "action_pin": "置頂到工作區概覽",
       "action_unpin": "從工作區概覽取消置頂",
-      "description_pin": "此操作會將該文件展示在工作區概覽中。同一時間只能置頂一篇文件，此前置頂的文件將被替換。",
-      "description_unpin": "此操作會將該文件從工作區概覽中移除。",
-      "confirm_prompt": "要批准此次文件置頂變更嗎？",
-      "error_document_id_required": "管理文件置頂需要提供 documentId",
+      "description_pin": "此操作會將該檔案展示在工作區概覽中。同一時間只能置頂一篇檔案，此前置頂的檔案將被替換。",
+      "description_unpin": "此操作會將該檔案從工作區概覽中移除。",
+      "confirm_prompt": "要批准此次檔案置頂變更嗎？",
+      "error_document_id_required": "管理檔案置頂需要提供 documentId",
       "error_should_pin_required": "shouldPin 必須是明確的布林值（true 為置頂，false 為取消置頂）",
-      "error_args_unparseable": "無法解析文件置頂工具的引數"
+      "error_args_unparseable": "無法解析檔案置頂工具的引數"
     }
   }
 }

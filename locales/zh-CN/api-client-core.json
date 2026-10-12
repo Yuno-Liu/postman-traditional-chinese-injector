@@ -441,7 +441,9 @@
       "role_item_subtitle_users": "{users, plural, one {# 組成員} other {# 組成員}}",
       "no_members_present": "該組中沒有成員。",
       "view_group": "檢視組",
-      "user_group_popover_heading": "{name}（{count, plural, one {# 位成員} other {# 位成員}}）",
+      "user_group_popover_count": "{count, plural, one {# 位成員} other {# 位成員}}",
+      "members_loading": "正在載入成員…",
+      "members_unavailable": "無法載入成員，請重試。",
       "remove": "消除",
       "permission_required": "您沒有 許可權 來執行此操作",
       "guest_can_view_shared_collections": "訪客只能檢視與他們共享的集合。",
@@ -902,7 +904,7 @@
       "oauth1": "OAuth 1.0",
       "oauth2": "OAuth 2.0",
       "hawk": "Hawk 身份驗證",
-      "aws": "AWS Signature",
+      "aws": "AWS 簽名",
       "ntlm_auth": "NTLM 身份驗證",
       "apikey": "API Key",
       "akamai_edgegrid": "Akamai EdgeGrid",
@@ -1056,7 +1058,7 @@
   },
   "kveditor": {
     "description": "描述",
-    "description_tooltip": "說明僅出現在 Postman 文件中，並且 <1> 不會與您的 請求 一起傳送 </1>。",
+    "description_tooltip": "說明僅出現在 Postman 檔案中，並且 <1> 不會與您的 請求 一起傳送 </1>。",
     "domains": "例如https://api.getpostman.com，https://*.postman.com",
     "domains_tooltip": "秘密僅在提到的域中有效。使用 '*.example.com 允許所有子域。",
     "value": "值",
@@ -1288,7 +1290,7 @@
       "you": "你"
     },
     "created_at": {
-      "heading": "創建於"
+      "heading": "建立於"
     },
     "updated_at": {
       "heading": "最後更新",

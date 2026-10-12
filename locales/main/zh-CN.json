@@ -78,5 +78,9 @@
   "Retry Sign In": "重試登入",
   "Move to Applications Folder?": "移到“應用程式”資料夾？",
   "Move to Applications Folder": "移到“應用程式”資料夾",
-  "Do Not Move": "不移動"
+  "Do Not Move": "不移動",
+  "Reload": "重新載入",
+  "Force Reload": "強制重新載入",
+  "Toggle Developer Tools": "切換開發者工具",
+  "Actual Size": "實際大小"
 }

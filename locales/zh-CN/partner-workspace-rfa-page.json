@@ -1,7 +1,5 @@
 {
-  "switch_accounts_cta": "切換賬戶",
   "creating_request_heading": "請求 訪問此合作伙伴工作區",
-  "creating_request_subheading": "您還沒有訪問此工作區的許可權。選擇以下選項以 請求 訪問。",
   "team_select": {
     "label": "選擇 團隊",
     "placeholder": "選擇 團隊 來訪問此工作區",
@@ -23,17 +21,11 @@
   },
   "add_note_text": "新增備註",
   "text_area_info_text": "添加註釋到工作區管理員",
-  "submit_cta": "請求 加入",
   "approved_partner_heading": "快到了！",
   "approved_partner_subheading_1": "您的 請求 已獲得批准。要獲得訪問許可權，請接受傳送到您的電子郵件的合作關係 邀請。",
   "approved_partner_subheading_2": "如果找不到 邀請，您可以提交新的訪問許可權 請求。",
   "approved_partner_raise_new_request_cta": "請求 再次訪問",
-  "current_sign_in_account_text": "您的登入身份為",
   "toast_content": {
-    "default_error": {
-      "title": "無法傳送 請求",
-      "description": "只是一根電線有問題。再試一次。"
-    },
     "switch_account_error": {
       "title": "請求 已傳送",
       "description": "從帳戶選單切換團隊以繼續。"

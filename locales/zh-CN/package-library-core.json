@@ -45,7 +45,7 @@
       "column_headers": {
         "package": "包",
         "created_by": "建立者：",
-        "created_on": "創建於",
+        "created_on": "建立於",
         "last_used": "上次使用"
       },
       "button": {

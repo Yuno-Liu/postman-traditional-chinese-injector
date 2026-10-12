@@ -194,11 +194,13 @@
     "create_collection": "新建集合",
     "add_requests": "新增請求",
     "import": "匯入",
+    "import_requests": "匯入請求",
     "try_sample": "試用示例集合",
     "open_request": "開啟請求",
     "errors": {
       "create_collection": "無法建立集合，請稍後重試。",
       "add_request": "無法新增請求，請稍後重試。",
+      "import_requests": "無法匯入請求，請稍後重試。",
       "sample_collection": "無法建立示例集合，請稍後重試。"
     },
     "request_added": {

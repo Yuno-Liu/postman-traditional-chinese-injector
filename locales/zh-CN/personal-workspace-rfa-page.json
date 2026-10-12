@@ -4,18 +4,7 @@
   "creating_request_subheading": "請求所有者與您共享此內容。",
   "pending_request_heading": "您訪問此資源的請求正在稽核中",
   "pending_request_subheading": "所有者回復後，我們會通知您。",
-  "add_note_text": "新增備註",
-  "text_area_info_text": "關於您為何想要訪問的簡短說明...",
   "submit_cta": "請求訪問",
   "current_sign_in_account_text": "您的登入身份為",
-  "continue_postman_cta": "繼續前往 Postman",
-  "toast_content": {
-    "default_error": {
-      "title": "無法傳送請求",
-      "description": "只是一根電線有問題。再試一次。"
-    },
-    "non_team_member_error": {
-      "description": "不屬於團隊的使用者無法請求訪問"
-    }
-  }
+  "continue_postman_cta": "繼續前往 Postman"
 }

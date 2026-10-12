@@ -253,7 +253,7 @@
       "title": "拒絕拉取請求？",
       "primary_action": "拒絕 拉取請求",
       "cancel_button": "取消",
-      "add_a_note_label": "添加註釋",
+      "add_a_note_label": "新增註釋",
       "message": "此操作無法撤消。要 請求 編輯或留下反饋，請新增評論。",
       "modal_text": "幫助其他人瞭解 拉取請求 被拒絕的原因"
     },

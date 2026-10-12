@@ -279,8 +279,8 @@
               "open_in_editor_tooltip": "在 編輯者 中開啟",
               "warning": {
                 "request_header": "此 請求 未完全傳送，並且可能不具有所有必需的系統標頭。",
-                "request_header_xhr_agent": "某些標頭可能會丟失。請使用 Postman 桌面代理 傳送此請求，以查看準確的請求標頭。",
-                "response_header_xhr_agent": "某些標頭可能會丟失。將此請求與 Postman 桌面代理 一起傳送，以查看準確的響應標頭。",
+                "request_header_xhr_agent": "某些標頭可能會丟失。請使用 Postman 桌面代理 傳送此請求，以檢視準確的請求標頭。",
+                "response_header_xhr_agent": "某些標頭可能會丟失。將此請求與 Postman 桌面代理 一起傳送，以檢視準確的響應標頭。",
                 "network": "此 請求 未完全傳送，可能沒有所有必需的網路資訊。"
               },
               "ignored_body_text": "請求體超過 10 KB，只能在編輯器中檢視。<0>在編輯器中檢視</0>",

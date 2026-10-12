@@ -1,13 +1,9 @@
 {
   "globals": {
-    "workbench_description": "工作區的全域性變數是一組在該工作區範圍內始終可用的變數，工作區中的任何人都可以檢視和編輯它們。",
-    "learn_more_link": "瞭解更多關於全域性變數的資訊",
     "save_globals": "儲存全域性變數",
     "export_globals": "匯出全域性變數",
     "save": "儲存",
-    "export": "匯出",
-    "sync_disabled_tooltip": "由於管理員已停用同步，當前值無法保留。",
-    "initial_value_disabled_tooltip": "由於初始值已被停用，當前值無法重置。"
+    "export": "匯出"
   },
   "new_environment_placeholder": "新建環境",
   "content_pane": {
@@ -82,31 +78,6 @@
     },
     "request_permission_info_bar": {
       "message": "申請許可權以更新這些變數的共享值。您可以編輯本地值。"
-    },
-    "editor": {
-      "disable_persist_action_tooltip": "由於管理員已停用同步，當前值無法保留。",
-      "disable_reset_action_tooltip": "由於初始值已被停用，當前值無法重置。",
-      "variable_sync_disable_info_bar": {
-        "title": {
-          "disable_all": "已停用同步所有變數的初始值",
-          "disable_secret": "已停用同步私密變數的值"
-        },
-        "description": {
-          "all_disabled": "為保護資料，您的團隊管理員已停用同步所有變數的初始值。使用這些初始值的模擬伺服器、監控和 Newman 將受到影響。",
-          "secret_disabled": "為保護私密資料，您的團隊管理員已停用同步私密變數的初始值。使用這些初始值的模擬伺服器、監控和 Newman 將受到影響。"
-        }
-      },
-      "table": {
-        "columns": {
-          "variable": "變數",
-          "initial_value": "初始值",
-          "current_value": "當前值"
-        },
-        "key_placeholder": "新增新變數",
-        "validator": {
-          "message": "此變數在當前活動會話中不存在。但這不會影響它在 {entityType} 中的存在。"
-        }
-      }
     }
   },
   "context_bar": {
@@ -116,6 +87,14 @@
         "all_disabled": "由於團隊管理員已停用變數同步，模擬伺服器、監控和 Newman 將無法使用任何變數的值。",
         "secret_disabled": "由於團隊管理員已停用私密變數同步，模擬伺服器、監控和 Newman 將無法使用私密變數的值。"
       }
+    },
+    "system_environment": {
+      "label": "系統環境",
+      "none_option_label": "無系統環境",
+      "link_tooltip": "關聯到系統環境",
+      "change_tooltip": "更改系統環境",
+      "open_tooltip": "開啟系統環境",
+      "permission_denied_tooltip": "只有 API 目錄管理員或工作區管理員才能將環境關聯到系統環境。"
     }
   },
   "tab_conflict_message": {

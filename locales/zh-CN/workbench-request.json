@@ -120,7 +120,7 @@
   },
   "editor_tab": {
     "tabs": {
-      "docs": "文件",
+      "docs": "檔案",
       "params": {
         "label": "引數"
       },
@@ -387,6 +387,7 @@
   },
   "proactive_suggestions": {
     "aria_label": "主動請求建議",
+    "default_lint_fix_headline": "我找到了這些 lint 問題的修復方法。",
     "scanning_label": "掃描中",
     "diagnosing_label": "診斷中",
     "apply_fix_error_title": "無法應用此修復",

@@ -114,7 +114,7 @@
     "success_connection": "已成功連線到 {gitServiceName} 儲存庫。",
     "install_github-app_helper_text": "如果您沒有看到您的組織，則可能需要<Link><Text>首先將 GitHub 應用程式安裝到您的組織。</Text></Link>",
     "install_github-app_helper_text_new": "如果您沒有看到列出的任何 Github 所有者，請嘗試在您的 個人 帳戶或組織上<Link><Text>安裝 Postman 應用</Text></Link>。",
-    "learn_more": "要了解更多資訊，請參閱<Link><Text>Github文件</Text></Link>",
+    "learn_more": "要了解更多資訊，請參閱<Link><Text>Github檔案</Text></Link>",
     "learn_more_new": "<Link><Text>瞭解更多。</Text></Link>"
   },
   "re-connect_modal": {

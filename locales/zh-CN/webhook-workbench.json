@@ -177,7 +177,7 @@
       }
     },
     "workbench": {
-      "title": "Webhook 儀表板",
+      "title": "Webhook 儀錶板",
       "description": "請求歷史記錄可用於此 Webhook。"
     },
     "sidebar": {
@@ -270,7 +270,7 @@
       "rename_disabled_tooltip": "您沒有許可權來重新命名此 Webhook。",
       "edit_routing_disabled_tooltip": "您沒有許可權來編輯路由設定。",
       "edit_settings_disabled_tooltip": "您沒有許可權來編輯 Webhook 設定。",
-      "receive_sample_event_disabled_tooltip": "您沒有許可權來發送示例事件。",
+      "receive_sample_event_disabled_tooltip": "您沒有許可權來傳送示例事件。",
       "replay_disabled_tooltip": "您沒有許可權來重播請求。",
       "clear_events_disabled_tooltip": "您沒有許可權來刪除事件。"
     }

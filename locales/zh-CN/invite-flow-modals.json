@@ -14,7 +14,7 @@
     "not_listed_above_invite_by_email": "上面沒有列出嗎？ 邀請 使用者通過電子郵件",
     "enter_email": "輸入電子郵件",
     "error_messages": {
-      "no_permission": "您沒有 許可權 來發送邀請",
+      "no_permission": "您沒有 許可權 來傳送邀請",
       "generic": "生成連結時出現問題。",
       "flow_editor": "流程 編輯者 角色 只能與開發者 角色 一起分配。"
     },
@@ -61,25 +61,25 @@
       "email_verified": {
         "primary": "一旦 團隊 管理員 批准您的 請求，您將自動新增到 團隊。",
         "guidelines": "在我們傳送您的 請求 之前，請回答 團隊 管理員 中的這個問題",
-        "no_guidelines": "添加註釋以幫助 團隊 的 管理員 檢視您的 請求（可選）"
+        "no_guidelines": "新增註釋以幫助 團隊 的 管理員 檢視您的 請求（可選）"
       },
       "email_not_verified": {
         "primary": "快到了，在我們傳送您的 請求 之前，只需做兩件事即可",
         "step_1": "1. 驗證您的帳戶。您的收件箱中應該有一封驗證電子郵件正在等待您。",
         "step_2_guidelines": "2. 從team 管理員 開始回答這個問題。",
-        "step_2_no_guidelines": "2. 添加註釋以幫助 團隊 的 管理員 稽核您的 請求（可選）"
+        "step_2_no_guidelines": "2. 新增註釋以幫助 團隊 的 管理員 稽核您的 請求（可選）"
       }
     },
     "placeholder": {
       "guidelines": "在此輸入您的答案",
-      "no_guidelines": "添加註釋"
+      "no_guidelines": "新增註釋"
     },
     "modal_header": "提交您的 請求 以加入 團隊 {team_name}"
   },
   "verify_email_modal": {
     "modal_header": "驗證您的電子郵件以加入 {team_name}",
     "modal_body": "出於安全原因，我們需要先驗證您的電子郵件地址，然後才能提交您的加入 請求。",
-    "resend_button": "重新發送",
+    "resend_button": "重新傳送",
     "resend_email": "我們已將驗證電子郵件傳送至：",
     "close": "我已驗證我的電子郵件"
   },

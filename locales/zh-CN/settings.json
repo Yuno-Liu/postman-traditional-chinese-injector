@@ -72,7 +72,7 @@
       "show_middle_workbench": "顯示中間工作臺",
       "swap_left_right_sidebar": "交換左右側邊欄",
       "var_autocomplete": "變數自動完成",
-      "default_doc_editor": "預設文件編輯器",
+      "default_doc_editor": "預設檔案編輯器",
       "postman_editor": "Postman 編輯器",
       "markdown_editor": "Markdown 編輯器"
     },
@@ -80,7 +80,7 @@
       "label": "編輯器設定",
       "reset_button_label": "重置",
       "reset_button_tooltip": "將編輯器設定重置為其預設值",
-      "font_family": "字體系列",
+      "font_family": "字型系列",
       "font_size": "字型大小（畫素）",
       "font_size_unit": "畫素",
       "indentation_count": "縮排數",
@@ -95,7 +95,6 @@
     "application": {
       "label": "應用",
       "autosave": "自動儲存",
-      "autosave_explanation": "自動儲存對您的請求和集合的更改。",
       "autosave_explanation_only_requests": "自動儲存對您的請求的更改。",
       "send_anonymous_data": "將匿名使用資料傳送至 Postman",
       "send_anonymous_data_managed": "已被你所在組織的 Postman 安裝設定關閉。",
@@ -401,6 +400,10 @@
     },
     "agent_mode": {
       "label": "嘗試代理模式"
+    },
+    "perf_internal_runner_pool": {
+      "label": "用於效能測試的內部 Staging 執行器",
+      "description": "為雲端效能測試執行新增“內部 Staging 執行器”選項。僅限 Postman 員工使用。"
     }
   },
   "proxy": {

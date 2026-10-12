@@ -94,6 +94,7 @@
       "text_placeholder": "文本（可選）",
       "url_placeholder": "URL",
       "edit_button": "儲存",
+      "open": "開啟",
       "add_button": "新增",
       "edit_link": "編輯連結",
       "remove_link": "刪除連結",
@@ -133,7 +134,27 @@
     "private_user_label": "私有使用者"
   },
   "link-unfurling": {
+    "accessible_label": "{entityType}：{label}",
+    "entity": {
+      "workspace": "工作區",
+      "collection": "集合",
+      "folder": "資料夾",
+      "request": "請求",
+      "example": "示例",
+      "environment": "環境"
+    },
+    "loading": "正在載入...",
+    "options": "連結選項",
     "unfurl_limit_reached": "僅顯示前 {requestUnfurlLimit} 個 URL 的預覽，以保持最佳效能。"
+  },
+  "image_upload": {
+    "toolbar_label": "上傳圖片",
+    "drop_zone": "拖放圖片以上傳",
+    "uploading": "正在上傳...",
+    "failed": "上傳失敗",
+    "unavailable": "圖片不可用",
+    "retry": "重試",
+    "remove": "移除"
   },
   "slate-node-validator": {
     "slatedata_empty_content": "內容好像是空的。請新增一些內容並重試。",

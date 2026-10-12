@@ -45,6 +45,8 @@
   "file_viewer_options": "檔案檢視器選項",
   "disconnect_from_workspace": "斷開與工作區的連線以開啟另一個資料夾",
   "open_folder_disabled_unsaved_changes": "開啟其他資料夾前，請先儲存或放棄未儲存的更改。",
+  "recent_folders_open_failed": "開啟資料夾失敗",
+  "recent_folders_open_failed_description": "請重試。",
   "git_menu_connect_folder": "連線資料夾",
   "git_menu_open_folder": "開啟資料夾",
   "git_menu_open_new_folder": "開啟新資料夾",

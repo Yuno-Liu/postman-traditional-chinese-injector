@@ -122,7 +122,7 @@
       "label": "模擬伺服器服務"
     },
     "create_a_fork": {
-      "label": "Fork",
+      "label": "復刻",
       "disabled_tooltip": "您沒有 許可權 來 fork 這個 集合"
     },
     "request_a_fork": {
@@ -243,7 +243,7 @@
       "label": "詢問人工智慧"
     },
     "fork": {
-      "label": "Fork"
+      "label": "復刻"
     },
     "use": {
       "label": "使用 / Fork"
@@ -354,7 +354,7 @@
     "no_permission": "您無權在此 工作區 中建立集合。",
     "create": "建立",
     "pull_from_cloud": "從 Postman 雲中拉取",
-    "ask_ai": "要求 AI 從原生代碼庫建立",
+    "ask_ai": "要求 AI 從原生程式碼庫建立",
     "collection_empty": "集合 為空",
     "folder_empty": "資料夾 為空",
     "collection_empty_description": "新增 請求 或 資料夾 來構建您的 API 工作流程。",
@@ -375,6 +375,7 @@
   "toast": {
     "items_moved": "{count} 物品已移動",
     "could_not_move_items": "無法移動物品",
+    "sort_blocked": "清除排序後才能移動項目",
     "items_linked": "已關聯 {count} 個項目",
     "only_requests_can_be_linked": "只有請求可以被關聯",
     "only_http_requests_can_be_linked": "只有 HTTP 請求可以被關聯",
