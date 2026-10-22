@@ -149,6 +149,12 @@ test('translateString 翻译带动态计数的查找替换文案', () => {
   assert.strictEqual(translateString(DICT, '4 lessons'), '4 节课');
   assert.strictEqual(translateString(DICT, '0 collections and 1 environment selected'), '已选择 0 个集合和 1 个环境');
   assert.strictEqual(translateString(DICT, '6 hidden'), '6 个已隐藏');
+  assert.strictEqual(translateString(DICT, '2 of 2 selected'), '已选择 2 / 2 项');
+  assert.strictEqual(translateString(DICT, 'Alice (You)'), 'Alice (你)');
+  assert.strictEqual(translateString(DICT, 'My API - Run results'), 'My API - 运行结果');
+  assert.strictEqual(translateString(DICT, 'Iteration 12'), '第 12 次迭代');
+  assert.strictEqual(translateString(DICT, 'Ran today at 05:08:40 PM'), '今天下午 05:08:40 运行');
+  assert.strictEqual(translateString({ 'Save the run results': '保存运行结果' }, 'Save the run\n      results'), '保存运行结果');
   assert.strictEqual(translateString(DICT, '0 requests'), '0 个请求');
   assert.strictEqual(translateString(DICT, '1 view'), '1 次浏览');
   assert.strictEqual(translateString(DICT, 'Generated code for cURL '), '为 cURL 生成的代码 ');

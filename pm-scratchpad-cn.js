@@ -48,6 +48,16 @@
     [/^(\d+) collections? and (\d+) environments? selected$/, '已选择 $1 个集合和 $2 个环境'],
     // 请求头面板的自动生成头隐藏计数，如 "6 hidden"
     [/^(\d+) hidden$/, '$1 个已隐藏'],
+    // 多选列表的已选计数，如 "2 of 2 selected"
+    [/^(\d+) of (\d+) selected$/, '已选择 $1 / $2 项'],
+    // 成员选择器里当前用户的名字后缀，如 "Alice (You)"
+    [/^(.+) \(You\)$/, '$1 (你)'],
+    // 集合运行结果页：标题 "<集合名> - Run results"、迭代分组 "Iteration 1"、运行时间 "Ran today at 05:08:40 PM"
+    [/^(.+) - Run results$/, '$1 - 运行结果'],
+    [/^Iteration (\d+)$/, '第 $1 次迭代'],
+    [/^Ran (today|yesterday) at (\d{1,2}:\d{2}(?::\d{2})?) (AM|PM)$/, function (all, day, t, ap) {
+      return (day === 'today' ? '今天' : '昨天') + (ap === 'AM' ? '上午 ' : '下午 ') + t + ' 运行';
+    }],
     // 集合概览页的元信息计数，如 "0 requests"、"1 view"（数字与单位之间可能是不换行空格）
     [/^(\d+)\s+requests?$/, '$1 个请求'],
     [/^(\d+)\s+views?$/, '$1 次浏览'],
@@ -91,6 +101,11 @@
     if (!core) return null;
     if (Object.prototype.hasOwnProperty.call(dict, core)) {
       return m[1] + dict[core] + m[3];
+    }
+    // 源码里折行的长文案（如 aria-label 中夹着换行 + 缩进）：连续空白压成单个空格再查一次
+    if (/\s{2,}|[\t\n\r]/.test(core)) {
+      var flat = core.replace(/\s+/g, ' ');
+      if (Object.prototype.hasOwnProperty.call(dict, flat)) return m[1] + dict[flat] + m[3];
     }
     for (var i = 0; i < PREFIX_RULES.length; i++) {
       var label = PREFIX_RULES[i][0];
