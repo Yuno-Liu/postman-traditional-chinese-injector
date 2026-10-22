@@ -9,9 +9,14 @@
     "load_error_retry": "重试"
   },
   "query_tools": {
-    "links_line": "从你的工具中查询",
-    "cli_label": "CLI",
-    "mcp_label": "MCP"
+    "links_line": "在你的工具中使用",
+    "cli_label": "CLI 查询",
+    "mcp_label": "MCP 设置",
+    "docs_label": "文档",
+    "copy_aria_label": "复制 {label} 命令",
+    "copy_error_toast_title": "无法复制到剪贴板",
+    "copy_error_toast_description": "请改为从文档中手动复制该命令。",
+    "copied_label": "已复制"
   },
   "connectors": {
     "status": {
@@ -144,14 +149,15 @@
     "error_description": "请重新连接数据源后重试。",
     "error_title": "无法加载依赖关系图。",
     "graph_ready_hint": "图谱已就绪 - 开始探索你的 Context Graph",
+    "legend_collapse_button_label": "收起图例",
+    "legend_expand_button_label": "展开图例",
     "legend_nodes": "节点",
     "legend_relationships": "关系",
     "legend_title": "图例",
     "legend_toggle_hint": "点击类型以显示或隐藏",
     "loading": "正在加载依赖关系图…",
-    "query_connect_more": "连接更多",
-    "query_helper": "连接 GitHub、New Relic 等数据源，加入服务、部署和实时遥测数据，让 Agent 给出更深入的回答。",
-    "query_subtitle": "此图仅用于可视化展示，如需准确结果请查询 Context Graph。",
+    "query_connect_more": "连接",
+    "query_helper": "连接更多数据源以获得更深入的回答",
     "tooltip_stats": {
       "apis": "API",
       "database_schemas": "数据库 Schema",
@@ -196,6 +202,11 @@
   "page": {
     "heading": "Agent Context",
     "title": "Agent 上下文"
+  },
+  "prompt_overlay": {
+    "aria_label": "Agent 提示",
+    "placeholder": "向 Agent 询问你的服务、依赖、负责人…",
+    "submit_button_label": "询问 Agent"
   },
   "panel": {
     "aria_label": "Agent Context 数据源"

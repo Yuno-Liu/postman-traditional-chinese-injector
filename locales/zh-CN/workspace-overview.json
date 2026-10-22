@@ -694,7 +694,7 @@
       },
       "other_namespaces": "+ 另外 {count} 个{count, plural, one {命名空间} other {命名空间}}",
       "path_label": "路径",
-      "network_breadcrumb": "API Network",
+      "network_breadcrumb": "API 网络",
       "description": "请求将此工作区添加到 Unified API Network 中的命名空间。",
       "cta": "添加到命名空间",
       "pending_label": "{namespaceName} 的请求待处理",

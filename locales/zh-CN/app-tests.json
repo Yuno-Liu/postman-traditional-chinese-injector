@@ -1,0 +1,102 @@
+{
+  "default_test_name": "新建应用测试",
+  "sidebar": {
+    "aria_label": "应用测试",
+    "rename_button": "重命名",
+    "delete_button": "删除",
+    "load_error": "无法加载应用测试",
+    "retry_button": "重试",
+    "empty_title": "暂无应用测试",
+    "create_button": "创建",
+    "delete_modal": {
+      "heading": "删除 {name}？",
+      "body": "该测试及其规范将被删除，运行历史会保留。",
+      "cancel_button": "取消",
+      "confirm_button": "删除"
+    }
+  },
+  "workbench": {
+    "save_button": "保存",
+    "run_button": "运行",
+    "running_button": "运行中…",
+    "run_needs_spec_tooltip": "运行前请先保存规范",
+    "specs_tab": "规范",
+    "runs_tab": "运行记录",
+    "settings_tab": "设置",
+    "add_spec_button": "添加规范",
+    "remove_spec_button": "移除规范",
+    "no_specs": "添加一个规范以开始使用。",
+    "runs": {
+      "status_column": "状态",
+      "started_column": "开始时间",
+      "results_button": "结果",
+      "archive_button": "归档",
+      "all_runs_button": "全部运行",
+      "load_error": "无法加载运行记录。请重试以检查是否有运行正在进行。"
+    },
+    "results": {
+      "result_column": "结果",
+      "test_column": "测试",
+      "error_column": "错误",
+      "passed": "通过",
+      "failed": "失败",
+      "skipped": "已跳过",
+      "flaky": "不稳定",
+      "no_report": "此次运行没有可用的报告。",
+      "report_title": "Playwright 测试报告"
+    },
+    "run_state": {
+      "passed": "通过",
+      "failed": "失败",
+      "errored": "出错",
+      "aborted": "已中止",
+      "running": "运行中",
+      "starting": "启动中",
+      "queued": "排队中",
+      "finished": "已完成"
+    },
+    "load_error": "无法加载此应用测试",
+    "not_found": "此应用测试已不存在。",
+    "editor_load_error": "代码编辑器加载失败。",
+    "conflict": {
+      "message": "在你编辑期间，有人保存了此测试的更新版本。你可以重新加载以查看对方的更改（未保存的编辑将被丢弃），或用你的版本覆盖。",
+      "reload_button": "重新加载新版本",
+      "overwrite_button": "用我的版本覆盖"
+    },
+    "source_error": "无法加载此测试的规范。请在编辑前重试，以免覆盖任何内容。",
+    "retry_button": "重试",
+    "settings": {
+      "description": "此测试每次运行的默认设置，单个规范仍可覆盖。保存后生效。",
+      "project_default": "项目默认值",
+      "browser_label": "浏览器",
+      "width_label": "视口宽度",
+      "height_label": "视口高度",
+      "retries_label": "重试次数（0 到 3）",
+      "errors": {
+        "required": "请输入一个值。已保存的设置可以修改，但不能清空。",
+        "whole_number": "请输入 0 或正整数。",
+        "positive_number": "请输入大于 0 的整数。",
+        "too_large": "请输入不超过 {max} 的值。"
+      }
+    }
+  },
+  "errors": {
+    "editor_access": "你需要此工作区的编辑者权限才能更改应用测试。",
+    "request_failed": "应用测试服务无法完成请求（HTTP {status}），请重试。",
+    "project_too_large": "项目超出了 {limit} 的上限。请移除较大的文件后重试。",
+    "archive_too_large": "存储的归档文件过大，无法打开。",
+    "archive_corrupt": "存储的归档文件已损坏，无法打开。",
+    "binary_file": "此文件不是文本文件，无法在此编辑该项目：{path}",
+    "linked_file": "此路径是一个链接，无法在此编辑该项目：{path}",
+    "path_too_long": "文件路径过长，无法保存：{path}",
+    "unsafe_path": "项目中不允许使用此文件路径：{path}",
+    "duplicate_path": "有两个文件使用了相同的路径：{path}",
+    "unexpected_response": "应用测试服务返回了意外的响应，请重试。",
+    "download_failed": "下载失败（HTTP {status}），请重试。",
+    "upload_failed": "上传失败（HTTP {status}），请重试。",
+    "save_conflict": "有人保存了此测试的更新版本。请在保存前选择重新加载或覆盖。",
+    "invalid_settings": "请先修正运行设置再保存。",
+    "unknown": "出现问题，请重试。"
+  },
+  "create_error": "无法创建应用测试。"
+}

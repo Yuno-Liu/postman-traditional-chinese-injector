@@ -238,10 +238,12 @@
       },
       "git_repository": {
         "label": "从本地文件夹",
+        "open_folder_label": "打开本地文件夹",
         "helper_text": "我想连接现有的项目文件夹。",
         "disabled_tooltip": "{workspaceType} 工作区不支持关联 Git 仓库。"
       },
-      "choose_folder_cta": "选择文件夹"
+      "choose_folder_cta": "选择文件夹",
+      "open_new_folder_cta": "打开新文件夹"
     },
     "ai_section": {
       "title": "使用 Postman AI 创建",

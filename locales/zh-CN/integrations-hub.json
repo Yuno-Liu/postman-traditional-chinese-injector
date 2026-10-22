@@ -221,6 +221,7 @@
     "title": "工作区通知",
     "description": "当队友添加或更改请求、集合或环境，或有人发布工作区更新时，随时接收更新通知。",
     "addButton": "连接工作区",
+    "deleteError": "无法删除频道集成。",
     "table": {
       "workspace": "工作区",
       "privateWorkspace": "私有工作区",
@@ -271,7 +272,25 @@
       "createSuccess": "频道连接成功。",
       "updateSuccess": "频道连接已更新。",
       "createError": "频道集成连接失败。",
-      "updateError": "频道集成更新失败。"
+      "createErrorRetry": "频道集成连接失败，请重试。",
+      "updateError": "频道集成更新失败。",
+      "updateErrorRetry": "频道集成更新失败，请重试。",
+      "errors": {
+        "noPermissionWorkspace": "你没有权限管理此工作区的频道集成。",
+        "noPermissionSubscription": "你没有权限更改此频道集成。请联系工作区管理员进行更改。",
+        "otherTeamOwnsSubscription": "此频道集成属于其他团队，只有该团队可以更改。",
+        "reauthorizeRequired": "你的 {appName} 连接已过期。请重新连接 {appName} 后重试。",
+        "notFound": "此频道集成已不存在。请刷新页面后重试。",
+        "channelAlreadyConnected": "此频道已连接到其他集成。",
+        "destinationAlreadyConnected": "此目标已连接。",
+        "workspaceAlreadyConnected": "此工作区已有频道集成。",
+        "limitReached": "此工作区的频道集成数量已达上限。",
+        "slackWorkspaceMismatch": "你的团队已连接到另一个 {appName} 工作区。请先断开该连接，再连接此工作区。",
+        "workspaceNotEligible": "此类工作区不支持频道集成。",
+        "workspaceUpdateEventOnly": "在公共工作区中，集成只能向此频道通知工作区更新。",
+        "destinationTypeImmutable": "此集成的目标类型无法更改。请断开后重新连接一个新的集成。",
+        "reconnectToChangeWorkspace": "要将此集成移到另一个 {appName} 工作区，请先断开再重新连接。"
+      }
     }
   },
   "monitorNotifications": {
@@ -298,8 +317,8 @@
       "submitEdit": "保存更改",
       "createSuccess": "监控连接成功。",
       "updateSuccess": "监控连接已更新。",
-      "createError": "监控集成连接失败。",
-      "updateError": "监控集成更新失败。"
+      "createError": "监控集成连接失败，请重试。",
+      "updateError": "监控集成更新失败，请重试。"
     }
   },
   "delete_modal": {

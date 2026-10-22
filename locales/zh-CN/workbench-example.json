@@ -492,6 +492,10 @@
         "unauth_not_reachable": "无法连接到 Cloud Agent，请稍后重试或选择其他 Agent。",
         "forbidden": "您已达到 Cloud Agent 的月度调用次数上限，请选择其他 Agent。",
         "rate_limit_exceeded": "已超出 Cloud Agent 的速率限制，请稍后重试或选择其他 Agent。",
+        "minute_limit_exceeded": "你已达到 Cloud Agent 每分钟请求上限。升级套餐可获得更高的请求上限。",
+        "day_limit_exceeded": "你已达到 Cloud Agent 每日请求上限。升级套餐可获得更高的请求上限。",
+        "session_limit_exceeded": "你已达到 Cloud Agent 并发会话上限。请关闭部分 Postman 标签页后重试，或升级套餐。",
+        "upgrade_plan": "升级套餐",
         "internal_error": "无法发送此请求，请选择其他 Agent。",
         "error_orion": {
           "ipv6_request": "Can not send requests to IPv6 addresses. Select a different agent.",

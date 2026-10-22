@@ -35,7 +35,7 @@
       "description": "在本地文件系统中使用此集合。"
     },
     "flow": {
-      "title": "Flows",
+      "title": "流程",
       "description": "基于此集合中的请求构建流程。"
     }
   },
@@ -48,6 +48,8 @@
     "auto_pull_label": "自动从源集合拉取变更",
     "watch_source_label": "关注源集合",
     "watch_info": "在源集合发生更改时收到通知。",
+    "watch_forked_label": "关注派生的集合",
+    "watch_forked_info": "派生的集合发生变化时接收通知。",
     "error_title": "无法使用该集合",
     "error_message": "Fork 该集合时出错，请重试。"
   },

@@ -279,15 +279,19 @@
   "merge_status_banner": {
     "success": {
       "pull_request": "拉取请求 已被合并。",
+      "pull_changes": "更改已拉取。",
       "other": "更改已合并。"
     },
     "in_progress": {
       "pull_request": "我们正在合并 拉取请求，这可能需要一分钟时间。完成后我们会通知您。",
+      "pull_changes": "正在拉取更改，可能需要一分钟。完成后我们会通知你。",
       "other": "我们正在合并更改，这可能需要一分钟时间。完成后我们会通知您。"
     },
     "failed": {
       "pull_request_with_refresh_tab": "合并 拉取请求 时发生意外错误。请刷新选项卡并重试。",
       "pull_request_without_refresh_tab": "合并 拉取请求 时发生意外错误。请再试一次。",
+      "pull_changes_with_refresh_tab": "拉取更改时发生意外错误。请刷新标签页后重试。",
+      "pull_changes_without_refresh_tab": "拉取更改时发生意外错误，请重试。",
       "other_with_refresh_tab": "合并更改时发生意外错误。请刷新选项卡并重试。",
       "other_without_refresh_tab": "合并更改时发生意外错误。请再试一次。"
     }

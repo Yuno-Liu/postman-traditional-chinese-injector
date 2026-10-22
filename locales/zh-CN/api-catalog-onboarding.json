@@ -1,8 +1,23 @@
 {
+  "common": {
+    "start_setup_button_label": "开始设置"
+  },
+  "onboarding_footer": {
+    "cancel_button_label": "取消"
+  },
+  "workspace_onboarding_container": {
+    "done_button_label": "完成"
+  },
+  "github_onboarding_step2": {
+    "back_button_label": "返回",
+    "done_button_label": "完成",
+    "primary_button_disabled_tooltip": "请等待设置完成"
+  },
   "github": {
     "install_github_app_helper_text": "如果看不到您的组织，可能需要在您的个人账户或组织上<Link><Text>安装 Postman 应用</Text></Link>。"
   },
   "github_onboarding_step1": {
+    "primary_button_disabled_tooltip": "请填写所有必填字段",
     "forbidden_workspace_toast": {
       "title": "无权限",
       "description": "你没有在此处创建工作区的权限。请向团队管理员申请访问权限后重试。"

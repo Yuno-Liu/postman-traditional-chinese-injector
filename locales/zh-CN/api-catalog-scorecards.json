@@ -51,5 +51,33 @@
       "no_categories": "请至少添加一个包含至少一个指标的类别以继续。",
       "category_without_metrics": "请至少向“{categoryName}”添加一个指标以继续。"
     }
+  },
+  "system_scorecard_badge": {
+    "label": "系统",
+    "tooltip": "系统记分卡由 Postman 提供和管理，用于跟踪我们推荐的服务健康度衡量指标，不可编辑或删除。"
+  },
+  "scorecard_card": {
+    "pin_button": {
+      "pin_tooltip": "固定到概览",
+      "unpin_tooltip": "从概览取消固定",
+      "pin_aria_label": "固定到概览",
+      "unpin_aria_label": "从概览取消固定",
+      "no_permission_tooltip": "需要 API 目录管理员角色才能固定记分卡。"
+    },
+    "edit_button": {
+      "tooltip": "编辑记分卡",
+      "aria_label": "编辑记分卡",
+      "no_permission_tooltip": "编辑权限需要 API 目录管理员角色"
+    },
+    "stats": {
+      "avg_score_label": "平均得分",
+      "services_label": "服务"
+    },
+    "meta": {
+      "categories_count": "{count, plural, one {# 个类别} other {# 个类别}}",
+      "metrics_count": "{count, plural, one {# 项指标} other {# 项指标}}",
+      "updated_date": "更新于 {date}"
+    },
+    "unknown_name": "未知记分卡"
   }
 }

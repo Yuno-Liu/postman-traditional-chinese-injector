@@ -88,8 +88,10 @@
     "ci_modal_description": "将其集成到您的 CI 中以自动推送到云",
     "ci_no_cli": "没有 Postman CLI？",
     "ci_download": "在此下载",
+    "ci_command_name": "Postman CLI 命令",
     "copied": "复制了！",
     "copy_to_clipboard": "复制到剪贴板",
+    "copy_named": "复制{name}",
     "panel_title": "工作区",
     "panel_title_with_count": "工作区（{count}）",
     "status_new": "新的",
@@ -736,6 +738,10 @@
     "description": "充分利用 Postman 的原生 Git 支持。",
     "action_failed": "无法完成该操作",
     "sections": {
+      "auto_update": {
+        "title": "自动更新云端工作区",
+        "description": "所选分支合并后，自动更新你的云端工作区。"
+      },
       "setup_git": {
         "title": "配置 Git",
         "description": "让 API 变更与代码库保持同步"
@@ -771,6 +777,10 @@
         "configure_remote": "配置远程仓库"
       },
       "command_label": "在终端中运行的命令",
+      "command_names": {
+        "initialize": "git init 命令",
+        "configure_remote": "git remote add 命令"
+      },
       "remote_url_label": "远程仓库 URL",
       "remote_url_placeholder": "输入远程仓库 URL",
       "run_in_terminal": "在终端中运行",
@@ -783,6 +793,8 @@
     },
     "connect": {
       "cta": "连接",
+      "check_failed": "无法检查此文件夹是否已连接到工作区。",
+      "retry_cta": "重试",
       "no_permission_tooltip": "你没有连接到工作区的权限"
     },
     "generate_errors": {
@@ -793,7 +805,61 @@
       "no_folder_title": "未选择文件夹",
       "no_folder_description": "运行应用测试前，请先打开一个本地文件夹",
       "run_failed": "无法在终端中运行该命令",
+      "command_name": "app test 命令",
       "view_in_inventory": "在应用程序清单中查看"
+    },
+    "auto_update": {
+      "description": "<branch></branch> 合并后，自动更新你的云端工作区。",
+      "branch_picker_label": "自动更新的目标分支：{branch}",
+      "step_authorize": {
+        "title": "授权",
+        "body": "将你的 <generate></generate> 以 POSTMAN_API_KEY 为名添加到 <secrets></secrets>。",
+        "generate_cta": "Postman API 密钥",
+        "secrets_cta": {
+          "github": "仓库密钥",
+          "gitlab": "CI/CD 变量",
+          "bitbucket": "仓库变量",
+          "azure-devops": "流水线变量"
+        },
+        "secrets_plain": "CI 密钥"
+      },
+      "step_workflow": {
+        "title": "添加工作流配置",
+        "title_pipeline": "添加流水线配置",
+        "note": {
+          "gitlab": "如果 POSTMAN_API_KEY 是受保护变量，{branch} 必须是受保护分支，作业才能读取它。",
+          "bitbucket": "必须在此仓库的设置中启用 Pipelines，该步骤才能运行。",
+          "azure-devops": "合并后，请在 Azure DevOps 中基于 {file} 创建流水线，并将 POSTMAN_API_KEY 作为机密变量添加进去。"
+        },
+        "blocked": {
+          "invalid-existing-file": "Postman 无法安全地编辑你的 {file}，请手动添加以下内容。",
+          "already-configured": "{file} 已在运行 Postman 同步。",
+          "file-exists": "{file} 已存在，请手动添加此流水线。",
+          "unsupported-branch": "此分支名包含流水线无法安全使用的字符（$、引号、反斜杠或通配符），请选择其他目标分支。",
+          "unsupported-folder": "此文件夹在仓库中的路径包含流水线无法安全使用的字符（$、引号、反斜杠、括号或通配符），请重命名该文件夹后再设置自动更新。",
+          "read-failed": "无法从目标分支读取 {file}。请从 origin 拉取后重试。"
+        }
+      },
+      "create_pr_cta": "添加到新分支并创建 PR",
+      "create_mr_cta": "添加到新分支并创建合并请求",
+      "errors": {
+        "branch": "无法创建自动更新分支。",
+        "commit": "无法提交工作流文件。",
+        "push": "无法推送自动更新分支。",
+        "pr": "无法打开拉取请求页面。",
+        "push_auth": "无法推送到 {provider}。",
+        "push_auth_description": "请为 {provider} 配置 Git 凭据。在终端中检查并运行推送命令，然后打开拉取请求页面。",
+        "push_auth_action": "在终端中打开推送命令",
+        "push_repo_config": "请从终端推送此分支。",
+        "push_repo_config_description": "此仓库的 Git 配置会在推送时运行自定义程序，因此 Postman 不会执行推送。请在终端中检查推送命令并自行运行，然后打开拉取请求页面。",
+        "push_repo_config_action": "在终端中打开推送命令",
+        "open_compare_action": "打开拉取请求页面",
+        "push_first": "请先推送分支。",
+        "push_first_description": "在终端中运行推送命令，然后打开拉取请求页面。",
+        "generic": "无法设置自动更新工作流。"
+      },
+      "pending_branch": "{branch} 已在 origin 上。请打开它的拉取请求页面，或在下方创建新分支。",
+      "trigger_not_updated": "你编辑了工作流的分支过滤条件，因此它仍不会在 {branch} 上运行。请在上方文件中更新。"
     }
   },
   "diagnostics": {

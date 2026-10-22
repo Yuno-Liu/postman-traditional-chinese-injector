@@ -227,7 +227,15 @@
       }
     },
     "warnings": {
-      "high_virtual_users": "高 VU 运行可能会影响您的系统性能。"
+      "high_virtual_users": "高 VU 运行可能会影响您的系统性能。",
+      "high_vu_switch_description": "此配置更适合在云端运行",
+      "switch_to_cloud": "切换到云端"
+    },
+    "machine_limiting": {
+      "description": "{resource} 峰值达到 {pct}%，你的机器正在限制此次运行。请在云端重新运行以获得准确结果。",
+      "resource_memory": "内存",
+      "resource_cpu": "CPU",
+      "stop_rerun_cloud": "停止并在云端重新运行"
     },
     "delete_confirmation": {
       "title": "删除性能运行",
@@ -260,7 +268,9 @@
         "placeholder": "选择 Teardown 集合",
         "trigger_add": "+ 清理",
         "trigger_selected": "Teardown：{name}",
-        "trigger_remove": "移除 Teardown 集合"
+        "trigger_remove": "移除 Teardown 集合",
+        "failed_primary_cause": "清理阶段的生命周期集合运行失败。",
+        "unknown_primary_cause": "清理阶段的生命周期集合运行结果未知。"
       },
       "create_collection": "新建集合",
       "import_collection": "导入集合",
@@ -356,6 +366,10 @@
       "got_it": "知道了"
     },
     "estimated_usage": "预计消耗 <Strong>{vuh} VUH</Strong>。<Link><Text>了解详情</Text></Link>",
+    "kept_settings_without_duration": "已保留你的设置：{vus} 个虚拟用户，{profile}",
+    "kept_settings": "已保留你的设置：{vus} 个虚拟用户，{duration} 分钟，{profile}",
+    "copied_from_run_without_duration": "复制自第 {runNumber} 次运行：{vus} 个虚拟用户，{profile}",
+    "copied_from_run": "复制自第 {runNumber} 次运行：{vus} 个虚拟用户，{duration} 分钟，{profile}",
     "upgrade": {
       "heading": "升级以在云上运行性能测试",
       "description": "云运行在 Postman 的云基础设施上执行性能测试，因此您可以扩展虚拟用户和持续时间，而无需使用自己的计算机。这是预览功能，在合理限制内可用。Postman 可以随时施加限制以防止滥用。定价将在正式上市之前公布。"

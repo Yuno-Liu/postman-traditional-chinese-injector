@@ -1,0 +1,45 @@
+{
+  "field": {
+    "placeholder": {
+      "empty": "输入或粘贴邮箱",
+      "with_recipients": "添加其他邮箱"
+    },
+    "completion": {
+      "key_label": "Tab",
+      "button_label": "添加 {email}",
+      "screen_reader_hint": "按 Tab 键添加 {email}。"
+    }
+  },
+  "pill": {
+    "remove_button_label": "移除 {email}",
+    "edit_button_label": "编辑 {email}",
+    "sent_label": "{email}，已发送"
+  },
+  "issue": {
+    "too_long": "此地址过长",
+    "incomplete": "请输入完整邮箱，例如 {example}",
+    "invalid_local_part": "请检查 @ 前面的部分",
+    "invalid_domain": "请检查域名"
+  },
+  "message": {
+    "over_cap": "每次最多可发送 {max} 个。",
+    "self": "这是你自己的地址。",
+    "duplicate": "{email} 已添加。",
+    "add_at_least_one": "请至少添加一个邮箱。",
+    "fix_to_send": "{count, plural, one {请修正或移除 # 个地址后再发送。} other {请修正或移除 # 个地址后再发送。}}",
+    "needs_fixing": "{count, plural, one {# 个需要修正。} other {# 个需要修正。}}",
+    "paste": {
+      "none_found": "粘贴的内容中未找到邮箱地址。",
+      "added": "已添加 {count} 个。",
+      "added_of": "已添加 {added} 个（共 {total} 个）。",
+      "skipped_duplicates": "{count, plural, one {已跳过 # 个重复项。} other {已跳过 # 个重复项。}}",
+      "skipped_self": "已跳过你自己的地址。",
+      "need_fixing": "{count, plural, one {# 个需要修正。} other {# 个需要修正。}}"
+    }
+  },
+  "announcement": {
+    "added": "已添加 {email}。{count, plural, one {共 # 位收件人。} other {共 # 位收件人。}}",
+    "removed": "已移除 {email}。",
+    "selected": "已选中 {email}。再按一次 Backspace 键将其移除。"
+  }
+}

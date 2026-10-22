@@ -240,7 +240,22 @@
     "row_count_of_total": "显示 {total, number} 行中的 {shown, number} 行",
     "update": "更新",
     "update_anyway": "仍然更新",
-    "blank_table_breaks_views": "未指定表时，此数据源会连接整个数据库，只能通过原生视图查询。{count, plural, one {此视图读取了该表，将无法继续使用} other {这 # 个视图读取了该表，将无法继续使用}}：{views}。"
+    "blank_table_breaks_views": "未指定表时，此数据源会连接整个数据库，只能通过原生视图查询。{count, plural, one {此视图读取了该表，将无法继续使用} other {这 # 个视图读取了该表，将无法继续使用}}：{views}。",
+    "replace_file": {
+      "replace_anyway": "仍然替换",
+      "columns_removed": "新文件缺少当前数据中的{count, plural, one {此列} other {这 # 列}}：{columns}。使用{count, plural, one {该列} other {这些列}}的查询将无法正常工作。",
+      "columns_missing": "新文件缺少当前数据中的{count, plural, one {此列} other {这 # 列}}：{columns}。",
+      "views_broken": "{count, plural, one {此视图将无法正常工作} other {这 # 个视图将无法正常工作}}：{views}。",
+      "views_affected": "{count, plural, one {此视图读取该数据源，可能无法正常工作} other {这 # 个视图读取该数据源，可能无法正常工作}}：{views}。",
+      "views_still_run": "{count, plural, one {# 个引用该数据源的视图} other {# 个引用该数据源的视图}}可以使用新数据{columnsChanged, select, yes {和新列} other {}}成功执行。",
+      "consumers_may_fail": "请检查所有使用该数据源的地方（请求、监控、流程等），列的变化可能导致失败。",
+      "checking_views": "正在检查读取该数据源的视图…",
+      "columns_added": "新文件新增了当前数据中没有的{count, plural, one {一列} other {# 列}}：{columns}。",
+      "names_and_more": "{names} 等另外 {count} 项",
+      "unsupported_type": "请选择 CSV 或 JSON 文件来替换该数据源的数据。",
+      "source_unavailable": "该数据源暂时无法替换。请重新加载后重试。",
+      "format_change_unavailable": "该数据源暂不支持更改文件类型。请用另一个 {format} 文件替换。"
+    }
   },
   "agent_schema": {
     "row_count_unknown": "行数未知",
@@ -266,6 +281,14 @@
     "destination_hint": {
       "local": "文件保留在本机。使用 Postman Cloud Store 可跨设备、跨用户以及在云端运行中访问。",
       "cloud": "已上传到 Postman Cloud Store，可跨设备、跨用户以及在云端运行中访问。"
+    },
+    "unsupported_file_type": "此处不能使用该文件类型。请选择以下类型之一的文件：{formats}。",
+    "source_name": {
+      "label": "数据源名称",
+      "empty": "请输入数据源名称。",
+      "invalid": "请使用字母和数字，以单个下划线分隔，并以字母开头。",
+      "taken": "此数据集中已有同名的数据源或视图，请换一个名称。",
+      "unreadable": "无法读取此数据集的文件，因此无法检查名称。请修复该文件，或保留建议的名称。"
     }
   },
   "data_view": {
@@ -699,6 +722,13 @@
     "new_dataset_target": "新建数据集",
     "dataset_name_label": "数据集名称",
     "creates_dataset": "将创建“{datasetName}”，并以该文件作为数据源和视图。",
+    "source_name": {
+      "label": "数据源名称",
+      "empty": "请输入数据源名称。",
+      "invalid": "请使用字母和数字，以单个下划线分隔，并以字母开头。",
+      "taken": "此数据集中已有同名的数据源、视图或数据文件，请换一个名称。",
+      "matches_view": "下方的视图已使用此名称。请为数据源和视图设置不同的名称。"
+    },
     "view_name_label": "视图名称",
     "description_label": "描述",
     "description_placeholder": "这些数据涵盖哪些内容以及何时使用",

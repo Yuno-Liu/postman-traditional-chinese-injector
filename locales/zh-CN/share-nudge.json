@@ -1,0 +1,8 @@
+{
+  "codegen_curl": {
+    "title": "{subject, select, scripts {此 cURL 不包含你的脚本} variables {此 cURL 不包含你的变量} auth {此 cURL 不包含你的身份验证设置} other {要把这个 cURL 发给队友？}}",
+    "description": "{subject, select, scripts {改为分享请求，让队友运行时与你完全一致，包括脚本。} variables {改为分享请求，让队友运行时与你完全一致，包括变量。} auth {改为分享请求，让队友运行时与你完全一致，包括身份验证设置。} other {改为分享请求，让队友运行时与你完全一致。}}",
+    "share_button_label": "分享",
+    "upgrade_modal_heading": "升级以与团队分享请求"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "production_tab": {
+    "system_health": {
+      "no_data_tooltip": "过去 7 天无数据",
+      "metrics": {
+        "total_requests": "请求总数",
+        "p95_latency": "p95 延迟",
+        "error_rate": "错误率",
+        "errors_count": "错误数"
+      },
+      "percent_change": {
+        "tooltip": "与前 7 天相比的变化百分比",
+        "no_previous_week_data_tooltip": "上一周无数据",
+        "zero_previous_week_value_tooltip": "上一周的值为 0，无法计算变化百分比",
+        "unavailable_tooltip": "无法计算变化百分比"
+      }
+    }
+  }
+}
