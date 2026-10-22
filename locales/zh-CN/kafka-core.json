@@ -181,7 +181,7 @@
       "text": "字串",
       "json": "JSON",
       "base64": "Base64",
-      "hex": "Hex"
+      "hex": "十六進位制"
     },
     "headers": "請求頭",
     "ack": "Ack",
@@ -235,7 +235,7 @@
         "text": "文本",
         "xml": "XML",
         "base64": "Base64",
-        "hex": "Hex"
+        "hex": "十六進位制"
       },
       "tab": {
         "value": "值",

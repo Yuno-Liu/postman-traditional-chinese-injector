@@ -35,6 +35,7 @@
     },
     "code_block": {
       "dialog_label": "編輯程式碼塊",
+      "frontmatter": "Frontmatter",
       "language_label": "程式碼塊語言",
       "plain_text": "純文本"
     },
@@ -97,7 +98,12 @@
     "unavailable": "圖片不可用",
     "failed": "上傳失敗",
     "retry": "重試",
-    "remove": "移除"
+    "remove": "移除",
+    "unsupported_type": "不支援該檔案。請嘗試上傳 PNG、JPG 或 GIF 檔案。",
+    "unsupported_type_list": "不支援該檔案。支援的型別：{types}。",
+    "check_failed": "上傳失敗，請重試。",
+    "storage_full": "上傳失敗。你的 {limit} MB 儲存空間已滿，如需擴容請聯絡支援團隊。",
+    "storage_full_no_limit": "上傳失敗。你的儲存空間已滿，如需擴容請聯絡支援團隊。"
   },
   "link-unfurling": {
     "accessible_label": "{entityType}: {label}",
@@ -110,7 +116,7 @@
       "environment": "環境",
       "learning_center": "學習中心"
     },
-    "learning_center_page": "{page} | Postman Learning Center",
+    "learning_center_page": "{page} | Postman 學習中心",
     "loading": "載入中...",
     "options": "連結選項"
   },
@@ -127,5 +133,14 @@
     "user_inactive_pill": "{name}（已停用）",
     "private_user_tooltip": "此使用者的個人資料為私密。",
     "private_user_label": "私密使用者"
+  },
+  "plugin_failure": {
+    "message": "{plugin} 暫時無法編輯，你的內容已保留。",
+    "retry": "重試",
+    "retry_label": "重試 {plugin}"
+  },
+  "editor_failure": {
+    "message": "編輯器已停止工作，你的內容已保留。",
+    "retry": "重試"
   }
 }

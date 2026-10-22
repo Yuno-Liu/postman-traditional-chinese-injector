@@ -191,7 +191,7 @@
   "slackChannel": {
     "privateChannel": "私密頻道",
     "channelUnavailable": "頻道不可用",
-    "loginForChannelInfo": "登入以檢影片道資訊",
+    "loginForChannelInfo": "登入以檢視頻道資訊",
     "workspaceColumn": "Slack 工作區",
     "channelColumn": "Slack 頻道"
   },
@@ -221,6 +221,7 @@
     "title": "工作區通知",
     "description": "當隊友新增或更改請求、集合或環境，或有人釋出工作區更新時，隨時接收更新通知。",
     "addButton": "連線工作區",
+    "deleteError": "無法刪除頻道整合。",
     "table": {
       "workspace": "工作區",
       "privateWorkspace": "私有工作區",
@@ -271,7 +272,25 @@
       "createSuccess": "頻道連線成功。",
       "updateSuccess": "頻道連線已更新。",
       "createError": "頻道整合連線失敗。",
-      "updateError": "頻道整合更新失敗。"
+      "createErrorRetry": "頻道整合連線失敗，請重試。",
+      "updateError": "頻道整合更新失敗。",
+      "updateErrorRetry": "頻道整合更新失敗，請重試。",
+      "errors": {
+        "noPermissionWorkspace": "你沒有許可權管理此工作區的頻道整合。",
+        "noPermissionSubscription": "你沒有許可權更改此頻道整合。請聯絡工作區管理員進行更改。",
+        "otherTeamOwnsSubscription": "此頻道整合屬於其他團隊，只有該團隊可以更改。",
+        "reauthorizeRequired": "你的 {appName} 連線已過期。請重新連線 {appName} 後重試。",
+        "notFound": "此頻道整合已不存在。請重新整理頁面後重試。",
+        "channelAlreadyConnected": "此頻道已連線到其他整合。",
+        "destinationAlreadyConnected": "此目標已連線。",
+        "workspaceAlreadyConnected": "此工作區已有頻道整合。",
+        "limitReached": "此工作區的頻道整合數量已達上限。",
+        "slackWorkspaceMismatch": "你的團隊已連線到另一個 {appName} 工作區。請先斷開該連線，再連線此工作區。",
+        "workspaceNotEligible": "此類工作區不支援頻道整合。",
+        "workspaceUpdateEventOnly": "在公共工作區中，整合只能向此頻道通知工作區更新。",
+        "destinationTypeImmutable": "此整合的目標型別無法更改。請斷開後重新連線一個新的整合。",
+        "reconnectToChangeWorkspace": "要將此整合移到另一個 {appName} 工作區，請先斷開再重新連線。"
+      }
     }
   },
   "monitorNotifications": {
@@ -298,8 +317,8 @@
       "submitEdit": "儲存更改",
       "createSuccess": "監控連線成功。",
       "updateSuccess": "監控連線已更新。",
-      "createError": "監控整合連線失敗。",
-      "updateError": "監控整合更新失敗。"
+      "createError": "監控整合連線失敗，請重試。",
+      "updateError": "監控整合更新失敗，請重試。"
     }
   },
   "delete_modal": {

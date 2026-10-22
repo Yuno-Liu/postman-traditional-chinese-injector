@@ -88,8 +88,10 @@
     "ci_modal_description": "將其整合到您的 CI 中以自動推送到雲",
     "ci_no_cli": "沒有 Postman CLI？",
     "ci_download": "在此下載",
+    "ci_command_name": "Postman CLI 命令",
     "copied": "複製了！",
     "copy_to_clipboard": "複製到剪貼簿",
+    "copy_named": "複製{name}",
     "panel_title": "工作區",
     "panel_title_with_count": "工作區（{count}）",
     "status_new": "新的",
@@ -183,7 +185,7 @@
     "simulation_create_slug_label": "部署 URL slug",
     "simulation_create_slug_optional": "（可選）",
     "simulation_create_slug_description": "將此模擬部署為模擬伺服器時使用。",
-    "simulation_create_routing_description": "選擇本地執行或部署後請求如何路由到各個模擬伺服器。Header 模式會傳送 x-mock-slug；Path 模式會在 URL 前加上每個模擬伺服器的路由標識。",
+    "simulation_create_routing_description": "選擇本地執行或部署後請求如何路由到各個模擬伺服器。Header 模式會發送 x-mock-slug；Path 模式會在 URL 前加上每個模擬伺服器的路由標識。",
     "simulation_deploy_modal": {
       "title": "部署為模擬伺服器",
       "redeploy_title": "重新部署模擬伺服器",
@@ -556,7 +558,7 @@
     "section_title": "設定指南",
     "steps": {
       "local_files": {
-        "text": "開啟原生程式碼庫",
+        "text": "開啟原生代碼庫",
         "button": "選擇目錄"
       },
       "connect_workspace": {
@@ -690,7 +692,7 @@
     "toast_open_draft_failed_title": "無法開啟共享更改",
     "toast_open_draft_failed_description": "嘗試從工作區列表中開啟它。",
     "toast_branch_shifted_title": "分支 更改為“{branch}”",
-    "toast_branch_shifted_description": "重新開啟復制連結以共享新 分支 的更改。",
+    "toast_branch_shifted_description": "重新打開復制連結以共享新 分支 的更改。",
     "unshare_confirm_title": "取消共享“{branch}”的更改？",
     "unshare_confirm_message": "這將停止共享您對此 分支 的本地更改。知道該連結的任何人都將失去訪問許可權。",
     "unshare_confirm_cancel": "取消",
@@ -736,6 +738,10 @@
     "description": "充分利用 Postman 的原生 Git 支援。",
     "action_failed": "無法完成該操作",
     "sections": {
+      "auto_update": {
+        "title": "自動更新雲端工作區",
+        "description": "所選分支合併後，自動更新你的雲端工作區。"
+      },
       "setup_git": {
         "title": "配置 Git",
         "description": "讓 API 變更與程式碼庫保持同步"
@@ -771,6 +777,10 @@
         "configure_remote": "配置遠端倉庫"
       },
       "command_label": "在終端中執行的命令",
+      "command_names": {
+        "initialize": "git init 命令",
+        "configure_remote": "git remote add 命令"
+      },
       "remote_url_label": "遠端倉庫 URL",
       "remote_url_placeholder": "輸入遠端倉庫 URL",
       "run_in_terminal": "在終端中執行",
@@ -783,6 +793,8 @@
     },
     "connect": {
       "cta": "連線",
+      "check_failed": "無法檢查此資料夾是否已連線到工作區。",
+      "retry_cta": "重試",
       "no_permission_tooltip": "你沒有連線到工作區的許可權"
     },
     "generate_errors": {
@@ -793,7 +805,61 @@
       "no_folder_title": "未選擇資料夾",
       "no_folder_description": "執行應用測試前，請先開啟一個本地資料夾",
       "run_failed": "無法在終端中執行該命令",
+      "command_name": "app test 命令",
       "view_in_inventory": "在應用程式清單中檢視"
+    },
+    "auto_update": {
+      "description": "<branch></branch> 合併後，自動更新你的雲端工作區。",
+      "branch_picker_label": "自動更新的目標分支：{branch}",
+      "step_authorize": {
+        "title": "授權",
+        "body": "將你的 <generate></generate> 以 POSTMAN_API_KEY 為名新增到 <secrets></secrets>。",
+        "generate_cta": "Postman API 金鑰",
+        "secrets_cta": {
+          "github": "倉庫金鑰",
+          "gitlab": "CI/CD 變數",
+          "bitbucket": "倉庫變數",
+          "azure-devops": "流水線變數"
+        },
+        "secrets_plain": "CI 金鑰"
+      },
+      "step_workflow": {
+        "title": "新增工作流配置",
+        "title_pipeline": "新增流水線配置",
+        "note": {
+          "gitlab": "如果 POSTMAN_API_KEY 是受保護變數，{branch} 必須是受保護分支，作業才能讀取它。",
+          "bitbucket": "必須在此倉庫的設定中啟用 Pipelines，該步驟才能執行。",
+          "azure-devops": "合併後，請在 Azure DevOps 中基於 {file} 建立流水線，並將 POSTMAN_API_KEY 作為機密變數新增進去。"
+        },
+        "blocked": {
+          "invalid-existing-file": "Postman 無法安全地編輯你的 {file}，請手動新增以下內容。",
+          "already-configured": "{file} 已在執行 Postman 同步。",
+          "file-exists": "{file} 已存在，請手動新增此流水線。",
+          "unsupported-branch": "此分支名包含流水線無法安全使用的字元（$、引號、反斜槓或萬用字元），請選擇其他目標分支。",
+          "unsupported-folder": "此資料夾在倉庫中的路徑包含流水線無法安全使用的字元（$、引號、反斜槓、括號或萬用字元），請重新命名該資料夾後再設定自動更新。",
+          "read-failed": "無法從目標分支讀取 {file}。請從 origin 拉取後重試。"
+        }
+      },
+      "create_pr_cta": "新增到新分支並建立 PR",
+      "create_mr_cta": "新增到新分支並建立合併請求",
+      "errors": {
+        "branch": "無法建立自動更新分支。",
+        "commit": "無法提交工作流檔案。",
+        "push": "無法推送自動更新分支。",
+        "pr": "無法開啟拉取請求頁面。",
+        "push_auth": "無法推送到 {provider}。",
+        "push_auth_description": "請為 {provider} 配置 Git 憑據。在終端中檢查並執行推送命令，然後開啟拉取請求頁面。",
+        "push_auth_action": "在終端中開啟推送命令",
+        "push_repo_config": "請從終端推送此分支。",
+        "push_repo_config_description": "此倉庫的 Git 配置會在推送時執行自定義程式，因此 Postman 不會執行推送。請在終端中檢查推送命令並自行執行，然後開啟拉取請求頁面。",
+        "push_repo_config_action": "在終端中開啟推送命令",
+        "open_compare_action": "開啟拉取請求頁面",
+        "push_first": "請先推送分支。",
+        "push_first_description": "在終端中執行推送命令，然後開啟拉取請求頁面。",
+        "generic": "無法設定自動更新工作流。"
+      },
+      "pending_branch": "{branch} 已在 origin 上。請開啟它的拉取請求頁面，或在下方建立新分支。",
+      "trigger_not_updated": "你編輯了工作流的分支過濾條件，因此它仍不會在 {branch} 上執行。請在上方檔案中更新。"
     }
   },
   "diagnostics": {

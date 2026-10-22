@@ -1,0 +1,19 @@
+{
+  "production_tab": {
+    "system_health": {
+      "no_data_tooltip": "過去 7 天無資料",
+      "metrics": {
+        "total_requests": "請求總數",
+        "p95_latency": "p95 延遲",
+        "error_rate": "錯誤率",
+        "errors_count": "錯誤數"
+      },
+      "percent_change": {
+        "tooltip": "與前 7 天相比的變化百分比",
+        "no_previous_week_data_tooltip": "上一週無資料",
+        "zero_previous_week_value_tooltip": "上一週的值為 0，無法計算變化百分比",
+        "unavailable_tooltip": "無法計算變化百分比"
+      }
+    }
+  }
+}

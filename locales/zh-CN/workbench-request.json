@@ -120,7 +120,7 @@
   },
   "editor_tab": {
     "tabs": {
-      "docs": "檔案",
+      "docs": "文件",
       "params": {
         "label": "引數"
       },
@@ -419,6 +419,7 @@
     "decline_cta": "拒絕",
     "more_actions_label": "更多操作",
     "open_conversation_cta": "開啟會話",
+    "open_conversation_short_cta": "開啟",
     "open_source_code_cta": "開啟原始碼",
     "describe_alternative": "描述其他方案",
     "describe_placeholder": "描述你的需求。",

@@ -12,6 +12,9 @@
     "close_others": "關閉其他選項卡",
     "close_all": "關閉所有選項卡",
     "force_close_all": "強制關閉所有選項卡",
+    "close_all_in_group": "關閉分組中的所有標籤頁",
+    "force_close_all_in_group": "強制關閉分組中的所有標籤頁",
+    "close_all_groups": "關閉所有分組中的所有標籤頁",
     "recently_closed": "最近關閉的選項卡",
     "recently_closed_none": "無",
     "duplicate_selected": "複製選定的選項卡",
@@ -227,7 +230,7 @@
     "navigation_aria_label": "上下文欄導航",
     "close": "關閉上下文欄",
     "documentation": {
-      "title": "檔案"
+      "title": "文件"
     },
     "comments": {
       "title": "評論"
@@ -376,7 +379,7 @@
         },
         "body": {
           "helper_text": "最近建立：",
-          "created_on": "建立於：{dateObj, date, medium}"
+          "created_on": "創建於：{dateObj, date, medium}"
         },
         "footer": {
           "view_all": "檢視所有分叉",

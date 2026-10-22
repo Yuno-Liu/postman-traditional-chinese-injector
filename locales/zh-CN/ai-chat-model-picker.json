@@ -1,0 +1,8 @@
+{
+  "byok": {
+    "configure_key_to_use_model": "配置你的金鑰以使用此模型。",
+    "model_switch_locked": "開始新的對話，以使用你的提供商金鑰切換到其他模型。",
+    "no_connected_models": "已連線的提供商暫無可用模型。",
+    "manage_keys": "管理你的提供商金鑰"
+  }
+}

@@ -67,7 +67,7 @@
   },
   "cartographer": {
     "empty_state": {
-      "description": "選擇一個資料來源以檢視其結構。"
+      "description": "選擇一個數據源以檢視其結構。"
     },
     "loading": {
       "description": "正在載入 Schema…"
@@ -199,7 +199,7 @@
   },
   "data_source_edit": {
     "extend_with_ai": "用 AI 擴充套件",
-    "extend_with_ai_tooltip": "生成並追加合成資料行",
+    "extend_with_ai_tooltip": "生成並追加合成數據行",
     "extend_with_ai_unavailable": "此資料來源的原始資料為只讀，無法擴充套件",
     "loading": "正在載入源...",
     "last_refreshed_label": "上次重新整理",
@@ -240,7 +240,22 @@
     "row_count_of_total": "顯示 {total, number} 行中的 {shown, number} 行",
     "update": "更新",
     "update_anyway": "仍然更新",
-    "blank_table_breaks_views": "未指定表時，此資料來源會連線整個資料庫，只能通過原生檢視查詢。{count, plural, one {此檢視讀取了該表，將無法繼續使用} other {這 # 個檢視讀取了該表，將無法繼續使用}}：{views}。"
+    "blank_table_breaks_views": "未指定表時，此資料來源會連線整個資料庫，只能通過原生檢視查詢。{count, plural, one {此檢視讀取了該表，將無法繼續使用} other {這 # 個檢視讀取了該表，將無法繼續使用}}：{views}。",
+    "replace_file": {
+      "replace_anyway": "仍然替換",
+      "columns_removed": "新檔案缺少當前資料中的{count, plural, one {此列} other {這 # 列}}：{columns}。使用{count, plural, one {該列} other {這些列}}的查詢將無法正常工作。",
+      "columns_missing": "新檔案缺少當前資料中的{count, plural, one {此列} other {這 # 列}}：{columns}。",
+      "views_broken": "{count, plural, one {此檢視將無法正常工作} other {這 # 個檢視將無法正常工作}}：{views}。",
+      "views_affected": "{count, plural, one {此檢視讀取該資料來源，可能無法正常工作} other {這 # 個檢視讀取該資料來源，可能無法正常工作}}：{views}。",
+      "views_still_run": "{count, plural, one {# 個引用該資料來源的檢視} other {# 個引用該資料來源的檢視}}可以使用新資料{columnsChanged, select, yes {和新列} other {}}成功執行。",
+      "consumers_may_fail": "請檢查所有使用該資料來源的地方（請求、監控、流程等），列的變化可能導致失敗。",
+      "checking_views": "正在檢查讀取該資料來源的檢視…",
+      "columns_added": "新檔案新增了當前資料中沒有的{count, plural, one {一列} other {# 列}}：{columns}。",
+      "names_and_more": "{names} 等另外 {count} 項",
+      "unsupported_type": "請選擇 CSV 或 JSON 檔案來替換該資料來源的資料。",
+      "source_unavailable": "該資料來源暫時無法替換。請重新載入後重試。",
+      "format_change_unavailable": "該資料來源暫不支援更改檔案型別。請用另一個 {format} 檔案替換。"
+    }
   },
   "agent_schema": {
     "row_count_unknown": "行數未知",
@@ -266,6 +281,14 @@
     "destination_hint": {
       "local": "檔案保留在本機。使用 Postman Cloud Store 可跨裝置、跨使用者以及在雲端執行中訪問。",
       "cloud": "已上傳到 Postman Cloud Store，可跨裝置、跨使用者以及在雲端執行中訪問。"
+    },
+    "unsupported_file_type": "此處不能使用該檔案型別。請選擇以下型別之一的檔案：{formats}。",
+    "source_name": {
+      "label": "資料來源名稱",
+      "empty": "請輸入資料來源名稱。",
+      "invalid": "請使用字母和數字，以單個下劃線分隔，並以字母開頭。",
+      "taken": "此資料集中已有同名的資料來源或檢視，請換一個名稱。",
+      "unreadable": "無法讀取此資料集的檔案，因此無法檢查名稱。請修復該檔案，或保留建議的名稱。"
     }
   },
   "data_view": {
@@ -293,7 +316,7 @@
     "name_label": "資料來源名稱",
     "name_placeholder": "例如 top_customers_snapshot",
     "name_invalid": "請使用字母、數字和下劃線，並以字母或下劃線開頭。",
-    "name_taken": "此資料集中已存在同名資料來源，請使用其他名稱。",
+    "name_taken": "此資料集中已存在同名數據源，請使用其他名稱。",
     "row_count_hint": "{count, plural, one {將上傳 # 行} other {將上傳 # 行}}",
     "unsaved_query_hint": "將使用當前顯示的未儲存查詢。",
     "cancel": "取消",
@@ -359,7 +382,7 @@
       "sample": {
         "prompt": "剛開始使用？先從示例資料來源試試。",
         "name": "客戶",
-        "description": "包含聯絡方式、所在地區和賬戶狀態列位的客戶資料。",
+        "description": "包含聯絡方式、所在地區和賬戶狀態欄位的客戶資料。",
         "add_error": "無法新增該示例資料來源，請重試。"
       },
       "enterprise_upgrade": {
@@ -377,7 +400,7 @@
         "jdbc": "JDBC 資料來源",
         "remote": "公共 URL"
       },
-      "add_busy": "另一個資料來源仍在新增中，請等待完成後重試。"
+      "add_busy": "另一個數據源仍在新增中，請等待完成後重試。"
     },
     "views": {
       "title": "資料檢視",
@@ -560,7 +583,7 @@
       "local_file_workspace": "本地檔案資料來源僅在桌面端的本地工作區中可用。請改用資料庫或遠端檔案資料來源，或切換到本地工作區。"
     },
     "choose_file": "選擇檔案",
-    "unsupported_source": "資料守護程式尚不支援該資料來源型別。",
+    "unsupported_source": "資料守護程序尚不支援該資料來源型別。",
     "local_file_unavailable_web": "網頁版不支援本地檔案。請開啟 Postman 桌面應用查詢本地檔案，或在此使用遠端檔案或資料庫資料來源。",
     "schema": {
       "search_placeholder": "搜尋 Schema",
@@ -699,6 +722,13 @@
     "new_dataset_target": "新建資料集",
     "dataset_name_label": "資料集名稱",
     "creates_dataset": "將建立“{datasetName}”，並以該檔案作為資料來源和檢視。",
+    "source_name": {
+      "label": "資料來源名稱",
+      "empty": "請輸入資料來源名稱。",
+      "invalid": "請使用字母和數字，以單個下劃線分隔，並以字母開頭。",
+      "taken": "此資料集中已有同名的資料來源、檢視或資料檔案，請換一個名稱。",
+      "matches_view": "下方的檢視已使用此名稱。請為資料來源和檢視設定不同的名稱。"
+    },
     "view_name_label": "檢視名稱",
     "description_label": "描述",
     "description_placeholder": "這些資料涵蓋哪些內容以及何時使用",

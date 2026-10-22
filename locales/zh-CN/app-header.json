@@ -273,8 +273,8 @@
     "could_not_find_workspace": "找不到這個 工作區。",
     "share_workspace_error": "分享此 工作區 時出了點問題",
     "pending_invites": {
-      "resend_success": "邀請已重新發送",
-      "resend_error": "重新發送邀請時出錯",
+      "resend_success": "邀請已重新傳送",
+      "resend_error": "重新傳送邀請時出錯",
       "revoke_success": "邀請已撤銷",
       "revoke_error": "撤銷邀請時出錯"
     },
@@ -580,7 +580,7 @@
         "api": "API",
         "request": "請求",
         "environment": "環境",
-        "document": "文件",
+        "document": "檔案",
         "code_mock": "程式碼模擬伺服器",
         "flow": "流程",
         "team": "釋出者",

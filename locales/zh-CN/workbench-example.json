@@ -108,7 +108,7 @@
           "detail": "此請求除請求頭外沒有內容需要傳送。"
         },
         "205": {
-          "detail": "重置傳送此請求的檔案。"
+          "detail": "重置傳送此請求的文件。"
         },
         "206": {
           "detail": "根據“Range”請求頭，僅接收部分資源。"
@@ -447,7 +447,7 @@
       }
     },
     "loading_message": "正在傳送請求…",
-    "loading_active_env_message": "正在獲取當前環境併傳送請求",
+    "loading_active_env_message": "正在獲取當前環境併發送請求",
     "heading": "響應",
     "empty_view_message": {
       "without_url": "傳送請求以獲取響應",
@@ -492,6 +492,10 @@
         "unauth_not_reachable": "無法連線到 Cloud Agent，請稍後重試或選擇其他 Agent。",
         "forbidden": "您已達到 Cloud Agent 的月度呼叫次數上限，請選擇其他 Agent。",
         "rate_limit_exceeded": "已超出 Cloud Agent 的速率限制，請稍後重試或選擇其他 Agent。",
+        "minute_limit_exceeded": "你已達到 Cloud Agent 每分鐘請求上限。升級套餐可獲得更高的請求上限。",
+        "day_limit_exceeded": "你已達到 Cloud Agent 每日請求上限。升級套餐可獲得更高的請求上限。",
+        "session_limit_exceeded": "你已達到 Cloud Agent 併發會話上限。請關閉部分 Postman 標籤頁後重試，或升級套餐。",
+        "upgrade_plan": "升級套餐",
         "internal_error": "無法傳送此請求，請選擇其他 Agent。",
         "error_orion": {
           "ipv6_request": "Can not send requests to IPv6 addresses. Select a different agent.",
@@ -738,7 +742,7 @@
           "via": "由代理新增並用於跟蹤訊息轉發、避免 請求 迴圈並識別傳送者的協議功能。",
           "warning": "包含有關訊息狀態可能出現的問題的資訊。",
           "www_authenticate": "指定訪問資源時應使用的身份驗證方法。",
-          "x_requested_with": "識別 Ajax 請求。大多數 JavaScript 框架都會傳送帶有 XMLHttpRequest 值的標頭。",
+          "x_requested_with": "識別 Ajax 請求。大多數 JavaScript 框架都會發送帶有 XMLHttpRequest 值的標頭。",
           "x_do_not_track": "可用於要求 Web 應用程式不要跟蹤使用者。注意：此標頭在很大程度上被 Web 應用程式忽略。",
           "dnt": "可用於要求 Web 應用程式不要跟蹤使用者。這是 Mozilla 的 X-Do-Not-Track 標頭的 版本（自 Firefox 4.0 Beta 11 起）。 Safari 和 IE9 也支援此標頭。注意：此標頭在很大程度上被 Web 應用程式忽略。",
           "x_forwarded_for": "標識通過 HTTP 代理或負載均衡器連線到 Web 伺服器的客戶端的原始 IP 地址。",

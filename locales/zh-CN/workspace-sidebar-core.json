@@ -197,6 +197,9 @@
         "offline_text": "離線時無法建立監控。",
         "no_permission_text": "您沒有許可權在這個工作區中建立監控。"
       },
+      "app_test": {
+        "card_label": "應用測試"
+      },
       "flows": {
         "card_label": "流程",
         "info_text": "流程讓您視覺化、測試和自動化 API 工作流程",
@@ -259,13 +262,13 @@
         "info_text": "編寫模擬伺服器的行為邏輯，可在本地執行或部署為模擬伺服器。"
       },
       "documentation": {
-        "card_label": "檔案"
+        "card_label": "文件"
       },
       "document": {
-        "card_label": "檔案",
-        "info_text": "建立檔案以編寫指南、筆記或 API 文件。",
-        "create_error": "檔案建立失敗，請重試。",
-        "no_permission_text": "你沒有許可權在此工作區中建立檔案。"
+        "card_label": "文件",
+        "info_text": "建立文件以編寫指南、筆記或 API 文件。",
+        "create_error": "文件建立失敗，請重試。",
+        "no_permission_text": "你沒有許可權在此工作區中建立文件。"
       },
       "sdk_gen": {
         "card_label": "SDK",
@@ -336,8 +339,8 @@
         "plural": "分支"
       },
       "docs_site": {
-        "singular": "檔案站點",
-        "plural": "檔案站點"
+        "singular": "文件站點",
+        "plural": "文件站點"
       }
     }
   },
@@ -433,8 +436,8 @@
         "plural": "元素"
       },
       "workspace": {
-        "singular": "workspace",
-        "plural": "workspaces"
+        "singular": "工作區",
+        "plural": "工作區"
       },
       "collection": {
         "singular": "Collection",
@@ -601,7 +604,7 @@
       "will_give_access_to_everyone_in_team": "邀請他人可以向團隊中的每個人開啟工作區。<1><0>升級</0></1>以與選定的隊友一起工作。"
     },
     "email_invalid_message": "{noOfEmails, plural, one {# 個電子郵件無效，請輸入有效的電子郵件以傳送邀請。} other {# 個電子郵件無效，請輸入有效的電子郵件以傳送邀請。}}",
-    "partner_workspace_access_error": "您只能與有權訪問此合作伙伴工作區的人共享此集合。",
+    "partner_workspace_access_error": "你只能與有權訪問此合作伙伴工作區的人員共享。",
     "new_members_invite_info": "新成員接受您的邀請後將加入您的團隊。",
     "send_suggestion_to_admin": "您的建議將傳送至團隊管理員供批准。",
     "postman_collaboration_within_team_message": "Postman 中的協作通過 Team 工作區在團隊內進行。由於您沒有團隊，我們將為您建立一個。 <0>瞭解更多</0>",
@@ -642,7 +645,7 @@
     "run_in_postman": {
       "default_label": "瞭解更多。",
       "public_workspace_label": "在 Postman 中執行",
-      "embed_learn_more_button": "在您的網站或檔案中嵌入 <1><0>{buttonText}</0></1> 按鈕，以便人們更輕鬆地發現您的 集合 並與之互動。",
+      "embed_learn_more_button": "在您的網站或文件中嵌入 <1><0>{buttonText}</0></1> 按鈕，以便人們更輕鬆地發現您的 集合 並與之互動。",
       "everyone_can_view_and_fork_public_collection": "Postman 上的每個人都可以檢視並 fork 這個公開集合。",
       "generating_code_snippet": "正在生成程式碼片段...",
       "render_static_button_message": "該按鈕將指向集合的靜態快照。它不會隨著集合的更改而更新。",
@@ -739,8 +742,8 @@
     "success_popover": {
       "no_docs": {
         "title": "請求已分享",
-        "description": "完善的檔案能幫助團隊更輕鬆地理解請求。",
-        "button_text": "使用 AI 建立檔案"
+        "description": "完善的文件能幫助團隊更輕鬆地理解請求。",
+        "button_text": "使用 AI 建立文件"
       }
     }
   },
@@ -791,7 +794,7 @@
     "delete_extinsible_collection": "確定要刪除此集合嗎？",
     "could_not_restore_message": "此集合無法從回收站中恢復。",
     "delete_confirmation_text": "確定要刪除 <1>{name}</1> 嗎？",
-    "delete_pinned_doc_confirmation": "此檔案已固定到工作區概覽中。確定要刪除嗎？",
+    "delete_pinned_doc_confirmation": "此文件已固定到工作區概覽中。確定要刪除嗎？",
     "this_cant_be_undone": "此操作無法撤銷。",
     "delete_entity_question": "刪除 {entity}？",
     "delete_elements_question": "刪除元素？",
@@ -871,7 +874,8 @@
   "pending_invites": {
     "invite_as": "（以 {role} 身份受邀）",
     "resend_cta": "重新發送邀請",
-    "remove_cta": "移除",
-    "more_actions_aria": "傳送給 {email} 的邀請的更多操作"
+    "remove_cta": "撤銷",
+    "more_actions_aria": "傳送給 {email} 的邀請的更多操作",
+    "load_more": "正在載入更多邀請…"
   }
 }

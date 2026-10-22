@@ -253,7 +253,7 @@
       "title": "拒絕拉取請求？",
       "primary_action": "拒絕 拉取請求",
       "cancel_button": "取消",
-      "add_a_note_label": "新增註釋",
+      "add_a_note_label": "添加註釋",
       "message": "此操作無法撤消。要 請求 編輯或留下反饋，請新增評論。",
       "modal_text": "幫助其他人瞭解 拉取請求 被拒絕的原因"
     },
@@ -279,15 +279,19 @@
   "merge_status_banner": {
     "success": {
       "pull_request": "拉取請求 已被合併。",
+      "pull_changes": "更改已拉取。",
       "other": "更改已合併。"
     },
     "in_progress": {
       "pull_request": "我們正在合併 拉取請求，這可能需要一分鐘時間。完成後我們會通知您。",
+      "pull_changes": "正在拉取更改，可能需要一分鐘。完成後我們會通知你。",
       "other": "我們正在合併更改，這可能需要一分鐘時間。完成後我們會通知您。"
     },
     "failed": {
       "pull_request_with_refresh_tab": "合併 拉取請求 時發生意外錯誤。請重新整理選項卡並重試。",
       "pull_request_without_refresh_tab": "合併 拉取請求 時發生意外錯誤。請再試一次。",
+      "pull_changes_with_refresh_tab": "拉取更改時發生意外錯誤。請重新整理標籤頁後重試。",
+      "pull_changes_without_refresh_tab": "拉取更改時發生意外錯誤，請重試。",
       "other_with_refresh_tab": "合併更改時發生意外錯誤。請重新整理選項卡並重試。",
       "other_without_refresh_tab": "合併更改時發生意外錯誤。請再試一次。"
     }
