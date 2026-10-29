@@ -117,7 +117,7 @@
     }
   },
   "container": {
-    "text_area_placeholder": "貼上 cURL、gRPCurl、原始文本或 URL",
+    "text_area_placeholder": "貼上 cURL 命令、OpenAPI 規範或集合 JSON。也支援 GraphQL 和 AsyncAPI",
     "view_import_settings": "檢視匯入設定",
     "import_button_label": "匯入",
     "import_button_tooltip": "選擇要匯入的檔案",
@@ -144,9 +144,29 @@
       "multi_file_import_elements": "匯入元素 ({element_num})",
       "upload_files_to_postman": "遷移到 Postman"
     },
-    "tooltip": {
-      "desc": "提示：您還可以將 cURL 貼上到請求欄中進行匯入",
-      "dismiss_button_label": "解僱"
+    "curl_panel": {
+      "format_badge": "cURL",
+      "request_title": "{method} {path}",
+      "request_count": "{count, plural, one {# 個請求} other {# 個請求}}",
+      "collection_name_label": "集合名稱",
+      "collection_select_hint": "輸入以查詢集合或新建集合",
+      "collection_select_placeholder": "選擇或新建集合",
+      "collection_name": "{apiName} API",
+      "default_collection_name": "新集合",
+      "will_create_heading": "匯入為",
+      "will_create": "{count, plural, one {包含 # 個請求的 Postman 集合} other {包含 # 個請求的 Postman 集合}}",
+      "base_url_environment": "包含 {variable} 變數的環境",
+      "will_add_heading": "匯入到",
+      "will_add": "{count, plural, one {# 個請求新增到 {collectionName}} other {# 個請求新增到 {collectionName}}}",
+      "more_hint": "貼上更多 cURL 命令以新增請求",
+      "activity_request_count": "{count, plural, one {# 個請求} other {# 個請求}}",
+      "clear_button_label": "清除",
+      "import_button_label": "匯入",
+      "add_failed_toast": "{count, plural, one {無法將請求新增到 {collectionName}，請重試。} other {無法將請求新增到 {collectionName}，請重試。}}",
+      "partially_added_toast": "已將 {addedCount}/{totalCount} 個請求新增到 {collectionName}，其餘請求新增失敗。",
+      "partially_added_cancelled_toast": "已將 {addedCount}/{totalCount} 個請求新增到 {collectionName}。",
+      "create_failed_toast": "無法建立 {collectionName}，請重試。",
+      "environment_failed_toast": "無法建立 {collectionName} 環境，因此請求將保留完整 URL。"
     },
     "more_import_options": {
       "label": "其他來源",

@@ -27,7 +27,7 @@
   },
   "integratedServices": {
     "sectionTitle": "API Catalog - 整合服務",
-    "sectionDescription": "將 API Catalog 整合服務連線到 GitHub 倉庫。",
+    "sectionDescription": "將 API 目錄中的整合服務連線到 {gitProvider} 倉庫。",
     "connectButton": "連線服務",
     "connectPermissionTooltip": "只有具備 API Catalog Manager 角色的成員才能訪問服務發現頁面",
     "columns": {
@@ -66,6 +66,7 @@
   "connectionSection": {
     "connectedBadge": "已連線",
     "nameSuffix": "{name}（你）",
+    "otherAccounts": "{count, plural, one {+ 另外 # 個} other {+ 另外 # 個}}",
     "otherTeamUsers_one": "+{count} 位其他團隊成員",
     "otherTeamUsers_other": "+{count} 位其他團隊成員",
     "disconnectSuccess": "{appName} 已成功斷開連線。",
@@ -95,8 +96,20 @@
     "github_app": {
       "title": "已連線的 GitHub 賬戶",
       "description": "Postman 已獲得訪問許可權的 GitHub 組織。",
-      "githubUsername": "GitHub 使用者名稱",
-      "githubOrganization": "GitHub 組織"
+      "username": "GitHub 使用者名稱",
+      "accounts": "GitHub 組織"
+    },
+    "gitlab_app": {
+      "title": "已連線的 GitLab 賬戶",
+      "description": "已授予 Postman 訪問許可權的 GitLab 群組。",
+      "username": "GitLab 使用者名稱",
+      "accounts": "GitLab 群組"
+    },
+    "bitbucket_app": {
+      "title": "已連線的 Bitbucket 賬戶",
+      "description": "已授予 Postman 訪問許可權的 Bitbucket 工作區。",
+      "username": "Bitbucket 使用者名稱",
+      "accounts": "Bitbucket 工作區"
     },
     "ecosystem": {
       "connectedBadge": "已連線",
@@ -215,7 +228,12 @@
     "teamPlaceholder": "輸入以搜尋團隊",
     "groupChatLabel": "群聊",
     "groupChatPlaceholder": "輸入以搜尋群聊",
-    "groupChatLoadError": "群聊載入失敗，請重試。"
+    "groupChatLoadError": "群聊載入失敗，請重試。",
+    "signInPrompt": "登入 Microsoft Teams 以選擇團隊和頻道。",
+    "signInButton": "登入 Microsoft Teams",
+    "signingIn": "正在等待 Microsoft Teams 登入…",
+    "signInError": "無法登入 Microsoft Teams。",
+    "signInRetry": "重試"
   },
   "workspaceNotifications": {
     "title": "工作區通知",
@@ -309,12 +327,24 @@
       "editHeading": "編輯監控整合",
       "monitorLabel": "監控",
       "monitorPlaceholder": "選擇監控",
+      "thisNewMonitor": "新監控",
+      "lockedByMonitorHelper": "由此監控設定",
       "frequencyLabel": "傳送通知的場景…",
       "frequencyAllRuns": "每次執行完成時",
       "frequencyOnlyFailures": "僅失敗時（以及之後首次成功執行時）",
+      "notificationLimitMessage": "連續失敗 <input/> 次後停止通知",
+      "notificationLimitError": "請輸入 1 到 {max} 之間的值",
       "cancel": "取消",
       "submitCreate": "連線",
       "submitEdit": "儲存更改",
+      "recordOnlyHeadingSlack": "新增 Slack 頻道",
+      "recordOnlyHeadingTeams": "新增 Teams 頻道",
+      "recordOnlyEditHeadingSlack": "編輯 Slack 頻道",
+      "recordOnlyEditHeadingTeams": "編輯 Teams 頻道",
+      "recordOnlyCaptionSlack": "建立此監控後將連線 Slack。",
+      "recordOnlyCaptionTeams": "建立此監控後將連線 Teams。",
+      "submitRecordOnly": "新增",
+      "submitRecordOnlyEdit": "儲存",
       "createSuccess": "監控連線成功。",
       "updateSuccess": "監控連線已更新。",
       "createError": "監控整合連線失敗，請重試。",

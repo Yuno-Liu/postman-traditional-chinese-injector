@@ -210,8 +210,11 @@
     "optional": "（可選）",
     "message_placeholder": "例如請聯絡 #it-support 獲取登入幫助。",
     "link_placeholder": "https://your-company.com/it-support",
-    "saving": "儲存...",
-    "saved": "已儲存",
+    "save_button": "儲存",
+    "cancel_button": "取消",
+    "save_success": "登入說明已儲存",
+    "toggle_aria_label": "在登入頁面顯示登入說明",
+    "toggle_disabled_tooltip": "請先新增訊息或連結再啟用此項",
     "error": {
       "save_title": "儲存指令失敗",
       "save_description": "出了點問題。請再試一次。",

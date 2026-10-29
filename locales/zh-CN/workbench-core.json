@@ -230,7 +230,7 @@
     "navigation_aria_label": "上下文欄導航",
     "close": "關閉上下文欄",
     "documentation": {
-      "title": "文件"
+      "title": "檔案"
     },
     "comments": {
       "title": "評論"
@@ -379,7 +379,7 @@
         },
         "body": {
           "helper_text": "最近建立：",
-          "created_on": "創建於：{dateObj, date, medium}"
+          "created_on": "建立於：{dateObj, date, medium}"
         },
         "footer": {
           "view_all": "檢視所有分叉",

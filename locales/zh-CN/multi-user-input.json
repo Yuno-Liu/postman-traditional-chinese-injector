@@ -26,7 +26,7 @@
     "self": "這是你自己的地址。",
     "duplicate": "{email} 已新增。",
     "add_at_least_one": "請至少新增一個郵箱。",
-    "fix_to_send": "{count, plural, one {請修正或移除 # 個地址後再發送。} other {請修正或移除 # 個地址後再發送。}}",
+    "fix_to_send": "{count, plural, one {請修正或移除 # 個地址後再傳送。} other {請修正或移除 # 個地址後再傳送。}}",
     "needs_fixing": "{count, plural, one {# 個需要修正。} other {# 個需要修正。}}",
     "paste": {
       "none_found": "貼上的內容中未找到郵箱地址。",

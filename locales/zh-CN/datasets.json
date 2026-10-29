@@ -24,6 +24,7 @@
     "jdbc": "通過 JDBC 驅動連線資料庫，並將其作為此資料集的一部分進行查詢。"
   },
   "upgrade_modal": {
+    "heading": "升級以使用資料集",
     "description": "資料集讓你可以在 Postman 中儲存、連線和複用結構化資料，從檔案到即時資料庫皆可。升級套餐即可開始使用。"
   },
   "source_type": {

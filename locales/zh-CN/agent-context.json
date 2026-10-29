@@ -12,18 +12,18 @@
     "links_line": "在你的工具中使用",
     "cli_label": "CLI 查詢",
     "mcp_label": "MCP 設定",
-    "docs_label": "文件",
+    "docs_label": "檔案",
     "copy_aria_label": "複製 {label} 命令",
     "copy_error_toast_title": "無法複製到剪貼簿",
-    "copy_error_toast_description": "請改為從文件中手動複製該命令。",
+    "copy_error_toast_description": "請改為從檔案中手動複製該命令。",
     "copied_label": "已複製"
   },
   "connectors": {
     "status": {
       "active_jobs": "{count, plural, one {# 個索引任務執行中} other {# 個索引任務執行中}}",
-      "configured_with_sources": "{count, plural, one {已配置 # 個數據源} other {已配置 # 個數據源}}",
+      "configured_with_sources": "{count, plural, one {已配置 # 個資料來源} other {已配置 # 個資料來源}}",
       "connected": "已連線",
-      "connected_with_sources": "已連線 · {count, plural, one {已配置 # 個數據源} other {已配置 # 個數據源}}",
+      "connected_with_sources": "已連線 · {count, plural, one {已配置 # 個資料來源} other {已配置 # 個資料來源}}",
       "not_connected": "未連線",
       "not_connected_with_team_sources": "未連線 · 資料來源由團隊成員配置"
     },
@@ -80,7 +80,7 @@
       },
       "steps_label": "GitHub 連線步驟",
       "token_description": "貼上具有 repo 讀取許可權的 token",
-      "token_title": "添加個人訪問令牌",
+      "token_title": "新增個人訪問令牌",
       "title": "GitHub"
     },
     "new_relic": {
@@ -218,7 +218,7 @@
   },
   "summary": {
     "apis": "API",
-    "connected_sources": "{count, plural, one {已連線 # 個數據源} other {已連線 # 個數據源}}",
+    "connected_sources": "{count, plural, one {已連線 # 個資料來源} other {已連線 # 個資料來源}}",
     "endpoints": "個端點",
     "external_deps": "個外部依賴",
     "no_sources_connected": "未連線資料來源",

@@ -11,11 +11,14 @@
     "toast_disabled": "已為您的 團隊 關閉共享 保險庫",
     "button_switch_on": "開啟",
     "button_switch_off": "關",
-    "global_switch_off_tooltip": "對於某些工作區，移動到共享 保險庫 策略處於活動狀態。請更改策略以關閉共享 保險庫。"
+    "global_switch_off_tooltip": "對於某些工作區，移動到共享 保險庫 策略處於活動狀態。請更改策略以關閉共享 保險庫。",
+    "tabs": {
+      "workspaces": "工作區",
+      "integrations": "外部保險庫整合"
+    }
   },
   "vault_settings_panel": {
     "open_settings": "設定",
-    "close_settings": "關閉 Vault 設定",
     "heading": "Vault 設定",
     "intro_banner": {
       "title": "團隊級 Vault 控制",

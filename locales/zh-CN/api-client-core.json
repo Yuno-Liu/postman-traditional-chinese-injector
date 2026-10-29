@@ -389,6 +389,12 @@
       "api": "API",
       "flow": "流程"
     },
+    "pending_invite": {
+      "resend_success": "邀請已重新發送",
+      "resend_error": "重新發送邀請時出錯",
+      "revoke_success": "邀請已撤銷",
+      "revoke_error": "撤銷邀請時出錯"
+    },
     "something_went_wrong_while_managing_roles": "管理角色時出現問題。",
     "something_went_wrong": "出了點問題",
     "signed_out_error": "您需要登入 團隊 才能執行此操作。",
@@ -1058,7 +1064,7 @@
   },
   "kveditor": {
     "description": "描述",
-    "description_tooltip": "說明僅出現在 Postman 檔案中，並且 <1> 不會與您的 請求 一起傳送 </1>。",
+    "description_tooltip": "說明僅出現在 Postman 文件中，並且 <1> 不會與您的 請求 一起傳送 </1>。",
     "domains": "例如https://api.getpostman.com，https://*.postman.com",
     "domains_tooltip": "秘密僅在提到的域中有效。使用 '*.example.com 允許所有子域。",
     "value": "值",
@@ -1290,7 +1296,7 @@
       "you": "你"
     },
     "created_at": {
-      "heading": "建立於"
+      "heading": "創建於"
     },
     "updated_at": {
       "heading": "最後更新",

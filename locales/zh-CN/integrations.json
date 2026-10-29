@@ -54,6 +54,13 @@
       "cancel_button_label": "取消"
     }
   },
+  "monitor_handoff": {
+    "locked_helper": "由此監控設定",
+    "nickname": "{monitorName} 告警",
+    "nickname_fallback": "監控告警",
+    "back_to_monitor": "返回監控",
+    "browse_all": "返回瀏覽所有可用整合"
+  },
   "context_bar": {
     "integration_context_bar_list": {
       "title": "整合",

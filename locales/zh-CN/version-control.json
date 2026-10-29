@@ -53,7 +53,7 @@
       "all_forks_message": "從該 {modelName} 建立的所有分叉都將出現在此處。",
       "fork_label": "Fork 標籤",
       "created_by": "建立者：",
-      "created_on": "建立於",
+      "created_on": "創建於",
       "of_text": "的",
       "hidden_forks_text": "其中一些不在此列表中，因為它們位於您無權訪問的工作區中。",
       "forks_label": "分叉 ({modelName})",
@@ -70,7 +70,10 @@
     "error": {
       "title": "分叉正在進行中",
       "info": "{model} 正在後臺被分叉。請稍後檢查 {model} 列表以檢視 fork。",
-      "generic_message": "建立 fork 時出現問題。請再試一次。"
+      "generic_message": "建立 fork 時出現問題。請再試一次。",
+      "partner_request": "無法直接從此合作伙伴工作區復刻集合。請申請復刻，由工作區所有者審批。",
+      "partner_blocked": "您的團隊方案不允許從此合作伙伴工作區復刻集合。",
+      "partner_unknown": "無法確認您在此合作伙伴工作區的復刻許可權。請稍後重試。"
     }
   },
   "pull_changes": {

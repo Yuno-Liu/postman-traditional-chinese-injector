@@ -1,4 +1,8 @@
 {
+  "not_found_blank_state": {
+    "title": "404，頁面未找到",
+    "description": "您要查詢的頁面不可用。"
+  },
   "heading": "執行器",
   "add_cluster_button": "新增執行器",
   "retry_button": "重試",
@@ -35,7 +39,7 @@
     "unavailableWorkspace": "不可用",
     "unavailableWorkspaceTooltip": "該工作區可能是私有或已被刪除。您無權訪問其詳細資訊。",
     "created_by": "建立者：",
-    "created_on": "建立於",
+    "created_on": "創建於",
     "modified_on": "修改於"
   },
   "dropdown": {
@@ -161,7 +165,7 @@
         },
         "setup": {
           "title": "2. 在終端中執行此命令",
-          "security_warning_with_key": "安全地複製並儲存此金鑰，因為關閉此視窗後將無法訪問它。如果需要，可以稍後重置金鑰。",
+          "security_warning_with_key": "安全地複製並存儲此金鑰，因為關閉此視窗後將無法訪問它。如果需要，可以稍後重置金鑰。",
           "security_warning_without_key": "丟了鑰匙？您可以重置它，但這將停用任何現有的跑步者，直到使用新金鑰更新它們為止。"
         }
       }

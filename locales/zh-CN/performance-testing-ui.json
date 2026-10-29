@@ -237,6 +237,9 @@
       "resource_cpu": "CPU",
       "stop_rerun_cloud": "停止並在雲端重新執行"
     },
+    "cloud_local_files": {
+      "row_warning": "{count, plural, one {# 個本地檔案，雲端執行無法訪問。請在執行前將其上傳} other {# 個本地檔案，雲端執行無法訪問。請在執行前將其上傳}}。"
+    },
     "delete_confirmation": {
       "title": "刪除效能執行",
       "description_with_name": "您確定要刪除 <bold>{itemName}</bold> 執行嗎？此操作無法撤消。",
@@ -331,8 +334,16 @@
         "dataset_service_bad_response": "載入資料集時出錯，請重試。",
         "dataset_view_not_found": "Postman 找不到此資料集或檢視，或者你沒有訪問許可權。",
         "dataset_service_unreachable": "資料集載入失敗，請重試。",
-        "dataset_too_large": "所選資料集檢視過大，無法用於雲端執行。請通過行範圍（起始/結束）或篩選檢視縮小範圍。"
+        "dataset_too_large": "所選資料集檢視過大，無法用於雲端執行。請通過行範圍（起始/結束）或篩選檢視縮小範圍。",
+        "file_not_found": "Postman 找不到本次執行所用的已上傳到 Postman 的檔案，或者您沒有訪問許可權。該檔案可能已被刪除或屬於其他團隊。請在請求中選擇您的團隊擁有的檔案。",
+        "file_access_denied": "您沒有本次執行所用的已上傳到 Postman 的檔案的訪問許可權。雲端執行只能使用您所在團隊的檔案。",
+        "file_too_large": "本次執行所用的已上傳到 Postman 的檔案超過了 5 MB 的大小限制。",
+        "files_too_large": "本次執行所用的已上傳到 Postman 的檔案超過了雲端執行的總大小限制。請使用更小或更少的檔案。",
+        "file_quota_exceeded": "您的團隊已達到套餐的檔案下載上限，無法載入本次執行所用的檔案。",
+        "file_download_failed": "無法載入本次執行所用的已上傳到 Postman 的檔案，請重試。"
       },
+      "cloud_file_download_start_failure": "無法下載“{requestName}”使用的雲端檔案“{fileName}”。請檢查網路連線後重試。",
+      "cloud_file_download_start_failure_unnamed": "無法下載“{requestName}”使用的雲端檔案。請確認該檔案仍然存在且您有訪問許可權，檢查網路連線後重試。",
       "dataset_resolution_start_failure": "無法為本次執行載入所選資料集。請確認資料集和檢視仍然存在且你有訪問許可權，然後重試。",
       "test_running": "測試執行中...",
       "metrics_pending": "測試完成後，效能指標將可用。",
@@ -480,6 +491,7 @@
         "empty_default_title": "沒有記錄任何活動",
         "empty_default_description": "此次執行未捕獲任何執行活動。",
         "dataset_resolution_failed": "資料集解析失敗",
+        "file_resolution_failed": "雲端檔案解析失敗",
         "lifecycle": {
           "setup_success": "Setup 已完成",
           "setup_failure": "Setup 失敗",
@@ -528,6 +540,31 @@
     "footer": {
       "default": "預設顯示此集合最近的 20 次執行。可按執行名稱或編號搜尋，與更早的執行進行比較。",
       "search_results": "顯示與搜尋詞匹配的最近 20 次執行。"
+    }
+  },
+  "run_sequence_variables": {
+    "tooltip": {
+      "title": "{target, select, cloud {在雲端無法解析} cli {在 CLI 執行中無法解析} other {無法解析}}",
+      "group": {
+        "script": "可能由腳本設定"
+      },
+      "cli_unchecked": "未勾選，但 CLI 命令會執行集合中的所有請求。",
+      "more": "{count, plural, one {另有 # 個變數} other {另有 # 個變數}}"
+    },
+    "location": "{location, select, url {URL} header {請求頭（{name}）} body {請求體} auth {身份驗證} other {請求}}",
+    "reason": {
+      "not_defined": "{hasEnvironment, select, true {未在 {environmentName}、集合或全域性變數中定義。} other {未在集合或全域性變數中定義。}}",
+      "empty_value": "已定義，但值為空。",
+      "availability": "{reason, select, local_vault_unavailable {此金鑰儲存在本地保險庫中，在雲端執行中不可用。} linked_secret_unavailable {關聯的金鑰目前在雲端執行中不可用。} other {此金鑰不適用於該請求的域名。}}",
+      "script": {
+        "request": "在 {requestName} 的{scriptType, select, test {測試} other {請求前}}腳本中設定。",
+        "folder": "在 {folderName} 資料夾的{scriptType, select, test {測試} other {請求前}}腳本中設定。",
+        "collection": "在集合的{scriptType, select, test {測試} other {請求前}}腳本中設定。",
+        "setup": "由初始化集合設定。"
+      }
+    },
+    "marker": {
+      "aria": "{requestName}：{count, plural, one {# 個變數} other {# 個變數}}{target, select, cloud {在雲端} cli {在 CLI 執行中} other {}}無法解析"
     }
   }
 }

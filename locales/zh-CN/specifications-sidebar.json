@@ -6,6 +6,9 @@
   "entity_type_icon": {
     "label": "規範"
   },
+  "version_badge": {
+    "tooltip": "正在檢視版本 {versionLabel}。這是隻讀快照。"
+  },
   "bulk_delete": {
     "heading": "刪除 {count, plural, one {# 個規範} other {# 個規範}}",
     "confirmation_line1": "確定要永久刪除{count, plural, one {這個規範} other {這 # 個規範}}嗎？",

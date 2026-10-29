@@ -724,6 +724,23 @@
       "trend_overtime": "長期趨勢",
       "last_days": "最近 {days} 天"
     },
+    "organization": {
+      "showing": "篩選條件",
+      "trigger": "<value>{organization}</value>",
+      "heading": "組織",
+      "search_placeholder": "查詢組織。",
+      "clear_search": "清除搜尋",
+      "done": "完成",
+      "no_results": "未找到組織",
+      "load_error": "組織載入失敗，請稍後重試。",
+      "all_organizations": "所有組織",
+      "member_count": "{count, plural, one {# 名成員} other {# 名成員}}",
+      "member_count_formatted": "{count, plural, one {{formattedCount} 名成員} other {{formattedCount} 名成員}}",
+      "aria": {
+        "trigger": "按組織篩選：{organization}。選擇組織",
+        "search": "查詢組織"
+      }
+    },
     "no_permission": {
       "title": "無法訪問",
       "description": "您無權檢視此資料。"

@@ -31,6 +31,12 @@
       "description": "選擇計算機上的一個資料夾，無需 Git。",
       "button": "選擇資料夾"
     },
+    "recent_folders": {
+      "title": "開啟資料夾",
+      "description": "選擇最近開啟的專案資料夾，或選擇一個新資料夾。",
+      "button": "選擇其他資料夾",
+      "loading": "正在載入最近的資料夾…"
+    },
     "existing": {
       "title": "資料夾已關聯到某個工作區",
       "description": "此資料夾已連線到另一個工作區。請選擇其他資料夾，或不關聯此資料夾繼續註冊。",

@@ -2,16 +2,30 @@
   "design_api_spec": {
     "modal": {
       "heading": "建立規範",
-      "description": "設計一個新的 API 規範以開始使用。",
+      "description": "設計新的 API 規範，或引入已有的規範。",
       "format": {
-        "heading": "選擇格式",
-        "description": "我們會為你建立一個可編輯的初始檔案。",
+        "heading": "從模板開始",
+        "description": "選擇一種格式，從可編輯的可用檔案開始。",
         "select_label": "規範格式",
-        "select_placeholder": "選擇格式"
+        "select_placeholder": "選擇選項"
       },
       "create_button_label": "建立規範",
       "close_button_label": "關閉",
-      "creating_status": "正在建立你的規範..."
+      "creating_status": "正在建立你的規範...",
+      "divider_label": "或",
+      "import": {
+        "heading": "匯入已有規範",
+        "description": "Postman 會識別格式、進行檢查，並在 Spec Hub 中開啟。",
+        "drop_prompt": "拖放檔案",
+        "drop_separator": "或",
+        "choose_file_button_label": "選擇檔案",
+        "checking_status": "正在檢查檔案...",
+        "error": {
+          "folder": "此處無法匯入資料夾。請選擇單個規範檔案。",
+          "multiple_files": "每次只能拖放一個規範檔案。",
+          "unsupported_file": "不支援該檔案，請嘗試其他檔案。"
+        }
+      }
     },
     "toast": {
       "create_error_check_before_retry": "無法建立你的規範。請重新整理頁面，確認是否已建立後再重試。",

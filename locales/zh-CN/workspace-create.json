@@ -85,7 +85,7 @@
     "create_import_cta": "建立和匯入",
     "create_cta": "建立",
     "create_workspace_cta": "建立工作區",
-    "text_area_info_text": "添加註釋（可選）",
+    "text_area_info_text": "新增註釋（可選）",
     "switch_workspace_cta": "切換工作區",
     "confirm_cta": "確認",
     "make_team_public_description": "在將您的 團隊 的個人資料設為 公開 之前，請更新您的 團隊 域並確保其符合 公開 可見性。您的 團隊 域名有助於識別您在 Postman 上的 團隊。",
@@ -167,7 +167,7 @@
     },
     "create_public_workspace_request": {
       "notes_validation_message": "備註最多隻能包含 500 個字元。",
-      "notes_placeholder_text": "添加註釋...",
+      "notes_placeholder_text": "新增註釋...",
       "request_created_toast": "您將收到有關社群經理的 響應 的通知。",
       "notes_label": "請求 批准",
       "notes_helper_text": "社群管理員將稽核您的請求。",
@@ -292,7 +292,7 @@
     }
   },
   "git_repository_preview": {
-    "name": "連線您的原生代碼庫",
+    "name": "連線您的原生程式碼庫",
     "summary": "Postman 會將您的集合、規範和環境與 Git 分支相關聯，實現本地優先的工作流程。",
     "git_integration": {
       "name": "與您的程式碼保持同步",

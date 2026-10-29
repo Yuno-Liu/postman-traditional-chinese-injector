@@ -395,13 +395,7 @@
     "applying_label": "正在應用…",
     "next_steps": "下一步？",
     "caught_up": "已全部處理完畢",
-    "ready_headlines": {
-      "ready_to_go": "準備就緒",
-      "all_systems_go": "一切就緒",
-      "standing_by_for_launch": "隨時待命",
-      "coast_is_clear": "暢通無阻",
-      "no_anomalies_detected": "未檢測到異常"
-    },
+    "lint_clean_headline": "所有 Lint 問題均已解決",
     "next_steps_description": "需要幫助規劃下一步嗎？",
     "view_next_steps": "檢視下一步",
     "send_request": "傳送",

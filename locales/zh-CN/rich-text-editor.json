@@ -106,7 +106,7 @@
     "storage_full_no_limit": "上傳失敗。你的儲存空間已滿，如需擴容請聯絡支援團隊。"
   },
   "link-unfurling": {
-    "accessible_label": "{entityType}: {label}",
+    "accessible_label": "{entityType}：{label}",
     "entity": {
       "workspace": "工作區",
       "collection": "集合",

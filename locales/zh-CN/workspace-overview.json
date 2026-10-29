@@ -3,10 +3,6 @@
     "settings_button": "工作區設定",
     "back_button_aria_label": "返回工作區概覽",
     "menu_button_aria_label": "更多工作區操作",
-    "info_menu": {
-      "activity_feed_cta": "活動日誌",
-      "info_cta": "工作區資訊"
-    },
     "options_menu": {
       "ask_ai": "詢問 AI",
       "post_update": "釋出更新",
@@ -640,6 +636,7 @@
           "access_removal_failed": "無法移除訪問許可權",
           "access_update_failed": "無法更新角色",
           "no_slot_available": "無法分配編輯者角色",
+          "try_again": "只是網路故障，請重試。",
           "guest_role_update_failed": {
             "title": "無法更新角色",
             "description": "只是網路故障，請重試。"
@@ -723,6 +720,16 @@
       "settings_update_error": {
         "heading": "無法更新側邊欄面板",
         "description": "更新側邊欄配置時出錯，請重試。"
+      },
+      "delete_panel": "刪除面板",
+      "delete_panel_disabled": "此面板中包含專案，無法刪除。",
+      "delete_panel_label": "刪除 {panelName} 面板",
+      "restore_panel": "恢復面板",
+      "restore_panel_label": "恢復 {panelName} 面板",
+      "unlocked_tag": "已解鎖",
+      "insights_ready": {
+        "title": "Insights 現已可用。",
+        "action": "開啟 Insights"
       }
     },
     "configure_multi_partner_workspace": {

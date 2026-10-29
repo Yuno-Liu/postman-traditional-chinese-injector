@@ -471,6 +471,10 @@
         "singular": "模擬伺服器",
         "plural": "模擬伺服器"
       },
+      "flow": {
+        "singular": "流程",
+        "plural": "流程"
+      },
       "extensible_collection": {
         "singular": "Collection",
         "plural": "Collection"
@@ -872,7 +876,9 @@
     "copy_response_link_aria_label": "複製響應連結"
   },
   "pending_invites": {
+    "heading": "待處理的邀請",
     "invite_as": "（以 {role} 身份受邀）",
+    "invite_as_partner": "（以合作伙伴 {role} 身份受邀）",
     "resend_cta": "重新發送邀請",
     "remove_cta": "撤銷",
     "more_actions_aria": "傳送給 {email} 的邀請的更多操作",

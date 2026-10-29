@@ -2,6 +2,18 @@
   "status_bar": {
     "desktop_only_tooltip": "本地檔案和終端訪問僅在桌面應用程式上可用"
   },
+  "branch_switch_modal": {
+    "uncommitted_title": "切換到 {ref}？",
+    "uncommitted_body": "您有未提交的更改。可以將它們帶到 {ref}，或將其儲藏，讓 {ref} 保持乾淨。",
+    "blocked_title": "您的更改阻止了切換",
+    "blocked_body": "切換到 {ref} 會覆蓋以下本地檔案：",
+    "more_files": "{count, plural, one {以及另外 # 個檔案} other {以及另外 # 個檔案}}",
+    "stash_hint": "儲藏會將您的更改（包括新檔案）暫時擱置。之後可使用 git stash pop 恢復。",
+    "stash_unavailable": "此倉庫無法使用儲藏：{reason}",
+    "cancel": "取消",
+    "stash_and_switch": "儲藏並切換",
+    "switch_with_changes": "帶上更改"
+  },
   "branch_switcher": {
     "open_folder": "開啟資料夾",
     "switch_to_local": "切換到本地",
@@ -13,7 +25,33 @@
     "switch_to_cloud_failed": "切換到雲端檢視失敗",
     "push_to_postman_cloud": "推送到 Postman 雲",
     "pull_from_postman_cloud": "從 Postman 雲中拉取",
-    "type_branch_name": "輸入 分支 名稱..."
+    "search_branch": "輸入分支名稱...",
+    "tags_group": "標籤",
+    "branches_group": "分支",
+    "ref_kind_tag": "標籤",
+    "ref_kind_branch": "分支",
+    "create_new_branch": "新建分支",
+    "create_new_branch_title": "新建分支",
+    "back_to_branches": "返回分支列表",
+    "branch_name_placeholder": "分支名稱",
+    "create": "建立",
+    "operation_in_progress": "另一個分支切換操作仍在進行中，請在其完成後重試。",
+    "switch_failed": "無法切換到 {ref}",
+    "switch_failed_reason": "無法切換到 {ref}：{reason}",
+    "stash_failed": "無法儲藏您的更改：{reason}",
+    "switched_with_stash": "已切換到 {ref}。您的更改已儲存在儲藏中。",
+    "switch_failed_after_stash": "無法切換到 {ref}：{reason}。您的更改已儲存在儲藏中。",
+    "switch_failed_restored": "無法切換到 {ref}：{reason}。您的更改已恢復原樣。",
+    "switch_failed_restored_kept": "無法切換到 {ref}：{reason}。您的更改已恢復，儲藏中仍保留一份副本。",
+    "stash_incomplete": "無法完成儲藏：{reason}。部分更改已在儲藏中，部分可能仍在資料夾中。請檢查 git status 和 git stash list。",
+    "stash_state_unknown": "未切換到 {ref}：無法確認您的更改已被儲藏。請檢查 git stash list。",
+    "tags_truncated": "顯示 {shown} / {total} 個標籤。搜尋以查詢其他標籤。",
+    "branches_truncated": "顯示 {shown} / {total} 個分支。搜尋以查詢其他分支。",
+    "branch_exists": "已存在同名分支",
+    "invalid_branch_chars": "分支名稱不能包含 ~ ^ : ? * [ \\ 或控制字元",
+    "invalid_branch_sequence": "分支名稱不能包含 \"..\"、\"@'{'\" 或 \"//\"，也不能為 \"@\"",
+    "invalid_branch_edges": "分支名稱不能以 -、/ 或 . 開頭，不能以 / 或 . 結尾，任一部分也不能以 .lock 結尾",
+    "create_branch_failed": "分支建立失敗"
   },
   "git_error_modal": {
     "git_not_installed": {
@@ -223,13 +261,13 @@
     "simulation_logs_start_description": "執行模擬後即可在此檢視請求日誌。",
     "simulation_state_start_title": "暫無狀態",
     "simulation_state_start_description": "啟動模擬後即可檢視各成員模擬伺服器的 pm.state。",
-    "simulation_state_mock_placeholder": "Mock",
+    "simulation_state_mock_placeholder": "模擬",
     "simulation_start_no_local_mocks_toast": "此模擬的模擬伺服器在本地不可用。請新增此工作區中已有的模擬伺服器後重新啟動。",
     "simulation_start_cloud_only_members_skipped_toast": "{count} 個成員無法在本地執行（沒有本地來源）：{names}",
     "simulation_mock_not_deployed_chip": "模擬伺服器服務未部署",
-    "simulation_mock_mode_mock_option": "Mock",
+    "simulation_mock_mode_mock_option": "模擬",
     "simulation_mock_mode_live_option": "即時",
-    "simulation_mock_mock_url_caption": "Mock URL",
+    "simulation_mock_mock_url_caption": "模擬 URL",
     "simulation_mock_live_url_caption": "線上 URL",
     "simulation_mock_add_not_deployed_tooltip": "請先部署此模擬伺服器，然後再將其新增到模擬中。",
     "simulation_mock_add_button_label": "新增模擬伺服器",
@@ -414,7 +452,7 @@
     "scenario_form_cancel_button": "取消",
     "scenario_behavior_toggle_aria_label": "切換 {behaviorName}",
     "simulation_logs_filter_path_placeholder": "篩選路徑",
-    "simulation_logs_filter_mock_placeholder": "Mock",
+    "simulation_logs_filter_mock_placeholder": "模擬",
     "simulation_logs_filter_method_placeholder": "方法",
     "simulation_logs_filter_status_placeholder": "狀態",
     "simulation_logs_filter_time_placeholder": "時間",
@@ -838,13 +876,17 @@
           "unsupported-branch": "此分支名包含流水線無法安全使用的字元（$、引號、反斜槓或萬用字元），請選擇其他目標分支。",
           "unsupported-folder": "此資料夾在倉庫中的路徑包含流水線無法安全使用的字元（$、引號、反斜槓、括號或萬用字元），請重新命名該資料夾後再設定自動更新。",
           "read-failed": "無法從目標分支讀取 {file}。請從 origin 拉取後重試。"
-        }
+        },
+        "workspace_files_note": "包含此資料夾中的 .postman 和 postman，以便工作流能找到您的工作區。"
       },
       "create_pr_cta": "新增到新分支並建立 PR",
       "create_mr_cta": "新增到新分支並建立合併請求",
       "errors": {
         "branch": "無法建立自動更新分支。",
         "commit": "無法提交工作流檔案。",
+        "commit_workspace_folders_not_added": "無法新增您的 Postman 資料夾。",
+        "commit_workspace_config_ignored_description": "請確保 .gitignore 未排除 .postman/，然後重試。",
+        "commit_workspace_folders_not_added_description": "請自行提交併推送 .postman 和 postman，然後重試。",
         "push": "無法推送自動更新分支。",
         "pr": "無法開啟拉取請求頁面。",
         "push_auth": "無法推送到 {provider}。",
@@ -864,5 +906,58 @@
   },
   "diagnostics": {
     "agent_mode_open_failed": "開啟 Agent 模式失敗"
+  },
+  "push_to_cloud_modal": {
+    "title": "推送到雲端",
+    "description_create": "需要先將這些本地資源推送到 Postman 雲端，才能建立此{service}。",
+    "description_update": "需要先將這些本地資源推送到 Postman 雲端，才能更新此{service}。",
+    "failed": "資源推送到雲端失敗",
+    "confirm": "推送到雲端",
+    "pushing": "正在推送…",
+    "retry": "重試",
+    "cancel": "取消",
+    "pushed": "已推送",
+    "push_failed": "推送失敗",
+    "lint_errors": "{count, plural, one {# 個 lint 錯誤} other {# 個 lint 錯誤}}",
+    "fix": "檢視",
+    "entity_type": {
+      "collection": "集合",
+      "environment": "環境",
+      "dataset": "資料集",
+      "flow": "流程",
+      "mock": "模擬",
+      "simulation": "Simulation",
+      "specification": "API 規範",
+      "document": "文件",
+      "sdk": "SDK",
+      "globals": "全域性變數"
+    },
+    "service_type": {
+      "monitor": "監控",
+      "mockServer": "模擬伺服器",
+      "flow": "流程"
+    },
+    "service_type_title": {
+      "monitor": "監控",
+      "mockServer": "模擬伺服器",
+      "flow": "流程"
+    },
+    "continue_in_background": "在後臺繼續",
+    "background": {
+      "create": {
+        "processing": "正在建立{service}",
+        "completed": "{serviceTitle}已建立",
+        "failed": "無法建立{service}"
+      },
+      "update": {
+        "processing": "正在更新{service}",
+        "completed": "{serviceTitle}已更新",
+        "failed": "無法更新{service}"
+      },
+      "pushing_resources": "正在推送第 {done} 個，共 {count, plural, one {# 個資源} other {# 個資源}}",
+      "resources_failed": "{count, plural, one {# 個資源} other {# 個資源}}推送失敗",
+      "resources_pushed": "所有資源均已推送到雲端",
+      "form_closed": "表單在儲存前已關閉"
+    }
   }
 }

@@ -72,7 +72,7 @@
       "show_middle_workbench": "顯示中間工作臺",
       "swap_left_right_sidebar": "交換左右側邊欄",
       "var_autocomplete": "變數自動完成",
-      "default_doc_editor": "預設文件編輯器",
+      "default_doc_editor": "預設檔案編輯器",
       "postman_editor": "Postman 編輯器",
       "markdown_editor": "Markdown 編輯器"
     },
@@ -80,7 +80,7 @@
       "label": "編輯器設定",
       "reset_button_label": "重置",
       "reset_button_tooltip": "將編輯器設定重置為其預設值",
-      "font_family": "字體系列",
+      "font_family": "字型系列",
       "font_size": "字型大小（畫素）",
       "font_size_unit": "畫素",
       "indentation_count": "縮排數",

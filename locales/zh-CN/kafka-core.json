@@ -29,6 +29,9 @@
     "authorization": "身份驗證",
     "scripts": "腳本"
   },
+  "response_tabs": {
+    "test_results": "測試結果"
+  },
   "placeholder": {
     "coming_soon": "即將推出。"
   },
