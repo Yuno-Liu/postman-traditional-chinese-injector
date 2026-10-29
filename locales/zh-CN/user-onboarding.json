@@ -31,6 +31,12 @@
       "description": "选择计算机上的一个文件夹，无需 Git。",
       "button": "选择文件夹"
     },
+    "recent_folders": {
+      "title": "打开文件夹",
+      "description": "选择最近打开的项目文件夹，或选择一个新文件夹。",
+      "button": "选择其他文件夹",
+      "loading": "正在加载最近的文件夹…"
+    },
     "existing": {
       "title": "文件夹已关联到某个工作区",
       "description": "此文件夹已连接到另一个工作区。请选择其他文件夹，或不关联此文件夹继续注册。",

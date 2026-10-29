@@ -70,7 +70,10 @@
     "error": {
       "title": "分叉正在进行中",
       "info": "{model} 正在后台被分叉。请稍后检查 {model} 列表以查看 fork。",
-      "generic_message": "创建 fork 时出现问题。请再试一次。"
+      "generic_message": "创建 fork 时出现问题。请再试一次。",
+      "partner_request": "无法直接从此合作伙伴工作区复刻集合。请申请复刻，由工作区所有者审批。",
+      "partner_blocked": "您的团队方案不允许从此合作伙伴工作区复刻集合。",
+      "partner_unknown": "无法确认您在此合作伙伴工作区的复刻权限。请稍后重试。"
     }
   },
   "pull_changes": {

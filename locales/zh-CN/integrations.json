@@ -54,6 +54,13 @@
       "cancel_button_label": "取消"
     }
   },
+  "monitor_handoff": {
+    "locked_helper": "由此监控设置",
+    "nickname": "{monitorName} 告警",
+    "nickname_fallback": "监控告警",
+    "back_to_monitor": "返回监控",
+    "browse_all": "返回浏览所有可用集成"
+  },
   "context_bar": {
     "integration_context_bar_list": {
       "title": "集成",

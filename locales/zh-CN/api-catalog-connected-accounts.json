@@ -7,9 +7,11 @@
     "description": "只需连接一次账户，即可持续发现服务"
   },
   "actions": {
+    "add_manage_sources_button": "添加和管理来源",
     "connect_account_button": "连接账户",
     "discover_services_button": "发现服务",
     "disconnect_account_button": "断开账户连接",
+    "disconnect_account_unavailable_tooltip": "此账户没有账户 ID，因此无法断开连接",
     "retry_button": "重试"
   },
   "toasts": {
@@ -17,13 +19,19 @@
     "disconnect_error_title": "无法断开账户连接",
     "disconnect_error_description": "请重试。"
   },
+  "disconnect_modal": {
+    "title": "断开 {providerName} 账户的连接？",
+    "description": "Postman 将停止从此已连接的 {providerName} 账户发现和导入服务。您可以随时重新连接。",
+    "cancel_button": "取消"
+  },
   "table": {
     "account_header": "账户",
     "authentication_header": "身份验证",
     "discovered_services_header": "已发现的服务",
-    "integrated_services_header": "已集成的服务",
     "last_used_header": "上次使用",
-    "last_used_empty": "-"
+    "last_used_empty": "-",
+    "expired_badge": "已过期",
+    "account_number_header": "账号"
   },
   "summary": "{accountCount, plural, one {# 个账户} other {# 个账户}} · {serviceCount, plural, one {# 个已发现的服务} other {# 个已发现的服务}}",
   "errors": {
@@ -34,6 +42,10 @@
   "empty_state": {
     "title": "未连接 {connectorName} 账户",
     "description": "连接 {connectorName} 账户，开始在整个基础设施中发现服务。"
+  },
+  "ibm_auth": {
+    "host_label": "平台 API 主机（可选）",
+    "host_description": "从 API Manager 中 credentials.json 的 toolkit 部分复制主机地址。留空则使用默认的美国东部主机。"
   },
   "multi_account": {
     "accounts_heading": "账户",

@@ -283,7 +283,8 @@
     "invited_to_workspace_for_non_team_users": "邀请 请求 已发送",
     "error_inviting_to_workspace_toast": {
       "heading": "无法邀请",
-      "description": "只是一根电线有问题。再试一次。"
+      "description": "只是一根电线有问题。再试一次。",
+      "partial_description": "已发送 {sentCount}/{totalCount} 个邀请，其余邀请发送失败。"
     },
     "cant_invite_external_users_error": "您不能 邀请 不属于您的 团队 的人。",
     "inviting_will_change_to_visibility": "邀请人们会将其更改为 {toVisibility} 工作区。",
@@ -321,6 +322,36 @@
         "continue": "继续",
         "cancel": "取消"
       }
+    },
+    "invite_type": {
+      "label": "邀请身份",
+      "partner": "合作伙伴",
+      "team_member": "团队成员",
+      "team_member_partner_only": "合作伙伴只能邀请其他合作伙伴。",
+      "partner_no_permission": "您无权邀请合作伙伴。",
+      "team_member_no_permission": "您无权邀请团队成员。"
+    },
+    "team_list": {
+      "heading": "{teamName}（{count}）",
+      "fallback_heading": "团队成员（{count}）"
+    },
+    "partner_list": {
+      "heading": "合作伙伴（{count}）",
+      "team_heading": "{teamName}（{count}）",
+      "unknown_team_heading": "合作伙伴团队（{count}）",
+      "individual_partners_heading": "个人合作伙伴（{count}）",
+      "you": "（您）",
+      "remove": "从工作区中移除",
+      "partner_lead_removal": "只有工作区管理员才能将合作伙伴负责人从工作区中移除。",
+      "partner_lead_assignment": "只有工作区管理员才能指定或移除合作伙伴负责人。",
+      "partner_lead_multi_partner_removal": "只有工作区管理员才能从多合作伙伴工作区中移除合作伙伴。",
+      "editor_limit": "您无法在此工作区中将合作伙伴设为编辑者。",
+      "role_menu_aria_label": "更改 {name} 的角色"
+    },
+    "copy_invite_link_menu": {
+      "partner_link": "复制合作伙伴邀请链接",
+      "team_link": "复制团队邀请链接",
+      "copy_failed": "邀请链接复制失败，请重试。"
     },
     "user_import": {
       "try_again_action": "再试一次",
@@ -566,6 +597,8 @@
       "workspace_type": "可见性",
       "element_type": "元件类型",
       "clear_all": "全部清除",
+      "toggle_label": "筛选",
+      "toggle_label_applied": "筛选，{count, plural, one {已应用 # 个} other {已应用 # 个}}",
       "aria_filter_applied": "应用 {filterText} 过滤器：{activeFilterLabel}。点击更改过滤器",
       "aria_filter_not_applied": "{filterText} 过滤器。单击以应用过滤器",
       "workspace_types": {

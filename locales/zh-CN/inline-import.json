@@ -1,0 +1,45 @@
+{
+  "heading": "导入您的工作内容",
+  "description": "将集合、cURL 命令和规范导入此工作区。",
+  "field_label": "粘贴集合、cURL、规范或链接",
+  "select_file": "选择文件",
+  "all_ways": "或<cta>查看所有导入方式</cta>",
+  "enter_hint": "按 Enter 导入。",
+  "checking": "正在检查链接…",
+  "importing": "正在导入…",
+  "importing_in_background": "仍在导入，完成后将显示在侧边栏中。",
+  "offline": "您已离线，请重新连接后再导入。",
+  "imported": "已导入<name>{name}</name>",
+  "imported_requests": "已导入<name>{name}</name> · {count, plural, one {# 个请求} other {# 个请求}}",
+  "imported_more": "已导入<name>{name}</name>及其他 {count, plural, one {# 项} other {# 项}}",
+  "imported_partial": "已导入 {imported}/{total} 项，{failed} 项失败。",
+  "request_opened": "已在新标签页中打开请求",
+  "detected": {
+    "folder": "文件夹",
+    "endpoints": "<name>{name}</name> · {count, plural, one {# 个端点} other {# 个端点}}",
+    "files": "<name>{name}</name> · {count, plural, one {# 个文件} other {# 个文件}}",
+    "import": "导入"
+  },
+  "broken": {
+    "paste": "这看起来是{format, select, collection {Postman 集合} openapi {OpenAPI 规范} other {Swagger 规范}}，但{line, select, none {} other {第 {line} 行}}存在{syntax, select, yaml {YAML} other {JSON}} 错误。",
+    "file": "此{format, select, collection {文件} other {规范}}{line, select, none {} other {第 {line} 行}}存在{syntax, select, yaml {YAML} other {JSON}} 错误，因此未导入。",
+    "link": "链接的文件看起来是{format, select, collection {Postman 集合} openapi {OpenAPI 规范} other {Swagger 规范}}，但{line, select, none {} other {第 {line} 行}}存在{syntax, select, yaml {YAML} other {JSON}} 错误。",
+    "paste_ends_early": "这看起来是{format, select, collection {Postman 集合} openapi {OpenAPI 规范} other {Swagger 规范}}，但文本提前结束了。请粘贴完整内容，或直接拖入文件。",
+    "file_ends_early": "此文件{line, select, none {} other {在第 {line} 行}}提前结束，部分内容缺失。{format, select, collection {请从 Postman 重新导出并拖到此处。} other {请修复文件后重新拖到此处。}}",
+    "link_ends_early": "链接的文件{line, select, none {} other {在第 {line} 行}}提前结束，部分内容缺失。"
+  },
+  "not_importable": {
+    "json": "此 JSON 不是集合、规范或环境，没有可导入的内容。",
+    "invalid_spec": "这看起来是{format, select, swagger {Swagger} other {OpenAPI}} 规范，但 Postman 无法导入。",
+    "web_page": "这是一个网页，而不是规范或集合。请改为粘贴规范或 cURL。",
+    "file": "Postman 无法导入 .{extension} 文件。请导入集合、规范或 cURL。",
+    "short": "暂无可导入的内容。请粘贴集合、规范、cURL 或链接。",
+    "text": "这不是集合、规范或 cURL，没有可导入的内容。"
+  },
+  "agent_fix": {
+    "button": "使用 Agent Mode 修复并导入"
+  },
+  "failed_named": "无法导入 {name}，请重试。",
+  "failed": "导入失败，请重试。",
+  "link_failed": "无法获取该链接。请检查 URL，或下载文件后再选择。"
+}

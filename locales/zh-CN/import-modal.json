@@ -113,5 +113,9 @@
   "permissions": {
     "no_permission_tooltip": "您没有权限管理此工作区中的资源。",
     "local_only_tooltip": "您只能在本地模式下管理资源。"
+  },
+  "delete_fork": {
+    "error_title": "出错了",
+    "error_description": "集合删除失败，请重试。"
   }
 }

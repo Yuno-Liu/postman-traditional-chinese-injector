@@ -27,7 +27,7 @@
   },
   "integratedServices": {
     "sectionTitle": "API Catalog - 集成服务",
-    "sectionDescription": "将 API Catalog 集成服务连接到 GitHub 仓库。",
+    "sectionDescription": "将 API 目录中的集成服务连接到 {gitProvider} 仓库。",
     "connectButton": "连接服务",
     "connectPermissionTooltip": "只有具备 API Catalog Manager 角色的成员才能访问服务发现页面",
     "columns": {
@@ -66,6 +66,7 @@
   "connectionSection": {
     "connectedBadge": "已连接",
     "nameSuffix": "{name}（你）",
+    "otherAccounts": "{count, plural, one {+ 另外 # 个} other {+ 另外 # 个}}",
     "otherTeamUsers_one": "+{count} 位其他团队成员",
     "otherTeamUsers_other": "+{count} 位其他团队成员",
     "disconnectSuccess": "{appName} 已成功断开连接。",
@@ -95,8 +96,20 @@
     "github_app": {
       "title": "已连接的 GitHub 账户",
       "description": "Postman 已获得访问权限的 GitHub 组织。",
-      "githubUsername": "GitHub 用户名",
-      "githubOrganization": "GitHub 组织"
+      "username": "GitHub 用户名",
+      "accounts": "GitHub 组织"
+    },
+    "gitlab_app": {
+      "title": "已连接的 GitLab 账户",
+      "description": "已授予 Postman 访问权限的 GitLab 群组。",
+      "username": "GitLab 用户名",
+      "accounts": "GitLab 群组"
+    },
+    "bitbucket_app": {
+      "title": "已连接的 Bitbucket 账户",
+      "description": "已授予 Postman 访问权限的 Bitbucket 工作区。",
+      "username": "Bitbucket 用户名",
+      "accounts": "Bitbucket 工作区"
     },
     "ecosystem": {
       "connectedBadge": "已连接",
@@ -215,7 +228,12 @@
     "teamPlaceholder": "输入以搜索团队",
     "groupChatLabel": "群聊",
     "groupChatPlaceholder": "输入以搜索群聊",
-    "groupChatLoadError": "群聊加载失败，请重试。"
+    "groupChatLoadError": "群聊加载失败，请重试。",
+    "signInPrompt": "登录 Microsoft Teams 以选择团队和频道。",
+    "signInButton": "登录 Microsoft Teams",
+    "signingIn": "正在等待 Microsoft Teams 登录…",
+    "signInError": "无法登录 Microsoft Teams。",
+    "signInRetry": "重试"
   },
   "workspaceNotifications": {
     "title": "工作区通知",
@@ -309,12 +327,24 @@
       "editHeading": "编辑监控集成",
       "monitorLabel": "监控",
       "monitorPlaceholder": "选择监控",
+      "thisNewMonitor": "新监控",
+      "lockedByMonitorHelper": "由此监控设置",
       "frequencyLabel": "发送通知的场景…",
       "frequencyAllRuns": "每次运行完成时",
       "frequencyOnlyFailures": "仅失败时（以及之后首次成功运行时）",
+      "notificationLimitMessage": "连续失败 <input/> 次后停止通知",
+      "notificationLimitError": "请输入 1 到 {max} 之间的值",
       "cancel": "取消",
       "submitCreate": "连接",
       "submitEdit": "保存更改",
+      "recordOnlyHeadingSlack": "添加 Slack 频道",
+      "recordOnlyHeadingTeams": "添加 Teams 频道",
+      "recordOnlyEditHeadingSlack": "编辑 Slack 频道",
+      "recordOnlyEditHeadingTeams": "编辑 Teams 频道",
+      "recordOnlyCaptionSlack": "创建此监控后将连接 Slack。",
+      "recordOnlyCaptionTeams": "创建此监控后将连接 Teams。",
+      "submitRecordOnly": "添加",
+      "submitRecordOnlyEdit": "保存",
       "createSuccess": "监控连接成功。",
       "updateSuccess": "监控连接已更新。",
       "createError": "监控集成连接失败，请重试。",

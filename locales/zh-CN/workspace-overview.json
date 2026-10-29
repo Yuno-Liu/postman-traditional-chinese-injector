@@ -3,10 +3,6 @@
     "settings_button": "工作区设置",
     "back_button_aria_label": "返回工作区概览",
     "menu_button_aria_label": "更多工作区操作",
-    "info_menu": {
-      "activity_feed_cta": "活动日志",
-      "info_cta": "工作区信息"
-    },
     "options_menu": {
       "ask_ai": "询问 AI",
       "post_update": "发布更新",
@@ -640,6 +636,7 @@
           "access_removal_failed": "无法移除访问权限",
           "access_update_failed": "无法更新角色",
           "no_slot_available": "无法分配编辑者角色",
+          "try_again": "只是网络故障，请重试。",
           "guest_role_update_failed": {
             "title": "无法更新角色",
             "description": "只是网络故障，请重试。"
@@ -723,6 +720,16 @@
       "settings_update_error": {
         "heading": "无法更新侧边栏面板",
         "description": "更新侧边栏配置时出错，请重试。"
+      },
+      "delete_panel": "删除面板",
+      "delete_panel_disabled": "此面板中包含项目，无法删除。",
+      "delete_panel_label": "删除 {panelName} 面板",
+      "restore_panel": "恢复面板",
+      "restore_panel_label": "恢复 {panelName} 面板",
+      "unlocked_tag": "已解锁",
+      "insights_ready": {
+        "title": "Insights 现已可用。",
+        "action": "打开 Insights"
       }
     },
     "configure_multi_partner_workspace": {

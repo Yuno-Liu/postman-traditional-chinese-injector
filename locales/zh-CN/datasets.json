@@ -24,6 +24,7 @@
     "jdbc": "通过 JDBC 驱动连接数据库，并将其作为此数据集的一部分进行查询。"
   },
   "upgrade_modal": {
+    "heading": "升级以使用数据集",
     "description": "数据集让你可以在 Postman 中存储、连接和复用结构化数据，从文件到实时数据库皆可。升级套餐即可开始使用。"
   },
   "source_type": {

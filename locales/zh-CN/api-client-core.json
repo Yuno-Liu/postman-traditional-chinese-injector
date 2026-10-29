@@ -389,6 +389,12 @@
       "api": "API",
       "flow": "流程"
     },
+    "pending_invite": {
+      "resend_success": "邀请已重新发送",
+      "resend_error": "重新发送邀请时出错",
+      "revoke_success": "邀请已撤销",
+      "revoke_error": "撤销邀请时出错"
+    },
     "something_went_wrong_while_managing_roles": "管理角色时出现问题。",
     "something_went_wrong": "出了点问题",
     "signed_out_error": "您需要登录 团队 才能执行此操作。",

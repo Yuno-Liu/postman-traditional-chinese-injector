@@ -210,8 +210,11 @@
     "optional": "（可选）",
     "message_placeholder": "例如请联系 #it-support 获取登录帮助。",
     "link_placeholder": "https://your-company.com/it-support",
-    "saving": "保存...",
-    "saved": "已保存",
+    "save_button": "保存",
+    "cancel_button": "取消",
+    "save_success": "登录说明已保存",
+    "toggle_aria_label": "在登录页面显示登录说明",
+    "toggle_disabled_tooltip": "请先添加消息或链接再启用此项",
     "error": {
       "save_title": "保存指令失败",
       "save_description": "出了点问题。请再试一次。",

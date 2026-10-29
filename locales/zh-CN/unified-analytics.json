@@ -724,6 +724,23 @@
       "trend_overtime": "长期趋势",
       "last_days": "最近 {days} 天"
     },
+    "organization": {
+      "showing": "筛选条件",
+      "trigger": "<value>{organization}</value>",
+      "heading": "组织",
+      "search_placeholder": "查找组织。",
+      "clear_search": "清除搜索",
+      "done": "完成",
+      "no_results": "未找到组织",
+      "load_error": "组织加载失败，请稍后重试。",
+      "all_organizations": "所有组织",
+      "member_count": "{count, plural, one {# 名成员} other {# 名成员}}",
+      "member_count_formatted": "{count, plural, one {{formattedCount} 名成员} other {{formattedCount} 名成员}}",
+      "aria": {
+        "trigger": "按组织筛选：{organization}。选择组织",
+        "search": "查找组织"
+      }
+    },
     "no_permission": {
       "title": "无法访问",
       "description": "您无权查看此数据。"

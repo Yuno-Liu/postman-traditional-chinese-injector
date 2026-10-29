@@ -237,6 +237,9 @@
       "resource_cpu": "CPU",
       "stop_rerun_cloud": "停止并在云端重新运行"
     },
+    "cloud_local_files": {
+      "row_warning": "{count, plural, one {# 个本地文件，云端运行无法访问。请在运行前将其上传} other {# 个本地文件，云端运行无法访问。请在运行前将其上传}}。"
+    },
     "delete_confirmation": {
       "title": "删除性能运行",
       "description_with_name": "您确定要删除 <bold>{itemName}</bold> 运行吗？此操作无法撤消。",
@@ -331,8 +334,16 @@
         "dataset_service_bad_response": "加载数据集时出错，请重试。",
         "dataset_view_not_found": "Postman 找不到此数据集或视图，或者你没有访问权限。",
         "dataset_service_unreachable": "数据集加载失败，请重试。",
-        "dataset_too_large": "所选数据集视图过大，无法用于云端运行。请通过行范围（起始/结束）或筛选视图缩小范围。"
+        "dataset_too_large": "所选数据集视图过大，无法用于云端运行。请通过行范围（起始/结束）或筛选视图缩小范围。",
+        "file_not_found": "Postman 找不到本次运行所用的已上传到 Postman 的文件，或者您没有访问权限。该文件可能已被删除或属于其他团队。请在请求中选择您的团队拥有的文件。",
+        "file_access_denied": "您没有本次运行所用的已上传到 Postman 的文件的访问权限。云端运行只能使用您所在团队的文件。",
+        "file_too_large": "本次运行所用的已上传到 Postman 的文件超过了 5 MB 的大小限制。",
+        "files_too_large": "本次运行所用的已上传到 Postman 的文件超过了云端运行的总大小限制。请使用更小或更少的文件。",
+        "file_quota_exceeded": "您的团队已达到套餐的文件下载上限，无法加载本次运行所用的文件。",
+        "file_download_failed": "无法加载本次运行所用的已上传到 Postman 的文件，请重试。"
       },
+      "cloud_file_download_start_failure": "无法下载“{requestName}”使用的云端文件“{fileName}”。请检查网络连接后重试。",
+      "cloud_file_download_start_failure_unnamed": "无法下载“{requestName}”使用的云端文件。请确认该文件仍然存在且您有访问权限，检查网络连接后重试。",
       "dataset_resolution_start_failure": "无法为本次运行加载所选数据集。请确认数据集和视图仍然存在且你有访问权限，然后重试。",
       "test_running": "测试运行中...",
       "metrics_pending": "测试完成后，性能指标将可用。",
@@ -480,6 +491,7 @@
         "empty_default_title": "没有记录任何活动",
         "empty_default_description": "此次运行未捕获任何执行活动。",
         "dataset_resolution_failed": "数据集解析失败",
+        "file_resolution_failed": "云端文件解析失败",
         "lifecycle": {
           "setup_success": "Setup 已完成",
           "setup_failure": "Setup 失败",
@@ -528,6 +540,31 @@
     "footer": {
       "default": "默认显示此集合最近的 20 次运行。可按运行名称或编号搜索，与更早的运行进行比较。",
       "search_results": "显示与搜索词匹配的最近 20 次运行。"
+    }
+  },
+  "run_sequence_variables": {
+    "tooltip": {
+      "title": "{target, select, cloud {在云端无法解析} cli {在 CLI 运行中无法解析} other {无法解析}}",
+      "group": {
+        "script": "可能由脚本设置"
+      },
+      "cli_unchecked": "未勾选，但 CLI 命令会运行集合中的所有请求。",
+      "more": "{count, plural, one {另有 # 个变量} other {另有 # 个变量}}"
+    },
+    "location": "{location, select, url {URL} header {请求头（{name}）} body {请求体} auth {身份验证} other {请求}}",
+    "reason": {
+      "not_defined": "{hasEnvironment, select, true {未在 {environmentName}、集合或全局变量中定义。} other {未在集合或全局变量中定义。}}",
+      "empty_value": "已定义，但值为空。",
+      "availability": "{reason, select, local_vault_unavailable {此密钥存储在本地保险库中，在云端运行中不可用。} linked_secret_unavailable {关联的密钥目前在云端运行中不可用。} other {此密钥不适用于该请求的域名。}}",
+      "script": {
+        "request": "在 {requestName} 的{scriptType, select, test {测试} other {请求前}}脚本中设置。",
+        "folder": "在 {folderName} 文件夹的{scriptType, select, test {测试} other {请求前}}脚本中设置。",
+        "collection": "在集合的{scriptType, select, test {测试} other {请求前}}脚本中设置。",
+        "setup": "由初始化集合设置。"
+      }
+    },
+    "marker": {
+      "aria": "{requestName}：{count, plural, one {# 个变量} other {# 个变量}}{target, select, cloud {在云端} cli {在 CLI 运行中} other {}}无法解析"
     }
   }
 }

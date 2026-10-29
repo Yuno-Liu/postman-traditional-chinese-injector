@@ -117,7 +117,7 @@
     }
   },
   "container": {
-    "text_area_placeholder": "粘贴 cURL、gRPCurl、原始文本或 URL",
+    "text_area_placeholder": "粘贴 cURL 命令、OpenAPI 规范或集合 JSON。也支持 GraphQL 和 AsyncAPI",
     "view_import_settings": "查看导入设置",
     "import_button_label": "导入",
     "import_button_tooltip": "选择要导入的文件",
@@ -144,9 +144,29 @@
       "multi_file_import_elements": "导入元素 ({element_num})",
       "upload_files_to_postman": "迁移到 Postman"
     },
-    "tooltip": {
-      "desc": "提示：您还可以将 cURL 粘贴到请求栏中进行导入",
-      "dismiss_button_label": "解雇"
+    "curl_panel": {
+      "format_badge": "cURL",
+      "request_title": "{method} {path}",
+      "request_count": "{count, plural, one {# 个请求} other {# 个请求}}",
+      "collection_name_label": "集合名称",
+      "collection_select_hint": "输入以查找集合或新建集合",
+      "collection_select_placeholder": "选择或新建集合",
+      "collection_name": "{apiName} API",
+      "default_collection_name": "新集合",
+      "will_create_heading": "导入为",
+      "will_create": "{count, plural, one {包含 # 个请求的 Postman 集合} other {包含 # 个请求的 Postman 集合}}",
+      "base_url_environment": "包含 {variable} 变量的环境",
+      "will_add_heading": "导入到",
+      "will_add": "{count, plural, one {# 个请求添加到 {collectionName}} other {# 个请求添加到 {collectionName}}}",
+      "more_hint": "粘贴更多 cURL 命令以添加请求",
+      "activity_request_count": "{count, plural, one {# 个请求} other {# 个请求}}",
+      "clear_button_label": "清除",
+      "import_button_label": "导入",
+      "add_failed_toast": "{count, plural, one {无法将请求添加到 {collectionName}，请重试。} other {无法将请求添加到 {collectionName}，请重试。}}",
+      "partially_added_toast": "已将 {addedCount}/{totalCount} 个请求添加到 {collectionName}，其余请求添加失败。",
+      "partially_added_cancelled_toast": "已将 {addedCount}/{totalCount} 个请求添加到 {collectionName}。",
+      "create_failed_toast": "无法创建 {collectionName}，请重试。",
+      "environment_failed_toast": "无法创建 {collectionName} 环境，因此请求将保留完整 URL。"
     },
     "more_import_options": {
       "label": "其他来源",

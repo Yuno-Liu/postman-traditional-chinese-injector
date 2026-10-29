@@ -1,4 +1,8 @@
 {
+  "not_found_blank_state": {
+    "title": "404，页面未找到",
+    "description": "您要查找的页面不可用。"
+  },
   "heading": "运行器",
   "add_cluster_button": "添加运行器",
   "retry_button": "重试",

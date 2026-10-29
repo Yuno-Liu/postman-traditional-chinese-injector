@@ -29,6 +29,9 @@
     "authorization": "身份验证",
     "scripts": "脚本"
   },
+  "response_tabs": {
+    "test_results": "测试结果"
+  },
   "placeholder": {
     "coming_soon": "即将推出。"
   },
